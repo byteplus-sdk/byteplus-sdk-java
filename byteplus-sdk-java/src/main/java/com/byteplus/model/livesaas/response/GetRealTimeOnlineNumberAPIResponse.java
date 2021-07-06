@@ -1,0 +1,21 @@
+package com.byteplus.model.livesaas.response;
+
+import com.alibaba.fastjson.annotation.JSONField;
+import com.byteplus.model.response.ResponseMetadata;
+import lombok.Data;
+
+@Data
+public class GetRealTimeOnlineNumberAPIResponse {
+    @JSONField(name = "ResponseMetadata")
+    ResponseMetadata responseMetadata;
+    @JSONField(name = "Result")
+    GetRealTimeOnlineNumberAPIResultBean result;
+
+    @Data
+    public static class GetRealTimeOnlineNumberAPIResultBean {
+        @JSONField(name = "RealPopularity")
+        Long realPopularity;
+        @JSONField(name = "FakePopularity")
+        Long fakePopularity;
+    }
+}

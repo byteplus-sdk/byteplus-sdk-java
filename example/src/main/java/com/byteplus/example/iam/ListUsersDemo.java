@@ -10,7 +10,7 @@ public class ListUsersDemo {
 
     public static void main(String[] args) {
         IIamService iamService = IamServiceImpl.getInstance();
-        // call below method if you dont set ak and sk in ～/.volc/config
+        // call below method if you dont set ak and sk in ～/.byteplus/config
 
         iamService.setAccessKey("ak");
         iamService.setSecretKey("sk");

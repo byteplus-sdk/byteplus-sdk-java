@@ -20,13 +20,13 @@ public class IamConfig {
                 {
                     put(Const.CONNECTION_TIMEOUT, 5000);
                     put(Const.SOCKET_TIMEOUT, 5000);
-                    put(Const.Host, "open.volcengineapi.com");
+                    put(Const.Host, "open.byteplusapi.com");
                     put(Const.Header, new ArrayList<Header>() {
                         {
                             add(new BasicHeader("Accept", "application/json"));
                         }
                     });
-                    put(Const.Credentials, new Credentials(Const.REGION_CN_NORTH_1, "iam"));
+                    put(Const.Credentials, new Credentials(Const.REGION_AP_SINGAPORE_1, "iam"));
                 }
             }
     );

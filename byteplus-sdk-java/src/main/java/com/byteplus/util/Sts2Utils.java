@@ -16,6 +16,7 @@ import javax.crypto.Mac;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -34,7 +35,7 @@ public class Sts2Utils {
 
     public static String generateSecretKey() throws Exception {
         String randString32 = RandomStringUtils.randomAlphabetic(32);
-        return aesEncryptCBC(randString32, "bytedance-isgood".getBytes(CharEncoding.ISO_8859_1));
+        return aesEncryptCBC(randString32, "bytedance-isgood".getBytes(StandardCharsets.ISO_8859_1));
 
     }
 
@@ -42,7 +43,7 @@ public class Sts2Utils {
     public static byte[] encrypt(String data, String key) throws Exception{
         String ivString = key;
         //偏移量
-        byte[] iv = ivString.getBytes(CharEncoding.ISO_8859_1);
+        byte[] iv = ivString.getBytes(StandardCharsets.ISO_8859_1);
         Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
         int blockSize = cipher.getBlockSize();
         byte[] dataBytes = data.getBytes();
@@ -52,7 +53,7 @@ public class Sts2Utils {
         byte[] plaintext = new byte[length];
         //填充
         System.arraycopy(dataBytes, 0, plaintext, 0, dataBytes.length);
-        SecretKeySpec keySpec = new SecretKeySpec(key.getBytes(CharEncoding.ISO_8859_1), "AES");
+        SecretKeySpec keySpec = new SecretKeySpec(key.getBytes(StandardCharsets.ISO_8859_1), "AES");
         //设置偏移量参数
         IvParameterSpec ivSpec = new IvParameterSpec(iv);
         cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivSpec);
@@ -67,7 +68,7 @@ public class Sts2Utils {
         if (sKey.length != 16) {
             throw new RuntimeException("Key长度不是16位");
         }
-        byte[] encrypted = encrypt(sSrc, new String(sKey, CharEncoding.ISO_8859_1));
+        byte[] encrypted = encrypt(sSrc, new String(sKey, StandardCharsets.ISO_8859_1));
         return Base64.encodeBase64String(encrypted);//此处使用BASE64做转码功能，同时能起到2次加密的作用。
     }
 
@@ -95,7 +96,7 @@ public class Sts2Utils {
     }
 
     private static String sha256Hex(byte[] signingKey, String stringToSign) throws InvalidKeyException, NoSuchAlgorithmException {
-        Charset UTF8 = Charset.forName("UTF-8");
+        Charset UTF8 = StandardCharsets.UTF_8;
         Mac mac = Mac.getInstance("HmacSHA256");
         mac.init(new SecretKeySpec(signingKey, "HmacSHA256"));
         return new String(Hex.encodeHex(mac.doFinal(stringToSign.getBytes(UTF8))));

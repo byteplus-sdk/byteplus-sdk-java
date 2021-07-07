@@ -72,7 +72,7 @@ public abstract class BaseServiceImpl implements IBaseService {
             info.getCredentials().setAccessKeyID(accessKey);
             info.getCredentials().setSecretAccessKey(secretKey);
         } else {
-            File file = new File(System.getenv("HOME") + "/.volc/config");
+            File file = new File(System.getenv("HOME") + "/.byteplus/config");
             if (file.exists()) {
                 try {
                     long length = file.length();

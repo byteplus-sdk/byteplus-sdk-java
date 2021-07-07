@@ -1,6 +1,6 @@
 ## BytePlus SDK for Java
 
-### - Maven依赖
+### - Maven repo
 [![maven](https://img.shields.io/maven-central/v/com.byteplus/byteplus-sdk-java)](https://search.maven.org/artifact/com.byteplus/byteplus-sdk-java)
 ```
 <dependency>
@@ -12,9 +12,9 @@
 ### AK/SK Setting
 - Explicitly call setAccessKey/setSecretKey method in service class
 
-- Set env variable VOLC_ACCESSKEY="your ak"  VOLC_SECRETKEY = "your sk"
+- Set env variable BYTEPLUS_ACCESSKEY="your ak"  BYTEPLUS_SECRETKEY = "your sk"
 
-- json config at ～/.volc/config，format：{"ak":"your ak","sk":"your sk"}
+- json config at ～/.byteplus/config，format：{"ak":"your ak","sk":"your sk"}
 
 Above options will take precedence in sequence, Suggest use option 1 for better trouble shooting
 

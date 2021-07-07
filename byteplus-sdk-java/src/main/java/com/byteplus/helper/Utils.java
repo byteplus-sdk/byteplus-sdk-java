@@ -190,9 +190,9 @@ public class Utils {
             } else if (entry.getValue().getClass() == Boolean.class) {
                 params.put(entry.getKey(), ((Boolean) entry.getValue()).toString());
             } else if (entry.getValue().getClass() == Float.class) {
-                params.put(entry.getKey(), ((Float) entry.getValue()).toString());
+                params.put(entry.getKey(), entry.getValue().toString());
             } else if (entry.getValue().getClass() == Double.class) {
-                params.put(entry.getKey(), ((Double) entry.getValue()).toString());
+                params.put(entry.getKey(), entry.getValue().toString());
             } else if (entry.getValue().getClass() == Byte.class) {
                 params.put(entry.getKey(), ((Byte) entry.getValue()).toString());
             } else {

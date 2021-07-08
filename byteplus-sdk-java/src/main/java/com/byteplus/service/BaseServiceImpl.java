@@ -286,7 +286,7 @@ public abstract class BaseServiceImpl implements IBaseService {
         for (Header header : mergedH) {
             request.setHeader(header);
         }
-        request.setHeader("User-Agent", "volc-sdk-java/v" + this.VERSION);
+        request.setHeader("User-Agent", "byteplus-sdk-java/v" + this.VERSION);
         List<NameValuePair> mergedNV = mergeQuery(params, apiInfo.getQuery());
         URIBuilder builder = request.getUriBuilder();
 

@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.byteplus</groupId>
-    <version>1.0.1</version>
+    <version>1.0.0</version>
     <artifactId>example</artifactId>
 
     <properties>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.byteplus</groupId>
             <artifactId>byteplus-sdk-java</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

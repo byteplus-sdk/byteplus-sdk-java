@@ -23,7 +23,7 @@ public class VodConfig {
                         {
                             put(Const.CONNECTION_TIMEOUT, 5000);
                             put(Const.SOCKET_TIMEOUT, 5000);
-                            put(Const.Host, "vod.ap-singapore-1.byteplusapi.com");
+                            put(Const.Host, "vod.byteplusapi.com");
                             put(Const.Header, new ArrayList<Header>() {
                                 {
                                     add(new BasicHeader("Accept", "application/json"));

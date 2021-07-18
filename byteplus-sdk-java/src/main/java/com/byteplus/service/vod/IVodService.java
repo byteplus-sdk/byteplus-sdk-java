@@ -18,15 +18,6 @@ public interface IVodService extends com.byteplus.service.IBaseService {
      * @throws Exception the exception
      */
     String createSha1HlsDrmAuthToken(Long expireSeconds) throws Exception;
-
-    /**
-     * Gets subtitle auth token.
-     *
-     * @param input the params
-     * @return the play auth token
-     * @throws Exception the exception
-     */
-    String getSubtitleAuthToken(com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest input, Long expireSeconds) throws Exception;
 	
     /**
      * Gets play auth token.
@@ -165,15 +156,6 @@ public interface IVodService extends com.byteplus.service.IBaseService {
 	com.byteplus.service.vod.model.response.VodGetMediaInfosResponse getMediaInfos(com.byteplus.service.vod.model.request.VodGetMediaInfosRequest input) throws Exception;
 	
 	/**
-     * getRecommendedPoster.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodGetRecommendedPosterRequest
-     * @return com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse
-     * @throws Exception the exception
-     */
-	com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse getRecommendedPoster(com.byteplus.service.vod.model.request.VodGetRecommendedPosterRequest input) throws Exception;
-	
-	/**
      * deleteMedia.
      *
      * @param input com.byteplus.service.vod.model.request.VodDeleteMediaRequest
@@ -199,33 +181,6 @@ public interface IVodService extends com.byteplus.service.IBaseService {
      * @throws Exception the exception
      */
 	com.byteplus.service.vod.model.response.VodGetMediaListResponse getMediaList(com.byteplus.service.vod.model.request.VodGetMediaListRequest input) throws Exception;
-	
-	/**
-     * getSubtitleInfoList.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest
-     * @return com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse
-     * @throws Exception the exception
-     */
-	com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse getSubtitleInfoList(com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest input) throws Exception;
-	
-	/**
-     * updateSubtitleStatus.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodUpdateSubtitleStatusRequest
-     * @return com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse
-     * @throws Exception the exception
-     */
-	com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse updateSubtitleStatus(com.byteplus.service.vod.model.request.VodUpdateSubtitleStatusRequest input) throws Exception;
-	
-	/**
-     * updateSubtitleInfo.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodUpdateSubtitleInfoRequest
-     * @return com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse
-     * @throws Exception the exception
-     */
-	com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse updateSubtitleInfo(com.byteplus.service.vod.model.request.VodUpdateSubtitleInfoRequest input) throws Exception;
 	
 	/**
      * StartWorkflow.

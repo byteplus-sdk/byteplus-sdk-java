@@ -167,20 +167,6 @@ public class VodConfig {
                         }
                     }
             ));
-            put(Const.GetRecommendedPoster, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "GET");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.GetRecommendedPoster));
-                                    add(new BasicNameValuePair("Version", "2020-08-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
             put(Const.DeleteMedia, new ApiInfo(
                     new HashMap<String, Object>() {
                         {
@@ -217,48 +203,6 @@ public class VodConfig {
                             put(Const.Query, new ArrayList<NameValuePair>() {
                                 {
                                     add(new BasicNameValuePair("Action", Const.GetMediaList));
-                                    add(new BasicNameValuePair("Version", "2020-08-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-            put(Const.GetSubtitleInfoList, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "GET");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.GetSubtitleInfoList));
-                                    add(new BasicNameValuePair("Version", "2020-08-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-            put(Const.UpdateSubtitleStatus, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "GET");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.UpdateSubtitleStatus));
-                                    add(new BasicNameValuePair("Version", "2020-08-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-            put(Const.UpdateSubtitleInfo, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "GET");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.UpdateSubtitleInfo));
                                     add(new BasicNameValuePair("Version", "2020-08-01"));
                                 }
                             });

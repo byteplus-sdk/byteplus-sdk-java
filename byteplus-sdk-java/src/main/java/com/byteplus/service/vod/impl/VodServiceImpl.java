@@ -98,25 +98,6 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
         return StringUtils.join(dsa, ":", "2.0", ":", timestamp, ":", getAccessKey(), ":", sign);
     }
 
-    @Override
-    public String getSubtitleAuthToken(com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest input, Long expireSeconds) throws Exception {
-        if(input.getVid() == "") {
-            throw new Exception("传入的Vid为空");
-        }
-        Map<String, String> params = new HashMap<>();
-        params.put("Vid", input.getVid());
-        params.put("Status", "Published");
-	    if (expireSeconds != null && expireSeconds > 0) {
-            params.put("X-Expires", expireSeconds.toString());
-        }
-        String getSubtitleAuthToken = getSignUrl(com.byteplus.helper.Const.GetSubtitleInfoList, com.byteplus.helper.Utils.mapToPairList(params));
-        Map<String, String> ret = new HashMap<>();
-        ret.put("GetSubtitleAuthToken", getSubtitleAuthToken);
-        String retStr = JSON.toJSONString(ret);
-        Base64.Encoder encoder = Base64.getEncoder();
-        return encoder.encodeToString(retStr.getBytes());
-    }
-
 	@Override
     public String getPlayAuthToken(com.byteplus.service.vod.model.request.VodGetPlayInfoRequest input, Long expireSeconds) throws Exception {
         Map<String, String> params = com.byteplus.helper.Utils.protoBufferToMap(input, false);
@@ -492,26 +473,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
         JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
         return responseBuilder.build();
 	}
-	
-	
-	/**
-     * getRecommendedPoster.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodGetRecommendedPosterRequest
-     * @return com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse
-     * @throws Exception the exception
-     */
-	@Override
-	public com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse getRecommendedPoster(com.byteplus.service.vod.model.request.VodGetRecommendedPosterRequest input) throws Exception {
-		com.byteplus.model.response.RawResponse response = query(com.byteplus.helper.Const.GetRecommendedPoster, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
-        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodGetRecommendedPosterResponse.newBuilder();
-        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
-        return responseBuilder.build();
-	}
-	
+
 	
 	/**
      * deleteMedia.
@@ -565,63 +527,6 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
             throw response.getException();
         }
         com.byteplus.service.vod.model.response.VodGetMediaListResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodGetMediaListResponse.newBuilder();
-        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
-        return responseBuilder.build();
-	}
-	
-	
-	/**
-     * getSubtitleInfoList.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest
-     * @return com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse
-     * @throws Exception the exception
-     */
-	@Override
-	public com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse getSubtitleInfoList(com.byteplus.service.vod.model.request.VodGetSubtitleInfoListRequest input) throws Exception {
-		com.byteplus.model.response.RawResponse response = query(com.byteplus.helper.Const.GetSubtitleInfoList, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
-        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodGetSubtitleInfoListResponse.newBuilder();
-        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
-        return responseBuilder.build();
-	}
-	
-	
-	/**
-     * updateSubtitleStatus.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodUpdateSubtitleStatusRequest
-     * @return com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse
-     * @throws Exception the exception
-     */
-	@Override
-	public com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse updateSubtitleStatus(com.byteplus.service.vod.model.request.VodUpdateSubtitleStatusRequest input) throws Exception {
-		com.byteplus.model.response.RawResponse response = query(com.byteplus.helper.Const.UpdateSubtitleStatus, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
-        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodUpdateSubtitleStatusResponse.newBuilder();
-        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
-        return responseBuilder.build();
-	}
-	
-	
-	/**
-     * updateSubtitleInfo.
-     *
-     * @param input com.byteplus.service.vod.model.request.VodUpdateSubtitleInfoRequest
-     * @return com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse
-     * @throws Exception the exception
-     */
-	@Override
-	public com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse updateSubtitleInfo(com.byteplus.service.vod.model.request.VodUpdateSubtitleInfoRequest input) throws Exception {
-		com.byteplus.model.response.RawResponse response = query(com.byteplus.helper.Const.UpdateSubtitleInfo, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
-        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodUpdateSubtitleInfoResponse.newBuilder();
         JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
         return responseBuilder.build();
 	}

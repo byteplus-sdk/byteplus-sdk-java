@@ -1,5 +1,8 @@
 Change log
 
+2021-07-21 Upgrade to version 1.0.1
+- Included VOD services in SDK
+
 2021-07-08 initial version 1.0.0
 - Cleaned up codebase
 

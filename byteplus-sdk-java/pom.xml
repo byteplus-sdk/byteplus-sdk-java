@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.byteplus</groupId>
-    <version>1.0.1</version>
+    <version>1.0.0</version>
     <artifactId>byteplus-sdk-java</artifactId>
 
     <name>byteplus-sdk-java</name>
@@ -39,7 +39,7 @@
         <jre.version>1.8</jre.version>
         <skipTests>true</skipTests>
         <dep.maven-surefire-plugin.version>2.9</dep.maven-surefire-plugin.version>
-        <httpcomponents.version>4.5.2</httpcomponents.version>
+        <httpcomponents.version>4.5.13</httpcomponents.version>
         <fastjson.version>1.2.75</fastjson.version>
         <lombok.version>1.18.20</lombok.version>
         <commons-lang3.version>3.10</commons-lang3.version>
@@ -92,11 +92,6 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java-util</artifactId>
             <version>${protobuf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.rholder</groupId>
-            <artifactId>guava-retrying</artifactId>
-            <version>2.0.0</version>
         </dependency>
     </dependencies>
 
@@ -191,7 +186,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>

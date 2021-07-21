@@ -9,11 +9,11 @@ public class VodGetPlayAuthTokenDemo {
     public static void main(String[] args) throws Exception {
         IVodService vodService = VodServiceImpl.getInstance();
 
-        String vid = "v1100eg50000c3lsps3c77u0p39a9oag";
+        String vid = "your vid";
 
         // call below method if you dont set ak and sk in ～/.byteplus/config
-         vodService.setAccessKey("AKAPOWMzYjM4MjQwNzAwNGQwMWJiMTVmNzlmNjJjNGZkNjY");
-         vodService.setSecretKey("TkRNeU0yRm1OalZsTURNeU5HSmxaV0k1WkRnNU9XRTBOMlJrTURaaFlUVQ==");
+         vodService.setAccessKey("your ak");
+         vodService.setSecretKey("your sk");
 
         try {
             VodGetPlayInfoRequest.Builder reqBuilder = VodGetPlayInfoRequest.newBuilder();

@@ -12,7 +12,7 @@ public class GetUploadSts2Demo {
     public static void main(String[] args) throws Exception {
         IVodService vodService = VodServiceImpl.getInstance();
 
-        // call below method if you dont set ak and sk in ～/.vcloud/config
+        // call below method if you dont set ak and sk in ～/.byteplus/config
         vodService.setAccessKey("your ak");
         vodService.setSecretKey("your sk");
 

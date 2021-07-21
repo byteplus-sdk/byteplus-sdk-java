@@ -12,7 +12,7 @@ public class VodGetPlayInfoDemo {
 
         String vid = "your vid";
 
-        // call below method if you dont set ak and sk in ～/.vcloud/config
+        // call below method if you dont set ak and sk in ～/.byteplus/config
         // vodService.setAccessKey("");
         // vodService.setSecretKey("");
 

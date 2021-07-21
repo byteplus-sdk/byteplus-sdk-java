@@ -11,7 +11,7 @@ public class VodGetPlayAuthTokenDemo {
 
         String vid = "v1100eg50000c3lsps3c77u0p39a9oag";
 
-        // call below method if you dont set ak and sk in ～/.vcloud/config
+        // call below method if you dont set ak and sk in ～/.byteplus/config
          vodService.setAccessKey("AKAPOWMzYjM4MjQwNzAwNGQwMWJiMTVmNzlmNjJjNGZkNjY");
          vodService.setSecretKey("TkRNeU0yRm1OalZsTURNeU5HSmxaV0k1WkRnNU9XRTBOMlJrTURaaFlUVQ==");
 

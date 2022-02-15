@@ -8,8 +8,8 @@ import com.byteplus.service.sms.impl.SmsServiceImpl;
 
 public class SendSmsDemo {
 
-    public static void main(String[] args) {
-        SmsService smsService = SmsServiceImpl.getInstance();
+    public static void main(String[] args) throws Exception {
+        SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
         smsService.setAccessKey("ak");

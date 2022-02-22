@@ -16,7 +16,7 @@ public class SendSmsDemo {
         smsService.setSecretKey("sk");
 
         SmsSendRequest req = new SmsSendRequest();
-        req.setSign("signature");
+        req.setFrom("BytePlus");
         req.setSmsAccount("smsAccount");
         req.setPhoneNumbers("phoneNo");
         req.setTemplateId("templateId");

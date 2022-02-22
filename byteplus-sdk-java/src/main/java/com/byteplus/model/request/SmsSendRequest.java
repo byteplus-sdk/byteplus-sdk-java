@@ -7,6 +7,8 @@ import lombok.Data;
 public class SmsSendRequest {
     @JSONField(name = "SmsAccount")
     String smsAccount;
+    @JSONField(name = "From")
+    String from;
     @JSONField(name = "Sign")
     String sign;
     @JSONField(name = "TemplateId")

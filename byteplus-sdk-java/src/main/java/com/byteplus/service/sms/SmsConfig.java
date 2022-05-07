@@ -109,6 +109,20 @@ public class SmsConfig {
                         }
                     }
             ));
+            put("Conversion", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "Conversion"));
+                                    add(new BasicNameValuePair("Version", "2020-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
         }
     };
 }

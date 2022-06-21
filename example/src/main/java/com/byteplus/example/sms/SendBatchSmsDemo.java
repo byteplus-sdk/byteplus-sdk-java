@@ -2,7 +2,6 @@ package com.byteplus.example.sms;
 
 import com.alibaba.fastjson.JSON;
 import com.byteplus.model.request.SmsBatchSendRequest;
-import com.byteplus.model.request.SmsSendRequest;
 import com.byteplus.model.response.SmsSendResponse;
 import com.byteplus.service.sms.SmsService;
 import com.byteplus.service.sms.impl.SmsServiceImpl;
@@ -21,6 +20,7 @@ public class SendBatchSmsDemo {
 
         SmsBatchSendRequest req = new SmsBatchSendRequest();
         req.setSign("signature");
+        req.setFrom("BytePlus");
         req.setSmsAccount("smsAccount");
         req.setTemplateId("templateId");
         req.setTag("tag");

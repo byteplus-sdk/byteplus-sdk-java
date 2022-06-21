@@ -12,6 +12,8 @@ public class SmsBatchSendRequest {
     String smsAccount;
     @JSONField(name = "Sign")
     String sign;
+    @JSONField(name = "From")
+    String from;
     @JSONField(name = "TemplateId")
     String templateId;
     @JSONField(name = "Messages")

@@ -2,7 +2,6 @@ package com.byteplus.example.sms;
 
 import com.alibaba.fastjson.JSON;
 import com.byteplus.model.request.SmsBatchSendRequest;
-import com.byteplus.model.request.SmsSendRequest;
 import com.byteplus.model.response.SmsSendResponse;
 import com.byteplus.service.sms.SmsService;
 import com.byteplus.service.sms.impl.SmsServiceImpl;
@@ -12,8 +11,8 @@ import java.util.List;
 
 public class SendBatchSmsDemo {
 
-    public static void main(String[] args) {
-        SmsService smsService = SmsServiceImpl.getInstance();
+    public static void main(String[] args) throws Exception {
+        SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
         smsService.setAccessKey("ak");
@@ -21,6 +20,7 @@ public class SendBatchSmsDemo {
 
         SmsBatchSendRequest req = new SmsBatchSendRequest();
         req.setSign("signature");
+        req.setFrom("BytePlus");
         req.setSmsAccount("smsAccount");
         req.setTemplateId("templateId");
         req.setTag("tag");

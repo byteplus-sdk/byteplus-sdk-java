@@ -1,9 +1,7 @@
 package com.byteplus.service.sms;
 
-import com.byteplus.model.request.SmsBatchSendRequest;
-import com.byteplus.model.request.SmsCheckVerifyCodeRequest;
-import com.byteplus.model.request.SmsSendRequest;
-import com.byteplus.model.request.SmsSendVerifyCodeRequest;
+import com.byteplus.model.request.*;
+import com.byteplus.model.response.ConversionResponse;
 import com.byteplus.model.response.SmsCheckVerifyCodeResponse;
 import com.byteplus.model.response.SmsSendResponse;
 import com.byteplus.service.IBaseService;
@@ -37,11 +35,19 @@ public interface SmsService extends IBaseService {
     SmsSendResponse sendVerifyCode(SmsSendVerifyCodeRequest smsSendVerifyCodeRequest) throws Exception;
 
     /**
-     * SmsSendVerifyCode.
+     * SmsCheckVerifyCode.
      *
      * @param smsCheckVerifyCodeRequest the list users request
      * @return the list users response
      * @throws Exception the exception
      */
     SmsCheckVerifyCodeResponse checkVerifyCode(SmsCheckVerifyCodeRequest smsCheckVerifyCodeRequest) throws Exception;
+
+    /**
+     * Conversion
+     * @param conversionRequest
+     * @return
+     * @throws Exception
+     */
+    ConversionResponse conversion(ConversionRequest conversionRequest) throws Exception;
 }

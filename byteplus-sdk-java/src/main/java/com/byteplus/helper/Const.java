@@ -84,4 +84,18 @@ public class Const {
     public static final String DSAHmacSha1 = "HMAC-SHA1";
     public static final String DSAHmacSha256 = "HMAC-SHA256";
 
+    public static final String SmsChannelTypeCnOTP = "CN_OTP";
+    public static final String SmsChannelTypeCnNTC = "CN_NTC";
+    public static final String SmsChannelTypeCnMKT = "CN_MKT";
+    public static final String SmsChannelTypeI18nOTP = "I18N_OTP";
+    public static final String SmsChannelTypeI18nMKT = "I18N_MKT";
+
+    public static final String EnableStatusNotEnabled = "0";
+    public static final String EnableStatusEnabled = "1";
+
+    public static final String AreaCN = "cn";
+    public static final String AreaOverseas = "overseas";
+    public static final String AreaAll = "all";
+
+
 }

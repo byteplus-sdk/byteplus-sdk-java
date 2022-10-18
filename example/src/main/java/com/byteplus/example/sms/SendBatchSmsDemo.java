@@ -12,6 +12,9 @@ import java.util.List;
 public class SendBatchSmsDemo {
 
     public static void main(String[] args) throws Exception {
+        // Make sure only get instance once throughout the entire running program.
+        // We suggest using Singleton design model to get the instance.
+        // And using the Singleton instance to call functions
         SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config

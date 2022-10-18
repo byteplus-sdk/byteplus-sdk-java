@@ -123,6 +123,76 @@ public class SmsConfig {
                         }
                     }
             ));
+            put("GetSmsTemplateAndOrderList", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "GET");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "GetSmsTemplateAndOrderList"));
+                                    add(new BasicNameValuePair("Version", "2021-01-11"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put("ApplySmsTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "ApplySmsTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-01-11"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put("DeleteSmsTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DeleteSmsTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-01-11"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put("GetSubAccountList", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "GET");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "GetSubAccountList"));
+                                    add(new BasicNameValuePair("Version", "2021-01-11"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put("GetSubAccountDetail", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "GET");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "GetSubAccountDetail"));
+                                    add(new BasicNameValuePair("Version", "2021-01-11"));
+                                }
+                            });
+                        }
+                    }
+            ));
         }
     };
 }

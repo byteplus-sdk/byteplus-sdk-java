@@ -9,8 +9,11 @@ import com.byteplus.model.response.*;
 import com.byteplus.service.BaseServiceImpl;
 import com.byteplus.service.sms.SmsConfig;
 import com.byteplus.service.sms.SmsService;
+import com.byteplus.util.ConvertUtils;
+import org.apache.http.NameValuePair;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
 
@@ -78,6 +81,39 @@ public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
         return getConversionResponse(response);
     }
 
+    @Override
+    public GetSubAccountListResponse getSubAccountList(GetSubAccountListRequest getSubAccountListRequest) throws Exception {
+        List<NameValuePair> urlParams = ConvertUtils.convertToPair(getSubAccountListRequest);
+        RawResponse response = json("GetSubAccountList", urlParams, "");
+        return getSubAccountListResponse(response);
+    }
+
+    @Override
+    public GetSubAccountDetailResponse getSubAccountDetail(SubAccountRequest subAccountRequest) throws Exception {
+        List<NameValuePair> urlParams = ConvertUtils.convertToPair(subAccountRequest);
+        RawResponse response = json("GetSubAccountDetail", urlParams, "");
+        return getSubAccountDetailResponse(response);
+    }
+
+    @Override
+    public GetSmsTemplateAndOrderListResponse getSmsTemplateAndOrderList(GetSmsTemplateAndOrderListRequest getSmsTemplateAndOrderListRequest) throws Exception {
+        List<NameValuePair> urlParams = ConvertUtils.convertToPair(getSmsTemplateAndOrderListRequest);
+        RawResponse response = json("GetSmsTemplateAndOrderList", urlParams, "");
+        return getSmsTemplateAndOrderListResponse(response);
+    }
+
+    @Override
+    public ApplySmsTemplateResponse applySmsTemplate(ApplySmsTemplateRequest applySmsTemplateRequest) throws Exception {
+        RawResponse response = json("ApplySmsTemplate", new ArrayList<>(), JSON.toJSONString(applySmsTemplateRequest));
+        return applySmsTemplateResponse(response);
+    }
+
+    @Override
+    public DeleteSmsTemplateResponse deleteSmsTemplate(DeleteSmsTemplateRequest deleteSmsTemplateRequest) throws Exception {
+        RawResponse response = json("DeleteSmsTemplate", new ArrayList<>(), JSON.toJSONString(deleteSmsTemplateRequest));
+        return deleteSmsTemplateResponse(response);
+    }
+
     private SmsSendResponse getSmsSendResponse(RawResponse response) throws Exception {
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {
             throw response.getException();
@@ -108,6 +144,71 @@ public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
             throw response.getException();
         }
         ConversionResponse res = JSON.parseObject(response.getData(), ConversionResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+            throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());
+        }
+        res.getResponseMetadata().setService("volcSMS");
+        return res;
+    }
+
+    private GetSubAccountListResponse getSubAccountListResponse(RawResponse response) throws Exception {
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        GetSubAccountListResponse res = JSON.parseObject(response.getData(), GetSubAccountListResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+            throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());
+        }
+        res.getResponseMetadata().setService("volcSMS");
+        return res;
+    }
+
+    private GetSubAccountDetailResponse getSubAccountDetailResponse(RawResponse response) throws Exception {
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        GetSubAccountDetailResponse res = JSON.parseObject(response.getData(), GetSubAccountDetailResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+            throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());
+        }
+        res.getResponseMetadata().setService("volcSMS");
+        return res;
+    }
+
+    private GetSmsTemplateAndOrderListResponse getSmsTemplateAndOrderListResponse(RawResponse response) throws Exception {
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        GetSmsTemplateAndOrderListResponse res = JSON.parseObject(response.getData(), GetSmsTemplateAndOrderListResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+            throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());
+        }
+        res.getResponseMetadata().setService("volcSMS");
+        return res;
+    }
+
+    private ApplySmsTemplateResponse applySmsTemplateResponse(RawResponse response) throws Exception {
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        ApplySmsTemplateResponse res = JSON.parseObject(response.getData(), ApplySmsTemplateResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+            throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());
+        }
+        res.getResponseMetadata().setService("volcSMS");
+        return res;
+    }
+
+    private DeleteSmsTemplateResponse deleteSmsTemplateResponse(RawResponse response) throws Exception {
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        DeleteSmsTemplateResponse res = JSON.parseObject(response.getData(), DeleteSmsTemplateResponse.class);
         if (res.getResponseMetadata().getError() != null) {
             ResponseMetadata meta = res.getResponseMetadata();
             throw new Exception(meta.getRequestId() + "error:" + meta.getError().getMessage());

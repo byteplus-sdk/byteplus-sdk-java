@@ -8,6 +8,9 @@ import com.byteplus.service.sms.impl.SmsServiceImpl;
 
 public class SendSmsVerifyCodeDemo {
     public static void main(String[] args) {
+        // Make sure only get instance once throughout the entire running program.
+        // We suggest using Singleton design model to get the instance.
+        // And using the Singleton instance to call functions
         SmsService smsService = SmsServiceImpl.getInstance();
 
         // call below method if you dont set ak and sk in ～/.vcloud/config

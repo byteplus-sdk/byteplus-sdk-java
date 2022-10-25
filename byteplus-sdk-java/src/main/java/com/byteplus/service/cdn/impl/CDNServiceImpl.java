@@ -315,4 +315,85 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
         }
         return JSON.parseObject(response.getData(), CDN.DescribeCdnUpperIpResponse.class);
     }
+
+    @Override
+    public CDN.AddResourceTagsResponse addResourceTags(CDN.AddResourceTagsRequest request) throws Exception {
+        RawResponse response = json("AddResourceTags", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddResourceTagsResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateResourceTagsResponse updateResourceTags(CDN.UpdateResourceTagsRequest request) throws Exception {
+        RawResponse response = json("UpdateResourceTags", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateResourceTagsResponse.class);
+    }
+
+    @Override
+    public CDN.ListResourceTagsResponse listResourceTags() throws Exception {
+        RawResponse response = json("ListResourceTags", null, "");
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListResourceTagsResponse.class);
+    }
+
+    @Override
+    public CDN.DeleteResourceTagsResponse deleteResourceTags(CDN.DeleteResourceTagsRequest request) throws Exception {
+        RawResponse response = json("DeleteResourceTags", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DeleteResourceTagsResponse.class);
+    }
+
+    @Override
+    public CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception {
+        RawResponse response = json("AddCdnCertificate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddCdnCertificateResponse.class);
+    }
+
+    @Override
+    public CDN.ListCertInfoResponse listCertInfo(CDN.ListCertInfoRequest request) throws Exception {
+        RawResponse response = json("ListCertInfo", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListCertInfoResponse.class);
+    }
+
+    @Override
+    public CDN.ListCdnCertInfoResponse listCdnCertInfo(CDN.ListCdnCertInfoRequest request) throws Exception {
+        RawResponse response = json("ListCdnCertInfo", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListCdnCertInfoResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeCertConfigResponse describeCertConfig(CDN.DescribeCertConfigRequest request) throws Exception {
+        RawResponse response = json("DescribeCertConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeCertConfigResponse.class);
+    }
+
+    @Override
+    public CDN.BatchDeployCertResponse batchDeployCert(CDN.BatchDeployCertRequest request) throws Exception {
+        RawResponse response = json("BatchDeployCert", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.BatchDeployCertResponse.class);
+    }
 }

@@ -527,66 +527,6 @@ public class CDNConfig {
                     }
             ));
 
-            put("AddResourceTags", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "AddResourceTags"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
-            put("UpdateResourceTags", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "UpdateResourceTags"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
-            put("ListResourceTags", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "ListResourceTags"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
-            put("DeleteResourceTags", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "DeleteResourceTags"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
             put("AddCdnCertificate", new ApiInfo(
                     new HashMap<String, Object>() {
                         {

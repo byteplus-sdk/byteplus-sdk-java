@@ -70,14 +70,6 @@ package com.byteplus.service.cdn;
 
         CDN.DescribeCdnUpperIpResponse describeCdnUpperIp(CDN.DescribeCdnUpperIpRequest request) throws Exception;
 
-        CDN.AddResourceTagsResponse addResourceTags(CDN.AddResourceTagsRequest request) throws Exception;
-
-        CDN.UpdateResourceTagsResponse updateResourceTags(CDN.UpdateResourceTagsRequest request) throws Exception;
-
-        CDN.ListResourceTagsResponse listResourceTags() throws Exception;
-
-        CDN.DeleteResourceTagsResponse deleteResourceTags(CDN.DeleteResourceTagsRequest request) throws Exception;
-
         CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception;
 
         CDN.ListCertInfoResponse listCertInfo(CDN.ListCertInfoRequest request) throws Exception;

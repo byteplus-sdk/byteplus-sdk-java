@@ -317,42 +317,6 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
     }
 
     @Override
-    public CDN.AddResourceTagsResponse addResourceTags(CDN.AddResourceTagsRequest request) throws Exception {
-        RawResponse response = json("AddResourceTags", null, JSON.toJSONString(request));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        return JSON.parseObject(response.getData(), CDN.AddResourceTagsResponse.class);
-    }
-
-    @Override
-    public CDN.UpdateResourceTagsResponse updateResourceTags(CDN.UpdateResourceTagsRequest request) throws Exception {
-        RawResponse response = json("UpdateResourceTags", null, JSON.toJSONString(request));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        return JSON.parseObject(response.getData(), CDN.UpdateResourceTagsResponse.class);
-    }
-
-    @Override
-    public CDN.ListResourceTagsResponse listResourceTags() throws Exception {
-        RawResponse response = json("ListResourceTags", null, "");
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        return JSON.parseObject(response.getData(), CDN.ListResourceTagsResponse.class);
-    }
-
-    @Override
-    public CDN.DeleteResourceTagsResponse deleteResourceTags(CDN.DeleteResourceTagsRequest request) throws Exception {
-        RawResponse response = json("DeleteResourceTags", null, JSON.toJSONString(request));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        return JSON.parseObject(response.getData(), CDN.DeleteResourceTagsResponse.class);
-    }
-
-    @Override
     public CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception {
         RawResponse response = json("AddCdnCertificate", null, JSON.toJSONString(request));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {

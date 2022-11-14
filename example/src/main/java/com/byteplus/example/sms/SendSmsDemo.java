@@ -15,8 +15,8 @@ public class SendSmsDemo {
         SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("testAK");
-        smsService.setSecretKey("testSK");
+        smsService.setAccessKey("AccessKey");
+        smsService.setSecretKey("SecretKey");
 
         SmsSendRequest req = new SmsSendRequest();
         req.setFrom("BytePlus");

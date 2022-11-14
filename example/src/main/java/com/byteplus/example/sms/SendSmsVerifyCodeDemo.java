@@ -14,8 +14,8 @@ public class SendSmsVerifyCodeDemo {
         SmsService smsService = SmsServiceImpl.getInstance();
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("ak");
-        smsService.setSecretKey("sk");
+        smsService.setAccessKey("AccessKey");
+        smsService.setSecretKey("SecretKey");
 
         SmsSendVerifyCodeRequest req = new SmsSendVerifyCodeRequest();
         req.setSign("signature");

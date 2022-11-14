@@ -18,8 +18,8 @@ public class SendBatchSmsDemo {
         SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("ak");
-        smsService.setSecretKey("sk");
+        smsService.setAccessKey("AccessKey");
+        smsService.setSecretKey("SecretKey");
 
         SmsBatchSendRequest req = new SmsBatchSendRequest();
         req.setSign("signature");

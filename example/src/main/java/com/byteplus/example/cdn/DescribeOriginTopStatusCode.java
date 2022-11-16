@@ -11,7 +11,10 @@ public class DescribeOriginTopStatusCode {
         service.setAccessKey(Utils.ak);
         service.setSecretKey(Utils.sk);
         try {
-            CDN.DescribeOriginTopStatusCodeRequest req = new CDN.DescribeOriginTopStatusCodeRequest();
+            CDN.DescribeOriginTopStatusCodeRequest req = new CDN.DescribeOriginTopStatusCodeRequest()
+                    .setMetric("status_5xx")
+                    .setItem("domain")
+                    .setDomain(Utils.exampleHost);;
             CDN.DescribeOriginTopStatusCodeResponse resp = service.describeOriginTopStatusCode(req);
             System.out.println(JSON.toJSONString(resp));
         } catch (Exception e) {

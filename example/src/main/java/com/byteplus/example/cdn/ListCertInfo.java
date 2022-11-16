@@ -12,7 +12,7 @@ public class ListCertInfo {
         service.setSecretKey(Utils.sk);
         try {
             CDN.ListCertInfoRequest req = new CDN.ListCertInfoRequest()
-                .setSource("volc_cert_center");
+                .setSource("cdn_cert_hosting");
             CDN.ListCertInfoResponse resp = service.listCertInfo(req);
             System.out.println(JSON.toJSONString(resp));
         } catch (Exception e) {

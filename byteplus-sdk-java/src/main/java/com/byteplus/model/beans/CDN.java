@@ -10,13 +10,24 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class AccountingData {
+
+        @JSONField(name = "Metric")
+        String Metric;
+
+        @JSONField(name = "Values")
+        List<DataPoint> Values;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class AccountingDataDetail {
 
         @JSONField(name = "BillingRegion")
         String BillingRegion;
 
         @JSONField(name = "Metrics")
-        List<MetricTimeStampValue> Metrics;
+        List<AccountingData> Metrics;
 
         @JSONField(name = "Name")
         String Name;
@@ -219,38 +230,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class AreaAccessRuleUpdate {
-
-        @JSONField(name = "Area")
-        List<String> Area;
-
-        @JSONField(name = "RuleType")
-        String RuleType;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class AuthCacheAction {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "CacheKey")
-        List<String> CacheKey;
-
-        @JSONField(name = "IgnoreCase")
-        Boolean IgnoreCase;
-
-        @JSONField(name = "Ttl")
-        Long Ttl;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class AuthCacheActionUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -287,26 +267,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class AuthModeConfigUpdate {
-
-        @JSONField(name = "BackupRemoteAddr")
-        String BackupRemoteAddr;
-
-        @JSONField(name = "MasterRemoteAddr")
-        String MasterRemoteAddr;
-
-        @JSONField(name = "PathType")
-        String PathType;
-
-        @JSONField(name = "PathValue")
-        String PathValue;
-
-        @JSONField(name = "RequestMethod")
-        String RequestMethod;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class AuthRequestHeaderRule {
 
         @JSONField(name = "RequestHeaderComponents")
@@ -314,17 +274,6 @@ public class CDN {
 
         @JSONField(name = "RequestHeaderInstances")
         List<RequestHeaderInstance> RequestHeaderInstances;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class AuthRequestHeaderRuleUpdate {
-
-        @JSONField(name = "RequestHeaderComponents")
-        RequestHeaderComponentUpdate RequestHeaderComponents;
-
-        @JSONField(name = "RequestHeaderInstances")
-        List<RequestHeaderInstanceUpdate> RequestHeaderInstances;
     }
 
     @Data
@@ -342,23 +291,6 @@ public class CDN {
 
         @JSONField(name = "TimeOutAction")
         TimeOutAction TimeOutAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class AuthResponseConfigUpdate {
-
-        @JSONField(name = "CacheAction")
-        AuthCacheActionUpdate CacheAction;
-
-        @JSONField(name = "ResponseAction")
-        ResponseActionUpdate ResponseAction;
-
-        @JSONField(name = "StatusCodeAction")
-        StatusCodeActionUpdate StatusCodeAction;
-
-        @JSONField(name = "TimeOutAction")
-        TimeOutActionUpdate TimeOutAction;
     }
 
     @Data
@@ -388,20 +320,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class BandwidthLimitActionUpdate {
-
-        @JSONField(name = "BandwidthThreshold")
-        Long BandwidthThreshold;
-
-        @JSONField(name = "LimitType")
-        String LimitType;
-
-        @JSONField(name = "SpeedLimitRate")
-        Long SpeedLimitRate;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class BandwidthLimitRule {
 
         @JSONField(name = "BandwidthLimitAction")
@@ -409,28 +327,6 @@ public class CDN {
 
         @JSONField(name = "Condition")
         Condition Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class BandwidthLimitRuleUpdate {
-
-        @JSONField(name = "BandwidthLimitAction")
-        BandwidthLimitActionUpdate BandwidthLimitAction;
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class BandwidthLimitUpdate {
-
-        @JSONField(name = "BandwidthLimitRule")
-        BandwidthLimitRuleUpdate BandwidthLimitRule;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
     }
 
     @Data
@@ -479,20 +375,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class CacheActionUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "IgnoreCase")
-        Boolean IgnoreCase;
-
-        @JSONField(name = "Ttl")
-        Long Ttl;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class CacheControlRule {
 
         @JSONField(name = "CacheAction")
@@ -500,17 +382,6 @@ public class CDN {
 
         @JSONField(name = "Condition")
         Condition Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CacheControlRuleUpdate {
-
-        @JSONField(name = "CacheAction")
-        CacheActionUpdate CacheAction;
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
     }
 
     @Data
@@ -523,32 +394,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class CacheKeyActionUpdate {
-
-        @JSONField(name = "CacheKeyComponents")
-        List<CacheKeyComponentUpdate> CacheKeyComponents;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class CacheKeyComponent {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "IgnoreCase")
-        Boolean IgnoreCase;
-
-        @JSONField(name = "Object")
-        String Object;
-
-        @JSONField(name = "Subobject")
-        String Subobject;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CacheKeyComponentUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -572,17 +418,6 @@ public class CDN {
 
         @JSONField(name = "Condition")
         Condition Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CacheKeyGenerationRuleUpdate {
-
-        @JSONField(name = "CacheKeyAction")
-        CacheKeyActionUpdate CacheKeyAction;
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
     }
 
     @Data
@@ -622,53 +457,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class CertInfoUpdate {
-
-        @JSONField(name = "CertId")
-        String CertId;
-
-        @JSONField(name = "CertName")
-        String CertName;
-
-        @JSONField(name = "Certificate")
-        CertificateUpdate Certificate;
-
-        @JSONField(name = "ConfiguredDomain")
-        String ConfiguredDomain;
-
-        @JSONField(name = "Desc")
-        String Desc;
-
-        @JSONField(name = "DnsName")
-        String DnsName;
-
-        @JSONField(name = "EffectiveTime")
-        Long EffectiveTime;
-
-        @JSONField(name = "ExpireTime")
-        Long ExpireTime;
-
-        @JSONField(name = "Source")
-        String Source;
-
-        @JSONField(name = "Status")
-        String Status;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class Certificate {
-
-        @JSONField(name = "Certificate")
-        String Certificate;
-
-        @JSONField(name = "PrivateKey")
-        String PrivateKey;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CertificateUpdate {
 
         @JSONField(name = "Certificate")
         String Certificate;
@@ -704,20 +493,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class CompressionActionUpdate {
-
-        @JSONField(name = "CompressionFormat")
-        String CompressionFormat;
-
-        @JSONField(name = "CompressionTarget")
-        String CompressionTarget;
-
-        @JSONField(name = "CompressionType")
-        List<String> CompressionType;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class CompressionRule {
 
         @JSONField(name = "CompressionAction")
@@ -725,28 +500,6 @@ public class CDN {
 
         @JSONField(name = "Condition")
         Condition Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CompressionRuleUpdate {
-
-        @JSONField(name = "CompressionAction")
-        CompressionActionUpdate CompressionAction;
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class CompressionUpdate {
-
-        @JSONField(name = "CompressionRules")
-        List<CompressionRuleUpdate> CompressionRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
     }
 
     @Data
@@ -775,34 +528,6 @@ public class CDN {
 
         @JSONField(name = "Value")
         String Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ConditionRuleUpdate {
-
-        @JSONField(name = "Object")
-        String Object;
-
-        @JSONField(name = "Operator")
-        String Operator;
-
-        @JSONField(name = "Type")
-        String Type;
-
-        @JSONField(name = "Value")
-        String Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ConditionUpdate {
-
-        @JSONField(name = "ConditionRule")
-        List<ConditionRuleUpdate> ConditionRule;
-
-        @JSONField(name = "Connective")
-        String Connective;
     }
 
     @Data
@@ -844,13 +569,13 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class CustomErrorPageUpdate {
+    public static class DataPoint {
 
-        @JSONField(name = "ErrorPageRule")
-        List<ErrorPageRuleUpdate> ErrorPageRule;
+        @JSONField(name = "TimeStamp")
+        Long TimeStamp;
 
-        @JSONField(name = "Switch")
-        Boolean Switch;
+        @JSONField(name = "Value")
+        Double Value;
     }
 
     @Data
@@ -949,9 +674,6 @@ public class CDN {
         @JSONField(name = "EndTime")
         Long EndTime;
 
-        @JSONField(name = "FileInterval")
-        Long FileInterval;
-
         @JSONField(name = "PageNum")
         Long PageNum;
 
@@ -1021,9 +743,6 @@ public class CDN {
 
         @JSONField(name = "DomainConfig")
         DomainVolcanoDetail DomainConfig;
-
-        @JSONField(name = "ModuleLockConfig")
-        ModuleLockConfig ModuleLockConfig;
     }
 
     @Data
@@ -1138,51 +857,6 @@ public class CDN {
 
         @JSONField(name = "Resources")
         List<NrtDataResource> Resources;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class DescribeCdnDomainTopDataRequest {
-
-        @JSONField(name = "Area")
-        String Area;
-
-        @JSONField(name = "Domain")
-        String Domain;
-
-        @JSONField(name = "EndTime")
-        Long EndTime;
-
-        @JSONField(name = "Item")
-        String Item;
-
-        @JSONField(name = "Metric")
-        String Metric;
-
-        @JSONField(name = "StartTime")
-        Long StartTime;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class DescribeCdnDomainTopDataResponse {
-
-        @JSONField(name = "ResponseMetadata")
-        ResponseMetadata ResponseMetadata;
-
-        @JSONField(name = "Result")
-        DescribeCdnDomainTopDataResult Result;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class DescribeCdnDomainTopDataResult {
-
-        @JSONField(name = "Domain")
-        String Domain;
-
-        @JSONField(name = "TopDataDetails")
-        List<TopDataDetail> TopDataDetails;
     }
 
     @Data
@@ -2230,20 +1904,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class DownloadSpeedLimitActionUpdate {
-
-        @JSONField(name = "SpeedLimitRate")
-        Long SpeedLimitRate;
-
-        @JSONField(name = "SpeedLimitRateAfter")
-        Long SpeedLimitRateAfter;
-
-        @JSONField(name = "SpeedLimitTime")
-        SpeedLimitTimeUpdate SpeedLimitTime;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class DownloadSpeedLimitRule {
 
         @JSONField(name = "Condition")
@@ -2255,32 +1915,10 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class DownloadSpeedLimitRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "DownloadSpeedLimitAction")
-        DownloadSpeedLimitActionUpdate DownloadSpeedLimitAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class DownloadSpeedLimitUpdate {
-
-        @JSONField(name = "DownloadSpeedLimitRules")
-        List<DownloadSpeedLimitRuleUpdate> DownloadSpeedLimitRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class EdgeStatisticalDataResource {
 
         @JSONField(name = "Metrics")
-        List<MetricTimeStampValue> Metrics;
+        List<AccountingData> Metrics;
 
         @JSONField(name = "Name")
         String Name;
@@ -2333,23 +1971,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class ErrorPageActionUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "RedirectCode")
-        String RedirectCode;
-
-        @JSONField(name = "RedirectUrl")
-        String RedirectUrl;
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class ErrorPageRule {
 
         @JSONField(name = "ErrorPageAction")
@@ -2358,26 +1979,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class ErrorPageRuleUpdate {
-
-        @JSONField(name = "ErrorPageAction")
-        ErrorPageActionUpdate ErrorPageAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class ForcedRedirect {
-
-        @JSONField(name = "EnableForcedRedirect")
-        Boolean EnableForcedRedirect;
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ForcedRedirectUpdate {
 
         @JSONField(name = "EnableForcedRedirect")
         Boolean EnableForcedRedirect;
@@ -2414,44 +2016,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class HTTPSUpdate {
-
-        @JSONField(name = "CertInfo")
-        CertInfoUpdate CertInfo;
-
-        @JSONField(name = "DisableHttp")
-        Boolean DisableHttp;
-
-        @JSONField(name = "ForcedRedirect")
-        ForcedRedirectUpdate ForcedRedirect;
-
-        @JSONField(name = "HTTP2")
-        Boolean HTTP2;
-
-        @JSONField(name = "OCSP")
-        Boolean OCSP;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-
-        @JSONField(name = "TlsVersion")
-        List<String> TlsVersion;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class HttpForcedRedirect {
-
-        @JSONField(name = "EnableForcedRedirect")
-        Boolean EnableForcedRedirect;
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class HttpForcedRedirectUpdate {
 
         @JSONField(name = "EnableForcedRedirect")
         Boolean EnableForcedRedirect;
@@ -2487,29 +2052,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class IPv6Update {
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class IpAccessRule {
-
-        @JSONField(name = "Ip")
-        List<String> Ip;
-
-        @JSONField(name = "RuleType")
-        String RuleType;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class IpAccessRuleUpdate {
 
         @JSONField(name = "Ip")
         List<String> Ip;
@@ -2548,20 +2091,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class IpFreqLimitActionUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "FreqLimitRate")
-        Long FreqLimitRate;
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class IpFreqLimitRule {
 
         @JSONField(name = "Condition")
@@ -2569,28 +2098,6 @@ public class CDN {
 
         @JSONField(name = "IpFreqLimitAction")
         IpFreqLimitAction IpFreqLimitAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class IpFreqLimitRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "IpFreqLimitAction")
-        IpFreqLimitActionUpdate IpFreqLimitAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class IpFreqLimitUpdate {
-
-        @JSONField(name = "IpFreqLimitRules")
-        List<IpFreqLimitRuleUpdate> IpFreqLimitRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
     }
 
     @Data
@@ -2614,14 +2121,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class IpSpeedLimitActionUpdate {
-
-        @JSONField(name = "SpeedLimitRate")
-        Long SpeedLimitRate;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class IpSpeedLimitRule {
 
         @JSONField(name = "Condition")
@@ -2629,28 +2128,6 @@ public class CDN {
 
         @JSONField(name = "IpSpeedLimitAction")
         IpSpeedLimitAction IpSpeedLimitAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class IpSpeedLimitRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "IpSpeedLimitAction")
-        IpSpeedLimitActionUpdate IpSpeedLimitAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class IpSpeedLimitUpdate {
-
-        @JSONField(name = "IpSpeedLimitRules")
-        List<IpSpeedLimitRuleUpdate> IpSpeedLimitRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
     }
 
     @Data
@@ -2915,28 +2392,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class MethodDeniedRuleUpdate {
-
-        @JSONField(name = "Methods")
-        String Methods;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class MetricTimeStampValue {
-
-        @JSONField(name = "Metric")
-        String Metric;
-
-        @JSONField(name = "Values")
-        List<TimeStampValue> Values;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class MetricTimestampValue {
 
         @JSONField(name = "Metric")
@@ -2955,41 +2410,6 @@ public class CDN {
 
         @JSONField(name = "Value")
         Double Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ModuleLockConfig {
-
-        @JSONField(name = "CacheKeyLocked")
-        Boolean CacheKeyLocked;
-
-        @JSONField(name = "CacheLocked")
-        Boolean CacheLocked;
-
-        @JSONField(name = "CompressionLocked")
-        Boolean CompressionLocked;
-
-        @JSONField(name = "IpAccessRuleLocked")
-        Boolean IpAccessRuleLocked;
-
-        @JSONField(name = "NegativeCacheLocked")
-        Boolean NegativeCacheLocked;
-
-        @JSONField(name = "OriginLocked")
-        Boolean OriginLocked;
-
-        @JSONField(name = "RefererAccessRuleLocked")
-        Boolean RefererAccessRuleLocked;
-
-        @JSONField(name = "RequestHeaderLocked")
-        Boolean RequestHeaderLocked;
-
-        @JSONField(name = "ResponseHeaderLocked")
-        Boolean ResponseHeaderLocked;
-
-        @JSONField(name = "SignUrlAuthLocked")
-        Boolean SignUrlAuthLocked;
     }
 
     @Data
@@ -3026,31 +2446,6 @@ public class CDN {
 
         @JSONField(name = "Ttl")
         Long Ttl;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class NegativeCacheActionUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-
-        @JSONField(name = "Ttl")
-        Long Ttl;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class NegativeCacheUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "NegativeCacheRule")
-        NegativeCacheActionUpdate NegativeCacheRule;
     }
 
     @Data
@@ -3114,35 +2509,10 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class OriginAccessRuleUpdate {
-
-        @JSONField(name = "AllowEmpty")
-        Boolean AllowEmpty;
-
-        @JSONField(name = "Origins")
-        List<String> Origins;
-
-        @JSONField(name = "RuleType")
-        String RuleType;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class OriginAction {
 
         @JSONField(name = "OriginLines")
         List<OriginLine> OriginLines;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class OriginActionUpdate {
-
-        @JSONField(name = "OriginLines")
-        List<OriginLineUpdate> OriginLines;
     }
 
     @Data
@@ -3155,29 +2525,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class OriginArgActionUpdate {
-
-        @JSONField(name = "OriginArgComponents")
-        List<OriginArgComponentsUpdate> OriginArgComponents;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class OriginArgComponents {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Object")
-        String Object;
-
-        @JSONField(name = "Subobject")
-        String Subobject;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class OriginArgComponentsUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -3202,47 +2550,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class OriginArgRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "OriginArgAction")
-        OriginArgActionUpdate OriginArgAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class OriginLine {
-
-        @JSONField(name = "Address")
-        String Address;
-
-        @JSONField(name = "HttpPort")
-        String HttpPort;
-
-        @JSONField(name = "HttpsPort")
-        String HttpsPort;
-
-        @JSONField(name = "InstanceType")
-        String InstanceType;
-
-        @JSONField(name = "OriginHost")
-        String OriginHost;
-
-        @JSONField(name = "OriginType")
-        String OriginType;
-
-        @JSONField(name = "PrivateBucketAccess")
-        Boolean PrivateBucketAccess;
-
-        @JSONField(name = "Weight")
-        String Weight;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class OriginLineUpdate {
 
         @JSONField(name = "Address")
         String Address;
@@ -3282,17 +2590,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class OriginRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "OriginAction")
-        OriginActionUpdate OriginAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class OriginSni {
 
         @JSONField(name = "SniDomain")
@@ -3304,29 +2601,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class OriginSniUpdate {
-
-        @JSONField(name = "SniDomain")
-        String SniDomain;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class QueryStringComponents {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Value")
-        String Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class QueryStringComponentsUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -3354,23 +2629,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class QueryStringInstanceUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Key")
-        String Key;
-
-        @JSONField(name = "Value")
-        String Value;
-
-        @JSONField(name = "ValueType")
-        String ValueType;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class QueryStringRule {
 
         @JSONField(name = "QueryStringComponents")
@@ -3382,26 +2640,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class QueryStringRuleUpdate {
-
-        @JSONField(name = "QueryStringComponents")
-        QueryStringComponentsUpdate QueryStringComponents;
-
-        @JSONField(name = "QueryStringInstances")
-        List<QueryStringInstanceUpdate> QueryStringInstances;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class Quic {
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class QuicUpdate {
 
         @JSONField(name = "Switch")
         Boolean Switch;
@@ -3432,44 +2671,10 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class RedirectionActionUpdate {
-
-        @JSONField(name = "RedirectCode")
-        String RedirectCode;
-
-        @JSONField(name = "SourcePath")
-        String SourcePath;
-
-        @JSONField(name = "TargetHost")
-        String TargetHost;
-
-        @JSONField(name = "TargetPath")
-        String TargetPath;
-
-        @JSONField(name = "TargetProtocol")
-        String TargetProtocol;
-
-        @JSONField(name = "TargetQueryComponents")
-        TargetQueryComponentsUpdate TargetQueryComponents;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class RedirectionRewrite {
 
         @JSONField(name = "RedirectionRule")
         List<RedirectionRule> RedirectionRule;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RedirectionRewriteUpdate {
-
-        @JSONField(name = "RedirectionRule")
-        List<RedirectionRuleUpdate> RedirectionRule;
 
         @JSONField(name = "Switch")
         Boolean Switch;
@@ -3485,32 +2690,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class RedirectionRuleUpdate {
-
-        @JSONField(name = "RedirectionAction")
-        RedirectionActionUpdate RedirectionAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class RefererAccessRule {
-
-        @JSONField(name = "AllowEmpty")
-        Boolean AllowEmpty;
-
-        @JSONField(name = "Referers")
-        List<String> Referers;
-
-        @JSONField(name = "RuleType")
-        String RuleType;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RefererAccessRuleUpdate {
 
         @JSONField(name = "AllowEmpty")
         Boolean AllowEmpty;
@@ -3569,48 +2749,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class RemoteAuthRuleActionUpdate {
-
-        @JSONField(name = "AuthModeConfig")
-        AuthModeConfigUpdate AuthModeConfig;
-
-        @JSONField(name = "AuthResponseConfig")
-        AuthResponseConfigUpdate AuthResponseConfig;
-
-        @JSONField(name = "QueryStringRules")
-        QueryStringRuleUpdate QueryStringRules;
-
-        @JSONField(name = "RequestBodyRules")
-        String RequestBodyRules;
-
-        @JSONField(name = "RequestHeaderRules")
-        AuthRequestHeaderRuleUpdate RequestHeaderRules;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RemoteAuthRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "RemoteAuthRuleAction")
-        RemoteAuthRuleActionUpdate RemoteAuthRuleAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RemoteAuthUpdate {
-
-        @JSONField(name = "RemoteAuthRules")
-        List<RemoteAuthRuleUpdate> RemoteAuthRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class RequestHeaderAction {
 
         @JSONField(name = "RequestHeaderInstances")
@@ -3619,26 +2757,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class RequestHeaderActionUpdate {
-
-        @JSONField(name = "RequestHeaderInstances")
-        List<RequestHeaderInstanceUpdate> RequestHeaderInstances;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class RequestHeaderComponent {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Value")
-        String Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RequestHeaderComponentUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -3666,23 +2785,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class RequestHeaderInstanceUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Key")
-        String Key;
-
-        @JSONField(name = "Value")
-        String Value;
-
-        @JSONField(name = "ValueType")
-        String ValueType;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class RequestHeaderRule {
 
         @JSONField(name = "Condition")
@@ -3690,17 +2792,6 @@ public class CDN {
 
         @JSONField(name = "RequestHeaderAction")
         RequestHeaderAction RequestHeaderAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class RequestHeaderRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "RequestHeaderAction")
-        RequestHeaderActionUpdate RequestHeaderAction;
     }
 
     @Data
@@ -3724,14 +2815,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class ResponseActionUpdate {
-
-        @JSONField(name = "StatusCode")
-        String StatusCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class ResponseHeaderAction {
 
         @JSONField(name = "ResponseHeaderInstances")
@@ -3740,32 +2823,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class ResponseHeaderActionUpdate {
-
-        @JSONField(name = "ResponseHeaderInstances")
-        List<ResponseHeaderInstanceUpdate> ResponseHeaderInstances;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class ResponseHeaderInstance {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Key")
-        String Key;
-
-        @JSONField(name = "Value")
-        String Value;
-
-        @JSONField(name = "ValueType")
-        String ValueType;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ResponseHeaderInstanceUpdate {
 
         @JSONField(name = "Action")
         String Action;
@@ -3789,17 +2847,6 @@ public class CDN {
 
         @JSONField(name = "ResponseHeaderAction")
         ResponseHeaderAction ResponseHeaderAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class ResponseHeaderRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "ResponseHeaderAction")
-        ResponseHeaderActionUpdate ResponseHeaderAction;
     }
 
     @Data
@@ -3870,38 +2917,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class SignedUrlAuthActionUpdate {
-
-        @JSONField(name = "BackupSecretKey")
-        String BackupSecretKey;
-
-        @JSONField(name = "Duration")
-        Long Duration;
-
-        @JSONField(name = "MasterSecretKey")
-        String MasterSecretKey;
-
-        @JSONField(name = "RewriteM3u8")
-        Boolean RewriteM3u8;
-
-        @JSONField(name = "SignName")
-        String SignName;
-
-        @JSONField(name = "SignatureRule")
-        List<String> SignatureRule;
-
-        @JSONField(name = "TimeFormat")
-        String TimeFormat;
-
-        @JSONField(name = "TimeName")
-        String TimeName;
-
-        @JSONField(name = "URLAuthType")
-        String URLAuthType;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class SignedUrlAuthRule {
 
         @JSONField(name = "Condition")
@@ -3913,43 +2928,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class SignedUrlAuthRuleUpdate {
-
-        @JSONField(name = "Condition")
-        ConditionUpdate Condition;
-
-        @JSONField(name = "SignedUrlAuthAction")
-        SignedUrlAuthActionUpdate SignedUrlAuthAction;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class SignedUrlAuthUpdate {
-
-        @JSONField(name = "SignedUrlAuthRules")
-        List<SignedUrlAuthRuleUpdate> SignedUrlAuthRules;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class SpeedLimitTime {
-
-        @JSONField(name = "BeginTime")
-        String BeginTime;
-
-        @JSONField(name = "DayWeek")
-        String DayWeek;
-
-        @JSONField(name = "EndTime")
-        String EndTime;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class SpeedLimitTimeUpdate {
 
         @JSONField(name = "BeginTime")
         String BeginTime;
@@ -3993,20 +2972,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class StatusCodeActionUpdate {
-
-        @JSONField(name = "DefaultAction")
-        String DefaultAction;
-
-        @JSONField(name = "FailCode")
-        String FailCode;
-
-        @JSONField(name = "SuccessCode")
-        String SuccessCode;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class StopCdnDomainRequest {
 
         @JSONField(name = "Domain")
@@ -4024,9 +2989,6 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class SubmitBlockTaskRequest {
-
-        @JSONField(name = "Persistent")
-        Boolean Persistent;
 
         @JSONField(name = "Urls")
         String Urls;
@@ -4115,9 +3077,6 @@ public class CDN {
     @Accessors(chain = true)
     public static class SubmitUnblockTaskRequest {
 
-        @JSONField(name = "Persistent")
-        Boolean Persistent;
-
         @JSONField(name = "Urls")
         String Urls;
     }
@@ -4154,17 +3113,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class TargetQueryComponentsUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Value")
-        String Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class TimeOutAction {
 
         @JSONField(name = "Action")
@@ -4176,28 +3124,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class TimeOutActionUpdate {
-
-        @JSONField(name = "Action")
-        String Action;
-
-        @JSONField(name = "Time")
-        Long Time;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class TimeStampValue {
-
-        @JSONField(name = "TimeStamp")
-        Long TimeStamp;
-
-        @JSONField(name = "Value")
-        Double Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class TimestampValue {
 
         @JSONField(name = "Timestamp")
@@ -4205,62 +3131,6 @@ public class CDN {
 
         @JSONField(name = "Value")
         Double Value;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class TopDataDetail {
-
-        @JSONField(name = "2xx")
-        Long Status2xx;
-
-        @JSONField(name = "2xxRatio")
-        Double Status2xxRatio;
-
-        @JSONField(name = "3xx")
-        Long Status3xx;
-
-        @JSONField(name = "3xxRatio")
-        Double Status3xxRatio;
-
-        @JSONField(name = "4xx")
-        Long Status4xx;
-
-        @JSONField(name = "4xxRatio")
-        Double Status4xxRatio;
-
-        @JSONField(name = "5xx")
-        Long Status5xx;
-
-        @JSONField(name = "5xxRatio")
-        Double Status5xxRatio;
-
-        @JSONField(name = "Bandwidth")
-        Double Bandwidth;
-
-        @JSONField(name = "BandwidthRatio")
-        Double BandwidthRatio;
-
-        @JSONField(name = "ClientIP")
-        Long ClientIP;
-
-        @JSONField(name = "ClientIPRatio")
-        Double ClientIPRatio;
-
-        @JSONField(name = "Flux")
-        Long Flux;
-
-        @JSONField(name = "FluxRatio")
-        Double FluxRatio;
-
-        @JSONField(name = "Item")
-        String Item;
-
-        @JSONField(name = "PV")
-        Long PV;
-
-        @JSONField(name = "PVRatio")
-        Double PVRatio;
     }
 
     @Data
@@ -4370,64 +3240,64 @@ public class CDN {
     public static class UpdateCdnConfigRequest {
 
         @JSONField(name = "AreaAccessRule")
-        AreaAccessRuleUpdate AreaAccessRule;
+        AreaAccessRule AreaAccessRule;
 
         @JSONField(name = "BandwidthLimit")
-        BandwidthLimitUpdate BandwidthLimit;
+        BandwidthLimit BandwidthLimit;
 
         @JSONField(name = "Cache")
-        List<CacheControlRuleUpdate> Cache;
+        List<CacheControlRule> Cache;
 
         @JSONField(name = "CacheKey")
-        List<CacheKeyGenerationRuleUpdate> CacheKey;
+        List<CacheKeyGenerationRule> CacheKey;
 
         @JSONField(name = "Compression")
-        CompressionUpdate Compression;
+        Compression Compression;
 
         @JSONField(name = "CustomErrorPage")
-        CustomErrorPageUpdate CustomErrorPage;
+        CustomErrorPage CustomErrorPage;
 
         @JSONField(name = "Domain")
         String Domain;
 
         @JSONField(name = "DownloadSpeedLimit")
-        DownloadSpeedLimitUpdate DownloadSpeedLimit;
+        DownloadSpeedLimit DownloadSpeedLimit;
 
         @JSONField(name = "FollowRedirect")
         Boolean FollowRedirect;
 
         @JSONField(name = "HTTPS")
-        HTTPSUpdate HTTPS;
+        HTTPS HTTPS;
 
         @JSONField(name = "HttpForcedRedirect")
-        HttpForcedRedirectUpdate HttpForcedRedirect;
+        HttpForcedRedirect HttpForcedRedirect;
 
         @JSONField(name = "IPv6")
-        IPv6Update IPv6;
+        IPv6 IPv6;
 
         @JSONField(name = "IpAccessRule")
-        IpAccessRuleUpdate IpAccessRule;
+        IpAccessRule IpAccessRule;
 
         @JSONField(name = "IpFreqLimit")
-        IpFreqLimitUpdate IpFreqLimit;
+        IpFreqLimit IpFreqLimit;
 
         @JSONField(name = "IpSpeedLimit")
-        IpSpeedLimitUpdate IpSpeedLimit;
+        IpSpeedLimit IpSpeedLimit;
 
         @JSONField(name = "MethodDeniedRule")
-        MethodDeniedRuleUpdate MethodDeniedRule;
+        MethodDeniedRule MethodDeniedRule;
 
         @JSONField(name = "NegativeCache")
-        List<NegativeCacheUpdate> NegativeCache;
+        List<NegativeCache> NegativeCache;
 
         @JSONField(name = "Origin")
-        List<OriginRuleUpdate> Origin;
+        List<OriginRule> Origin;
 
         @JSONField(name = "OriginAccessRule")
-        OriginAccessRuleUpdate OriginAccessRule;
+        OriginAccessRule OriginAccessRule;
 
         @JSONField(name = "OriginArg")
-        List<OriginArgRuleUpdate> OriginArg;
+        List<OriginArgRule> OriginArg;
 
         @JSONField(name = "OriginHost")
         String OriginHost;
@@ -4439,25 +3309,25 @@ public class CDN {
         Boolean OriginRange;
 
         @JSONField(name = "OriginSni")
-        OriginSniUpdate OriginSni;
+        OriginSni OriginSni;
 
         @JSONField(name = "Quic")
-        QuicUpdate Quic;
+        Quic Quic;
 
         @JSONField(name = "RedirectionRewrite")
-        RedirectionRewriteUpdate RedirectionRewrite;
+        RedirectionRewrite RedirectionRewrite;
 
         @JSONField(name = "RefererAccessRule")
-        RefererAccessRuleUpdate RefererAccessRule;
+        RefererAccessRule RefererAccessRule;
 
         @JSONField(name = "RemoteAuth")
-        RemoteAuthUpdate RemoteAuth;
+        RemoteAuth RemoteAuth;
 
         @JSONField(name = "RequestHeader")
-        List<RequestHeaderRuleUpdate> RequestHeader;
+        List<RequestHeaderRule> RequestHeader;
 
         @JSONField(name = "ResponseHeader")
-        List<ResponseHeaderRuleUpdate> ResponseHeader;
+        List<ResponseHeaderRule> ResponseHeader;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -4466,13 +3336,13 @@ public class CDN {
         String ServiceType;
 
         @JSONField(name = "SignedUrlAuth")
-        SignedUrlAuthUpdate SignedUrlAuth;
+        SignedUrlAuth SignedUrlAuth;
 
         @JSONField(name = "UaAccessRule")
-        UserAgentAccessRuleUpdate UaAccessRule;
+        UserAgentAccessRule UaAccessRule;
 
         @JSONField(name = "VideoDrag")
-        VideoDragUpdate VideoDrag;
+        VideoDrag VideoDrag;
     }
 
     @Data
@@ -4521,32 +3391,7 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class UserAgentAccessRuleUpdate {
-
-        @JSONField(name = "AllowEmpty")
-        Boolean AllowEmpty;
-
-        @JSONField(name = "RuleType")
-        String RuleType;
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-
-        @JSONField(name = "UserAgent")
-        List<String> UserAgent;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class VideoDrag {
-
-        @JSONField(name = "Switch")
-        Boolean Switch;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class VideoDragUpdate {
 
         @JSONField(name = "Switch")
         Boolean Switch;

@@ -317,21 +317,6 @@ public class CDNConfig {
                     }
             ));
 
-            put("DescribeCdnDomainTopData", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "DescribeCdnDomainTopData"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
             put("DescribeCdnService", new ApiInfo(
                     new HashMap<String, Object>() {
                         {

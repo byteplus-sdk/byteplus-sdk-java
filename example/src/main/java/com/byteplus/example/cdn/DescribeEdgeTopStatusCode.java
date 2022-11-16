@@ -11,7 +11,10 @@ public class DescribeEdgeTopStatusCode {
         service.setAccessKey(Utils.ak);
         service.setSecretKey(Utils.sk);
         try {
-            CDN.DescribeEdgeTopStatusCodeRequest req = new CDN.DescribeEdgeTopStatusCodeRequest();
+            CDN.DescribeEdgeTopStatusCodeRequest req = new CDN.DescribeEdgeTopStatusCodeRequest()
+            .setMetric("status_5xx")
+            .setItem("domain")
+            .setDomain(Utils.exampleHost);
             CDN.DescribeEdgeTopStatusCodeResponse resp = service.describeEdgeTopStatusCode(req);
             System.out.println(JSON.toJSONString(resp));
         } catch (Exception e) {

@@ -42,8 +42,6 @@ package com.byteplus.service.cdn;
 
         CDN.DescribeCdnRegionAndIspResponse describeCdnRegionAndIsp(CDN.DescribeCdnRegionAndIspRequest request) throws Exception;
 
-        CDN.DescribeCdnDomainTopDataResponse describeCdnDomainTopData(CDN.DescribeCdnDomainTopDataRequest request) throws Exception;
-
         CDN.DescribeCdnServiceResponse describeCdnService() throws Exception;
 
         CDN.DescribeAccountingDataResponse describeAccountingData(CDN.DescribeAccountingDataRequest request) throws Exception;

@@ -25,7 +25,7 @@ public class RtcConfig {
                             add(new BasicHeader("Accept", "application/json"));
                         }
                     });
-                    put(Const.Credentials, new Credentials(Const.REGION_CN_NORTH_1, "rtc"));
+                    put(Const.Credentials, new Credentials(Const.REGION_AP_SINGAPORE_1, "rtc"));
                 }
             }
     );

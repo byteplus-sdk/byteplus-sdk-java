@@ -40,10 +40,10 @@ public class StartRecordDemo {
                     0
             ));
             startRecordRequest.setFileFormatConfig(startRecordRequest.new FileFormatConfig(new String[]{"MP4"}));
-            startRecordRequest.setStorageConfig(startRecordRequest.new StorageConfig(0, startRecordRequest.new TosConfig(
+            startRecordRequest.setStorageConfig(startRecordRequest.new StorageConfig(0, startRecordRequest.new VodConfig(
                     "Your_AccountId",
                     0,
-                    "Your_Bucket"
+                    "Your_Space"
             )));
 
             StartRecordResponse startRecordResponse = rtcService.startRecord(startRecordRequest);

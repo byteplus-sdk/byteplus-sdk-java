@@ -4,8 +4,6 @@ import com.alibaba.fastjson.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.ArrayList;
-
 @Data
 public class StartRecordRequest {
     @JSONField(name = "AppId")
@@ -89,19 +87,19 @@ public class StartRecordRequest {
     public class StorageConfig {
         @JSONField(name = "Type")
         int Type;
-        @JSONField(name = "TosConfig")
-        TosConfig TosConfig;
+        @JSONField(name = "VodConfig")
+        VodConfig VodConfig;
     }
 
     @Data
     @AllArgsConstructor
-    public class TosConfig {
+    public class VodConfig {
         @JSONField(name = "AccountId")
         String AccountId;
         @JSONField(name = "Region")
         int Region;
-        @JSONField(name = "Bucket")
-        String Bucket;
+        @JSONField(name = "Space")
+        String Space;
     }
 }
 

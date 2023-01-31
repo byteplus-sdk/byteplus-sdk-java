@@ -11,6 +11,8 @@ public class LiveStorageSpaceDemo {
         LiveService liveService = LiveServiceImpl.getInstance();
         liveService.setAccessKey("your accessKey");
         liveService.setSecretKey("your secretKey");
+        listStorageSpaceDemo(liveService);
+        describeLiveStorageSpaceDataDemo(liveService);
     }
 
     public static void listStorageSpaceDemo(LiveService liveService) {

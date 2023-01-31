@@ -156,4 +156,6 @@ public class Const {
     public static final String DescribePullToPushBandwidthData = "DescribePullToPushBandwidthData";
     public static final String ListStorageSpace = "ListStorageSpace";
     public static final String DescribeLiveStorageSpaceData = "DescribeLiveStorageSpaceData";
+    public static final String GeneratePushURL = "GeneratePushURL";
+    public static final String GeneratePlayURL = "GeneratePlayURL";
 }

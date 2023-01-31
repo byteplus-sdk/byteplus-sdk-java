@@ -945,4 +945,42 @@ public class LiveServiceImplTest extends TestCase {
             e.printStackTrace();
         }
     }
+
+    public void testGeneratePushURL() {
+        LiveService liveService = getLiveService();
+        String jsonStr = "{\n" +
+                "    \"Vhost\":\"example.org\",\n" +
+                "    \"Domain\":\"example.org\",\n" +
+                "    \"App\":\"live\",\n" +
+                "    \"Stream\":\"test1\",\n" +
+                "    \"ValidDuration\":3600,\n" +
+                "    \"ExpiredTime\":\"2023-02-06T06:27:06+00:00\"\n" +
+                "}";
+        GeneratePushURLRequest request = JSON.parseObject(jsonStr, GeneratePushURLRequest.class);
+        try {
+            GeneratePushURLResponse response = liveService.generatePushURL(request);
+            System.out.println(JSON.toJSONString(response));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void testGeneratePlayURL() {
+        LiveService liveService = getLiveService();
+        String jsonStr = "{\n" +
+                "    \"Vhost\":\"example.org\",\n" +
+                "    \"Domain\":\"example.org\",\n" +
+                "    \"App\":\"live\",\n" +
+                "    \"Stream\":\"test1\",\n" +
+                "    \"ValidDuration\":3600,\n" +
+                "    \"ExpiredTime\":\"2023-01-30T07:08:30+00:00\"\n" +
+                "}";
+        GeneratePlayURLRequest request = JSON.parseObject(jsonStr, GeneratePlayURLRequest.class);
+        try {
+            GeneratePlayURLResponse response = liveService.generatePlayURL(request);
+            System.out.println(JSON.toJSONString(response));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

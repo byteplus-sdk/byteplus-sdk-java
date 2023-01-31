@@ -945,5 +945,35 @@ public class LiveServiceImpl extends BaseServiceImpl implements LiveService {
         res.getResponseMetadata().setService("live");
         return res;
     }
+    @Override
+    public GeneratePushURLResponse generatePushURL(GeneratePushURLRequest generatePushURLRequest) throws Exception {
+        RawResponse response = json(Const.GeneratePushURL, new ArrayList<>(), JSON.toJSONString(generatePushURLRequest));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        GeneratePushURLResponse res = JSON.parseObject(response.getData(), GeneratePushURLResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
+            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
+        }
+        res.getResponseMetadata().setService("live");
+        return res;
+    }
 
+    @Override
+    public GeneratePlayURLResponse generatePlayURL(GeneratePlayURLRequest generatePlayURLRequest) throws Exception {
+        RawResponse response = json(Const.GeneratePlayURL, new ArrayList<>(), JSON.toJSONString(generatePlayURLRequest));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        GeneratePlayURLResponse res = JSON.parseObject(response.getData(), GeneratePlayURLResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
+            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
+        }
+        res.getResponseMetadata().setService("live");
+        return res;
+    }
 }

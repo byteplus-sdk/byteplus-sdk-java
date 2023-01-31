@@ -408,11 +408,27 @@ public interface LiveService extends IBaseService {
          * @throws Exception
          */
     ListStorageSpaceResponse listStorageSpace(ListStorageSpaceRequest listStorageSpaceRequest) throws Exception;
-   /**
+    /**
+     *
+     * @param describeLiveStorageSpaceDataRequest
+     * @return
+     * @throws Exception
+     */
+    DescribeLiveStorageSpaceDataResponse describeLiveStorageSpaceData(DescribeLiveStorageSpaceDataRequest describeLiveStorageSpaceDataRequest) throws Exception;
+
+    /**
     *
-    * @param describeLiveStorageSpaceDataRequest
+    * @param generatePushURLRequest
     * @return
     * @throws Exception
     */
-   DescribeLiveStorageSpaceDataResponse describeLiveStorageSpaceData(DescribeLiveStorageSpaceDataRequest describeLiveStorageSpaceDataRequest) throws Exception;
+   GeneratePushURLResponse generatePushURL(GeneratePushURLRequest generatePushURLRequest) throws Exception;
+
+    /**
+     *
+     * @param generatePlayURLRequest
+     * @return
+     * @throws Exception
+     */
+    GeneratePlayURLResponse generatePlayURL(GeneratePlayURLRequest generatePlayURLRequest) throws Exception;
 }

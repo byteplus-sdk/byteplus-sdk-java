@@ -845,6 +845,36 @@ public class LiveConfig {
                         }
                     }
             ));
+            put(Const.GeneratePushURL, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.GeneratePushURL));
+                                    add(new BasicNameValuePair("Version", Const.LiveSDKVersion));
+
+                                }
+                            });
+                        }
+                    }
+            ));
+            put(Const.GeneratePlayURL, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.GeneratePlayURL));
+                                    add(new BasicNameValuePair("Version", Const.LiveSDKVersion));
+
+                                }
+                            });
+                        }
+                    }
+            ));
         }
     };
 }

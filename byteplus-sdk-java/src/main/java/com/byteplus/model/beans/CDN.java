@@ -63,15 +63,7 @@ public class CDN {
         ResponseMetadata ResponseMetadata;
 
         @JSONField(name = "Result")
-        AddCdnCertificateResult Result;
-    }
-
-    @Data
-    @Accessors(chain = true)
-    public static class AddCdnCertificateResult {
-
-        @JSONField(name = "AddCdnCertificateResult")
-        String AddCdnCertificateResult;
+        String Result;
     }
 
     @Data
@@ -107,6 +99,9 @@ public class CDN {
 
         @JSONField(name = "HTTPS")
         HTTPS HTTPS;
+
+        @JSONField(name = "HeaderLogging")
+        HeaderLog HeaderLogging;
 
         @JSONField(name = "HttpForcedRedirect")
         HttpForcedRedirect HttpForcedRedirect;
@@ -168,6 +163,9 @@ public class CDN {
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
+        @JSONField(name = "ResourceTags")
+        List<ResourceTag> ResourceTags;
+
         @JSONField(name = "ResponseHeader")
         List<ResponseHeaderRule> ResponseHeader;
 
@@ -179,6 +177,12 @@ public class CDN {
 
         @JSONField(name = "SignedUrlAuth")
         SignedUrlAuth SignedUrlAuth;
+
+        @JSONField(name = "Sparrow")
+        Sparrow Sparrow;
+
+        @JSONField(name = "Timeout")
+        TimeoutArg Timeout;
 
         @JSONField(name = "UaAccessRule")
         UserAgentAccessRule UaAccessRule;
@@ -365,6 +369,9 @@ public class CDN {
 
         @JSONField(name = "Action")
         String Action;
+
+        @JSONField(name = "DefaultPolicy")
+        String DefaultPolicy;
 
         @JSONField(name = "IgnoreCase")
         Boolean IgnoreCase;
@@ -565,6 +572,28 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CustomVariableInstance {
+
+        @JSONField(name = "Operator")
+        String Operator;
+
+        @JSONField(name = "Type")
+        String Type;
+
+        @JSONField(name = "Value")
+        String Value;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CustomVariableRules {
+
+        @JSONField(name = "CustomVariableInstances")
+        List<CustomVariableInstance> CustomVariableInstances;
     }
 
     @Data
@@ -1120,11 +1149,17 @@ public class CDN {
     @Accessors(chain = true)
     public static class DescribeContentQuotaResult {
 
+        @JSONField(name = "PreloadLimit")
+        Long PreloadLimit;
+
         @JSONField(name = "PreloadQuota")
         Long PreloadQuota;
 
         @JSONField(name = "PreloadRemain")
         Long PreloadRemain;
+
+        @JSONField(name = "RefreshDirLimit")
+        Long RefreshDirLimit;
 
         @JSONField(name = "RefreshDirQuota")
         Long RefreshDirQuota;
@@ -1134,6 +1169,9 @@ public class CDN {
 
         @JSONField(name = "RefreshQuota")
         Long RefreshQuota;
+
+        @JSONField(name = "RefreshQuotaLimit")
+        Long RefreshQuotaLimit;
 
         @JSONField(name = "RefreshRemain")
         Long RefreshRemain;
@@ -1792,6 +1830,9 @@ public class CDN {
         @JSONField(name = "HTTPS")
         HTTPS HTTPS;
 
+        @JSONField(name = "HeaderLogging")
+        HeaderLog HeaderLogging;
+
         @JSONField(name = "HttpForcedRedirect")
         HttpForcedRedirect HttpForcedRedirect;
 
@@ -1806,6 +1847,9 @@ public class CDN {
 
         @JSONField(name = "IpSpeedLimit")
         IpSpeedLimit IpSpeedLimit;
+
+        @JSONField(name = "LockStatus")
+        String LockStatus;
 
         @JSONField(name = "MethodDeniedRule")
         MethodDeniedRule MethodDeniedRule;
@@ -1864,8 +1908,14 @@ public class CDN {
         @JSONField(name = "SignedUrlAuth")
         SignedUrlAuth SignedUrlAuth;
 
+        @JSONField(name = "Sparrow")
+        Sparrow Sparrow;
+
         @JSONField(name = "Status")
         String Status;
+
+        @JSONField(name = "Timeout")
+        TimeoutArg Timeout;
 
         @JSONField(name = "UaAccessRule")
         UserAgentAccessRule UaAccessRule;
@@ -2012,6 +2062,17 @@ public class CDN {
 
         @JSONField(name = "TlsVersion")
         List<String> TlsVersion;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class HeaderLog {
+
+        @JSONField(name = "HeaderLogging")
+        String HeaderLogging;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
     }
 
     @Data
@@ -2441,6 +2502,9 @@ public class CDN {
         @JSONField(name = "Action")
         String Action;
 
+        @JSONField(name = "IgnoreCase")
+        Boolean IgnoreCase;
+
         @JSONField(name = "StatusCode")
         String StatusCode;
 
@@ -2573,6 +2637,9 @@ public class CDN {
         @JSONField(name = "PrivateBucketAccess")
         Boolean PrivateBucketAccess;
 
+        @JSONField(name = "PrivateBucketAuth")
+        PrivateBucketAuth PrivateBucketAuth;
+
         @JSONField(name = "Weight")
         String Weight;
     }
@@ -2597,6 +2664,20 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class PrivateBucketAuth {
+
+        @JSONField(name = "AuthType")
+        String AuthType;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+
+        @JSONField(name = "TosAuthInformation")
+        TosAuthInformation TosAuthInformation;
     }
 
     @Data
@@ -2825,6 +2906,9 @@ public class CDN {
     @Accessors(chain = true)
     public static class ResponseHeaderInstance {
 
+        @JSONField(name = "AccessOriginControl")
+        Boolean AccessOriginControl;
+
         @JSONField(name = "Action")
         String Action;
 
@@ -2890,6 +2974,9 @@ public class CDN {
         @JSONField(name = "BackupSecretKey")
         String BackupSecretKey;
 
+        @JSONField(name = "CustomVariableRules")
+        CustomVariableRules CustomVariableRules;
+
         @JSONField(name = "Duration")
         Long Duration;
 
@@ -2924,6 +3011,42 @@ public class CDN {
 
         @JSONField(name = "SignedUrlAuthAction")
         SignedUrlAuthAction SignedUrlAuthAction;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class Sparrow {
+
+        @JSONField(name = "SparrowRules")
+        List<SparrowRule> SparrowRules;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class SparrowAction {
+
+        @JSONField(name = "Action")
+        String Action;
+
+        @JSONField(name = "IgnoreCase")
+        Boolean IgnoreCase;
+
+        @JSONField(name = "SparrowID")
+        String SparrowID;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class SparrowRule {
+
+        @JSONField(name = "Condition")
+        Condition Condition;
+
+        @JSONField(name = "SparrowAction")
+        SparrowAction SparrowAction;
     }
 
     @Data
@@ -3124,6 +3247,39 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class TimeoutAction {
+
+        @JSONField(name = "HttpTimeout")
+        Long HttpTimeout;
+
+        @JSONField(name = "TcpTimeout")
+        Long TcpTimeout;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class TimeoutArg {
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+
+        @JSONField(name = "TimeoutRules")
+        List<TimeoutRule> TimeoutRules;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class TimeoutRule {
+
+        @JSONField(name = "Condition")
+        Condition Condition;
+
+        @JSONField(name = "TimeoutAction")
+        TimeoutAction TimeoutAction;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class TimestampValue {
 
         @JSONField(name = "Timestamp")
@@ -3237,6 +3393,23 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class TosAuthInformation {
+
+        @JSONField(name = "RoleAccountId")
+        String RoleAccountId;
+
+        @JSONField(name = "RoleName")
+        String RoleName;
+
+        @JSONField(name = "RolePassAccountId")
+        String RolePassAccountId;
+
+        @JSONField(name = "RolePassName")
+        String RolePassName;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class UpdateCdnConfigRequest {
 
         @JSONField(name = "AreaAccessRule")
@@ -3268,6 +3441,9 @@ public class CDN {
 
         @JSONField(name = "HTTPS")
         HTTPS HTTPS;
+
+        @JSONField(name = "HeaderLogging")
+        HeaderLog HeaderLogging;
 
         @JSONField(name = "HttpForcedRedirect")
         HttpForcedRedirect HttpForcedRedirect;
@@ -3337,6 +3513,12 @@ public class CDN {
 
         @JSONField(name = "SignedUrlAuth")
         SignedUrlAuth SignedUrlAuth;
+
+        @JSONField(name = "Sparrow")
+        Sparrow Sparrow;
+
+        @JSONField(name = "Timeout")
+        TimeoutArg Timeout;
 
         @JSONField(name = "UaAccessRule")
         UserAgentAccessRule UaAccessRule;

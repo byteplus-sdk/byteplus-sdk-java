@@ -2668,6 +2668,17 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class OriginTimeoutAction {
+
+        @JSONField(name = "HttpTimeout")
+        Long HttpTimeout;
+
+        @JSONField(name = "TcpTimeout")
+        Long TcpTimeout;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class PrivateBucketAuth {
 
         @JSONField(name = "AuthType")
@@ -3247,17 +3258,6 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
-    public static class TimeoutAction {
-
-        @JSONField(name = "HttpTimeout")
-        Long HttpTimeout;
-
-        @JSONField(name = "TcpTimeout")
-        Long TcpTimeout;
-    }
-
-    @Data
-    @Accessors(chain = true)
     public static class TimeoutArg {
 
         @JSONField(name = "Switch")
@@ -3275,7 +3275,7 @@ public class CDN {
         Condition Condition;
 
         @JSONField(name = "TimeoutAction")
-        TimeoutAction TimeoutAction;
+        OriginTimeoutAction TimeoutAction;
     }
 
     @Data

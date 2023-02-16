@@ -667,6 +667,9 @@ public class CDN {
         @JSONField(name = "Metric")
         String Metric;
 
+        @JSONField(name = "Project")
+        String Project;
+
         @JSONField(name = "Protocol")
         String Protocol;
 
@@ -859,6 +862,9 @@ public class CDN {
         @JSONField(name = "Metric")
         String Metric;
 
+        @JSONField(name = "Project")
+        String Project;
+
         @JSONField(name = "Protocol")
         String Protocol;
 
@@ -916,6 +922,9 @@ public class CDN {
         @JSONField(name = "Metric")
         String Metric;
 
+        @JSONField(name = "Project")
+        String Project;
+
         @JSONField(name = "StartTime")
         Long StartTime;
     }
@@ -945,6 +954,9 @@ public class CDN {
 
         @JSONField(name = "Area")
         String Area;
+
+        @JSONField(name = "Feature")
+        String Feature;
     }
 
     @Data
@@ -1242,6 +1254,54 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DescribeDistrictIspDataRequest {
+
+        @JSONField(name = "Aggregate")
+        String Aggregate;
+
+        @JSONField(name = "Domain")
+        String Domain;
+
+        @JSONField(name = "EndTime")
+        Long EndTime;
+
+        @JSONField(name = "Interval")
+        String Interval;
+
+        @JSONField(name = "IpVersion")
+        String IpVersion;
+
+        @JSONField(name = "Metric")
+        String Metric;
+
+        @JSONField(name = "Protocol")
+        String Protocol;
+
+        @JSONField(name = "StartTime")
+        Long StartTime;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeDistrictIspDataResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeDistrictIspDataResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeDistrictIspDataResult {
+
+        @JSONField(name = "Resources")
+        List<DomainNrtDetailData> Resources;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DescribeEdgeNrtDataSummaryRequest {
 
         @JSONField(name = "Aggregate")
@@ -1273,6 +1333,9 @@ public class CDN {
 
         @JSONField(name = "Metric")
         String Metric;
+
+        @JSONField(name = "Project")
+        String Project;
 
         @JSONField(name = "Protocol")
         String Protocol;
@@ -1375,6 +1438,9 @@ public class CDN {
 
         @JSONField(name = "Metric")
         String Metric;
+
+        @JSONField(name = "Project")
+        String Project;
 
         @JSONField(name = "StartTime")
         Long StartTime;
@@ -1480,6 +1546,9 @@ public class CDN {
 
         @JSONField(name = "Metric")
         String Metric;
+
+        @JSONField(name = "Project")
+        String Project;
 
         @JSONField(name = "StartTime")
         Long StartTime;
@@ -1602,6 +1671,9 @@ public class CDN {
         @JSONField(name = "Metric")
         String Metric;
 
+        @JSONField(name = "Project")
+        String Project;
+
         @JSONField(name = "Protocol")
         String Protocol;
 
@@ -1656,6 +1728,9 @@ public class CDN {
         @JSONField(name = "Metric")
         String Metric;
 
+        @JSONField(name = "Project")
+        String Project;
+
         @JSONField(name = "StartTime")
         Long StartTime;
     }
@@ -1709,6 +1784,9 @@ public class CDN {
 
         @JSONField(name = "Metric")
         String Metric;
+
+        @JSONField(name = "Project")
+        String Project;
 
         @JSONField(name = "StartTime")
         Long StartTime;
@@ -1788,6 +1866,17 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DomainNrtDetailData {
+
+        @JSONField(name = "DataDetails")
+        List<NrtDataDetails> DataDetails;
+
+        @JSONField(name = "Name")
+        String Name;
     }
 
     @Data

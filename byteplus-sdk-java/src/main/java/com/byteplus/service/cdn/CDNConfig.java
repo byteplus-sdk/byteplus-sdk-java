@@ -212,6 +212,21 @@ public class CDNConfig {
                     }
             ));
 
+            put("DescribeDistrictIspData", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeDistrictIspData"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
             put("DescribeEdgeStatisticalData", new ApiInfo(
                     new HashMap<String, Object>() {
                         {

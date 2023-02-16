@@ -17,8 +17,8 @@ public class ConversionDemo {
         SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("testAK");
-        smsService.setSecretKey("testSK");
+        smsService.setAccessKey("AccessKey");
+        smsService.setSecretKey("SecretKey");
         ConversionRequest req = new ConversionRequest();
         List<String> messageIDs = new ArrayList<>();
         messageIDs.add("test_msg_id");

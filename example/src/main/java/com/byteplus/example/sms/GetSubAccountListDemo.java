@@ -16,8 +16,8 @@ public class GetSubAccountListDemo {
         SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("AKAPNzBkZTI2YjZiM2NkNDI0ZTk5YmZkOGM4ODFhZDFjODI");
-        smsService.setSecretKey("WlRJNU1UVmtZVGd4WVROa05EUTBNMkk0TWprNVlqRmxPRFZsTldFMll6aw==");
+        smsService.setAccessKey("AccessKey");
+        smsService.setSecretKey("SecretKey");
 
         GetSubAccountListRequest req = new GetSubAccountListRequest();
         req.setPageIndex(1);

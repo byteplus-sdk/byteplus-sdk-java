@@ -128,6 +128,15 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
     }
 
     @Override
+    public CDN.DescribeDistrictIspDataResponse describeDistrictIspData(CDN.DescribeDistrictIspDataRequest request) throws Exception {
+        RawResponse response = json("DescribeDistrictIspData", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeDistrictIspDataResponse.class);
+    }
+
+    @Override
     public CDN.DescribeEdgeStatisticalDataResponse describeEdgeStatisticalData(CDN.DescribeEdgeStatisticalDataRequest request) throws Exception {
         RawResponse response = json("DescribeEdgeStatisticalData", null, JSON.toJSONString(request));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {
@@ -188,15 +197,6 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
             throw response.getException();
         }
         return JSON.parseObject(response.getData(), CDN.DescribeCdnRegionAndIspResponse.class);
-    }
-
-    @Override
-    public CDN.DescribeCdnDomainTopDataResponse describeCdnDomainTopData(CDN.DescribeCdnDomainTopDataRequest request) throws Exception {
-        RawResponse response = json("DescribeCdnDomainTopData", null, JSON.toJSONString(request));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        return JSON.parseObject(response.getData(), CDN.DescribeCdnDomainTopDataResponse.class);
     }
 
     @Override
@@ -314,5 +314,50 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
             throw response.getException();
         }
         return JSON.parseObject(response.getData(), CDN.DescribeCdnUpperIpResponse.class);
+    }
+
+    @Override
+    public CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception {
+        RawResponse response = json("AddCdnCertificate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddCdnCertificateResponse.class);
+    }
+
+    @Override
+    public CDN.ListCertInfoResponse listCertInfo(CDN.ListCertInfoRequest request) throws Exception {
+        RawResponse response = json("ListCertInfo", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListCertInfoResponse.class);
+    }
+
+    @Override
+    public CDN.ListCdnCertInfoResponse listCdnCertInfo(CDN.ListCdnCertInfoRequest request) throws Exception {
+        RawResponse response = json("ListCdnCertInfo", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListCdnCertInfoResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeCertConfigResponse describeCertConfig(CDN.DescribeCertConfigRequest request) throws Exception {
+        RawResponse response = json("DescribeCertConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeCertConfigResponse.class);
+    }
+
+    @Override
+    public CDN.BatchDeployCertResponse batchDeployCert(CDN.BatchDeployCertRequest request) throws Exception {
+        RawResponse response = json("BatchDeployCert", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.BatchDeployCertResponse.class);
     }
 }

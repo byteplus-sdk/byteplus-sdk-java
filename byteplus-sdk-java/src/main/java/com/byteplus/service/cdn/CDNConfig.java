@@ -17,7 +17,7 @@ public class CDNConfig {
     public static ServiceInfo serviceInfo = new ServiceInfo(
             new HashMap<String, Object>() {
                 {
-                    put(Const.CONNECTION_TIMEOUT, 5000);
+                    put(Const.CONNECTION_TIMEOUT, 30000);
                     put(Const.SOCKET_TIMEOUT, 30000);
                     put(Const.Host, "open.byteplusapi.com");
                     put(Const.Header, new ArrayList<Header>() {
@@ -25,7 +25,7 @@ public class CDNConfig {
                             add(new BasicHeader("Accept", "application/json"));
                         }
                     });
-                    put(Const.Credentials, new Credentials(Const.REGION_CN_NORTH_1, "CDN"));
+                    put(Const.Credentials, new Credentials(Const.REGION_AP_SINGAPORE_1, "CDN"));
                 }
             }
     );
@@ -212,6 +212,21 @@ public class CDNConfig {
                     }
             ));
 
+            put("DescribeDistrictIspData", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeDistrictIspData"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
             put("DescribeEdgeStatisticalData", new ApiInfo(
                     new HashMap<String, Object>() {
                         {
@@ -310,21 +325,6 @@ public class CDNConfig {
                             put(Const.Query, new ArrayList<NameValuePair>() {
                                 {
                                     add(new BasicNameValuePair("Action", "DescribeCdnRegionAndIsp"));
-                                    add(new BasicNameValuePair("Version", "2021-03-01"));
-                                }
-                            });
-                        }
-                    }
-            ));
-
-            put("DescribeCdnDomainTopData", new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", "DescribeCdnDomainTopData"));
                                     add(new BasicNameValuePair("Version", "2021-03-01"));
                                 }
                             });
@@ -526,6 +526,83 @@ public class CDNConfig {
                         }
                     }
             ));
+
+            put("AddCdnCertificate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "AddCdnCertificate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("ListCertInfo", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "ListCertInfo"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("ListCdnCertInfo", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "ListCdnCertInfo"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DescribeCertConfig", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeCertConfig"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("BatchDeployCert", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "BatchDeployCert"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+
         }
     };
 }

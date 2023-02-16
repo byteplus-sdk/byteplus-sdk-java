@@ -5,19 +5,17 @@ import com.byteplus.model.beans.CDN;
 import com.byteplus.service.cdn.CDNService;
 import com.byteplus.service.cdn.impl.CDNServiceImpl;
 
-public class DescribeCdnAccountingData {
+public class DescribeOriginTopNrtData {
     public static void main(String[] args) {
         CDNService service = CDNServiceImpl.getInstance();
         service.setAccessKey(Utils.ak);
         service.setSecretKey(Utils.sk);
         try {
-            CDN.DescribeAccountingDataRequest req = new CDN.DescribeAccountingDataRequest()
-                .setDomain(Utils.exampleHost)
-                .setStartTime(Utils.startTime)
-                .setEndTime(Utils.endTime)
-                .setMetric("flux");
-
-            CDN.DescribeAccountingDataResponse resp = service.describeAccountingData(req);
+            CDN.DescribeOriginTopNrtDataRequest req = new CDN.DescribeOriginTopNrtDataRequest()
+                    .setMetric("flux")
+                    .setItem("domain")
+                    .setDomain(Utils.exampleHost);
+            CDN.DescribeOriginTopNrtDataResponse resp = service.describeOriginTopNrtData(req);
             System.out.println(JSON.toJSONString(resp));
         } catch (Exception e) {
             e.printStackTrace();

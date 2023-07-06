@@ -61,49 +61,7 @@ public abstract class BaseServiceImpl implements IBaseService {
     }
 
     public BaseServiceImpl(ServiceInfo info, Map<String, ApiInfo> apiInfoList) {
-        this.serviceInfo = info;
-        this.apiInfoList = apiInfoList;
-        this.ISigner = new SignerV4Impl();
-
-        this.httpClient = HttpClientFactory.create(new ClientConfiguration());
-
-        String accessKey = System.getenv(Const.ACCESS_KEY);
-        String secretKey = System.getenv(Const.SECRET_KEY);
-
-        if (accessKey != null && !accessKey.equals("") && secretKey != null && !secretKey.equals("")) {
-            info.getCredentials().setAccessKeyID(accessKey);
-            info.getCredentials().setSecretAccessKey(secretKey);
-        } else {
-            File file = new File(System.getenv("HOME") + "/.byteplus/config");
-            if (file.exists()) {
-                try {
-                    long length = file.length();
-                    byte[] content = new byte[(int) length];
-                    FileInputStream in = new FileInputStream(file);
-                    in.read(content);
-                    in.close();
-                    Credentials credentials = JSON.parseObject(content, Credentials.class);
-                    if (credentials.getAccessKeyID() != null) {
-                        info.getCredentials().setAccessKeyID(credentials.getAccessKeyID());
-                    }
-                    if (credentials.getSecretAccessKey() != null) {
-                        info.getCredentials().setSecretAccessKey(credentials.getSecretAccessKey());
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    LOG.error("Read file " + file.getName() + " fail.");
-                    this.VERSION = "";
-                }
-            }
-        }
-
-        final Properties properties = new Properties();
-        try {
-            properties.load(this.getClass().getClassLoader().getResourceAsStream("version"));
-            this.VERSION = properties.getProperty("version");
-        } catch (IOException e) {
-            LOG.error("Read file version file fail.");
-        }
+        this(info, null, apiInfoList);
     }
 
     public BaseServiceImpl(ServiceInfo info, HttpHost proxy, Map<String, ApiInfo> apiInfoList) {
@@ -124,6 +82,19 @@ public abstract class BaseServiceImpl implements IBaseService {
         init(info);
     }
 
+    public void destroy() {
+        if (monitorThread == null) {
+            return;
+        }
+        try {
+            monitorThread.shutdown();
+        }catch (Error e) {
+            LOG.error("Try to destroy monitor thread failed", e);
+        } finally {
+            monitorThread = null;
+        }
+    }
+
     private void init(ServiceInfo info) {
         String accessKey = System.getenv(Const.ACCESS_KEY);
         String secretKey = System.getenv(Const.SECRET_KEY);
@@ -132,7 +103,7 @@ public abstract class BaseServiceImpl implements IBaseService {
             this.credentials.setAccessKeyID(accessKey);
             this.credentials.setSecretAccessKey(secretKey);
         } else {
-            File file = new File(System.getenv("HOME") + "/.volc/config");
+            File file = new File(System.getenv("HOME") + "/.byteplus/config");
             if (file.exists()) {
                 try {
                     long length = file.length();

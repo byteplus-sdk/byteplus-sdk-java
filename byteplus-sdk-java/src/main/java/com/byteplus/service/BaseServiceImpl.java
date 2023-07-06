@@ -7,6 +7,7 @@ import com.byteplus.error.SdkError;
 import com.byteplus.helper.Const;
 import com.byteplus.http.ClientConfiguration;
 import com.byteplus.http.HttpClientFactory;
+import com.byteplus.http.IdleConnectionMonitorThread;
 import com.byteplus.model.ApiInfo;
 import com.byteplus.model.Credentials;
 import com.byteplus.model.ServiceInfo;
@@ -19,10 +20,7 @@ import com.byteplus.util.Sts2Utils;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.http.Header;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
+import org.apache.http.*;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -54,23 +52,56 @@ public abstract class BaseServiceImpl implements IBaseService {
     private int socketTimeout;
     private int connectionTimeout;
 
+    private IdleConnectionMonitorThread monitorThread;
+
+    private Credentials credentials;
+
 
     private BaseServiceImpl() {
     }
 
     public BaseServiceImpl(ServiceInfo info, Map<String, ApiInfo> apiInfoList) {
+        this(info, null, apiInfoList);
+    }
+
+    public BaseServiceImpl(ServiceInfo info, HttpHost proxy, Map<String, ApiInfo> apiInfoList) {
         this.serviceInfo = info;
         this.apiInfoList = apiInfoList;
         this.ISigner = new SignerV4Impl();
 
-        this.httpClient = HttpClientFactory.create(new ClientConfiguration());
+        HttpClientFactory.ClientInstance clientInstance = HttpClientFactory.create(new ClientConfiguration(), proxy);
+        this.httpClient = clientInstance.getHttpClient();
+        this.monitorThread = clientInstance.getDaemonThread();
+        this.credentials = new Credentials();
+        this.credentials.setService(info.getCredentials().getService());
+        this.credentials.setRegion(info.getCredentials().getRegion());
+        this.credentials.setAccessKeyID(info.getCredentials().getAccessKeyID());
+        this.credentials.setSecretAccessKey(info.getCredentials().getSecretAccessKey());
+        this.credentials.setSessionToken(info.getCredentials().getSessionToken());
 
+        init(info);
+    }
+
+    public void destroy() {
+        if (monitorThread == null) {
+            return;
+        }
+        try {
+            monitorThread.shutdown();
+        }catch (Error e) {
+            LOG.error("Try to destroy monitor thread failed", e);
+        } finally {
+            monitorThread = null;
+        }
+    }
+
+    private void init(ServiceInfo info) {
         String accessKey = System.getenv(Const.ACCESS_KEY);
         String secretKey = System.getenv(Const.SECRET_KEY);
 
         if (accessKey != null && !accessKey.equals("") && secretKey != null && !secretKey.equals("")) {
-            info.getCredentials().setAccessKeyID(accessKey);
-            info.getCredentials().setSecretAccessKey(secretKey);
+            this.credentials.setAccessKeyID(accessKey);
+            this.credentials.setSecretAccessKey(secretKey);
         } else {
             File file = new File(System.getenv("HOME") + "/.byteplus/config");
             if (file.exists()) {
@@ -82,10 +113,10 @@ public abstract class BaseServiceImpl implements IBaseService {
                     in.close();
                     Credentials credentials = JSON.parseObject(content, Credentials.class);
                     if (credentials.getAccessKeyID() != null) {
-                        info.getCredentials().setAccessKeyID(credentials.getAccessKeyID());
+                        this.credentials.setAccessKeyID(credentials.getAccessKeyID());
                     }
                     if (credentials.getSecretAccessKey() != null) {
-                        info.getCredentials().setSecretAccessKey(credentials.getSecretAccessKey());
+                        this.credentials.setSecretAccessKey(credentials.getSecretAccessKey());
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -103,6 +134,7 @@ public abstract class BaseServiceImpl implements IBaseService {
             LOG.error("Read file version file fail.");
         }
     }
+
 
     @Override
     public String getSignUrl(String api, List<NameValuePair> params) throws Exception {

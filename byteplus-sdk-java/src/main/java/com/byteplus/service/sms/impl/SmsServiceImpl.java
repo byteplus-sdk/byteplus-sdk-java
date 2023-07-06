@@ -9,19 +9,29 @@ import com.byteplus.model.response.*;
 import com.byteplus.service.BaseServiceImpl;
 import com.byteplus.service.sms.SmsConfig;
 import com.byteplus.service.sms.SmsService;
+import com.byteplus.service.sms.SmsServiceInfo;
+import com.byteplus.service.sms.SmsServiceInfoConfig;
 import com.byteplus.util.ConvertUtils;
+import org.apache.http.HttpHost;
 import org.apache.http.NameValuePair;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
 
+
+    //用户多账户时使用
+    private static final ConcurrentHashMap<String,SmsService> instanceMap = new ConcurrentHashMap<>();
     private SmsServiceImpl() {
         super(SmsConfig.serviceInfoMap.get(Const.REGION_CN_NORTH_1), SmsConfig.apiInfoList);
     }
     private SmsServiceImpl(ServiceInfo serviceInfo) {
         super(serviceInfo, SmsConfig.apiInfoList);
+    }
+    private SmsServiceImpl(ServiceInfo serviceInfo, HttpHost proxy) {
+        super(serviceInfo, proxy, SmsConfig.apiInfoList);
     }
 
     public static SmsService getInstance() {
@@ -42,6 +52,26 @@ public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
             throw new Exception("ServiceInfo is null");
         }
         return new SmsServiceImpl(serviceInfo);
+    }
+
+    public static SmsService getInstance(SmsServiceInfoConfig config) {
+        String key = config.getAccessKey();
+        if (instanceMap.get(key) == null) {
+            ServiceInfo serviceInfo = new SmsServiceInfo(config).GetServiceInfo();
+            synchronized (instanceMap) {
+                if (instanceMap.get(key) == null) {
+                    if (config.getProxy() == null) {
+                        SmsService smsService = new SmsServiceImpl(serviceInfo);
+                        instanceMap.putIfAbsent(key, smsService);
+                    } else {
+                        SmsService smsService = new SmsServiceImpl(serviceInfo, config.getProxy());
+                        instanceMap.putIfAbsent(key, smsService);
+                    }
+
+                }
+            }
+        }
+        return instanceMap.get(key);
     }
 
     @Override

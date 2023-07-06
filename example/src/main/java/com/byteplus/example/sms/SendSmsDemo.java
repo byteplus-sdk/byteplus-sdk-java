@@ -16,7 +16,7 @@ public class SendSmsDemo {
         // We suggest using Singleton design model to get the instance.
         // And using the Singleton instance to call functions
 
-        // call below method if you dont set ak and sk in ～/.vcloud/config
+        // call below method if you dont set ak and sk in ～/.byteplus/config
 
         SmsSendRequest req = new SmsSendRequest();
         req.setFrom("BytePlus");

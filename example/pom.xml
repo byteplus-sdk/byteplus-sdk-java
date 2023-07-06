@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.byteplus</groupId>
-    <version>LATEST</version>
+    <version>1.1.1</version>
     <artifactId>example</artifactId>
 
     <properties>

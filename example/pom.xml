@@ -26,12 +26,6 @@
             <artifactId>byteplus-sdk-java</artifactId>
             <version>1.1.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.byteplus</groupId>
-            <artifactId>byteplus-sdk-java</artifactId>
-            <version>1.1.1</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <build>

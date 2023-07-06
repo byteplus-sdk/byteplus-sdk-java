@@ -1,22 +1,22 @@
 package com.byteplus.example.sms;
 
 import com.alibaba.fastjson.JSON;
+import com.byteplus.model.request.GetSubAccountListRequest;
 import com.byteplus.model.request.SmsSendRequest;
 import com.byteplus.model.response.SmsSendResponse;
 import com.byteplus.service.sms.SmsService;
+import com.byteplus.service.sms.SmsServiceInfoConfig;
 import com.byteplus.service.sms.impl.SmsServiceImpl;
 
 public class SendSmsDemo {
+    private static SmsService smsService = SmsServiceImpl.getInstance(new SmsServiceInfoConfig("ak", "sk"));
 
     public static void main(String[] args) throws Exception {
         // Make sure only get instance once throughout the entire running program.
         // We suggest using Singleton design model to get the instance.
         // And using the Singleton instance to call functions
-        SmsService smsService = SmsServiceImpl.getInstance("ap-singapore-1");
 
         // call below method if you dont set ak and sk in ～/.vcloud/config
-        smsService.setAccessKey("AccessKey");
-        smsService.setSecretKey("SecretKey");
 
         SmsSendRequest req = new SmsSendRequest();
         req.setFrom("BytePlus");

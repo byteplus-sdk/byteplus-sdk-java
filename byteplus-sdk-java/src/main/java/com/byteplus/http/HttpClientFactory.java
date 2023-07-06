@@ -1,11 +1,8 @@
 package com.byteplus.http;
 
-import org.apache.http.HeaderElement;
-import org.apache.http.HeaderElementIterator;
-import org.apache.http.HttpEntityEnclosingRequest;
-import org.apache.http.HttpRequest;
-import org.apache.http.HttpResponse;
-import org.apache.http.NoHttpResponseException;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.apache.http.*;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.HttpRequestRetryHandler;
 import org.apache.http.client.config.RequestConfig;
@@ -80,6 +77,37 @@ public class HttpClientFactory {
         return httpClient;
     }
 
+    public static ClientInstance create(ClientConfiguration configuration, HttpHost proxy) {
+        PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager();
+        int maxCon = configuration.getMaxConnections();
+        int maxConPerRoute = configuration.getMaxConPerRoute();
+        connectionManager.setMaxTotal(maxCon);
+        connectionManager.setDefaultMaxPerRoute(maxConPerRoute);
+
+        ConnectionKeepAliveStrategy strategy;
+        if (connectionKeepAliveStrategy != null) {
+            strategy = connectionKeepAliveStrategy;
+        } else {
+            strategy = getConnectionKeepAliveStrategy();
+        }
+
+        HttpClient httpClient;
+        httpClient = HttpClients.custom()
+                .setConnectionManager(connectionManager)
+                .setKeepAliveStrategy(strategy)
+                .setRetryHandler(httpRequestRetryHandler)
+                .setDefaultRequestConfig(RequestConfig.custom().setStaleConnectionCheckEnabled(true).build())
+                .setProxy(proxy)
+                .build();
+
+        IdleConnectionMonitorThread daemonThread = new IdleConnectionMonitorThread(connectionManager);
+        daemonThread.setDaemon(true);
+        daemonThread.start();
+
+        return new ClientInstance(httpClient, daemonThread);
+    }
+
+
     public static ConnectionKeepAliveStrategy getConnectionKeepAliveStrategy() {
         return new ConnectionKeepAliveStrategy() {
             @Override
@@ -102,5 +130,12 @@ public class HttpClientFactory {
 
     public static void setConnectionKeepAliveStrategy(ConnectionKeepAliveStrategy connectionKeepAliveStrategy) {
         HttpClientFactory.connectionKeepAliveStrategy = connectionKeepAliveStrategy;
+    }
+
+    @Getter
+    @AllArgsConstructor
+    public static class ClientInstance{
+        private HttpClient httpClient;
+        private IdleConnectionMonitorThread daemonThread;
     }
 }

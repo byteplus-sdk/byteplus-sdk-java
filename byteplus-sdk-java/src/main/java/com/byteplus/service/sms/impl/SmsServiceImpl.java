@@ -25,7 +25,7 @@ public class SmsServiceImpl extends BaseServiceImpl implements SmsService {
     //用户多账户时使用
     private static final ConcurrentHashMap<String,SmsService> instanceMap = new ConcurrentHashMap<>();
     private SmsServiceImpl() {
-        super(SmsConfig.serviceInfoMap.get(Const.REGION_CN_NORTH_1), SmsConfig.apiInfoList);
+        super(SmsConfig.serviceInfoMap.get(Const.REGION_AP_SINGAPORE_1), SmsConfig.apiInfoList);
     }
     private SmsServiceImpl(ServiceInfo serviceInfo) {
         super(serviceInfo, SmsConfig.apiInfoList);

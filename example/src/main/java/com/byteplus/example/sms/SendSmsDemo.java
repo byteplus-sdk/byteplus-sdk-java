@@ -8,6 +8,9 @@ import com.byteplus.service.sms.SmsService;
 import com.byteplus.service.sms.SmsServiceInfoConfig;
 import com.byteplus.service.sms.impl.SmsServiceImpl;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SendSmsDemo {
     private static SmsService smsService = SmsServiceImpl.getInstance(new SmsServiceInfoConfig("ak", "sk"));
 
@@ -23,7 +26,10 @@ public class SendSmsDemo {
         req.setSmsAccount("smsAccount");
         req.setPhoneNumbers("phoneNo");
         req.setTemplateId("templateId");
-        req.setTemplateParam("param");//{"code":"1234"}
+        //req.setTemplateParam("param");//{"code":"1234"}
+        Map<String,String> param = new HashMap<>();
+        param.put("content","第一行\n第二行");
+        req.setTemplateParamByMap(new HashMap<>());
         req.setTag("tag");
         try {
             SmsSendResponse response = smsService.send(req);

@@ -803,38 +803,6 @@ public class LiveServiceImpl extends BaseServiceImpl implements LiveService {
     }
 
     @Override
-    public DescribeLiveStreamSessionsResponse describeLiveStreamSessions(DescribeLiveStreamSessionsRequest describeLiveStreamSessionsRequest) throws Exception {
-        RawResponse response = json(Const.DescribeLiveStreamSessions, new ArrayList<>(), JSON.toJSONString(describeLiveStreamSessionsRequest));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        DescribeLiveStreamSessionsResponse res = JSON.parseObject(response.getData(), DescribeLiveStreamSessionsResponse.class);
-        if (res.getResponseMetadata().getError() != null) {
-            ResponseMetadata meta = res.getResponseMetadata();
-//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
-            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
-        }
-        res.getResponseMetadata().setService("live");
-        return res;
-    }
-
-    @Override
-    public DescribePlayResponseStatusStatResponse describePlayResponseStatusStat(DescribePlayResponseStatusStatRequest describePlayResponseStatusStatRequest) throws Exception {
-        RawResponse response = json(Const.DescribePlayResponseStatusStat, new ArrayList<>(), JSON.toJSONString(describePlayResponseStatusStatRequest));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        DescribePlayResponseStatusStatResponse res = JSON.parseObject(response.getData(), DescribePlayResponseStatusStatResponse.class);
-        if (res.getResponseMetadata().getError() != null) {
-            ResponseMetadata meta = res.getResponseMetadata();
-//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
-            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
-        }
-        res.getResponseMetadata().setService("live");
-        return res;
-    }
-
-    @Override
     public DescribeLiveDomainLogResponse describeLiveDomainLog(DescribeLiveDomainLogRequest describeLiveDomainLogRequest) throws Exception {
         RawResponse response = query(Const.DescribeLiveDomainLog, Utils.mapToPairList(Utils.paramsToMap(describeLiveDomainLogRequest)));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {

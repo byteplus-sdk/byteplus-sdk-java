@@ -710,36 +710,6 @@ public class LiveConfig {
                         }
                     }
             ));
-            put(Const.DescribeLiveStreamSessions, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.DescribeLiveStreamSessions));
-                                    add(new BasicNameValuePair("Version", Const.LiveSDKVersion));
-
-                                }
-                            });
-                        }
-                    }
-            ));
-            put(Const.DescribePlayResponseStatusStat, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "POST");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.DescribePlayResponseStatusStat));
-                                    add(new BasicNameValuePair("Version", Const.LiveSDKVersion));
-
-                                }
-                            });
-                        }
-                    }
-            ));
             put(Const.DescribeLiveDomainLog, new ApiInfo(
                     new HashMap<String, Object>() {
                         {

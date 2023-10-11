@@ -347,22 +347,6 @@ public interface LiveService extends IBaseService {
 
     /**
      *
-     * @param describeLiveStreamSessionsRequest
-     * @return
-     * @throws Exception
-     */
-    DescribeLiveStreamSessionsResponse describeLiveStreamSessions(DescribeLiveStreamSessionsRequest describeLiveStreamSessionsRequest) throws Exception;
-
-    /**
-     *
-     * @param describePlayResponseStatusStatRequest
-     * @return
-     * @throws Exception
-     */
-    DescribePlayResponseStatusStatResponse describePlayResponseStatusStat(DescribePlayResponseStatusStatRequest describePlayResponseStatusStatRequest) throws Exception;
-
-    /**
-     *
      * @param describeLiveDomainLogRequest
      * @return
      * @throws Exception

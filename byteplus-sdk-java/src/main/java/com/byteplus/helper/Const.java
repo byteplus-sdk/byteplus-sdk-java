@@ -147,8 +147,6 @@ public class Const {
     public static final String DescribeRecordData = "DescribeRecordData";
     public static final String DescribeLiveTimeShiftData = "DescribeLiveTimeShiftData";
     public static final String DescribePushStreamMetrics = "DescribePushStreamMetrics";
-    public static final String DescribeLiveStreamSessions = "DescribeLiveStreamSessions";
-    public static final String DescribePlayResponseStatusStat = "DescribePlayResponseStatusStat";
     public static final String DescribeLiveDomainLog = "DescribeLiveDomainLog";
     public static final String DescribeLiveMetricTrafficData = "DescribeLiveMetricTrafficData";
     public static final String DescribeLiveMetricBandwidthData = "DescribeLiveMetricBandwidthData";

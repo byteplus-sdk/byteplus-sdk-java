@@ -851,22 +851,6 @@ public class LiveServiceImpl extends BaseServiceImpl implements LiveService {
     }
 
     @Override
-    public DescribePlayStreamListResponse describePlayStreamList(DescribePlayStreamListRequest describePlayStreamListRequest) throws Exception {
-        RawResponse response = query(Const.DescribePlayStreamList, Utils.mapToPairList(Utils.paramsToMap(describePlayStreamListRequest)));
-        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
-            throw response.getException();
-        }
-        DescribePlayStreamListResponse res = JSON.parseObject(response.getData(), DescribePlayStreamListResponse.class);
-        if (res.getResponseMetadata().getError() != null) {
-            ResponseMetadata meta = res.getResponseMetadata();
-//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
-            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
-        }
-        res.getResponseMetadata().setService("live");
-        return res;
-    }
-
-    @Override
     public DescribePullToPushBandwidthDataResponse describePullToPushBandwidthData(DescribePullToPushBandwidthDataRequest describePullToPushBandwidthDataRequest) throws Exception {
         RawResponse response = json(Const.DescribePullToPushBandwidthData, new ArrayList<>(), JSON.toJSONString(describePullToPushBandwidthDataRequest));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {

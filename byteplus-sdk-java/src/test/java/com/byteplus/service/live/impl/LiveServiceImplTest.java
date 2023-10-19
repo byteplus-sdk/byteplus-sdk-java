@@ -841,23 +841,6 @@ public class LiveServiceImplTest extends TestCase {
         }
     }
 
-    public void testDescribePlayStreamList() {
-        LiveService liveService = getLiveService();
-        String jsonStr = "{\n" +
-                "    \"Domain\":\"example.com\",\n" +
-                "    \"StartTime\": \"2022-04-19T00:00:00Z\",\n" +
-                "    \"EndTime\": \"2022-04-19T00:01:59Z\",\n" +
-                "}";
-        DescribePlayStreamListRequest request = JSON.parseObject(jsonStr, DescribePlayStreamListRequest.class);
-        try {
-            DescribePlayStreamListResponse response = liveService.describePlayStreamList(request);
-            System.out.println(JSON.toJSONString(response));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
     public void testDescribePullToPushBandwidthData() {
         LiveService liveService = getLiveService();
         String jsonStr = "{\n" +

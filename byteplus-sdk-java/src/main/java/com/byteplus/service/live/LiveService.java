@@ -371,14 +371,6 @@ public interface LiveService extends IBaseService {
 
     /**
      *
-     * @param describePlayStreamListRequest
-     * @return
-     * @throws Exception
-     */
-    DescribePlayStreamListResponse describePlayStreamList(DescribePlayStreamListRequest describePlayStreamListRequest) throws Exception;
-
-    /**
-     *
      * @param describePullToPushBandwidthDataRequest
      * @return
      * @throws Exception

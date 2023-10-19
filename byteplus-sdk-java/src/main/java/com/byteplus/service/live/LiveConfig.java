@@ -755,21 +755,6 @@ public class LiveConfig {
                         }
                     }
             ));
-            put(Const.DescribePlayStreamList, new ApiInfo(
-                    new HashMap<String, Object>() {
-                        {
-                            put(Const.Method, "GET");
-                            put(Const.Path, "/");
-                            put(Const.Query, new ArrayList<NameValuePair>() {
-                                {
-                                    add(new BasicNameValuePair("Action", Const.DescribePlayStreamList));
-                                    add(new BasicNameValuePair("Version", Const.LiveSDKVersion));
-
-                                }
-                            });
-                        }
-                    }
-            ));
             put(Const.DescribePullToPushBandwidthData, new ApiInfo(
                     new HashMap<String, Object>() {
                         {

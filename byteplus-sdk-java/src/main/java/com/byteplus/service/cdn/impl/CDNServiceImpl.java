@@ -2,6 +2,7 @@ package com.byteplus.service.cdn.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.byteplus.error.SdkError;
+import com.byteplus.helper.Utils;
 import com.byteplus.model.beans.CDN;
 import com.byteplus.model.response.RawResponse;
 import com.byteplus.service.BaseServiceImpl;
@@ -359,5 +360,23 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
             throw response.getException();
         }
         return JSON.parseObject(response.getData(), CDN.BatchDeployCertResponse.class);
+    }
+
+    @Override
+    public CDN.DeleteCdnCertificateResponse deleteCdnCertificate(CDN.DeleteCdnCertificateRequest request) throws Exception {
+        RawResponse response = json("DeleteCdnCertificate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DeleteCdnCertificateResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeAccountingSummaryResponse describeAccountingSummary(CDN.DescribeAccountingSummaryRequest request) throws Exception {
+        RawResponse response = json("DescribeAccountingSummary", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeAccountingSummaryResponse.class);
     }
 }

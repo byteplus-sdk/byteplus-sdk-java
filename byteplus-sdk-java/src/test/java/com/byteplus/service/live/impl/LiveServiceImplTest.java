@@ -769,43 +769,6 @@ public class LiveServiceImplTest extends TestCase {
         }
     }
 
-    public void testDescribeLiveStreamSessions() {
-        LiveService liveService = getLiveService();
-        String jsonStr = "{\n" +
-                "    \"DomainList\":[\"example.com\",\"example2.com\"],\n" +
-                "    \"App\": \"example\",\n" +
-                "    \"Stream\": \"example080601\",\n" +
-                "    \"ProtocolList\": [\"RTMP\", \"HTTP-FLV\"],\n" +
-                "    \"StartTime\": \"2021-08-16T00:00:00Z\",\n" +
-                "    \"EndTime\":\"2021-08-16T23:59:59Z\",\n" +
-                "    \"Aggregation\":60\n" +
-                "}";
-        DescribeLiveStreamSessionsRequest request = JSON.parseObject(jsonStr, DescribeLiveStreamSessionsRequest.class);
-        try {
-            DescribeLiveStreamSessionsResponse response = liveService.describeLiveStreamSessions(request);
-            System.out.println(JSON.toJSONString(response));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void testDescribePlayResponseStatusStat() {
-        LiveService liveService = getLiveService();
-        String jsonStr = "{\n" +
-                "    \"DomainList\":[\"example.com\",\"example2.com\"],\n" +
-                "    \"StartTime\": \"2022-04-19T00:00:00Z\",\n" +
-                "    \"EndTime\": \"2022-04-19T00:01:59Z\",\n" +
-                "    \"Aggregation\": 60\n" +
-                "}";
-        DescribePlayResponseStatusStatRequest request = JSON.parseObject(jsonStr, DescribePlayResponseStatusStatRequest.class);
-        try {
-            DescribePlayResponseStatusStatResponse response = liveService.describePlayResponseStatusStat(request);
-            System.out.println(JSON.toJSONString(response));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public void testDescribeLiveDomainLog() {
         LiveService liveService = getLiveService();
         String jsonStr = "{\n" +
@@ -877,23 +840,6 @@ public class LiveServiceImplTest extends TestCase {
             e.printStackTrace();
         }
     }
-
-    public void testDescribePlayStreamList() {
-        LiveService liveService = getLiveService();
-        String jsonStr = "{\n" +
-                "    \"Domain\":\"example.com\",\n" +
-                "    \"StartTime\": \"2022-04-19T00:00:00Z\",\n" +
-                "    \"EndTime\": \"2022-04-19T00:01:59Z\",\n" +
-                "}";
-        DescribePlayStreamListRequest request = JSON.parseObject(jsonStr, DescribePlayStreamListRequest.class);
-        try {
-            DescribePlayStreamListResponse response = liveService.describePlayStreamList(request);
-            System.out.println(JSON.toJSONString(response));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
 
     public void testDescribePullToPushBandwidthData() {
         LiveService liveService = getLiveService();

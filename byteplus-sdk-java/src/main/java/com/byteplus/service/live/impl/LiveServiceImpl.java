@@ -928,4 +928,21 @@ public class LiveServiceImpl extends BaseServiceImpl implements LiveService {
         res.getResponseMetadata().setService("live");
         return res;
     }
+
+    @Override
+    public DescribeLiveStreamSessionDataResponse describeLiveStreamSessionData(DescribeLiveStreamSessionDataRequest describeLiveStreamSessionDataRequest) throws Exception {
+        RawResponse response = json(Const.DescribeLiveStreamSessionData, new ArrayList<>(), JSON.toJSONString(describeLiveStreamSessionDataRequest));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        DescribeLiveStreamSessionDataResponse res = JSON.parseObject(response.getData(), DescribeLiveStreamSessionDataResponse.class);
+        if (res.getResponseMetadata().getError() != null) {
+            ResponseMetadata meta = res.getResponseMetadata();
+//            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage());
+            throw new Exception(meta.getRequestId() + "error: " + meta.getError().getMessage() + JSON.toJSONString(res));
+        }
+        res.getResponseMetadata().setService("live");
+
+        return res;
+    }
 }

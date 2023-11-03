@@ -407,4 +407,17 @@ public interface LiveService extends IBaseService {
      * @throws Exception
      */
     GeneratePlayURLResponse generatePlayURL(GeneratePlayURLRequest generatePlayURLRequest) throws Exception;
+
+
+    /**
+     *
+     * @param describeLiveStreamSessionDataRequest
+     * @return
+     * @throws Exception
+     */
+    DescribeLiveStreamSessionDataResponse describeLiveStreamSessionData(DescribeLiveStreamSessionDataRequest describeLiveStreamSessionDataRequest) throws Exception;
+
+
+
+
 }

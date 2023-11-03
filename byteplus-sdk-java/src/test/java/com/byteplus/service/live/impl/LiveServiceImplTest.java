@@ -929,4 +929,23 @@ public class LiveServiceImplTest extends TestCase {
             e.printStackTrace();
         }
     }
+
+
+    public void testDescribeLiveStreamSessionData() {
+        LiveService liveService = getLiveService();
+        String jsonStr = "{\n" +
+                "    \"DomainList\": [\"example.org\"],\n" +
+                "    \"StartTime\": \"2023-10-12T00:00:00Z\",\n" +
+                "    \"EndTime\": \"2023-11-01T00:00:00Z\",\n" +
+                "}";
+        DescribeLiveStreamSessionDataRequest request = JSON.parseObject(jsonStr, DescribeLiveStreamSessionDataRequest.class);
+        try {
+            DescribeLiveStreamSessionDataResponse response = liveService.describeLiveStreamSessionData(request);
+            System.out.println(JSON.toJSONString(response));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

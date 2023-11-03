@@ -155,4 +155,5 @@ public class Const {
     public static final String DescribeLiveStorageSpaceData = "DescribeLiveStorageSpaceData";
     public static final String GeneratePushURL = "GeneratePushURL";
     public static final String GeneratePlayURL = "GeneratePlayURL";
+    public static final String DescribeLiveStreamSessionData = "DescribeLiveStreamSessionData";
 }

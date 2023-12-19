@@ -26,6 +26,10 @@ public class SendSmsVerifyCodeDemo {
         req.setExpireTime(240);
         req.setTryCount(3);
         req.setCodeType(6);
+
+        // If you have set up phone number encryption on the official website, you can set this configuration.
+        // Not a mandatory parameter to set
+        req.setEncryptName("encryptName");
         try {
             SmsSendResponse respones = smsService.sendVerifyCode(req);
             System.out.println(JSON.toJSONString(respones));

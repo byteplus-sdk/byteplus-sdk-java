@@ -27,6 +27,9 @@ public class SendBatchSmsDemo {
         req.setSmsAccount("smsAccount");
         req.setTemplateId("templateId");
         req.setTag("tag");
+        // If you have set up phone number encryption on the official website, you can set this configuration.
+        // Not a mandatory parameter to set
+        req.setEncryptName("encryptName");
 
         List<SmsBatchSendRequest.BatchSmsMessage> messages = new ArrayList<>();
         messages.add(new SmsBatchSendRequest.BatchSmsMessage("phoneNo", "{\"code\":\"1234\"}"));

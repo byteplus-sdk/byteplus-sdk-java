@@ -31,6 +31,10 @@ public class SendSmsDemo {
         param.put("content","第一行\n第二行");
         req.setTemplateParamByMap(new HashMap<>());
         req.setTag("tag");
+
+        // If you have set up phone number encryption on the official website, you can set this configuration.
+        // Not a mandatory parameter to set
+        req.setEncryptName("encryptName");
         try {
             SmsSendResponse response = smsService.send(req);
             System.out.println(JSON.toJSONString(response));

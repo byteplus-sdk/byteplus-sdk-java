@@ -23,4 +23,7 @@ public class SmsSendVerifyCodeRequest {
     int expireTime;
     @JSONField(name = "TryCount")
     int tryCount;
+
+    @JSONField(name="EncryptName")
+    String encryptName;
 }

@@ -12,9 +12,23 @@ public class SmsSendResponse {
     @JSONField(name = "Result")
     ResultBean result;
 
+    @JSONField(name = "Code")
+    String code;
+    @JSONField(name = "Message")
+    String message;
+
     @Data
     public static class ResultBean {
         @JSONField(name = "MessageID")
         List<String> messageId;
+    }
+
+    public SmsSendResponse() {
+
+    }
+
+    public SmsSendResponse(String code, String message) {
+        this.code = code;
+        this.message = message;
     }
 }

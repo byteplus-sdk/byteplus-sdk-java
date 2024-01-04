@@ -2,8 +2,12 @@ package com.byteplus.example.live;
 
 import com.alibaba.fastjson.JSON;
 import com.byteplus.model.live.request.DescribeLiveStorageSpaceDataRequest;
+import com.byteplus.model.live.request.GeneratePlayURLRequest;
+import com.byteplus.model.live.request.GeneratePushURLRequest;
 import com.byteplus.model.live.request.ListStorageSpaceRequest;
 import com.byteplus.model.live.response.DescribeLiveStorageSpaceDataResponse;
+import com.byteplus.model.live.response.GeneratePlayURLResponse;
+import com.byteplus.model.live.response.GeneratePushURLResponse;
 import com.byteplus.model.live.response.ListStorageSpaceResponse;
 import com.byteplus.service.live.LiveService;
 import com.byteplus.service.live.impl.LiveServiceImpl;

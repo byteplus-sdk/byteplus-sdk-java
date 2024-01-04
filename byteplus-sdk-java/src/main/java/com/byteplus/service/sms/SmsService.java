@@ -17,6 +17,10 @@ public interface SmsService extends IBaseService {
      */
     SmsSendResponse send(SmsSendRequest smsSendRequest) throws Exception;
 
+
+    SmsSendResponse sendV2(SmsSendRequest smsSendRequest) throws Exception;
+
+
     /**
      * SmsBatchSend.
      *
@@ -26,6 +30,8 @@ public interface SmsService extends IBaseService {
      */
     SmsSendResponse batchSend(SmsBatchSendRequest smsBatchSendRequest) throws Exception;
 
+    SmsSendResponse batchSendV2(SmsBatchSendRequest smsBatchSendRequest) throws Exception;
+
     /**
      * SmsSendVerifyCode.
      *
@@ -34,6 +40,9 @@ public interface SmsService extends IBaseService {
      * @throws Exception the exception
      */
     SmsSendResponse sendVerifyCode(SmsSendVerifyCodeRequest smsSendVerifyCodeRequest) throws Exception;
+
+    SmsSendResponse sendVerifyCodeV2(SmsSendVerifyCodeRequest smsSendVerifyCodeRequest) throws Exception;
+
 
     /**
      * SmsCheckVerifyCode.

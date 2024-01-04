@@ -36,7 +36,7 @@ public class SendSmsDemo {
         // Not a mandatory parameter to set
         req.setEncryptName("encryptName");
         try {
-            SmsSendResponse response = smsService.send(req);
+            SmsSendResponse response = smsService.sendV2(req);
             System.out.println(JSON.toJSONString(response));
         } catch (Exception e) {
             e.printStackTrace();

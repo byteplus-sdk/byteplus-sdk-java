@@ -177,4 +177,8 @@ public interface IBaseService {
      */
     SecurityToken2 signSts2(Policy inlinePolicy, long expire) throws Exception;
 
+    /**
+     * Free monitor thread
+     */
+    void destroy();
 }

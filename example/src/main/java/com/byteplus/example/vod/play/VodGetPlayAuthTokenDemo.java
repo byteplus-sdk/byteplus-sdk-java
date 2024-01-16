@@ -12,8 +12,8 @@ public class VodGetPlayAuthTokenDemo {
         String vid = "your vid";
 
         // call below method if you dont set ak and sk in ～/.byteplus/config
-         vodService.setAccessKey("your ak");
-         vodService.setSecretKey("your sk");
+        vodService.setAccessKey("your ak");
+        vodService.setSecretKey("your sk");
 
         try {
             VodGetPlayInfoRequest.Builder reqBuilder = VodGetPlayInfoRequest.newBuilder();

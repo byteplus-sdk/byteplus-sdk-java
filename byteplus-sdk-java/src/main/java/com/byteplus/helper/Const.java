@@ -53,22 +53,6 @@ public class Const {
     public static final String VOD_TPL_CENTER_CROP = "tplv-vod-cc";
     public static final String VOD_TPL_SMART_CROP = "tplv-vod-cs";
     public static final String VOD_TPL_SIG = "tplv-bd-sig";
-
-    public static final String SpaceName = "SpaceName";
-    public static final String GetPlayInfo = "GetPlayInfo";
-    public static final String StartWorkflow = "StartWorkflow";
-    public static final String UploadMediaByUrl = "UploadMediaByUrl";
-    public static final String ApplyUploadInfo = "ApplyUploadInfo";
-    public static final String CommitUploadInfo = "CommitUploadInfo";
-    public static final String QueryUploadTaskInfo = "QueryUploadTaskInfo";
-    public static final String UpdateMediaPublishStatus = "UpdateMediaPublishStatus";
-    public static final String UpdateMediaInfo = "UpdateMediaInfo";
-    public static final String GetMediaInfos = "GetMediaInfos";
-    public static final String DeleteMedia = "DeleteMedia";
-    public static final String DeleteTranscodes = "DeleteTranscodes";
-    public static final String GetMediaList = "GetMediaList";
-    public static final String GetHlsDecryptionKey = "GetHlsDecryptionKey";
-    public static final String GetPrivateDrmPlayAuth = "GetPrivateDrmPlayAuth";
     public static final int MinChunkSize = 1024 * 1024 * 20;
     public static final int LargeFileSize = 1024 * 1024 * 50;
     public static final String FileTypeMedia = "media";

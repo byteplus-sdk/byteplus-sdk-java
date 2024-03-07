@@ -2,6 +2,7 @@ package com.byteplus.service.sms;
 
 import com.byteplus.helper.Const;
 import lombok.Data;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpHost;
 
 
@@ -45,11 +46,12 @@ public class SmsServiceInfoConfig {
      */
     private HttpHost proxy;
 
-    public SmsServiceInfoConfig(){
+    public SmsServiceInfoConfig() {
 
     }
-    public SmsServiceInfoConfig(String ak, String sk){
-                this.setAccessKey(ak)
+
+    public SmsServiceInfoConfig(String ak, String sk) {
+        this.setAccessKey(ak)
                 .setSecretAccessKey(sk)
                 .setHost("sms.byteplusapi.com")
                 .setRegion(Const.REGION_AP_SINGAPORE_1)

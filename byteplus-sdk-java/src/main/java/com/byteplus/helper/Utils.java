@@ -16,12 +16,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.zip.CRC32;
 
 public class Utils {
@@ -139,6 +134,8 @@ public class Utils {
         for (Map.Entry<String, Object> entry : map.entrySet()) {
             if (entry.getValue().getClass() == Integer.class) {
                 params.put(entry.getKey(), ((Integer) entry.getValue()).toString());
+            } else if (entry.getValue().getClass() == Long.class) {
+                params.put(entry.getKey(), ((Long) entry.getValue()).toString());
             } else if (entry.getValue().getClass() == String.class) {
                 params.put(entry.getKey(), (String) entry.getValue());
             } else if (entry.getValue().getClass() == JSONArray.class) {
@@ -163,7 +160,7 @@ public class Utils {
             } else if (entry.getValue().getClass() == String.class) {
                 pairs.add(new BasicNameValuePair(entry.getKey(), (String) entry.getValue()));
             } else if (entry.getValue().getClass() == Long.class) {
-                pairs.add(new BasicNameValuePair(entry.getKey(),((Long) entry.getValue()).toString()));
+                pairs.add(new BasicNameValuePair(entry.getKey(), ((Long) entry.getValue()).toString()));
             } else if (entry.getValue().getClass() == JSONArray.class) {
                 List<String> list = (List<String>) entry.getValue();
                 for (String item : list) {

@@ -379,4 +379,121 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
         }
         return JSON.parseObject(response.getData(), CDN.DescribeAccountingSummaryResponse.class);
     }
+
+    @Override
+    public CDN.DescribeTemplatesResponse describeTemplates(CDN.DescribeTemplatesRequest request) throws Exception {
+        RawResponse response = json("DescribeTemplates", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeTemplatesResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeServiceTemplateResponse describeServiceTemplate(CDN.DescribeServiceTemplateRequest request) throws Exception {
+        RawResponse response = json("DescribeServiceTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeServiceTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeCipherTemplateResponse describeCipherTemplate(CDN.DescribeCipherTemplateRequest request) throws Exception {
+        RawResponse response = json("DescribeCipherTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeCipherTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.CreateCipherTemplateResponse createCipherTemplate(CDN.CreateCipherTemplateRequest request) throws Exception {
+        RawResponse response = json("CreateCipherTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.CreateCipherTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateServiceTemplateResponse updateServiceTemplate(CDN.UpdateServiceTemplateRequest request) throws Exception {
+        RawResponse response = json("UpdateServiceTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateServiceTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateCipherTemplateResponse updateCipherTemplate(CDN.UpdateCipherTemplateRequest request) throws Exception {
+        RawResponse response = json("UpdateCipherTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateCipherTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.DuplicateTemplateResponse duplicateTemplate(CDN.DuplicateTemplateRequest request) throws Exception {
+        RawResponse response = json("DuplicateTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DuplicateTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.LockTemplateResponse lockTemplate(CDN.LockTemplateRequest request) throws Exception {
+        RawResponse response = json("LockTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.LockTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.DeleteTemplateResponse deleteTemplate(CDN.DeleteTemplateRequest request) throws Exception {
+        RawResponse response = json("DeleteTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DeleteTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeTemplateDomainsResponse describeTemplateDomains(CDN.DescribeTemplateDomainsRequest request) throws Exception {
+        RawResponse response = json("DescribeTemplateDomains", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeTemplateDomainsResponse.class);
+    }
+
+    @Override
+    public CDN.AddTemplateDomainResponse addTemplateDomain(CDN.AddTemplateDomainRequest request) throws Exception {
+        RawResponse response = json("AddTemplateDomain", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddTemplateDomainResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateTemplateDomainResponse updateTemplateDomain(CDN.UpdateTemplateDomainRequest request) throws Exception {
+        RawResponse response = json("UpdateTemplateDomain", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateTemplateDomainResponse.class);
+    }
+
+    @Override
+    public CDN.CreateServiceTemplateResponse createServiceTemplate(CDN.CreateServiceTemplateRequest request) throws Exception {
+        RawResponse response = json("CreateServiceTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.CreateServiceTemplateResponse.class);
+    }
 }

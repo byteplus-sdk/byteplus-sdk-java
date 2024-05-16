@@ -71,6 +71,9 @@ public class CDN {
         @JSONField(name = "Certificate")
         Certificate Certificate;
 
+        @JSONField(name = "CloseSigCheck")
+        Boolean CloseSigCheck;
+
         @JSONField(name = "Source")
         String Source;
     }
@@ -101,6 +104,9 @@ public class CDN {
 
         @JSONField(name = "Cache")
         List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
 
         @JSONField(name = "CacheKey")
         List<CacheKeyRule> CacheKey;
@@ -162,6 +168,9 @@ public class CDN {
         @JSONField(name = "OriginHost")
         String OriginHost;
 
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
         @JSONField(name = "OriginProtocol")
         String OriginProtocol;
 
@@ -192,6 +201,9 @@ public class CDN {
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
 
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
+
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
@@ -219,6 +231,9 @@ public class CDN {
         @JSONField(name = "UaAccessRule")
         UserAgentAccessRule UaAccessRule;
 
+        @JSONField(name = "UrlNormalize")
+        URLNormalize UrlNormalize;
+
         @JSONField(name = "VideoDrag")
         VideoDrag VideoDrag;
     }
@@ -245,6 +260,40 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class AddResourceTagsResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AddTemplateDomainRequest {
+
+        @JSONField(name = "CertId")
+        String CertId;
+
+        @JSONField(name = "CipherTemplateId")
+        String CipherTemplateId;
+
+        @JSONField(name = "Domain")
+        String Domain;
+
+        @JSONField(name = "HTTPSSwitch")
+        String HTTPSSwitch;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "ServiceRegion")
+        String ServiceRegion;
+
+        @JSONField(name = "ServiceTemplateId")
+        String ServiceTemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AddTemplateDomainResponse {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
@@ -414,6 +463,37 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class BlockAction {
+
+        @JSONField(name = "Action")
+        String Action;
+
+        @JSONField(name = "ErrorPage")
+        String ErrorPage;
+
+        @JSONField(name = "RedirectUrl")
+        String RedirectUrl;
+
+        @JSONField(name = "StatusCode")
+        String StatusCode;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class BlockRule {
+
+        @JSONField(name = "BlockAction")
+        BlockAction BlockAction;
+
+        @JSONField(name = "Condition")
+        Condition Condition;
+
+        @JSONField(name = "RuleName")
+        String RuleName;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class BlockTaskInfo {
 
         @JSONField(name = "BlockReason")
@@ -433,6 +513,17 @@ public class CDN {
 
         @JSONField(name = "Url")
         String Url;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class BoundDomain {
+
+        @JSONField(name = "BoundTime")
+        Long BoundTime;
+
+        @JSONField(name = "Domain")
+        String Domain;
     }
 
     @Data
@@ -476,6 +567,36 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class CacheHost {
+
+        @JSONField(name = "CacheHostRule")
+        List<CacheHostRule> CacheHostRule;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CacheHostAction {
+
+        @JSONField(name = "CacheHost")
+        String CacheHost;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CacheHostRule {
+
+        @JSONField(name = "CacheHostAction")
+        CacheHostAction CacheHostAction;
+
+        @JSONField(name = "Condition")
+        Condition Condition;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class CacheKeyAction {
 
         @JSONField(name = "CacheKeyComponents")
@@ -512,6 +633,61 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class CdnTemplate {
+
+        @JSONField(name = "Exception")
+        Boolean Exception;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "Type")
+        String Type;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CdnTemplateDomain {
+
+        @JSONField(name = "CertInfo")
+        TemplateCertInfo CertInfo;
+
+        @JSONField(name = "Cname")
+        String Cname;
+
+        @JSONField(name = "Domain")
+        String Domain;
+
+        @JSONField(name = "HTTPSSwitch")
+        String HTTPSSwitch;
+
+        @JSONField(name = "LockStatus")
+        String LockStatus;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Remark")
+        String Remark;
+
+        @JSONField(name = "ServiceRegion")
+        String ServiceRegion;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "Templates")
+        List<CdnTemplate> Templates;
+
+        @JSONField(name = "WAFStatus")
+        String WAFStatus;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class CertDeployStatus {
 
         @JSONField(name = "Domain")
@@ -522,6 +698,17 @@ public class CDN {
 
         @JSONField(name = "Status")
         String Status;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CertFingerprint {
+
+        @JSONField(name = "Sha1")
+        String Sha1;
+
+        @JSONField(name = "Sha256")
+        String Sha256;
     }
 
     @Data
@@ -537,14 +724,8 @@ public class CDN {
         @JSONField(name = "Certificate")
         Certificate Certificate;
 
-        @JSONField(name = "ConfiguredDomain")
-        String ConfiguredDomain;
-
         @JSONField(name = "Desc")
         String Desc;
-
-        @JSONField(name = "DnsName")
-        String DnsName;
 
         @JSONField(name = "EffectiveTime")
         Long EffectiveTime;
@@ -554,9 +735,6 @@ public class CDN {
 
         @JSONField(name = "Source")
         String Source;
-
-        @JSONField(name = "Status")
-        String Status;
     }
 
     @Data
@@ -572,10 +750,21 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class CommonGlobalConfig {
+
+        @JSONField(name = "ConfigName")
+        String ConfigName;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class CommonReferType {
 
         @JSONField(name = "IgnoreCase")
         Boolean IgnoreCase;
+
+        @JSONField(name = "IgnoreScheme")
+        Boolean IgnoreScheme;
 
         @JSONField(name = "Referers")
         List<String> Referers;
@@ -634,6 +823,9 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class ConditionRule {
+
+        @JSONField(name = "Name")
+        String Name;
 
         @JSONField(name = "Object")
         String Object;
@@ -708,6 +900,189 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class CreateCipherTemplateRequest {
+
+        @JSONField(name = "HTTPS")
+        HTTPSCommon HTTPS;
+
+        @JSONField(name = "HttpForcedRedirect")
+        HttpForcedRedirect HttpForcedRedirect;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Quic")
+        Quic Quic;
+
+        @JSONField(name = "Title")
+        String Title;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateCipherTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        CreateCipherTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateCipherTemplateResult {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateServiceTemplateRequest {
+
+        @JSONField(name = "AreaAccessRule")
+        AreaAccessRule AreaAccessRule;
+
+        @JSONField(name = "BandwidthLimit")
+        BandwidthLimit BandwidthLimit;
+
+        @JSONField(name = "BrowserCache")
+        List<BrowserCacheControlRule> BrowserCache;
+
+        @JSONField(name = "Cache")
+        List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
+
+        @JSONField(name = "CacheKey")
+        List<CacheKeyRule> CacheKey;
+
+        @JSONField(name = "Compression")
+        Compression Compression;
+
+        @JSONField(name = "CustomErrorPage")
+        CustomErrorPage CustomErrorPage;
+
+        @JSONField(name = "CustomizeAccessRule")
+        CustomizeAccessRule CustomizeAccessRule;
+
+        @JSONField(name = "DownloadSpeedLimit")
+        DownloadSpeedLimit DownloadSpeedLimit;
+
+        @JSONField(name = "FollowRedirect")
+        Boolean FollowRedirect;
+
+        @JSONField(name = "IPv6")
+        IPv6 IPv6;
+
+        @JSONField(name = "IpAccessRule")
+        IpAccessRule IpAccessRule;
+
+        @JSONField(name = "IpFreqLimit")
+        IpFreqLimit IpFreqLimit;
+
+        @JSONField(name = "IpSpeedLimit")
+        IpSpeedLimit IpSpeedLimit;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "MethodDeniedRule")
+        MethodDeniedRule MethodDeniedRule;
+
+        @JSONField(name = "NegativeCache")
+        List<NegativeCache> NegativeCache;
+
+        @JSONField(name = "Origin")
+        List<OriginRule> Origin;
+
+        @JSONField(name = "OriginAccessRule")
+        OriginAccessRule OriginAccessRule;
+
+        @JSONField(name = "OriginArg")
+        List<OriginArgRule> OriginArg;
+
+        @JSONField(name = "OriginHost")
+        String OriginHost;
+
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
+        @JSONField(name = "OriginProtocol")
+        String OriginProtocol;
+
+        @JSONField(name = "OriginRange")
+        Boolean OriginRange;
+
+        @JSONField(name = "OriginRewrite")
+        OriginRewrite OriginRewrite;
+
+        @JSONField(name = "OriginSni")
+        OriginSni OriginSni;
+
+        @JSONField(name = "PageOptimization")
+        PageOptimization PageOptimization;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "RedirectionRewrite")
+        RedirectionRewrite RedirectionRewrite;
+
+        @JSONField(name = "RefererAccessRule")
+        RefererAccessRule RefererAccessRule;
+
+        @JSONField(name = "RemoteAuth")
+        RemoteAuth RemoteAuth;
+
+        @JSONField(name = "RequestHeader")
+        List<RequestHeaderRule> RequestHeader;
+
+        @JSONField(name = "ResponseHeader")
+        List<ResponseHeaderRule> ResponseHeader;
+
+        @JSONField(name = "SignedUrlAuth")
+        SignedUrlAuth SignedUrlAuth;
+
+        @JSONField(name = "Timeout")
+        Timeout Timeout;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "UaAccessRule")
+        UserAgentAccessRule UaAccessRule;
+
+        @JSONField(name = "VideoDrag")
+        VideoDrag VideoDrag;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateServiceTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        CreateServiceTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateServiceTemplateResult {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class CustomErrorPage {
 
         @JSONField(name = "ErrorPageRule")
@@ -715,6 +1090,26 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CustomSignedUrlParam {
+
+        @JSONField(name = "ParamType")
+        String ParamType;
+
+        @JSONField(name = "RequestHeader")
+        String RequestHeader;
+
+        @JSONField(name = "SupContent")
+        String SupContent;
+
+        @JSONField(name = "UriParamSup")
+        UriParamSup UriParamSup;
+
+        @JSONField(name = "UrlParam")
+        ParamCapRule UrlParam;
     }
 
     @Data
@@ -850,6 +1245,22 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DeleteTemplateRequest {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DeleteTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DescribeAccountingDataRequest {
 
         @JSONField(name = "Aggregate")
@@ -866,6 +1277,9 @@ public class CDN {
 
         @JSONField(name = "Interval")
         Long Interval;
+
+        @JSONField(name = "InverseDomain")
+        Boolean InverseDomain;
 
         @JSONField(name = "IsWildcardDomain")
         Boolean IsWildcardDomain;
@@ -1035,6 +1449,9 @@ public class CDN {
 
         @JSONField(name = "DomainConfig")
         DomainConfig DomainConfig;
+
+        @JSONField(name = "FeatureConfig")
+        FeatureConfig FeatureConfig;
     }
 
     @Data
@@ -1112,6 +1529,9 @@ public class CDN {
 
         @JSONField(name = "Interval")
         String Interval;
+
+        @JSONField(name = "InverseDomain")
+        Boolean InverseDomain;
 
         @JSONField(name = "IpVersion")
         String IpVersion;
@@ -1196,6 +1616,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -1336,6 +1759,69 @@ public class CDN {
 
         @JSONField(name = "SpecifiedCertConfig")
         List<DomainCertStatus> SpecifiedCertConfig;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCipherTemplateRequest {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCipherTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeCipherTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCipherTemplateResult {
+
+        @JSONField(name = "BoundDomains")
+        List<BoundDomain> BoundDomains;
+
+        @JSONField(name = "CreateTime")
+        Long CreateTime;
+
+        @JSONField(name = "Exception")
+        Boolean Exception;
+
+        @JSONField(name = "HTTPS")
+        HTTPSCommon HTTPS;
+
+        @JSONField(name = "HttpForcedRedirect")
+        HttpForcedRedirect HttpForcedRedirect;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Quic")
+        Quic Quic;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "Type")
+        String Type;
+
+        @JSONField(name = "UpdateTime")
+        Long UpdateTime;
     }
 
     @Data
@@ -2019,6 +2505,9 @@ public class CDN {
         @JSONField(name = "Interval")
         String Interval;
 
+        @JSONField(name = "InverseDomain")
+        Boolean InverseDomain;
+
         @JSONField(name = "Item")
         String Item;
 
@@ -2076,6 +2565,9 @@ public class CDN {
         @JSONField(name = "EndTime")
         Long EndTime;
 
+        @JSONField(name = "InverseDomain")
+        Boolean InverseDomain;
+
         @JSONField(name = "Item")
         String Item;
 
@@ -2119,6 +2611,240 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DescribeServiceTemplateRequest {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeServiceTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeServiceTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeServiceTemplateResult {
+
+        @JSONField(name = "AreaAccessRule")
+        AreaAccessRule AreaAccessRule;
+
+        @JSONField(name = "BandwidthLimit")
+        BandwidthLimit BandwidthLimit;
+
+        @JSONField(name = "BoundDomains")
+        List<BoundDomain> BoundDomains;
+
+        @JSONField(name = "BrowserCache")
+        List<BrowserCacheControlRule> BrowserCache;
+
+        @JSONField(name = "Cache")
+        List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
+
+        @JSONField(name = "CacheKey")
+        List<CacheKeyRule> CacheKey;
+
+        @JSONField(name = "Compression")
+        Compression Compression;
+
+        @JSONField(name = "CreateTime")
+        Long CreateTime;
+
+        @JSONField(name = "CustomErrorPage")
+        CustomErrorPage CustomErrorPage;
+
+        @JSONField(name = "CustomizeAccessRule")
+        CustomizeAccessRule CustomizeAccessRule;
+
+        @JSONField(name = "DownloadSpeedLimit")
+        DownloadSpeedLimit DownloadSpeedLimit;
+
+        @JSONField(name = "Exception")
+        Boolean Exception;
+
+        @JSONField(name = "FollowRedirect")
+        Boolean FollowRedirect;
+
+        @JSONField(name = "IPv6")
+        IPv6 IPv6;
+
+        @JSONField(name = "IpAccessRule")
+        IpAccessRule IpAccessRule;
+
+        @JSONField(name = "IpFreqLimit")
+        IpFreqLimit IpFreqLimit;
+
+        @JSONField(name = "IpSpeedLimit")
+        IpSpeedLimit IpSpeedLimit;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "MethodDeniedRule")
+        MethodDeniedRule MethodDeniedRule;
+
+        @JSONField(name = "NegativeCache")
+        List<NegativeCache> NegativeCache;
+
+        @JSONField(name = "Origin")
+        List<OriginRule> Origin;
+
+        @JSONField(name = "OriginAccessRule")
+        OriginAccessRule OriginAccessRule;
+
+        @JSONField(name = "OriginArg")
+        List<OriginArgRule> OriginArg;
+
+        @JSONField(name = "OriginHost")
+        String OriginHost;
+
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
+        @JSONField(name = "OriginProtocol")
+        String OriginProtocol;
+
+        @JSONField(name = "OriginRange")
+        Boolean OriginRange;
+
+        @JSONField(name = "OriginRewrite")
+        OriginRewrite OriginRewrite;
+
+        @JSONField(name = "OriginSni")
+        OriginSni OriginSni;
+
+        @JSONField(name = "PageOptimization")
+        PageOptimization PageOptimization;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "RedirectionRewrite")
+        RedirectionRewrite RedirectionRewrite;
+
+        @JSONField(name = "RefererAccessRule")
+        RefererAccessRule RefererAccessRule;
+
+        @JSONField(name = "RemoteAuth")
+        RemoteAuth RemoteAuth;
+
+        @JSONField(name = "RequestHeader")
+        List<RequestHeaderRule> RequestHeader;
+
+        @JSONField(name = "ResponseHeader")
+        List<ResponseHeaderRule> ResponseHeader;
+
+        @JSONField(name = "SignedUrlAuth")
+        SignedUrlAuth SignedUrlAuth;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Timeout")
+        Timeout Timeout;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "Type")
+        String Type;
+
+        @JSONField(name = "UaAccessRule")
+        UserAgentAccessRule UaAccessRule;
+
+        @JSONField(name = "UpdateTime")
+        Long UpdateTime;
+
+        @JSONField(name = "VideoDrag")
+        VideoDrag VideoDrag;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplateDomainsRequest {
+
+        @JSONField(name = "Filters")
+        List<Filter> Filters;
+
+        @JSONField(name = "PageNum")
+        Long PageNum;
+
+        @JSONField(name = "PageSize")
+        Long PageSize;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplateDomainsResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeTemplateDomainsResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplateDomainsResult {
+
+        @JSONField(name = "Domains")
+        List<CdnTemplateDomain> Domains;
+
+        @JSONField(name = "TotalCount")
+        Long TotalCount;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplatesRequest {
+
+        @JSONField(name = "Filters")
+        List<Filter> Filters;
+
+        @JSONField(name = "PageNum")
+        Long PageNum;
+
+        @JSONField(name = "PageSize")
+        Long PageSize;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplatesResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeTemplatesResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplatesResult {
+
+        @JSONField(name = "Templates")
+        List<DomainTemplateInfo> Templates;
+
+        @JSONField(name = "TotalCount")
+        Long TotalCount;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DomainCertStatus {
 
         @JSONField(name = "CerStatus")
@@ -2126,6 +2852,9 @@ public class CDN {
 
         @JSONField(name = "Domain")
         String Domain;
+
+        @JSONField(name = "DomainLock")
+        DomainLock DomainLock;
 
         @JSONField(name = "Status")
         String Status;
@@ -2141,6 +2870,9 @@ public class CDN {
         @JSONField(name = "AreaAccessRule")
         AreaAccessRule AreaAccessRule;
 
+        @JSONField(name = "BackupCname")
+        String BackupCname;
+
         @JSONField(name = "BandwidthLimit")
         BandwidthLimit BandwidthLimit;
 
@@ -2149,6 +2881,9 @@ public class CDN {
 
         @JSONField(name = "Cache")
         List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
 
         @JSONField(name = "CacheKey")
         List<CacheKeyRule> CacheKey;
@@ -2219,6 +2954,9 @@ public class CDN {
         @JSONField(name = "OriginHost")
         String OriginHost;
 
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
         @JSONField(name = "OriginProtocol")
         String OriginProtocol;
 
@@ -2249,6 +2987,9 @@ public class CDN {
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
 
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
+
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
@@ -2278,6 +3019,9 @@ public class CDN {
 
         @JSONField(name = "UpdateTime")
         Long UpdateTime;
+
+        @JSONField(name = "UrlNormalize")
+        URLNormalize UrlNormalize;
 
         @JSONField(name = "VideoDrag")
         VideoDrag VideoDrag;
@@ -2332,6 +3076,9 @@ public class CDN {
         @JSONField(name = "Domain")
         String Domain;
 
+        @JSONField(name = "DomainLock")
+        DomainLock DomainLock;
+
         @JSONField(name = "Status")
         String Status;
 
@@ -2342,6 +3089,9 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class DomainSummary {
+
+        @JSONField(name = "BackupCname")
+        String BackupCname;
 
         @JSONField(name = "BackupOrigin")
         List<String> BackupOrigin;
@@ -2409,6 +3159,41 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DomainTemplateInfo {
+
+        @JSONField(name = "BoundDomains")
+        List<BoundDomain> BoundDomains;
+
+        @JSONField(name = "CreateTime")
+        Long CreateTime;
+
+        @JSONField(name = "Exception")
+        Boolean Exception;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "Type")
+        String Type;
+
+        @JSONField(name = "UpdateTime")
+        Long UpdateTime;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DownloadSpeedLimit {
 
         @JSONField(name = "DownloadSpeedLimitRules")
@@ -2441,6 +3226,42 @@ public class CDN {
 
         @JSONField(name = "DownloadSpeedLimitAction")
         DownloadSpeedLimitAction DownloadSpeedLimitAction;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DuplicateTemplateRequest {
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "ReferredTemplateId")
+        String ReferredTemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DuplicateTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DuplicateTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DuplicateTemplateResult {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
     }
 
     @Data
@@ -2509,6 +3330,28 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class FeatureConfig {
+
+        @JSONField(name = "OriginV2")
+        Boolean OriginV2;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class Filter {
+
+        @JSONField(name = "Fuzzy")
+        Boolean Fuzzy;
+
+        @JSONField(name = "Name")
+        String Name;
+
+        @JSONField(name = "Value")
+        List<String> Value;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class ForcedRedirect {
 
         @JSONField(name = "EnableForcedRedirect")
@@ -2545,6 +3388,29 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+
+        @JSONField(name = "TlsVersion")
+        List<String> TlsVersion;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class HTTPSCommon {
+
+        @JSONField(name = "DisableHttp")
+        Boolean DisableHttp;
+
+        @JSONField(name = "ForcedRedirect")
+        ForcedRedirect ForcedRedirect;
+
+        @JSONField(name = "HTTP2")
+        Boolean HTTP2;
+
+        @JSONField(name = "Hsts")
+        Hsts Hsts;
+
+        @JSONField(name = "OCSP")
+        Boolean OCSP;
 
         @JSONField(name = "TlsVersion")
         List<String> TlsVersion;
@@ -2620,6 +3486,9 @@ public class CDN {
 
         @JSONField(name = "RuleType")
         String RuleType;
+
+        @JSONField(name = "SharedConfig")
+        CommonGlobalConfig SharedConfig;
 
         @JSONField(name = "Switch")
         Boolean Switch;
@@ -2767,6 +3636,9 @@ public class CDN {
         @JSONField(name = "IPv6")
         Boolean IPv6;
 
+        @JSONField(name = "NeedSparrows")
+        Boolean NeedSparrows;
+
         @JSONField(name = "OriginProtocol")
         String OriginProtocol;
 
@@ -2830,6 +3702,9 @@ public class CDN {
     @Accessors(chain = true)
     public static class ListCertInfo {
 
+        @JSONField(name = "CertFingerprint")
+        CertFingerprint CertFingerprint;
+
         @JSONField(name = "CertId")
         String CertId;
 
@@ -2886,6 +3761,9 @@ public class CDN {
         @JSONField(name = "SetPagination")
         Boolean SetPagination;
 
+        @JSONField(name = "SortRule")
+        SortRule SortRule;
+
         @JSONField(name = "Source")
         String Source;
 
@@ -2941,6 +3819,22 @@ public class CDN {
 
         @JSONField(name = "ResourceTags")
         List<ResourceTag> ResourceTags;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class LockTemplateRequest {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class LockTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
     }
 
     @Data
@@ -3227,6 +4121,31 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class ParamCapRule {
+
+        @JSONField(name = "CapMode")
+        String CapMode;
+
+        @JSONField(name = "ParamName")
+        String ParamName;
+
+        @JSONField(name = "UriLevel")
+        Long UriLevel;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class PreloadHeader {
+
+        @JSONField(name = "Key")
+        String Key;
+
+        @JSONField(name = "Value")
+        String Value;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class PrivateBucketAuth {
 
         @JSONField(name = "AuthType")
@@ -3344,6 +4263,9 @@ public class CDN {
         @JSONField(name = "RuleType")
         String RuleType;
 
+        @JSONField(name = "SharedConfig")
+        CommonGlobalConfig SharedConfig;
+
         @JSONField(name = "Switch")
         Boolean Switch;
     }
@@ -3407,6 +4329,17 @@ public class CDN {
 
         @JSONField(name = "RequestHeaderRules")
         AuthRequestHeaderRule RequestHeaderRules;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class RequestBlockRule {
+
+        @JSONField(name = "BlockRule")
+        List<BlockRule> BlockRule;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
     }
 
     @Data
@@ -3539,6 +4472,20 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class RewriteM3u8Rule {
+
+        @JSONField(name = "DeleteParam")
+        Boolean DeleteParam;
+
+        @JSONField(name = "KeepM3u8Param")
+        Boolean KeepM3u8Param;
+
+        @JSONField(name = "TransferEncoding")
+        Boolean TransferEncoding;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class SignedUrlAuth {
 
         @JSONField(name = "SignedUrlAuthRules")
@@ -3561,11 +4508,23 @@ public class CDN {
         @JSONField(name = "Duration")
         Long Duration;
 
+        @JSONField(name = "KeepOriginArg")
+        Boolean KeepOriginArg;
+
         @JSONField(name = "MasterSecretKey")
         String MasterSecretKey;
 
+        @JSONField(name = "MpdVarExpand")
+        Boolean MpdVarExpand;
+
         @JSONField(name = "RewriteM3u8")
         Boolean RewriteM3u8;
+
+        @JSONField(name = "RewriteM3u8Rule")
+        RewriteM3u8Rule RewriteM3u8Rule;
+
+        @JSONField(name = "RewriteMpd")
+        Boolean RewriteMpd;
 
         @JSONField(name = "SignName")
         String SignName;
@@ -3592,6 +4551,17 @@ public class CDN {
 
         @JSONField(name = "SignedUrlAuthAction")
         SignedUrlAuthAction SignedUrlAuthAction;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class SortRule {
+
+        @JSONField(name = "Asc")
+        Boolean Asc;
+
+        @JSONField(name = "OrderBy")
+        String OrderBy;
     }
 
     @Data
@@ -3742,6 +4712,9 @@ public class CDN {
         @JSONField(name = "Region")
         String Region;
 
+        @JSONField(name = "RequestHeaderInstances")
+        List<PreloadHeader> RequestHeaderInstances;
+
         @JSONField(name = "SubArea")
         String SubArea;
 
@@ -3763,6 +4736,9 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class SubmitPreloadTaskResult {
+
+        @JSONField(name = "CommitNum")
+        Long CommitNum;
 
         @JSONField(name = "TaskID")
         String TaskID;
@@ -3843,6 +4819,14 @@ public class CDN {
 
         @JSONField(name = "Value")
         String Value;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class TemplateCertInfo {
+
+        @JSONField(name = "CertId")
+        String CertId;
     }
 
     @Data
@@ -4098,6 +5082,17 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class URLNormalize {
+
+        @JSONField(name = "NormalizeObject")
+        List<String> NormalizeObject;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class UpdateCdnConfigRequest {
 
         @JSONField(name = "AreaAccessRule")
@@ -4111,6 +5106,9 @@ public class CDN {
 
         @JSONField(name = "Cache")
         List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
 
         @JSONField(name = "CacheKey")
         List<CacheKeyRule> CacheKey;
@@ -4172,6 +5170,9 @@ public class CDN {
         @JSONField(name = "OriginHost")
         String OriginHost;
 
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
         @JSONField(name = "OriginProtocol")
         String OriginProtocol;
 
@@ -4199,6 +5200,9 @@ public class CDN {
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
 
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
+
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
@@ -4223,6 +5227,9 @@ public class CDN {
         @JSONField(name = "UaAccessRule")
         UserAgentAccessRule UaAccessRule;
 
+        @JSONField(name = "UrlNormalize")
+        URLNormalize UrlNormalize;
+
         @JSONField(name = "VideoDrag")
         VideoDrag VideoDrag;
     }
@@ -4230,6 +5237,37 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class UpdateCdnConfigResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateCipherTemplateRequest {
+
+        @JSONField(name = "HTTPS")
+        HTTPSCommon HTTPS;
+
+        @JSONField(name = "HttpForcedRedirect")
+        HttpForcedRedirect HttpForcedRedirect;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Quic")
+        Quic Quic;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateCipherTemplateResponse {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
@@ -4252,6 +5290,184 @@ public class CDN {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateServiceTemplateRequest {
+
+        @JSONField(name = "AreaAccessRule")
+        AreaAccessRule AreaAccessRule;
+
+        @JSONField(name = "BandwidthLimit")
+        BandwidthLimit BandwidthLimit;
+
+        @JSONField(name = "BrowserCache")
+        List<BrowserCacheControlRule> BrowserCache;
+
+        @JSONField(name = "Cache")
+        List<CacheControlRule> Cache;
+
+        @JSONField(name = "CacheHost")
+        CacheHost CacheHost;
+
+        @JSONField(name = "CacheKey")
+        List<CacheKeyRule> CacheKey;
+
+        @JSONField(name = "Compression")
+        Compression Compression;
+
+        @JSONField(name = "CustomErrorPage")
+        CustomErrorPage CustomErrorPage;
+
+        @JSONField(name = "CustomizeAccessRule")
+        CustomizeAccessRule CustomizeAccessRule;
+
+        @JSONField(name = "DownloadSpeedLimit")
+        DownloadSpeedLimit DownloadSpeedLimit;
+
+        @JSONField(name = "FollowRedirect")
+        Boolean FollowRedirect;
+
+        @JSONField(name = "IPv6")
+        IPv6 IPv6;
+
+        @JSONField(name = "IpAccessRule")
+        IpAccessRule IpAccessRule;
+
+        @JSONField(name = "IpFreqLimit")
+        IpFreqLimit IpFreqLimit;
+
+        @JSONField(name = "IpSpeedLimit")
+        IpSpeedLimit IpSpeedLimit;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "MethodDeniedRule")
+        MethodDeniedRule MethodDeniedRule;
+
+        @JSONField(name = "NegativeCache")
+        List<NegativeCache> NegativeCache;
+
+        @JSONField(name = "Origin")
+        List<OriginRule> Origin;
+
+        @JSONField(name = "OriginAccessRule")
+        OriginAccessRule OriginAccessRule;
+
+        @JSONField(name = "OriginArg")
+        List<OriginArgRule> OriginArg;
+
+        @JSONField(name = "OriginHost")
+        String OriginHost;
+
+        @JSONField(name = "OriginIPv6")
+        String OriginIPv6;
+
+        @JSONField(name = "OriginProtocol")
+        String OriginProtocol;
+
+        @JSONField(name = "OriginRange")
+        Boolean OriginRange;
+
+        @JSONField(name = "OriginRewrite")
+        OriginRewrite OriginRewrite;
+
+        @JSONField(name = "OriginSni")
+        OriginSni OriginSni;
+
+        @JSONField(name = "PageOptimization")
+        PageOptimization PageOptimization;
+
+        @JSONField(name = "RedirectionRewrite")
+        RedirectionRewrite RedirectionRewrite;
+
+        @JSONField(name = "RefererAccessRule")
+        RefererAccessRule RefererAccessRule;
+
+        @JSONField(name = "RemoteAuth")
+        RemoteAuth RemoteAuth;
+
+        @JSONField(name = "RequestHeader")
+        List<RequestHeaderRule> RequestHeader;
+
+        @JSONField(name = "ResponseHeader")
+        List<ResponseHeaderRule> ResponseHeader;
+
+        @JSONField(name = "SignedUrlAuth")
+        SignedUrlAuth SignedUrlAuth;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Timeout")
+        Timeout Timeout;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "UaAccessRule")
+        UserAgentAccessRule UaAccessRule;
+
+        @JSONField(name = "VideoDrag")
+        VideoDrag VideoDrag;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateServiceTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateTemplateDomainRequest {
+
+        @JSONField(name = "CertId")
+        String CertId;
+
+        @JSONField(name = "CipherTemplateId")
+        String CipherTemplateId;
+
+        @JSONField(name = "Domains")
+        List<String> Domains;
+
+        @JSONField(name = "HTTPSSwitch")
+        String HTTPSSwitch;
+
+        @JSONField(name = "ServiceRegion")
+        String ServiceRegion;
+
+        @JSONField(name = "ServiceTemplateId")
+        String ServiceTemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateTemplateDomainResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UriParamSup {
+
+        @JSONField(name = "JoinSymbol")
+        String JoinSymbol;
+
+        @JSONField(name = "SplitSymbol")
+        String SplitSymbol;
+
+        @JSONField(name = "StartLevel")
+        Long StartLevel;
+
+        @JSONField(name = "TermLevel")
+        Long TermLevel;
     }
 
     @Data

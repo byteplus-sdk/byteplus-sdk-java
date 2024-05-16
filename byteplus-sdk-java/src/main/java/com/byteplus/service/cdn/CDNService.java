@@ -84,4 +84,30 @@ package com.byteplus.service.cdn;
 
         CDN.DescribeAccountingSummaryResponse describeAccountingSummary(CDN.DescribeAccountingSummaryRequest request) throws Exception;
 
+        CDN.DescribeTemplatesResponse describeTemplates(CDN.DescribeTemplatesRequest request) throws Exception;
+
+        CDN.DescribeServiceTemplateResponse describeServiceTemplate(CDN.DescribeServiceTemplateRequest request) throws Exception;
+
+        CDN.DescribeCipherTemplateResponse describeCipherTemplate(CDN.DescribeCipherTemplateRequest request) throws Exception;
+
+        CDN.CreateCipherTemplateResponse createCipherTemplate(CDN.CreateCipherTemplateRequest request) throws Exception;
+
+        CDN.UpdateServiceTemplateResponse updateServiceTemplate(CDN.UpdateServiceTemplateRequest request) throws Exception;
+
+        CDN.UpdateCipherTemplateResponse updateCipherTemplate(CDN.UpdateCipherTemplateRequest request) throws Exception;
+
+        CDN.DuplicateTemplateResponse duplicateTemplate(CDN.DuplicateTemplateRequest request) throws Exception;
+
+        CDN.LockTemplateResponse lockTemplate(CDN.LockTemplateRequest request) throws Exception;
+
+        CDN.DeleteTemplateResponse deleteTemplate(CDN.DeleteTemplateRequest request) throws Exception;
+
+        CDN.DescribeTemplateDomainsResponse describeTemplateDomains(CDN.DescribeTemplateDomainsRequest request) throws Exception;
+
+        CDN.AddTemplateDomainResponse addTemplateDomain(CDN.AddTemplateDomainRequest request) throws Exception;
+
+        CDN.UpdateTemplateDomainResponse updateTemplateDomain(CDN.UpdateTemplateDomainRequest request) throws Exception;
+
+        CDN.CreateServiceTemplateResponse createServiceTemplate(CDN.CreateServiceTemplateRequest request) throws Exception;
+
 }

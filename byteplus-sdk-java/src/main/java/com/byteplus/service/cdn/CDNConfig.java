@@ -632,6 +632,201 @@ public class CDNConfig {
                     }
             ));
 
+            put("DescribeTemplates", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeTemplates"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DescribeServiceTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeServiceTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DescribeCipherTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeCipherTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("CreateCipherTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "CreateCipherTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("UpdateServiceTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "UpdateServiceTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("UpdateCipherTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "UpdateCipherTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DuplicateTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DuplicateTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("LockTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "LockTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DeleteTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DeleteTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("DescribeTemplateDomains", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "DescribeTemplateDomains"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("AddTemplateDomain", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "AddTemplateDomain"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("UpdateTemplateDomain", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "UpdateTemplateDomain"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
+            put("CreateServiceTemplate", new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(Const.Method, "POST");
+                            put(Const.Path, "/");
+                            put(Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", "CreateServiceTemplate"));
+                                    add(new BasicNameValuePair("Version", "2021-03-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+
 
         }
     };

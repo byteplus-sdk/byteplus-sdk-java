@@ -1,0 +1,44 @@
+package com.byteplus.model.live.v20230101;
+
+
+import com.alibaba.fastjson.JSON;
+
+/**
+ * UpdateCertResResult
+ */
+@lombok.Data
+public final class UpdateCertResResult  {
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "AccountID")
+    private String accountID;
+
+    /**
+     * <p>证书 ID</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "ChainID")
+    private String chainID;
+
+    /**
+     * <p>与证书绑定的域名</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "Domain")
+    private String domain;
+
+    /**
+     * <p>证书用途，支持的取值包括：</p>
+     *
+     * <p>- https：https 认证；</p>
+     *
+     * <p>- sign：签名校验。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "UseWay")
+    private String useWay;
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
+}

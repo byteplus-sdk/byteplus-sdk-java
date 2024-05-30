@@ -1,0 +1,23 @@
+package com.byteplus.model.live.v20230101;
+
+
+import com.alibaba.fastjson.JSON;
+import java.util.List;
+
+/**
+ * ListBindEncryptDRMResResult
+ */
+@lombok.Data
+public final class ListBindEncryptDRMResResult  {
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "DRMBindingList")
+    private List<ListBindEncryptDRMResResultDRMBindingListItem> dRMBindingList;
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
+}

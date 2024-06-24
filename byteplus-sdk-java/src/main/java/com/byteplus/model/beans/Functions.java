@@ -1,6 +1,7 @@
 package com.byteplus.model.beans;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import com.byteplus.service.vod.model.business.VodUploadFunctionInput;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,6 +33,10 @@ public class Functions {
 
     public static Functions StartWorkFlowFunction(String templateId) {
         return new Functions("StartWorkflow", new FunctionsWorkflowInput(templateId));
+    }
+
+    public static Functions CaptionUploadFunction(FunctionsCaptionInput input) {
+        return new Functions("CaptionUpload", input);
     }
 
 }

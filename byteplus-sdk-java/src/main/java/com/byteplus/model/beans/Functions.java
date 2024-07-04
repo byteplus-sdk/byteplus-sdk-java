@@ -32,7 +32,11 @@ public class Functions {
     }
 
     public static Functions StartWorkFlowFunction(String templateId) {
-        return new Functions("StartWorkflow", new FunctionsWorkflowInput(templateId));
+        return new Functions("StartWorkflow", new FunctionsWorkflowInput(templateId, new String[]{}));
+    }
+
+    public static Functions StartWorkFlowFunction(String[] templateIds) {
+        return new Functions("StartWorkflow", new FunctionsWorkflowInput("", templateIds));
     }
 
     public static Functions CaptionUploadFunction(FunctionsCaptionInput input) {

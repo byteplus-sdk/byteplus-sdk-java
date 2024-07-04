@@ -155,110 +155,112 @@ public final class VodCdn {
     java.lang.String[] descriptorData = {
       "\n#byteplus/vod/business/vod_cdn.proto\022\034B" +
       "yteplus.Vod.Models.Business\032&byteplus/vo" +
-      "d/business/vod_common.proto\"\344\001\n\023VodDomai" +
+      "d/business/vod_common.proto\"\203\002\n\023VodDomai" +
       "nConfigInfo\022\021\n\tSpaceName\030\001 \001(\t\022N\n\020PlayIn" +
       "stanceInfo\030\002 \001(\01324.Byteplus.Vod.Models.B" +
       "usiness.VodDomainInstanceInfos\022O\n\021ImageI" +
       "nstanceInfo\030\003 \001(\01324.Byteplus.Vod.Models." +
       "Business.VodDomainInstanceInfos\022\031\n\021Defau" +
-      "ltPlayDomain\030\004 \001(\t\"\261\001\n\026VodDomainInstance" +
-      "Infos\022J\n\rByteInstances\030\001 \003(\01323.Byteplus." +
-      "Vod.Models.Business.VodDomainInstanceInf" +
-      "o\022K\n\016OtherInstances\030\002 \003(\01323.Byteplus.Vod" +
-      ".Models.Business.VodDomainInstanceInfo\"\230" +
-      "\001\n\025VodDomainInstanceInfo\022\022\n\nInstanceId\030\001" +
-      " \001(\t\022=\n\007Domains\030\002 \003(\0132,.Byteplus.Vod.Mod" +
-      "els.Business.VodDomainoInfo\022\026\n\016CanSelfEd" +
-      "iting\030\003 \001(\010\022\024\n\014ConfigStatus\030\004 \001(\t\"\307\002\n\016Vo" +
-      "dDomainoInfo\022\016\n\006Domain\030\001 \001(\t\022\r\n\005Cname\030\002 " +
-      "\001(\t\022\024\n\014ConfigStatus\030\003 \001(\t\022\023\n\013CnameStatus" +
-      "\030\004 \001(\t\022\016\n\006Status\030\005 \001(\t\022K\n\013Certificate\030\006 " +
-      "\001(\01326.Byteplus.Vod.Models.Business.VodDo" +
-      "mainCertificateInfo\022\022\n\nCreateTime\030\007 \001(\t\022" +
-      "\022\n\nUpdateTime\030\010 \001(\t\022\016\n\006Region\030\t \001(\t\022B\n\007S" +
-      "ources\030\n \003(\01321.Byteplus.Vod.Models.Busin" +
-      "ess.VodDomainSourceInfo\022\022\n\nLockStatus\030\013 " +
-      "\001(\t\"\242\001\n\030VodDomainCertificateInfo\022\025\n\rCert" +
-      "ificateId\030\001 \001(\t\022\027\n\017CertificateName\030\002 \001(\t" +
-      "\022\026\n\016CertificatePub\030\003 \001(\t\022\026\n\016CertificateP" +
-      "ri\030\004 \001(\t\022\023\n\013HttpsStatus\030\005 \001(\t\022\021\n\tExpired" +
-      "At\030\006 \001(\t\"(\n\026VodCreateCdnTaskResult\022\016\n\006Ta" +
-      "skId\030\001 \001(\t\"x\n\016VodContentInfo\022\016\n\006ItemId\030\001" +
-      " \001(\t\022\013\n\003Url\030\002 \001(\t\022\016\n\006Status\030\003 \001(\t\022\020\n\010Tas" +
-      "kType\030\004 \001(\t\022\027\n\017CreateTimestamp\030\005 \001(\005\022\016\n\006" +
-      "TaskId\030\006 \001(\t\"\215\001\n\020VodCdnTaskResult\022\022\n\nTot" +
-      "alCount\030\001 \001(\005\022\017\n\007PageNum\030\002 \001(\005\022\020\n\010PageSi" +
-      "ze\030\003 \001(\005\022B\n\014ContentInfos\030\004 \003(\0132,.Byteplu" +
-      "s.Vod.Models.Business.VodContentInfo\"\177\n\026" +
-      "VodCdnAccessLogElement\022\023\n\013DownloadUrl\030\001 " +
-      "\001(\t\022\020\n\010FileSize\030\002 \001(\003\022\020\n\010FileName\030\003 \001(\t\022" +
-      "\026\n\016StartTimestamp\030\004 \001(\005\022\024\n\014EndTimestamp\030" +
-      "\005 \001(\005\"l\n\023VodCdnAccessLogInfo\022\016\n\006Domain\030\001" +
-      " \001(\t\022E\n\007LogList\030\002 \003(\01324.Byteplus.Vod.Mod" +
-      "els.Business.VodCdnAccessLogElement\"\\\n\031V" +
-      "odListCdnAccessLogResult\022?\n\004Logs\030\001 \003(\01321" +
-      ".Byteplus.Vod.Models.Business.VodCdnAcce" +
-      "ssLogInfo\"B\n\031VodCdnTopAccessUrlElement\022\013" +
-      "\n\003Url\030\001 \001(\t\022\n\n\002Pv\030\002 \001(\003\022\014\n\004Flux\030\003 \001(\003\"i\n" +
-      "\034VodListCdnTopAccessUrlResult\022I\n\010UrlInfo" +
-      "s\030\001 \003(\01327.Byteplus.Vod.Models.Business.V" +
-      "odCdnTopAccessUrlElement\"3\n\020VodBandwidth" +
-      "Data\022\014\n\004Time\030\001 \001(\t\022\021\n\tBandwidth\030\002 \001(\001\"\212\002" +
-      "\n\'VodDescribeVodDomainBandwidthDataResul" +
-      "t\022\022\n\nDomainList\030\001 \003(\t\022\021\n\tStartTime\030\002 \001(\t" +
-      "\022\017\n\007EndTime\030\003 \001(\t\022\023\n\013Aggregation\030\004 \001(\005\022\025" +
-      "\n\rBandwidthType\030\005 \001(\t\022\025\n\rPeakBandwidth\030\006" +
-      " \001(\001\022\031\n\021PeakBandwidthTime\030\007 \001(\t\022I\n\021Bandw" +
-      "idthDataList\030\010 \003(\0132..Byteplus.Vod.Models" +
-      ".Business.VodBandwidthData\"~\n\024VodCdnStat" +
-      "isticsData\022\014\n\004Name\030\001 \001(\t\022\016\n\006Metric\030\002 \001(\t" +
-      "\022\020\n\010DataType\030\003 \001(\t\0226\n\006Points\030\004 \003(\0132&.Byt" +
-      "eplus.Vod.Models.Business.VodPoint\"~\n\034Vo" +
-      "dCdnStatisticsCommonResult\022A\n\005Datas\030\001 \003(" +
-      "\01322.Byteplus.Vod.Models.Business.VodCdnS" +
-      "tatisticsData\022\033\n\023NoPermissionDomains\030\002 \003" +
-      "(\t\"H\n\014VodCdnIpInfo\022\n\n\002Ip\030\001 \001(\t\022\r\n\005CdnIp\030" +
-      "\002 \001(\010\022\020\n\010Location\030\003 \001(\t\022\013\n\003Isp\030\004 \001(\t\"T\n\027" +
-      "VodDescribeIpInfoResult\0229\n\005Infos\030\001 \003(\0132*" +
-      ".Byteplus.Vod.Models.Business.VodCdnIpIn" +
-      "fo\"/\n\016VodTrafficData\022\014\n\004Time\030\001 \001(\t\022\017\n\007Tr" +
-      "affic\030\002 \001(\001\"\346\001\n%VodDescribeVodDomainTraf" +
-      "ficDataResult\022\022\n\nDomainList\030\001 \003(\t\022\021\n\tSta" +
-      "rtTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\023\n\013Aggrega" +
-      "tion\030\004 \001(\005\022\023\n\013TrafficType\030\005 \001(\t\022\024\n\014Total" +
-      "Traffic\030\006 \001(\001\022E\n\017TrafficDataList\030\007 \003(\0132," +
-      ".Byteplus.Vod.Models.Business.VodTraffic" +
-      "Data\"\246\002\n\023VodDomainSourceInfo\022S\n\021SourceSt" +
-      "ationType\030\001 \001(\01628.Byteplus.Vod.Models.Bu" +
-      "siness.VodDomainSourceStationType\022a\n\030Sou" +
-      "rceStationAddressType\030\002 \001(\0162?.Byteplus.V" +
-      "od.Models.Business.VodDomainSourceStatio" +
-      "nAddressType\022\016\n\006Origin\030\003 \001(\t\022G\n\006Bucket\030\004" +
-      " \001(\01327.Byteplus.Vod.Models.Business.VodD" +
-      "omainOriginBucketInfo\"_\n\031VodDomainOrigin" +
-      "BucketInfo\022\022\n\nBucketName\030\001 \001(\t\022\030\n\020Bucket" +
-      "SourceType\030\002 \001(\t\022\024\n\014BucketRegion\030\003 \001(\t\"+" +
-      "\n\031VodSubmitBlockTasksResult\022\016\n\006TaskID\030\001 " +
-      "\001(\t\"\212\001\n\035VodGetContentBlockTasksResult\022\r\n" +
-      "\005Total\030\001 \001(\003\022\017\n\007PageNum\030\002 \001(\003\022\020\n\010PageSiz" +
-      "e\030\003 \001(\003\0227\n\004Data\030\004 \003(\0132).Byteplus.Vod.Mod" +
-      "els.Business.ContentTask\"`\n\013ContentTask\022" +
-      "\013\n\003Url\030\001 \001(\t\022\016\n\006Status\030\002 \001(\t\022\020\n\010TaskType" +
-      "\030\003 \001(\t\022\022\n\nCreateTime\030\004 \001(\003\022\016\n\006TaskID\030\005 \001" +
-      "(\t*\222\001\n\032VodDomainSourceStationType\022\'\n#Und" +
-      "efinedVodDomainSourceStationType\020\000\022!\n\035Vo" +
-      "dVodDomainSourceStationType\020\001\022(\n$ThirdPa" +
-      "rtyVodDomainSourceStationType\020\002*\251\001\n!VodD" +
-      "omainSourceStationAddressType\022.\n*Undefin" +
-      "edVodDomainSourceStationAddressType\020\000\022+\n" +
-      "\'DomainVodDomainSourceStationAddressType" +
-      "\020\001\022\'\n#IPVodDomainSourceStationAddressTyp" +
-      "e\020\002B\326\001\n\'com.byteplus.service.vod.model.b" +
-      "usinessB\006VodCdnP\001ZGgithub.com/byteplus-s" +
-      "dk/byteplus-sdk-golang/service/vod/model" +
-      "s/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\Service\\V" +
-      "od\\Models\\Business\342\002\'Byteplus\\Service\\Vo" +
-      "d\\Models\\GPBMetadatab\006proto3"
+      "ltPlayDomain\030\004 \001(\t\022\r\n\005Total\030\005 \001(\003\022\016\n\006Off" +
+      "set\030\006 \001(\003\"\261\001\n\026VodDomainInstanceInfos\022J\n\r" +
+      "ByteInstances\030\001 \003(\01323.Byteplus.Vod.Model" +
+      "s.Business.VodDomainInstanceInfo\022K\n\016Othe" +
+      "rInstances\030\002 \003(\01323.Byteplus.Vod.Models.B" +
+      "usiness.VodDomainInstanceInfo\"\230\001\n\025VodDom" +
+      "ainInstanceInfo\022\022\n\nInstanceId\030\001 \001(\t\022=\n\007D" +
+      "omains\030\002 \003(\0132,.Byteplus.Vod.Models.Busin" +
+      "ess.VodDomainoInfo\022\026\n\016CanSelfEditing\030\003 \001" +
+      "(\010\022\024\n\014ConfigStatus\030\004 \001(\t\"\332\002\n\016VodDomainoI" +
+      "nfo\022\016\n\006Domain\030\001 \001(\t\022\r\n\005Cname\030\002 \001(\t\022\024\n\014Co" +
+      "nfigStatus\030\003 \001(\t\022\023\n\013CnameStatus\030\004 \001(\t\022\016\n" +
+      "\006Status\030\005 \001(\t\022K\n\013Certificate\030\006 \001(\01326.Byt" +
+      "eplus.Vod.Models.Business.VodDomainCerti" +
+      "ficateInfo\022\022\n\nCreateTime\030\007 \001(\t\022\022\n\nUpdate" +
+      "Time\030\010 \001(\t\022\016\n\006Region\030\t \001(\t\022B\n\007Sources\030\n " +
+      "\003(\01321.Byteplus.Vod.Models.Business.VodDo" +
+      "mainSourceInfo\022\022\n\nLockStatus\030\013 \001(\t\022\021\n\tCd" +
+      "nStatus\030\014 \001(\t\"\312\001\n\030VodDomainCertificateIn" +
+      "fo\022\025\n\rCertificateId\030\001 \001(\t\022\027\n\017Certificate" +
+      "Name\030\002 \001(\t\022\026\n\016CertificatePub\030\003 \001(\t\022\026\n\016Ce" +
+      "rtificatePri\030\004 \001(\t\022\023\n\013HttpsStatus\030\005 \001(\t\022" +
+      "\021\n\tExpiredAt\030\006 \001(\t\022&\n\036CertificateCenterC" +
+      "ertificateId\030\007 \001(\t\"(\n\026VodCreateCdnTaskRe" +
+      "sult\022\016\n\006TaskId\030\001 \001(\t\"x\n\016VodContentInfo\022\016" +
+      "\n\006ItemId\030\001 \001(\t\022\013\n\003Url\030\002 \001(\t\022\016\n\006Status\030\003 " +
+      "\001(\t\022\020\n\010TaskType\030\004 \001(\t\022\027\n\017CreateTimestamp" +
+      "\030\005 \001(\005\022\016\n\006TaskId\030\006 \001(\t\"\215\001\n\020VodCdnTaskRes" +
+      "ult\022\022\n\nTotalCount\030\001 \001(\005\022\017\n\007PageNum\030\002 \001(\005" +
+      "\022\020\n\010PageSize\030\003 \001(\005\022B\n\014ContentInfos\030\004 \003(\013" +
+      "2,.Byteplus.Vod.Models.Business.VodConte" +
+      "ntInfo\"\177\n\026VodCdnAccessLogElement\022\023\n\013Down" +
+      "loadUrl\030\001 \001(\t\022\020\n\010FileSize\030\002 \001(\003\022\020\n\010FileN" +
+      "ame\030\003 \001(\t\022\026\n\016StartTimestamp\030\004 \001(\005\022\024\n\014End" +
+      "Timestamp\030\005 \001(\005\"l\n\023VodCdnAccessLogInfo\022\016" +
+      "\n\006Domain\030\001 \001(\t\022E\n\007LogList\030\002 \003(\01324.Bytepl" +
+      "us.Vod.Models.Business.VodCdnAccessLogEl" +
+      "ement\"\\\n\031VodListCdnAccessLogResult\022?\n\004Lo" +
+      "gs\030\001 \003(\01321.Byteplus.Vod.Models.Business." +
+      "VodCdnAccessLogInfo\"B\n\031VodCdnTopAccessUr" +
+      "lElement\022\013\n\003Url\030\001 \001(\t\022\n\n\002Pv\030\002 \001(\003\022\014\n\004Flu" +
+      "x\030\003 \001(\003\"i\n\034VodListCdnTopAccessUrlResult\022" +
+      "I\n\010UrlInfos\030\001 \003(\01327.Byteplus.Vod.Models." +
+      "Business.VodCdnTopAccessUrlElement\"3\n\020Vo" +
+      "dBandwidthData\022\014\n\004Time\030\001 \001(\t\022\021\n\tBandwidt" +
+      "h\030\002 \001(\001\"\212\002\n\'VodDescribeVodDomainBandwidt" +
+      "hDataResult\022\022\n\nDomainList\030\001 \003(\t\022\021\n\tStart" +
+      "Time\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\023\n\013Aggregati" +
+      "on\030\004 \001(\005\022\025\n\rBandwidthType\030\005 \001(\t\022\025\n\rPeakB" +
+      "andwidth\030\006 \001(\001\022\031\n\021PeakBandwidthTime\030\007 \001(" +
+      "\t\022I\n\021BandwidthDataList\030\010 \003(\0132..Byteplus." +
+      "Vod.Models.Business.VodBandwidthData\"~\n\024" +
+      "VodCdnStatisticsData\022\014\n\004Name\030\001 \001(\t\022\016\n\006Me" +
+      "tric\030\002 \001(\t\022\020\n\010DataType\030\003 \001(\t\0226\n\006Points\030\004" +
+      " \003(\0132&.Byteplus.Vod.Models.Business.VodP" +
+      "oint\"~\n\034VodCdnStatisticsCommonResult\022A\n\005" +
+      "Datas\030\001 \003(\01322.Byteplus.Vod.Models.Busine" +
+      "ss.VodCdnStatisticsData\022\033\n\023NoPermissionD" +
+      "omains\030\002 \003(\t\"H\n\014VodCdnIpInfo\022\n\n\002Ip\030\001 \001(\t" +
+      "\022\r\n\005CdnIp\030\002 \001(\010\022\020\n\010Location\030\003 \001(\t\022\013\n\003Isp" +
+      "\030\004 \001(\t\"T\n\027VodDescribeIpInfoResult\0229\n\005Inf" +
+      "os\030\001 \003(\0132*.Byteplus.Vod.Models.Business." +
+      "VodCdnIpInfo\"/\n\016VodTrafficData\022\014\n\004Time\030\001" +
+      " \001(\t\022\017\n\007Traffic\030\002 \001(\001\"\346\001\n%VodDescribeVod" +
+      "DomainTrafficDataResult\022\022\n\nDomainList\030\001 " +
+      "\003(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022" +
+      "\023\n\013Aggregation\030\004 \001(\005\022\023\n\013TrafficType\030\005 \001(" +
+      "\t\022\024\n\014TotalTraffic\030\006 \001(\001\022E\n\017TrafficDataLi" +
+      "st\030\007 \003(\0132,.Byteplus.Vod.Models.Business." +
+      "VodTrafficData\"\246\002\n\023VodDomainSourceInfo\022S" +
+      "\n\021SourceStationType\030\001 \001(\01628.Byteplus.Vod" +
+      ".Models.Business.VodDomainSourceStationT" +
+      "ype\022a\n\030SourceStationAddressType\030\002 \001(\0162?." +
+      "Byteplus.Vod.Models.Business.VodDomainSo" +
+      "urceStationAddressType\022\016\n\006Origin\030\003 \001(\t\022G" +
+      "\n\006Bucket\030\004 \001(\01327.Byteplus.Vod.Models.Bus" +
+      "iness.VodDomainOriginBucketInfo\"_\n\031VodDo" +
+      "mainOriginBucketInfo\022\022\n\nBucketName\030\001 \001(\t" +
+      "\022\030\n\020BucketSourceType\030\002 \001(\t\022\024\n\014BucketRegi" +
+      "on\030\003 \001(\t\"+\n\031VodSubmitBlockTasksResult\022\016\n" +
+      "\006TaskID\030\001 \001(\t\"\212\001\n\035VodGetContentBlockTask" +
+      "sResult\022\r\n\005Total\030\001 \001(\003\022\017\n\007PageNum\030\002 \001(\003\022" +
+      "\020\n\010PageSize\030\003 \001(\003\0227\n\004Data\030\004 \003(\0132).Bytepl" +
+      "us.Vod.Models.Business.ContentTask\"`\n\013Co" +
+      "ntentTask\022\013\n\003Url\030\001 \001(\t\022\016\n\006Status\030\002 \001(\t\022\020" +
+      "\n\010TaskType\030\003 \001(\t\022\022\n\nCreateTime\030\004 \001(\003\022\016\n\006" +
+      "TaskID\030\005 \001(\t*\222\001\n\032VodDomainSourceStationT" +
+      "ype\022\'\n#UndefinedVodDomainSourceStationTy" +
+      "pe\020\000\022!\n\035VodVodDomainSourceStationType\020\001\022" +
+      "(\n$ThirdPartyVodDomainSourceStationType\020" +
+      "\002*\251\001\n!VodDomainSourceStationAddressType\022" +
+      ".\n*UndefinedVodDomainSourceStationAddres" +
+      "sType\020\000\022+\n\'DomainVodDomainSourceStationA" +
+      "ddressType\020\001\022\'\n#IPVodDomainSourceStation" +
+      "AddressType\020\002B\326\001\n\'com.byteplus.service.v" +
+      "od.model.businessB\006VodCdnP\001ZGgithub.com/" +
+      "byteplus-sdk/byteplus-sdk-golang/service" +
+      "/vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus" +
+      "\\Service\\Vod\\Models\\Business\342\002\'Byteplus\\" +
+      "Service\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -270,7 +272,7 @@ public final class VodCdn {
     internal_static_Byteplus_Vod_Models_Business_VodDomainConfigInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDomainConfigInfo_descriptor,
-        new java.lang.String[] { "SpaceName", "PlayInstanceInfo", "ImageInstanceInfo", "DefaultPlayDomain", });
+        new java.lang.String[] { "SpaceName", "PlayInstanceInfo", "ImageInstanceInfo", "DefaultPlayDomain", "Total", "Offset", });
     internal_static_Byteplus_Vod_Models_Business_VodDomainInstanceInfos_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Byteplus_Vod_Models_Business_VodDomainInstanceInfos_fieldAccessorTable = new
@@ -288,13 +290,13 @@ public final class VodCdn {
     internal_static_Byteplus_Vod_Models_Business_VodDomainoInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDomainoInfo_descriptor,
-        new java.lang.String[] { "Domain", "Cname", "ConfigStatus", "CnameStatus", "Status", "Certificate", "CreateTime", "UpdateTime", "Region", "Sources", "LockStatus", });
+        new java.lang.String[] { "Domain", "Cname", "ConfigStatus", "CnameStatus", "Status", "Certificate", "CreateTime", "UpdateTime", "Region", "Sources", "LockStatus", "CdnStatus", });
     internal_static_Byteplus_Vod_Models_Business_VodDomainCertificateInfo_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_Byteplus_Vod_Models_Business_VodDomainCertificateInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDomainCertificateInfo_descriptor,
-        new java.lang.String[] { "CertificateId", "CertificateName", "CertificatePub", "CertificatePri", "HttpsStatus", "ExpiredAt", });
+        new java.lang.String[] { "CertificateId", "CertificateName", "CertificatePub", "CertificatePri", "HttpsStatus", "ExpiredAt", "CertificateCenterCertificateId", });
     internal_static_Byteplus_Vod_Models_Business_VodCreateCdnTaskResult_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_Byteplus_Vod_Models_Business_VodCreateCdnTaskResult_fieldAccessorTable = new

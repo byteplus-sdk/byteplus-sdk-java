@@ -12,4 +12,7 @@ import lombok.NoArgsConstructor;
 public class FunctionsWorkflowInput {
     @JSONField(name = "TemplateId")
     String templateId;
+
+    @JSONField(name = "TemplateIds")
+    String[] templateIds;
 }

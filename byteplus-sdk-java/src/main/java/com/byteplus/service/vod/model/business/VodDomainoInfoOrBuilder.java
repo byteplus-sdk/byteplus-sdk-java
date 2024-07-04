@@ -257,4 +257,24 @@ public interface VodDomainoInfoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getLockStatusBytes();
+
+  /**
+   * <pre>
+   *在CDN侧是否启用停用
+   * </pre>
+   *
+   * <code>string CdnStatus = 12;</code>
+   * @return The cdnStatus.
+   */
+  java.lang.String getCdnStatus();
+  /**
+   * <pre>
+   *在CDN侧是否启用停用
+   * </pre>
+   *
+   * <code>string CdnStatus = 12;</code>
+   * @return The bytes for cdnStatus.
+   */
+  com.google.protobuf.ByteString
+      getCdnStatusBytes();
 }

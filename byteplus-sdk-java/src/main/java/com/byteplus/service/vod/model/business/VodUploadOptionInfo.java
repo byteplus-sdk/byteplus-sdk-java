@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private VodUploadOptionInfo() {
     templateId_ = "";
+    templateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -39,6 +40,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -53,6 +55,15 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             templateId_ = s;
+            break;
+          }
+          case 794: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              templateIds_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            templateIds_.add(s);
             break;
           }
           default: {
@@ -70,6 +81,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        templateIds_ = templateIds_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -125,6 +139,41 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int TEMPLATEIDS_FIELD_NUMBER = 99;
+  private com.google.protobuf.LazyStringList templateIds_;
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @return A list containing the templateIds.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getTemplateIdsList() {
+    return templateIds_;
+  }
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @return The count of templateIds.
+   */
+  public int getTemplateIdsCount() {
+    return templateIds_.size();
+  }
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @param index The index of the element to return.
+   * @return The templateIds at the given index.
+   */
+  public java.lang.String getTemplateIds(int index) {
+    return templateIds_.get(index);
+  }
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the templateIds at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getTemplateIdsBytes(int index) {
+    return templateIds_.getByteString(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -142,6 +191,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(templateId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, templateId_);
     }
+    for (int i = 0; i < templateIds_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 99, templateIds_.getRaw(i));
+    }
     unknownFields.writeTo(output);
   }
 
@@ -153,6 +205,14 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(templateId_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, templateId_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < templateIds_.size(); i++) {
+        dataSize += computeStringSizeNoTag(templateIds_.getRaw(i));
+      }
+      size += dataSize;
+      size += 2 * getTemplateIdsList().size();
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -171,6 +231,8 @@ private static final long serialVersionUID = 0L;
 
     if (!getTemplateId()
         .equals(other.getTemplateId())) return false;
+    if (!getTemplateIdsList()
+        .equals(other.getTemplateIdsList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -184,6 +246,10 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEMPLATEID_FIELD_NUMBER;
     hash = (53 * hash) + getTemplateId().hashCode();
+    if (getTemplateIdsCount() > 0) {
+      hash = (37 * hash) + TEMPLATEIDS_FIELD_NUMBER;
+      hash = (53 * hash) + getTemplateIdsList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -319,6 +385,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       templateId_ = "";
 
+      templateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -345,7 +413,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.byteplus.service.vod.model.business.VodUploadOptionInfo buildPartial() {
       com.byteplus.service.vod.model.business.VodUploadOptionInfo result = new com.byteplus.service.vod.model.business.VodUploadOptionInfo(this);
+      int from_bitField0_ = bitField0_;
       result.templateId_ = templateId_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        templateIds_ = templateIds_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.templateIds_ = templateIds_;
       onBuilt();
       return result;
     }
@@ -398,6 +472,16 @@ private static final long serialVersionUID = 0L;
         templateId_ = other.templateId_;
         onChanged();
       }
+      if (!other.templateIds_.isEmpty()) {
+        if (templateIds_.isEmpty()) {
+          templateIds_ = other.templateIds_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureTemplateIdsIsMutable();
+          templateIds_.addAll(other.templateIds_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -426,6 +510,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private java.lang.Object templateId_ = "";
     /**
@@ -499,6 +584,116 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       templateId_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList templateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureTemplateIdsIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        templateIds_ = new com.google.protobuf.LazyStringArrayList(templateIds_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @return A list containing the templateIds.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getTemplateIdsList() {
+      return templateIds_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @return The count of templateIds.
+     */
+    public int getTemplateIdsCount() {
+      return templateIds_.size();
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param index The index of the element to return.
+     * @return The templateIds at the given index.
+     */
+    public java.lang.String getTemplateIds(int index) {
+      return templateIds_.get(index);
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the templateIds at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getTemplateIdsBytes(int index) {
+      return templateIds_.getByteString(index);
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param index The index to set the value at.
+     * @param value The templateIds to set.
+     * @return This builder for chaining.
+     */
+    public Builder setTemplateIds(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTemplateIdsIsMutable();
+      templateIds_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param value The templateIds to add.
+     * @return This builder for chaining.
+     */
+    public Builder addTemplateIds(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTemplateIdsIsMutable();
+      templateIds_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param values The templateIds to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllTemplateIds(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureTemplateIdsIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, templateIds_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearTemplateIds() {
+      templateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string TemplateIds = 99;</code>
+     * @param value The bytes of the templateIds to add.
+     * @return This builder for chaining.
+     */
+    public Builder addTemplateIdsBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureTemplateIdsIsMutable();
+      templateIds_.add(value);
       onChanged();
       return this;
     }

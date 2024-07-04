@@ -186,4 +186,29 @@ public interface VodUploadFunctionInputOrBuilder extends
    */
   com.google.protobuf.ByteString
       getActionTypeBytes();
+
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @return A list containing the templateIds.
+   */
+  java.util.List<java.lang.String>
+      getTemplateIdsList();
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @return The count of templateIds.
+   */
+  int getTemplateIdsCount();
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @param index The index of the element to return.
+   * @return The templateIds at the given index.
+   */
+  java.lang.String getTemplateIds(int index);
+  /**
+   * <code>repeated string TemplateIds = 99;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the templateIds at the given index.
+   */
+  com.google.protobuf.ByteString
+      getTemplateIdsBytes(int index);
 }

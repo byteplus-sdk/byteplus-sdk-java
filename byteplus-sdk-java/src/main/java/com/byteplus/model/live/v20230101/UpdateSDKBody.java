@@ -34,22 +34,10 @@ public final class UpdateSDKBody  {
     private Integer sDKVersion;
 
     /**
-     * <p>操作类型，1：激活，2：恢复，3：彻底删除</p>
+     * <p>应用ID。</p>
      */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Type")
-    private Integer type;
-
-    /**
-     * <p>状态，0：未激活，1：激活，2：审批，3：过期，4：删除，5：试用过期，6：正式过期，7：试用激活，8：彻底删除</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Status")
-    private Integer status;
-
-    /**
-     * <p>要迁移的目标账号</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "TargetAccountID")
-    private String targetAccountID;
+    @com.alibaba.fastjson.annotation.JSONField(name = "AppID")
+    private Integer appID;
 
     @Override
     public String toString() {

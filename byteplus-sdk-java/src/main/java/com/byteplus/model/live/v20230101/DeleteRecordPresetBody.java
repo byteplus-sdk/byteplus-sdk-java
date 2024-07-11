@@ -10,19 +10,21 @@ import com.alibaba.fastjson.JSON;
 public final class DeleteRecordPresetBody  {
 
     /**
-     * <p>应用名称，由 1 到 30 位数字、字母、下划线及"-"和"."组成。</p>
+     * <p>应用名称，您可以调用 [ListVhostRecordPresetV2](https://www.volcengine.com/docs/6469/1126858) 接口查看待删除的录制配置 App 取值。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;
 
     /**
-     * <p>模版名称。可调用 [`ListVhostRecordPresetV2`](https://www.volcengine.com/docs/6469/1126858) 接口，查询模版名称。</p>
+     * <p>录制配置的名称。可调用 [ListVhostRecordPresetV2](https://www.volcengine.com/docs/6469/1126858) 接口查看待删除录制配置的名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Preset")
     private String preset;
 
     /**
-     * <p>域名空间名称。</p>
+     * <p>域名空间。您可以调用 [ListVhostRecordPresetV2](https://www.volcengine.com/docs/6469/1126858) 接口查看待删除录制配置的 `Vhost` 取值。</p>
+     *
+     *
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Vhost")
     private String vhost;

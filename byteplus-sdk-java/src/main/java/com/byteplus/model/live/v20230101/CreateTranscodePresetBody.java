@@ -76,7 +76,7 @@ public final class CreateTranscodePresetBody  {
     private Integer an;
 
     /**
-     * <p>应用名称，取值与直播流地址的 AppName 字段取值相同。支持由大小写字母（A - Z、a - z）、下划线（_）、短横线（-）和句点（.）组成，长度为 1 到 30 个字符。</p>
+     * <p>应用名称，取值与直播流地址的 AppName 字段取值相同。支持由大小写字母（A - Z、a - z）、数字（0 - 9）、下划线（_）、短横线（-）和句点（.）组成，长度为 1 到 30 个字符。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;
@@ -168,9 +168,7 @@ public final class CreateTranscodePresetBody  {
      *
      * <p>- 视频编码格式为 H.264 （`Vcodec` 取值为 `h264`）时取值范围为 [0,7]；</p>
      *
-     * <p>- 视频编码格式为 H.265 （`Vcodec` 取值为 `h265`）时取值范围为 [0,3]、7、15；</p>
-     *
-     * <p>- 视频编码格式为 H.266 （`Vcodec` 取值为 `h266`）时取值范围为 [0,3]、7、15。</p>
+     * <p>- 视频编码格式为 H.265 或 H.266 （`Vcodec` 取值为 `h265` 或 `h266`）时取值范围为 [0,3]、7、15。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "BFrames")
     private Integer bFrames;
@@ -452,7 +450,7 @@ public final class CreateTranscodePresetBody  {
     private Integer stopInterval;
 
     /**
-     * <p>转码后缀，支持由大小写字母（A - Z、a - z）、下划线（_）和短横线（-）组成，长度为 1 到 10 个字符。</p>
+     * <p>转码后缀，支持由大小写字母（A - Z、a - z）、数字（0 - 9）、下划线（_）和短横线（-）组成，长度为 1 到 10 个字符。</p>
      *
      *
      *
@@ -656,7 +654,7 @@ public final class CreateTranscodePresetBody  {
     private String vcodec;
 
     /**
-     * <p>域名空间，即直播流地址的域名所属的域名空间。您可以调用 [`ListDomainDetail`](https://www.volcengine.com/docs/6469/1126815) 接口或在视频直播控制台的[域名管理](https://console-stable.volcanicengine.com/live/main/domain/list)页面，查看需要转码的直播流使用的域名所属的域名空间。</p>
+     * <p>域名空间，即直播流地址的域名所属的域名空间。您可以调用 [`ListDomainDetail`](https://www.volcengine.com/docs/6469/1126815) 接口或在视频直播控制台的[域名管理](https://console.volcengine.com/live/main/domain/list)页面，查看需要转码的直播流使用的域名所属的域名空间。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Vhost")
     private String vhost;
@@ -720,6 +718,56 @@ public final class CreateTranscodePresetBody  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TransType")
     private String transType;
+
+    /**
+     * <p>动态范围，画质增强类型生效，ParamType=hvq时必填，并且h264只支持SDR</p>
+     *
+     * <p>- SDR：输出为SDR</p>
+     *
+     * <p>- HDR：输出为HDR</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "DynamicRange")
+    private String dynamicRange;
+
+    /**
+     * <p>是否开启智能插帧，只对画质增强类型生效，不填默认为不开启</p>
+     *
+     * <p>- 0：不开启</p>
+     *
+     * <p>- 1：开启</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FISwitch")
+    private Integer fISwitch;
+
+    /**
+     * <p>转码模板参数的类型</p>
+     *
+     * <p>- hvq：表示使用画质增强</p>
+     *
+     *
+     *
+     * <p>选择画质增强时，转码类型默认为极智超清转码（Roi 默认值为 true）。</p>
+     *
+     *
+     *
+     * <p>选择画质增强时，支持使用 shortside 来设置分辨率。</p>
+     *
+     * <p>- `ParamType` 取 hvq 时： </p>
+     *
+     * <p>	-  视频编码方式为 H.264 （Vcodec 取值为 h264）时，shortside 取值范围为 0 和 [150,1280]； </p>
+     *
+     * <p>	-  视频编码方式为 H.265 （`Vcodec` 取值为 `h265`）是，shortside 取值范围为 0 和 [150,1280]；</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "ParamType")
+    private String paramType;
+
+    /**
+     * <p>使用场景，画质增强时生效，不填不生效</p>
+     *
+     * <p>- football：足球场景</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "SceneType")
+    private String sceneType;
 
     @Override
     public String toString() {

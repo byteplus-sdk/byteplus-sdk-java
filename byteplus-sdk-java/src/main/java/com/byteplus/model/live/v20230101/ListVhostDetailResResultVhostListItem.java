@@ -82,6 +82,12 @@ public final class ListVhostDetailResResultVhostListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "UpdateTime")
     private String updateTime;
 
+    /**
+     * <p>故障域。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FRegion")
+    private String fRegion;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

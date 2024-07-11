@@ -318,7 +318,7 @@ public final class DescribeTranscodePresetDetailResResultPresetDetailList  {
     private String revision;
 
     /**
-     * <p>是否极智超清转码。</p>
+     * <p>是否极智超清转码，开启画质增强时，默认为 true 。</p>
      *
      *
      *
@@ -594,6 +594,50 @@ public final class DescribeTranscodePresetDetailResResultPresetDetailList  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Width")
     private Integer width;
+
+    /**
+     * <p>动态范围，画质增强类型生效</p>
+     *
+     *
+     *
+     * <p>- SDR：输出为SDR</p>
+     *
+     * <p>- HDR：输出为HDR</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "DynamicRange")
+    private String dynamicRange;
+
+    /**
+     * <p>是否开启智能插帧，只对画质增强类型生效</p>
+     *
+     *
+     *
+     * <p>- 0：不开启</p>
+     *
+     * <p>- 1：开启</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FISwitch")
+    private Integer fISwitch;
+
+    /**
+     * <p>转码模板参数的类型</p>
+     *
+     *
+     *
+     * <p>- hvq：表示使用画质增强</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "ParamType")
+    private String paramType;
+
+    /**
+     * <p>使用场景，画质增强时生效</p>
+     *
+     *
+     *
+     * <p>- football：足球场景</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "SceneType")
+    private String sceneType;
 
     @Override
     public String toString() {

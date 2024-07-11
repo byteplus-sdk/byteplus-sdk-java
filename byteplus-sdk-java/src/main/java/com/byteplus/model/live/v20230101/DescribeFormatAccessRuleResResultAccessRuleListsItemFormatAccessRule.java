@@ -1,0 +1,35 @@
+package com.byteplus.model.live.v20230101;
+
+
+import com.alibaba.fastjson.JSON;
+import java.util.List;
+
+/**
+ * DescribeFormatAccessRuleResResultAccessRuleListsItemFormatAccessRule
+ */
+@lombok.Data
+public final class DescribeFormatAccessRuleResResultAccessRuleListsItemFormatAccessRule  {
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "Type")
+    private String type;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "Enable")
+    private String enable;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FormatList")
+    private List<String> formatList;
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
+}

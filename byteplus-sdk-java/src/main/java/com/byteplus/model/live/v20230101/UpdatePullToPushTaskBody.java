@@ -11,7 +11,7 @@ import java.util.List;
 public final class UpdatePullToPushTaskBody  {
 
     /**
-     * <p>拉流转推任务的名称，由 1 到 20 位中文、大小写字母和数字组成，默认为空，表示不修改任务名称。</p>
+     * <p>拉流转推任务的名称，默认为空表示不配置任务名称。支持由中文、大小写字母（A - Z、a - z）和数字（0 - 9）组成，长度为 1 到 20 各字符。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Title")
     private String title;
@@ -57,19 +57,23 @@ public final class UpdatePullToPushTaskBody  {
      *
      *
      *
-     * <p>- 0：直播源；</p>
+     * <p>- `0`：直播源；</p>
      *
-     * <p>- 1：点播视频。</p>
+     * <p>- `1`：点播视频。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Type")
     private Integer type;
 
     /**
-     * <p>点播视频文件循环播放模式，当拉流来源类型为点播视频（Type 为 1）时为必选参数，参数取值及含义如下所示。</p>
+     * <p>点播视频文件循环播放模式，当拉流来源类型为点播视频时为必选参数，参数取值及含义如下所示。</p>
      *
-     * <p>- -1：无限循环，至任务结束；</p>
      *
-     * <p>- 0：有限次循环，循环次数为 PlayTimes 取值为准。</p>
+     *
+     * <p>- `-1`：无限次循环，至任务结束；</p>
+     *
+     * <p>- `0`：有限次循环，循环次数以 PlayTimes 取值为准；</p>
+     *
+     * <p>- `>0`：有限次循环，循环次数以 CycleMode 取值为准。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "CycleMode")
     private Integer cycleMode;
@@ -121,9 +125,9 @@ public final class UpdatePullToPushTaskBody  {
      *
      * <p>拉流来源类型为点播视频（Type 为 1）时，参数生效。</p>
      *
-     * <p>- 0：不开启；</p>
+     * <p>- `0`：不开启；</p>
      *
-     * <p>- 1：开启（默认值）。</p>
+     * <p>- `1`：开启（默认值）。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "PreDownload")
     private Integer preDownload;
@@ -141,9 +145,9 @@ public final class UpdatePullToPushTaskBody  {
      *
      *
      *
-     * <p>- 0：从断流处续播（默认值）；</p>
+     * <p>- `0`：从断流处续播（默认值）；</p>
      *
-     * <p>- 1：从断流处+自然流逝时长处续播。</p>
+     * <p>- `1`：从断流处+自然流逝时长处续播。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ContinueStrategy")
     private Integer continueStrategy;
@@ -155,13 +159,19 @@ public final class UpdatePullToPushTaskBody  {
     private Float offset;
 
     /**
-     * <p>点播视频文件循环播放次数，当循环播放模式为有限次循环（CycleMode为0）时为必选参数。</p>
+     * <p>点播视频文件循环播放次数，当 CycleMode 取值为 0 时，PlayTimes 取值将作为循环播放次数。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>PlayTimes 为冗余参数，您可以将 PlayTimes 置 0 后直接使用 CycleMode 指定点播视频文件循环播放次数。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "PlayTimes")
     private Integer playTimes;
 
     /**
-     * <p>PushPriority：设置点播视频转推至第三方推流域名时是否使用推流优先级参数，缺省情况下表示不使用此参数，支持的取值及含义如下。</p>
+     * <p>设置点播视频转推至第三方推流域名时是否使用推流优先级参数，缺省情况下表示不使用此参数，支持的取值及含义如下。</p>
      *
      *
      *

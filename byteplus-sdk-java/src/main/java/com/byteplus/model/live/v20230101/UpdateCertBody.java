@@ -10,12 +10,6 @@ import com.alibaba.fastjson.JSON;
 public final class UpdateCertBody  {
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AccountID")
-    private String accountID;
-
-    /**
      * <p>更新后的证书名称</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "CertName")
@@ -26,12 +20,6 @@ public final class UpdateCertBody  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ChainID")
     private String chainID;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Rsa")
-    private UpdateCertBodyRsa rsa;
 
     /**
      * <p>证书用途，支持的取值包括：</p>

@@ -11,35 +11,39 @@ import java.util.List;
 public final class DescribeLiveBatchOnlineStreamMetricsResResult  {
 
     /**
-     * <p>应用名称。</p>
+     * <p>查询的应用名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;
 
     /**
-     * <p>流名称。</p>
+     * <p>查询的流名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Stream")
     private String stream;
 
     /**
-     * <p>按指定时间粒度聚合的监控数据。</p>
+     * <p>查询到的在线流信息。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StreamMetricList")
     private List<DescribeLiveBatchOnlineStreamMetricsResResultStreamMetricListItem> streamMetricList;
 
     /**
-     * <p>推流域名。</p>
+     * <p>查询的域名列表。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "DomainList")
     private List<String> domainList;
 
     /**
-     * <p>流类型，取值及含义如下。</p>
+     * <p>查询的在线流类型，取值及含义如下所示。</p>
      *
-     * <p>- push：推流；</p>
+     * <p>- `all`：所有流；</p>
      *
-     * <p>- relay：回源流。</p>
+     * <p>- `push`：推流；</p>
+     *
+     * <p>- `relay`：回源流；</p>
+     *
+     * <p>- `transcode`：转码流。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StreamType")
     private String streamType;
@@ -49,6 +53,12 @@ public final class DescribeLiveBatchOnlineStreamMetricsResResult  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Pagination")
     private DescribeLiveBatchOnlineStreamMetricsResResultPagination pagination;
+
+    /**
+     * <p>查询的域名空间列表。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "VhostList")
+    private List<String> vhostList;
 
     @Override
     public String toString() {

@@ -64,6 +64,12 @@ public final class ListVhostDetailBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "VhostTypeList")
     private List<String> vhostTypeList;
 
+    /**
+     * <p>故障域列表，不填会返回所有的故障域。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FRegionList")
+    private List<String> fRegionList;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

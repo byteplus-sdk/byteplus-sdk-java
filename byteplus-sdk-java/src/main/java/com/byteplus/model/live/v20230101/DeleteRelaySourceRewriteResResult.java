@@ -11,7 +11,7 @@ import java.util.List;
 public final class DeleteRelaySourceRewriteResResult  {
 
     /**
-     * <p>A list of rewrite rules deleted</p>
+     * <p>异动列表</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Items")
     private List<Object> items;

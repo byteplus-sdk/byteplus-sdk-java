@@ -11,13 +11,13 @@ import java.util.List;
 public final class ListBindEncryptDRMResResultDRMBindingListItem  {
 
     /**
-     * <p>域名空间</p>
+     * <p>域名空间。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Vhost")
     private String vhost;
 
     /**
-     * <p>app</p>
+     * <p>应用名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;
@@ -29,16 +29,20 @@ public final class ListBindEncryptDRMResResultDRMBindingListItem  {
     private String accountID;
 
     /**
-     * <p>drm是否开启</p>
+     * <p>当前 DRM 配置是否开启，取值及含义如下所示。</p>
+     *
+     * <p>- `true`：开启；</p>
+     *
+     * <p>- `false`：关闭。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Enable")
     private Boolean enable;
 
     /**
-     * <p>进行drm加密的转码流的转码后缀</p>
+     * <p>进行 DRM 加密的转码流对应的转码流后缀配置。</p>
      */
-    @com.alibaba.fastjson.annotation.JSONField(name = "EncryptTranscodeList")
-    private List<String> encryptTranscodeList;
+    @com.alibaba.fastjson.annotation.JSONField(name = "EncryptTranscodeSuffix")
+    private List<String> encryptTranscodeSuffix;
 
     @Override
     public String toString() {

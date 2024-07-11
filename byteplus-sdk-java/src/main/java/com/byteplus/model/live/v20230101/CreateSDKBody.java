@@ -63,6 +63,12 @@ public final class CreateSDKBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "SDKType")
     private String sDKType;
 
+    /**
+     * <p>项目名称。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "ProjectName")
+    private String projectName;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

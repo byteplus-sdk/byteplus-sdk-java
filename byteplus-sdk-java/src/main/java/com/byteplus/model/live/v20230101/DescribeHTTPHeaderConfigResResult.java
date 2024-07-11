@@ -11,7 +11,7 @@ import java.util.List;
 public final class DescribeHTTPHeaderConfigResResult  {
 
     /**
-     * <p>A list of header configurations of the domain name.</p>
+     * <p>HTTP Header 配置信息。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "HeaderConfigList")
     private List<DescribeHTTPHeaderConfigResResultHeaderConfigListItem> headerConfigList;

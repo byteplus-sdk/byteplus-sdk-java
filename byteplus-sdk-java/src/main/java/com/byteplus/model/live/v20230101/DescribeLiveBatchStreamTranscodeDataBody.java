@@ -11,13 +11,13 @@ import java.util.List;
 public final class DescribeLiveBatchStreamTranscodeDataBody  {
 
     /**
-     * <p>域名列表，缺省情况下表示当前账号下的所有推拉流域名。</p>
+     * <p>域名列表，默认为空表示全部域名。您可以调用 [ListDomainDetail](https://www.volcengine.com/docs/6469/1126815) 接口或在视频直播控制台的[域名管理](https://console.volcengine.com/live/main/domain/list)页面，获取直播流使用的域名信息。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "DomainList")
     private List<String> domainList;
 
     /**
-     * <p>查询的开始时间，RFC3339 格式的 UTC 时间，精度为秒。</p>
+     * <p>查询的开始时间，RFC3339 格式的时间戳，精度为秒。</p>
      *
      * <p>:::tip</p>
      *
@@ -29,7 +29,7 @@ public final class DescribeLiveBatchStreamTranscodeDataBody  {
     private String startTime;
 
     /**
-     * <p>查询的结束时间，RFC3339 格式的 UTC 时间，精度为秒。</p>
+     * <p>查询的结束时间，RFC3339 格式的时间戳，精度为秒。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "EndTime")
     private String endTime;

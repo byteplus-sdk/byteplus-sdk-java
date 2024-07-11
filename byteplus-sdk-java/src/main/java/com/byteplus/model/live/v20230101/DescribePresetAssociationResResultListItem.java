@@ -88,6 +88,12 @@ public final class DescribePresetAssociationResResultListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "DataMigrationPresetListV2")
     private List<DescribePresetAssociationResResultListItemDataMigrationPresetListV2Item> dataMigrationPresetListV2;
 
+    /**
+     * <p>智能转码列表</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "LiveDynamicTransStrategyList")
+    private List<DescribePresetAssociationResResultListItemLiveDynamicTransStrategyListItem> liveDynamicTransStrategyList;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

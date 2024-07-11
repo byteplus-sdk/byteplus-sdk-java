@@ -36,25 +36,27 @@ public final class AssociatePresetBody  {
     /**
      * <p>模板类型，</p>
      *
-     * <p>recor:录制</p>
+     * <p>- recor:录制</p>
      *
-     * <p>snapshot:密集抽帧</p>
+     * <p>- snapshot:密集抽帧</p>
      *
-     * <p>transcode:转码</p>
+     * <p>- transcode:转码</p>
      *
-     * <p>avslice:音频切片</p>
+     * <p>- avslice:音频切片</p>
      *
-     * <p>cdn_snapshot：截图</p>
+     * <p>- cdn_snapshot：截图</p>
      *
-     * <p>avextractor</p>
+     * <p>- avextractor</p>
      *
-     * <p>timeshift：时移</p>
+     * <p>- timeshift：时移</p>
      *
-     * <p>audit_snapshot：审核截图</p>
+     * <p>- audit_snapshot：审核截图</p>
      *
-     * <p>data_migration</p>
+     * <p>- data_migration</p>
      *
-     * <p>watermark：水印</p>
+     * <p>- watermark：水印</p>
+     *
+     * <p>- live_dynamic_trans_strategy：智能转码</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "PresetType")
     private String presetType;
@@ -88,6 +90,12 @@ public final class AssociatePresetBody  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TranscodeStruct")
     private AssociatePresetBodyTranscodeStruct transcodeStruct;
+
+    /**
+     * <p>智能转码配置</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "LiveDynamicTransStrategyStruct")
+    private AssociatePresetBodyLiveDynamicTransStrategyStruct liveDynamicTransStrategyStruct;
 
     @Override
     public String toString() {

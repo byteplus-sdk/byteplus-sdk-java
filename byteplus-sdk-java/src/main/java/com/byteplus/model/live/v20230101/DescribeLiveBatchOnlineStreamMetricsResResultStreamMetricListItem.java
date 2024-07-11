@@ -10,25 +10,25 @@ import com.alibaba.fastjson.JSON;
 public final class DescribeLiveBatchOnlineStreamMetricsResResultStreamMetricListItem  {
 
     /**
-     * <p>推流域名。</p>
+     * <p>在线流使用的域名。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Domain")
     private String domain;
 
     /**
-     * <p>应用名称。</p>
+     * <p>在线流使用的应用名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;
 
     /**
-     * <p>流名称。</p>
+     * <p>在线流使用的流名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Stream")
     private String stream;
 
     /**
-     * <p>推流客户端 IP，只有流类型为推流（即 StreamType 为 push）时返回此值。</p>
+     * <p>推流客户端 IP，只有流类型为推流（即 `StreamType` 为 `push`）时返回此值。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ClientIp")
     private String clientIp;
@@ -64,7 +64,7 @@ public final class DescribeLiveBatchOnlineStreamMetricsResResultStreamMetricList
     private String acodec;
 
     /**
-     * <p>在线流的开始时间，RFC3339 格式的 UTC 时间，单位为秒。</p>
+     * <p>在线流的开始时间，RFC3339 格式的时间字符串，单位为秒。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StreamBeginTime")
     private String streamBeginTime;
@@ -76,16 +76,52 @@ public final class DescribeLiveBatchOnlineStreamMetricsResResultStreamMetricList
     private String vcodec;
 
     /**
-     * <p>在线流的分辨率，使用宽 x 高表示。</p>
+     * <p>在线流的实时分辨率，使用宽 x 高表示。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Resolution")
     private String resolution;
 
     /**
-     * <p>接收客户端推流的服务器 IP，只有流类型为推流（即 StreamType 为 push）时返回此值。</p>
+     * <p>接收客户端推流的服务器 IP，只有流类型为推流（即 `StreamType` 为 `push`）时返回此值。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ServerIp")
     private String serverIp;
+
+    /**
+     * <p>在线流元信息（Metadata）中的音频码率。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "MetaAudioRate")
+    private Float metaAudioRate;
+
+    /**
+     * <p>在线流元信息（Metadata）中的视频帧率。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "MetaVideoFps")
+    private Integer metaVideoFps;
+
+    /**
+     * <p>在线流元信息（Metadata）中的视频码率。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "MetaVideoRate")
+    private Float metaVideoRate;
+
+    /**
+     * <p>在线流的类型，取值及含义如下所示。</p>
+     *
+     * <p>- `push`：推流；</p>
+     *
+     * <p>- `relay`：回源流；</p>
+     *
+     * <p>- `transcode`：转码流。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "StreamType")
+    private String streamType;
+
+    /**
+     * <p>回源首字节耗时，单位ms</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "FirstByteTime")
+    private Integer firstByteTime;
 
     @Override
     public String toString() {

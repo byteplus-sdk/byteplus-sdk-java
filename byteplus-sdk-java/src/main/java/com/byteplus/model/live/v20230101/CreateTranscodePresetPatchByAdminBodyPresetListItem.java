@@ -400,7 +400,7 @@ public final class CreateTranscodePresetPatchByAdminBodyPresetListItem  {
     private Integer threads;
 
     /**
-     * <p>TODO</p>
+     * <p>这个结构体vadmin的要填写</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TranscodeStruct")
     private CreateTranscodePresetPatchByAdminBodyPresetListItemTranscodeStruct transcodeStruct;

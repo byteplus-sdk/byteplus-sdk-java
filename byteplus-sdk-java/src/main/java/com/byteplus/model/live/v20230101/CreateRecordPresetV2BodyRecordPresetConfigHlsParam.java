@@ -10,19 +10,19 @@ import com.alibaba.fastjson.JSON;
 public final class CreateRecordPresetV2BodyRecordPresetConfigHlsParam  {
 
     /**
-     * <p>当前格式的录制是否开启，默认 false，取值及含义如下所示。</p>
+     * <p>当前格式的录制是否开启，默认 `false`，取值及含义如下所示。</p>
      *
      *
      *
-     * <p>- false：不开启；</p>
+     * <p>- `false`：不开启；</p>
      *
-     * <p>- true：开启。</p>
+     * <p>- `true`：开启。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Enable")
     private Boolean enable;
 
     /**
-     * <p>断流录制单文件录制时长，单位为 s，默认值为 7200，取值范围为 -1，[300,86400]，-1表示一直录制，目前只对HLS生效</p>
+     * <p>断流录制单文件录制时长，单位为秒，默认值为 `7200`，取值范围为 `-1`，[300,86400]，`-1` 表示一直录制，目前只对 `HLS`生效.</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Duration")
     private Integer duration;

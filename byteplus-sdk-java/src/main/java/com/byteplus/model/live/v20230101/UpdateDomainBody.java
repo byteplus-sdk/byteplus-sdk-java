@@ -16,7 +16,7 @@ public final class UpdateDomainBody  {
     private String domain;
 
     /**
-     * <p>区域，包含四种类型。cn：中国大陆；oversea：海外；cn-global：全球；cn-oversea：海外及港澳台</p>
+     * <p>区域，包含四种类型。cn：中国大陆；cn-global：全球；cn-oversea：海外及港澳台</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Region")
     private String region;

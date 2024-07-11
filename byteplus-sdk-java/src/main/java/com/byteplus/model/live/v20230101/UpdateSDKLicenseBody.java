@@ -39,6 +39,12 @@ public final class UpdateSDKLicenseBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "LicenseType")
     private Integer licenseType;
 
+    /**
+     * <p>应用ID。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "AppID")
+    private Integer appID;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

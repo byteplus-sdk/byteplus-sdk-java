@@ -15,7 +15,9 @@ public final class DescribeLiveCustomizedLogDataBody  {
      *
      * <p>:::tip</p>
      *
-     * <p>当前仅支持查询最近 31 天的日志数据。</p>
+     * <p>- 当前仅支持查询最近 31 天的日志数据。</p>
+     *
+     * <p>- 日志文件按设置的拆分粒度进行拆分（以按 1 小时为拆分粒度为例），请确保查询的开始和结束时间包含所查询时段的所有粒度时间。例如，日志文件按 1 小时拆分时，如需查询某日 07:30:00-08:10:00 日志数据，日志查询开始时间应早于 07:00:00，结束时间应晚于 09:00:00。</p>
      *
      * <p>:::</p>
      */
@@ -47,11 +49,11 @@ public final class DescribeLiveCustomizedLogDataBody  {
     private Integer pageSize;
 
     /**
-     * <p>域名列表，缺省情况下表示当前用户的所有推流域名和拉流域名。</p>
+     * <p>域名列表，默认为空，表示查询您视频直播产品下所有域名的日志文件信息。您可以调用 [ListDomainDetail](https://www.volcengine.com/docs/6469/1126815) 接口或在视频直播控制台的[域名管理](https://console.volcengine.com/live/main/domain/list)页面，获取待查询的域名。</p>
      *
      * <p>:::tip</p>
      *
-     * <p>日志类型为拉流转推日志（Type=relay）时，该参数无效。</p>
+     * <p>日志类型为拉流转推日志（Type 取值为 `relay`）时，该参数无效。</p>
      *
      * <p>:::</p>
      */

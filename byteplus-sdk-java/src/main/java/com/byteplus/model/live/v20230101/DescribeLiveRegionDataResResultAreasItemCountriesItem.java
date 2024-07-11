@@ -23,7 +23,7 @@ public final class DescribeLiveRegionDataResResultAreasItemCountriesItem  {
     private String name;
 
     /**
-     * <p>省份信息，��外暂不支持该参数。</p>
+     * <p>省份信息，国外暂不支持该参数。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Provinces")
     private List<DescribeLiveRegionDataResResultAreasItemCountriesItemProvincesItem> provinces;

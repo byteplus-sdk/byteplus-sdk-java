@@ -11,7 +11,7 @@ import java.util.List;
 public final class ListBindEncryptDRMResResult  {
 
     /**
-     * <p>TODO</p>
+     * <p>DRM 加密配置列表。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "DRMBindingList")
     private List<ListBindEncryptDRMResResultDRMBindingListItem> dRMBindingList;

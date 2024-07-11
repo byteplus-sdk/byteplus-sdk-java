@@ -55,6 +55,8 @@ public final class UpdatePresetAssociationBody  {
      * <p>data_migration</p>
      *
      * <p>watermark：水印</p>
+     *
+     * <p>live_dynamic_trans_strategy：智能转码</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "PresetType")
     private String presetType;
@@ -82,6 +84,12 @@ public final class UpdatePresetAssociationBody  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TimeShiftStruct")
     private UpdatePresetAssociationBodyTimeShiftStruct timeShiftStruct;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "LiveDynamicTransStrategyStruct")
+    private UpdatePresetAssociationBodyLiveDynamicTransStrategyStruct liveDynamicTransStrategyStruct;
 
     @Override
     public String toString() {

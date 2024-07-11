@@ -15,6 +15,12 @@ public final class ValidateCertBodyRsa  {
     @com.alibaba.fastjson.annotation.JSONField(name = "PubKey")
     private String pubKey;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "PriKey")
+    private String priKey;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

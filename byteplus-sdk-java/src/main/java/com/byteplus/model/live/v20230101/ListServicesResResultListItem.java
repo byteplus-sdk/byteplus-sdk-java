@@ -167,7 +167,7 @@ public final class ListServicesResResultListItem  {
      *
      * <p>16: 画质增强是否隐藏</p>
      *
-     * <p>17: Quic加速计费是否隐藏</p>
+     * <p>17: 热流智能转码是否隐藏</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "PresetConfigHide")
     private List<Integer> presetConfigHide;

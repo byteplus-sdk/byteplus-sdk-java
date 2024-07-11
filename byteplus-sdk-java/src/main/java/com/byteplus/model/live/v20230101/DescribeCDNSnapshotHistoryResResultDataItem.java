@@ -10,7 +10,7 @@ import com.alibaba.fastjson.JSON;
 public final class DescribeCDNSnapshotHistoryResResultDataItem  {
 
     /**
-     * <p>域名空间名称。</p>
+     * <p>域名空间。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Vhost")
     private String vhost;
@@ -40,7 +40,7 @@ public final class DescribeCDNSnapshotHistoryResResultDataItem  {
     private String timeStamp;
 
     /**
-     * <p>截图宽度。</p>
+     * <p>截图宽度，单位为 px。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Width")
     private Integer width;
@@ -52,7 +52,7 @@ public final class DescribeCDNSnapshotHistoryResResultDataItem  {
     private Integer iD;
 
     /**
-     * <p>截图高度。</p>
+     * <p>截图高度，单位为 px。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Height")
     private Integer height;

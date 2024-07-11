@@ -17,13 +17,13 @@ public final class DescribeLiveBatchStreamTranscodeDataResResult  {
     private List<String> domainList;
 
     /**
-     * <p>查询的开始时间，RFC3339 格式的 UTC 时间，精度为秒。</p>
+     * <p>查询的开始时间，RFC3339 格式的时间戳，精度为秒。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StartTime")
     private String startTime;
 
     /**
-     * <p>查询的结束时间，RFC3339 格式的 UTC 时间，精度为秒。</p>
+     * <p>查询的结束时间，RFC3339 格式的时间戳，精度为秒。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "EndTime")
     private String endTime;

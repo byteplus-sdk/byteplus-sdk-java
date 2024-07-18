@@ -40,6 +40,7 @@ private static final long serialVersionUID = 0L;
     keyFrameAlignmentVersion_ = "";
     userAction_ = "";
     quality_ = "";
+    forceExpire_ = "";
   }
 
   @java.lang.Override
@@ -178,6 +179,12 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             quality_ = s;
+            break;
+          }
+          case 154: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            forceExpire_ = s;
             break;
           }
           default: {
@@ -1050,6 +1057,52 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int FORCEEXPIRE_FIELD_NUMBER = 19;
+  private volatile java.lang.Object forceExpire_;
+  /**
+   * <pre>
+   *强行指定本次请求的时间戳防盗链 单位秒
+   * </pre>
+   *
+   * <code>string ForceExpire = 19;</code>
+   * @return The forceExpire.
+   */
+  @java.lang.Override
+  public java.lang.String getForceExpire() {
+    java.lang.Object ref = forceExpire_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      forceExpire_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   *强行指定本次请求的时间戳防盗链 单位秒
+   * </pre>
+   *
+   * <code>string ForceExpire = 19;</code>
+   * @return The bytes for forceExpire.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getForceExpireBytes() {
+    java.lang.Object ref = forceExpire_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      forceExpire_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -1118,6 +1171,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(quality_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 18, quality_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(forceExpire_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 19, forceExpire_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -1181,6 +1237,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(quality_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(18, quality_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(forceExpire_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(19, forceExpire_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -1232,6 +1291,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getUserAction())) return false;
     if (!getQuality()
         .equals(other.getQuality())) return false;
+    if (!getForceExpire()
+        .equals(other.getForceExpire())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1279,6 +1340,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getUserAction().hashCode();
     hash = (37 * hash) + QUALITY_FIELD_NUMBER;
     hash = (53 * hash) + getQuality().hashCode();
+    hash = (37 * hash) + FORCEEXPIRE_FIELD_NUMBER;
+    hash = (53 * hash) + getForceExpire().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1454,6 +1517,8 @@ private static final long serialVersionUID = 0L;
 
       quality_ = "";
 
+      forceExpire_ = "";
+
       return this;
     }
 
@@ -1498,6 +1563,7 @@ private static final long serialVersionUID = 0L;
       result.keyFrameAlignmentVersion_ = keyFrameAlignmentVersion_;
       result.userAction_ = userAction_;
       result.quality_ = quality_;
+      result.forceExpire_ = forceExpire_;
       onBuilt();
       return result;
     }
@@ -1616,6 +1682,10 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getQuality().isEmpty()) {
         quality_ = other.quality_;
+        onChanged();
+      }
+      if (!other.getForceExpire().isEmpty()) {
+        forceExpire_ = other.forceExpire_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -3396,6 +3466,102 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       quality_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object forceExpire_ = "";
+    /**
+     * <pre>
+     *强行指定本次请求的时间戳防盗链 单位秒
+     * </pre>
+     *
+     * <code>string ForceExpire = 19;</code>
+     * @return The forceExpire.
+     */
+    public java.lang.String getForceExpire() {
+      java.lang.Object ref = forceExpire_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        forceExpire_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     *强行指定本次请求的时间戳防盗链 单位秒
+     * </pre>
+     *
+     * <code>string ForceExpire = 19;</code>
+     * @return The bytes for forceExpire.
+     */
+    public com.google.protobuf.ByteString
+        getForceExpireBytes() {
+      java.lang.Object ref = forceExpire_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        forceExpire_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     *强行指定本次请求的时间戳防盗链 单位秒
+     * </pre>
+     *
+     * <code>string ForceExpire = 19;</code>
+     * @param value The forceExpire to set.
+     * @return This builder for chaining.
+     */
+    public Builder setForceExpire(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      forceExpire_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *强行指定本次请求的时间戳防盗链 单位秒
+     * </pre>
+     *
+     * <code>string ForceExpire = 19;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearForceExpire() {
+      
+      forceExpire_ = getDefaultInstance().getForceExpire();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *强行指定本次请求的时间戳防盗链 单位秒
+     * </pre>
+     *
+     * <code>string ForceExpire = 19;</code>
+     * @param value The bytes for forceExpire to set.
+     * @return This builder for chaining.
+     */
+    public Builder setForceExpireBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      forceExpire_ = value;
       onChanged();
       return this;
     }

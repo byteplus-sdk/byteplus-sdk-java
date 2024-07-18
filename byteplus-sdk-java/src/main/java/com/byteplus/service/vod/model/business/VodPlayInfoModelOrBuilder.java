@@ -307,7 +307,7 @@ public interface VodPlayInfoModelOrBuilder extends
 
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -316,7 +316,7 @@ public interface VodPlayInfoModelOrBuilder extends
   boolean hasBarrageMaskInfo();
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -325,7 +325,7 @@ public interface VodPlayInfoModelOrBuilder extends
   com.byteplus.service.vod.model.business.BarrageMaskInfo getBarrageMaskInfo();
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>

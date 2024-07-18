@@ -265,6 +265,31 @@ public final class VodResponse {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Response_VodDescribeVodSpaceStorageDataResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodStartDomainResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodStartDomainResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodStopDomainResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodStopDomainResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainPlayRuleResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainPlayRuleResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodAddDomainToSchedulerResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodAddDomainToSchedulerResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodRemoveDomainFromSchedulerResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodRemoveDomainFromSchedulerResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Byteplus_Vod_Models_Response_VodListDomainResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -305,6 +330,21 @@ public final class VodResponse {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Response_VodCdnStatisticsCommonResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnUsageDataDetailResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodListCdnUsageDataDetailResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnStatusDataDetailResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodListCdnStatusDataDetailResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogDetailResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogDetailResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Byteplus_Vod_Models_Response_VodDescribeIPInfoResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -339,6 +379,11 @@ public final class VodResponse {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainAuthConfigV2Response_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_AddOrUpdateCertificateV2Response_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_AddOrUpdateCertificateV2Response_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Byteplus_Vod_Models_Response_VodAddCallbackSubscriptionResponse_descriptor;
   static final 
@@ -434,6 +479,46 @@ public final class VodResponse {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Response_VodDeletePlaylistResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodGetIntertrustApiKeyResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodGetIntertrustApiKeyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodSetIntertrustApiKeyResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodSetIntertrustApiKeyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteIntertrustApiKeyResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodDeleteIntertrustApiKeyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertInfoResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertInfoResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodSetFairPlayCertInfoResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodSetFairPlayCertInfoResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteFairPlayCertInfoResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodDeleteFairPlayCertInfoResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Response_VodGetDrmLicenseResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Response_VodGetDrmLicenseResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -663,155 +748,215 @@ public final class VodResponse {
       "2+.Byteplus.Base.Models.Base.ResponseMet" +
       "adata\022R\n\006Result\030\002 \001(\0132B.Byteplus.Vod.Mod" +
       "els.Business.VodDescribeVodSpaceStorageD" +
-      "ataResult\"\241\001\n\025VodListDomainResponse\022E\n\020R" +
+      "ataResult\"_\n\026VodStartDomainResponse\022E\n\020R" +
       "esponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mo" +
-      "dels.Base.ResponseMetadata\022A\n\006Result\030\002 \001" +
-      "(\01321.Byteplus.Vod.Models.Business.VodDom" +
-      "ainConfigInfo\"\256\001\n\037VodCreateCdnRefreshTas" +
-      "kResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.By" +
-      "teplus.Base.Models.Base.ResponseMetadata" +
-      "\022D\n\006Result\030\002 \001(\01324.Byteplus.Vod.Models.B" +
-      "usiness.VodCreateCdnTaskResult\"\256\001\n\037VodCr" +
-      "eateCdnPreloadTaskResponse\022E\n\020ResponseMe" +
-      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
-      ".ResponseMetadata\022D\n\006Result\030\002 \001(\01324.Byte" +
-      "plus.Vod.Models.Business.VodCreateCdnTas" +
-      "kResult\"\240\001\n\027VodListCdnTasksResponse\022E\n\020R" +
-      "esponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mo" +
-      "dels.Base.ResponseMetadata\022>\n\006Result\030\002 \001" +
-      "(\0132..Byteplus.Vod.Models.Business.VodCdn" +
-      "TaskResult\"\255\001\n\033VodListCdnAccessLogRespon" +
-      "se\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus." +
-      "Base.Models.Base.ResponseMetadata\022G\n\006Res" +
-      "ult\030\002 \001(\01327.Byteplus.Vod.Models.Business" +
-      ".VodListCdnAccessLogResult\"\263\001\n\036VodListCd" +
-      "nTopAccessUrlResponse\022E\n\020ResponseMetadat" +
-      "a\030\001 \001(\0132+.Byteplus.Base.Models.Base.Resp" +
-      "onseMetadata\022J\n\006Result\030\002 \001(\0132:.Byteplus." +
-      "Vod.Models.Business.VodListCdnTopAccessU" +
-      "rlResult\"\311\001\n)VodDescribeVodDomainBandwid" +
-      "thDataResponse\022E\n\020ResponseMetadata\030\001 \001(\013" +
-      "2+.Byteplus.Base.Models.Base.ResponseMet" +
-      "adata\022U\n\006Result\030\002 \001(\0132E.Byteplus.Vod.Mod" +
-      "els.Business.VodDescribeVodDomainBandwid" +
-      "thDataResult\"\263\001\n\036VodCdnStatisticsCommonR" +
-      "esponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byte" +
-      "plus.Base.Models.Base.ResponseMetadata\022J" +
-      "\n\006Result\030\002 \001(\0132:.Byteplus.Vod.Models.Bus" +
-      "iness.VodCdnStatisticsCommonResult\"\236\001\n\031V" +
-      "odDescribeIPInfoResponse\022E\n\020ResponseMeta" +
-      "data\030\001 \001(\0132+.Byteplus.Base.Models.Base.R" +
-      "esponseMetadata\022:\n\006Result\030\002 \003(\0132*.Bytepl" +
-      "us.Vod.Models.Business.VodCdnIpInfo\"\305\001\n\'" +
-      "VodDescribeVodDomainTrafficDataResponse\022" +
-      "E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Bas" +
-      "e.Models.Base.ResponseMetadata\022S\n\006Result" +
-      "\030\002 \001(\0132C.Byteplus.Vod.Models.Business.Vo" +
-      "dDescribeVodDomainTrafficDataResult\"\255\001\n\033" +
-      "VodSubmitBlockTasksResponse\022E\n\020ResponseM" +
-      "etadata\030\001 \001(\0132+.Byteplus.Base.Models.Bas" +
-      "e.ResponseMetadata\022G\n\006Result\030\002 \001(\01327.Byt" +
-      "eplus.Vod.Models.Business.VodSubmitBlock" +
-      "TasksResult\"\265\001\n\037VodGetContentBlockTasksR" +
-      "esponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byte" +
-      "plus.Base.Models.Base.ResponseMetadata\022K" +
-      "\n\006Result\030\002 \001(\0132;.Byteplus.Vod.Models.Bus" +
-      "iness.VodGetContentBlockTasksResult\"b\n\031V" +
-      "odCreateDomainV2Response\022E\n\020ResponseMeta" +
-      "data\030\001 \001(\0132+.Byteplus.Base.Models.Base.R" +
-      "esponseMetadata\"h\n\037VodUpdateDomainExpire" +
-      "V2Response\022E\n\020ResponseMetadata\030\001 \001(\0132+.B" +
-      "yteplus.Base.Models.Base.ResponseMetadat" +
-      "a\"l\n#VodUpdateDomainAuthConfigV2Response" +
-      "\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Ba" +
-      "se.Models.Base.ResponseMetadata\"k\n\"VodAd" +
-      "dCallbackSubscriptionResponse\022E\n\020Respons" +
-      "eMetadata\030\001 \001(\0132+.Byteplus.Base.Models.B" +
-      "ase.ResponseMetadata\"d\n\033VodSetCallbackEv" +
-      "entResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+." +
+      "dels.Base.ResponseMetadata\"^\n\025VodStopDom" +
+      "ainResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+." +
       "Byteplus.Base.Models.Base.ResponseMetada" +
-      "ta\"\305\001\n\'VodGetSmartStrategyLitePlayInfoRe" +
-      "sponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Bytep" +
-      "lus.Base.Models.Base.ResponseMetadata\022S\n" +
-      "\006Result\030\002 \001(\0132C.Byteplus.Vod.Models.Busi" +
-      "ness.VodGetSmartStrategyLitePlayInfoResu" +
-      "lt\"\241\001\n\025VodGetAppInfoResponse\022E\n\020Response" +
-      "Metadata\030\001 \001(\0132+.Byteplus.Base.Models.Ba" +
-      "se.ResponseMetadata\022A\n\006Result\030\002 \001(\01321.By" +
-      "teplus.Vod.Models.Business.VodGetAppInfo" +
-      "Result\"\301\001\n%DescribeVodSpaceTranscodeData" +
-      "Response\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byt" +
-      "eplus.Base.Models.Base.ResponseMetadata\022" +
-      "Q\n\006Result\030\002 \001(\0132A.Byteplus.Vod.Models.Bu" +
-      "siness.DescribeVodSpaceTranscodeDataResu" +
-      "lt\"\277\001\n$DescribeVodSpaceAIStatisDataRespo" +
-      "nse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus" +
-      ".Base.Models.Base.ResponseMetadata\022P\n\006Re" +
-      "sult\030\002 \001(\0132@.Byteplus.Vod.Models.Busines" +
-      "s.DescribeVodSpaceAIStatisDataResult\"\313\001\n" +
-      "*DescribeVodSpaceSubtitleStatisDataRespo" +
-      "nse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus" +
-      ".Base.Models.Base.ResponseMetadata\022V\n\006Re" +
-      "sult\030\002 \001(\0132F.Byteplus.Vod.Models.Busines" +
-      "s.DescribeVodSpaceSubtitleStatisDataResu" +
-      "lt\"\307\001\n(DescribeVodSpaceDetectStatisDataR" +
-      "esponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byte" +
-      "plus.Base.Models.Base.ResponseMetadata\022T" +
-      "\n\006Result\030\002 \001(\0132D.Byteplus.Vod.Models.Bus" +
-      "iness.DescribeVodSpaceDetectStatisDataRe" +
-      "sult\"\265\001\n\037DescribeVodSnapshotDataResponse" +
-      "\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Ba" +
-      "se.Models.Base.ResponseMetadata\022K\n\006Resul" +
-      "t\030\002 \001(\0132;.Byteplus.Vod.Models.Business.D" +
-      "escribeVodSnapshotDataResult\"\313\001\n*Describ" +
-      "eVodSpaceWorkflowDetailDataResponse\022E\n\020R" +
-      "esponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mo" +
-      "dels.Base.ResponseMetadata\022V\n\006Result\030\002 \001" +
-      "(\0132F.Byteplus.Vod.Models.Business.Descri" +
-      "beVodSpaceWorkflowDetailDataResult\"\303\001\n&D" +
-      "escribeVodSpaceEditDetailDataResponse\022E\n" +
+      "ta\"h\n\037VodUpdateDomainPlayRuleResponse\022E\n" +
       "\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Base." +
-      "Models.Base.ResponseMetadata\022R\n\006Result\030\002" +
-      " \001(\0132B.Byteplus.Vod.Models.Business.Desc" +
-      "ribeVodSpaceEditDetailDataResult\"\303\001\n&Des" +
-      "cribeVodPlayFileLogByDomainResponse\022E\n\020R" +
-      "esponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mo" +
-      "dels.Base.ResponseMetadata\022R\n\006Result\030\002 \001" +
-      "(\0132B.Byteplus.Vod.Models.Business.Descri" +
-      "beVodPlayFileLogByDomainResult\"\265\001\n\037VodSu" +
-      "bmitBlockMediaTaskResponse\022E\n\020ResponseMe" +
-      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
-      ".ResponseMetadata\022K\n\006Result\030\002 \001(\0132;.Byte" +
-      "plus.Vod.Models.Business.VodSubmitBlockM" +
-      "ediaTaskResult\"\271\001\n!VodSubmitUnblockMedia" +
-      "TaskResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+" +
-      ".Byteplus.Base.Models.Base.ResponseMetad" +
-      "ata\022M\n\006Result\030\002 \001(\0132=.Byteplus.Vod.Model" +
-      "s.Business.VodSubmitUnblockMediaTaskResu" +
-      "lt\"\267\001\n VodQueryMediaBlockStatusResponse\022" +
-      "E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Bas" +
-      "e.Models.Base.ResponseMetadata\022L\n\006Result" +
-      "\030\002 \001(\0132<.Byteplus.Vod.Models.Business.Vo" +
-      "dQueryMediaBlockStatusResult\"\251\001\n\031VodCrea" +
-      "tePlaylistResponse\022E\n\020ResponseMetadata\030\001" +
-      " \001(\0132+.Byteplus.Base.Models.Base.Respons" +
-      "eMetadata\022E\n\006Result\030\002 \001(\01325.Byteplus.Vod" +
-      ".Models.Business.VodCreatePlaylistResult" +
-      "\"\245\001\n\027VodGetPlaylistsResponse\022E\n\020Response" +
-      "Metadata\030\001 \001(\0132+.Byteplus.Base.Models.Ba" +
-      "se.ResponseMetadata\022C\n\006Result\030\002 \001(\01323.By" +
-      "teplus.Vod.Models.Business.VodGetPlaylis" +
-      "tsResult\"b\n\031VodUpdatePlaylistResponse\022E\n" +
-      "\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Base." +
-      "Models.Base.ResponseMetadata\"b\n\031VodDelet" +
-      "ePlaylistResponse\022E\n\020ResponseMetadata\030\001 " +
+      "Models.Base.ResponseMetadata\"h\n\037VodAddDo" +
+      "mainToSchedulerResponse\022E\n\020ResponseMetad" +
+      "ata\030\001 \001(\0132+.Byteplus.Base.Models.Base.Re" +
+      "sponseMetadata\"m\n$VodRemoveDomainFromSch" +
+      "edulerResponse\022E\n\020ResponseMetadata\030\001 \001(\013" +
+      "2+.Byteplus.Base.Models.Base.ResponseMet" +
+      "adata\"\241\001\n\025VodListDomainResponse\022E\n\020Respo" +
+      "nseMetadata\030\001 \001(\0132+.Byteplus.Base.Models" +
+      ".Base.ResponseMetadata\022A\n\006Result\030\002 \001(\01321" +
+      ".Byteplus.Vod.Models.Business.VodDomainC" +
+      "onfigInfo\"\256\001\n\037VodCreateCdnRefreshTaskRes" +
+      "ponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Bytepl" +
+      "us.Base.Models.Base.ResponseMetadata\022D\n\006" +
+      "Result\030\002 \001(\01324.Byteplus.Vod.Models.Busin" +
+      "ess.VodCreateCdnTaskResult\"\256\001\n\037VodCreate" +
+      "CdnPreloadTaskResponse\022E\n\020ResponseMetada" +
+      "ta\030\001 \001(\0132+.Byteplus.Base.Models.Base.Res" +
+      "ponseMetadata\022D\n\006Result\030\002 \001(\01324.Byteplus" +
+      ".Vod.Models.Business.VodCreateCdnTaskRes" +
+      "ult\"\240\001\n\027VodListCdnTasksResponse\022E\n\020Respo" +
+      "nseMetadata\030\001 \001(\0132+.Byteplus.Base.Models" +
+      ".Base.ResponseMetadata\022>\n\006Result\030\002 \001(\0132." +
+      ".Byteplus.Vod.Models.Business.VodCdnTask" +
+      "Result\"\255\001\n\033VodListCdnAccessLogResponse\022E" +
+      "\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Base" +
+      ".Models.Base.ResponseMetadata\022G\n\006Result\030" +
+      "\002 \001(\01327.Byteplus.Vod.Models.Business.Vod" +
+      "ListCdnAccessLogResult\"\263\001\n\036VodListCdnTop" +
+      "AccessUrlResponse\022E\n\020ResponseMetadata\030\001 " +
       "\001(\0132+.Byteplus.Base.Models.Base.Response" +
-      "MetadataB\330\001\n\'com.byteplus.service.vod.mo" +
-      "del.responseB\013VodResponseP\001ZGgithub.com/" +
-      "byteplus-sdk/byteplus-sdk-golang/service" +
-      "/vod/models/response\240\001\001\330\001\001\312\002$Byteplus\\Se" +
-      "rvice\\Vod\\Models\\Response\342\002\'Byteplus\\Ser" +
-      "vice\\Vod\\Models\\GPBMetadatab\006proto3"
+      "Metadata\022J\n\006Result\030\002 \001(\0132:.Byteplus.Vod." +
+      "Models.Business.VodListCdnTopAccessUrlRe" +
+      "sult\"\311\001\n)VodDescribeVodDomainBandwidthDa" +
+      "taResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.B" +
+      "yteplus.Base.Models.Base.ResponseMetadat" +
+      "a\022U\n\006Result\030\002 \001(\0132E.Byteplus.Vod.Models." +
+      "Business.VodDescribeVodDomainBandwidthDa" +
+      "taResult\"\263\001\n\036VodCdnStatisticsCommonRespo" +
+      "nse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus" +
+      ".Base.Models.Base.ResponseMetadata\022J\n\006Re" +
+      "sult\030\002 \001(\0132:.Byteplus.Vod.Models.Busines" +
+      "s.VodCdnStatisticsCommonResult\"\271\001\n!VodLi" +
+      "stCdnUsageDataDetailResponse\022E\n\020Response" +
+      "Metadata\030\001 \001(\0132+.Byteplus.Base.Models.Ba" +
+      "se.ResponseMetadata\022M\n\006Result\030\002 \001(\0132=.By" +
+      "teplus.Vod.Models.Business.VodListCdnUsa" +
+      "geDataDetailResult\"\273\001\n\"VodListCdnStatusD" +
+      "ataDetailResponse\022E\n\020ResponseMetadata\030\001 " +
+      "\001(\0132+.Byteplus.Base.Models.Base.Response" +
+      "Metadata\022N\n\006Result\030\002 \001(\0132>.Byteplus.Vod." +
+      "Models.Business.VodListCdnStatusDataDeta" +
+      "ilResult\"\271\001\n!VodListCdnAccessLogDetailRe" +
+      "sponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Bytep" +
+      "lus.Base.Models.Base.ResponseMetadata\022M\n" +
+      "\006Result\030\002 \001(\0132=.Byteplus.Vod.Models.Busi" +
+      "ness.VodListCdnAccessLogDetailResult\"\236\001\n" +
+      "\031VodDescribeIPInfoResponse\022E\n\020ResponseMe" +
+      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
+      ".ResponseMetadata\022:\n\006Result\030\002 \003(\0132*.Byte" +
+      "plus.Vod.Models.Business.VodCdnIpInfo\"\305\001" +
+      "\n\'VodDescribeVodDomainTrafficDataRespons" +
+      "e\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.B" +
+      "ase.Models.Base.ResponseMetadata\022S\n\006Resu" +
+      "lt\030\002 \001(\0132C.Byteplus.Vod.Models.Business." +
+      "VodDescribeVodDomainTrafficDataResult\"\255\001" +
+      "\n\033VodSubmitBlockTasksResponse\022E\n\020Respons" +
+      "eMetadata\030\001 \001(\0132+.Byteplus.Base.Models.B" +
+      "ase.ResponseMetadata\022G\n\006Result\030\002 \001(\01327.B" +
+      "yteplus.Vod.Models.Business.VodSubmitBlo" +
+      "ckTasksResult\"\265\001\n\037VodGetContentBlockTask" +
+      "sResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.By" +
+      "teplus.Base.Models.Base.ResponseMetadata" +
+      "\022K\n\006Result\030\002 \001(\0132;.Byteplus.Vod.Models.B" +
+      "usiness.VodGetContentBlockTasksResult\"b\n" +
+      "\031VodCreateDomainV2Response\022E\n\020ResponseMe" +
+      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
+      ".ResponseMetadata\"h\n\037VodUpdateDomainExpi" +
+      "reV2Response\022E\n\020ResponseMetadata\030\001 \001(\0132+" +
+      ".Byteplus.Base.Models.Base.ResponseMetad" +
+      "ata\"l\n#VodUpdateDomainAuthConfigV2Respon" +
+      "se\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus." +
+      "Base.Models.Base.ResponseMetadata\"i\n Add" +
+      "OrUpdateCertificateV2Response\022E\n\020Respons" +
+      "eMetadata\030\001 \001(\0132+.Byteplus.Base.Models.B" +
+      "ase.ResponseMetadata\"k\n\"VodAddCallbackSu" +
+      "bscriptionResponse\022E\n\020ResponseMetadata\030\001" +
+      " \001(\0132+.Byteplus.Base.Models.Base.Respons" +
+      "eMetadata\"d\n\033VodSetCallbackEventResponse" +
+      "\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Ba" +
+      "se.Models.Base.ResponseMetadata\"\305\001\n\'VodG" +
+      "etSmartStrategyLitePlayInfoResponse\022E\n\020R" +
+      "esponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mo" +
+      "dels.Base.ResponseMetadata\022S\n\006Result\030\002 \001" +
+      "(\0132C.Byteplus.Vod.Models.Business.VodGet" +
+      "SmartStrategyLitePlayInfoResult\"\241\001\n\025VodG" +
+      "etAppInfoResponse\022E\n\020ResponseMetadata\030\001 " +
+      "\001(\0132+.Byteplus.Base.Models.Base.Response" +
+      "Metadata\022A\n\006Result\030\002 \001(\01321.Byteplus.Vod." +
+      "Models.Business.VodGetAppInfoResult\"\301\001\n%" +
+      "DescribeVodSpaceTranscodeDataResponse\022E\n" +
+      "\020ResponseMetadata\030\001 \001(\0132+.Byteplus.Base." +
+      "Models.Base.ResponseMetadata\022Q\n\006Result\030\002" +
+      " \001(\0132A.Byteplus.Vod.Models.Business.Desc" +
+      "ribeVodSpaceTranscodeDataResult\"\277\001\n$Desc" +
+      "ribeVodSpaceAIStatisDataResponse\022E\n\020Resp" +
+      "onseMetadata\030\001 \001(\0132+.Byteplus.Base.Model" +
+      "s.Base.ResponseMetadata\022P\n\006Result\030\002 \001(\0132" +
+      "@.Byteplus.Vod.Models.Business.DescribeV" +
+      "odSpaceAIStatisDataResult\"\313\001\n*DescribeVo" +
+      "dSpaceSubtitleStatisDataResponse\022E\n\020Resp" +
+      "onseMetadata\030\001 \001(\0132+.Byteplus.Base.Model" +
+      "s.Base.ResponseMetadata\022V\n\006Result\030\002 \001(\0132" +
+      "F.Byteplus.Vod.Models.Business.DescribeV" +
+      "odSpaceSubtitleStatisDataResult\"\307\001\n(Desc" +
+      "ribeVodSpaceDetectStatisDataResponse\022E\n\020" +
+      "ResponseMetadata\030\001 \001(\0132+.Byteplus.Base.M" +
+      "odels.Base.ResponseMetadata\022T\n\006Result\030\002 " +
+      "\001(\0132D.Byteplus.Vod.Models.Business.Descr" +
+      "ibeVodSpaceDetectStatisDataResult\"\265\001\n\037De" +
+      "scribeVodSnapshotDataResponse\022E\n\020Respons" +
+      "eMetadata\030\001 \001(\0132+.Byteplus.Base.Models.B" +
+      "ase.ResponseMetadata\022K\n\006Result\030\002 \001(\0132;.B" +
+      "yteplus.Vod.Models.Business.DescribeVodS" +
+      "napshotDataResult\"\313\001\n*DescribeVodSpaceWo" +
+      "rkflowDetailDataResponse\022E\n\020ResponseMeta" +
+      "data\030\001 \001(\0132+.Byteplus.Base.Models.Base.R" +
+      "esponseMetadata\022V\n\006Result\030\002 \001(\0132F.Bytepl" +
+      "us.Vod.Models.Business.DescribeVodSpaceW" +
+      "orkflowDetailDataResult\"\303\001\n&DescribeVodS" +
+      "paceEditDetailDataResponse\022E\n\020ResponseMe" +
+      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
+      ".ResponseMetadata\022R\n\006Result\030\002 \001(\0132B.Byte" +
+      "plus.Vod.Models.Business.DescribeVodSpac" +
+      "eEditDetailDataResult\"\303\001\n&DescribeVodPla" +
+      "yFileLogByDomainResponse\022E\n\020ResponseMeta" +
+      "data\030\001 \001(\0132+.Byteplus.Base.Models.Base.R" +
+      "esponseMetadata\022R\n\006Result\030\002 \001(\0132B.Bytepl" +
+      "us.Vod.Models.Business.DescribeVodPlayFi" +
+      "leLogByDomainResult\"\265\001\n\037VodSubmitBlockMe" +
+      "diaTaskResponse\022E\n\020ResponseMetadata\030\001 \001(" +
+      "\0132+.Byteplus.Base.Models.Base.ResponseMe" +
+      "tadata\022K\n\006Result\030\002 \001(\0132;.Byteplus.Vod.Mo" +
+      "dels.Business.VodSubmitBlockMediaTaskRes" +
+      "ult\"\271\001\n!VodSubmitUnblockMediaTaskRespons" +
+      "e\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.B" +
+      "ase.Models.Base.ResponseMetadata\022M\n\006Resu" +
+      "lt\030\002 \001(\0132=.Byteplus.Vod.Models.Business." +
+      "VodSubmitUnblockMediaTaskResult\"\267\001\n VodQ" +
+      "ueryMediaBlockStatusResponse\022E\n\020Response" +
+      "Metadata\030\001 \001(\0132+.Byteplus.Base.Models.Ba" +
+      "se.ResponseMetadata\022L\n\006Result\030\002 \001(\0132<.By" +
+      "teplus.Vod.Models.Business.VodQueryMedia" +
+      "BlockStatusResult\"\251\001\n\031VodCreatePlaylistR" +
+      "esponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byte" +
+      "plus.Base.Models.Base.ResponseMetadata\022E" +
+      "\n\006Result\030\002 \001(\01325.Byteplus.Vod.Models.Bus" +
+      "iness.VodCreatePlaylistResult\"\245\001\n\027VodGet" +
+      "PlaylistsResponse\022E\n\020ResponseMetadata\030\001 " +
+      "\001(\0132+.Byteplus.Base.Models.Base.Response" +
+      "Metadata\022C\n\006Result\030\002 \001(\01323.Byteplus.Vod." +
+      "Models.Business.VodGetPlaylistsResult\"b\n" +
+      "\031VodUpdatePlaylistResponse\022E\n\020ResponseMe" +
+      "tadata\030\001 \001(\0132+.Byteplus.Base.Models.Base" +
+      ".ResponseMetadata\"b\n\031VodDeletePlaylistRe" +
+      "sponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.Bytep" +
+      "lus.Base.Models.Base.ResponseMetadata\"\263\001" +
+      "\n\036VodGetIntertrustApiKeyResponse\022E\n\020Resp" +
+      "onseMetadata\030\001 \001(\0132+.Byteplus.Base.Model" +
+      "s.Base.ResponseMetadata\022J\n\006Result\030\002 \001(\0132" +
+      ":.Byteplus.Vod.Models.Business.VodGetInt" +
+      "ertrustApiKeyResult\"g\n\036VodSetIntertrustA" +
+      "piKeyResponse\022E\n\020ResponseMetadata\030\001 \001(\0132" +
+      "+.Byteplus.Base.Models.Base.ResponseMeta",
+      "data\"j\n!VodDeleteIntertrustApiKeyRespons" +
+      "e\022E\n\020ResponseMetadata\030\001 \001(\0132+.Byteplus.B" +
+      "ase.Models.Base.ResponseMetadata\"\263\001\n\036Vod" +
+      "GetFairPlayCertInfoResponse\022E\n\020ResponseM" +
+      "etadata\030\001 \001(\0132+.Byteplus.Base.Models.Bas" +
+      "e.ResponseMetadata\022J\n\006Result\030\002 \001(\0132:.Byt" +
+      "eplus.Vod.Models.Business.VodGetFairPlay" +
+      "CertInfoResult\"\263\001\n\036VodSetFairPlayCertInf" +
+      "oResponse\022E\n\020ResponseMetadata\030\001 \001(\0132+.By" +
+      "teplus.Base.Models.Base.ResponseMetadata" +
+      "\022J\n\006Result\030\002 \001(\0132:.Byteplus.Vod.Models.B" +
+      "usiness.VodSetFairPlayCertInfoResult\"j\n!" +
+      "VodDeleteFairPlayCertInfoResponse\022E\n\020Res" +
+      "ponseMetadata\030\001 \001(\0132+.Byteplus.Base.Mode" +
+      "ls.Base.ResponseMetadata\"\253\001\n\032VodGetFairP" +
+      "layCertResponse\022E\n\020ResponseMetadata\030\001 \001(" +
+      "\0132+.Byteplus.Base.Models.Base.ResponseMe" +
+      "tadata\022F\n\006Result\030\002 \001(\01326.Byteplus.Vod.Mo" +
+      "dels.Business.VodGetFairPlayCertResult\"\244" +
+      "\001\n\030VodGetDrmLicenseResponse\022E\n\020ResponseM" +
+      "etadata\030\001 \001(\0132+.Byteplus.Base.Models.Bas" +
+      "e.ResponseMetadata\022A\n\006Result\030\002 \001(\01321.Byt" +
+      "eplus.Vod.Models.Business.VodDrmLicenseR" +
+      "esultB\330\001\n\'com.byteplus.service.vod.model" +
+      ".responseB\013VodResponseP\001ZGgithub.com/byt" +
+      "eplus-sdk/byteplus-sdk-golang/service/vo" +
+      "d/models/response\240\001\001\330\001\001\312\002$Byteplus\\Servi" +
+      "ce\\Vod\\Models\\Response\342\002\'Byteplus\\Servic" +
+      "e\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1129,210 +1274,312 @@ public final class VodResponse {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodDescribeVodSpaceStorageDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
-    internal_static_Byteplus_Vod_Models_Response_VodListDomainResponse_descriptor =
+    internal_static_Byteplus_Vod_Models_Response_VodStartDomainResponse_descriptor =
       getDescriptor().getMessageTypes().get(50);
+    internal_static_Byteplus_Vod_Models_Response_VodStartDomainResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodStartDomainResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodStopDomainResponse_descriptor =
+      getDescriptor().getMessageTypes().get(51);
+    internal_static_Byteplus_Vod_Models_Response_VodStopDomainResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodStopDomainResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainPlayRuleResponse_descriptor =
+      getDescriptor().getMessageTypes().get(52);
+    internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainPlayRuleResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainPlayRuleResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodAddDomainToSchedulerResponse_descriptor =
+      getDescriptor().getMessageTypes().get(53);
+    internal_static_Byteplus_Vod_Models_Response_VodAddDomainToSchedulerResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodAddDomainToSchedulerResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodRemoveDomainFromSchedulerResponse_descriptor =
+      getDescriptor().getMessageTypes().get(54);
+    internal_static_Byteplus_Vod_Models_Response_VodRemoveDomainFromSchedulerResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodRemoveDomainFromSchedulerResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodListDomainResponse_descriptor =
+      getDescriptor().getMessageTypes().get(55);
     internal_static_Byteplus_Vod_Models_Response_VodListDomainResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodListDomainResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodCreateCdnRefreshTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(51);
+      getDescriptor().getMessageTypes().get(56);
     internal_static_Byteplus_Vod_Models_Response_VodCreateCdnRefreshTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodCreateCdnRefreshTaskResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodCreateCdnPreloadTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(52);
+      getDescriptor().getMessageTypes().get(57);
     internal_static_Byteplus_Vod_Models_Response_VodCreateCdnPreloadTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodCreateCdnPreloadTaskResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodListCdnTasksResponse_descriptor =
-      getDescriptor().getMessageTypes().get(53);
+      getDescriptor().getMessageTypes().get(58);
     internal_static_Byteplus_Vod_Models_Response_VodListCdnTasksResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodListCdnTasksResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogResponse_descriptor =
-      getDescriptor().getMessageTypes().get(54);
+      getDescriptor().getMessageTypes().get(59);
     internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodListCdnTopAccessUrlResponse_descriptor =
-      getDescriptor().getMessageTypes().get(55);
+      getDescriptor().getMessageTypes().get(60);
     internal_static_Byteplus_Vod_Models_Response_VodListCdnTopAccessUrlResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodListCdnTopAccessUrlResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainBandwidthDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(56);
+      getDescriptor().getMessageTypes().get(61);
     internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainBandwidthDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainBandwidthDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodCdnStatisticsCommonResponse_descriptor =
-      getDescriptor().getMessageTypes().get(57);
+      getDescriptor().getMessageTypes().get(62);
     internal_static_Byteplus_Vod_Models_Response_VodCdnStatisticsCommonResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodCdnStatisticsCommonResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnUsageDataDetailResponse_descriptor =
+      getDescriptor().getMessageTypes().get(63);
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnUsageDataDetailResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodListCdnUsageDataDetailResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnStatusDataDetailResponse_descriptor =
+      getDescriptor().getMessageTypes().get(64);
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnStatusDataDetailResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodListCdnStatusDataDetailResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogDetailResponse_descriptor =
+      getDescriptor().getMessageTypes().get(65);
+    internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogDetailResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodListCdnAccessLogDetailResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodDescribeIPInfoResponse_descriptor =
-      getDescriptor().getMessageTypes().get(58);
+      getDescriptor().getMessageTypes().get(66);
     internal_static_Byteplus_Vod_Models_Response_VodDescribeIPInfoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodDescribeIPInfoResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainTrafficDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(59);
+      getDescriptor().getMessageTypes().get(67);
     internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainTrafficDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodDescribeVodDomainTrafficDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockTasksResponse_descriptor =
-      getDescriptor().getMessageTypes().get(60);
+      getDescriptor().getMessageTypes().get(68);
     internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockTasksResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockTasksResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodGetContentBlockTasksResponse_descriptor =
-      getDescriptor().getMessageTypes().get(61);
+      getDescriptor().getMessageTypes().get(69);
     internal_static_Byteplus_Vod_Models_Response_VodGetContentBlockTasksResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodGetContentBlockTasksResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodCreateDomainV2Response_descriptor =
-      getDescriptor().getMessageTypes().get(62);
+      getDescriptor().getMessageTypes().get(70);
     internal_static_Byteplus_Vod_Models_Response_VodCreateDomainV2Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodCreateDomainV2Response_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainExpireV2Response_descriptor =
-      getDescriptor().getMessageTypes().get(63);
+      getDescriptor().getMessageTypes().get(71);
     internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainExpireV2Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainExpireV2Response_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainAuthConfigV2Response_descriptor =
-      getDescriptor().getMessageTypes().get(64);
+      getDescriptor().getMessageTypes().get(72);
     internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainAuthConfigV2Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodUpdateDomainAuthConfigV2Response_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_AddOrUpdateCertificateV2Response_descriptor =
+      getDescriptor().getMessageTypes().get(73);
+    internal_static_Byteplus_Vod_Models_Response_AddOrUpdateCertificateV2Response_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_AddOrUpdateCertificateV2Response_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodAddCallbackSubscriptionResponse_descriptor =
-      getDescriptor().getMessageTypes().get(65);
+      getDescriptor().getMessageTypes().get(74);
     internal_static_Byteplus_Vod_Models_Response_VodAddCallbackSubscriptionResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodAddCallbackSubscriptionResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodSetCallbackEventResponse_descriptor =
-      getDescriptor().getMessageTypes().get(66);
+      getDescriptor().getMessageTypes().get(75);
     internal_static_Byteplus_Vod_Models_Response_VodSetCallbackEventResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodSetCallbackEventResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodGetSmartStrategyLitePlayInfoResponse_descriptor =
-      getDescriptor().getMessageTypes().get(67);
+      getDescriptor().getMessageTypes().get(76);
     internal_static_Byteplus_Vod_Models_Response_VodGetSmartStrategyLitePlayInfoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodGetSmartStrategyLitePlayInfoResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodGetAppInfoResponse_descriptor =
-      getDescriptor().getMessageTypes().get(68);
+      getDescriptor().getMessageTypes().get(77);
     internal_static_Byteplus_Vod_Models_Response_VodGetAppInfoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodGetAppInfoResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceTranscodeDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(69);
+      getDescriptor().getMessageTypes().get(78);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceTranscodeDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceTranscodeDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceAIStatisDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(70);
+      getDescriptor().getMessageTypes().get(79);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceAIStatisDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceAIStatisDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceSubtitleStatisDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(71);
+      getDescriptor().getMessageTypes().get(80);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceSubtitleStatisDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceSubtitleStatisDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceDetectStatisDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(72);
+      getDescriptor().getMessageTypes().get(81);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceDetectStatisDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceDetectStatisDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSnapshotDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(73);
+      getDescriptor().getMessageTypes().get(82);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSnapshotDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSnapshotDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceWorkflowDetailDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(74);
+      getDescriptor().getMessageTypes().get(83);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceWorkflowDetailDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceWorkflowDetailDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceEditDetailDataResponse_descriptor =
-      getDescriptor().getMessageTypes().get(75);
+      getDescriptor().getMessageTypes().get(84);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceEditDetailDataResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodSpaceEditDetailDataResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_DescribeVodPlayFileLogByDomainResponse_descriptor =
-      getDescriptor().getMessageTypes().get(76);
+      getDescriptor().getMessageTypes().get(85);
     internal_static_Byteplus_Vod_Models_Response_DescribeVodPlayFileLogByDomainResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_DescribeVodPlayFileLogByDomainResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockMediaTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(77);
+      getDescriptor().getMessageTypes().get(86);
     internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockMediaTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodSubmitBlockMediaTaskResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodSubmitUnblockMediaTaskResponse_descriptor =
-      getDescriptor().getMessageTypes().get(78);
+      getDescriptor().getMessageTypes().get(87);
     internal_static_Byteplus_Vod_Models_Response_VodSubmitUnblockMediaTaskResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodSubmitUnblockMediaTaskResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodQueryMediaBlockStatusResponse_descriptor =
-      getDescriptor().getMessageTypes().get(79);
+      getDescriptor().getMessageTypes().get(88);
     internal_static_Byteplus_Vod_Models_Response_VodQueryMediaBlockStatusResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodQueryMediaBlockStatusResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodCreatePlaylistResponse_descriptor =
-      getDescriptor().getMessageTypes().get(80);
+      getDescriptor().getMessageTypes().get(89);
     internal_static_Byteplus_Vod_Models_Response_VodCreatePlaylistResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodCreatePlaylistResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodGetPlaylistsResponse_descriptor =
-      getDescriptor().getMessageTypes().get(81);
+      getDescriptor().getMessageTypes().get(90);
     internal_static_Byteplus_Vod_Models_Response_VodGetPlaylistsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodGetPlaylistsResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", "Result", });
     internal_static_Byteplus_Vod_Models_Response_VodUpdatePlaylistResponse_descriptor =
-      getDescriptor().getMessageTypes().get(82);
+      getDescriptor().getMessageTypes().get(91);
     internal_static_Byteplus_Vod_Models_Response_VodUpdatePlaylistResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodUpdatePlaylistResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
     internal_static_Byteplus_Vod_Models_Response_VodDeletePlaylistResponse_descriptor =
-      getDescriptor().getMessageTypes().get(83);
+      getDescriptor().getMessageTypes().get(92);
     internal_static_Byteplus_Vod_Models_Response_VodDeletePlaylistResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Response_VodDeletePlaylistResponse_descriptor,
         new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodGetIntertrustApiKeyResponse_descriptor =
+      getDescriptor().getMessageTypes().get(93);
+    internal_static_Byteplus_Vod_Models_Response_VodGetIntertrustApiKeyResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodGetIntertrustApiKeyResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodSetIntertrustApiKeyResponse_descriptor =
+      getDescriptor().getMessageTypes().get(94);
+    internal_static_Byteplus_Vod_Models_Response_VodSetIntertrustApiKeyResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodSetIntertrustApiKeyResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteIntertrustApiKeyResponse_descriptor =
+      getDescriptor().getMessageTypes().get(95);
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteIntertrustApiKeyResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodDeleteIntertrustApiKeyResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertInfoResponse_descriptor =
+      getDescriptor().getMessageTypes().get(96);
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertInfoResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertInfoResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodSetFairPlayCertInfoResponse_descriptor =
+      getDescriptor().getMessageTypes().get(97);
+    internal_static_Byteplus_Vod_Models_Response_VodSetFairPlayCertInfoResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodSetFairPlayCertInfoResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteFairPlayCertInfoResponse_descriptor =
+      getDescriptor().getMessageTypes().get(98);
+    internal_static_Byteplus_Vod_Models_Response_VodDeleteFairPlayCertInfoResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodDeleteFairPlayCertInfoResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", });
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertResponse_descriptor =
+      getDescriptor().getMessageTypes().get(99);
+    internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodGetFairPlayCertResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
+    internal_static_Byteplus_Vod_Models_Response_VodGetDrmLicenseResponse_descriptor =
+      getDescriptor().getMessageTypes().get(100);
+    internal_static_Byteplus_Vod_Models_Response_VodGetDrmLicenseResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Response_VodGetDrmLicenseResponse_descriptor,
+        new java.lang.String[] { "ResponseMetadata", "Result", });
     com.byteplus.service.base.model.base.Base.getDescriptor();
     com.byteplus.service.vod.model.business.VodPlay.getDescriptor();
     com.byteplus.service.vod.model.business.VodMedia.getDescriptor();

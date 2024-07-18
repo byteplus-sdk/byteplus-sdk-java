@@ -423,4 +423,51 @@ public interface VodPlayInfoOrBuilder extends
    * <code>.Byteplus.Vod.Models.Business.VodVolumeInfo Volume = 23;</code>
    */
   com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder getVolumeOrBuilder();
+
+  /**
+   * <pre>
+   * drm类型，商业or私有
+   * </pre>
+   *
+   * <code>string DrmType = 24;</code>
+   * @return The drmType.
+   */
+  java.lang.String getDrmType();
+  /**
+   * <pre>
+   * drm类型，商业or私有
+   * </pre>
+   *
+   * <code>string DrmType = 24;</code>
+   * @return The bytes for drmType.
+   */
+  com.google.protobuf.ByteString
+      getDrmTypeBytes();
+
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   * @return Whether the encryptionPssh field is set.
+   */
+  boolean hasEncryptionPssh();
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   * @return The encryptionPssh.
+   */
+  com.byteplus.service.vod.model.business.DrmPssh getEncryptionPssh();
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   */
+  com.byteplus.service.vod.model.business.DrmPsshOrBuilder getEncryptionPsshOrBuilder();
 }

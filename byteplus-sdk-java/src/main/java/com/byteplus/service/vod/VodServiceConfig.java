@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class VodConfig {
+public class VodServiceConfig {
 
     public static Map<String, ServiceInfo> ServiceInfoMap = new HashMap<String, ServiceInfo>() {
         {
@@ -860,6 +860,23 @@ public class VodConfig {
                             put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
                                 {
                                     add(new BasicNameValuePair("Action", Const.DescribeVodSnapshotData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            // **********************************************************************
+            // 商业drm
+            // **********************************************************************
+            put(Const.GetDrmLicense, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "POST");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.GetDrmLicense));
                                     add(new BasicNameValuePair("Version", "2023-01-01"));
                                 }
                             });

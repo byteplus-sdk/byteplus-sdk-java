@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
   private com.byteplus.service.vod.model.business.BarrageMaskInfo barrageMaskInfo_;
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -706,7 +706,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -718,7 +718,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *蒙板弹幕
+   * 蒙板弹幕
    * </pre>
    *
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3121,7 +3121,7 @@ private static final long serialVersionUID = 0L;
         com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder> barrageMaskInfoBuilder_;
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3132,7 +3132,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3147,7 +3147,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3167,7 +3167,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3185,7 +3185,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3207,7 +3207,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3225,7 +3225,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3237,7 +3237,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
@@ -3252,7 +3252,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *蒙板弹幕
+     * 蒙板弹幕
      * </pre>
      *
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>

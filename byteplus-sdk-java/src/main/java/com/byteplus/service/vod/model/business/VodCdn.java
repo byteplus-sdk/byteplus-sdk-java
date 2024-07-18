@@ -144,6 +144,61 @@ public final class VodCdn {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Business_ContentTask_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnUsageDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnUsageDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DomainUsageDataDetail_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DomainUsageDataDetail_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnUsageDataDetailResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodListCdnUsageDataDetailResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusData_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnStatusData_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_StatusDetailEntry_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_StatusDetailEntry_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DomainStatusDataDetail_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DomainStatusDataDetail_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnLogDetail_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnLogDetail_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DomainAccessLogDetail_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DomainAccessLogDetail_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnAccessLogDetailResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodListCdnAccessLogDetailResult_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -212,55 +267,85 @@ public final class VodCdn {
       "on\030\004 \001(\005\022\025\n\rBandwidthType\030\005 \001(\t\022\025\n\rPeakB" +
       "andwidth\030\006 \001(\001\022\031\n\021PeakBandwidthTime\030\007 \001(" +
       "\t\022I\n\021BandwidthDataList\030\010 \003(\0132..Byteplus." +
-      "Vod.Models.Business.VodBandwidthData\"~\n\024" +
-      "VodCdnStatisticsData\022\014\n\004Name\030\001 \001(\t\022\016\n\006Me" +
-      "tric\030\002 \001(\t\022\020\n\010DataType\030\003 \001(\t\0226\n\006Points\030\004" +
-      " \003(\0132&.Byteplus.Vod.Models.Business.VodP" +
-      "oint\"~\n\034VodCdnStatisticsCommonResult\022A\n\005" +
-      "Datas\030\001 \003(\01322.Byteplus.Vod.Models.Busine" +
-      "ss.VodCdnStatisticsData\022\033\n\023NoPermissionD" +
-      "omains\030\002 \003(\t\"H\n\014VodCdnIpInfo\022\n\n\002Ip\030\001 \001(\t" +
-      "\022\r\n\005CdnIp\030\002 \001(\010\022\020\n\010Location\030\003 \001(\t\022\013\n\003Isp" +
-      "\030\004 \001(\t\"T\n\027VodDescribeIpInfoResult\0229\n\005Inf" +
-      "os\030\001 \003(\0132*.Byteplus.Vod.Models.Business." +
-      "VodCdnIpInfo\"/\n\016VodTrafficData\022\014\n\004Time\030\001" +
-      " \001(\t\022\017\n\007Traffic\030\002 \001(\001\"\346\001\n%VodDescribeVod" +
-      "DomainTrafficDataResult\022\022\n\nDomainList\030\001 " +
-      "\003(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022" +
-      "\023\n\013Aggregation\030\004 \001(\005\022\023\n\013TrafficType\030\005 \001(" +
-      "\t\022\024\n\014TotalTraffic\030\006 \001(\001\022E\n\017TrafficDataLi" +
-      "st\030\007 \003(\0132,.Byteplus.Vod.Models.Business." +
-      "VodTrafficData\"\246\002\n\023VodDomainSourceInfo\022S" +
-      "\n\021SourceStationType\030\001 \001(\01628.Byteplus.Vod" +
-      ".Models.Business.VodDomainSourceStationT" +
-      "ype\022a\n\030SourceStationAddressType\030\002 \001(\0162?." +
-      "Byteplus.Vod.Models.Business.VodDomainSo" +
-      "urceStationAddressType\022\016\n\006Origin\030\003 \001(\t\022G" +
-      "\n\006Bucket\030\004 \001(\01327.Byteplus.Vod.Models.Bus" +
-      "iness.VodDomainOriginBucketInfo\"_\n\031VodDo" +
-      "mainOriginBucketInfo\022\022\n\nBucketName\030\001 \001(\t" +
-      "\022\030\n\020BucketSourceType\030\002 \001(\t\022\024\n\014BucketRegi" +
-      "on\030\003 \001(\t\"+\n\031VodSubmitBlockTasksResult\022\016\n" +
-      "\006TaskID\030\001 \001(\t\"\212\001\n\035VodGetContentBlockTask" +
-      "sResult\022\r\n\005Total\030\001 \001(\003\022\017\n\007PageNum\030\002 \001(\003\022" +
-      "\020\n\010PageSize\030\003 \001(\003\0227\n\004Data\030\004 \003(\0132).Bytepl" +
-      "us.Vod.Models.Business.ContentTask\"`\n\013Co" +
-      "ntentTask\022\013\n\003Url\030\001 \001(\t\022\016\n\006Status\030\002 \001(\t\022\020" +
-      "\n\010TaskType\030\003 \001(\t\022\022\n\nCreateTime\030\004 \001(\003\022\016\n\006" +
-      "TaskID\030\005 \001(\t*\222\001\n\032VodDomainSourceStationT" +
-      "ype\022\'\n#UndefinedVodDomainSourceStationTy" +
-      "pe\020\000\022!\n\035VodVodDomainSourceStationType\020\001\022" +
-      "(\n$ThirdPartyVodDomainSourceStationType\020" +
-      "\002*\251\001\n!VodDomainSourceStationAddressType\022" +
-      ".\n*UndefinedVodDomainSourceStationAddres" +
-      "sType\020\000\022+\n\'DomainVodDomainSourceStationA" +
-      "ddressType\020\001\022\'\n#IPVodDomainSourceStation" +
-      "AddressType\020\002B\326\001\n\'com.byteplus.service.v" +
-      "od.model.businessB\006VodCdnP\001ZGgithub.com/" +
-      "byteplus-sdk/byteplus-sdk-golang/service" +
-      "/vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus" +
-      "\\Service\\Vod\\Models\\Business\342\002\'Byteplus\\" +
-      "Service\\Vod\\Models\\GPBMetadatab\006proto3"
+      "Vod.Models.Business.VodBandwidthData\"\262\001\n" +
+      "\024VodCdnStatisticsData\022\014\n\004Name\030\001 \001(\t\022\016\n\006M" +
+      "etric\030\002 \001(\t\022\020\n\010DataType\030\003 \001(\t\0226\n\006Points\030" +
+      "\004 \003(\0132&.Byteplus.Vod.Models.Business.Vod" +
+      "Point\022\016\n\006Region\030\005 \001(\t\022\013\n\003Isp\030\006 \001(\t\022\025\n\rBi" +
+      "llingRegion\030\007 \001(\t\"~\n\034VodCdnStatisticsCom" +
+      "monResult\022A\n\005Datas\030\001 \003(\01322.Byteplus.Vod." +
+      "Models.Business.VodCdnStatisticsData\022\033\n\023" +
+      "NoPermissionDomains\030\002 \003(\t\"H\n\014VodCdnIpInf" +
+      "o\022\n\n\002Ip\030\001 \001(\t\022\r\n\005CdnIp\030\002 \001(\010\022\020\n\010Location" +
+      "\030\003 \001(\t\022\013\n\003Isp\030\004 \001(\t\"T\n\027VodDescribeIpInfo" +
+      "Result\0229\n\005Infos\030\001 \003(\0132*.Byteplus.Vod.Mod" +
+      "els.Business.VodCdnIpInfo\"/\n\016VodTrafficD" +
+      "ata\022\014\n\004Time\030\001 \001(\t\022\017\n\007Traffic\030\002 \001(\001\"\346\001\n%V" +
+      "odDescribeVodDomainTrafficDataResult\022\022\n\n" +
+      "DomainList\030\001 \003(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007E" +
+      "ndTime\030\003 \001(\t\022\023\n\013Aggregation\030\004 \001(\005\022\023\n\013Tra" +
+      "fficType\030\005 \001(\t\022\024\n\014TotalTraffic\030\006 \001(\001\022E\n\017" +
+      "TrafficDataList\030\007 \003(\0132,.Byteplus.Vod.Mod" +
+      "els.Business.VodTrafficData\"\246\002\n\023VodDomai" +
+      "nSourceInfo\022S\n\021SourceStationType\030\001 \001(\01628" +
+      ".Byteplus.Vod.Models.Business.VodDomainS" +
+      "ourceStationType\022a\n\030SourceStationAddress" +
+      "Type\030\002 \001(\0162?.Byteplus.Vod.Models.Busines" +
+      "s.VodDomainSourceStationAddressType\022\016\n\006O" +
+      "rigin\030\003 \001(\t\022G\n\006Bucket\030\004 \001(\01327.Byteplus.V" +
+      "od.Models.Business.VodDomainOriginBucket" +
+      "Info\"_\n\031VodDomainOriginBucketInfo\022\022\n\nBuc" +
+      "ketName\030\001 \001(\t\022\030\n\020BucketSourceType\030\002 \001(\t\022" +
+      "\024\n\014BucketRegion\030\003 \001(\t\"+\n\031VodSubmitBlockT" +
+      "asksResult\022\016\n\006TaskID\030\001 \001(\t\"\212\001\n\035VodGetCon" +
+      "tentBlockTasksResult\022\r\n\005Total\030\001 \001(\003\022\017\n\007P" +
+      "ageNum\030\002 \001(\003\022\020\n\010PageSize\030\003 \001(\003\0227\n\004Data\030\004" +
+      " \003(\0132).Byteplus.Vod.Models.Business.Cont" +
+      "entTask\"`\n\013ContentTask\022\013\n\003Url\030\001 \001(\t\022\016\n\006S" +
+      "tatus\030\002 \001(\t\022\020\n\010TaskType\030\003 \001(\t\022\022\n\nCreateT" +
+      "ime\030\004 \001(\003\022\016\n\006TaskID\030\005 \001(\t\"\224\001\n\020CdnUsageDa" +
+      "taItem\022\014\n\004Time\030\001 \001(\003\022\014\n\004Area\030\002 \001(\t\022\014\n\004Fl" +
+      "ow\030\003 \001(\003\022\020\n\010HttpFlow\030\004 \001(\003\022\021\n\tHttpsFlow\030" +
+      "\005 \001(\003\022\014\n\004Conn\030\006 \001(\003\022\020\n\010HttpConn\030\007 \001(\003\022\021\n" +
+      "\tHttpsConn\030\010 \001(\003\"e\n\025DomainUsageDataDetai" +
+      "l\022\016\n\006Domain\030\001 \001(\t\022<\n\004Data\030\002 \003(\0132..Bytepl" +
+      "us.Vod.Models.Business.CdnUsageDataItem\"" +
+      "d\n\037VodListCdnUsageDataDetailResult\022A\n\004Da" +
+      "ta\030\001 \003(\01323.Byteplus.Vod.Models.Business." +
+      "DomainUsageDataDetail\"\035\n\rCdnStatusData\022\014" +
+      "\n\004Conn\030\001 \001(\003\"\352\001\n\021CdnStatusDataItem\022\014\n\004Ti" +
+      "me\030\001 \001(\003\022\014\n\004Area\030\002 \001(\t\022W\n\014StatusDetail\030\003" +
+      " \003(\0132A.Byteplus.Vod.Models.Business.CdnS" +
+      "tatusDataItem.StatusDetailEntry\032`\n\021Statu" +
+      "sDetailEntry\022\013\n\003key\030\001 \001(\t\022:\n\005value\030\002 \001(\013" +
+      "2+.Byteplus.Vod.Models.Business.CdnStatu" +
+      "sData:\0028\001\"g\n\026DomainStatusDataDetail\022\016\n\006D" +
+      "omain\030\001 \001(\t\022=\n\004Data\030\002 \003(\0132/.Byteplus.Vod" +
+      ".Models.Business.CdnStatusDataItem\"f\n Vo" +
+      "dListCdnStatusDataDetailResult\022B\n\004Data\030\001" +
+      " \003(\01324.Byteplus.Vod.Models.Business.Doma" +
+      "inStatusDataDetail\"k\n\014CdnLogDetail\022\020\n\010Fi" +
+      "leName\030\001 \001(\t\022\020\n\010FileSize\030\002 \001(\003\022\023\n\013Downlo" +
+      "adUrl\030\003 \001(\t\022\021\n\tStartTime\030\004 \001(\003\022\017\n\007EndTim" +
+      "e\030\005 \001(\003\"d\n\025DomainAccessLogDetail\022\016\n\006Doma" +
+      "in\030\001 \001(\t\022;\n\007LogList\030\002 \003(\0132*.Byteplus.Vod" +
+      ".Models.Business.CdnLogDetail\"d\n\037VodList" +
+      "CdnAccessLogDetailResult\022A\n\004Logs\030\001 \003(\01323" +
+      ".Byteplus.Vod.Models.Business.DomainAcce" +
+      "ssLogDetail*\222\001\n\032VodDomainSourceStationTy" +
+      "pe\022\'\n#UndefinedVodDomainSourceStationTyp" +
+      "e\020\000\022!\n\035VodVodDomainSourceStationType\020\001\022(" +
+      "\n$ThirdPartyVodDomainSourceStationType\020\002" +
+      "*\251\001\n!VodDomainSourceStationAddressType\022." +
+      "\n*UndefinedVodDomainSourceStationAddress" +
+      "Type\020\000\022+\n\'DomainVodDomainSourceStationAd" +
+      "dressType\020\001\022\'\n#IPVodDomainSourceStationA" +
+      "ddressType\020\002B\326\001\n\'com.byteplus.service.vo" +
+      "d.model.businessB\006VodCdnP\001ZGgithub.com/b" +
+      "yteplus-sdk/byteplus-sdk-golang/service/" +
+      "vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\" +
+      "Service\\Vod\\Models\\Business\342\002\'Byteplus\\S" +
+      "ervice\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -362,7 +447,7 @@ public final class VodCdn {
     internal_static_Byteplus_Vod_Models_Business_VodCdnStatisticsData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodCdnStatisticsData_descriptor,
-        new java.lang.String[] { "Name", "Metric", "DataType", "Points", });
+        new java.lang.String[] { "Name", "Metric", "DataType", "Points", "Region", "Isp", "BillingRegion", });
     internal_static_Byteplus_Vod_Models_Business_VodCdnStatisticsCommonResult_descriptor =
       getDescriptor().getMessageTypes().get(16);
     internal_static_Byteplus_Vod_Models_Business_VodCdnStatisticsCommonResult_fieldAccessorTable = new
@@ -423,6 +508,72 @@ public final class VodCdn {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_ContentTask_descriptor,
         new java.lang.String[] { "Url", "Status", "TaskType", "CreateTime", "TaskID", });
+    internal_static_Byteplus_Vod_Models_Business_CdnUsageDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(26);
+    internal_static_Byteplus_Vod_Models_Business_CdnUsageDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnUsageDataItem_descriptor,
+        new java.lang.String[] { "Time", "Area", "Flow", "HttpFlow", "HttpsFlow", "Conn", "HttpConn", "HttpsConn", });
+    internal_static_Byteplus_Vod_Models_Business_DomainUsageDataDetail_descriptor =
+      getDescriptor().getMessageTypes().get(27);
+    internal_static_Byteplus_Vod_Models_Business_DomainUsageDataDetail_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DomainUsageDataDetail_descriptor,
+        new java.lang.String[] { "Domain", "Data", });
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnUsageDataDetailResult_descriptor =
+      getDescriptor().getMessageTypes().get(28);
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnUsageDataDetailResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodListCdnUsageDataDetailResult_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusData_descriptor =
+      getDescriptor().getMessageTypes().get(29);
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusData_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnStatusData_descriptor,
+        new java.lang.String[] { "Conn", });
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(30);
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_descriptor,
+        new java.lang.String[] { "Time", "Area", "StatusDetail", });
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_StatusDetailEntry_descriptor =
+      internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_descriptor.getNestedTypes().get(0);
+    internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_StatusDetailEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnStatusDataItem_StatusDetailEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_Byteplus_Vod_Models_Business_DomainStatusDataDetail_descriptor =
+      getDescriptor().getMessageTypes().get(31);
+    internal_static_Byteplus_Vod_Models_Business_DomainStatusDataDetail_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DomainStatusDataDetail_descriptor,
+        new java.lang.String[] { "Domain", "Data", });
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_descriptor =
+      getDescriptor().getMessageTypes().get(32);
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_Byteplus_Vod_Models_Business_CdnLogDetail_descriptor =
+      getDescriptor().getMessageTypes().get(33);
+    internal_static_Byteplus_Vod_Models_Business_CdnLogDetail_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnLogDetail_descriptor,
+        new java.lang.String[] { "FileName", "FileSize", "DownloadUrl", "StartTime", "EndTime", });
+    internal_static_Byteplus_Vod_Models_Business_DomainAccessLogDetail_descriptor =
+      getDescriptor().getMessageTypes().get(34);
+    internal_static_Byteplus_Vod_Models_Business_DomainAccessLogDetail_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DomainAccessLogDetail_descriptor,
+        new java.lang.String[] { "Domain", "LogList", });
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnAccessLogDetailResult_descriptor =
+      getDescriptor().getMessageTypes().get(35);
+    internal_static_Byteplus_Vod_Models_Business_VodListCdnAccessLogDetailResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodListCdnAccessLogDetailResult_descriptor,
+        new java.lang.String[] { "Logs", });
     com.byteplus.service.vod.model.business.VodCommon.getDescriptor();
   }
 

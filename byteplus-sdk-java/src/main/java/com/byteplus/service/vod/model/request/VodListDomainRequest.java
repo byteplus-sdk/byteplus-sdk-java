@@ -4,12 +4,6 @@
 package com.byteplus.service.vod.model.request;
 
 /**
- * <pre>
- * **********************************************************************
- * 分发加速管理
- * **********************************************************************
- * </pre>
- *
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodListDomainRequest}
  */
 public final class VodListDomainRequest extends
@@ -23,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private VodListDomainRequest() {
     spaceName_ = "";
+    domainType_ = "";
   }
 
   @java.lang.Override
@@ -59,6 +54,27 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             spaceName_ = s;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            domainType_ = s;
+            break;
+          }
+          case 24: {
+
+            sourceStationType_ = input.readInt32();
+            break;
+          }
+          case 32: {
+
+            offset_ = input.readInt32();
+            break;
+          }
+          case 40: {
+
+            limit_ = input.readInt32();
             break;
           }
           default: {
@@ -139,6 +155,103 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int DOMAINTYPE_FIELD_NUMBER = 2;
+  private volatile java.lang.Object domainType_;
+  /**
+   * <pre>
+   *域名类型
+   *播放域名:play
+   *封面域名:image
+   * </pre>
+   *
+   * <code>string DomainType = 2;</code>
+   * @return The domainType.
+   */
+  @java.lang.Override
+  public java.lang.String getDomainType() {
+    java.lang.Object ref = domainType_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      domainType_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   *域名类型
+   *播放域名:play
+   *封面域名:image
+   * </pre>
+   *
+   * <code>string DomainType = 2;</code>
+   * @return The bytes for domainType.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getDomainTypeBytes() {
+    java.lang.Object ref = domainType_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      domainType_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int SOURCESTATIONTYPE_FIELD_NUMBER = 3;
+  private int sourceStationType_;
+  /**
+   * <pre>
+   *源站类型
+   *回点播源站:1
+   *第三方源站:2
+   * </pre>
+   *
+   * <code>int32 SourceStationType = 3;</code>
+   * @return The sourceStationType.
+   */
+  @java.lang.Override
+  public int getSourceStationType() {
+    return sourceStationType_;
+  }
+
+  public static final int OFFSET_FIELD_NUMBER = 4;
+  private int offset_;
+  /**
+   * <pre>
+   *跳过域名组的游标
+   * </pre>
+   *
+   * <code>int32 Offset = 4;</code>
+   * @return The offset.
+   */
+  @java.lang.Override
+  public int getOffset() {
+    return offset_;
+  }
+
+  public static final int LIMIT_FIELD_NUMBER = 5;
+  private int limit_;
+  /**
+   * <pre>
+   *单次查询域名组数量
+   * </pre>
+   *
+   * <code>int32 Limit = 5;</code>
+   * @return The limit.
+   */
+  @java.lang.Override
+  public int getLimit() {
+    return limit_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -156,6 +269,18 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, spaceName_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(domainType_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, domainType_);
+    }
+    if (sourceStationType_ != 0) {
+      output.writeInt32(3, sourceStationType_);
+    }
+    if (offset_ != 0) {
+      output.writeInt32(4, offset_);
+    }
+    if (limit_ != 0) {
+      output.writeInt32(5, limit_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -167,6 +292,21 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, spaceName_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(domainType_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, domainType_);
+    }
+    if (sourceStationType_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, sourceStationType_);
+    }
+    if (offset_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(4, offset_);
+    }
+    if (limit_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(5, limit_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -185,6 +325,14 @@ private static final long serialVersionUID = 0L;
 
     if (!getSpaceName()
         .equals(other.getSpaceName())) return false;
+    if (!getDomainType()
+        .equals(other.getDomainType())) return false;
+    if (getSourceStationType()
+        != other.getSourceStationType()) return false;
+    if (getOffset()
+        != other.getOffset()) return false;
+    if (getLimit()
+        != other.getLimit()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -198,6 +346,14 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SPACENAME_FIELD_NUMBER;
     hash = (53 * hash) + getSpaceName().hashCode();
+    hash = (37 * hash) + DOMAINTYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getDomainType().hashCode();
+    hash = (37 * hash) + SOURCESTATIONTYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getSourceStationType();
+    hash = (37 * hash) + OFFSET_FIELD_NUMBER;
+    hash = (53 * hash) + getOffset();
+    hash = (37 * hash) + LIMIT_FIELD_NUMBER;
+    hash = (53 * hash) + getLimit();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -294,12 +450,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * **********************************************************************
-   * 分发加速管理
-   * **********************************************************************
-   * </pre>
-   *
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodListDomainRequest}
    */
   public static final class Builder extends
@@ -339,6 +489,14 @@ private static final long serialVersionUID = 0L;
       super.clear();
       spaceName_ = "";
 
+      domainType_ = "";
+
+      sourceStationType_ = 0;
+
+      offset_ = 0;
+
+      limit_ = 0;
+
       return this;
     }
 
@@ -366,6 +524,10 @@ private static final long serialVersionUID = 0L;
     public com.byteplus.service.vod.model.request.VodListDomainRequest buildPartial() {
       com.byteplus.service.vod.model.request.VodListDomainRequest result = new com.byteplus.service.vod.model.request.VodListDomainRequest(this);
       result.spaceName_ = spaceName_;
+      result.domainType_ = domainType_;
+      result.sourceStationType_ = sourceStationType_;
+      result.offset_ = offset_;
+      result.limit_ = limit_;
       onBuilt();
       return result;
     }
@@ -417,6 +579,19 @@ private static final long serialVersionUID = 0L;
       if (!other.getSpaceName().isEmpty()) {
         spaceName_ = other.spaceName_;
         onChanged();
+      }
+      if (!other.getDomainType().isEmpty()) {
+        domainType_ = other.domainType_;
+        onChanged();
+      }
+      if (other.getSourceStationType() != 0) {
+        setSourceStationType(other.getSourceStationType());
+      }
+      if (other.getOffset() != 0) {
+        setOffset(other.getOffset());
+      }
+      if (other.getLimit() != 0) {
+        setLimit(other.getLimit());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -539,6 +714,247 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       spaceName_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object domainType_ = "";
+    /**
+     * <pre>
+     *域名类型
+     *播放域名:play
+     *封面域名:image
+     * </pre>
+     *
+     * <code>string DomainType = 2;</code>
+     * @return The domainType.
+     */
+    public java.lang.String getDomainType() {
+      java.lang.Object ref = domainType_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        domainType_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     *域名类型
+     *播放域名:play
+     *封面域名:image
+     * </pre>
+     *
+     * <code>string DomainType = 2;</code>
+     * @return The bytes for domainType.
+     */
+    public com.google.protobuf.ByteString
+        getDomainTypeBytes() {
+      java.lang.Object ref = domainType_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        domainType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     *域名类型
+     *播放域名:play
+     *封面域名:image
+     * </pre>
+     *
+     * <code>string DomainType = 2;</code>
+     * @param value The domainType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDomainType(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      domainType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *域名类型
+     *播放域名:play
+     *封面域名:image
+     * </pre>
+     *
+     * <code>string DomainType = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDomainType() {
+      
+      domainType_ = getDefaultInstance().getDomainType();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *域名类型
+     *播放域名:play
+     *封面域名:image
+     * </pre>
+     *
+     * <code>string DomainType = 2;</code>
+     * @param value The bytes for domainType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDomainTypeBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      domainType_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int sourceStationType_ ;
+    /**
+     * <pre>
+     *源站类型
+     *回点播源站:1
+     *第三方源站:2
+     * </pre>
+     *
+     * <code>int32 SourceStationType = 3;</code>
+     * @return The sourceStationType.
+     */
+    @java.lang.Override
+    public int getSourceStationType() {
+      return sourceStationType_;
+    }
+    /**
+     * <pre>
+     *源站类型
+     *回点播源站:1
+     *第三方源站:2
+     * </pre>
+     *
+     * <code>int32 SourceStationType = 3;</code>
+     * @param value The sourceStationType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSourceStationType(int value) {
+      
+      sourceStationType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *源站类型
+     *回点播源站:1
+     *第三方源站:2
+     * </pre>
+     *
+     * <code>int32 SourceStationType = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSourceStationType() {
+      
+      sourceStationType_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int offset_ ;
+    /**
+     * <pre>
+     *跳过域名组的游标
+     * </pre>
+     *
+     * <code>int32 Offset = 4;</code>
+     * @return The offset.
+     */
+    @java.lang.Override
+    public int getOffset() {
+      return offset_;
+    }
+    /**
+     * <pre>
+     *跳过域名组的游标
+     * </pre>
+     *
+     * <code>int32 Offset = 4;</code>
+     * @param value The offset to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOffset(int value) {
+      
+      offset_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *跳过域名组的游标
+     * </pre>
+     *
+     * <code>int32 Offset = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearOffset() {
+      
+      offset_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int limit_ ;
+    /**
+     * <pre>
+     *单次查询域名组数量
+     * </pre>
+     *
+     * <code>int32 Limit = 5;</code>
+     * @return The limit.
+     */
+    @java.lang.Override
+    public int getLimit() {
+      return limit_;
+    }
+    /**
+     * <pre>
+     *单次查询域名组数量
+     * </pre>
+     *
+     * <code>int32 Limit = 5;</code>
+     * @param value The limit to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLimit(int value) {
+      
+      limit_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *单次查询域名组数量
+     * </pre>
+     *
+     * <code>int32 Limit = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLimit() {
+      
+      limit_ = 0;
       onChanged();
       return this;
     }

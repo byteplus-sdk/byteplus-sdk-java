@@ -26,4 +26,60 @@ public interface VodListDomainRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getSpaceNameBytes();
+
+  /**
+   * <pre>
+   *域名类型
+   *播放域名:play
+   *封面域名:image
+   * </pre>
+   *
+   * <code>string DomainType = 2;</code>
+   * @return The domainType.
+   */
+  java.lang.String getDomainType();
+  /**
+   * <pre>
+   *域名类型
+   *播放域名:play
+   *封面域名:image
+   * </pre>
+   *
+   * <code>string DomainType = 2;</code>
+   * @return The bytes for domainType.
+   */
+  com.google.protobuf.ByteString
+      getDomainTypeBytes();
+
+  /**
+   * <pre>
+   *源站类型
+   *回点播源站:1
+   *第三方源站:2
+   * </pre>
+   *
+   * <code>int32 SourceStationType = 3;</code>
+   * @return The sourceStationType.
+   */
+  int getSourceStationType();
+
+  /**
+   * <pre>
+   *跳过域名组的游标
+   * </pre>
+   *
+   * <code>int32 Offset = 4;</code>
+   * @return The offset.
+   */
+  int getOffset();
+
+  /**
+   * <pre>
+   *单次查询域名组数量
+   * </pre>
+   *
+   * <code>int32 Limit = 5;</code>
+   * @return The limit.
+   */
+  int getLimit();
 }

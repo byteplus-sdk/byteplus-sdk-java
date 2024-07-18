@@ -66,4 +66,40 @@ public interface VodCdnStatisticsDataOrBuilder extends
    */
   com.byteplus.service.vod.model.business.VodPointOrBuilder getPointsOrBuilder(
       int index);
+
+  /**
+   * <code>string Region = 5;</code>
+   * @return The region.
+   */
+  java.lang.String getRegion();
+  /**
+   * <code>string Region = 5;</code>
+   * @return The bytes for region.
+   */
+  com.google.protobuf.ByteString
+      getRegionBytes();
+
+  /**
+   * <code>string Isp = 6;</code>
+   * @return The isp.
+   */
+  java.lang.String getIsp();
+  /**
+   * <code>string Isp = 6;</code>
+   * @return The bytes for isp.
+   */
+  com.google.protobuf.ByteString
+      getIspBytes();
+
+  /**
+   * <code>string BillingRegion = 7;</code>
+   * @return The billingRegion.
+   */
+  java.lang.String getBillingRegion();
+  /**
+   * <code>string BillingRegion = 7;</code>
+   * @return The bytes for billingRegion.
+   */
+  com.google.protobuf.ByteString
+      getBillingRegionBytes();
 }

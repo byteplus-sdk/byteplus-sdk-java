@@ -33,6 +33,7 @@ private static final long serialVersionUID = 0L;
     quality_ = "";
     barrageMaskOffset_ = "";
     keyFrameAlignment_ = "";
+    drmType_ = "";
   }
 
   @java.lang.Override
@@ -201,6 +202,25 @@ private static final long serialVersionUID = 0L;
             if (subBuilder != null) {
               subBuilder.mergeFrom(volume_);
               volume_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 194: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            drmType_ = s;
+            break;
+          }
+          case 202: {
+            com.byteplus.service.vod.model.business.DrmPssh.Builder subBuilder = null;
+            if (encryptionPssh_ != null) {
+              subBuilder = encryptionPssh_.toBuilder();
+            }
+            encryptionPssh_ = input.readMessage(com.byteplus.service.vod.model.business.DrmPssh.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(encryptionPssh_);
+              encryptionPssh_ = subBuilder.buildPartial();
             }
 
             break;
@@ -1132,6 +1152,90 @@ private static final long serialVersionUID = 0L;
     return getVolume();
   }
 
+  public static final int DRMTYPE_FIELD_NUMBER = 24;
+  private volatile java.lang.Object drmType_;
+  /**
+   * <pre>
+   * drm类型，商业or私有
+   * </pre>
+   *
+   * <code>string DrmType = 24;</code>
+   * @return The drmType.
+   */
+  @java.lang.Override
+  public java.lang.String getDrmType() {
+    java.lang.Object ref = drmType_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      drmType_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * drm类型，商业or私有
+   * </pre>
+   *
+   * <code>string DrmType = 24;</code>
+   * @return The bytes for drmType.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getDrmTypeBytes() {
+    java.lang.Object ref = drmType_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      drmType_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int ENCRYPTIONPSSH_FIELD_NUMBER = 25;
+  private com.byteplus.service.vod.model.business.DrmPssh encryptionPssh_;
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   * @return Whether the encryptionPssh field is set.
+   */
+  @java.lang.Override
+  public boolean hasEncryptionPssh() {
+    return encryptionPssh_ != null;
+  }
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   * @return The encryptionPssh.
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.DrmPssh getEncryptionPssh() {
+    return encryptionPssh_ == null ? com.byteplus.service.vod.model.business.DrmPssh.getDefaultInstance() : encryptionPssh_;
+  }
+  /**
+   * <pre>
+   * 商业drm pssh
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.DrmPsshOrBuilder getEncryptionPsshOrBuilder() {
+    return getEncryptionPssh();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -1214,6 +1318,12 @@ private static final long serialVersionUID = 0L;
     }
     if (volume_ != null) {
       output.writeMessage(23, getVolume());
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(drmType_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 24, drmType_);
+    }
+    if (encryptionPssh_ != null) {
+      output.writeMessage(25, getEncryptionPssh());
     }
     unknownFields.writeTo(output);
   }
@@ -1299,6 +1409,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(23, getVolume());
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(drmType_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(24, drmType_);
+    }
+    if (encryptionPssh_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(25, getEncryptionPssh());
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -1365,6 +1482,13 @@ private static final long serialVersionUID = 0L;
       if (!getVolume()
           .equals(other.getVolume())) return false;
     }
+    if (!getDrmType()
+        .equals(other.getDrmType())) return false;
+    if (hasEncryptionPssh() != other.hasEncryptionPssh()) return false;
+    if (hasEncryptionPssh()) {
+      if (!getEncryptionPssh()
+          .equals(other.getEncryptionPssh())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1425,6 +1549,12 @@ private static final long serialVersionUID = 0L;
     if (hasVolume()) {
       hash = (37 * hash) + VOLUME_FIELD_NUMBER;
       hash = (53 * hash) + getVolume().hashCode();
+    }
+    hash = (37 * hash) + DRMTYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getDrmType().hashCode();
+    if (hasEncryptionPssh()) {
+      hash = (37 * hash) + ENCRYPTIONPSSH_FIELD_NUMBER;
+      hash = (53 * hash) + getEncryptionPssh().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1609,6 +1739,14 @@ private static final long serialVersionUID = 0L;
         volume_ = null;
         volumeBuilder_ = null;
       }
+      drmType_ = "";
+
+      if (encryptionPsshBuilder_ == null) {
+        encryptionPssh_ = null;
+      } else {
+        encryptionPssh_ = null;
+        encryptionPsshBuilder_ = null;
+      }
       return this;
     }
 
@@ -1661,6 +1799,12 @@ private static final long serialVersionUID = 0L;
         result.volume_ = volume_;
       } else {
         result.volume_ = volumeBuilder_.build();
+      }
+      result.drmType_ = drmType_;
+      if (encryptionPsshBuilder_ == null) {
+        result.encryptionPssh_ = encryptionPssh_;
+      } else {
+        result.encryptionPssh_ = encryptionPsshBuilder_.build();
       }
       onBuilt();
       return result;
@@ -1795,6 +1939,13 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasVolume()) {
         mergeVolume(other.getVolume());
+      }
+      if (!other.getDrmType().isEmpty()) {
+        drmType_ = other.drmType_;
+        onChanged();
+      }
+      if (other.hasEncryptionPssh()) {
+        mergeEncryptionPssh(other.getEncryptionPssh());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -3825,6 +3976,257 @@ private static final long serialVersionUID = 0L;
         volume_ = null;
       }
       return volumeBuilder_;
+    }
+
+    private java.lang.Object drmType_ = "";
+    /**
+     * <pre>
+     * drm类型，商业or私有
+     * </pre>
+     *
+     * <code>string DrmType = 24;</code>
+     * @return The drmType.
+     */
+    public java.lang.String getDrmType() {
+      java.lang.Object ref = drmType_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        drmType_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * drm类型，商业or私有
+     * </pre>
+     *
+     * <code>string DrmType = 24;</code>
+     * @return The bytes for drmType.
+     */
+    public com.google.protobuf.ByteString
+        getDrmTypeBytes() {
+      java.lang.Object ref = drmType_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        drmType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * drm类型，商业or私有
+     * </pre>
+     *
+     * <code>string DrmType = 24;</code>
+     * @param value The drmType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDrmType(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      drmType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * drm类型，商业or私有
+     * </pre>
+     *
+     * <code>string DrmType = 24;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDrmType() {
+      
+      drmType_ = getDefaultInstance().getDrmType();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * drm类型，商业or私有
+     * </pre>
+     *
+     * <code>string DrmType = 24;</code>
+     * @param value The bytes for drmType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDrmTypeBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      drmType_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.byteplus.service.vod.model.business.DrmPssh encryptionPssh_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder> encryptionPsshBuilder_;
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     * @return Whether the encryptionPssh field is set.
+     */
+    public boolean hasEncryptionPssh() {
+      return encryptionPsshBuilder_ != null || encryptionPssh_ != null;
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     * @return The encryptionPssh.
+     */
+    public com.byteplus.service.vod.model.business.DrmPssh getEncryptionPssh() {
+      if (encryptionPsshBuilder_ == null) {
+        return encryptionPssh_ == null ? com.byteplus.service.vod.model.business.DrmPssh.getDefaultInstance() : encryptionPssh_;
+      } else {
+        return encryptionPsshBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public Builder setEncryptionPssh(com.byteplus.service.vod.model.business.DrmPssh value) {
+      if (encryptionPsshBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        encryptionPssh_ = value;
+        onChanged();
+      } else {
+        encryptionPsshBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public Builder setEncryptionPssh(
+        com.byteplus.service.vod.model.business.DrmPssh.Builder builderForValue) {
+      if (encryptionPsshBuilder_ == null) {
+        encryptionPssh_ = builderForValue.build();
+        onChanged();
+      } else {
+        encryptionPsshBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public Builder mergeEncryptionPssh(com.byteplus.service.vod.model.business.DrmPssh value) {
+      if (encryptionPsshBuilder_ == null) {
+        if (encryptionPssh_ != null) {
+          encryptionPssh_ =
+            com.byteplus.service.vod.model.business.DrmPssh.newBuilder(encryptionPssh_).mergeFrom(value).buildPartial();
+        } else {
+          encryptionPssh_ = value;
+        }
+        onChanged();
+      } else {
+        encryptionPsshBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public Builder clearEncryptionPssh() {
+      if (encryptionPsshBuilder_ == null) {
+        encryptionPssh_ = null;
+        onChanged();
+      } else {
+        encryptionPssh_ = null;
+        encryptionPsshBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public com.byteplus.service.vod.model.business.DrmPssh.Builder getEncryptionPsshBuilder() {
+      
+      onChanged();
+      return getEncryptionPsshFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    public com.byteplus.service.vod.model.business.DrmPsshOrBuilder getEncryptionPsshOrBuilder() {
+      if (encryptionPsshBuilder_ != null) {
+        return encryptionPsshBuilder_.getMessageOrBuilder();
+      } else {
+        return encryptionPssh_ == null ?
+            com.byteplus.service.vod.model.business.DrmPssh.getDefaultInstance() : encryptionPssh_;
+      }
+    }
+    /**
+     * <pre>
+     * 商业drm pssh
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder> 
+        getEncryptionPsshFieldBuilder() {
+      if (encryptionPsshBuilder_ == null) {
+        encryptionPsshBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder>(
+                getEncryptionPssh(),
+                getParentForChildren(),
+                isClean());
+        encryptionPssh_ = null;
+      }
+      return encryptionPsshBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

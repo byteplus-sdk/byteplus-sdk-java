@@ -134,6 +134,13 @@ public class Const {
     public static final String UpdateDomainAuthConfig = "UpdateDomainAuthConfig";
 
     public static final String AddOrUpdateCertificate = "AddOrUpdateCertificate";
+    public static final String StartDomain = "StartDomain";
+    public static final String StopDomain = "StopDomain";
+    public static final String AddDomainToScheduler = "AddDomainToScheduler";
+    public static final String RemoveDomainFromScheduler = "RemoveDomainFromScheduler";
+    public static final String UpdateDomainPlayRule = "UpdateDomainPlayRule";
+    public static final String ListCdnUsageDataDetail = "ListCdnUsageDataDetail";
+    public static final String ListCdnStatusDataDetail = "ListCdnStatusDataDetail";
 
     //vod-callback
     public static final String AddCallbackSubscription = "AddCallbackSubscription";
@@ -162,4 +169,7 @@ public class Const {
     public static final String UpdatePlaylist = "UpdatePlaylist";
     public static final String DeletePlaylist = "DeletePlaylist";
 
+    // drm
+    public static final String GetDrmLicense = "GetDrmLicense";
+    public static final String GetFairPlayCert = "GetFairPlayCert";
 }

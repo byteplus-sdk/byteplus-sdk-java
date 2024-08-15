@@ -23,6 +23,7 @@ public class VodServiceConfig {
                         {
                             put(com.byteplus.helper.Const.CONNECTION_TIMEOUT, 5000);
                             put(com.byteplus.helper.Const.SOCKET_TIMEOUT, 5000);
+                            put(com.byteplus.helper.Const.Scheme, "https");
                             put(com.byteplus.helper.Const.Host, "vod.byteplusapi.com");
                             put(com.byteplus.helper.Const.Header, new ArrayList<Header>() {
                                 {

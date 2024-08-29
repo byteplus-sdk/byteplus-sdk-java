@@ -496,4 +496,166 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
         }
         return JSON.parseObject(response.getData(), CDN.CreateServiceTemplateResponse.class);
     }
+
+    @Override
+    public CDN.DescribeDistrictDataResponse describeDistrictData(CDN.DescribeDistrictDataRequest request) throws Exception {
+        RawResponse response = json("DescribeDistrictData", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeDistrictDataResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeEdgeDataResponse describeEdgeData(CDN.DescribeEdgeDataRequest request) throws Exception {
+        RawResponse response = json("DescribeEdgeData", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeEdgeDataResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeDistrictSummaryResponse describeDistrictSummary(CDN.DescribeDistrictSummaryRequest request) throws Exception {
+        RawResponse response = json("DescribeDistrictSummary", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeDistrictSummaryResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeEdgeSummaryResponse describeEdgeSummary(CDN.DescribeEdgeSummaryRequest request) throws Exception {
+        RawResponse response = json("DescribeEdgeSummary", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeEdgeSummaryResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeOriginDataResponse describeOriginData(CDN.DescribeOriginDataRequest request) throws Exception {
+        RawResponse response = json("DescribeOriginData", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeOriginDataResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeOriginSummaryResponse describeOriginSummary(CDN.DescribeOriginSummaryRequest request) throws Exception {
+        RawResponse response = json("DescribeOriginSummary", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeOriginSummaryResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeUserDataResponse describeUserData(CDN.DescribeUserDataRequest request) throws Exception {
+        RawResponse response = json("DescribeUserData", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeUserDataResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeDistrictRankingResponse describeDistrictRanking(CDN.DescribeDistrictRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeDistrictRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeDistrictRankingResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeEdgeRankingResponse describeEdgeRanking(CDN.DescribeEdgeRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeEdgeRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeEdgeRankingResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeOriginRankingResponse describeOriginRanking(CDN.DescribeOriginRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeOriginRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeOriginRankingResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeEdgeStatusCodeRankingResponse describeEdgeStatusCodeRanking(CDN.DescribeEdgeStatusCodeRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeEdgeStatusCodeRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeEdgeStatusCodeRankingResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeOriginStatusCodeRankingResponse describeOriginStatusCodeRanking(CDN.DescribeOriginStatusCodeRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeOriginStatusCodeRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeOriginStatusCodeRankingResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeStatisticalRankingResponse describeStatisticalRanking(CDN.DescribeStatisticalRankingRequest request) throws Exception {
+        RawResponse response = json("DescribeStatisticalRanking", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeStatisticalRankingResponse.class);
+    }
+
+    @Override
+    public CDN.BatchUpdateCdnConfigResponse batchUpdateCdnConfig(CDN.BatchUpdateCdnConfigRequest request) throws Exception {
+        RawResponse response = json("BatchUpdateCdnConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.BatchUpdateCdnConfigResponse.class);
+    }
+
+    @Override
+    public CDN.AddCertificateResponse addCertificate(CDN.AddCertificateRequest request) throws Exception {
+        RawResponse response = json("AddCertificate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddCertificateResponse.class);
+    }
+
+    @Override
+    public CDN.DeleteUsageReportResponse deleteUsageReport(CDN.DeleteUsageReportRequest request) throws Exception {
+        RawResponse response = json("DeleteUsageReport", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DeleteUsageReportResponse.class);
+    }
+
+    @Override
+    public CDN.CreateUsageReportResponse createUsageReport(CDN.CreateUsageReportRequest request) throws Exception {
+        RawResponse response = json("CreateUsageReport", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.CreateUsageReportResponse.class);
+    }
+
+    @Override
+    public CDN.ListUsageReportsResponse listUsageReports(CDN.ListUsageReportsRequest request) throws Exception {
+        RawResponse response = json("ListUsageReports", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListUsageReportsResponse.class);
+    }
 }

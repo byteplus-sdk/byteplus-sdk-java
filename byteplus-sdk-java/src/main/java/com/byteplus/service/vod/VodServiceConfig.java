@@ -84,6 +84,20 @@ public class VodServiceConfig {
                         }
                     }
             ));
+            put(Const.GetHlsDecryptionKey, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.GetHlsDecryptionKey));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
 
             // **********************************************************************
             // 上传

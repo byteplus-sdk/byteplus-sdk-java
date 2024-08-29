@@ -12,8 +12,7 @@ public class VodGetPlayInfoDemo {
         IVodService vodService = VodServiceImpl.getInstance();
         vodService.setAccessKey("your ak");
         vodService.setSecretKey("your sk");
-
-        try {
+		try {
             com.byteplus.service.vod.model.request.VodGetPlayInfoRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodGetPlayInfoRequest.newBuilder();
 			reqBuilder.setVid("your Vid");
 			reqBuilder.setFormat("your Format");

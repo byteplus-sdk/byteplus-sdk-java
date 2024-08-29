@@ -10,9 +10,7 @@ public class VodGetThirdPartyDrmAuthTokenDemo {
         IVodService vodService = VodServiceImpl.getInstance();
 
         String vid = "your vid";
-        String thirdPartyDrmType = "your drm type";
-        long persistent = 0;
-        long licenseDuration = 0;
+        String thirdPartyDrmType = "your drmType"; // widevine or fairplay
 
         // call below method if you dont set ak and sk in ～/.byteplus/config
         vodService.setAccessKey("your ak");
@@ -22,9 +20,6 @@ public class VodGetThirdPartyDrmAuthTokenDemo {
             VodGetDrmLicenseRequest.Builder reqBuilder = VodGetDrmLicenseRequest.newBuilder();
             reqBuilder.setVid(vid);
             reqBuilder.setThirdPartyDrmType(thirdPartyDrmType);
-            reqBuilder.setPersistent(persistent);
-            reqBuilder.setLicenseDuration(licenseDuration);
-
 
             String resp = vodService.getThirdPartyDrmAuthToken(reqBuilder.build(), 3600000L);
             System.out.println(resp);

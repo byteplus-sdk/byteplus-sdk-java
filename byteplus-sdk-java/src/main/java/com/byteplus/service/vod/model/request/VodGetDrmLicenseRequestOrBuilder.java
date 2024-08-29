@@ -32,26 +32,24 @@ public interface VodGetDrmLicenseRequestOrBuilder extends
       getKidBytes();
 
   /**
+   * <pre>
+   *  int64 Persistent = 4;
+   *  int64 LicenseDuration = 5;
+   * </pre>
+   *
    * <code>string ThirdPartyDrmType = 3;</code>
    * @return The thirdPartyDrmType.
    */
   java.lang.String getThirdPartyDrmType();
   /**
+   * <pre>
+   *  int64 Persistent = 4;
+   *  int64 LicenseDuration = 5;
+   * </pre>
+   *
    * <code>string ThirdPartyDrmType = 3;</code>
    * @return The bytes for thirdPartyDrmType.
    */
   com.google.protobuf.ByteString
       getThirdPartyDrmTypeBytes();
-
-  /**
-   * <code>int64 Persistent = 4;</code>
-   * @return The persistent.
-   */
-  long getPersistent();
-
-  /**
-   * <code>int64 LicenseDuration = 5;</code>
-   * @return The licenseDuration.
-   */
-  long getLicenseDuration();
 }

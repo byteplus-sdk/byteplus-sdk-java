@@ -110,4 +110,40 @@ package com.byteplus.service.cdn;
 
         CDN.CreateServiceTemplateResponse createServiceTemplate(CDN.CreateServiceTemplateRequest request) throws Exception;
 
+        CDN.DescribeDistrictDataResponse describeDistrictData(CDN.DescribeDistrictDataRequest request) throws Exception;
+
+        CDN.DescribeEdgeDataResponse describeEdgeData(CDN.DescribeEdgeDataRequest request) throws Exception;
+
+        CDN.DescribeDistrictSummaryResponse describeDistrictSummary(CDN.DescribeDistrictSummaryRequest request) throws Exception;
+
+        CDN.DescribeEdgeSummaryResponse describeEdgeSummary(CDN.DescribeEdgeSummaryRequest request) throws Exception;
+
+        CDN.DescribeOriginDataResponse describeOriginData(CDN.DescribeOriginDataRequest request) throws Exception;
+
+        CDN.DescribeOriginSummaryResponse describeOriginSummary(CDN.DescribeOriginSummaryRequest request) throws Exception;
+
+        CDN.DescribeUserDataResponse describeUserData(CDN.DescribeUserDataRequest request) throws Exception;
+
+        CDN.DescribeDistrictRankingResponse describeDistrictRanking(CDN.DescribeDistrictRankingRequest request) throws Exception;
+
+        CDN.DescribeEdgeRankingResponse describeEdgeRanking(CDN.DescribeEdgeRankingRequest request) throws Exception;
+
+        CDN.DescribeOriginRankingResponse describeOriginRanking(CDN.DescribeOriginRankingRequest request) throws Exception;
+
+        CDN.DescribeEdgeStatusCodeRankingResponse describeEdgeStatusCodeRanking(CDN.DescribeEdgeStatusCodeRankingRequest request) throws Exception;
+
+        CDN.DescribeOriginStatusCodeRankingResponse describeOriginStatusCodeRanking(CDN.DescribeOriginStatusCodeRankingRequest request) throws Exception;
+
+        CDN.DescribeStatisticalRankingResponse describeStatisticalRanking(CDN.DescribeStatisticalRankingRequest request) throws Exception;
+
+        CDN.BatchUpdateCdnConfigResponse batchUpdateCdnConfig(CDN.BatchUpdateCdnConfigRequest request) throws Exception;
+
+        CDN.AddCertificateResponse addCertificate(CDN.AddCertificateRequest request) throws Exception;
+
+        CDN.DeleteUsageReportResponse deleteUsageReport(CDN.DeleteUsageReportRequest request) throws Exception;
+
+        CDN.CreateUsageReportResponse createUsageReport(CDN.CreateUsageReportRequest request) throws Exception;
+
+        CDN.ListUsageReportsResponse listUsageReports(CDN.ListUsageReportsRequest request) throws Exception;
+
 }

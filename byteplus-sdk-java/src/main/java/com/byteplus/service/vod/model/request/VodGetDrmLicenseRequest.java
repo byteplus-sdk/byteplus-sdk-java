@@ -69,16 +69,6 @@ private static final long serialVersionUID = 0L;
             thirdPartyDrmType_ = s;
             break;
           }
-          case 32: {
-
-            persistent_ = input.readInt64();
-            break;
-          }
-          case 40: {
-
-            licenseDuration_ = input.readInt64();
-            break;
-          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -190,6 +180,11 @@ private static final long serialVersionUID = 0L;
   public static final int THIRDPARTYDRMTYPE_FIELD_NUMBER = 3;
   private volatile java.lang.Object thirdPartyDrmType_;
   /**
+   * <pre>
+   *  int64 Persistent = 4;
+   *  int64 LicenseDuration = 5;
+   * </pre>
+   *
    * <code>string ThirdPartyDrmType = 3;</code>
    * @return The thirdPartyDrmType.
    */
@@ -207,6 +202,11 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
+   * <pre>
+   *  int64 Persistent = 4;
+   *  int64 LicenseDuration = 5;
+   * </pre>
+   *
    * <code>string ThirdPartyDrmType = 3;</code>
    * @return The bytes for thirdPartyDrmType.
    */
@@ -223,28 +223,6 @@ private static final long serialVersionUID = 0L;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
-  }
-
-  public static final int PERSISTENT_FIELD_NUMBER = 4;
-  private long persistent_;
-  /**
-   * <code>int64 Persistent = 4;</code>
-   * @return The persistent.
-   */
-  @java.lang.Override
-  public long getPersistent() {
-    return persistent_;
-  }
-
-  public static final int LICENSEDURATION_FIELD_NUMBER = 5;
-  private long licenseDuration_;
-  /**
-   * <code>int64 LicenseDuration = 5;</code>
-   * @return The licenseDuration.
-   */
-  @java.lang.Override
-  public long getLicenseDuration() {
-    return licenseDuration_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -270,12 +248,6 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(thirdPartyDrmType_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, thirdPartyDrmType_);
     }
-    if (persistent_ != 0L) {
-      output.writeInt64(4, persistent_);
-    }
-    if (licenseDuration_ != 0L) {
-      output.writeInt64(5, licenseDuration_);
-    }
     unknownFields.writeTo(output);
   }
 
@@ -293,14 +265,6 @@ private static final long serialVersionUID = 0L;
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(thirdPartyDrmType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, thirdPartyDrmType_);
-    }
-    if (persistent_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(4, persistent_);
-    }
-    if (licenseDuration_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(5, licenseDuration_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -323,10 +287,6 @@ private static final long serialVersionUID = 0L;
         .equals(other.getKid())) return false;
     if (!getThirdPartyDrmType()
         .equals(other.getThirdPartyDrmType())) return false;
-    if (getPersistent()
-        != other.getPersistent()) return false;
-    if (getLicenseDuration()
-        != other.getLicenseDuration()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -344,12 +304,6 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getKid().hashCode();
     hash = (37 * hash) + THIRDPARTYDRMTYPE_FIELD_NUMBER;
     hash = (53 * hash) + getThirdPartyDrmType().hashCode();
-    hash = (37 * hash) + PERSISTENT_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getPersistent());
-    hash = (37 * hash) + LICENSEDURATION_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getLicenseDuration());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -489,10 +443,6 @@ private static final long serialVersionUID = 0L;
 
       thirdPartyDrmType_ = "";
 
-      persistent_ = 0L;
-
-      licenseDuration_ = 0L;
-
       return this;
     }
 
@@ -522,8 +472,6 @@ private static final long serialVersionUID = 0L;
       result.vid_ = vid_;
       result.kid_ = kid_;
       result.thirdPartyDrmType_ = thirdPartyDrmType_;
-      result.persistent_ = persistent_;
-      result.licenseDuration_ = licenseDuration_;
       onBuilt();
       return result;
     }
@@ -583,12 +531,6 @@ private static final long serialVersionUID = 0L;
       if (!other.getThirdPartyDrmType().isEmpty()) {
         thirdPartyDrmType_ = other.thirdPartyDrmType_;
         onChanged();
-      }
-      if (other.getPersistent() != 0L) {
-        setPersistent(other.getPersistent());
-      }
-      if (other.getLicenseDuration() != 0L) {
-        setLicenseDuration(other.getLicenseDuration());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -773,6 +715,11 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object thirdPartyDrmType_ = "";
     /**
+     * <pre>
+     *  int64 Persistent = 4;
+     *  int64 LicenseDuration = 5;
+     * </pre>
+     *
      * <code>string ThirdPartyDrmType = 3;</code>
      * @return The thirdPartyDrmType.
      */
@@ -789,6 +736,11 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
+     * <pre>
+     *  int64 Persistent = 4;
+     *  int64 LicenseDuration = 5;
+     * </pre>
+     *
      * <code>string ThirdPartyDrmType = 3;</code>
      * @return The bytes for thirdPartyDrmType.
      */
@@ -806,6 +758,11 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
+     * <pre>
+     *  int64 Persistent = 4;
+     *  int64 LicenseDuration = 5;
+     * </pre>
+     *
      * <code>string ThirdPartyDrmType = 3;</code>
      * @param value The thirdPartyDrmType to set.
      * @return This builder for chaining.
@@ -821,6 +778,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
+     * <pre>
+     *  int64 Persistent = 4;
+     *  int64 LicenseDuration = 5;
+     * </pre>
+     *
      * <code>string ThirdPartyDrmType = 3;</code>
      * @return This builder for chaining.
      */
@@ -831,6 +793,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
+     * <pre>
+     *  int64 Persistent = 4;
+     *  int64 LicenseDuration = 5;
+     * </pre>
+     *
      * <code>string ThirdPartyDrmType = 3;</code>
      * @param value The bytes for thirdPartyDrmType to set.
      * @return This builder for chaining.
@@ -843,68 +810,6 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       thirdPartyDrmType_ = value;
-      onChanged();
-      return this;
-    }
-
-    private long persistent_ ;
-    /**
-     * <code>int64 Persistent = 4;</code>
-     * @return The persistent.
-     */
-    @java.lang.Override
-    public long getPersistent() {
-      return persistent_;
-    }
-    /**
-     * <code>int64 Persistent = 4;</code>
-     * @param value The persistent to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPersistent(long value) {
-      
-      persistent_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 Persistent = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPersistent() {
-      
-      persistent_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private long licenseDuration_ ;
-    /**
-     * <code>int64 LicenseDuration = 5;</code>
-     * @return The licenseDuration.
-     */
-    @java.lang.Override
-    public long getLicenseDuration() {
-      return licenseDuration_;
-    }
-    /**
-     * <code>int64 LicenseDuration = 5;</code>
-     * @param value The licenseDuration to set.
-     * @return This builder for chaining.
-     */
-    public Builder setLicenseDuration(long value) {
-      
-      licenseDuration_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 LicenseDuration = 5;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLicenseDuration() {
-      
-      licenseDuration_ = 0L;
       onChanged();
       return this;
     }

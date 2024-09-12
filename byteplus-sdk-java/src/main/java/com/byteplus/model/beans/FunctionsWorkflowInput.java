@@ -15,4 +15,9 @@ public class FunctionsWorkflowInput {
 
     @JSONField(name = "TemplateIds")
     String[] templateIds;
+
+    public FunctionsWorkflowInput(String templateId) {
+        this.templateId = templateId;
+    }
+
 }

@@ -10,36 +10,6 @@ import com.alibaba.fastjson.JSON;
 public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePreset  {
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "ALayout")
-    private String aLayout;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AProfile")
-    private String aProfile;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AR")
-    private Integer aR;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AbrMode")
-    private Integer abrMode;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AccountID")
-    private String accountID;
-
-    /**
      * <p>音频编码格式。包括以下 3 种类型。</p>
      *
      *
@@ -52,30 +22,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Acodec")
     private String acodec;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AdvancedParam")
-    private String advancedParam;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AllowAudioCopy")
-    private Integer allowAudioCopy;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AllowVideoCopy")
-    private Integer allowVideoCopy;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "An")
-    private Integer an;
 
     /**
      * <p>宽高自适应模式开关。</p>
@@ -94,24 +40,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "AudioBitrate")
     private Integer audioBitrate;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AutoTransAb")
-    private Integer autoTransAb;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AutoTransAl")
-    private Integer autoTransAl;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AutoTransAr")
-    private Integer autoTransAr;
 
     /**
      * <p>是否开启转码不超过源流分辨率。开启后，当源流分辨率低于转码配置分辨率时(即源流宽低于转码配置宽且源流高低于转码配置高时)，将按源流视频分辨率进行转码，默认开启。</p>
@@ -144,22 +72,10 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
     private Integer autoTransVr;
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "BCM")
-    private Integer bCM;
-
-    /**
      * <p>2 个参考帧之间的最大 B 帧数。`BFrames` 取 0 时，表示去 B 帧。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "BFrames")
     private Integer bFrames;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Describe")
-    private String describe;
 
     /**
      * <p>视频帧率，单位为 fps，帧率越大，画面越流畅。</p>
@@ -172,18 +88,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "GOP")
     private Integer gOP;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "GopMin")
-    private Integer gopMin;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "HVSPre")
-    private Boolean hVSPre;
 
     /**
      * <p>视频高度。</p>
@@ -204,124 +108,10 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
     private Integer longSide;
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "LookAhead")
-    private Integer lookAhead;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Modifier")
-    private String modifier;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvBf")
-    private Integer nvBf;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvCodec")
-    private String nvCodec;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvGop")
-    private Integer nvGop;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvHVSPre")
-    private Boolean nvHVSPre;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvLookahead")
-    private Integer nvLookahead;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvPercent")
-    private Integer nvPercent;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvPreset")
-    private String nvPreset;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvPriority")
-    private Integer nvPriority;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvProfile")
-    private String nvProfile;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvRefs")
-    private Integer nvRefs;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "NvTempAQ")
-    private Integer nvTempAQ;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Ocr")
-    private Boolean ocr;
-
-    /**
      * <p>转码配置名称。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Preset")
     private String preset;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "PresetKind")
-    private Integer presetKind;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "PresetType")
-    private Integer presetType;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Qp")
-    private Integer qp;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "RegionConfig")
-    private String regionConfig;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Revision")
-    private String revision;
 
     /**
      * <p>是否极智超清转码。</p>
@@ -336,12 +126,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
     private Boolean roi;
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "SITI")
-    private Boolean sITI;
-
-    /**
      * <p>短边长度。</p>
      *
      * <p>:::tip</p>
@@ -354,12 +138,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
     private Integer shortSide;
 
     /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Status")
-    private Integer status;
-
-    /**
      * <p>转码停止时长，支持触发方式为拉流转码时设置，表示断开拉流后转码停止的时长，单位为 s，取值范围为 [0,300]，-1 表示不停止转码，默认值为 60。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StopInterval")
@@ -370,180 +148,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "SuffixName")
     private String suffixName;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Threads")
-    private Integer threads;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VBRatio")
-    private Integer vBRatio;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VBVBufSize")
-    private Integer vBVBufSize;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VBVMaxRate")
-    private Integer vBVMaxRate;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VLevel")
-    private String vLevel;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VPreset")
-    private String vPreset;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VProfile")
-    private String vProfile;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBBframes")
-    private Integer vRBBframes;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBHeightNum")
-    private Integer vRBHeightNum;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBPreset")
-    private String vRBPreset;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBProfile")
-    private String vRBProfile;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBSuffix")
-    private String vRBSuffix;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBVb")
-    private Integer vRBVb;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRBWidthNum")
-    private Integer vRBWidthNum;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRGop")
-    private Integer vRGop;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRGopDen")
-    private Integer vRGopDen;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRHvspre")
-    private String vRHvspre;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRProjection")
-    private String vRProjection;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRRoi")
-    private String vRRoi;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTBframes")
-    private Integer vRTBframes;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTPreset")
-    private String vRTPreset;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTProfile")
-    private String vRTProfile;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTSuffix")
-    private String vRTSuffix;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTVb")
-    private Integer vRTVb;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRTileMod")
-    private Integer vRTileMod;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRVr")
-    private Integer vRVr;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VRateCtrl")
-    private String vRateCtrl;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VbThreshold")
-    private String vbThreshold;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Vclass")
-    private Boolean vclass;
 
     /**
      * <p>视频编码格式。</p>
@@ -566,18 +170,6 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "VideoBitrate")
     private Integer videoBitrate;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Vn")
-    private Integer vn;
-
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "Watermark")
-    private String watermark;
 
     /**
      * <p>视频宽度。</p>
@@ -617,7 +209,7 @@ public final class ListVhostTransCodePresetResResultAllPresetListItemTranscodePr
      * <p>- 1：开启</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "FISwitch")
-    private String fISwitch;
+    private Long fISwitch;
 
     /**
      * <p>转码模板参数的类型</p>

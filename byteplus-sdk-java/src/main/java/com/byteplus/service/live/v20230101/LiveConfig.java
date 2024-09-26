@@ -326,28 +326,42 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("DeleteTimeShiftPresetV3", new ApiInfo(
+            put("DeleteTimeShiftPresetV2", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "DeleteTimeShiftPresetV3"));
+                                add(new BasicNameValuePair("Action", "DeleteTimeShiftPresetV2"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("UpdateTimeShiftPresetV3", new ApiInfo(
+            put("CreateTimeShiftPresetV2", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "UpdateTimeShiftPresetV3"));
+                                add(new BasicNameValuePair("Action", "CreateTimeShiftPresetV2"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("UpdateTimeShiftPresetV2", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "UpdateTimeShiftPresetV2"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -362,20 +376,6 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "ListTimeShiftPresetV2"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
-            put("CreateTimeShiftPresetV3", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "CreateTimeShiftPresetV3"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -606,6 +606,62 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("CreateLiveVideoQualityAnalysisTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "CreateLiveVideoQualityAnalysisTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DeleteLiveVideoQualityAnalysisTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DeleteLiveVideoQualityAnalysisTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("GetLiveVideoQualityAnalysisTaskDetail", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "GetLiveVideoQualityAnalysisTaskDetail"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("ListLiveVideoQualityAnalysisTasks", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListLiveVideoQualityAnalysisTasks"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("StopPullToPushTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -634,6 +690,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("CreatePullToPushGroup", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "CreatePullToPushGroup"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("DeletePullToPushTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -642,6 +712,20 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "DeletePullToPushTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DeletePullToPushGroup", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DeletePullToPushGroup"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -676,6 +760,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("ListPullToPushGroup", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListPullToPushGroup"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("ListPullToPushTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -690,6 +788,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("ListPullToPushTaskV2", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListPullToPushTaskV2"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("DeleteRelaySourceRewrite", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -698,20 +810,6 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "DeleteRelaySourceRewrite"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
-            put("DeleteRelaySourceV4", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "DeleteRelaySourceV4"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -746,20 +844,6 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("UpdateRelaySourceV4", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "UpdateRelaySourceV4"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
             put("DescribeRelaySourceRewrite", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -774,20 +858,6 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("ListRelaySourceV4", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "ListRelaySourceV4"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
             put("DescribeRelaySourceV3", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -796,20 +866,6 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "DescribeRelaySourceV3"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
-            put("CreateRelaySourceV4", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "CreateRelaySourceV4"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -956,20 +1012,6 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("DescribeIpInfo", new ApiInfo(
-                new HashMap<String, Object>() {
-                    {
-                        put(Const.Method, "POST");
-                        put(Const.Path, "/");
-                        put(Const.Query, new ArrayList<NameValuePair>() {
-                            {
-                                add(new BasicNameValuePair("Action", "DescribeIpInfo"));
-                                add(new BasicNameValuePair("Version", "2023-01-01"));
-                            }
-                        });
-                    }
-                }     
-            ));
             put("DescribeLiveRegionData", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -1040,6 +1082,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("DescribeLiveBatchPushStreamMetrics", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeLiveBatchPushStreamMetrics"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("DescribeLivePushStreamInfoData", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -1048,6 +1104,20 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "DescribeLivePushStreamInfoData"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DescribeLiveTranscodeInfoData", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeLiveTranscodeInfoData"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -1460,6 +1530,48 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("UpdateEncryptHLS", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "UpdateEncryptHLS"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("GetHLSEncryptDataKey", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "GET");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "GetHLSEncryptDataKey"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DescribeEncryptHLS", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeEncryptHLS"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("DescribeLicenseDRM", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -1684,6 +1796,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("DescribeLatencyConfig", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeLatencyConfig"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("UpdateLatencyConfig", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -1698,14 +1824,70 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("DescribeLatencyConfig", new ApiInfo(
+            put("CreateCloudMixTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "DescribeLatencyConfig"));
+                                add(new BasicNameValuePair("Action", "CreateCloudMixTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("UpdateCloudMixTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "UpdateCloudMixTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("GetCloudMixTaskDetail", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "GetCloudMixTaskDetail"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("ListCloudMixTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListCloudMixTask"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DeleteCloudMixTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DeleteCloudMixTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -1832,6 +2014,62 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "UpdateFormatAccessRule"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DeleteSubtitleTranscodePreset", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DeleteSubtitleTranscodePreset"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("UpdateSubtitleTranscodePreset", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "UpdateSubtitleTranscodePreset"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("ListVhostSubtitleTranscodePreset", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListVhostSubtitleTranscodePreset"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("CreateSubtitleTranscodePreset", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "CreateSubtitleTranscodePreset"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });

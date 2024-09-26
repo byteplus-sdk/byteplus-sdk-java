@@ -47,7 +47,7 @@ public final class UpdatePullToPushTaskBody  {
     private Integer endTime;
 
     /**
-     * <p>接收拉流转推任务状态回调的地址，最大长度为 2000 个字符。</p>
+     * <p>接收拉流转推任务状态回调的地址，最大长度为 512 个字符。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "CallbackURL")
     private String callbackURL;
@@ -171,34 +171,34 @@ public final class UpdatePullToPushTaskBody  {
     private Integer playTimes;
 
     /**
-     * <p>设置点播视频转推至第三方推流域名时是否使用推流优先级参数，缺省情况下表示不使用此参数，支持的取值及含义如下。</p>
-     *
-     *
-     *
-     * <p>- true：使用</p>
-     *
-     * <p>	</p>
-     *
-     * <p>- false：不使用</p>
-     *
-     * <p>	</p>
+     * <p>点播文件地址和开始播放、结束播放的时间设置。</p>
      *
      * <p>:::tip</p>
      *
-     * <p>- 使用点播视频转推直播实现视频循环播放（轮播）时，支持使用带有推流优先级参数的推流地址进行推流，如在第一个点播视频的推流地址后添加 pri=10、在第二个点播视频的推流地址后添加 pri=11，可达到使用推流优先级高的流替换推流优先级低的流的目的。相比不使用推流优先级参数时可实现更平滑的轮播视频切换。</p>
+     * <p>- 当 Type 为点播类型时配置生效。</p>
      *
-     * <p>	</p>
-     *
-     * <p>- 推流至非第三方域名时，默认支持使用带有推流优先级参数的推流地址。</p>
-     *
-     * <p>	</p>
-     *
-     * <p>- 推流至第三方域名时，如需使用推流优先级参数实现新流替换旧流时，需在创建拉流转推时为推流域名开启推流优先级参数配置开关。</p>
+     * <p>- 与 SrcAddrS 和 OffsetS 字段不可同时填写。</p>
      *
      * <p>:::</p>
      */
-    @com.alibaba.fastjson.annotation.JSONField(name = "PushPriority")
-    private Boolean pushPriority;
+    @com.alibaba.fastjson.annotation.JSONField(name = "VodSrcAddrs")
+    private List<UpdatePullToPushTaskBodyVodSrcAddrsItem> vodSrcAddrs;
+
+    /**
+     * <p>任务所属的群组名称，您可以通过[获取拉流转推任务列表](https://www.volcengine.com/docs/6469/1126896)接口获取。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>- 群组名称不支持更新，仅做校验使用。</p>
+     *
+     * <p>- 使用主账号调用时，为非必填。</p>
+     *
+     * <p>- 使用子账号调用时，为必填。</p>
+     *
+     * <p>:::</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "GroupName")
+    private String groupName;
 
     @Override
     public String toString() {

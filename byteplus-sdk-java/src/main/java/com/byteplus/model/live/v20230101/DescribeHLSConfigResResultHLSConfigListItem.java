@@ -51,6 +51,18 @@ public final class DescribeHLSConfigResResultHLSConfigListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "PartTargetDuration")
     private Float partTargetDuration;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "InsertPDT")
+    private Boolean insertPDT;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "PDTInterval")
+    private String pDTInterval;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

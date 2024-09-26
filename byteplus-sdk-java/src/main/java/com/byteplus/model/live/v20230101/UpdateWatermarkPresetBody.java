@@ -104,7 +104,7 @@ public final class UpdateWatermarkPresetBody  {
     private Float relativeHeight;
 
     /**
-     * <p>直播地址流名。</p>
+     * <p>流名称，您可以调用 [ListVhostWatermarkPreset](https://www.volcengine.com/docs/6469/1126889) 接口，查看待更新水印配置的 Stream 取值。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Stream")
     private String stream;

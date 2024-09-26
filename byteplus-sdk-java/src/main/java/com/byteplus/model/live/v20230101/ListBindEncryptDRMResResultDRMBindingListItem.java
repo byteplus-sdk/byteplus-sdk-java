@@ -23,12 +23,6 @@ public final class ListBindEncryptDRMResResultDRMBindingListItem  {
     private String app;
 
     /**
-     * <p>账号</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "AccountID")
-    private String accountID;
-
-    /**
      * <p>当前 DRM 配置是否开启，取值及含义如下所示。</p>
      *
      * <p>- `true`：开启；</p>
@@ -43,6 +37,48 @@ public final class ListBindEncryptDRMResResultDRMBindingListItem  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "EncryptTranscodeSuffix")
     private List<String> encryptTranscodeSuffix;
+
+    /**
+     * <p>加密类型，支持的取值及含义如下所示。</p>
+     *
+     * <p>- `FairPlay`：使用 FairPlay 技术的商业 DRM 加密；</p>
+     *
+     * <p>- `Widevine`：使用 Widevine 技术的商业 DRM 加密；</p>
+     *
+     * <p>- `PlayReady`：使用 PlayReady 技术的商业 DRM 加密；</p>
+     *
+     * <p>- `ClearKey`：HLS 标准加密。</p>
+     *
+     *
+     *
+     * <p>:::tip</p>
+     *
+     * <p>DRM 加密与 HLS 标准加密不可同时配置。</p>
+     *
+     * <p>:::</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "DRMSystems")
+    private List<String> dRMSystems;
+
+    /**
+     * <p>是否开启源流加密，取值及含义如下所示。</p>
+     *
+     * <p>- `true`：开启；</p>
+     *
+     * <p>- `fasle`：不开启。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "EncryptOriginStream")
+    private Boolean encryptOriginStream;
+
+    /**
+     * <p>是否开启转码流加密，取值及含义如下所示。</p>
+     *
+     * <p>- `true`：开启；</p>
+     *
+     * <p>- `fasle`：不开启。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "EncryptTranscodeStream")
+    private Boolean encryptTranscodeStream;
 
     @Override
     public String toString() {

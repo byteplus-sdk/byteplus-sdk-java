@@ -150,6 +150,34 @@ public final class ListPullToPushTaskResResultListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "PreDownload")
     private Integer preDownload;
 
+    /**
+     * <p>点播文件地址和开始播放、结束播放的时间设置。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>- 当 Type 为点播类型时配置生效。</p>
+     *
+     * <p>- 与 SrcAddrS 和 OffsetS 字段不可同时填写。</p>
+     *
+     * <p>:::</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "VodSrcAddrs")
+    private List<ListPullToPushTaskResResultListItemVodSrcAddrsItem> vodSrcAddrs;
+
+    /**
+     * <p>任务所属的群组名称，您可以调用 [ListPullToPushGroup](https://www.volcengine.com/docs/6469/1327382) 获取可用的群组。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>- 使用主账号调用时，为非必填，默认为空表示查询所有群组的任务列表。</p>
+     *
+     * <p>- 使用子账号调用时，为必填。</p>
+     *
+     * <p>:::</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "GroupName")
+    private String groupName;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

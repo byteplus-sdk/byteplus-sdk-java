@@ -16,12 +16,6 @@ public final class DeleteHLSConfigBody  {
     private String vhost;
 
     /**
-     * <p>服务类型</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "ServiceType")
-    private String serviceType;
-
-    /**
      * <p>应用名称</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")

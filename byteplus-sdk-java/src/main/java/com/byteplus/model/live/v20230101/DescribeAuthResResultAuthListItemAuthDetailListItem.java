@@ -12,36 +12,6 @@ import java.util.Map;
 public final class DescribeAuthResResultAuthListItemAuthDetailListItem  {
 
     /**
-     * <p>旁路鉴权时，授权服务器的地址</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "BypassAuthURL")
-    private String bypassAuthURL;
-
-    /**
-     * <p>接收旁路鉴权失败消息的回调地址</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "BypassFailCallbackURL")
-    private String bypassFailCallbackURL;
-
-    /**
-     * <p>旁路鉴权重试次数</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "RetryTimes")
-    private Integer retryTimes;
-
-    /**
-     * <p>旁路鉴权重试时长，单位为 s</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "RetryInternalSecond")
-    private Integer retryInternalSecond;
-
-    /**
-     * <p>旁路鉴权超时时长，单位为 s</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "TimeoutSecond")
-    private Integer timeoutSecond;
-
-    /**
      * <p>自定义鉴权密钥。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "SecretKey")

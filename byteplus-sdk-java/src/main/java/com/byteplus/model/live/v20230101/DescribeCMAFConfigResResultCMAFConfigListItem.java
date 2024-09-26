@@ -45,6 +45,18 @@ public final class DescribeCMAFConfigResResultCMAFConfigListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "DefaultLatency")
     private Integer defaultLatency;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "CreateTime")
+    private String createTime;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "UpdateTime")
+    private String updateTime;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

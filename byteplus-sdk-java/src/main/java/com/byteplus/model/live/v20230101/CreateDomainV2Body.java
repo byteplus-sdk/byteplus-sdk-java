@@ -60,12 +60,6 @@ public final class CreateDomainV2Body  {
     @com.alibaba.fastjson.annotation.JSONField(name = "Tags")
     private List<CreateDomainV2BodyTagsItem> tags;
 
-    /**
-     * <p>是否进行域名归属校验，不填默认需要校验</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VerifyCheck")
-    private Boolean verifyCheck;
-
     @Override
     public String toString() {
         return JSON.toJSONString(this);

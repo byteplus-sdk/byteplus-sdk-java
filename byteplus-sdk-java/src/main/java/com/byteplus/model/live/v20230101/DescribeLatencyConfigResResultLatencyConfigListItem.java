@@ -27,6 +27,18 @@ public final class DescribeLatencyConfigResResultLatencyConfigListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "GopCacheSize")
     private String gopCacheSize;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "CreateTime")
+    private String createTime;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "UpdateTime")
+    private String updateTime;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

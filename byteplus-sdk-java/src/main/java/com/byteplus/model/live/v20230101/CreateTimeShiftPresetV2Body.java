@@ -48,12 +48,6 @@ public final class CreateTimeShiftPresetV2Body  {
     /**
      * <p>TODO</p>
      */
-    @com.alibaba.fastjson.annotation.JSONField(name = "VODNamespace")
-    private String vODNamespace;
-
-    /**
-     * <p>TODO</p>
-     */
     @com.alibaba.fastjson.annotation.JSONField(name = "Vhost")
     private String vhost;
 

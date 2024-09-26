@@ -117,6 +117,18 @@ public final class UpdateHLSConfigBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "Config")
     private String config;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "PartTargetDuration")
+    private Float partTargetDuration;
+
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "PDTInterval")
+    private Float pDTInterval;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

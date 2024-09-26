@@ -30,9 +30,9 @@ public final class UpdateCloudMixTaskBodyMixedRulesOutputVideo  {
     /**
      * <p>混流输出视频编码格式，支持的取值及含义如下所示。</p>
      *
-     * <p>- `h264`：使用 H.264 视频编码格式；</p>
+     * <p>- `h264`：使用 H.264 编码格式；</p>
      *
-     * <p>- `h265`：使用 H.265 视频编码格式。</p>
+     * <p>- `h265`：使用 H.265 编码格式。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Codec")
     private String codec;

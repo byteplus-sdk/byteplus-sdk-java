@@ -140,7 +140,7 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>createWatermarkPreset</p>
-     * <p>添加水印</p>
+     * <p>添加水印配置</p>
      *
      * <p>调用 `CreateWatermarkPreset` 接口，为转码流添加水印配置。   </p>
      *
@@ -155,7 +155,7 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>updateWatermarkPreset</p>
-     * <p>更新水印</p>
+     * <p>更新水印配置</p>
      *
      * <p>调用 `UpdateWatermarkPreset` 接口，更新已添加的水印配置。   </p>
      *
@@ -170,7 +170,7 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>deleteWatermarkPreset</p>
-     * <p>删除水印</p>
+     * <p>删除水印配置</p>
      *
      * <p>调用 `DeleteWatermarkPreset` 接口，删除已添加的水印配置。   </p>
      *
@@ -185,7 +185,7 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>listWatermarkPreset</p>
-     * <p>查询水印</p>
+     * <p>查询水印配置</p>
      *
      * <p>调用 `ListWatermarkPreset` 接口，查询单个水印配置的信息。   </p>
      *
@@ -200,7 +200,7 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>listVhostWatermarkPreset</p>
-     * <p>查询水印列表</p>
+     * <p>查询水印配置列表</p>
      *
      * <p>调用 `ListVhostWatermarkPreset` 接口，查询指定域名空间的所有水印配置。   </p>
      *
@@ -386,33 +386,48 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>deleteTimeShiftPresetV3</p>
-     * <p>删除直播时移配置</p>
+     * <p>deleteTimeShiftPresetV2</p>
+     * <p>删除时移配置</p>
      *
-     * <p>调用 `DeleteTimeShiftPresetV3` 接口，删除指定的时移配置。</p>
+     * <p>删除时移配置</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public DeleteTimeShiftPresetV3Res deleteTimeShiftPresetV3(DeleteTimeShiftPresetV3Body body) throws Exception {
-        RawResponse rawResponse = json("DeleteTimeShiftPresetV3", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DeleteTimeShiftPresetV3Res.class);
+    public DeleteTimeShiftPresetV2Res deleteTimeShiftPresetV2(DeleteTimeShiftPresetV2Body body) throws Exception {
+        RawResponse rawResponse = json("DeleteTimeShiftPresetV2", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteTimeShiftPresetV2Res.class);
     }
 
     /**
-     * <p>updateTimeShiftPresetV3</p>
-     * <p>更新直播时移配置</p>
+     * <p>createTimeShiftPresetV2</p>
+     * <p>新增时移配置</p>
      *
-     * <p>调用 `UpdateTimeShiftPresetV3` 接口，更新已添加的时移配置。</p>
+     * <p>调用 CreateTimeShiftPresetV2 接口，新增时移配置。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public UpdateTimeShiftPresetV3Res updateTimeShiftPresetV3(UpdateTimeShiftPresetV3Body body) throws Exception {
-        RawResponse rawResponse = json("UpdateTimeShiftPresetV3", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, UpdateTimeShiftPresetV3Res.class);
+    public CreateTimeShiftPresetV2Res createTimeShiftPresetV2(CreateTimeShiftPresetV2Body body) throws Exception {
+        RawResponse rawResponse = json("CreateTimeShiftPresetV2", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateTimeShiftPresetV2Res.class);
+    }
+
+    /**
+     * <p>updateTimeShiftPresetV2</p>
+     * <p>更新时移配置</p>
+     *
+     * <p>更新时移配置</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateTimeShiftPresetV2Res updateTimeShiftPresetV2(UpdateTimeShiftPresetV2Body body) throws Exception {
+        RawResponse rawResponse = json("UpdateTimeShiftPresetV2", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateTimeShiftPresetV2Res.class);
     }
 
     /**
@@ -428,21 +443,6 @@ public class LiveTrait extends BaseServiceImpl {
     public ListTimeShiftPresetV2Res listTimeShiftPresetV2(ListTimeShiftPresetV2Body body) throws Exception {
         RawResponse rawResponse = json("ListTimeShiftPresetV2", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, ListTimeShiftPresetV2Res.class);
-    }
-
-    /**
-     * <p>createTimeShiftPresetV3</p>
-     * <p>添加直播时移配置</p>
-     *
-     * <p>调用 `CreateTimeShiftPresetV3` 接口，添加直播时移配置，直播流配置时移后用户能够在直播过程会看已经播出的内容。   </p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public CreateTimeShiftPresetV3Res createTimeShiftPresetV3(CreateTimeShiftPresetV3Body body) throws Exception {
-        RawResponse rawResponse = json("CreateTimeShiftPresetV3", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, CreateTimeShiftPresetV3Res.class);
     }
 
     /**
@@ -509,7 +509,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeCertDetailSecretV2</p>
      * <p>查看证书详情</p>
      *
-     * <p>调用 `DescribeCertDetailSecretV2` 接口，通过证书示例 ID 或证书链 ID 查询证书详情。   </p>
+     * <p>调用 `DescribeCertDetailSecretV2` 接口，通过证书 ID 或证书链 ID 查询证书详情。   </p>
      *
      * @param body body payload
      * @return response data
@@ -686,6 +686,66 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>createLiveVideoQualityAnalysisTask</p>
+     * <p>创建画质测评任务</p>
+     *
+     * <p>调用 `CreateLiveVideoQualityAnalysisTask` 接口，创建一个指定时长的画质测评任务。任务将根据您设置的测评间隔获取每个测评点的实时码率，并对测评点的画面画质进行评分，您可以使用查询单个画质测评任务详情接口来查看测评结果。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public CreateLiveVideoQualityAnalysisTaskRes createLiveVideoQualityAnalysisTask(CreateLiveVideoQualityAnalysisTaskBody body) throws Exception {
+        RawResponse rawResponse = json("CreateLiveVideoQualityAnalysisTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateLiveVideoQualityAnalysisTaskRes.class);
+    }
+
+    /**
+     * <p>deleteLiveVideoQualityAnalysisTask</p>
+     * <p>删除画质测评任务</p>
+     *
+     * <p>调用 `DeleteLiveVideoQualityAnalysisTask` 接口，删除画质测评任务，您可以删除已完成的和进行中的任务。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeleteLiveVideoQualityAnalysisTaskRes deleteLiveVideoQualityAnalysisTask(DeleteLiveVideoQualityAnalysisTaskBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteLiveVideoQualityAnalysisTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteLiveVideoQualityAnalysisTaskRes.class);
+    }
+
+    /**
+     * <p>getLiveVideoQualityAnalysisTaskDetail</p>
+     * <p>查询单个画质测评任务详情</p>
+     *
+     * <p>调用 `GetLiveVideoQualityAnalysisTaskDetail` 接口，查询单个画质测评任务的测评详情，包含指定截图时间获取的视频码率和画质测试分数。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public GetLiveVideoQualityAnalysisTaskDetailRes getLiveVideoQualityAnalysisTaskDetail(GetLiveVideoQualityAnalysisTaskDetailBody body) throws Exception {
+        RawResponse rawResponse = json("GetLiveVideoQualityAnalysisTaskDetail", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, GetLiveVideoQualityAnalysisTaskDetailRes.class);
+    }
+
+    /**
+     * <p>listLiveVideoQualityAnalysisTasks</p>
+     * <p>查询画质测评任务列表</p>
+     *
+     * <p>调用 `ListLiveVideoQualityAnalysisTasks` 接口，查询画质测评任务列表信息。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListLiveVideoQualityAnalysisTasksRes listLiveVideoQualityAnalysisTasks(ListLiveVideoQualityAnalysisTasksBody body) throws Exception {
+        RawResponse rawResponse = json("ListLiveVideoQualityAnalysisTasks", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListLiveVideoQualityAnalysisTasksRes.class);
+    }
+
+    /**
      * <p>stopPullToPushTask</p>
      * <p>停用拉流转推任务</p>
      *
@@ -716,6 +776,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>createPullToPushGroup</p>
+     * <p>创建拉流转推群组</p>
+     *
+     * <p>调用 `CreatePullToPushGroup` 接口，创建拉流转推任务群组，为群组绑定项目，您可以通过设置群组实现基于项目的子账号权限细分。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public CreatePullToPushGroupRes createPullToPushGroup(CreatePullToPushGroupBody body) throws Exception {
+        RawResponse rawResponse = json("CreatePullToPushGroup", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreatePullToPushGroupRes.class);
+    }
+
+    /**
      * <p>deletePullToPushTask</p>
      * <p>删除拉流转推任务</p>
      *
@@ -728,6 +803,21 @@ public class LiveTrait extends BaseServiceImpl {
     public DeletePullToPushTaskRes deletePullToPushTask(DeletePullToPushTaskBody body) throws Exception {
         RawResponse rawResponse = json("DeletePullToPushTask", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, DeletePullToPushTaskRes.class);
+    }
+
+    /**
+     * <p>deletePullToPushGroup</p>
+     * <p>删除拉流转推群组</p>
+     *
+     * <p>调用 `DeletePullToPushGroup` 接口，删除拉流转推群组。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeletePullToPushGroupRes deletePullToPushGroup(DeletePullToPushGroupBody body) throws Exception {
+        RawResponse rawResponse = json("DeletePullToPushGroup", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeletePullToPushGroupRes.class);
     }
 
     /**
@@ -761,6 +851,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>listPullToPushGroup</p>
+     * <p>查询拉流转推群组列表</p>
+     *
+     * <p>调用 `ListPullToPushGroup` 接口，查询拉流转推任务群出列表信息。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListPullToPushGroupRes listPullToPushGroup(ListPullToPushGroupBody body) throws Exception {
+        RawResponse rawResponse = json("ListPullToPushGroup", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListPullToPushGroupRes.class);
+    }
+
+    /**
      * <p>listPullToPushTask</p>
      * <p>获取拉流转推任务列表</p>
      *
@@ -776,6 +881,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>listPullToPushTaskV2</p>
+     * <p>获取拉流转推任务列表</p>
+     *
+     * <p>调用 `ListPullToPushTaskV2` 接口，分页查询拉流转推任务列表，支持以任务名称进行模糊查询。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListPullToPushTaskV2Res listPullToPushTaskV2(ListPullToPushTaskV2Body body) throws Exception {
+        RawResponse rawResponse = json("ListPullToPushTaskV2", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListPullToPushTaskV2Res.class);
+    }
+
+    /**
      * <p>deleteRelaySourceRewrite</p>
      * <p>删除回源改写配置</p>
      *
@@ -788,21 +908,6 @@ public class LiveTrait extends BaseServiceImpl {
     public DeleteRelaySourceRewriteRes deleteRelaySourceRewrite(DeleteRelaySourceRewriteBody body) throws Exception {
         RawResponse rawResponse = json("DeleteRelaySourceRewrite", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, DeleteRelaySourceRewriteRes.class);
-    }
-
-    /**
-     * <p>deleteRelaySourceV4</p>
-     * <p>删除固定回源配置</p>
-     *
-     * <p>调用 `DeleteRelaySourceV4` 接口，删除已添加的固定回源配置。</p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public DeleteRelaySourceV4Res deleteRelaySourceV4(DeleteRelaySourceV4Body body) throws Exception {
-        RawResponse rawResponse = json("DeleteRelaySourceV4", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DeleteRelaySourceV4Res.class);
     }
 
     /**
@@ -836,21 +941,6 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>updateRelaySourceV4</p>
-     * <p>更新固定回源配置</p>
-     *
-     * <p>调用 `UpdateRelaySourceV4` 接口，更新已添加的固定回源配置。</p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public UpdateRelaySourceV4Res updateRelaySourceV4(UpdateRelaySourceV4Body body) throws Exception {
-        RawResponse rawResponse = json("UpdateRelaySourceV4", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, UpdateRelaySourceV4Res.class);
-    }
-
-    /**
      * <p>describeRelaySourceRewrite</p>
      * <p>查询回源改写配置</p>
      *
@@ -866,21 +956,6 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>listRelaySourceV4</p>
-     * <p>查询固定回源配置列表</p>
-     *
-     * <p>调用 `ListRelaySourceV4` 接口，查询固定回源配置列表。</p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public ListRelaySourceV4Res listRelaySourceV4(ListRelaySourceV4Body body) throws Exception {
-        RawResponse rawResponse = json("ListRelaySourceV4", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, ListRelaySourceV4Res.class);
-    }
-
-    /**
      * <p>describeRelaySourceV3</p>
      * <p>查询播放触发回源配置</p>
      *
@@ -893,21 +968,6 @@ public class LiveTrait extends BaseServiceImpl {
     public DescribeRelaySourceV3Res describeRelaySourceV3(DescribeRelaySourceV3Body body) throws Exception {
         RawResponse rawResponse = json("DescribeRelaySourceV3", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, DescribeRelaySourceV3Res.class);
-    }
-
-    /**
-     * <p>createRelaySourceV4</p>
-     * <p>添加固定回源配置</p>
-     *
-     * <p>调用 `CreateRelaySourceV4` 接口，添加固定触发回源配置，固定触发指根据您设置的回源时间定时从源服务器拉取直播流数据，不论是否有观众观看；这种方式可以确保 CDN 节点始终拥有最新的直播流数据，降低观众在观看时的等待时间，提高观看体验。</p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public CreateRelaySourceV4Res createRelaySourceV4(CreateRelaySourceV4Body body) throws Exception {
-        RawResponse rawResponse = json("CreateRelaySourceV4", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, CreateRelaySourceV4Res.class);
     }
 
     /**
@@ -1019,7 +1079,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>resumeStream</p>
      * <p>解禁直播流</p>
      *
-     * <p>调用接口指定某个被禁推的直播流，恢复该直播流的推流。 </p>
+     * <p>调用 `ResumeStream` 接口，解禁被禁推的直播流。   </p>
      *
      * @param body body payload
      * @return response data
@@ -1058,21 +1118,6 @@ public class LiveTrait extends BaseServiceImpl {
     public GeneratePushURLRes generatePushURL(GeneratePushURLBody body) throws Exception {
         RawResponse rawResponse = json("GeneratePushURL", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, GeneratePushURLRes.class);
-    }
-
-    /**
-     * <p>describeIpInfo</p>
-     * <p>查询 IP 地址归属的 CDN 节点</p>
-     *
-     * <p>调用 `DescribeIpInfo` 接口，查询 IP 地址是否为火山引擎归属的 CDN 节点，以及节点的区域和运营商信息。</p>
-     *
-     * @param body body payload
-     * @return response data
-     * @throws Exception error during request
-     */
-    public DescribeIpInfoRes describeIpInfo(DescribeIpInfoBody body) throws Exception {
-        RawResponse rawResponse = json("DescribeIpInfo", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DescribeIpInfoRes.class);
     }
 
     /**
@@ -1150,6 +1195,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>describeLiveBatchPushStreamMetrics</p>
+     * <p>查询多路推流监控数据</p>
+     *
+     * <p>调用 `DescribeLiveBatchPushStreamMetrics` 接口，查询指定时间范围内指定推流域名下所有直推流或指定直推流的音视频帧率、码率等监控数据，用于判断直播流的健康程度。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveBatchPushStreamMetricsRes describeLiveBatchPushStreamMetrics(DescribeLiveBatchPushStreamMetricsBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveBatchPushStreamMetrics", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveBatchPushStreamMetricsRes.class);
+    }
+
+    /**
      * <p>describeLivePushStreamInfoData</p>
      * <p>查询推流流信息</p>
      *
@@ -1162,6 +1222,21 @@ public class LiveTrait extends BaseServiceImpl {
     public DescribeLivePushStreamInfoDataRes describeLivePushStreamInfoData(DescribeLivePushStreamInfoDataBody body) throws Exception {
         RawResponse rawResponse = json("DescribeLivePushStreamInfoData", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, DescribeLivePushStreamInfoDataRes.class);
+    }
+
+    /**
+     * <p>describeLiveTranscodeInfoData</p>
+     * <p>查询直播域名转码数据明细</p>
+     *
+     * <p>调用 `DescribeLiveTranscodeInfoData` 接口，查询指定时间范围内直播域名或直播流的转码任务 ID、流名称、转码后缀、转码开始时间和结束时间数据等明细数据。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveTranscodeInfoDataRes describeLiveTranscodeInfoData(DescribeLiveTranscodeInfoDataBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveTranscodeInfoData", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveTranscodeInfoDataRes.class);
     }
 
     /**
@@ -1272,7 +1347,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeLivePullToPushBandwidthData</p>
      * <p>查询拉流转推带宽用量</p>
      *
-     * <p>调用 `DescribeLivePullToPushBandwidthData` 接口，查询指定时间范围内产生的拉流转推带宽用量。</p>
+     * <p>调用 `DescribeLivePullToPushBandwidthData` 接口，查询指定时间范围内拉流转推至第三方域名时产生的拉流转推带宽用量。</p>
      *
      * @param body body payload
      * @return response data
@@ -1287,7 +1362,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeLivePullToPushData</p>
      * <p>查询拉流转推时长用量</p>
      *
-     * <p>调用 `DescribeLivePullToPushData` 接口，查询指定时间范围内域名产生的所有拉流转推任务进行时长用量。</p>
+     * <p>调用 `DescribeLivePullToPushData` 接口，查询指定时间范围内产生的所有拉流转推任务进行时长用量。</p>
      *
      * @param body body payload
      * @return response data
@@ -1607,6 +1682,50 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>updateEncryptHLS</p>
+     * <p>更新 HLS 密钥获取配置</p>
+     *
+     * <p>调用 `UpdateEncryptHLS` 接口，添加或更新 HLS 标准加密使用的自建密钥管理服务地址和视频直播更新密钥的周期。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateEncryptHLSRes updateEncryptHLS(UpdateEncryptHLSBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateEncryptHLS", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateEncryptHLSRes.class);
+    }
+
+    /**
+     * <p>getHLSEncryptDataKey</p>
+     * <p>查询 HLS 加密密钥</p>
+     *
+     * <p>调用 `GetHLSEncryptDataKey` 接口，查询视频直播服务端生成的用于 HLS 标准加密使用的密钥。</p>
+     *
+     * @param query query arguments
+     * @return response data
+     * @throws Exception error during request
+     */
+    public GetHLSEncryptDataKeyRes getHLSEncryptDataKey(GetHLSEncryptDataKeyQuery query) throws Exception {
+        RawResponse rawResponse = json("GetHLSEncryptDataKey", Utils.paramsToPair(query), "");
+        return parseRawResponse(rawResponse, GetHLSEncryptDataKeyRes.class);
+    }
+
+    /**
+     * <p>describeEncryptHLS</p>
+     * <p>查询 HLS 密钥获取配置</p>
+     *
+     * <p>调用 `DescribeEncryptHLS` 接口，查询 HLS 标准加密使用的自建密钥管理服务地址和视频直播更新密钥的周期。</p>
+     *
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeEncryptHLSRes describeEncryptHLS() throws Exception {
+        RawResponse rawResponse = json("DescribeEncryptHLS", null, "");
+        return parseRawResponse(rawResponse, DescribeEncryptHLSRes.class);
+    }
+
+    /**
      * <p>describeLicenseDRM</p>
      * <p>获取 DRM  授权许可文件</p>
      *
@@ -1652,9 +1771,9 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>bindEncryptDRM</p>
-     * <p>添加或更新 DRM 加密配置</p>
+     * <p>添加或更新加密配置</p>
      *
-     * <p>调用 `BindEncryptDRM` 接口，添加或更新 DRM 加密配置。</p>
+     * <p>调用 `BindEncryptDRM` 接口，添加或更新直播加密配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1667,9 +1786,9 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>unBindEncryptDRM</p>
-     * <p>删除 DRM 加密配置</p>
+     * <p>删除加密配置</p>
      *
-     * <p>调用 `UnBindEncryptDRM` 接口，删除指定的 DRM 加密配置。</p>
+     * <p>调用 `UnBindEncryptDRM` 接口，删除已创建的加密配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1682,9 +1801,9 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>listBindEncryptDRM</p>
-     * <p>查询 DRM 加密配置</p>
+     * <p>查询加密配置</p>
      *
-     * <p>调用 `ListBindEncryptDRM` 接口，查询指定域名空间和应用名称的 DRM 加密配置或查看指定域名空间下所有 DRM 加密配置。</p>
+     * <p>调用 `ListBindEncryptDRM` 接口，查询指定域名空间和应用名称的加密配置或查看指定域名空间下所有加密配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1846,8 +1965,23 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>describeLatencyConfig</p>
+     * <p>查询延迟配置</p>
+     *
+     * <p>查询延迟配置</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLatencyConfigRes describeLatencyConfig(DescribeLatencyConfigBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLatencyConfig", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLatencyConfigRes.class);
+    }
+
+    /**
      * <p>updateLatencyConfig</p>
-     * <p>延迟配置更新</p>
+     * <p>添加或更新延迟配置</p>
      *
      * <p>延迟配置更新</p>
      *
@@ -1861,18 +1995,78 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>describeLatencyConfig</p>
-     * <p>查询延迟配置</p>
+     * <p>createCloudMixTask</p>
+     * <p>创建云端混流任务</p>
      *
-     * <p>查询延迟配置</p>
+     * <p>调用 `CreateCloudMixTask` 接口，创建云端混流任务，支持将直播流、点播视频和图片等输入源重新布局混流后推送到指定推流地址。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public DescribeLatencyConfigRes describeLatencyConfig(DescribeLatencyConfigBody body) throws Exception {
-        RawResponse rawResponse = json("DescribeLatencyConfig", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DescribeLatencyConfigRes.class);
+    public CreateCloudMixTaskRes createCloudMixTask(CreateCloudMixTaskBody body) throws Exception {
+        RawResponse rawResponse = json("CreateCloudMixTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateCloudMixTaskRes.class);
+    }
+
+    /**
+     * <p>updateCloudMixTask</p>
+     * <p>更新云端混流任务</p>
+     *
+     * <p>调用 `UpdateCloudMixTask` 接口，更新运行中的云端混流任务。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateCloudMixTaskRes updateCloudMixTask(UpdateCloudMixTaskBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateCloudMixTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateCloudMixTaskRes.class);
+    }
+
+    /**
+     * <p>getCloudMixTaskDetail</p>
+     * <p>查看云端混流任务</p>
+     *
+     * <p>调用 `GetCloudMixTaskDetail` 接口，查看云端混流任务详细信息。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public GetCloudMixTaskDetailRes getCloudMixTaskDetail(GetCloudMixTaskDetailBody body) throws Exception {
+        RawResponse rawResponse = json("GetCloudMixTaskDetail", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, GetCloudMixTaskDetailRes.class);
+    }
+
+    /**
+     * <p>listCloudMixTask</p>
+     * <p>查看云端混流任务列表</p>
+     *
+     * <p>调用 `ListCloudMixTask` 接口，查看云端混流任务列表。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListCloudMixTaskRes listCloudMixTask(ListCloudMixTaskBody body) throws Exception {
+        RawResponse rawResponse = json("ListCloudMixTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListCloudMixTaskRes.class);
+    }
+
+    /**
+     * <p>deleteCloudMixTask</p>
+     * <p>结束云端混流任务</p>
+     *
+     * <p>调用 `DeleteCloudMixTask` 接口，结束正在进行中的云端混流任务。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeleteCloudMixTaskRes deleteCloudMixTask(DeleteCloudMixTaskBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteCloudMixTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteCloudMixTaskRes.class);
     }
 
     /**
@@ -2008,6 +2202,66 @@ public class LiveTrait extends BaseServiceImpl {
     public UpdateFormatAccessRuleRes updateFormatAccessRule(UpdateFormatAccessRuleBody body) throws Exception {
         RawResponse rawResponse = json("UpdateFormatAccessRule", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, UpdateFormatAccessRuleRes.class);
+    }
+
+    /**
+     * <p>deleteSubtitleTranscodePreset</p>
+     * <p>删除字幕配置</p>
+     *
+     * <p>调用 `DeleteSubtitleTranscodePreset` 接口，删除已添加的字幕配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeleteSubtitleTranscodePresetRes deleteSubtitleTranscodePreset(DeleteSubtitleTranscodePresetBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteSubtitleTranscodePreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteSubtitleTranscodePresetRes.class);
+    }
+
+    /**
+     * <p>updateSubtitleTranscodePreset</p>
+     * <p>更新字幕配置</p>
+     *
+     * <p>调用 `UpdateSubtitleTranscodePreset` 接口，更新已添加的字幕配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateSubtitleTranscodePresetRes updateSubtitleTranscodePreset(UpdateSubtitleTranscodePresetBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateSubtitleTranscodePreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateSubtitleTranscodePresetRes.class);
+    }
+
+    /**
+     * <p>listVhostSubtitleTranscodePreset</p>
+     * <p>查询字幕配置列表</p>
+     *
+     * <p>调用 `ListVhostSubtitleTranscodePreset` 接口，查询指定域名空下所有字幕配置列表。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListVhostSubtitleTranscodePresetRes listVhostSubtitleTranscodePreset(ListVhostSubtitleTranscodePresetBody body) throws Exception {
+        RawResponse rawResponse = json("ListVhostSubtitleTranscodePreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListVhostSubtitleTranscodePresetRes.class);
+    }
+
+    /**
+     * <p>createSubtitleTranscodePreset</p>
+     * <p>添加字幕配置</p>
+     *
+     * <p>调用 `CreateSubtitleTranscodePreset` 接口，为转码流添加字幕配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public CreateSubtitleTranscodePresetRes createSubtitleTranscodePreset(CreateSubtitleTranscodePresetBody body) throws Exception {
+        RawResponse rawResponse = json("CreateSubtitleTranscodePreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateSubtitleTranscodePresetRes.class);
     }
 
 }

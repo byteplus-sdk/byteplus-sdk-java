@@ -106,11 +106,7 @@ public final class UpdateCallbackBody  {
     private String encryptionAlgorithm;
 
     /**
-     * <p>回调时的http方式，不填默认为post</p>
-     *
-     * <p>- post: POST方式</p>
-     *
-     * <p>- get: GET方式</p>
+     * <p>TODO</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "HttpMethod")
     private String httpMethod;
@@ -134,29 +130,25 @@ public final class UpdateCallbackBody  {
     private String messageType;
 
     /**
-     * <p>回调重试间隔，默认为3秒</p>
+     * <p>TODO</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "RetryInternalSecond")
     private Integer retryInternalSecond;
 
     /**
-     * <p>回调重试次数，默认为3次</p>
+     * <p>TODO</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "RetryTimes")
     private Integer retryTimes;
 
     /**
-     * <p>鉴权参数位置,该参数暂时没有做到通用，鉴权参数名称为 post_auth_param 要经过低代码转换，不然不会生效。get 方式默认只能放在param里面，post 方式默认放在body，支持以下选择</p>
-     *
-     * <p>- param: 鉴权放在链接里面</p>
-     *
-     * <p>- body: 鉴权放在body里面</p>
+     * <p>TODO</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "SecHandlerType")
     private String secHandlerType;
 
     /**
-     * <p>回调超时时间，默认为4秒</p>
+     * <p>TODO</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TimeoutSecond")
     private Integer timeoutSecond;

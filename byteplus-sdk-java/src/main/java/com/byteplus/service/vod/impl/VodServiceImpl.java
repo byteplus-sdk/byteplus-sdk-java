@@ -155,7 +155,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
         }
         String getDrmLicenseToken = getSignUrl(com.byteplus.service.vod.Const.GetDrmLicense, com.byteplus.helper.Utils.mapToPairList(params));
         Map<String, String> ret = new HashMap<>();
-        ret.put("GetDrmLicenseToken", getDrmLicenseToken);
+        ret.put("GetThirdPartyDrmAuthToken", getDrmLicenseToken);
         ret.put("TokenVersion", "V2");
         String retStr = JSON.toJSONString(ret);
         Base64.Encoder encoder = Base64.getEncoder();

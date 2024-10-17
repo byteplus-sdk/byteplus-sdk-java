@@ -41,6 +41,12 @@ public final class CreateCloudMixTaskBodyMixedRulesInputSourceItem  {
 
     /**
      * <p>混流素材的访问地址。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>混流素材的访问地址需与混流素材的类型保持对应关系。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Url")
     private String url;

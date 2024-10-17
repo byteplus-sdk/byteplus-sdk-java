@@ -13,7 +13,7 @@ public final class CreateCloudMixTaskResResultData  {
      * <p>混流任务 ID。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TaskID")
-    private Integer taskID;
+    private String taskID;
 
     @Override
     public String toString() {

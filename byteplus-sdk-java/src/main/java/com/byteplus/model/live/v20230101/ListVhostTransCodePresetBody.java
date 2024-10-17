@@ -21,6 +21,12 @@ public final class ListVhostTransCodePresetBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "IsHlsAbr")
     private Boolean isHlsAbr;
 
+    /**
+     * <p>是否是dash abr 请求</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "IsDashAbr")
+    private Boolean isDashAbr;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

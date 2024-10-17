@@ -46,6 +46,12 @@ public final class UpdateTranscodePresetBodyTranscodeStruct  {
     @com.alibaba.fastjson.annotation.JSONField(name = "Type")
     private String type;
 
+    /**
+     * <p>TODO</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "IsAbr")
+    private String isAbr;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

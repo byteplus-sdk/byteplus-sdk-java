@@ -124,6 +124,16 @@ public interface IBaseService {
     String getSignUrl(String api, List<NameValuePair> params) throws Exception;
 
     /**
+     * Gets sign url.
+     *
+     * @param api    the api
+     * @param params the params
+     * @return the sign url
+     * @throws Exception the exception
+     */
+    String getWholeSignUrl(String api, List<NameValuePair> params) throws Exception;
+
+    /**
      * Json raw response.
      *
      * @param api    the api

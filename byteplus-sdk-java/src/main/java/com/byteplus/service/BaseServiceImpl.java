@@ -159,6 +159,29 @@ public abstract class BaseServiceImpl implements IBaseService {
     }
 
     @Override
+    public String getWholeSignUrl(String api, List<NameValuePair> params) throws Exception {
+        ApiInfo apiInfo = apiInfoList.get(api);
+
+        if (apiInfo == null) {
+            throw new Exception(SdkError.getErrorDesc(SdkError.ENOAPI));
+        }
+
+        List<NameValuePair> mergedNV = mergeQuery(params, apiInfo.getQuery());
+
+        SignableRequest request = new SignableRequest();
+        URIBuilder builder = request.getUriBuilder();
+
+        request.setMethod(apiInfo.getMethod().toUpperCase());
+        builder.setScheme(serviceInfo.getScheme());
+        builder.setHost(serviceInfo.getHost());
+        builder.setPath(apiInfo.getPath());
+        builder.setParameters(mergedNV);
+
+        ISigner.signUrl(request, serviceInfo.getCredentials());
+        return request.getUriBuilder().toString();
+    }
+
+    @Override
     public RawResponse query(String api, List<NameValuePair> params) {
         ApiInfo apiInfo = apiInfoList.get(api);
         if (apiInfo == null) {

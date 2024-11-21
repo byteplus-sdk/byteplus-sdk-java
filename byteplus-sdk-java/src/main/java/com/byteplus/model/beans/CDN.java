@@ -348,6 +348,9 @@ public class CDN {
 
         @JSONField(name = "ServiceTemplateId")
         String ServiceTemplateId;
+
+        @JSONField(name = "Tags")
+        List<ResourceTag> Tags;
     }
 
     @Data
@@ -929,6 +932,9 @@ public class CDN {
 
         @JSONField(name = "Status")
         String Status;
+
+        @JSONField(name = "Tags")
+        List<ResourceTag> Tags;
 
         @JSONField(name = "Templates")
         List<CdnTemplate> Templates;
@@ -6225,6 +6231,28 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class TagResourcesRequest {
+
+        @JSONField(name = "ResourceIds")
+        List<String> ResourceIds;
+
+        @JSONField(name = "ResourceType")
+        String ResourceType;
+
+        @JSONField(name = "Tags")
+        List<ResourceTag> Tags;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class TagResourcesResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class TargetQueryComponents {
 
         @JSONField(name = "Action")
@@ -6505,6 +6533,28 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UntagResourcesRequest {
+
+        @JSONField(name = "ResourceIds")
+        List<String> ResourceIds;
+
+        @JSONField(name = "ResourceType")
+        String ResourceType;
+
+        @JSONField(name = "TagKeys")
+        List<String> TagKeys;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UntagResourcesResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
     }
 
     @Data

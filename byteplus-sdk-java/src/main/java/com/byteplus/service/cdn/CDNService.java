@@ -146,4 +146,8 @@ package com.byteplus.service.cdn;
 
         CDN.ListUsageReportsResponse listUsageReports(CDN.ListUsageReportsRequest request) throws Exception;
 
+        CDN.TagResourcesResponse tagResources(CDN.TagResourcesRequest request) throws Exception;
+
+        CDN.UntagResourcesResponse untagResources(CDN.UntagResourcesRequest request) throws Exception;
+
 }

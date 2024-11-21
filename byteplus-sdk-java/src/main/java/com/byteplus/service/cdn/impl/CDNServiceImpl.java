@@ -658,4 +658,22 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
         }
         return JSON.parseObject(response.getData(), CDN.ListUsageReportsResponse.class);
     }
+
+    @Override
+    public CDN.TagResourcesResponse tagResources(CDN.TagResourcesRequest request) throws Exception {
+        RawResponse response = json("TagResources", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.TagResourcesResponse.class);
+    }
+
+    @Override
+    public CDN.UntagResourcesResponse untagResources(CDN.UntagResourcesRequest request) throws Exception {
+        RawResponse response = json("UntagResources", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UntagResourcesResponse.class);
+    }
 }

@@ -144,6 +144,61 @@ public final class VodMeasure {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayFileLogByDomainResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataItem_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataItem_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataDetail_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataDetail_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataResult_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -288,13 +343,64 @@ public final class VodMeasure {
       "ainResult\022\021\n\tStartTime\030\001 \001(\t\022\017\n\007EndTime\030" +
       "\002 \001(\t\022\022\n\nDomainList\030\003 \003(\t\022R\n\010FileList\030\004 " +
       "\003(\0132@.Byteplus.Vod.Models.Business.Descr" +
-      "ibeVodPlayFileLogByDomainItemB\327\001\n\'com.by" +
-      "teplus.service.vod.model.businessB\nVodMe" +
-      "asureP\001ZGgithub.com/byteplus-sdk/byteplu" +
-      "s-sdk-golang/service/vod/models/business" +
-      "\240\001\001\330\001\001\312\002$Byteplus\\Service\\Vod\\Models\\Bus" +
-      "iness\342\002\'Byteplus\\Service\\Vod\\Models\\GPBM" +
-      "etadatab\006proto3"
+      "ibeVodPlayFileLogByDomainItem\"B\n!Describ" +
+      "eVodSpaceStorageDataFDItem\022\014\n\004Time\030\001 \001(\t" +
+      "\022\017\n\007Storage\030\002 \001(\003\"\266\001\n#DescribeVodSpaceSt" +
+      "orageDataFDResult\022\021\n\tSpaceList\030\001 \003(\t\022\021\n\t" +
+      "StartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022X\n\017Stor" +
+      "ageDataList\030\004 \003(\0132?.Byteplus.Vod.Models." +
+      "Business.DescribeVodSpaceStorageDataFDIt" +
+      "em\"\202\001\n\037DescribeVodEnhanceImageDataItem\022\014" +
+      "\n\004Time\030\001 \001(\t\022\n\n\002SR\030\002 \001(\003\022\013\n\003VFI\030\003 \001(\003\022\022\n" +
+      "\nSDREnhance\030\004 \001(\003\022\017\n\007SDR2HDR\030\005 \001(\003\022\023\n\013Au" +
+      "dioDenose\030\006 \001(\003\"\247\002\n!DescribeVodEnhanceIm" +
+      "ageDataResult\022\021\n\tSpaceList\030\001 \003(\t\022\021\n\tStar" +
+      "tTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\024\n\014TaskType" +
+      "List\030\004 \003(\t\022\025\n\rTaskStageList\030\005 \003(\t\022\023\n\013Agg" +
+      "regation\030\006 \001(\003\022\022\n\nRegionList\030\007 \003(\t\022\034\n\024To" +
+      "talEnhanceImagData\030\010 \001(\003\022W\n\020EnhanceImage" +
+      "List\030\t \003(\0132=.Byteplus.Vod.Models.Busines" +
+      "s.DescribeVodEnhanceImageDataItem\"\224\001\n\037De" +
+      "scribeVodPlayedStatisDataItem\022\013\n\003Vid\030\001 \001" +
+      "(\t\022\014\n\004Name\030\002 \001(\t\022\014\n\004Size\030\003 \001(\003\022\020\n\010Durati" +
+      "on\030\004 \001(\001\022\022\n\nCreateTime\030\005 \001(\t\022\021\n\tPlayCoun" +
+      "t\030\006 \001(\003\022\017\n\007Traffic\030\007 \001(\003\"\320\001\n!DescribeVod" +
+      "PlayedStatisDataResult\022\r\n\005Space\030\001 \001(\t\022\021\n" +
+      "\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\017\n\007Vid" +
+      "List\030\004 \003(\t\022\021\n\tOrderType\030\005 \001(\t\022T\n\rPlaySta" +
+      "tInfos\030\006 \003(\0132=.Byteplus.Vod.Models.Busin" +
+      "ess.DescribeVodPlayedStatisDataItem\"\230\001\n#" +
+      "DescribeVodMostPlayedStatisDataItem\022\013\n\003V" +
+      "id\030\001 \001(\t\022\014\n\004Name\030\002 \001(\t\022\014\n\004Size\030\003 \001(\003\022\020\n\010" +
+      "Duration\030\004 \001(\001\022\022\n\nCreateTime\030\005 \001(\t\022\021\n\tPl" +
+      "ayCount\030\006 \001(\003\022\017\n\007Traffic\030\007 \001(\003\"\325\001\n%Descr" +
+      "ibeVodMostPlayedStatisDataResult\022\r\n\005Spac" +
+      "e\030\001 \001(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 " +
+      "\001(\t\022\021\n\tOrderType\030\004 \001(\t\022\014\n\004TopN\030\005 \001(\003\022X\n\r" +
+      "PlayStatInfos\030\006 \003(\0132A.Byteplus.Vod.Model" +
+      "s.Business.DescribeVodMostPlayedStatisDa" +
+      "taItem\"?\n DescribeVodRealtimeMediaDataIt" +
+      "em\022\014\n\004Time\030\001 \001(\t\022\r\n\005Count\030\002 \001(\003\"\241\001\n\"Desc" +
+      "ribeVodRealtimeMediaDataDetail\022\r\n\005Space\030" +
+      "\001 \001(\t\022\r\n\005Total\030\002 \001(\003\022]\n\025RealtimeMediaDat" +
+      "aList\030\003 \003(\0132>.Byteplus.Vod.Models.Busine" +
+      "ss.DescribeVodRealtimeMediaDataItem\"\204\003\n\"" +
+      "DescribeVodRealtimeMediaDataResult\022\021\n\tSp" +
+      "aceList\030\001 \003(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndT" +
+      "ime\030\003 \001(\t\022\023\n\013ProcessType\030\004 \001(\t\022\023\n\013Aggreg" +
+      "ation\030\005 \001(\003\022\027\n\017DetailFieldList\030\006 \003(\t\022\036\n\026" +
+      "TotalRealtimeMediaData\030\007 \001(\003\022]\n\025Realtime" +
+      "MediaDataList\030\010 \003(\0132>.Byteplus.Vod.Model" +
+      "s.Business.DescribeVodRealtimeMediaDataI" +
+      "tem\022e\n\033RealtimeMediaDetailDataList\030\t \003(\013" +
+      "2@.Byteplus.Vod.Models.Business.Describe" +
+      "VodRealtimeMediaDataDetailB\327\001\n\'com.bytep" +
+      "lus.service.vod.model.businessB\nVodMeasu" +
+      "reP\001ZGgithub.com/byteplus-sdk/byteplus-s" +
+      "dk-golang/service/vod/models/business\240\001\001" +
+      "\330\001\001\312\002$Byteplus\\Service\\Vod\\Models\\Busine" +
+      "ss\342\002\'Byteplus\\Service\\Vod\\Models\\GPBMeta" +
+      "datab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -456,6 +562,72 @@ public final class VodMeasure {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayFileLogByDomainResult_descriptor,
         new java.lang.String[] { "StartTime", "EndTime", "DomainList", "FileList", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDItem_descriptor =
+      getDescriptor().getMessageTypes().get(26);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDItem_descriptor,
+        new java.lang.String[] { "Time", "Storage", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDResult_descriptor =
+      getDescriptor().getMessageTypes().get(27);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodSpaceStorageDataFDResult_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", "StorageDataList", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(28);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataItem_descriptor,
+        new java.lang.String[] { "Time", "SR", "VFI", "SDREnhance", "SDR2HDR", "AudioDenose", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataResult_descriptor =
+      getDescriptor().getMessageTypes().get(29);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodEnhanceImageDataResult_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", "TaskTypeList", "TaskStageList", "Aggregation", "RegionList", "TotalEnhanceImagData", "EnhanceImageList", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(30);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataItem_descriptor,
+        new java.lang.String[] { "Vid", "Name", "Size", "Duration", "CreateTime", "PlayCount", "Traffic", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataResult_descriptor =
+      getDescriptor().getMessageTypes().get(31);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodPlayedStatisDataResult_descriptor,
+        new java.lang.String[] { "Space", "StartTime", "EndTime", "VidList", "OrderType", "PlayStatInfos", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(32);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataItem_descriptor,
+        new java.lang.String[] { "Vid", "Name", "Size", "Duration", "CreateTime", "PlayCount", "Traffic", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataResult_descriptor =
+      getDescriptor().getMessageTypes().get(33);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodMostPlayedStatisDataResult_descriptor,
+        new java.lang.String[] { "Space", "StartTime", "EndTime", "OrderType", "TopN", "PlayStatInfos", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataItem_descriptor =
+      getDescriptor().getMessageTypes().get(34);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataItem_descriptor,
+        new java.lang.String[] { "Time", "Count", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataDetail_descriptor =
+      getDescriptor().getMessageTypes().get(35);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataDetail_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataDetail_descriptor,
+        new java.lang.String[] { "Space", "Total", "RealtimeMediaDataList", });
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataResult_descriptor =
+      getDescriptor().getMessageTypes().get(36);
+    internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_DescribeVodRealtimeMediaDataResult_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", "ProcessType", "Aggregation", "DetailFieldList", "TotalRealtimeMediaData", "RealtimeMediaDataList", "RealtimeMediaDetailDataList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -881,6 +881,76 @@ public class VodServiceConfig {
                         }
                     }
             ));
+            put(Const.DescribeVodMostPlayedStatisData, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.DescribeVodMostPlayedStatisData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put(Const.DescribeVodPlayedStatisData, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.DescribeVodPlayedStatisData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put(Const.DescribeVodRealtimeMediaData, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.DescribeVodRealtimeMediaData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put(Const.DescribeVodEnhanceImageData, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.DescribeVodEnhanceImageData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
+            put(Const.DescribeVodSpaceSubtitleStatisData, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.DescribeVodSpaceSubtitleStatisData));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
             // **********************************************************************
             // 商业drm
             // **********************************************************************

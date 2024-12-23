@@ -460,6 +460,31 @@ public final class VodRequest {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayFileLogByDomainRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodSpaceStorageDataFDRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Request_DescribeVodSpaceStorageDataFDRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodEnhanceImageDataRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Request_DescribeVodEnhanceImageDataRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayedStatisDataRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayedStatisDataRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodMostPlayedStatisDataRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Request_DescribeVodMostPlayedStatisDataRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodRealtimeMediaDataRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Request_DescribeVodRealtimeMediaDataRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Byteplus_Vod_Models_Request_VodSubmitBlockMediaTaskRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -835,49 +860,67 @@ public final class VodRequest {
       "e\030\004 \001(\t\022\020\n\010PageSize\030\005 \001(\003\022\017\n\007PageNum\030\006 \001" +
       "(\003\"_\n%DescribeVodPlayFileLogByDomainRequ" +
       "est\022\021\n\tStartTime\030\001 \001(\t\022\017\n\007EndTime\030\002 \001(\t\022" +
-      "\022\n\nDomainList\030\003 \001(\t\"A\n\036VodSubmitBlockMed" +
-      "iaTaskRequest\022\021\n\tSpaceName\030\001 \001(\t\022\014\n\004Vids" +
-      "\030\002 \001(\t\"C\n VodSubmitUnblockMediaTaskReque" +
-      "st\022\021\n\tSpaceName\030\001 \001(\t\022\014\n\004Vids\030\002 \001(\t\"B\n\037V" +
-      "odQueryMediaBlockStatusRequest\022\021\n\tSpaceN" +
-      "ame\030\001 \001(\t\022\014\n\004Vids\030\002 \001(\t\"\235\001\n\030VodCreatePla" +
-      "ylistRequest\022\014\n\004Name\030\001 \001(\t\022\016\n\006Format\030\002 \001" +
-      "(\t\022\r\n\005Codec\030\003 \001(\t\022\022\n\nDefinition\030\004 \001(\t\022\014\n" +
-      "\004Vids\030\005 \001(\t\022\021\n\tStartTime\030\006 \001(\t\022\017\n\007EndTim" +
-      "e\030\007 \001(\t\022\016\n\006Cycles\030\010 \001(\t\"D\n\026VodGetPlaylis" +
-      "tsRequest\022\013\n\003Ids\030\001 \001(\t\022\r\n\005Limit\030\002 \001(\r\022\016\n" +
-      "\006Offset\030\003 \001(\r\"\231\003\n\030VodUpdatePlaylistReque" +
-      "st\022\n\n\002Id\030\001 \001(\t\022*\n\004Name\030\002 \001(\0132\034.google.pr" +
-      "otobuf.StringValue\022,\n\006Format\030\003 \001(\0132\034.goo" +
-      "gle.protobuf.StringValue\022+\n\005Codec\030\004 \001(\0132" +
-      "\034.google.protobuf.StringValue\0220\n\nDefinit" +
-      "ion\030\005 \001(\0132\034.google.protobuf.StringValue\022" +
-      "*\n\004Vids\030\006 \001(\0132\034.google.protobuf.StringVa" +
-      "lue\022/\n\tStartTime\030\007 \001(\0132\034.google.protobuf" +
-      ".StringValue\022-\n\007EndTime\030\010 \001(\0132\034.google.p" +
-      "rotobuf.StringValue\022,\n\006Cycles\030\t \001(\0132\034.go" +
-      "ogle.protobuf.StringValue\"&\n\030VodDeletePl" +
-      "aylistRequest\022\n\n\002Id\030\001 \001(\t\"B\n\035VodSetInter" +
-      "trustApiKeyRequest\022\021\n\tSpaceName\030\001 \001(\t\022\016\n" +
-      "\006ApiKey\030\002 \001(\t\"2\n\035VodGetIntertrustApiKeyR" +
-      "equest\022\021\n\tSpaceName\030\001 \001(\t\"5\n VodDeleteIn" +
-      "tertrustApiKeyRequest\022\021\n\tSpaceName\030\001 \001(\t" +
-      "\"\261\001\n\035VodSetFairPlayCertInfoRequest\022\021\n\tSp" +
-      "aceName\030\001 \001(\t\022\020\n\010CertName\030\002 \001(\t\022\020\n\010CertF" +
-      "ile\030\003 \001(\t\022\016\n\006PkFile\030\004 \001(\t\022\024\n\014CertFileNam" +
-      "e\030\005 \001(\t\022\022\n\nPkFileName\030\006 \001(\t\022\022\n\nPkPasswor" +
-      "d\030\007 \001(\t\022\013\n\003Ask\030\010 \001(\t\"2\n\035VodGetFairPlayCe" +
-      "rtInfoRequest\022\021\n\tSpaceName\030\001 \001(\t\"5\n VodD" +
-      "eleteFairPlayCertInfoRequest\022\021\n\tSpaceNam" +
-      "e\030\001 \001(\t\"+\n\031VodGetFairPlayCertRequest\022\016\n\006" +
-      "CertId\030\001 \001(\t\"N\n\027VodGetDrmLicenseRequest\022" +
-      "\013\n\003Vid\030\001 \001(\t\022\013\n\003Kid\030\002 \001(\t\022\031\n\021ThirdPartyD" +
-      "rmType\030\003 \001(\tB\324\001\n&com.byteplus.service.vo" +
-      "d.model.requestB\nVodRequestP\001ZFgithub.co" +
-      "m/byteplus-sdk/byteplus-sdk-golang/servi" +
-      "ce/vod/models/request\240\001\001\330\001\001\312\002#Byteplus\\S" +
-      "ervice\\Vod\\Models\\Request\342\002\'Byteplus\\Ser" +
-      "vice\\Vod\\Models\\GPBMetadatab\006proto3"
+      "\022\n\nDomainList\030\003 \001(\t\"]\n$DescribeVodSpaceS" +
+      "torageDataFDRequest\022\021\n\tSpaceList\030\001 \001(\t\022\021" +
+      "\n\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\"\261\001\n\"D" +
+      "escribeVodEnhanceImageDataRequest\022\021\n\tSpa" +
+      "ceList\030\001 \001(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndTi" +
+      "me\030\003 \001(\t\022\024\n\014TaskTypeList\030\004 \001(\t\022\025\n\rTaskSt" +
+      "ageList\030\005 \001(\t\022\023\n\013Aggregation\030\006 \001(\003\022\022\n\nRe" +
+      "gionList\030\007 \001(\t\"{\n\"DescribeVodPlayedStati" +
+      "sDataRequest\022\r\n\005Space\030\001 \001(\t\022\021\n\tStartTime" +
+      "\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\017\n\007VidList\030\004 \001(\t" +
+      "\022\021\n\tOrderType\030\005 \001(\t\"|\n&DescribeVodMostPl" +
+      "ayedStatisDataRequest\022\r\n\005Space\030\001 \001(\t\022\021\n\t" +
+      "StartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t\022\021\n\tOrde" +
+      "rType\030\004 \001(\t\022\014\n\004TopN\030\005 \001(\003\"\237\001\n#DescribeVo" +
+      "dRealtimeMediaDataRequest\022\021\n\tSpaceList\030\001" +
+      " \001(\t\022\021\n\tStartTime\030\002 \001(\t\022\017\n\007EndTime\030\003 \001(\t" +
+      "\022\023\n\013ProcessType\030\004 \001(\t\022\023\n\013Aggregation\030\005 \001" +
+      "(\003\022\027\n\017DetailFieldList\030\006 \001(\t\"A\n\036VodSubmit" +
+      "BlockMediaTaskRequest\022\021\n\tSpaceName\030\001 \001(\t" +
+      "\022\014\n\004Vids\030\002 \001(\t\"C\n VodSubmitUnblockMediaT" +
+      "askRequest\022\021\n\tSpaceName\030\001 \001(\t\022\014\n\004Vids\030\002 " +
+      "\001(\t\"B\n\037VodQueryMediaBlockStatusRequest\022\021" +
+      "\n\tSpaceName\030\001 \001(\t\022\014\n\004Vids\030\002 \001(\t\"\235\001\n\030VodC" +
+      "reatePlaylistRequest\022\014\n\004Name\030\001 \001(\t\022\016\n\006Fo" +
+      "rmat\030\002 \001(\t\022\r\n\005Codec\030\003 \001(\t\022\022\n\nDefinition\030" +
+      "\004 \001(\t\022\014\n\004Vids\030\005 \001(\t\022\021\n\tStartTime\030\006 \001(\t\022\017" +
+      "\n\007EndTime\030\007 \001(\t\022\016\n\006Cycles\030\010 \001(\t\"D\n\026VodGe" +
+      "tPlaylistsRequest\022\013\n\003Ids\030\001 \001(\t\022\r\n\005Limit\030" +
+      "\002 \001(\r\022\016\n\006Offset\030\003 \001(\r\"\231\003\n\030VodUpdatePlayl" +
+      "istRequest\022\n\n\002Id\030\001 \001(\t\022*\n\004Name\030\002 \001(\0132\034.g" +
+      "oogle.protobuf.StringValue\022,\n\006Format\030\003 \001" +
+      "(\0132\034.google.protobuf.StringValue\022+\n\005Code" +
+      "c\030\004 \001(\0132\034.google.protobuf.StringValue\0220\n" +
+      "\nDefinition\030\005 \001(\0132\034.google.protobuf.Stri" +
+      "ngValue\022*\n\004Vids\030\006 \001(\0132\034.google.protobuf." +
+      "StringValue\022/\n\tStartTime\030\007 \001(\0132\034.google." +
+      "protobuf.StringValue\022-\n\007EndTime\030\010 \001(\0132\034." +
+      "google.protobuf.StringValue\022,\n\006Cycles\030\t " +
+      "\001(\0132\034.google.protobuf.StringValue\"&\n\030Vod" +
+      "DeletePlaylistRequest\022\n\n\002Id\030\001 \001(\t\"B\n\035Vod" +
+      "SetIntertrustApiKeyRequest\022\021\n\tSpaceName\030" +
+      "\001 \001(\t\022\016\n\006ApiKey\030\002 \001(\t\"2\n\035VodGetIntertrus" +
+      "tApiKeyRequest\022\021\n\tSpaceName\030\001 \001(\t\"5\n Vod" +
+      "DeleteIntertrustApiKeyRequest\022\021\n\tSpaceNa" +
+      "me\030\001 \001(\t\"\261\001\n\035VodSetFairPlayCertInfoReque" +
+      "st\022\021\n\tSpaceName\030\001 \001(\t\022\020\n\010CertName\030\002 \001(\t\022" +
+      "\020\n\010CertFile\030\003 \001(\t\022\016\n\006PkFile\030\004 \001(\t\022\024\n\014Cer" +
+      "tFileName\030\005 \001(\t\022\022\n\nPkFileName\030\006 \001(\t\022\022\n\nP" +
+      "kPassword\030\007 \001(\t\022\013\n\003Ask\030\010 \001(\t\"2\n\035VodGetFa" +
+      "irPlayCertInfoRequest\022\021\n\tSpaceName\030\001 \001(\t" +
+      "\"5\n VodDeleteFairPlayCertInfoRequest\022\021\n\t" +
+      "SpaceName\030\001 \001(\t\"+\n\031VodGetFairPlayCertReq" +
+      "uest\022\016\n\006CertId\030\001 \001(\t\"N\n\027VodGetDrmLicense" +
+      "Request\022\013\n\003Vid\030\001 \001(\t\022\013\n\003Kid\030\002 \001(\t\022\031\n\021Thi" +
+      "rdPartyDrmType\030\003 \001(\tB\324\001\n&com.byteplus.se" +
+      "rvice.vod.model.requestB\nVodRequestP\001ZFg" +
+      "ithub.com/byteplus-sdk/byteplus-sdk-gola" +
+      "ng/service/vod/models/request\240\001\001\330\001\001\312\002#By" +
+      "teplus\\Service\\Vod\\Models\\Request\342\002\'Byte" +
+      "plus\\Service\\Vod\\Models\\GPBMetadatab\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1420,92 +1463,122 @@ public final class VodRequest {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayFileLogByDomainRequest_descriptor,
         new java.lang.String[] { "StartTime", "EndTime", "DomainList", });
-    internal_static_Byteplus_Vod_Models_Request_VodSubmitBlockMediaTaskRequest_descriptor =
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodSpaceStorageDataFDRequest_descriptor =
       getDescriptor().getMessageTypes().get(89);
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodSpaceStorageDataFDRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Request_DescribeVodSpaceStorageDataFDRequest_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", });
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodEnhanceImageDataRequest_descriptor =
+      getDescriptor().getMessageTypes().get(90);
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodEnhanceImageDataRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Request_DescribeVodEnhanceImageDataRequest_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", "TaskTypeList", "TaskStageList", "Aggregation", "RegionList", });
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayedStatisDataRequest_descriptor =
+      getDescriptor().getMessageTypes().get(91);
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayedStatisDataRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Request_DescribeVodPlayedStatisDataRequest_descriptor,
+        new java.lang.String[] { "Space", "StartTime", "EndTime", "VidList", "OrderType", });
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodMostPlayedStatisDataRequest_descriptor =
+      getDescriptor().getMessageTypes().get(92);
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodMostPlayedStatisDataRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Request_DescribeVodMostPlayedStatisDataRequest_descriptor,
+        new java.lang.String[] { "Space", "StartTime", "EndTime", "OrderType", "TopN", });
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodRealtimeMediaDataRequest_descriptor =
+      getDescriptor().getMessageTypes().get(93);
+    internal_static_Byteplus_Vod_Models_Request_DescribeVodRealtimeMediaDataRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Request_DescribeVodRealtimeMediaDataRequest_descriptor,
+        new java.lang.String[] { "SpaceList", "StartTime", "EndTime", "ProcessType", "Aggregation", "DetailFieldList", });
+    internal_static_Byteplus_Vod_Models_Request_VodSubmitBlockMediaTaskRequest_descriptor =
+      getDescriptor().getMessageTypes().get(94);
     internal_static_Byteplus_Vod_Models_Request_VodSubmitBlockMediaTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodSubmitBlockMediaTaskRequest_descriptor,
         new java.lang.String[] { "SpaceName", "Vids", });
     internal_static_Byteplus_Vod_Models_Request_VodSubmitUnblockMediaTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(90);
+      getDescriptor().getMessageTypes().get(95);
     internal_static_Byteplus_Vod_Models_Request_VodSubmitUnblockMediaTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodSubmitUnblockMediaTaskRequest_descriptor,
         new java.lang.String[] { "SpaceName", "Vids", });
     internal_static_Byteplus_Vod_Models_Request_VodQueryMediaBlockStatusRequest_descriptor =
-      getDescriptor().getMessageTypes().get(91);
+      getDescriptor().getMessageTypes().get(96);
     internal_static_Byteplus_Vod_Models_Request_VodQueryMediaBlockStatusRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodQueryMediaBlockStatusRequest_descriptor,
         new java.lang.String[] { "SpaceName", "Vids", });
     internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_descriptor =
-      getDescriptor().getMessageTypes().get(92);
+      getDescriptor().getMessageTypes().get(97);
     internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_descriptor,
         new java.lang.String[] { "Name", "Format", "Codec", "Definition", "Vids", "StartTime", "EndTime", "Cycles", });
     internal_static_Byteplus_Vod_Models_Request_VodGetPlaylistsRequest_descriptor =
-      getDescriptor().getMessageTypes().get(93);
+      getDescriptor().getMessageTypes().get(98);
     internal_static_Byteplus_Vod_Models_Request_VodGetPlaylistsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodGetPlaylistsRequest_descriptor,
         new java.lang.String[] { "Ids", "Limit", "Offset", });
     internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_descriptor =
-      getDescriptor().getMessageTypes().get(94);
+      getDescriptor().getMessageTypes().get(99);
     internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_descriptor,
         new java.lang.String[] { "Id", "Name", "Format", "Codec", "Definition", "Vids", "StartTime", "EndTime", "Cycles", });
     internal_static_Byteplus_Vod_Models_Request_VodDeletePlaylistRequest_descriptor =
-      getDescriptor().getMessageTypes().get(95);
+      getDescriptor().getMessageTypes().get(100);
     internal_static_Byteplus_Vod_Models_Request_VodDeletePlaylistRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodDeletePlaylistRequest_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_Byteplus_Vod_Models_Request_VodSetIntertrustApiKeyRequest_descriptor =
-      getDescriptor().getMessageTypes().get(96);
+      getDescriptor().getMessageTypes().get(101);
     internal_static_Byteplus_Vod_Models_Request_VodSetIntertrustApiKeyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodSetIntertrustApiKeyRequest_descriptor,
         new java.lang.String[] { "SpaceName", "ApiKey", });
     internal_static_Byteplus_Vod_Models_Request_VodGetIntertrustApiKeyRequest_descriptor =
-      getDescriptor().getMessageTypes().get(97);
+      getDescriptor().getMessageTypes().get(102);
     internal_static_Byteplus_Vod_Models_Request_VodGetIntertrustApiKeyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodGetIntertrustApiKeyRequest_descriptor,
         new java.lang.String[] { "SpaceName", });
     internal_static_Byteplus_Vod_Models_Request_VodDeleteIntertrustApiKeyRequest_descriptor =
-      getDescriptor().getMessageTypes().get(98);
+      getDescriptor().getMessageTypes().get(103);
     internal_static_Byteplus_Vod_Models_Request_VodDeleteIntertrustApiKeyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodDeleteIntertrustApiKeyRequest_descriptor,
         new java.lang.String[] { "SpaceName", });
     internal_static_Byteplus_Vod_Models_Request_VodSetFairPlayCertInfoRequest_descriptor =
-      getDescriptor().getMessageTypes().get(99);
+      getDescriptor().getMessageTypes().get(104);
     internal_static_Byteplus_Vod_Models_Request_VodSetFairPlayCertInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodSetFairPlayCertInfoRequest_descriptor,
         new java.lang.String[] { "SpaceName", "CertName", "CertFile", "PkFile", "CertFileName", "PkFileName", "PkPassword", "Ask", });
     internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertInfoRequest_descriptor =
-      getDescriptor().getMessageTypes().get(100);
+      getDescriptor().getMessageTypes().get(105);
     internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertInfoRequest_descriptor,
         new java.lang.String[] { "SpaceName", });
     internal_static_Byteplus_Vod_Models_Request_VodDeleteFairPlayCertInfoRequest_descriptor =
-      getDescriptor().getMessageTypes().get(101);
+      getDescriptor().getMessageTypes().get(106);
     internal_static_Byteplus_Vod_Models_Request_VodDeleteFairPlayCertInfoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodDeleteFairPlayCertInfoRequest_descriptor,
         new java.lang.String[] { "SpaceName", });
     internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertRequest_descriptor =
-      getDescriptor().getMessageTypes().get(102);
+      getDescriptor().getMessageTypes().get(107);
     internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodGetFairPlayCertRequest_descriptor,
         new java.lang.String[] { "CertId", });
     internal_static_Byteplus_Vod_Models_Request_VodGetDrmLicenseRequest_descriptor =
-      getDescriptor().getMessageTypes().get(103);
+      getDescriptor().getMessageTypes().get(108);
     internal_static_Byteplus_Vod_Models_Request_VodGetDrmLicenseRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Request_VodGetDrmLicenseRequest_descriptor,

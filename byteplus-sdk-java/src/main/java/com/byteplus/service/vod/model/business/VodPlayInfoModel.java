@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodPlayInfoModel}
  */
 public final class VodPlayInfoModel extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodPlayInfoModel)
-    VodPlayInfoModelOrBuilder {
-private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodPlayInfoModel)
+        VodPlayInfoModelOrBuilder {
+  private static final long serialVersionUID = 0L;
   // Use VodPlayInfoModel.newBuilder() to construct.
   private VodPlayInfoModel(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -29,7 +29,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
+          UnusedPrivateParameter unused) {
     return new VodPlayInfoModel();
   }
 
@@ -39,16 +39,16 @@ private static final long serialVersionUID = 0L;
     return this.unknownFields;
   }
   private VodPlayInfoModel(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
+            com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -114,7 +114,7 @@ private static final long serialVersionUID = 0L;
               mutable_bitField0_ |= 0x00000001;
             }
             playInfoList_.add(
-                input.readMessage(com.byteplus.service.vod.model.business.VodPlayInfo.parser(), extensionRegistry));
+                    input.readMessage(com.byteplus.service.vod.model.business.VodPlayInfo.parser(), extensionRegistry));
             break;
           }
           case 80: {
@@ -129,7 +129,7 @@ private static final long serialVersionUID = 0L;
               mutable_bitField0_ |= 0x00000002;
             }
             thumbInfoList_.add(
-                input.readMessage(com.byteplus.service.vod.model.business.VodThumbInfo.parser(), extensionRegistry));
+                    input.readMessage(com.byteplus.service.vod.model.business.VodThumbInfo.parser(), extensionRegistry));
             break;
           }
           case 98: {
@@ -144,7 +144,7 @@ private static final long serialVersionUID = 0L;
               mutable_bitField0_ |= 0x00000004;
             }
             subtitleInfoList_.add(
-                input.readMessage(com.byteplus.service.vod.model.business.VodSubtitleInfo.parser(), extensionRegistry));
+                    input.readMessage(com.byteplus.service.vod.model.business.VodSubtitleInfo.parser(), extensionRegistry));
             break;
           }
           case 114: {
@@ -160,9 +160,22 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 122: {
+            com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder subBuilder = null;
+            if (adaptiveBitrateStreamingInfo_ != null) {
+              subBuilder = adaptiveBitrateStreamingInfo_.toBuilder();
+            }
+            adaptiveBitrateStreamingInfo_ = input.readMessage(com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(adaptiveBitrateStreamingInfo_);
+              adaptiveBitrateStreamingInfo_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
-                input, unknownFields, extensionRegistry, tag)) {
+                    input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -173,7 +186,7 @@ private static final long serialVersionUID = 0L;
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e).setUnfinishedMessage(this);
+              e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         playInfoList_ = java.util.Collections.unmodifiableList(playInfoList_);
@@ -189,16 +202,16 @@ private static final long serialVersionUID = 0L;
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
+  getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfoModel_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
+  internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfoModel_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.byteplus.service.vod.model.business.VodPlayInfoModel.class, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder.class);
+            .ensureFieldAccessorsInitialized(
+                    com.byteplus.service.vod.model.business.VodPlayInfoModel.class, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder.class);
   }
 
   public static final int VERSION_FIELD_NUMBER = 10;
@@ -244,8 +257,8 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       vid_ = s;
       return s;
@@ -261,12 +274,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getVidBytes() {
+  getVidBytes() {
     java.lang.Object ref = vid_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
       vid_ = b;
       return b;
     } else {
@@ -305,8 +318,8 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       posterUrl_ = s;
       return s;
@@ -322,12 +335,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getPosterUrlBytes() {
+  getPosterUrlBytes() {
     java.lang.Object ref = posterUrl_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
       posterUrl_ = b;
       return b;
     } else {
@@ -366,8 +379,8 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       fileType_ = s;
       return s;
@@ -383,12 +396,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getFileTypeBytes() {
+  getFileTypeBytes() {
     java.lang.Object ref = fileType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
       fileType_ = b;
       return b;
     } else {
@@ -485,8 +498,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> 
-      getPlayInfoListOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>
+  getPlayInfoListOrBuilderList() {
     return playInfoList_;
   }
   /**
@@ -520,7 +533,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder getPlayInfoListOrBuilder(
-      int index) {
+          int index) {
     return playInfoList_.get(index);
   }
 
@@ -545,8 +558,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> 
-      getThumbInfoListOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>
+  getThumbInfoListOrBuilderList() {
     return thumbInfoList_;
   }
   /**
@@ -580,7 +593,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder getThumbInfoListOrBuilder(
-      int index) {
+          int index) {
     return thumbInfoList_.get(index);
   }
 
@@ -600,8 +613,8 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       barrageMaskUrl_ = s;
       return s;
@@ -617,12 +630,12 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getBarrageMaskUrlBytes() {
+  getBarrageMaskUrlBytes() {
     java.lang.Object ref = barrageMaskUrl_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
       barrageMaskUrl_ = b;
       return b;
     } else {
@@ -651,8 +664,8 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> 
-      getSubtitleInfoListOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>
+  getSubtitleInfoListOrBuilderList() {
     return subtitleInfoList_;
   }
   /**
@@ -686,7 +699,7 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder getSubtitleInfoListOrBuilder(
-      int index) {
+          int index) {
     return subtitleInfoList_.get(index);
   }
 
@@ -728,6 +741,47 @@ private static final long serialVersionUID = 0L;
     return getBarrageMaskInfo();
   }
 
+  public static final int ADAPTIVEBITRATESTREAMINGINFO_FIELD_NUMBER = 15;
+  private com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo adaptiveBitrateStreamingInfo_;
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   * @return Whether the adaptiveBitrateStreamingInfo field is set.
+   */
+  @java.lang.Override
+  public boolean hasAdaptiveBitrateStreamingInfo() {
+    return adaptiveBitrateStreamingInfo_ != null;
+  }
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   * @return The adaptiveBitrateStreamingInfo.
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo getAdaptiveBitrateStreamingInfo() {
+    return adaptiveBitrateStreamingInfo_ == null ? com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.getDefaultInstance() : adaptiveBitrateStreamingInfo_;
+  }
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder getAdaptiveBitrateStreamingInfoOrBuilder() {
+    return getAdaptiveBitrateStreamingInfo();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -741,7 +795,7 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
+          throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(vid_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, vid_);
     }
@@ -784,6 +838,9 @@ private static final long serialVersionUID = 0L;
     if (barrageMaskInfo_ != null) {
       output.writeMessage(14, getBarrageMaskInfo());
     }
+    if (adaptiveBitrateStreamingInfo_ != null) {
+      output.writeMessage(15, getAdaptiveBitrateStreamingInfo());
+    }
     unknownFields.writeTo(output);
   }
 
@@ -798,52 +855,56 @@ private static final long serialVersionUID = 0L;
     }
     if (status_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, status_);
+              .computeInt32Size(2, status_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(posterUrl_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, posterUrl_);
     }
     if (java.lang.Float.floatToRawIntBits(duration_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(4, duration_);
+              .computeFloatSize(4, duration_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, fileType_);
     }
     if (enableAdaptive_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(6, enableAdaptive_);
+              .computeBoolSize(6, enableAdaptive_);
     }
     if (totalCount_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(7, totalCount_);
+              .computeInt32Size(7, totalCount_);
     }
     if (adaptiveInfo_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getAdaptiveInfo());
+              .computeMessageSize(8, getAdaptiveInfo());
     }
     for (int i = 0; i < playInfoList_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, playInfoList_.get(i));
+              .computeMessageSize(9, playInfoList_.get(i));
     }
     if (version_ != com.byteplus.service.vod.model.business.VodPlayInfoModelVersion.UndefinedVodPlayInfoModelVersion.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(10, version_);
+              .computeEnumSize(10, version_);
     }
     for (int i = 0; i < thumbInfoList_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, thumbInfoList_.get(i));
+              .computeMessageSize(11, thumbInfoList_.get(i));
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(barrageMaskUrl_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, barrageMaskUrl_);
     }
     for (int i = 0; i < subtitleInfoList_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, subtitleInfoList_.get(i));
+              .computeMessageSize(13, subtitleInfoList_.get(i));
     }
     if (barrageMaskInfo_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getBarrageMaskInfo());
+              .computeMessageSize(14, getBarrageMaskInfo());
+    }
+    if (adaptiveBitrateStreamingInfo_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+              .computeMessageSize(15, getAdaptiveBitrateStreamingInfo());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -853,7 +914,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodPlayInfoModel)) {
       return super.equals(obj);
@@ -862,37 +923,42 @@ private static final long serialVersionUID = 0L;
 
     if (version_ != other.version_) return false;
     if (!getVid()
-        .equals(other.getVid())) return false;
+            .equals(other.getVid())) return false;
     if (getStatus()
-        != other.getStatus()) return false;
+            != other.getStatus()) return false;
     if (!getPosterUrl()
-        .equals(other.getPosterUrl())) return false;
+            .equals(other.getPosterUrl())) return false;
     if (java.lang.Float.floatToIntBits(getDuration())
-        != java.lang.Float.floatToIntBits(
+            != java.lang.Float.floatToIntBits(
             other.getDuration())) return false;
     if (!getFileType()
-        .equals(other.getFileType())) return false;
+            .equals(other.getFileType())) return false;
     if (getEnableAdaptive()
-        != other.getEnableAdaptive()) return false;
+            != other.getEnableAdaptive()) return false;
     if (getTotalCount()
-        != other.getTotalCount()) return false;
+            != other.getTotalCount()) return false;
     if (hasAdaptiveInfo() != other.hasAdaptiveInfo()) return false;
     if (hasAdaptiveInfo()) {
       if (!getAdaptiveInfo()
-          .equals(other.getAdaptiveInfo())) return false;
+              .equals(other.getAdaptiveInfo())) return false;
     }
     if (!getPlayInfoListList()
-        .equals(other.getPlayInfoListList())) return false;
+            .equals(other.getPlayInfoListList())) return false;
     if (!getThumbInfoListList()
-        .equals(other.getThumbInfoListList())) return false;
+            .equals(other.getThumbInfoListList())) return false;
     if (!getBarrageMaskUrl()
-        .equals(other.getBarrageMaskUrl())) return false;
+            .equals(other.getBarrageMaskUrl())) return false;
     if (!getSubtitleInfoListList()
-        .equals(other.getSubtitleInfoListList())) return false;
+            .equals(other.getSubtitleInfoListList())) return false;
     if (hasBarrageMaskInfo() != other.hasBarrageMaskInfo()) return false;
     if (hasBarrageMaskInfo()) {
       if (!getBarrageMaskInfo()
-          .equals(other.getBarrageMaskInfo())) return false;
+              .equals(other.getBarrageMaskInfo())) return false;
+    }
+    if (hasAdaptiveBitrateStreamingInfo() != other.hasAdaptiveBitrateStreamingInfo()) return false;
+    if (hasAdaptiveBitrateStreamingInfo()) {
+      if (!getAdaptiveBitrateStreamingInfo()
+              .equals(other.getAdaptiveBitrateStreamingInfo())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -915,12 +981,12 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getPosterUrl().hashCode();
     hash = (37 * hash) + DURATION_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getDuration());
+            getDuration());
     hash = (37 * hash) + FILETYPE_FIELD_NUMBER;
     hash = (53 * hash) + getFileType().hashCode();
     hash = (37 * hash) + ENABLEADAPTIVE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getEnableAdaptive());
+            getEnableAdaptive());
     hash = (37 * hash) + TOTALCOUNT_FIELD_NUMBER;
     hash = (53 * hash) + getTotalCount();
     if (hasAdaptiveInfo()) {
@@ -945,79 +1011,83 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + BARRAGEMASKINFO_FIELD_NUMBER;
       hash = (53 * hash) + getBarrageMaskInfo().hashCode();
     }
+    if (hasAdaptiveBitrateStreamingInfo()) {
+      hash = (37 * hash) + ADAPTIVEBITRATESTREAMINGINFO_FIELD_NUMBER;
+      hash = (53 * hash) + getAdaptiveBitrateStreamingInfo().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfoModel parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -1031,12 +1101,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1044,20 +1114,20 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodPlayInfoModel}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodPlayInfoModel)
-      com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodPlayInfoModel)
+          com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+    getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfoModel_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfoModel_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.byteplus.service.vod.model.business.VodPlayInfoModel.class, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder.class);
+              .ensureFieldAccessorsInitialized(
+                      com.byteplus.service.vod.model.business.VodPlayInfoModel.class, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodPlayInfoModel.newBuilder()
@@ -1066,7 +1136,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -1129,12 +1199,18 @@ private static final long serialVersionUID = 0L;
         barrageMaskInfo_ = null;
         barrageMaskInfoBuilder_ = null;
       }
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        adaptiveBitrateStreamingInfo_ = null;
+      } else {
+        adaptiveBitrateStreamingInfo_ = null;
+        adaptiveBitrateStreamingInfoBuilder_ = null;
+      }
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
+    getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfoModel_descriptor;
     }
 
@@ -1202,6 +1278,11 @@ private static final long serialVersionUID = 0L;
       } else {
         result.barrageMaskInfo_ = barrageMaskInfoBuilder_.build();
       }
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        result.adaptiveBitrateStreamingInfo_ = adaptiveBitrateStreamingInfo_;
+      } else {
+        result.adaptiveBitrateStreamingInfo_ = adaptiveBitrateStreamingInfoBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -1212,30 +1293,30 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -1298,9 +1379,9 @@ private static final long serialVersionUID = 0L;
             playInfoListBuilder_ = null;
             playInfoList_ = other.playInfoList_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            playInfoListBuilder_ = 
-              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getPlayInfoListFieldBuilder() : null;
+            playInfoListBuilder_ =
+                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                            getPlayInfoListFieldBuilder() : null;
           } else {
             playInfoListBuilder_.addAllMessages(other.playInfoList_);
           }
@@ -1324,9 +1405,9 @@ private static final long serialVersionUID = 0L;
             thumbInfoListBuilder_ = null;
             thumbInfoList_ = other.thumbInfoList_;
             bitField0_ = (bitField0_ & ~0x00000002);
-            thumbInfoListBuilder_ = 
-              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getThumbInfoListFieldBuilder() : null;
+            thumbInfoListBuilder_ =
+                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                            getThumbInfoListFieldBuilder() : null;
           } else {
             thumbInfoListBuilder_.addAllMessages(other.thumbInfoList_);
           }
@@ -1354,9 +1435,9 @@ private static final long serialVersionUID = 0L;
             subtitleInfoListBuilder_ = null;
             subtitleInfoList_ = other.subtitleInfoList_;
             bitField0_ = (bitField0_ & ~0x00000004);
-            subtitleInfoListBuilder_ = 
-              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getSubtitleInfoListFieldBuilder() : null;
+            subtitleInfoListBuilder_ =
+                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                            getSubtitleInfoListFieldBuilder() : null;
           } else {
             subtitleInfoListBuilder_.addAllMessages(other.subtitleInfoList_);
           }
@@ -1364,6 +1445,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasBarrageMaskInfo()) {
         mergeBarrageMaskInfo(other.getBarrageMaskInfo());
+      }
+      if (other.hasAdaptiveBitrateStreamingInfo()) {
+        mergeAdaptiveBitrateStreamingInfo(other.getAdaptiveBitrateStreamingInfo());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1377,9 +1461,9 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodPlayInfoModel parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -1417,7 +1501,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVersionValue(int value) {
-      
+
       version_ = value;
       onChanged();
       return this;
@@ -1449,7 +1533,7 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
+
       version_ = value.getNumber();
       onChanged();
       return this;
@@ -1463,7 +1547,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearVersion() {
-      
+
       version_ = 0;
       onChanged();
       return this;
@@ -1482,7 +1566,7 @@ private static final long serialVersionUID = 0L;
       java.lang.Object ref = vid_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
+                (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         vid_ = s;
         return s;
@@ -1499,12 +1583,12 @@ private static final long serialVersionUID = 0L;
      * @return The bytes for vid.
      */
     public com.google.protobuf.ByteString
-        getVidBytes() {
+    getVidBytes() {
       java.lang.Object ref = vid_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
         vid_ = b;
         return b;
       } else {
@@ -1521,11 +1605,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVid(
-        java.lang.String value) {
+            java.lang.String value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        throw new NullPointerException();
+      }
+
       vid_ = value;
       onChanged();
       return this;
@@ -1539,7 +1623,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearVid() {
-      
+
       vid_ = getDefaultInstance().getVid();
       onChanged();
       return this;
@@ -1554,12 +1638,12 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVidBytes(
-        com.google.protobuf.ByteString value) {
+            com.google.protobuf.ByteString value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
       vid_ = value;
       onChanged();
       return this;
@@ -1588,7 +1672,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatus(int value) {
-      
+
       status_ = value;
       onChanged();
       return this;
@@ -1602,7 +1686,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStatus() {
-      
+
       status_ = 0;
       onChanged();
       return this;
@@ -1621,7 +1705,7 @@ private static final long serialVersionUID = 0L;
       java.lang.Object ref = posterUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
+                (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         posterUrl_ = s;
         return s;
@@ -1638,12 +1722,12 @@ private static final long serialVersionUID = 0L;
      * @return The bytes for posterUrl.
      */
     public com.google.protobuf.ByteString
-        getPosterUrlBytes() {
+    getPosterUrlBytes() {
       java.lang.Object ref = posterUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
         posterUrl_ = b;
         return b;
       } else {
@@ -1660,11 +1744,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPosterUrl(
-        java.lang.String value) {
+            java.lang.String value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        throw new NullPointerException();
+      }
+
       posterUrl_ = value;
       onChanged();
       return this;
@@ -1678,7 +1762,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPosterUrl() {
-      
+
       posterUrl_ = getDefaultInstance().getPosterUrl();
       onChanged();
       return this;
@@ -1693,12 +1777,12 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPosterUrlBytes(
-        com.google.protobuf.ByteString value) {
+            com.google.protobuf.ByteString value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
       posterUrl_ = value;
       onChanged();
       return this;
@@ -1727,7 +1811,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDuration(float value) {
-      
+
       duration_ = value;
       onChanged();
       return this;
@@ -1741,7 +1825,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDuration() {
-      
+
       duration_ = 0F;
       onChanged();
       return this;
@@ -1760,7 +1844,7 @@ private static final long serialVersionUID = 0L;
       java.lang.Object ref = fileType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
+                (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fileType_ = s;
         return s;
@@ -1777,12 +1861,12 @@ private static final long serialVersionUID = 0L;
      * @return The bytes for fileType.
      */
     public com.google.protobuf.ByteString
-        getFileTypeBytes() {
+    getFileTypeBytes() {
       java.lang.Object ref = fileType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
         fileType_ = b;
         return b;
       } else {
@@ -1799,11 +1883,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFileType(
-        java.lang.String value) {
+            java.lang.String value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        throw new NullPointerException();
+      }
+
       fileType_ = value;
       onChanged();
       return this;
@@ -1817,7 +1901,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearFileType() {
-      
+
       fileType_ = getDefaultInstance().getFileType();
       onChanged();
       return this;
@@ -1832,12 +1916,12 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFileTypeBytes(
-        com.google.protobuf.ByteString value) {
+            com.google.protobuf.ByteString value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
       fileType_ = value;
       onChanged();
       return this;
@@ -1866,7 +1950,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setEnableAdaptive(boolean value) {
-      
+
       enableAdaptive_ = value;
       onChanged();
       return this;
@@ -1880,7 +1964,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearEnableAdaptive() {
-      
+
       enableAdaptive_ = false;
       onChanged();
       return this;
@@ -1909,7 +1993,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setTotalCount(int value) {
-      
+
       totalCount_ = value;
       onChanged();
       return this;
@@ -1923,7 +2007,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearTotalCount() {
-      
+
       totalCount_ = 0;
       onChanged();
       return this;
@@ -1931,7 +2015,7 @@ private static final long serialVersionUID = 0L;
 
     private com.byteplus.service.vod.model.business.VodAdaptiveInfo adaptiveInfo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder> adaptiveInfoBuilder_;
+            com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder> adaptiveInfoBuilder_;
     /**
      * <pre>
      * dash播放信息
@@ -1986,7 +2070,7 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.VodAdaptiveInfo AdaptiveInfo = 8;</code>
      */
     public Builder setAdaptiveInfo(
-        com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder builderForValue) {
+            com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder builderForValue) {
       if (adaptiveInfoBuilder_ == null) {
         adaptiveInfo_ = builderForValue.build();
         onChanged();
@@ -2007,7 +2091,7 @@ private static final long serialVersionUID = 0L;
       if (adaptiveInfoBuilder_ == null) {
         if (adaptiveInfo_ != null) {
           adaptiveInfo_ =
-            com.byteplus.service.vod.model.business.VodAdaptiveInfo.newBuilder(adaptiveInfo_).mergeFrom(value).buildPartial();
+                  com.byteplus.service.vod.model.business.VodAdaptiveInfo.newBuilder(adaptiveInfo_).mergeFrom(value).buildPartial();
         } else {
           adaptiveInfo_ = value;
         }
@@ -2044,7 +2128,7 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.VodAdaptiveInfo AdaptiveInfo = 8;</code>
      */
     public com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder getAdaptiveInfoBuilder() {
-      
+
       onChanged();
       return getAdaptiveInfoFieldBuilder().getBuilder();
     }
@@ -2060,7 +2144,7 @@ private static final long serialVersionUID = 0L;
         return adaptiveInfoBuilder_.getMessageOrBuilder();
       } else {
         return adaptiveInfo_ == null ?
-            com.byteplus.service.vod.model.business.VodAdaptiveInfo.getDefaultInstance() : adaptiveInfo_;
+                com.byteplus.service.vod.model.business.VodAdaptiveInfo.getDefaultInstance() : adaptiveInfo_;
       }
     }
     /**
@@ -2071,11 +2155,11 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.VodAdaptiveInfo AdaptiveInfo = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder> 
-        getAdaptiveInfoFieldBuilder() {
+            com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder>
+    getAdaptiveInfoFieldBuilder() {
       if (adaptiveInfoBuilder_ == null) {
         adaptiveInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder>(
+                com.byteplus.service.vod.model.business.VodAdaptiveInfo, com.byteplus.service.vod.model.business.VodAdaptiveInfo.Builder, com.byteplus.service.vod.model.business.VodAdaptiveInfoOrBuilder>(
                 getAdaptiveInfo(),
                 getParentForChildren(),
                 isClean());
@@ -2085,16 +2169,16 @@ private static final long serialVersionUID = 0L;
     }
 
     private java.util.List<com.byteplus.service.vod.model.business.VodPlayInfo> playInfoList_ =
-      java.util.Collections.emptyList();
+            java.util.Collections.emptyList();
     private void ensurePlayInfoListIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
         playInfoList_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodPlayInfo>(playInfoList_);
         bitField0_ |= 0x00000001;
-       }
+      }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> playInfoListBuilder_;
+            com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> playInfoListBuilder_;
 
     /**
      * <pre>
@@ -2146,7 +2230,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder setPlayInfoList(
-        int index, com.byteplus.service.vod.model.business.VodPlayInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodPlayInfo value) {
       if (playInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2167,7 +2251,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder setPlayInfoList(
-        int index, com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
       if (playInfoListBuilder_ == null) {
         ensurePlayInfoListIsMutable();
         playInfoList_.set(index, builderForValue.build());
@@ -2205,7 +2289,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder addPlayInfoList(
-        int index, com.byteplus.service.vod.model.business.VodPlayInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodPlayInfo value) {
       if (playInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2226,7 +2310,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder addPlayInfoList(
-        com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
+            com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
       if (playInfoListBuilder_ == null) {
         ensurePlayInfoListIsMutable();
         playInfoList_.add(builderForValue.build());
@@ -2244,7 +2328,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder addPlayInfoList(
-        int index, com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodPlayInfo.Builder builderForValue) {
       if (playInfoListBuilder_ == null) {
         ensurePlayInfoListIsMutable();
         playInfoList_.add(index, builderForValue.build());
@@ -2262,11 +2346,11 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public Builder addAllPlayInfoList(
-        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodPlayInfo> values) {
+            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodPlayInfo> values) {
       if (playInfoListBuilder_ == null) {
         ensurePlayInfoListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, playInfoList_);
+                values, playInfoList_);
         onChanged();
       } else {
         playInfoListBuilder_.addAllMessages(values);
@@ -2315,7 +2399,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlayInfo.Builder getPlayInfoListBuilder(
-        int index) {
+            int index) {
       return getPlayInfoListFieldBuilder().getBuilder(index);
     }
     /**
@@ -2326,7 +2410,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder getPlayInfoListOrBuilder(
-        int index) {
+            int index) {
       if (playInfoListBuilder_ == null) {
         return playInfoList_.get(index);  } else {
         return playInfoListBuilder_.getMessageOrBuilder(index);
@@ -2339,8 +2423,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> 
-         getPlayInfoListOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>
+    getPlayInfoListOrBuilderList() {
       if (playInfoListBuilder_ != null) {
         return playInfoListBuilder_.getMessageOrBuilderList();
       } else {
@@ -2356,7 +2440,7 @@ private static final long serialVersionUID = 0L;
      */
     public com.byteplus.service.vod.model.business.VodPlayInfo.Builder addPlayInfoListBuilder() {
       return getPlayInfoListFieldBuilder().addBuilder(
-          com.byteplus.service.vod.model.business.VodPlayInfo.getDefaultInstance());
+              com.byteplus.service.vod.model.business.VodPlayInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2366,9 +2450,9 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlayInfo.Builder addPlayInfoListBuilder(
-        int index) {
+            int index) {
       return getPlayInfoListFieldBuilder().addBuilder(
-          index, com.byteplus.service.vod.model.business.VodPlayInfo.getDefaultInstance());
+              index, com.byteplus.service.vod.model.business.VodPlayInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2377,16 +2461,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodPlayInfo.Builder> 
-         getPlayInfoListBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodPlayInfo.Builder>
+    getPlayInfoListBuilderList() {
       return getPlayInfoListFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> 
-        getPlayInfoListFieldBuilder() {
+            com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>
+    getPlayInfoListFieldBuilder() {
       if (playInfoListBuilder_ == null) {
         playInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>(
+                com.byteplus.service.vod.model.business.VodPlayInfo, com.byteplus.service.vod.model.business.VodPlayInfo.Builder, com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>(
                 playInfoList_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -2397,16 +2481,16 @@ private static final long serialVersionUID = 0L;
     }
 
     private java.util.List<com.byteplus.service.vod.model.business.VodThumbInfo> thumbInfoList_ =
-      java.util.Collections.emptyList();
+            java.util.Collections.emptyList();
     private void ensureThumbInfoListIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
         thumbInfoList_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodThumbInfo>(thumbInfoList_);
         bitField0_ |= 0x00000002;
-       }
+      }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> thumbInfoListBuilder_;
+            com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> thumbInfoListBuilder_;
 
     /**
      * <pre>
@@ -2458,7 +2542,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder setThumbInfoList(
-        int index, com.byteplus.service.vod.model.business.VodThumbInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodThumbInfo value) {
       if (thumbInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2479,7 +2563,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder setThumbInfoList(
-        int index, com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
       if (thumbInfoListBuilder_ == null) {
         ensureThumbInfoListIsMutable();
         thumbInfoList_.set(index, builderForValue.build());
@@ -2517,7 +2601,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder addThumbInfoList(
-        int index, com.byteplus.service.vod.model.business.VodThumbInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodThumbInfo value) {
       if (thumbInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2538,7 +2622,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder addThumbInfoList(
-        com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
+            com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
       if (thumbInfoListBuilder_ == null) {
         ensureThumbInfoListIsMutable();
         thumbInfoList_.add(builderForValue.build());
@@ -2556,7 +2640,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder addThumbInfoList(
-        int index, com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodThumbInfo.Builder builderForValue) {
       if (thumbInfoListBuilder_ == null) {
         ensureThumbInfoListIsMutable();
         thumbInfoList_.add(index, builderForValue.build());
@@ -2574,11 +2658,11 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public Builder addAllThumbInfoList(
-        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodThumbInfo> values) {
+            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodThumbInfo> values) {
       if (thumbInfoListBuilder_ == null) {
         ensureThumbInfoListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, thumbInfoList_);
+                values, thumbInfoList_);
         onChanged();
       } else {
         thumbInfoListBuilder_.addAllMessages(values);
@@ -2627,7 +2711,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public com.byteplus.service.vod.model.business.VodThumbInfo.Builder getThumbInfoListBuilder(
-        int index) {
+            int index) {
       return getThumbInfoListFieldBuilder().getBuilder(index);
     }
     /**
@@ -2638,7 +2722,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder getThumbInfoListOrBuilder(
-        int index) {
+            int index) {
       if (thumbInfoListBuilder_ == null) {
         return thumbInfoList_.get(index);  } else {
         return thumbInfoListBuilder_.getMessageOrBuilder(index);
@@ -2651,8 +2735,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> 
-         getThumbInfoListOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>
+    getThumbInfoListOrBuilderList() {
       if (thumbInfoListBuilder_ != null) {
         return thumbInfoListBuilder_.getMessageOrBuilderList();
       } else {
@@ -2668,7 +2752,7 @@ private static final long serialVersionUID = 0L;
      */
     public com.byteplus.service.vod.model.business.VodThumbInfo.Builder addThumbInfoListBuilder() {
       return getThumbInfoListFieldBuilder().addBuilder(
-          com.byteplus.service.vod.model.business.VodThumbInfo.getDefaultInstance());
+              com.byteplus.service.vod.model.business.VodThumbInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2678,9 +2762,9 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
     public com.byteplus.service.vod.model.business.VodThumbInfo.Builder addThumbInfoListBuilder(
-        int index) {
+            int index) {
       return getThumbInfoListFieldBuilder().addBuilder(
-          index, com.byteplus.service.vod.model.business.VodThumbInfo.getDefaultInstance());
+              index, com.byteplus.service.vod.model.business.VodThumbInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -2689,16 +2773,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodThumbInfo.Builder> 
-         getThumbInfoListBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodThumbInfo.Builder>
+    getThumbInfoListBuilderList() {
       return getThumbInfoListFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> 
-        getThumbInfoListFieldBuilder() {
+            com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>
+    getThumbInfoListFieldBuilder() {
       if (thumbInfoListBuilder_ == null) {
         thumbInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>(
+                com.byteplus.service.vod.model.business.VodThumbInfo, com.byteplus.service.vod.model.business.VodThumbInfo.Builder, com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>(
                 thumbInfoList_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -2721,7 +2805,7 @@ private static final long serialVersionUID = 0L;
       java.lang.Object ref = barrageMaskUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
+                (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         barrageMaskUrl_ = s;
         return s;
@@ -2738,12 +2822,12 @@ private static final long serialVersionUID = 0L;
      * @return The bytes for barrageMaskUrl.
      */
     public com.google.protobuf.ByteString
-        getBarrageMaskUrlBytes() {
+    getBarrageMaskUrlBytes() {
       java.lang.Object ref = barrageMaskUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
         barrageMaskUrl_ = b;
         return b;
       } else {
@@ -2760,11 +2844,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBarrageMaskUrl(
-        java.lang.String value) {
+            java.lang.String value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        throw new NullPointerException();
+      }
+
       barrageMaskUrl_ = value;
       onChanged();
       return this;
@@ -2778,7 +2862,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearBarrageMaskUrl() {
-      
+
       barrageMaskUrl_ = getDefaultInstance().getBarrageMaskUrl();
       onChanged();
       return this;
@@ -2793,28 +2877,28 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBarrageMaskUrlBytes(
-        com.google.protobuf.ByteString value) {
+            com.google.protobuf.ByteString value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
       barrageMaskUrl_ = value;
       onChanged();
       return this;
     }
 
     private java.util.List<com.byteplus.service.vod.model.business.VodSubtitleInfo> subtitleInfoList_ =
-      java.util.Collections.emptyList();
+            java.util.Collections.emptyList();
     private void ensureSubtitleInfoListIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
         subtitleInfoList_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodSubtitleInfo>(subtitleInfoList_);
         bitField0_ |= 0x00000004;
-       }
+      }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> subtitleInfoListBuilder_;
+            com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> subtitleInfoListBuilder_;
 
     /**
      * <pre>
@@ -2866,7 +2950,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder setSubtitleInfoList(
-        int index, com.byteplus.service.vod.model.business.VodSubtitleInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodSubtitleInfo value) {
       if (subtitleInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2887,7 +2971,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder setSubtitleInfoList(
-        int index, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
       if (subtitleInfoListBuilder_ == null) {
         ensureSubtitleInfoListIsMutable();
         subtitleInfoList_.set(index, builderForValue.build());
@@ -2925,7 +3009,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder addSubtitleInfoList(
-        int index, com.byteplus.service.vod.model.business.VodSubtitleInfo value) {
+            int index, com.byteplus.service.vod.model.business.VodSubtitleInfo value) {
       if (subtitleInfoListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2946,7 +3030,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder addSubtitleInfoList(
-        com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
+            com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
       if (subtitleInfoListBuilder_ == null) {
         ensureSubtitleInfoListIsMutable();
         subtitleInfoList_.add(builderForValue.build());
@@ -2964,7 +3048,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder addSubtitleInfoList(
-        int index, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
+            int index, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder builderForValue) {
       if (subtitleInfoListBuilder_ == null) {
         ensureSubtitleInfoListIsMutable();
         subtitleInfoList_.add(index, builderForValue.build());
@@ -2982,11 +3066,11 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public Builder addAllSubtitleInfoList(
-        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodSubtitleInfo> values) {
+            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodSubtitleInfo> values) {
       if (subtitleInfoListBuilder_ == null) {
         ensureSubtitleInfoListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, subtitleInfoList_);
+                values, subtitleInfoList_);
         onChanged();
       } else {
         subtitleInfoListBuilder_.addAllMessages(values);
@@ -3035,7 +3119,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder getSubtitleInfoListBuilder(
-        int index) {
+            int index) {
       return getSubtitleInfoListFieldBuilder().getBuilder(index);
     }
     /**
@@ -3046,7 +3130,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder getSubtitleInfoListOrBuilder(
-        int index) {
+            int index) {
       if (subtitleInfoListBuilder_ == null) {
         return subtitleInfoList_.get(index);  } else {
         return subtitleInfoListBuilder_.getMessageOrBuilder(index);
@@ -3059,8 +3143,8 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> 
-         getSubtitleInfoListOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>
+    getSubtitleInfoListOrBuilderList() {
       if (subtitleInfoListBuilder_ != null) {
         return subtitleInfoListBuilder_.getMessageOrBuilderList();
       } else {
@@ -3076,7 +3160,7 @@ private static final long serialVersionUID = 0L;
      */
     public com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder addSubtitleInfoListBuilder() {
       return getSubtitleInfoListFieldBuilder().addBuilder(
-          com.byteplus.service.vod.model.business.VodSubtitleInfo.getDefaultInstance());
+              com.byteplus.service.vod.model.business.VodSubtitleInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -3086,9 +3170,9 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
     public com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder addSubtitleInfoListBuilder(
-        int index) {
+            int index) {
       return getSubtitleInfoListFieldBuilder().addBuilder(
-          index, com.byteplus.service.vod.model.business.VodSubtitleInfo.getDefaultInstance());
+              index, com.byteplus.service.vod.model.business.VodSubtitleInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -3097,16 +3181,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder> 
-         getSubtitleInfoListBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder>
+    getSubtitleInfoListBuilderList() {
       return getSubtitleInfoListFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> 
-        getSubtitleInfoListFieldBuilder() {
+            com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>
+    getSubtitleInfoListFieldBuilder() {
       if (subtitleInfoListBuilder_ == null) {
         subtitleInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>(
+                com.byteplus.service.vod.model.business.VodSubtitleInfo, com.byteplus.service.vod.model.business.VodSubtitleInfo.Builder, com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>(
                 subtitleInfoList_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -3118,7 +3202,7 @@ private static final long serialVersionUID = 0L;
 
     private com.byteplus.service.vod.model.business.BarrageMaskInfo barrageMaskInfo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder> barrageMaskInfoBuilder_;
+            com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder> barrageMaskInfoBuilder_;
     /**
      * <pre>
      * 蒙板弹幕
@@ -3173,7 +3257,7 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
      */
     public Builder setBarrageMaskInfo(
-        com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder builderForValue) {
+            com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder builderForValue) {
       if (barrageMaskInfoBuilder_ == null) {
         barrageMaskInfo_ = builderForValue.build();
         onChanged();
@@ -3194,7 +3278,7 @@ private static final long serialVersionUID = 0L;
       if (barrageMaskInfoBuilder_ == null) {
         if (barrageMaskInfo_ != null) {
           barrageMaskInfo_ =
-            com.byteplus.service.vod.model.business.BarrageMaskInfo.newBuilder(barrageMaskInfo_).mergeFrom(value).buildPartial();
+                  com.byteplus.service.vod.model.business.BarrageMaskInfo.newBuilder(barrageMaskInfo_).mergeFrom(value).buildPartial();
         } else {
           barrageMaskInfo_ = value;
         }
@@ -3231,7 +3315,7 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
      */
     public com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder getBarrageMaskInfoBuilder() {
-      
+
       onChanged();
       return getBarrageMaskInfoFieldBuilder().getBuilder();
     }
@@ -3247,7 +3331,7 @@ private static final long serialVersionUID = 0L;
         return barrageMaskInfoBuilder_.getMessageOrBuilder();
       } else {
         return barrageMaskInfo_ == null ?
-            com.byteplus.service.vod.model.business.BarrageMaskInfo.getDefaultInstance() : barrageMaskInfo_;
+                com.byteplus.service.vod.model.business.BarrageMaskInfo.getDefaultInstance() : barrageMaskInfo_;
       }
     }
     /**
@@ -3258,11 +3342,11 @@ private static final long serialVersionUID = 0L;
      * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder> 
-        getBarrageMaskInfoFieldBuilder() {
+            com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder>
+    getBarrageMaskInfoFieldBuilder() {
       if (barrageMaskInfoBuilder_ == null) {
         barrageMaskInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder>(
+                com.byteplus.service.vod.model.business.BarrageMaskInfo, com.byteplus.service.vod.model.business.BarrageMaskInfo.Builder, com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder>(
                 getBarrageMaskInfo(),
                 getParentForChildren(),
                 isClean());
@@ -3270,15 +3354,179 @@ private static final long serialVersionUID = 0L;
       }
       return barrageMaskInfoBuilder_;
     }
+
+    private com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo adaptiveBitrateStreamingInfo_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder> adaptiveBitrateStreamingInfoBuilder_;
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     * @return Whether the adaptiveBitrateStreamingInfo field is set.
+     */
+    public boolean hasAdaptiveBitrateStreamingInfo() {
+      return adaptiveBitrateStreamingInfoBuilder_ != null || adaptiveBitrateStreamingInfo_ != null;
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     * @return The adaptiveBitrateStreamingInfo.
+     */
+    public com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo getAdaptiveBitrateStreamingInfo() {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        return adaptiveBitrateStreamingInfo_ == null ? com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.getDefaultInstance() : adaptiveBitrateStreamingInfo_;
+      } else {
+        return adaptiveBitrateStreamingInfoBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public Builder setAdaptiveBitrateStreamingInfo(com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo value) {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        adaptiveBitrateStreamingInfo_ = value;
+        onChanged();
+      } else {
+        adaptiveBitrateStreamingInfoBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public Builder setAdaptiveBitrateStreamingInfo(
+            com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder builderForValue) {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        adaptiveBitrateStreamingInfo_ = builderForValue.build();
+        onChanged();
+      } else {
+        adaptiveBitrateStreamingInfoBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public Builder mergeAdaptiveBitrateStreamingInfo(com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo value) {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        if (adaptiveBitrateStreamingInfo_ != null) {
+          adaptiveBitrateStreamingInfo_ =
+                  com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.newBuilder(adaptiveBitrateStreamingInfo_).mergeFrom(value).buildPartial();
+        } else {
+          adaptiveBitrateStreamingInfo_ = value;
+        }
+        onChanged();
+      } else {
+        adaptiveBitrateStreamingInfoBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public Builder clearAdaptiveBitrateStreamingInfo() {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        adaptiveBitrateStreamingInfo_ = null;
+        onChanged();
+      } else {
+        adaptiveBitrateStreamingInfo_ = null;
+        adaptiveBitrateStreamingInfoBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder getAdaptiveBitrateStreamingInfoBuilder() {
+
+      onChanged();
+      return getAdaptiveBitrateStreamingInfoFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    public com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder getAdaptiveBitrateStreamingInfoOrBuilder() {
+      if (adaptiveBitrateStreamingInfoBuilder_ != null) {
+        return adaptiveBitrateStreamingInfoBuilder_.getMessageOrBuilder();
+      } else {
+        return adaptiveBitrateStreamingInfo_ == null ?
+                com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.getDefaultInstance() : adaptiveBitrateStreamingInfo_;
+      }
+    }
+    /**
+     * <pre>
+     *不下发abr流时，为null。json里没有这个key
+     *下发abr流时，用于填充主文件信息。
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+            com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder>
+    getAdaptiveBitrateStreamingInfoFieldBuilder() {
+      if (adaptiveBitrateStreamingInfoBuilder_ == null) {
+        adaptiveBitrateStreamingInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo.Builder, com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder>(
+                getAdaptiveBitrateStreamingInfo(),
+                getParentForChildren(),
+                isClean());
+        adaptiveBitrateStreamingInfo_ = null;
+      }
+      return adaptiveBitrateStreamingInfoBuilder_;
+    }
     @java.lang.Override
     public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -3297,12 +3545,12 @@ private static final long serialVersionUID = 0L;
   }
 
   private static final com.google.protobuf.Parser<VodPlayInfoModel>
-      PARSER = new com.google.protobuf.AbstractParser<VodPlayInfoModel>() {
+          PARSER = new com.google.protobuf.AbstractParser<VodPlayInfoModel>() {
     @java.lang.Override
     public VodPlayInfoModel parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodPlayInfoModel(input, extensionRegistry);
     }
   };

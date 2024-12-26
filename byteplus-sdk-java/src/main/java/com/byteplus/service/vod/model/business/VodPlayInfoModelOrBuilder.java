@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodPlayInfoModelOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlayInfoModel)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlayInfoModel)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -44,7 +44,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * @return The bytes for vid.
    */
   com.google.protobuf.ByteString
-      getVidBytes();
+  getVidBytes();
 
   /**
    * <pre>
@@ -74,7 +74,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * @return The bytes for posterUrl.
    */
   com.google.protobuf.ByteString
-      getPosterUrlBytes();
+  getPosterUrlBytes();
 
   /**
    * <pre>
@@ -104,7 +104,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * @return The bytes for fileType.
    */
   com.google.protobuf.ByteString
-      getFileTypeBytes();
+  getFileTypeBytes();
 
   /**
    * <pre>
@@ -160,8 +160,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodPlayInfo> 
-      getPlayInfoListList();
+  java.util.List<com.byteplus.service.vod.model.business.VodPlayInfo>
+  getPlayInfoListList();
   /**
    * <pre>
    * 播放列表
@@ -185,8 +185,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder> 
-      getPlayInfoListOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder>
+  getPlayInfoListOrBuilderList();
   /**
    * <pre>
    * 播放列表
@@ -195,7 +195,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlayInfo PlayInfoList = 9;</code>
    */
   com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder getPlayInfoListOrBuilder(
-      int index);
+          int index);
 
   /**
    * <pre>
@@ -204,8 +204,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodThumbInfo> 
-      getThumbInfoListList();
+  java.util.List<com.byteplus.service.vod.model.business.VodThumbInfo>
+  getThumbInfoListList();
   /**
    * <pre>
    * 雪碧图列表
@@ -229,8 +229,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder> 
-      getThumbInfoListOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder>
+  getThumbInfoListOrBuilderList();
   /**
    * <pre>
    * 雪碧图列表
@@ -239,7 +239,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodThumbInfo ThumbInfoList = 11;</code>
    */
   com.byteplus.service.vod.model.business.VodThumbInfoOrBuilder getThumbInfoListOrBuilder(
-      int index);
+          int index);
 
   /**
    * <pre>
@@ -259,7 +259,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * @return The bytes for barrageMaskUrl.
    */
   com.google.protobuf.ByteString
-      getBarrageMaskUrlBytes();
+  getBarrageMaskUrlBytes();
 
   /**
    * <pre>
@@ -268,8 +268,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodSubtitleInfo> 
-      getSubtitleInfoListList();
+  java.util.List<com.byteplus.service.vod.model.business.VodSubtitleInfo>
+  getSubtitleInfoListList();
   /**
    * <pre>
    * 字幕信息列表
@@ -293,8 +293,8 @@ public interface VodPlayInfoModelOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder> 
-      getSubtitleInfoListOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder>
+  getSubtitleInfoListOrBuilderList();
   /**
    * <pre>
    * 字幕信息列表
@@ -303,7 +303,7 @@ public interface VodPlayInfoModelOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodSubtitleInfo SubtitleInfoList = 13;</code>
    */
   com.byteplus.service.vod.model.business.VodSubtitleInfoOrBuilder getSubtitleInfoListOrBuilder(
-      int index);
+          int index);
 
   /**
    * <pre>
@@ -331,4 +331,34 @@ public interface VodPlayInfoModelOrBuilder extends
    * <code>.Byteplus.Vod.Models.Business.BarrageMaskInfo BarrageMaskInfo = 14;</code>
    */
   com.byteplus.service.vod.model.business.BarrageMaskInfoOrBuilder getBarrageMaskInfoOrBuilder();
+
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   * @return Whether the adaptiveBitrateStreamingInfo field is set.
+   */
+  boolean hasAdaptiveBitrateStreamingInfo();
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   * @return The adaptiveBitrateStreamingInfo.
+   */
+  com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfo getAdaptiveBitrateStreamingInfo();
+  /**
+   * <pre>
+   *不下发abr流时，为null。json里没有这个key
+   *下发abr流时，用于填充主文件信息。
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.AdaptiveBitrateStreamingInfo AdaptiveBitrateStreamingInfo = 15;</code>
+   */
+  com.byteplus.service.vod.model.business.AdaptiveBitrateStreamingInfoOrBuilder getAdaptiveBitrateStreamingInfoOrBuilder();
 }

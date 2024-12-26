@@ -7,7 +7,7 @@ package com.byteplus.service.vod.model.business;
  * Protobuf enum {@code Byteplus.Vod.Models.Business.VodPlayInfoModelVersion}
  */
 public enum VodPlayInfoModelVersion
-    implements com.google.protobuf.ProtocolMessageEnum {
+        implements com.google.protobuf.ProtocolMessageEnum {
   /**
    * <pre>
    * 未定义的数据版本
@@ -72,7 +72,7 @@ public enum VodPlayInfoModelVersion
   public final int getNumber() {
     if (this == UNRECOGNIZED) {
       throw new java.lang.IllegalArgumentException(
-          "Can't get the number of an unknown enum value.");
+              "Can't get the number of an unknown enum value.");
     }
     return value;
   }
@@ -103,41 +103,41 @@ public enum VodPlayInfoModelVersion
   }
 
   public static com.google.protobuf.Internal.EnumLiteMap<VodPlayInfoModelVersion>
-      internalGetValueMap() {
+  internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-      VodPlayInfoModelVersion> internalValueMap =
-        new com.google.protobuf.Internal.EnumLiteMap<VodPlayInfoModelVersion>() {
-          public VodPlayInfoModelVersion findValueByNumber(int number) {
-            return VodPlayInfoModelVersion.forNumber(number);
-          }
-        };
+          VodPlayInfoModelVersion> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<VodPlayInfoModelVersion>() {
+            public VodPlayInfoModelVersion findValueByNumber(int number) {
+              return VodPlayInfoModelVersion.forNumber(number);
+            }
+          };
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
-      getValueDescriptor() {
+  getValueDescriptor() {
     if (this == UNRECOGNIZED) {
       throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
+              "Can't get the descriptor of an unrecognized enum value.");
     }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptorForType() {
+  getDescriptorForType() {
     return getDescriptor();
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
-      getDescriptor() {
+  getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.getDescriptor().getEnumTypes().get(0);
   }
 
   private static final VodPlayInfoModelVersion[] VALUES = values();
 
   public static VodPlayInfoModelVersion valueOf(
-      com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
-        "EnumValueDescriptor is not for this type.");
+              "EnumValueDescriptor is not for this type.");
     }
     if (desc.getIndex() == -1) {
       return UNRECOGNIZED;

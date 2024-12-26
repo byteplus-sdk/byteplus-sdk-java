@@ -590,7 +590,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
      */
 	@Override
 	public com.byteplus.service.vod.model.response.VodUrlUploadResponse uploadMediaByUrl(com.byteplus.service.vod.model.request.VodUrlUploadRequest input) throws Exception {
-		com.byteplus.model.response.RawResponse response = query(com.byteplus.service.vod.Const.UploadMediaByUrl, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
+		com.byteplus.model.response.RawResponse response = post(com.byteplus.service.vod.Const.UploadMediaByUrl, new ArrayList<>(), com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
         if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
             throw response.getException();
         }

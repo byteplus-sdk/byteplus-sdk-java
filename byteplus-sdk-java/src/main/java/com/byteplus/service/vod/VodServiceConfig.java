@@ -105,7 +105,7 @@ public class VodServiceConfig {
             put(Const.UploadMediaByUrl, new ApiInfo(
                     new HashMap<String, Object>() {
                         {
-                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Method, "POST");
                             put(com.byteplus.helper.Const.Path, "/");
                             put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
                                 {

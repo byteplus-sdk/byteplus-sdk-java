@@ -215,48 +215,49 @@ public final class VodCommon {
                     "yteplus.Vod.Models.Business.BarrageMaskI" +
                     "nfo\022`\n\034AdaptiveBitrateStreamingInfo\030\017 \001(" +
                     "\0132:.Byteplus.Vod.Models.Business.Adaptiv" +
-                    "eBitrateStreamingInfo\"]\n\034AdaptiveBitrate" +
-                    "StreamingInfo\022\023\n\013MainPlayUrl\030\001 \001(\t\022\025\n\rBa" +
-                    "ckupPlayUrl\030\002 \001(\t\022\021\n\tAbrFormat\030\003 \001(\t\",\n\010" +
-                    "VodPoint\022\021\n\tTimestamp\030\001 \001(\001\022\r\n\005Value\030\002 \001" +
-                    "(\001\"\224\001\n\024VodAllPlayInfoResult\022R\n\027VodAllPla" +
-                    "yInfoModelList\030\001 \003(\01321.Byteplus.Vod.Mode" +
-                    "ls.Business.VodAllPlayInfoModel\022\022\n\nTotal" +
-                    "Count\030\002 \001(\005\022\024\n\014NotFoundVids\030\003 \003(\t\"\264\004\n\023Vo" +
-                    "dAllPlayInfoModel\022\013\n\003Vid\030\001 \001(\t\022\016\n\006Status" +
-                    "\030\002 \001(\005\022\021\n\tPosterUrl\030\003 \001(\t\022\022\n\nTotalCount\030" +
-                    "\004 \001(\005\022\026\n\016EnableAdaptive\030\005 \001(\010\022G\n\024VodTran" +
-                    "scodePlayInfo\030\006 \003(\0132).Byteplus.Vod.Model" +
-                    "s.Business.VodPlayInfo\022D\n\021VodSourcePlayI" +
-                    "nfo\030\007 \001(\0132).Byteplus.Vod.Models.Business" +
-                    ".VodPlayInfo\022F\n\007Version\030\010 \001(\01625.Byteplus" +
-                    ".Vod.Models.Business.VodPlayInfoModelVer" +
-                    "sion\022A\n\rThumbInfoList\030\t \003(\0132*.Byteplus.V" +
-                    "od.Models.Business.VodThumbInfo\022\026\n\016Barra" +
-                    "geMaskUrl\030\n \001(\t\022G\n\020SubtitleInfoList\030\013 \003(" +
-                    "\0132-.Byteplus.Vod.Models.Business.VodSubt" +
-                    "itleInfo\022F\n\017BarrageMaskInfo\030\014 \001(\0132-.Byte" +
-                    "plus.Vod.Models.Business.BarrageMaskInfo" +
-                    "\".\n\034VodGetIntertrustApiKeyResult\022\016\n\006ApiK" +
-                    "ey\030\001 \001(\t\".\n\034VodSetFairPlayCertInfoResult" +
-                    "\022\016\n\006CertId\030\001 \001(\t\"\213\001\n\034VodGetFairPlayCertI" +
-                    "nfoResult\022\016\n\006CertId\030\001 \001(\t\022\020\n\010CertName\030\002 " +
-                    "\001(\t\022\024\n\014CertFileName\030\003 \001(\t\022\022\n\nPkFileName\030" +
-                    "\004 \001(\t\022\022\n\nPkPassword\030\005 \001(\t\022\013\n\003Ask\030\006 \001(\t\"(" +
-                    "\n\030VodGetFairPlayCertResult\022\014\n\004Cert\030\001 \001(\014" +
-                    "\")\n\023VodDrmLicenseResult\022\022\n\nDrmLicense\030\001 " +
-                    "\001(\014*\326\001\n\027VodPlayInfoModelVersion\022$\n Undef" +
-                    "inedVodPlayInfoModelVersion\020\000\022%\n!Interna" +
-                    "lV1VodPlayInfoModelVersion\020\001\022%\n!Internal" +
-                    "V2VodPlayInfoModelVersion\020\002\022%\n!InternalV" +
-                    "3VodPlayInfoModelVersion\020\003\022 \n\034ToBV1VodPl" +
-                    "ayInfoModelVersion\020\004B\331\001\n\'com.byteplus.se" +
-                    "rvice.vod.model.businessB\tVodCommonP\001ZGg" +
-                    "ithub.com/byteplus-sdk/byteplus-sdk-gola" +
-                    "ng/service/vod/models/business\240\001\001\330\001\001\302\002\000\312" +
-                    "\002$Byteplus\\Service\\Vod\\Models\\Business\342\002" +
-                    "\'Byteplus\\Service\\Vod\\Models\\GPBMetadata" +
-                    "b\006proto3"
+                    "eBitrateStreamingInfo\"\203\001\n\034AdaptiveBitrat" +
+                    "eStreamingInfo\022\023\n\013MainPlayUrl\030\001 \001(\t\022\025\n\rB" +
+                    "ackupPlayUrl\030\002 \001(\t\022\021\n\tAbrFormat\030\003 \001(\t\022\020\n" +
+                    "\010PlayAuth\030\004 \001(\t\022\022\n\nPlayAuthId\030\005 \001(\t\",\n\010V" +
+                    "odPoint\022\021\n\tTimestamp\030\001 \001(\001\022\r\n\005Value\030\002 \001(" +
+                    "\001\"\224\001\n\024VodAllPlayInfoResult\022R\n\027VodAllPlay" +
+                    "InfoModelList\030\001 \003(\01321.Byteplus.Vod.Model" +
+                    "s.Business.VodAllPlayInfoModel\022\022\n\nTotalC" +
+                    "ount\030\002 \001(\005\022\024\n\014NotFoundVids\030\003 \003(\t\"\264\004\n\023Vod" +
+                    "AllPlayInfoModel\022\013\n\003Vid\030\001 \001(\t\022\016\n\006Status\030" +
+                    "\002 \001(\005\022\021\n\tPosterUrl\030\003 \001(\t\022\022\n\nTotalCount\030\004" +
+                    " \001(\005\022\026\n\016EnableAdaptive\030\005 \001(\010\022G\n\024VodTrans" +
+                    "codePlayInfo\030\006 \003(\0132).Byteplus.Vod.Models" +
+                    ".Business.VodPlayInfo\022D\n\021VodSourcePlayIn" +
+                    "fo\030\007 \001(\0132).Byteplus.Vod.Models.Business." +
+                    "VodPlayInfo\022F\n\007Version\030\010 \001(\01625.Byteplus." +
+                    "Vod.Models.Business.VodPlayInfoModelVers" +
+                    "ion\022A\n\rThumbInfoList\030\t \003(\0132*.Byteplus.Vo" +
+                    "d.Models.Business.VodThumbInfo\022\026\n\016Barrag" +
+                    "eMaskUrl\030\n \001(\t\022G\n\020SubtitleInfoList\030\013 \003(\013" +
+                    "2-.Byteplus.Vod.Models.Business.VodSubti" +
+                    "tleInfo\022F\n\017BarrageMaskInfo\030\014 \001(\0132-.Bytep" +
+                    "lus.Vod.Models.Business.BarrageMaskInfo\"" +
+                    ".\n\034VodGetIntertrustApiKeyResult\022\016\n\006ApiKe" +
+                    "y\030\001 \001(\t\".\n\034VodSetFairPlayCertInfoResult\022" +
+                    "\016\n\006CertId\030\001 \001(\t\"\213\001\n\034VodGetFairPlayCertIn" +
+                    "foResult\022\016\n\006CertId\030\001 \001(\t\022\020\n\010CertName\030\002 \001" +
+                    "(\t\022\024\n\014CertFileName\030\003 \001(\t\022\022\n\nPkFileName\030\004" +
+                    " \001(\t\022\022\n\nPkPassword\030\005 \001(\t\022\013\n\003Ask\030\006 \001(\t\"(\n" +
+                    "\030VodGetFairPlayCertResult\022\014\n\004Cert\030\001 \001(\014\"" +
+                    ")\n\023VodDrmLicenseResult\022\022\n\nDrmLicense\030\001 \001" +
+                    "(\014*\326\001\n\027VodPlayInfoModelVersion\022$\n Undefi" +
+                    "nedVodPlayInfoModelVersion\020\000\022%\n!Internal" +
+                    "V1VodPlayInfoModelVersion\020\001\022%\n!InternalV" +
+                    "2VodPlayInfoModelVersion\020\002\022%\n!InternalV3" +
+                    "VodPlayInfoModelVersion\020\003\022 \n\034ToBV1VodPla" +
+                    "yInfoModelVersion\020\004B\331\001\n\'com.byteplus.ser" +
+                    "vice.vod.model.businessB\tVodCommonP\001ZGgi" +
+                    "thub.com/byteplus-sdk/byteplus-sdk-golan" +
+                    "g/service/vod/models/business\240\001\001\330\001\001\302\002\000\312\002" +
+                    "$Byteplus\\Service\\Vod\\Models\\Business\342\002\'" +
+                    "Byteplus\\Service\\Vod\\Models\\GPBMetadatab" +
+                    "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
             .internalBuildGeneratedFileFrom(descriptorData,
@@ -345,7 +346,7 @@ public final class VodCommon {
     internal_static_Byteplus_Vod_Models_Business_AdaptiveBitrateStreamingInfo_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
             internal_static_Byteplus_Vod_Models_Business_AdaptiveBitrateStreamingInfo_descriptor,
-            new java.lang.String[] { "MainPlayUrl", "BackupPlayUrl", "AbrFormat", });
+            new java.lang.String[] { "MainPlayUrl", "BackupPlayUrl", "AbrFormat", "PlayAuth", "PlayAuthId", });
     internal_static_Byteplus_Vod_Models_Business_VodPoint_descriptor =
             getDescriptor().getMessageTypes().get(14);
     internal_static_Byteplus_Vod_Models_Business_VodPoint_fieldAccessorTable = new

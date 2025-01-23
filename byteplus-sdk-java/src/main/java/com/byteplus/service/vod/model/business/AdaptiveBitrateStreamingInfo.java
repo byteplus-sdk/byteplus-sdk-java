@@ -19,6 +19,8 @@ private static final long serialVersionUID = 0L;
     mainPlayUrl_ = "";
     backupPlayUrl_ = "";
     abrFormat_ = "";
+    playAuth_ = "";
+    playAuthId_ = "";
   }
 
   @Override
@@ -67,6 +69,18 @@ private static final long serialVersionUID = 0L;
             String s = input.readStringRequireUtf8();
 
             abrFormat_ = s;
+            break;
+          }
+          case 34: {
+            String s = input.readStringRequireUtf8();
+
+            playAuth_ = s;
+            break;
+          }
+          case 42: {
+            String s = input.readStringRequireUtf8();
+
+            playAuthId_ = s;
             break;
           }
           default: {
@@ -257,6 +271,82 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int PLAYAUTH_FIELD_NUMBER = 4;
+  private volatile Object playAuth_;
+  /**
+   * <code>string PlayAuth = 4;</code>
+   * @return The playAuth.
+   */
+  @Override
+  public String getPlayAuth() {
+    Object ref = playAuth_;
+    if (ref instanceof String) {
+      return (String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      String s = bs.toStringUtf8();
+      playAuth_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string PlayAuth = 4;</code>
+   * @return The bytes for playAuth.
+   */
+  @Override
+  public com.google.protobuf.ByteString
+      getPlayAuthBytes() {
+    Object ref = playAuth_;
+    if (ref instanceof String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (String) ref);
+      playAuth_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int PLAYAUTHID_FIELD_NUMBER = 5;
+  private volatile Object playAuthId_;
+  /**
+   * <code>string PlayAuthId = 5;</code>
+   * @return The playAuthId.
+   */
+  @Override
+  public String getPlayAuthId() {
+    Object ref = playAuthId_;
+    if (ref instanceof String) {
+      return (String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      String s = bs.toStringUtf8();
+      playAuthId_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string PlayAuthId = 5;</code>
+   * @return The bytes for playAuthId.
+   */
+  @Override
+  public com.google.protobuf.ByteString
+      getPlayAuthIdBytes() {
+    Object ref = playAuthId_;
+    if (ref instanceof String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (String) ref);
+      playAuthId_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @Override
   public final boolean isInitialized() {
@@ -280,6 +370,12 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(abrFormat_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, abrFormat_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playAuth_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, playAuth_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playAuthId_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, playAuthId_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -297,6 +393,12 @@ private static final long serialVersionUID = 0L;
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(abrFormat_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, abrFormat_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playAuth_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, playAuth_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playAuthId_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, playAuthId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -319,6 +421,10 @@ private static final long serialVersionUID = 0L;
         .equals(other.getBackupPlayUrl())) return false;
     if (!getAbrFormat()
         .equals(other.getAbrFormat())) return false;
+    if (!getPlayAuth()
+        .equals(other.getPlayAuth())) return false;
+    if (!getPlayAuthId()
+        .equals(other.getPlayAuthId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -336,6 +442,10 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getBackupPlayUrl().hashCode();
     hash = (37 * hash) + ABRFORMAT_FIELD_NUMBER;
     hash = (53 * hash) + getAbrFormat().hashCode();
+    hash = (37 * hash) + PLAYAUTH_FIELD_NUMBER;
+    hash = (53 * hash) + getPlayAuth().hashCode();
+    hash = (37 * hash) + PLAYAUTHID_FIELD_NUMBER;
+    hash = (53 * hash) + getPlayAuthId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -475,6 +585,10 @@ private static final long serialVersionUID = 0L;
 
       abrFormat_ = "";
 
+      playAuth_ = "";
+
+      playAuthId_ = "";
+
       return this;
     }
 
@@ -504,6 +618,8 @@ private static final long serialVersionUID = 0L;
       result.mainPlayUrl_ = mainPlayUrl_;
       result.backupPlayUrl_ = backupPlayUrl_;
       result.abrFormat_ = abrFormat_;
+      result.playAuth_ = playAuth_;
+      result.playAuthId_ = playAuthId_;
       onBuilt();
       return result;
     }
@@ -562,6 +678,14 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getAbrFormat().isEmpty()) {
         abrFormat_ = other.abrFormat_;
+        onChanged();
+      }
+      if (!other.getPlayAuth().isEmpty()) {
+        playAuth_ = other.playAuth_;
+        onChanged();
+      }
+      if (!other.getPlayAuthId().isEmpty()) {
+        playAuthId_ = other.playAuthId_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -922,6 +1046,158 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       abrFormat_ = value;
+      onChanged();
+      return this;
+    }
+
+    private Object playAuth_ = "";
+    /**
+     * <code>string PlayAuth = 4;</code>
+     * @return The playAuth.
+     */
+    public String getPlayAuth() {
+      Object ref = playAuth_;
+      if (!(ref instanceof String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        playAuth_ = s;
+        return s;
+      } else {
+        return (String) ref;
+      }
+    }
+    /**
+     * <code>string PlayAuth = 4;</code>
+     * @return The bytes for playAuth.
+     */
+    public com.google.protobuf.ByteString
+        getPlayAuthBytes() {
+      Object ref = playAuth_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        playAuth_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string PlayAuth = 4;</code>
+     * @param value The playAuth to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlayAuth(
+        String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      playAuth_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string PlayAuth = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPlayAuth() {
+      
+      playAuth_ = getDefaultInstance().getPlayAuth();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string PlayAuth = 4;</code>
+     * @param value The bytes for playAuth to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlayAuthBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      playAuth_ = value;
+      onChanged();
+      return this;
+    }
+
+    private Object playAuthId_ = "";
+    /**
+     * <code>string PlayAuthId = 5;</code>
+     * @return The playAuthId.
+     */
+    public String getPlayAuthId() {
+      Object ref = playAuthId_;
+      if (!(ref instanceof String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        playAuthId_ = s;
+        return s;
+      } else {
+        return (String) ref;
+      }
+    }
+    /**
+     * <code>string PlayAuthId = 5;</code>
+     * @return The bytes for playAuthId.
+     */
+    public com.google.protobuf.ByteString
+        getPlayAuthIdBytes() {
+      Object ref = playAuthId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        playAuthId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string PlayAuthId = 5;</code>
+     * @param value The playAuthId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlayAuthId(
+        String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      playAuthId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string PlayAuthId = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPlayAuthId() {
+      
+      playAuthId_ = getDefaultInstance().getPlayAuthId();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string PlayAuthId = 5;</code>
+     * @param value The bytes for playAuthId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlayAuthIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      playAuthId_ = value;
       onChanged();
       return this;
     }

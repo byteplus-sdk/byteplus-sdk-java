@@ -84,4 +84,28 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getAbrFormatBytes();
+
+  /**
+   * <code>string PlayAuth = 4;</code>
+   * @return The playAuth.
+   */
+  String getPlayAuth();
+  /**
+   * <code>string PlayAuth = 4;</code>
+   * @return The bytes for playAuth.
+   */
+  com.google.protobuf.ByteString
+      getPlayAuthBytes();
+
+  /**
+   * <code>string PlayAuthId = 5;</code>
+   * @return The playAuthId.
+   */
+  String getPlayAuthId();
+  /**
+   * <code>string PlayAuthId = 5;</code>
+   * @return The bytes for playAuthId.
+   */
+  com.google.protobuf.ByteString
+      getPlayAuthIdBytes();
 }

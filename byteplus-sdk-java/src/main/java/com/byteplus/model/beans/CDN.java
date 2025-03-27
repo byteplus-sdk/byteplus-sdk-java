@@ -168,6 +168,9 @@ public class CDN {
         @JSONField(name = "NegativeCache")
         List<NegativeCache> NegativeCache;
 
+        @JSONField(name = "OfflineCache")
+        OfflineCache OfflineCache;
+
         @JSONField(name = "Origin")
         List<OriginRule> Origin;
 
@@ -343,6 +346,9 @@ public class CDN {
         @JSONField(name = "Project")
         String Project;
 
+        @JSONField(name = "RuleTemplateIds")
+        List<String> RuleTemplateIds;
+
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
 
@@ -359,6 +365,17 @@ public class CDN {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        AddTemplateDomainResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AddTemplateDomainResult {
+
+        @JSONField(name = "ResourceIds")
+        List<String> ResourceIds;
     }
 
     @Data
@@ -505,6 +522,9 @@ public class CDN {
 
         @JSONField(name = "Domain")
         String Domain;
+
+        @JSONField(name = "TargetConfig")
+        String TargetConfig;
     }
 
     @Data
@@ -601,6 +621,9 @@ public class CDN {
 
         @JSONField(name = "NegativeCache")
         List<NegativeCache> NegativeCache;
+
+        @JSONField(name = "OfflineCache")
+        OfflineCache OfflineCache;
 
         @JSONField(name = "Origin")
         List<OriginRule> Origin;
@@ -1071,6 +1094,9 @@ public class CDN {
         @JSONField(name = "CompressionType")
         List<String> CompressionType;
 
+        @JSONField(name = "MaxFileSizeKB")
+        Long MaxFileSizeKB;
+
         @JSONField(name = "MinFileSizeKB")
         Long MinFileSizeKB;
     }
@@ -1365,6 +1391,9 @@ public class CDN {
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
 
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
+
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
@@ -1579,6 +1608,9 @@ public class CDN {
     @Accessors(chain = true)
     public static class DataPoint {
 
+        @JSONField(name = "Item")
+        String Item;
+
         @JSONField(name = "TimeStamp")
         Long TimeStamp;
 
@@ -1624,6 +1656,9 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
     }
 
     @Data
@@ -1846,6 +1881,12 @@ public class CDN {
 
         @JSONField(name = "Domain")
         String Domain;
+
+        @JSONField(name = "FeatureConfig")
+        Boolean FeatureConfig;
+
+        @JSONField(name = "LockInfo")
+        Boolean LockInfo;
     }
 
     @Data
@@ -2065,6 +2106,9 @@ public class CDN {
 
         @JSONField(name = "Feature")
         String Feature;
+
+        @JSONField(name = "Lang")
+        String Lang;
     }
 
     @Data
@@ -2117,6 +2161,9 @@ public class CDN {
 
         @JSONField(name = "IpVersion")
         String IpVersion;
+
+        @JSONField(name = "RsIp")
+        Boolean RsIp;
     }
 
     @Data
@@ -2159,6 +2206,9 @@ public class CDN {
 
         @JSONField(name = "Status")
         String Status;
+
+        @JSONField(name = "TargetConfig")
+        String TargetConfig;
     }
 
     @Data
@@ -2192,6 +2242,9 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
     }
 
     @Data
@@ -2226,6 +2279,9 @@ public class CDN {
 
         @JSONField(name = "Message")
         String Message;
+
+        @JSONField(name = "ProdVersion")
+        String ProdVersion;
 
         @JSONField(name = "Project")
         String Project;
@@ -2478,6 +2534,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2574,6 +2633,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2634,6 +2696,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2679,6 +2744,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2796,6 +2864,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2892,6 +2963,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -2943,6 +3017,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -3217,6 +3294,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -3331,6 +3411,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -3379,6 +3462,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -3427,6 +3513,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -3577,6 +3666,9 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
     }
 
     @Data
@@ -3699,6 +3791,9 @@ public class CDN {
         @JSONField(name = "PageOptimization")
         PageOptimization PageOptimization;
 
+        @JSONField(name = "ProdVersion")
+        String ProdVersion;
+
         @JSONField(name = "Project")
         String Project;
 
@@ -3710,6 +3805,9 @@ public class CDN {
 
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
+
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
 
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
@@ -3772,6 +3870,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
 
         @JSONField(name = "UaType")
         String UaType;
@@ -3901,6 +4002,9 @@ public class CDN {
 
         @JSONField(name = "StartTime")
         Long StartTime;
+
+        @JSONField(name = "TimeZone")
+        String TimeZone;
     }
 
     @Data
@@ -4026,6 +4130,9 @@ public class CDN {
 
         @JSONField(name = "NegativeCache")
         List<NegativeCache> NegativeCache;
+
+        @JSONField(name = "OfflineCache")
+        OfflineCache OfflineCache;
 
         @JSONField(name = "Origin")
         List<OriginRule> Origin;
@@ -4272,6 +4379,9 @@ public class CDN {
 
         @JSONField(name = "Message")
         String Message;
+
+        @JSONField(name = "ProdVersion")
+        String ProdVersion;
 
         @JSONField(name = "Project")
         String Project;
@@ -4885,6 +4995,9 @@ public class CDN {
         @JSONField(name = "PageSize")
         Long PageSize;
 
+        @JSONField(name = "SearchCertName")
+        String SearchCertName;
+
         @JSONField(name = "SetPagination")
         Boolean SetPagination;
 
@@ -5153,6 +5266,20 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class OfflineCache {
+
+        @JSONField(name = "Object")
+        String Object;
+
+        @JSONField(name = "StatusCode")
+        String StatusCode;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class OriginAccessRule {
 
         @JSONField(name = "AllowEmpty")
@@ -5215,6 +5342,9 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class OriginCertCheck {
+
+        @JSONField(name = "CertInfoList")
+        List<CertInfo> CertInfoList;
 
         @JSONField(name = "Switch")
         Boolean Switch;
@@ -5436,6 +5566,26 @@ public class CDN {
 
         @JSONField(name = "Switch")
         Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class RERule {
+
+        @JSONField(name = "DSLRule")
+        String DSLRule;
+
+        @JSONField(name = "Id")
+        String Id;
+
+        @JSONField(name = "Locked")
+        Boolean Locked;
+
+        @JSONField(name = "Name")
+        String Name;
+
+        @JSONField(name = "Rule")
+        String Rule;
     }
 
     @Data
@@ -6342,6 +6492,9 @@ public class CDN {
         @JSONField(name = "InstanceCategory")
         String InstanceCategory;
 
+        @JSONField(name = "InstanceNo")
+        String InstanceNo;
+
         @JSONField(name = "InstanceType")
         String InstanceType;
 
@@ -6630,6 +6783,9 @@ public class CDN {
         @JSONField(name = "NegativeCache")
         List<NegativeCache> NegativeCache;
 
+        @JSONField(name = "OfflineCache")
+        OfflineCache OfflineCache;
+
         @JSONField(name = "Origin")
         List<OriginRule> Origin;
 
@@ -6744,6 +6900,9 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
 
         @JSONField(name = "Title")
         String Title;
@@ -6866,6 +7025,9 @@ public class CDN {
         @JSONField(name = "RemoteAuth")
         RemoteAuth RemoteAuth;
 
+        @JSONField(name = "RequestBlockRule")
+        RequestBlockRule RequestBlockRule;
+
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
@@ -6880,6 +7042,9 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
 
         @JSONField(name = "Timeout")
         Timeout Timeout;
@@ -6923,6 +7088,12 @@ public class CDN {
 
         @JSONField(name = "HTTPSSwitch")
         String HTTPSSwitch;
+
+        @JSONField(name = "RuleMode")
+        String RuleMode;
+
+        @JSONField(name = "RuleTemplateIds")
+        List<String> RuleTemplateIds;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;

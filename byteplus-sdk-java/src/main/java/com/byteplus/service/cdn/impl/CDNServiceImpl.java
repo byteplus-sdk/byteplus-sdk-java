@@ -660,6 +660,42 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
     }
 
     @Override
+    public CDN.DescribeSharedConfigResponse describeSharedConfig(CDN.DescribeSharedConfigRequest request) throws Exception {
+        RawResponse response = json("DescribeSharedConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeSharedConfigResponse.class);
+    }
+
+    @Override
+    public CDN.ListSharedConfigResponse listSharedConfig(CDN.ListSharedConfigRequest request) throws Exception {
+        RawResponse response = json("ListSharedConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListSharedConfigResponse.class);
+    }
+
+    @Override
+    public CDN.DeleteSharedConfigResponse deleteSharedConfig(CDN.DeleteSharedConfigRequest request) throws Exception {
+        RawResponse response = json("DeleteSharedConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DeleteSharedConfigResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateSharedConfigResponse updateSharedConfig(CDN.UpdateSharedConfigRequest request) throws Exception {
+        RawResponse response = json("UpdateSharedConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateSharedConfigResponse.class);
+    }
+
+    @Override
     public CDN.TagResourcesResponse tagResources(CDN.TagResourcesRequest request) throws Exception {
         RawResponse response = json("TagResources", null, JSON.toJSONString(request));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {

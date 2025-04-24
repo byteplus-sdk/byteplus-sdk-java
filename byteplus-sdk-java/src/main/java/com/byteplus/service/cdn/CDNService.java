@@ -146,6 +146,14 @@ package com.byteplus.service.cdn;
 
         CDN.ListUsageReportsResponse listUsageReports(CDN.ListUsageReportsRequest request) throws Exception;
 
+        CDN.DescribeSharedConfigResponse describeSharedConfig(CDN.DescribeSharedConfigRequest request) throws Exception;
+
+        CDN.ListSharedConfigResponse listSharedConfig(CDN.ListSharedConfigRequest request) throws Exception;
+
+        CDN.DeleteSharedConfigResponse deleteSharedConfig(CDN.DeleteSharedConfigRequest request) throws Exception;
+
+        CDN.UpdateSharedConfigResponse updateSharedConfig(CDN.UpdateSharedConfigRequest request) throws Exception;
+
         CDN.TagResourcesResponse tagResources(CDN.TagResourcesRequest request) throws Exception;
 
         CDN.UntagResourcesResponse untagResources(CDN.UntagResourcesRequest request) throws Exception;

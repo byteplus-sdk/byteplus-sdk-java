@@ -37,11 +37,11 @@ public final class DescribeLiveStreamSessionDataBody  {
     private String domain;
 
     /**
-     * <p>应用名称，取值与直播流地址中的 AppName 字段取值相同，查询流粒度数据时必传，且需同时传入 `Domain` 和 `Stream`。支持由大小写字母（A - Z、a - z）、数字（0 - 9）、下划线（\_）、短横线（-）和句点（.）组成，长度为 1 到 30 个字符。</p>
+     * <p>应用名称，取值与直播流地址中的 AppName 字段取值相同。支持由大小写字母（A - Z、a - z）、数字（0 - 9）、下划线（\_）、短横线（-）和句点（.）组成，长度为 1 到 30 个字符。</p>
      *
      * <p>:::tip</p>
      *
-     * <p>查询流粒度的回源流量监控数据时，需同时指定 `Domain` 、`App` 和 `Stream` 来指定回源流。</p>
+     * <p>查询流粒度的请求数和在线人数数据时，需同时指定 `Domain` 、`App` 和 `Stream` 来指定直播流。</p>
      *
      * <p>:::</p>
      */
@@ -49,11 +49,11 @@ public final class DescribeLiveStreamSessionDataBody  {
     private String app;
 
     /**
-     * <p>流名称，取值与直播流地址中的 StreamName 字段取值相同，查询流粒度数据时必传，且需同时传入 `Domain` 和 `App`。支持由大小写字母（A - Z、a - z）、下划线（\_）、短横线（-）和句点（.）组成，长度为 1 到 100 个字符。</p>
+     * <p>流名称，取值与直播流地址中的 StreamName 字段取值相同。支持由大小写字母（A - Z、a - z）、下划线（\_）、短横线（-）和句点（.）组成，长度为 1 到 100 个字符。</p>
      *
      * <p>:::tip</p>
      *
-     * <p>查询流粒度的回源流量监控数据时，需同时指定 `Domain` 、`App` 和 `Stream` 来指定回源流。</p>
+     * <p>查询流粒度的请求数和在线人数数据时，需同时指定 `Domain` 、`App` 和 `Stream` 来指定直播流。</p>
      *
      * <p>:::</p>
      */
@@ -119,9 +119,7 @@ public final class DescribeLiveStreamSessionDataBody  {
      *
      * <p>- `btvn`：广电；</p>
      *
-     * <p>- `huashu`：华数；</p>
-     *
-     * <p>- `other`：其他。</p>
+     * <p>- `huashu`：华数。</p>
      *
      *
      *
@@ -134,10 +132,32 @@ public final class DescribeLiveStreamSessionDataBody  {
      * <p>CDN 节点 IP 所属区域的列表，缺省情况下表示所有区域。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "RegionList")
-    private List<com.byteplus.model.live.v20230101.ReqRegion> regionList;
+    private List<DescribeLiveStreamSessionDataBodyRegionListItem> regionList;
 
     /**
      * <p>查询的开始时间，RFC3339 格式的时间戳，精度为秒。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>历史查询最大时间范围为 366 天，单次查询最大时间跨度与数据拆分维度和数据聚合时间粒度有关，详细如下。</p>
+     *
+     * <p>- 当不进行维度拆分或只使用一个维度拆分数据时：</p>
+     *
+     * <p>	- 数据以 60 秒聚合时，单次查询最大时间跨度为 24 小时；</p>
+     *
+     * <p>	- 数据以 300 秒聚合时，单次查询最大时间跨度为 31 天；</p>
+     *
+     * <p>	- 数据以 3600 秒聚合时，单次查询最大时间跨度为 31 天。</p>
+     *
+     * <p>- 当使用两个或两个以上维度拆分数据时：</p>
+     *
+     * <p>	- 数据以 60 秒聚合时，单次查询最大时间跨度为 3 小时；</p>
+     *
+     * <p>	- 数据以 300 秒聚合时，单次查询最大时间跨度为 24 小时；</p>
+     *
+     * <p>	- 数据以 3600 秒聚合时，单次查询最大时间跨度为 7 天。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "StartTime")
     private String startTime;
@@ -153,11 +173,11 @@ public final class DescribeLiveStreamSessionDataBody  {
      *
      *
      *
-     * <p>- `60`：1 分钟。时间粒度为 1 分钟时，单次查询最大时间跨度为 24 小时，历史查询时间范围为 366 天；</p>
+     * <p>- `60`：1 分钟。</p>
      *
-     * <p>- `300`：（默认值）5 分钟。时间粒度为 5 分钟时，单次查询最大时间跨度为 31 天，历史查询时间范围为 366 天；</p>
+     * <p>- `300`：（默认值）5 分钟。</p>
      *
-     * <p>- `3600`：1 天。时间粒度为 1 天时，单次查询最大时间跨度为 93 天，历史查询时间范围为 366 天。</p>
+     * <p>- `3600`：1 小时。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Aggregation")
     private Integer aggregation;
@@ -169,9 +189,7 @@ public final class DescribeLiveStreamSessionDataBody  {
      *
      * <p>- `ISP`：运营商；</p>
      *
-     * <p>- `Protocol`：推拉流协议；</p>
-     *
-     * <p>- `Referer`：请求的 Referer 信息。</p>
+     * <p>- `Protocol`：推拉流协议。</p>
      *
      *
      *

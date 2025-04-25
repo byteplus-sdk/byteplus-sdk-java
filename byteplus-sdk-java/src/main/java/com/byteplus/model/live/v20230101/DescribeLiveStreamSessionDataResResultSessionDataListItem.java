@@ -27,6 +27,12 @@ public final class DescribeLiveStreamSessionDataResResultSessionDataListItem  {
     @com.alibaba.fastjson.annotation.JSONField(name = "OnlineUser")
     private Integer onlineUser;
 
+    /**
+     * <p>指定粒度（如每 60 秒或每 5 分钟）的边缘请求命中率。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "HitRate")
+    private Double hitRate;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

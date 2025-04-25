@@ -57,9 +57,7 @@ public final class DescribeLiveSourceTrafficDataResResult  {
      *
      * <p>- `btvn`：广电；</p>
      *
-     * <p>- `huashu`：华数；</p>
-     *
-     * <p>- `other`：其他。</p>
+     * <p>- `huashu`：华数。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ISPList")
     private List<String> iSPList;
@@ -68,7 +66,7 @@ public final class DescribeLiveSourceTrafficDataResResult  {
      * <p>客户端 IP 所属区域列表。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "UserRegionList")
-    private List<com.byteplus.model.live.v20230101.RespRegion> userRegionList;
+    private List<DescribeLiveSourceTrafficDataResResultUserRegionListItem> userRegionList;
 
     /**
      * <p>数据拆分的维度，维度说明如下所示。</p>
@@ -123,6 +121,12 @@ public final class DescribeLiveSourceTrafficDataResResult  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "TrafficDetailDataList")
     private List<DescribeLiveSourceTrafficDataResResultTrafficDetailDataListItem> trafficDetailDataList;
+
+    /**
+     * <p>查询时间范围内的回源峰值带宽，单位为 Mbps。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "PeakBandwidth")
+    private Float peakBandwidth;
 
     @Override
     public String toString() {

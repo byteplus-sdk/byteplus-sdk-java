@@ -4,25 +4,25 @@ package com.byteplus.model.live.v20230101;
 import com.alibaba.fastjson.JSON;
 
 /**
- * RespRegion
+ * DescribeLiveTrafficDataBodyUserRegionListItem
  */
 @lombok.Data
-public final class RespRegion  {
+public final class DescribeLiveTrafficDataBodyUserRegionListItem  {
 
     /**
-     * <p>The regional identifier in regional information.</p>
+     * <p>大区，映射关系请参见[区域映射](https://www.volcengine.com/docs/6469/114196)</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Area")
     private String area;
 
     /**
-     * <p>The country identifier in the regional information.</p>
+     * <p>国家，映射关系请参见[区域映射](https://www.volcengine.com/docs/6469/114196)</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Country")
     private String country;
 
     /**
-     * <p>The province identifier in the regional information.</p>
+     * <p>国内为省，国外暂不支持该参数，映射关系请参见[区域映射](https://www.volcengine.com/docs/6469/114196)</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Province")
     private String province;

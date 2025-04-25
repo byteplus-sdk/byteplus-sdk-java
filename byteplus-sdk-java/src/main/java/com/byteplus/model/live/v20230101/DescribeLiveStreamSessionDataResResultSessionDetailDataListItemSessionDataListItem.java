@@ -27,6 +27,12 @@ public final class DescribeLiveStreamSessionDataResResultSessionDetailDataListIt
     @com.alibaba.fastjson.annotation.JSONField(name = "OnlineUser")
     private Integer onlineUser;
 
+    /**
+     * <p>边缘请求命中率</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "HitRate")
+    private Double hitRate;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

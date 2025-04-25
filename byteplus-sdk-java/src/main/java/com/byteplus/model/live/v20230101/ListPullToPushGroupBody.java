@@ -32,6 +32,12 @@ public final class ListPullToPushGroupBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "StatusList")
     private List<Integer> statusList;
 
+    /**
+     * <p>标签过滤参数。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "TagFilters")
+    private List<ListPullToPushGroupBodyTagFiltersItem> tagFilters;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

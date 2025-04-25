@@ -198,7 +198,7 @@ public final class UpdateTranscodePresetBody  {
     private Integer fPS;
 
     /**
-     * <p>IDR 帧之间的最大间隔时间，单位为秒，默认值为 `4`，取值范围为 [1,20]。</p>
+     * <p>IDR 帧之间的最大间隔时间，单位为秒，取值范围为 [1,30]。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "GOP")
     private Integer gOP;
@@ -644,11 +644,11 @@ public final class UpdateTranscodePresetBody  {
     /**
      * <p>视频编码格式，支持的取值及含义如下所示。</p>
      *
-     * <p>- `h264`：使用 H.264 视频编码格式；</p>
+     * <p>- `h264`：使用 H.264 的视频编码格式；</p>
      *
-     * <p>- `h265`：使用 H.265 视频编码格式；</p>
+     * <p>- `h265`：使用 H.265 的视频编码格式；</p>
      *
-     * <p>- `h266`：使用 H.266 视频编码格式；</p>
+     * <p>- `h266`：使用 H.266 的视频编码格式；</p>
      *
      * <p>- `copy`：不进行视频转码，所有视频编码参数不生效，视频编码参数包括视频帧率（`FPS`）、视频码率（`VideoBitrate`）、分辨率设置（`As`、`Width`、`Height`、`ShortSide`、`LongSide`）、`GOP` 和 `BFrames` 等。</p>
      */

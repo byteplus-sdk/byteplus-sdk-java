@@ -67,7 +67,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteTranscodePreset</p>
      * <p>删除转码配置</p>
      *
-     * <p>调用 `DeleteTranscodePreset` 接口，删除已创建的转码配置。   </p>
+     * <p>调用 `DeleteTranscodePreset` 接口，删除已创建的转码配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -82,7 +82,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateTranscodePreset</p>
      * <p>更新转码配置</p>
      *
-     * <p>调用 `UpdateTranscodePreset` 接口，更新已添加的转码配置。   </p>
+     * <p>调用 `UpdateTranscodePreset` 接口，更新已添加的转码配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -112,7 +112,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>listVhostTransCodePreset</p>
      * <p>查询转码配置列表</p>
      *
-     * <p>调用 `ListVhostTransCodePreset` 接口，查询转码配置列表。   </p>
+     * <p>调用 `ListVhostTransCodePreset` 接口，查询转码配置列表。</p>
      *
      * @param body body payload
      * @return response data
@@ -142,7 +142,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>createWatermarkPreset</p>
      * <p>添加水印配置</p>
      *
-     * <p>调用 `CreateWatermarkPreset` 接口，为转码流添加水印配置。   </p>
+     * <p>调用 `CreateWatermarkPreset` 接口，为转码流添加水印配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -157,7 +157,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateWatermarkPreset</p>
      * <p>更新水印配置</p>
      *
-     * <p>调用 `UpdateWatermarkPreset` 接口，更新已添加的水印配置。   </p>
+     * <p>调用 `UpdateWatermarkPreset` 接口，更新已添加的水印配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -172,7 +172,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteWatermarkPreset</p>
      * <p>删除水印配置</p>
      *
-     * <p>调用 `DeleteWatermarkPreset` 接口，删除已添加的水印配置。   </p>
+     * <p>调用 `DeleteWatermarkPreset` 接口，删除已添加的水印配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -187,7 +187,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>listWatermarkPreset</p>
      * <p>查询水印配置</p>
      *
-     * <p>调用 `ListWatermarkPreset` 接口，查询单个水印配置的信息。   </p>
+     * <p>调用 `ListWatermarkPreset` 接口，查询单个水印配置的信息。</p>
      *
      * @param body body payload
      * @return response data
@@ -202,7 +202,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>listVhostWatermarkPreset</p>
      * <p>查询水印配置列表</p>
      *
-     * <p>调用 `ListVhostWatermarkPreset` 接口，查询指定域名空间的所有水印配置。   </p>
+     * <p>调用 `ListVhostWatermarkPreset` 接口，查询指定域名空间的所有水印配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -217,7 +217,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteRecordPreset</p>
      * <p>删除录制配置</p>
      *
-     * <p>调用 `DeleteRecordPreset` 接口，删除已创建的录制配置。  </p>
+     * <p>调用 `DeleteRecordPreset` 接口，删除已创建的录制配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -247,7 +247,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeRecordTaskFileHistory</p>
      * <p>查询录制历史详情</p>
      *
-     * <p>调用 `DescribeRecordTaskFileHistory` 接口查询指定 `Vhost` 下的直播录制历史信息。包括但不限于录制时长、文件格式、开始时间、结束时间。   </p>
+     * <p>调用 `DescribeRecordTaskFileHistory` 接口查询指定 `Vhost` 下的直播录制历史信息。包括但不限于录制时长、文件格式、开始时间、结束时间。</p>
      *
      * @param body body payload
      * @return response data
@@ -311,11 +311,9 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     * <p>:::tip</p>
+     *
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 07 月 25 日**下线文档**，建议您使用新版[UpdateSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208857)接口。</p>
-     *
-     * <p>:::   </p>
      *
      * @param body body payload
      * @return response data
@@ -347,11 +345,9 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>查询域名维度下所有的 App 名称，以及 App 关联的截图模板。   </p>
      *
-     * <p>:::tip</p>
+     *
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 07 月 25 日**下线文档**，建议您使用新版[ListVhostSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208858)接口。</p>
-     *
-     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -370,11 +366,9 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     * <p>:::tip</p>
+     *
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 7 月 25 日**下线文档**，建议您使用新版[CreateSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208856)接口。</p>
-     *
-     * <p>:::   </p>
      *
      * @param body body payload
      * @return response data
@@ -449,7 +443,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteCallback</p>
      * <p>删除回调配置</p>
      *
-     * <p>调用 `DeleteCallback` 接口，删除已创建的回调配置。   </p>
+     * <p>调用 `DeleteCallback` 接口，删除已创建的回调配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -479,7 +473,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateCallback</p>
      * <p>添加或更新回调配置</p>
      *
-     * <p>调用 `UpdateCallback` 接口，添加或更新直播推流、直播断流、录制和截图的回调。使用此接口更新回调配置时，调用成功后，会对全部回调配置的参数做全量更新。   </p>
+     * <p>调用 `UpdateCallback` 接口，添加或更新直播推流、直播断流、录制和截图的回调。使用此接口更新回调配置时，调用成功后，会对全部回调配置的参数做全量更新。</p>
      *
      * @param body body payload
      * @return response data
@@ -494,7 +488,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteCert</p>
      * <p>删除证书</p>
      *
-     * <p>调用 `DeleteCert` 接口，通过证书链 ID 删除一个已添加的证书。   </p>
+     * <p>调用 `DeleteCert` 接口，通过证书链 ID 删除一个已添加的证书。</p>
      *
      * @param body body payload
      * @return response data
@@ -509,7 +503,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeCertDetailSecretV2</p>
      * <p>查看证书详情</p>
      *
-     * <p>调用 `DescribeCertDetailSecretV2` 接口，通过证书 ID 或证书链 ID 查询证书详情。   </p>
+     * <p>调用 `DescribeCertDetailSecretV2` 接口，通过证书 ID 或证书链 ID 查询证书详情。</p>
      *
      * @param body body payload
      * @return response data
@@ -524,7 +518,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>listCertV2</p>
      * <p>查询证书列表</p>
      *
-     * <p>调用 `ListCertV2` 接口，查看当前账号下的证书列表。   </p>
+     * <p>调用 `ListCertV2` 接口，查看当前账号下的证书列表。</p>
      *
      * @param body body payload
      * @return response data
@@ -539,7 +533,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>createCert</p>
      * <p>添加证书</p>
      *
-     * <p>调用 `CreateCert` 接口，添加一个证书，需要填写证书名称和证书内容等参数。   </p>
+     * <p>调用 `CreateCert` 接口，添加或更新一个证书，需要填写证书名称和证书内容等参数。</p>
      *
      * @param body body payload
      * @return response data
@@ -569,7 +563,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>unbindCert</p>
      * <p>解绑证书</p>
      *
-     * <p>调用 `UnbindCert` 接口，解绑域名的 HTTPS 证书。   </p>
+     * <p>调用 `UnbindCert` 接口，解绑域名的 HTTPS 证书。</p>
      *
      * @param body body payload
      * @return response data
@@ -599,7 +593,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>enableDomain</p>
      * <p>启用域名</p>
      *
-     * <p>调用 `EnableDomain` 接口，启用指定的已被禁用的直播域名。启用后，您可以继续使用此域名进行推拉流，域名状态从`2-禁用状态`变为`0-正常状态`。   </p>
+     * <p>调用 `EnableDomain` 接口，启用指定的已被禁用的直播域名。启用后，您可以继续使用此域名进行推拉流，域名状态从`2-禁用状态`变为`0-正常状态`。</p>
      *
      * @param body body payload
      * @return response data
@@ -629,7 +623,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateDomainVhost</p>
      * <p>更新域名的域名空间</p>
      *
-     * <p>调用 `UpdateDomainVhost` 接口，修改推流域名或拉流域名所属的域名空间。   </p>
+     * <p>调用 `UpdateDomainVhost` 接口，修改推流域名或拉流域名所属的域名空间。</p>
      *
      * @param body body payload
      * @return response data
@@ -644,7 +638,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeDomain</p>
      * <p>查询域名信息</p>
      *
-     * <p>调用 `DescribeDomain` 接口，查询域名的详细信息，包括但不限于域名所属域名空间、CNAME、类型、域名状态。   </p>
+     * <p>调用 `DescribeDomain` 接口，查询域名的详细信息，包括但不限于域名所属域名空间、CNAME、类型、域名状态。</p>
      *
      * @param body body payload
      * @return response data
@@ -674,7 +668,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>disableDomain</p>
      * <p>禁用域名</p>
      *
-     * <p>调用 `DisableDomain` 接口，禁用指定的直播域名。禁用后，无法使用此域名进行推拉流，且域名状态从 `0-正常状态`变为 `2-禁用状态`。   </p>
+     * <p>调用 `DisableDomain` 接口，禁用指定的直播域名。禁用后，无法使用此域名进行推拉流，且域名状态从 `0-正常状态`变为 `2-禁用状态`。</p>
      *
      * @param body body payload
      * @return response data
@@ -989,7 +983,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>killStream</p>
      * <p>断开直播流</p>
      *
-     * <p>调用接口断开指定的在线流。</p>
+     * <p>调用 `KillStream` 接口，断开指定的直推在线流推流连接，断开后还可以重新推流；或断开指定的回源流的用户拉流，断开后还可以重新拉流播放。</p>
      *
      * @param body body payload
      * @return response data
@@ -1004,7 +998,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeClosedStreamInfoByPage</p>
      * <p>查询历史流列表</p>
      *
-     * <p>调用 `DescribeClosedStreamInfoByPage` 接口，分页查询历史流信息。   </p>
+     * <p>调用 `DescribeClosedStreamInfoByPage` 接口，分页查询历史流信息。</p>
      *
      * @param query query arguments
      * @return response data
@@ -1019,7 +1013,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeLiveStreamInfoByPage</p>
      * <p>查询在线流列表</p>
      *
-     * <p>调用 `DescribeLiveStreamInfoByPage` 接口，分页查询在线流信息。   </p>
+     * <p>调用 `DescribeLiveStreamInfoByPage` 接口，分页查询在线流信息。</p>
      *
      * @param query query arguments
      * @return response data
@@ -1079,7 +1073,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>resumeStream</p>
      * <p>解禁直播流</p>
      *
-     * <p>调用 `ResumeStream` 接口，解禁被禁推的直播流。   </p>
+     * <p>调用 `ResumeStream` 接口，解禁被禁推的直播流。</p>
      *
      * @param body body payload
      * @return response data
@@ -1094,7 +1088,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>generatePlayURL</p>
      * <p>生成拉流地址</p>
      *
-     * <p>调用 `GeneratePlayURL` 接口，生成直播拉流地址。   </p>
+     * <p>调用 `GeneratePlayURL` 接口，生成直播拉流地址。</p>
      *
      * @param body body payload
      * @return response data
@@ -1118,6 +1112,21 @@ public class LiveTrait extends BaseServiceImpl {
     public GeneratePushURLRes generatePushURL(GeneratePushURLBody body) throws Exception {
         RawResponse rawResponse = json("GeneratePushURL", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, GeneratePushURLRes.class);
+    }
+
+    /**
+     * <p>describeLiveTopPlayData</p>
+     * <p>查询 TOPN 直播流或域名的流量和带宽信息</p>
+     *
+     * <p>调用 `DescribeLiveTopPlayData` 接口，查询指定时间范围内 TOPN 直播流或 TOPN 域名的流量和带宽信息。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveTopPlayDataRes describeLiveTopPlayData(DescribeLiveTopPlayDataBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveTopPlayData", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveTopPlayDataRes.class);
     }
 
     /**
@@ -1168,7 +1177,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeLiveStreamSessionData</p>
      * <p>查询域名或单个直播流的拉流数据</p>
      *
-     * <p>调用 `DescribeLiveStreamSessionData` 接口，查询指定时间范围内域名下所有直播流或指定直播流的请求数和最大在线人数。 </p>
+     * <p>调用 `DescribeLiveStreamSessionData` 接口，查询指定时间范围内域名下所有直播流或指定直播流的请求数和最大在线人数。</p>
      *
      * @param body body payload
      * @return response data
@@ -1245,6 +1254,10 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveSourceBandwidthData` 接口，查询指定时间范围内拉流域名或回源流产生的回源带宽监控数据。</p>
      *
+     *
+     *
+     * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用 [DescribeLiveSourceTrafficData](https://www.volcengine.com/docs/6469/1126923) 接口，查询直播流或域名的回源流量和带宽监控数据。</p>
+     *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
@@ -1256,9 +1269,9 @@ public class LiveTrait extends BaseServiceImpl {
 
     /**
      * <p>describeLiveSourceTrafficData</p>
-     * <p>查询直播流或域名的回源流量监控数据</p>
+     * <p>查询直播流或域名的回源流量和带宽监控数据</p>
      *
-     * <p>调用 `DescribeLiveSourceTrafficData` 接口，查询指定时间范围内拉流域名或回源流产生的回源流量监控数据。</p>
+     * <p>调用 `DescribeLiveSourceTrafficData` 接口，查询指定时间范围内拉流域名或回源流产生的回源流量和带宽监控数据。</p>
      *
      * @param body body payload
      * @return response data
@@ -1275,6 +1288,10 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveMetricBandwidthData` 接口，查询指定时间范围内直播域名或直播流的带宽监控数据。</p>
      *
+     *
+     *
+     * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用新版 [DescribeLiveEdgeStatData](https://www.volcengine.com/docs/6469/1399004) 接口，查询直播流的上下行流量、上下行峰值带宽和请求数。</p>
+     *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
@@ -1290,6 +1307,10 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveMetricTrafficData` 接口，查询指定时间范围内直播域名或直播流的流量监控数据。</p>
      *
+     *
+     *
+     * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用新版 [DescribeLiveEdgeStatData](https://www.volcengine.com/docs/6469/1399004) 接口，查询直播流的上下行流量、上下行峰值带宽和请求数。</p>
+     *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
@@ -1297,6 +1318,21 @@ public class LiveTrait extends BaseServiceImpl {
     public DescribeLiveMetricTrafficDataRes describeLiveMetricTrafficData(DescribeLiveMetricTrafficDataBody body) throws Exception {
         RawResponse rawResponse = json("DescribeLiveMetricTrafficData", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, DescribeLiveMetricTrafficDataRes.class);
+    }
+
+    /**
+     * <p>describeLiveEdgeStatData</p>
+     * <p>查询边缘数据</p>
+     *
+     * <p>调用 `DescribeLiveEdgeStatData` 接口，查询指定协议、运营商、区域、时间范围下，直播流产生的上下行流量、上下行峰值带宽和请求数等数据。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveEdgeStatDataRes describeLiveEdgeStatData(DescribeLiveEdgeStatDataBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveEdgeStatData", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveEdgeStatDataRes.class);
     }
 
     /**
@@ -1456,11 +1492,9 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     * <p>:::warning</p>
+     *
      *
      * <p>该接口适用于**视频直播提供时移能力**的场景，如时移文件存储于视频点播 VoD 或对象存储 ToS，请联系我们，获取用量查询方法。</p>
-     *
-     * <p>:::   </p>
      *
      * @param body body payload
      * @return response data
@@ -1490,7 +1524,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteReferer</p>
      * <p>删除 Referer 黑白名单</p>
      *
-     * <p>调用 `DeleteReferer` 接口，删除 Referer 防盗链配置。   </p>
+     * <p>调用 `DeleteReferer` 接口，删除 Referer 防盗链配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1505,7 +1539,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeReferer</p>
      * <p>查询 Referer 黑白名单</p>
      *
-     * <p>调用 `DescribeReferer` 接口，查看 Referer 防盗链配置。   </p>
+     * <p>调用 `DescribeReferer` 接口，查看 Referer 防盗链配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1520,7 +1554,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeAuth</p>
      * <p>查询推拉流鉴权</p>
      *
-     * <p>调用 `DescribeAuth` 接口，查询推拉流域名的 URL 鉴权配置。   </p>
+     * <p>调用 `DescribeAuth` 接口，查询推拉流域名的 URL 鉴权配置。</p>
      *
      * @param body body payload
      * @return response data
@@ -1550,7 +1584,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateAuthKey</p>
      * <p>添加或更新推拉流鉴权</p>
      *
-     * <p>调用 `UpdateAuthKey` 接口，为推拉流域名创建或更新 URL 鉴权配置。使用此接口更新鉴权配置时，调用成功后，会对全部鉴权参数做全量更新。  </p>
+     * <p>调用 `UpdateAuthKey` 接口，为推拉流域名创建或更新 URL 鉴权配置。使用此接口更新鉴权配置时，调用成功后，会对全部鉴权参数做全量更新。</p>
      *
      * @param body body payload
      * @return response data
@@ -1815,6 +1849,36 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>createTranscodePresetBatch</p>
+     * <p>批量创建 ABR 子流转码配置</p>
+     *
+     * <p>调用 `CreateTranscodePresetBatch` 接口批量创建 ABR 子流转码配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public CreateTranscodePresetBatchRes createTranscodePresetBatch(CreateTranscodePresetBatchBody body) throws Exception {
+        RawResponse rawResponse = json("CreateTranscodePresetBatch", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateTranscodePresetBatchRes.class);
+    }
+
+    /**
+     * <p>deleteTranscodePresetBatch</p>
+     * <p>批量删除 ABR 子流转码配置</p>
+     *
+     * <p>调用 `DeleteTranscodePresetBatch` 接口批量删除 ABR 子流的转码配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeleteTranscodePresetBatchRes deleteTranscodePresetBatch(DeleteTranscodePresetBatchBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteTranscodePresetBatch", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteTranscodePresetBatchRes.class);
+    }
+
+    /**
      * <p>deleteIPAccessRule</p>
      * <p>删除ip访问限制</p>
      *
@@ -1833,7 +1897,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteRegionAccessRule</p>
      * <p>删除地域访问限制配置</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -1863,7 +1927,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateRegionAccessRule</p>
      * <p>更新地域访问限制配置</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -1893,7 +1957,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeRegionAccessRule</p>
      * <p>查询地域访问限制配置</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2073,7 +2137,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteClusterRateLimit</p>
      * <p>DeleteClusterRateLimit</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2088,7 +2152,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeClusterRateLimit</p>
      * <p>DescribeClusterRateLimit</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2103,7 +2167,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateClusterRateLimit</p>
      * <p>UpdateClusterRateLimit</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2118,7 +2182,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteUserAgentAccessRule</p>
      * <p>DeleteUserAgentAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2133,7 +2197,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeUserAgentAccessRule</p>
      * <p>DescribeUserAgentAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2148,7 +2212,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateUserAgentAccessRule</p>
      * <p>UpdateUserAgentAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2163,7 +2227,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteFormatAccessRule</p>
      * <p>DeleteFormatAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2178,7 +2242,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>describeFormatAccessRule</p>
      * <p>DescribeFormatAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2193,7 +2257,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>updateFormatAccessRule</p>
      * <p>UpdateFormatAccessRule</p>
      *
-
+     *
      *
      * @param body body payload
      * @return response data
@@ -2262,6 +2326,96 @@ public class LiveTrait extends BaseServiceImpl {
     public CreateSubtitleTranscodePresetRes createSubtitleTranscodePreset(CreateSubtitleTranscodePresetBody body) throws Exception {
         RawResponse rawResponse = json("CreateSubtitleTranscodePreset", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, CreateSubtitleTranscodePresetRes.class);
+    }
+
+    /**
+     * <p>createLivePadPreset</p>
+     * <p>创建直播垫片配置</p>
+     *
+     * <p>调用 `CreateLivePadPreset` 接口创建一个直播垫片配置，当直播流断开（包括主动断开直播流的情况）时，直播画面能够自动切换至已配置的素材或者直播的最后一帧画面。而当直播恢复后，会将垫片替换掉，恢复正常直播画面。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public CreateLivePadPresetRes createLivePadPreset(CreateLivePadPresetBody body) throws Exception {
+        RawResponse rawResponse = json("CreateLivePadPreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateLivePadPresetRes.class);
+    }
+
+    /**
+     * <p>deleteLivePadPreset</p>
+     * <p>删除直播垫片配置</p>
+     *
+     *
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DeleteLivePadPresetRes deleteLivePadPreset(DeleteLivePadPresetBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteLivePadPreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteLivePadPresetRes.class);
+    }
+
+    /**
+     * <p>stopLivePadStream</p>
+     * <p>断开正在播放垫片的直播流</p>
+     *
+     *
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public StopLivePadStreamRes stopLivePadStream(StopLivePadStreamBody body) throws Exception {
+        RawResponse rawResponse = json("StopLivePadStream", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, StopLivePadStreamRes.class);
+    }
+
+    /**
+     * <p>updateLivePadPreset</p>
+     * <p>更新直播垫片配置</p>
+     *
+     *
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateLivePadPresetRes updateLivePadPreset(UpdateLivePadPresetBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateLivePadPreset", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateLivePadPresetRes.class);
+    }
+
+    /**
+     * <p>describeLivePadStreamList</p>
+     * <p>查询正在播放垫片的直播流</p>
+     *
+     *
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLivePadStreamListRes describeLivePadStreamList(DescribeLivePadStreamListBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLivePadStreamList", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLivePadStreamListRes.class);
+    }
+
+    /**
+     * <p>describeLivePadPresetDetail</p>
+     * <p>查询直播垫片配置列表</p>
+     *
+     *
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLivePadPresetDetailRes describeLivePadPresetDetail(DescribeLivePadPresetDetailBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLivePadPresetDetail", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLivePadPresetDetailRes.class);
     }
 
 }

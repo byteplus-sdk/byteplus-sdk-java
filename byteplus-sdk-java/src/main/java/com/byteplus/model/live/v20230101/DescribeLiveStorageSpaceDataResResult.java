@@ -26,7 +26,7 @@ public final class DescribeLiveStorageSpaceDataResResult  {
      * <p>聚合时间粒度。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Aggregation")
-    private Integer aggregation;
+    private Boolean aggregation;
 
     /**
      * <p>域名空间列表。</p>

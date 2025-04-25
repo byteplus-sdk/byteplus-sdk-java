@@ -75,9 +75,7 @@ public final class DescribeLiveStreamSessionDataResResult  {
      *
      * <p>- `btvn`：广电；</p>
      *
-     * <p>- `huashu`：华数；</p>
-     *
-     * <p>- `other`：其他。</p>
+     * <p>- `huashu`：华数。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "ISPList")
     private List<String> iSPList;
@@ -92,7 +90,7 @@ public final class DescribeLiveStreamSessionDataResResult  {
      * <p>CDN 节点 IP 所属的区域列表，缺省情况下表示所有区域。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "RegionList")
-    private List<com.byteplus.model.live.v20230101.RespRegion> regionList;
+    private List<DescribeLiveStreamSessionDataResResultRegionListItem> regionList;
 
     /**
      * <p>查询的开始时间，RFC3339 格式的时间戳，精度为秒。</p>
@@ -108,14 +106,6 @@ public final class DescribeLiveStreamSessionDataResResult  {
 
     /**
      * <p>数据聚合的时间粒度，单位为秒。</p>
-     *
-     *
-     *
-     * <p>- `60`：1 分钟；</p>
-     *
-     * <p>- `300`：5 分钟；</p>
-     *
-     * <p>- `3600`：1 天。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Aggregation")
     private Integer aggregation;
@@ -128,8 +118,6 @@ public final class DescribeLiveStreamSessionDataResResult  {
      * <p>- `ISP`：运营商；</p>
      *
      * <p>- `Protocol`：推拉流协议；</p>
-     *
-     * <p>- `Referer`：请求的 Referer 信息。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "DetailField")
     private List<String> detailField;
@@ -157,6 +145,12 @@ public final class DescribeLiveStreamSessionDataResResult  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "SessionDetailDataList")
     private List<DescribeLiveStreamSessionDataResResultSessionDetailDataListItem> sessionDetailDataList;
+
+    /**
+     * <p>在指定时间范围内，所有域名和协议的总边缘请求命中率。用于评估边缘请求缓存机制在减少源服务器负载方面的有效性。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "TotalHitRate")
+    private Double totalHitRate;
 
     @Override
     public String toString() {

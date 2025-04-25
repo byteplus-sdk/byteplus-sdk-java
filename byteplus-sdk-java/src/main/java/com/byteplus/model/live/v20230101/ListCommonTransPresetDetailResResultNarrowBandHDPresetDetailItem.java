@@ -188,7 +188,7 @@ public final class ListCommonTransPresetDetailResResultNarrowBandHDPresetDetailI
     private Boolean hVSPre;
 
     /**
-     * <p>视频高度。</p>
+     * <p>视频高度，单位为 px。</p>
      *
      * <p>:::tip</p>
      *
@@ -204,7 +204,7 @@ public final class ListCommonTransPresetDetailResResultNarrowBandHDPresetDetailI
     private Integer height;
 
     /**
-     * <p>长边长度。</p>
+     * <p>长边长度，单位为 px。</p>
      *
      * <p>:::tip</p>
      *
@@ -362,7 +362,7 @@ public final class ListCommonTransPresetDetailResResultNarrowBandHDPresetDetailI
     private Boolean sITI;
 
     /**
-     * <p>短边长度。</p>
+     * <p>短边长度，单位为 px。</p>
      *
      * <p>:::tip</p>
      *
@@ -602,7 +602,7 @@ public final class ListCommonTransPresetDetailResResultNarrowBandHDPresetDetailI
     private String watermark;
 
     /**
-     * <p>视频宽度。</p>
+     * <p>视频宽度，单位为 px。</p>
      *
      * <p>:::tip</p>
      *

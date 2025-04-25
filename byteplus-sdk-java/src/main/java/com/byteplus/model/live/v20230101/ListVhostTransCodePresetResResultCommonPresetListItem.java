@@ -10,7 +10,7 @@ import com.alibaba.fastjson.JSON;
 public final class ListVhostTransCodePresetResResultCommonPresetListItem  {
 
     /**
-     * <p>应用名称。</p>
+     * <p>直播流地址的 AppName 字段。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "App")
     private String app;

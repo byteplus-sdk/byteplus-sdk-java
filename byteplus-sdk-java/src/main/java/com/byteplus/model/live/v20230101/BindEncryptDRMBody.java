@@ -66,6 +66,12 @@ public final class BindEncryptDRMBody  {
      * <p>- `true`：开启；</p>
      *
      * <p>- `fasle`：不开启。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>源流和转码流至少有一个需要开启录制。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "EncryptOriginStream")
     private Boolean encryptOriginStream;
@@ -76,6 +82,12 @@ public final class BindEncryptDRMBody  {
      * <p>- `true`：开启；</p>
      *
      * <p>- `fasle`：不开启。</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>源流和转码流至少有一个需要开启录制。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "EncryptTranscodeStream")
     private Boolean encryptTranscodeStream;

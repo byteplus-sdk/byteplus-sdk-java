@@ -16,13 +16,35 @@ public final class ListVhostTransCodePresetBody  {
     private String vhost;
 
     /**
-     * <p>是否是hls abr 请求</p>
+     * <p>是否查询基于 HLS 协议的 ABR 子流转码配置，默认为空。</p>
+     *
+     * <p>- `true`: 是</p>
+     *
+     * <p>- `false`: 否</p>
+     *
+     * <p>:::tip</p>
+     *
+     * <p>`IsHlsAbr` 和 `IsDashAbr` 均为 `true` 时，表示查询同时基于 HLS 协议和 DASH 协议的 ABR 子流转码配置。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "IsHlsAbr")
     private Boolean isHlsAbr;
 
     /**
-     * <p>是否是dash abr 请求</p>
+     * <p>是否查询基于 DASH 协议的 ABR 子流转码配置，默认为空。</p>
+     *
+     * <p>- `true`: 是</p>
+     *
+     * <p>- `false`: 否</p>
+     *
+     *
+     *
+     * <p>:::tip</p>
+     *
+     * <p>`IsHlsAbr` 和 `IsDashAbr` 均为 `true` 时，表示查询同时基于 HLS 协议和 DASH 协议的 ABR 子流转码配置。</p>
+     *
+     * <p>:::</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "IsDashAbr")
     private Boolean isDashAbr;

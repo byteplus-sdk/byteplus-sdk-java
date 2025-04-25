@@ -52,6 +52,12 @@ public final class DescribeLiveStreamSessionDataResResultSessionDetailDataListIt
     @com.alibaba.fastjson.annotation.JSONField(name = "SessionDataList")
     private List<DescribeLiveStreamSessionDataResResultSessionDetailDataListItemSessionDataListItem> sessionDataList;
 
+    /**
+     * <p>数据按特定维度（如域名）拆分后，在指定查询时间范围内各个维度的总边缘请求命中率。用于评估不同数据片段下的缓存效率。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "TotalHitRate")
+    private Float totalHitRate;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

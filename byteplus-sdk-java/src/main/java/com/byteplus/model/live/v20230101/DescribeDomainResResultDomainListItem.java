@@ -34,7 +34,9 @@ public final class DescribeDomainResResultDomainListItem  {
      *
      * <p>- `4`：审核被驳回，审核不通过，需要重新创建并审核；</p>
      *
-     * <p>- `5`：欠费关停。</p>
+     * <p>- `5`：欠费关停；</p>
+     *
+     * <p>- `6`：域名未备案被封禁。</p>
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "Status")
     private Integer status;
@@ -128,6 +130,16 @@ public final class DescribeDomainResResultDomainListItem  {
      */
     @com.alibaba.fastjson.annotation.JSONField(name = "CNAME")
     private String cNAME;
+
+    /**
+     * <p>是否开启 HTTP/2 协议。取值如下：</p>
+     *
+     * <p>- `false`: 关闭 HTTP/2 协议。</p>
+     *
+     * <p>- `true`: 开启 HTTP/2 协议。</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "HTTP2")
+    private Boolean hTTP2;
 
     @Override
     public String toString() {

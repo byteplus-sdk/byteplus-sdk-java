@@ -7,6 +7,7 @@ public class Const {
 
     public static final String REGION_CN_NORTH_1 = "cn-north-1";
     public static final String REGION_AP_SINGAPORE_1 = "ap-singapore-1";
+    public static final String REGION_AP_SOUTHEAST_1 = "ap-southeast-1";
     public static final String REGION_US_EASE_1 = "us-east-1";
 
     public static final String INNER_REGION_CN_NORTH_1 = "cn-north-1-inner";

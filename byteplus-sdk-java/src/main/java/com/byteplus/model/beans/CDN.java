@@ -394,6 +394,31 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class ArgSegment {
+
+        @JSONField(name = "Level")
+        Long Level;
+
+        @JSONField(name = "SplitSymbol")
+        String SplitSymbol;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ArgumentRule {
+
+        @JSONField(name = "GeneralParamRule")
+        GeneralParamRule GeneralParamRule;
+
+        @JSONField(name = "KeepOriginArg")
+        Boolean KeepOriginArg;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class AuthCacheAction {
 
         @JSONField(name = "Action")
@@ -462,6 +487,77 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class AuthRewriteM3U8Rule {
+
+        @JSONField(name = "RewriteM3U8Tag")
+        RewriteM3U8TagExtend RewriteM3U8Tag;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AuthRewriteMPDRule {
+
+        @JSONField(name = "MpdVarExpand")
+        Boolean MpdVarExpand;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AuthRulesF {
+
+        @JSONField(name = "ArgumentRule")
+        ArgumentRule ArgumentRule;
+
+        @JSONField(name = "AuthTokenCalRule")
+        AuthTokenCalRule AuthTokenCalRule;
+
+        @JSONField(name = "CustomRewrite")
+        CustomRewrite CustomRewrite;
+
+        @JSONField(name = "ExpireTimeRule")
+        ExpireTimeRule ExpireTimeRule;
+
+        @JSONField(name = "RewriteFormat")
+        String RewriteFormat;
+
+        @JSONField(name = "RewriteM3U8")
+        AuthRewriteM3U8Rule RewriteM3U8;
+
+        @JSONField(name = "RewriteMPD")
+        AuthRewriteMPDRule RewriteMPD;
+
+        @JSONField(name = "SecretKey")
+        AuthSecretKey SecretKey;
+
+        @JSONField(name = "SignCapRule")
+        ParamCapRule SignCapRule;
+
+        @JSONField(name = "Condition")
+        Condition Condition;
+
+        @JSONField(name = "RuleName")
+        String RuleName;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AuthSecretKey {
+
+        @JSONField(name = "BackupSecretKey")
+        String BackupSecretKey;
+
+        @JSONField(name = "MasterSecretKey")
+        String MasterSecretKey;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class AuthTimeoutAction {
 
         @JSONField(name = "Action")
@@ -469,6 +565,20 @@ public class CDN {
 
         @JSONField(name = "Time")
         Long Time;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AuthTokenCalRule {
+
+        @JSONField(name = "ParamCalRules")
+        List<String> ParamCalRules;
+
+        @JSONField(name = "SignJoinSymbol")
+        String SignJoinSymbol;
+
+        @JSONField(name = "SignParam")
+        List<CustomSignedUrlParam> SignParam;
     }
 
     @Data
@@ -1528,7 +1638,61 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class CustomRewrite {
+
+        @JSONField(name = "RewriteParam")
+        List<CustomRewriteParam> RewriteParam;
+
+        @JSONField(name = "RewriteRule")
+        CustomRewriteRule RewriteRule;
+
+        @JSONField(name = "SignJoinSymbol")
+        String SignJoinSymbol;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CustomRewriteParam {
+
+        @JSONField(name = "ParamType")
+        String ParamType;
+
+        @JSONField(name = "ParentLinkUriParamSup")
+        UriParamSup ParentLinkUriParamSup;
+
+        @JSONField(name = "ParentLinkUrlParam")
+        ParamCapRule ParentLinkUrlParam;
+
+        @JSONField(name = "SupContent")
+        String SupContent;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CustomRewriteRule {
+
+        @JSONField(name = "CapMode")
+        String CapMode;
+
+        @JSONField(name = "ParamName")
+        String ParamName;
+
+        @JSONField(name = "UriLevel")
+        Long UriLevel;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class CustomSignedUrlParam {
+
+        @JSONField(name = "CookieToken")
+        String CookieToken;
+
+        @JSONField(name = "ParamSource")
+        String ParamSource;
 
         @JSONField(name = "ParamType")
         String ParamType;
@@ -4635,6 +4799,20 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class ExpireTimeRule {
+
+        @JSONField(name = "Duration")
+        Long Duration;
+
+        @JSONField(name = "ExpTimeCapRule")
+        ParamCapRule ExpTimeCapRule;
+
+        @JSONField(name = "TimeFormat")
+        String TimeFormat;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class FeatureConfig {
 
         @JSONField(name = "OriginV2")
@@ -4664,6 +4842,17 @@ public class CDN {
 
         @JSONField(name = "StatusCode")
         String StatusCode;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class GeneralParamRule {
+
+        @JSONField(name = "ParentLinkParamInherit")
+        String ParentLinkParamInherit;
+
+        @JSONField(name = "SubLinkParamRule")
+        SubLinkParamRule SubLinkParamRule;
     }
 
     @Data
@@ -5676,8 +5865,14 @@ public class CDN {
     @Accessors(chain = true)
     public static class ParamCapRule {
 
+        @JSONField(name = "ArgSegment")
+        ArgSegment ArgSegment;
+
         @JSONField(name = "CapMode")
         String CapMode;
+
+        @JSONField(name = "CustomValue")
+        String CustomValue;
 
         @JSONField(name = "ParamName")
         String ParamName;
@@ -6144,6 +6339,17 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class RewriteM3U8TagExtend {
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+
+        @JSONField(name = "Tags")
+        List<String> Tags;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class RewriteM3u8Rule {
 
         @JSONField(name = "DeleteParam")
@@ -6241,6 +6447,9 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class SignedUrlAuth {
+
+        @JSONField(name = "AuthRulesF")
+        List<AuthRulesF> AuthRulesF;
 
         @JSONField(name = "SignedUrlAuthRules")
         List<SignedUrlAuthRule> SignedUrlAuthRules;
@@ -6426,6 +6635,17 @@ public class CDN {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class SubLinkParamRule {
+
+        @JSONField(name = "InheritMode")
+        String InheritMode;
+
+        @JSONField(name = "KeepSubLinkArg")
+        String KeepSubLinkArg;
     }
 
     @Data

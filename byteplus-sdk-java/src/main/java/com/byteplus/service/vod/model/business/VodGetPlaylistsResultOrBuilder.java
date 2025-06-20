@@ -4,14 +4,14 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodGetPlaylistsResultOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodPlaylistInfo> 
-      getPlaylistsList();
+  java.util.List<com.byteplus.service.vod.model.business.VodPlaylistInfo>
+  getPlaylistsList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
    */
@@ -23,19 +23,19 @@ public interface VodGetPlaylistsResultOrBuilder extends
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> 
-      getPlaylistsOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>
+  getPlaylistsOrBuilderList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
    */
   com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder getPlaylistsOrBuilder(
-      int index);
+          int index);
 
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.InvalidPlaylist> 
-      getInvalidPlaylistsList();
+  java.util.List<com.byteplus.service.vod.model.business.InvalidPlaylist>
+  getInvalidPlaylistsList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
    */
@@ -47,11 +47,17 @@ public interface VodGetPlaylistsResultOrBuilder extends
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> 
-      getInvalidPlaylistsOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>
+  getInvalidPlaylistsOrBuilderList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
    */
   com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder getInvalidPlaylistsOrBuilder(
-      int index);
+          int index);
+
+  /**
+   * <code>int32 Total = 3;</code>
+   * @return The total.
+   */
+  int getTotal();
 }

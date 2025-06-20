@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodPlaylistVideoInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistVideoInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistVideoInfo)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>string Vid = 1;</code>
@@ -17,23 +17,55 @@ public interface VodPlaylistVideoInfoOrBuilder extends
    * @return The bytes for vid.
    */
   com.google.protobuf.ByteString
-      getVidBytes();
+  getVidBytes();
 
   /**
-   * <code>double Duration = 2;</code>
+   * <code>string Title = 2;</code>
+   * @return The title.
+   */
+  java.lang.String getTitle();
+  /**
+   * <code>string Title = 2;</code>
+   * @return The bytes for title.
+   */
+  com.google.protobuf.ByteString
+  getTitleBytes();
+
+  /**
+   * <code>double Duration = 3;</code>
    * @return The duration.
    */
   double getDuration();
 
   /**
-   * <code>string PosterUrl = 3;</code>
+   * <code>string PosterUrl = 4;</code>
    * @return The posterUrl.
    */
   java.lang.String getPosterUrl();
   /**
-   * <code>string PosterUrl = 3;</code>
+   * <code>string PosterUrl = 4;</code>
    * @return The bytes for posterUrl.
    */
   com.google.protobuf.ByteString
-      getPosterUrlBytes();
+  getPosterUrlBytes();
+
+  /**
+   * <pre>
+   * 视频状态: Published, Unpublished, Deleted
+   * </pre>
+   *
+   * <code>string VideoStatus = 5;</code>
+   * @return The videoStatus.
+   */
+  java.lang.String getVideoStatus();
+  /**
+   * <pre>
+   * 视频状态: Published, Unpublished, Deleted
+   * </pre>
+   *
+   * <code>string VideoStatus = 5;</code>
+   * @return The bytes for videoStatus.
+   */
+  com.google.protobuf.ByteString
+  getVideoStatusBytes();
 }

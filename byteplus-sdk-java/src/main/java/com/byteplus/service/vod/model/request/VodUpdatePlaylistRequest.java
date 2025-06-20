@@ -7,22 +7,23 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest}
  */
 public final class VodUpdatePlaylistRequest extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest)
-    VodUpdatePlaylistRequestOrBuilder {
-private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest)
+        VodUpdatePlaylistRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
   // Use VodUpdatePlaylistRequest.newBuilder() to construct.
   private VodUpdatePlaylistRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private VodUpdatePlaylistRequest() {
+    spaceName_ = "";
     id_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
+          UnusedPrivateParameter unused) {
     return new VodUpdatePlaylistRequest();
   }
 
@@ -32,15 +33,15 @@ private static final long serialVersionUID = 0L;
     return this.unknownFields;
   }
   private VodUpdatePlaylistRequest(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
+            com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -52,10 +53,16 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            id_ = s;
+            spaceName_ = s;
             break;
           }
           case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            id_ = s;
+            break;
+          }
+          case 26: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (name_ != null) {
               subBuilder = name_.toBuilder();
@@ -68,7 +75,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 26: {
+          case 34: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (format_ != null) {
               subBuilder = format_.toBuilder();
@@ -81,7 +88,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 34: {
+          case 42: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (codec_ != null) {
               subBuilder = codec_.toBuilder();
@@ -94,7 +101,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 42: {
+          case 50: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (definition_ != null) {
               subBuilder = definition_.toBuilder();
@@ -107,7 +114,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 50: {
+          case 58: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (vids_ != null) {
               subBuilder = vids_.toBuilder();
@@ -120,7 +127,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 58: {
+          case 66: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (startTime_ != null) {
               subBuilder = startTime_.toBuilder();
@@ -133,7 +140,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 66: {
+          case 74: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (endTime_ != null) {
               subBuilder = endTime_.toBuilder();
@@ -146,7 +153,7 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
-          case 74: {
+          case 82: {
             com.google.protobuf.StringValue.Builder subBuilder = null;
             if (cycles_ != null) {
               subBuilder = cycles_.toBuilder();
@@ -161,7 +168,7 @@ private static final long serialVersionUID = 0L;
           }
           default: {
             if (!parseUnknownField(
-                input, unknownFields, extensionRegistry, tag)) {
+                    input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -172,33 +179,71 @@ private static final long serialVersionUID = 0L;
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e).setUnfinishedMessage(this);
+              e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
+  getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
+  internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder.class);
+            .ensureFieldAccessorsInitialized(
+                    com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder.class);
   }
 
-  public static final int ID_FIELD_NUMBER = 1;
+  public static final int SPACENAME_FIELD_NUMBER = 1;
+  private volatile java.lang.Object spaceName_;
+  /**
+   * <code>string SpaceName = 1;</code>
+   * @return The spaceName.
+   */
+  @java.lang.Override
+  public java.lang.String getSpaceName() {
+    java.lang.Object ref = spaceName_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      spaceName_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string SpaceName = 1;</code>
+   * @return The bytes for spaceName.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+  getSpaceNameBytes() {
+    java.lang.Object ref = spaceName_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+      spaceName_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object id_;
   /**
    * <pre>
    * 播放列表Id
    * </pre>
    *
-   * <code>string Id = 1;</code>
+   * <code>string Id = 2;</code>
    * @return The id.
    */
   @java.lang.Override
@@ -207,8 +252,8 @@ private static final long serialVersionUID = 0L;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       id_ = s;
       return s;
@@ -219,17 +264,17 @@ private static final long serialVersionUID = 0L;
    * 播放列表Id
    * </pre>
    *
-   * <code>string Id = 1;</code>
+   * <code>string Id = 2;</code>
    * @return The bytes for id.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getIdBytes() {
+  getIdBytes() {
     java.lang.Object ref = id_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
       id_ = b;
       return b;
     } else {
@@ -237,10 +282,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int NAME_FIELD_NUMBER = 2;
+  public static final int NAME_FIELD_NUMBER = 3;
   private com.google.protobuf.StringValue name_;
   /**
-   * <code>.google.protobuf.StringValue Name = 2;</code>
+   * <code>.google.protobuf.StringValue Name = 3;</code>
    * @return Whether the name field is set.
    */
   @java.lang.Override
@@ -248,7 +293,7 @@ private static final long serialVersionUID = 0L;
     return name_ != null;
   }
   /**
-   * <code>.google.protobuf.StringValue Name = 2;</code>
+   * <code>.google.protobuf.StringValue Name = 3;</code>
    * @return The name.
    */
   @java.lang.Override
@@ -256,21 +301,21 @@ private static final long serialVersionUID = 0L;
     return name_ == null ? com.google.protobuf.StringValue.getDefaultInstance() : name_;
   }
   /**
-   * <code>.google.protobuf.StringValue Name = 2;</code>
+   * <code>.google.protobuf.StringValue Name = 3;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getNameOrBuilder() {
     return getName();
   }
 
-  public static final int FORMAT_FIELD_NUMBER = 3;
+  public static final int FORMAT_FIELD_NUMBER = 4;
   private com.google.protobuf.StringValue format_;
   /**
    * <pre>
    * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Format = 3;</code>
+   * <code>.google.protobuf.StringValue Format = 4;</code>
    * @return Whether the format field is set.
    */
   @java.lang.Override
@@ -282,7 +327,7 @@ private static final long serialVersionUID = 0L;
    * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Format = 3;</code>
+   * <code>.google.protobuf.StringValue Format = 4;</code>
    * @return The format.
    */
   @java.lang.Override
@@ -294,21 +339,21 @@ private static final long serialVersionUID = 0L;
    * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Format = 3;</code>
+   * <code>.google.protobuf.StringValue Format = 4;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getFormatOrBuilder() {
     return getFormat();
   }
 
-  public static final int CODEC_FIELD_NUMBER = 4;
+  public static final int CODEC_FIELD_NUMBER = 5;
   private com.google.protobuf.StringValue codec_;
   /**
    * <pre>
    * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Codec = 4;</code>
+   * <code>.google.protobuf.StringValue Codec = 5;</code>
    * @return Whether the codec field is set.
    */
   @java.lang.Override
@@ -320,7 +365,7 @@ private static final long serialVersionUID = 0L;
    * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Codec = 4;</code>
+   * <code>.google.protobuf.StringValue Codec = 5;</code>
    * @return The codec.
    */
   @java.lang.Override
@@ -332,21 +377,21 @@ private static final long serialVersionUID = 0L;
    * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Codec = 4;</code>
+   * <code>.google.protobuf.StringValue Codec = 5;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getCodecOrBuilder() {
     return getCodec();
   }
 
-  public static final int DEFINITION_FIELD_NUMBER = 5;
+  public static final int DEFINITION_FIELD_NUMBER = 6;
   private com.google.protobuf.StringValue definition_;
   /**
    * <pre>
    * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Definition = 5;</code>
+   * <code>.google.protobuf.StringValue Definition = 6;</code>
    * @return Whether the definition field is set.
    */
   @java.lang.Override
@@ -358,7 +403,7 @@ private static final long serialVersionUID = 0L;
    * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Definition = 5;</code>
+   * <code>.google.protobuf.StringValue Definition = 6;</code>
    * @return The definition.
    */
   @java.lang.Override
@@ -370,21 +415,21 @@ private static final long serialVersionUID = 0L;
    * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Definition = 5;</code>
+   * <code>.google.protobuf.StringValue Definition = 6;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getDefinitionOrBuilder() {
     return getDefinition();
   }
 
-  public static final int VIDS_FIELD_NUMBER = 6;
+  public static final int VIDS_FIELD_NUMBER = 7;
   private com.google.protobuf.StringValue vids_;
   /**
    * <pre>
    * 以,分隔，最多100个
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Vids = 6;</code>
+   * <code>.google.protobuf.StringValue Vids = 7;</code>
    * @return Whether the vids field is set.
    */
   @java.lang.Override
@@ -396,7 +441,7 @@ private static final long serialVersionUID = 0L;
    * 以,分隔，最多100个
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Vids = 6;</code>
+   * <code>.google.protobuf.StringValue Vids = 7;</code>
    * @return The vids.
    */
   @java.lang.Override
@@ -408,21 +453,21 @@ private static final long serialVersionUID = 0L;
    * 以,分隔，最多100个
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Vids = 6;</code>
+   * <code>.google.protobuf.StringValue Vids = 7;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getVidsOrBuilder() {
     return getVids();
   }
 
-  public static final int STARTTIME_FIELD_NUMBER = 7;
+  public static final int STARTTIME_FIELD_NUMBER = 8;
   private com.google.protobuf.StringValue startTime_;
   /**
    * <pre>
    * 以秒为单位的时间戳
    * </pre>
    *
-   * <code>.google.protobuf.StringValue StartTime = 7;</code>
+   * <code>.google.protobuf.StringValue StartTime = 8;</code>
    * @return Whether the startTime field is set.
    */
   @java.lang.Override
@@ -434,7 +479,7 @@ private static final long serialVersionUID = 0L;
    * 以秒为单位的时间戳
    * </pre>
    *
-   * <code>.google.protobuf.StringValue StartTime = 7;</code>
+   * <code>.google.protobuf.StringValue StartTime = 8;</code>
    * @return The startTime.
    */
   @java.lang.Override
@@ -446,21 +491,21 @@ private static final long serialVersionUID = 0L;
    * 以秒为单位的时间戳
    * </pre>
    *
-   * <code>.google.protobuf.StringValue StartTime = 7;</code>
+   * <code>.google.protobuf.StringValue StartTime = 8;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getStartTimeOrBuilder() {
     return getStartTime();
   }
 
-  public static final int ENDTIME_FIELD_NUMBER = 8;
+  public static final int ENDTIME_FIELD_NUMBER = 9;
   private com.google.protobuf.StringValue endTime_;
   /**
    * <pre>
    * 以秒为单位的时间戳，大于StartTime
    * </pre>
    *
-   * <code>.google.protobuf.StringValue EndTime = 8;</code>
+   * <code>.google.protobuf.StringValue EndTime = 9;</code>
    * @return Whether the endTime field is set.
    */
   @java.lang.Override
@@ -472,7 +517,7 @@ private static final long serialVersionUID = 0L;
    * 以秒为单位的时间戳，大于StartTime
    * </pre>
    *
-   * <code>.google.protobuf.StringValue EndTime = 8;</code>
+   * <code>.google.protobuf.StringValue EndTime = 9;</code>
    * @return The endTime.
    */
   @java.lang.Override
@@ -484,21 +529,21 @@ private static final long serialVersionUID = 0L;
    * 以秒为单位的时间戳，大于StartTime
    * </pre>
    *
-   * <code>.google.protobuf.StringValue EndTime = 8;</code>
+   * <code>.google.protobuf.StringValue EndTime = 9;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getEndTimeOrBuilder() {
     return getEndTime();
   }
 
-  public static final int CYCLES_FIELD_NUMBER = 9;
+  public static final int CYCLES_FIELD_NUMBER = 10;
   private com.google.protobuf.StringValue cycles_;
   /**
    * <pre>
    * 0代表无限循环
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Cycles = 9;</code>
+   * <code>.google.protobuf.StringValue Cycles = 10;</code>
    * @return Whether the cycles field is set.
    */
   @java.lang.Override
@@ -510,7 +555,7 @@ private static final long serialVersionUID = 0L;
    * 0代表无限循环
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Cycles = 9;</code>
+   * <code>.google.protobuf.StringValue Cycles = 10;</code>
    * @return The cycles.
    */
   @java.lang.Override
@@ -522,7 +567,7 @@ private static final long serialVersionUID = 0L;
    * 0代表无限循环
    * </pre>
    *
-   * <code>.google.protobuf.StringValue Cycles = 9;</code>
+   * <code>.google.protobuf.StringValue Cycles = 10;</code>
    */
   @java.lang.Override
   public com.google.protobuf.StringValueOrBuilder getCyclesOrBuilder() {
@@ -542,33 +587,36 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
+          throws java.io.IOException {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, spaceName_);
+    }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, id_);
     }
     if (name_ != null) {
-      output.writeMessage(2, getName());
+      output.writeMessage(3, getName());
     }
     if (format_ != null) {
-      output.writeMessage(3, getFormat());
+      output.writeMessage(4, getFormat());
     }
     if (codec_ != null) {
-      output.writeMessage(4, getCodec());
+      output.writeMessage(5, getCodec());
     }
     if (definition_ != null) {
-      output.writeMessage(5, getDefinition());
+      output.writeMessage(6, getDefinition());
     }
     if (vids_ != null) {
-      output.writeMessage(6, getVids());
+      output.writeMessage(7, getVids());
     }
     if (startTime_ != null) {
-      output.writeMessage(7, getStartTime());
+      output.writeMessage(8, getStartTime());
     }
     if (endTime_ != null) {
-      output.writeMessage(8, getEndTime());
+      output.writeMessage(9, getEndTime());
     }
     if (cycles_ != null) {
-      output.writeMessage(9, getCycles());
+      output.writeMessage(10, getCycles());
     }
     unknownFields.writeTo(output);
   }
@@ -579,40 +627,43 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, spaceName_);
+    }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, id_);
     }
     if (name_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getName());
+              .computeMessageSize(3, getName());
     }
     if (format_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getFormat());
+              .computeMessageSize(4, getFormat());
     }
     if (codec_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getCodec());
+              .computeMessageSize(5, getCodec());
     }
     if (definition_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getDefinition());
+              .computeMessageSize(6, getDefinition());
     }
     if (vids_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getVids());
+              .computeMessageSize(7, getVids());
     }
     if (startTime_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getStartTime());
+              .computeMessageSize(8, getStartTime());
     }
     if (endTime_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getEndTime());
+              .computeMessageSize(9, getEndTime());
     }
     if (cycles_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getCycles());
+              .computeMessageSize(10, getCycles());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -622,54 +673,56 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest)) {
       return super.equals(obj);
     }
     com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest other = (com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest) obj;
 
+    if (!getSpaceName()
+            .equals(other.getSpaceName())) return false;
     if (!getId()
-        .equals(other.getId())) return false;
+            .equals(other.getId())) return false;
     if (hasName() != other.hasName()) return false;
     if (hasName()) {
       if (!getName()
-          .equals(other.getName())) return false;
+              .equals(other.getName())) return false;
     }
     if (hasFormat() != other.hasFormat()) return false;
     if (hasFormat()) {
       if (!getFormat()
-          .equals(other.getFormat())) return false;
+              .equals(other.getFormat())) return false;
     }
     if (hasCodec() != other.hasCodec()) return false;
     if (hasCodec()) {
       if (!getCodec()
-          .equals(other.getCodec())) return false;
+              .equals(other.getCodec())) return false;
     }
     if (hasDefinition() != other.hasDefinition()) return false;
     if (hasDefinition()) {
       if (!getDefinition()
-          .equals(other.getDefinition())) return false;
+              .equals(other.getDefinition())) return false;
     }
     if (hasVids() != other.hasVids()) return false;
     if (hasVids()) {
       if (!getVids()
-          .equals(other.getVids())) return false;
+              .equals(other.getVids())) return false;
     }
     if (hasStartTime() != other.hasStartTime()) return false;
     if (hasStartTime()) {
       if (!getStartTime()
-          .equals(other.getStartTime())) return false;
+              .equals(other.getStartTime())) return false;
     }
     if (hasEndTime() != other.hasEndTime()) return false;
     if (hasEndTime()) {
       if (!getEndTime()
-          .equals(other.getEndTime())) return false;
+              .equals(other.getEndTime())) return false;
     }
     if (hasCycles() != other.hasCycles()) return false;
     if (hasCycles()) {
       if (!getCycles()
-          .equals(other.getCycles())) return false;
+              .equals(other.getCycles())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -682,6 +735,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + SPACENAME_FIELD_NUMBER;
+    hash = (53 * hash) + getSpaceName().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
     if (hasName()) {
@@ -722,73 +777,73 @@ private static final long serialVersionUID = 0L;
   }
 
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -802,12 +857,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -815,20 +870,20 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest)
-      com.byteplus.service.vod.model.request.VodUpdatePlaylistRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodUpdatePlaylistRequest)
+          com.byteplus.service.vod.model.request.VodUpdatePlaylistRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+    getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder.class);
+              .ensureFieldAccessorsInitialized(
+                      com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.newBuilder()
@@ -837,7 +892,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -849,6 +904,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      spaceName_ = "";
+
       id_ = "";
 
       if (nameBuilder_ == null) {
@@ -904,7 +961,7 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
+    getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodUpdatePlaylistRequest_descriptor;
     }
 
@@ -925,6 +982,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest buildPartial() {
       com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest result = new com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest(this);
+      result.spaceName_ = spaceName_;
       result.id_ = id_;
       if (nameBuilder_ == null) {
         result.name_ = name_;
@@ -976,30 +1034,30 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -1014,6 +1072,10 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest other) {
       if (other == com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.getDefaultInstance()) return this;
+      if (!other.getSpaceName().isEmpty()) {
+        spaceName_ = other.spaceName_;
+        onChanged();
+      }
       if (!other.getId().isEmpty()) {
         id_ = other.id_;
         onChanged();
@@ -1054,9 +1116,9 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -1071,20 +1133,96 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private java.lang.Object spaceName_ = "";
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @return The spaceName.
+     */
+    public java.lang.String getSpaceName() {
+      java.lang.Object ref = spaceName_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        spaceName_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @return The bytes for spaceName.
+     */
+    public com.google.protobuf.ByteString
+    getSpaceNameBytes() {
+      java.lang.Object ref = spaceName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
+        spaceName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @param value The spaceName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSpaceName(
+            java.lang.String value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+
+      spaceName_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSpaceName() {
+
+      spaceName_ = getDefaultInstance().getSpaceName();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @param value The bytes for spaceName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSpaceNameBytes(
+            com.google.protobuf.ByteString value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
+      spaceName_ = value;
+      onChanged();
+      return this;
+    }
+
     private java.lang.Object id_ = "";
     /**
      * <pre>
      * 播放列表Id
      * </pre>
      *
-     * <code>string Id = 1;</code>
+     * <code>string Id = 2;</code>
      * @return The id.
      */
     public java.lang.String getId() {
       java.lang.Object ref = id_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
+                (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         id_ = s;
         return s;
@@ -1097,16 +1235,16 @@ private static final long serialVersionUID = 0L;
      * 播放列表Id
      * </pre>
      *
-     * <code>string Id = 1;</code>
+     * <code>string Id = 2;</code>
      * @return The bytes for id.
      */
     public com.google.protobuf.ByteString
-        getIdBytes() {
+    getIdBytes() {
       java.lang.Object ref = id_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
         id_ = b;
         return b;
       } else {
@@ -1118,16 +1256,16 @@ private static final long serialVersionUID = 0L;
      * 播放列表Id
      * </pre>
      *
-     * <code>string Id = 1;</code>
+     * <code>string Id = 2;</code>
      * @param value The id to set.
      * @return This builder for chaining.
      */
     public Builder setId(
-        java.lang.String value) {
+            java.lang.String value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  
+        throw new NullPointerException();
+      }
+
       id_ = value;
       onChanged();
       return this;
@@ -1137,11 +1275,11 @@ private static final long serialVersionUID = 0L;
      * 播放列表Id
      * </pre>
      *
-     * <code>string Id = 1;</code>
+     * <code>string Id = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearId() {
-      
+
       id_ = getDefaultInstance().getId();
       onChanged();
       return this;
@@ -1151,17 +1289,17 @@ private static final long serialVersionUID = 0L;
      * 播放列表Id
      * </pre>
      *
-     * <code>string Id = 1;</code>
+     * <code>string Id = 2;</code>
      * @param value The bytes for id to set.
      * @return This builder for chaining.
      */
     public Builder setIdBytes(
-        com.google.protobuf.ByteString value) {
+            com.google.protobuf.ByteString value) {
       if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
       id_ = value;
       onChanged();
       return this;
@@ -1169,16 +1307,16 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue name_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> nameBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> nameBuilder_;
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      * @return Whether the name field is set.
      */
     public boolean hasName() {
       return nameBuilder_ != null || name_ != null;
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      * @return The name.
      */
     public com.google.protobuf.StringValue getName() {
@@ -1189,7 +1327,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public Builder setName(com.google.protobuf.StringValue value) {
       if (nameBuilder_ == null) {
@@ -1205,10 +1343,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public Builder setName(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (nameBuilder_ == null) {
         name_ = builderForValue.build();
         onChanged();
@@ -1219,13 +1357,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public Builder mergeName(com.google.protobuf.StringValue value) {
       if (nameBuilder_ == null) {
         if (name_ != null) {
           name_ =
-            com.google.protobuf.StringValue.newBuilder(name_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(name_).mergeFrom(value).buildPartial();
         } else {
           name_ = value;
         }
@@ -1237,7 +1375,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public Builder clearName() {
       if (nameBuilder_ == null) {
@@ -1251,33 +1389,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public com.google.protobuf.StringValue.Builder getNameBuilder() {
-      
+
       onChanged();
       return getNameFieldBuilder().getBuilder();
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getNameOrBuilder() {
       if (nameBuilder_ != null) {
         return nameBuilder_.getMessageOrBuilder();
       } else {
         return name_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : name_;
+                com.google.protobuf.StringValue.getDefaultInstance() : name_;
       }
     }
     /**
-     * <code>.google.protobuf.StringValue Name = 2;</code>
+     * <code>.google.protobuf.StringValue Name = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getNameFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getNameFieldBuilder() {
       if (nameBuilder_ == null) {
         nameBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getName(),
                 getParentForChildren(),
                 isClean());
@@ -1288,13 +1426,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue format_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> formatBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> formatBuilder_;
     /**
      * <pre>
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      * @return Whether the format field is set.
      */
     public boolean hasFormat() {
@@ -1305,7 +1443,7 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      * @return The format.
      */
     public com.google.protobuf.StringValue getFormat() {
@@ -1320,7 +1458,7 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public Builder setFormat(com.google.protobuf.StringValue value) {
       if (formatBuilder_ == null) {
@@ -1340,10 +1478,10 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public Builder setFormat(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (formatBuilder_ == null) {
         format_ = builderForValue.build();
         onChanged();
@@ -1358,13 +1496,13 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public Builder mergeFormat(com.google.protobuf.StringValue value) {
       if (formatBuilder_ == null) {
         if (format_ != null) {
           format_ =
-            com.google.protobuf.StringValue.newBuilder(format_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(format_).mergeFrom(value).buildPartial();
         } else {
           format_ = value;
         }
@@ -1380,7 +1518,7 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public Builder clearFormat() {
       if (formatBuilder_ == null) {
@@ -1398,10 +1536,10 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public com.google.protobuf.StringValue.Builder getFormatBuilder() {
-      
+
       onChanged();
       return getFormatFieldBuilder().getBuilder();
     }
@@ -1410,14 +1548,14 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getFormatOrBuilder() {
       if (formatBuilder_ != null) {
         return formatBuilder_.getMessageOrBuilder();
       } else {
         return format_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : format_;
+                com.google.protobuf.StringValue.getDefaultInstance() : format_;
       }
     }
     /**
@@ -1425,14 +1563,14 @@ private static final long serialVersionUID = 0L;
      * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Format = 3;</code>
+     * <code>.google.protobuf.StringValue Format = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getFormatFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getFormatFieldBuilder() {
       if (formatBuilder_ == null) {
         formatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getFormat(),
                 getParentForChildren(),
                 isClean());
@@ -1443,13 +1581,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue codec_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> codecBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> codecBuilder_;
     /**
      * <pre>
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      * @return Whether the codec field is set.
      */
     public boolean hasCodec() {
@@ -1460,7 +1598,7 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      * @return The codec.
      */
     public com.google.protobuf.StringValue getCodec() {
@@ -1475,7 +1613,7 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public Builder setCodec(com.google.protobuf.StringValue value) {
       if (codecBuilder_ == null) {
@@ -1495,10 +1633,10 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public Builder setCodec(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (codecBuilder_ == null) {
         codec_ = builderForValue.build();
         onChanged();
@@ -1513,13 +1651,13 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public Builder mergeCodec(com.google.protobuf.StringValue value) {
       if (codecBuilder_ == null) {
         if (codec_ != null) {
           codec_ =
-            com.google.protobuf.StringValue.newBuilder(codec_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(codec_).mergeFrom(value).buildPartial();
         } else {
           codec_ = value;
         }
@@ -1535,7 +1673,7 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public Builder clearCodec() {
       if (codecBuilder_ == null) {
@@ -1553,10 +1691,10 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public com.google.protobuf.StringValue.Builder getCodecBuilder() {
-      
+
       onChanged();
       return getCodecFieldBuilder().getBuilder();
     }
@@ -1565,14 +1703,14 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getCodecOrBuilder() {
       if (codecBuilder_ != null) {
         return codecBuilder_.getMessageOrBuilder();
       } else {
         return codec_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : codec_;
+                com.google.protobuf.StringValue.getDefaultInstance() : codec_;
       }
     }
     /**
@@ -1580,14 +1718,14 @@ private static final long serialVersionUID = 0L;
      * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Codec = 4;</code>
+     * <code>.google.protobuf.StringValue Codec = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getCodecFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getCodecFieldBuilder() {
       if (codecBuilder_ == null) {
         codecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getCodec(),
                 getParentForChildren(),
                 isClean());
@@ -1598,13 +1736,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue definition_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> definitionBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> definitionBuilder_;
     /**
      * <pre>
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      * @return Whether the definition field is set.
      */
     public boolean hasDefinition() {
@@ -1615,7 +1753,7 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      * @return The definition.
      */
     public com.google.protobuf.StringValue getDefinition() {
@@ -1630,7 +1768,7 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public Builder setDefinition(com.google.protobuf.StringValue value) {
       if (definitionBuilder_ == null) {
@@ -1650,10 +1788,10 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public Builder setDefinition(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (definitionBuilder_ == null) {
         definition_ = builderForValue.build();
         onChanged();
@@ -1668,13 +1806,13 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public Builder mergeDefinition(com.google.protobuf.StringValue value) {
       if (definitionBuilder_ == null) {
         if (definition_ != null) {
           definition_ =
-            com.google.protobuf.StringValue.newBuilder(definition_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(definition_).mergeFrom(value).buildPartial();
         } else {
           definition_ = value;
         }
@@ -1690,7 +1828,7 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public Builder clearDefinition() {
       if (definitionBuilder_ == null) {
@@ -1708,10 +1846,10 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public com.google.protobuf.StringValue.Builder getDefinitionBuilder() {
-      
+
       onChanged();
       return getDefinitionFieldBuilder().getBuilder();
     }
@@ -1720,14 +1858,14 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getDefinitionOrBuilder() {
       if (definitionBuilder_ != null) {
         return definitionBuilder_.getMessageOrBuilder();
       } else {
         return definition_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : definition_;
+                com.google.protobuf.StringValue.getDefaultInstance() : definition_;
       }
     }
     /**
@@ -1735,14 +1873,14 @@ private static final long serialVersionUID = 0L;
      * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Definition = 5;</code>
+     * <code>.google.protobuf.StringValue Definition = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getDefinitionFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getDefinitionFieldBuilder() {
       if (definitionBuilder_ == null) {
         definitionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getDefinition(),
                 getParentForChildren(),
                 isClean());
@@ -1753,13 +1891,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue vids_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> vidsBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> vidsBuilder_;
     /**
      * <pre>
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      * @return Whether the vids field is set.
      */
     public boolean hasVids() {
@@ -1770,7 +1908,7 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      * @return The vids.
      */
     public com.google.protobuf.StringValue getVids() {
@@ -1785,7 +1923,7 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public Builder setVids(com.google.protobuf.StringValue value) {
       if (vidsBuilder_ == null) {
@@ -1805,10 +1943,10 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public Builder setVids(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (vidsBuilder_ == null) {
         vids_ = builderForValue.build();
         onChanged();
@@ -1823,13 +1961,13 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public Builder mergeVids(com.google.protobuf.StringValue value) {
       if (vidsBuilder_ == null) {
         if (vids_ != null) {
           vids_ =
-            com.google.protobuf.StringValue.newBuilder(vids_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(vids_).mergeFrom(value).buildPartial();
         } else {
           vids_ = value;
         }
@@ -1845,7 +1983,7 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public Builder clearVids() {
       if (vidsBuilder_ == null) {
@@ -1863,10 +2001,10 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public com.google.protobuf.StringValue.Builder getVidsBuilder() {
-      
+
       onChanged();
       return getVidsFieldBuilder().getBuilder();
     }
@@ -1875,14 +2013,14 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getVidsOrBuilder() {
       if (vidsBuilder_ != null) {
         return vidsBuilder_.getMessageOrBuilder();
       } else {
         return vids_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : vids_;
+                com.google.protobuf.StringValue.getDefaultInstance() : vids_;
       }
     }
     /**
@@ -1890,14 +2028,14 @@ private static final long serialVersionUID = 0L;
      * 以,分隔，最多100个
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Vids = 6;</code>
+     * <code>.google.protobuf.StringValue Vids = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getVidsFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getVidsFieldBuilder() {
       if (vidsBuilder_ == null) {
         vidsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getVids(),
                 getParentForChildren(),
                 isClean());
@@ -1908,13 +2046,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue startTime_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> startTimeBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> startTimeBuilder_;
     /**
      * <pre>
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      * @return Whether the startTime field is set.
      */
     public boolean hasStartTime() {
@@ -1925,7 +2063,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      * @return The startTime.
      */
     public com.google.protobuf.StringValue getStartTime() {
@@ -1940,7 +2078,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public Builder setStartTime(com.google.protobuf.StringValue value) {
       if (startTimeBuilder_ == null) {
@@ -1960,10 +2098,10 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public Builder setStartTime(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (startTimeBuilder_ == null) {
         startTime_ = builderForValue.build();
         onChanged();
@@ -1978,13 +2116,13 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public Builder mergeStartTime(com.google.protobuf.StringValue value) {
       if (startTimeBuilder_ == null) {
         if (startTime_ != null) {
           startTime_ =
-            com.google.protobuf.StringValue.newBuilder(startTime_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(startTime_).mergeFrom(value).buildPartial();
         } else {
           startTime_ = value;
         }
@@ -2000,7 +2138,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public Builder clearStartTime() {
       if (startTimeBuilder_ == null) {
@@ -2018,10 +2156,10 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public com.google.protobuf.StringValue.Builder getStartTimeBuilder() {
-      
+
       onChanged();
       return getStartTimeFieldBuilder().getBuilder();
     }
@@ -2030,14 +2168,14 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getStartTimeOrBuilder() {
       if (startTimeBuilder_ != null) {
         return startTimeBuilder_.getMessageOrBuilder();
       } else {
         return startTime_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : startTime_;
+                com.google.protobuf.StringValue.getDefaultInstance() : startTime_;
       }
     }
     /**
@@ -2045,14 +2183,14 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳
      * </pre>
      *
-     * <code>.google.protobuf.StringValue StartTime = 7;</code>
+     * <code>.google.protobuf.StringValue StartTime = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getStartTimeFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getStartTimeFieldBuilder() {
       if (startTimeBuilder_ == null) {
         startTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getStartTime(),
                 getParentForChildren(),
                 isClean());
@@ -2063,13 +2201,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue endTime_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> endTimeBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> endTimeBuilder_;
     /**
      * <pre>
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      * @return Whether the endTime field is set.
      */
     public boolean hasEndTime() {
@@ -2080,7 +2218,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      * @return The endTime.
      */
     public com.google.protobuf.StringValue getEndTime() {
@@ -2095,7 +2233,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public Builder setEndTime(com.google.protobuf.StringValue value) {
       if (endTimeBuilder_ == null) {
@@ -2115,10 +2253,10 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public Builder setEndTime(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (endTimeBuilder_ == null) {
         endTime_ = builderForValue.build();
         onChanged();
@@ -2133,13 +2271,13 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public Builder mergeEndTime(com.google.protobuf.StringValue value) {
       if (endTimeBuilder_ == null) {
         if (endTime_ != null) {
           endTime_ =
-            com.google.protobuf.StringValue.newBuilder(endTime_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(endTime_).mergeFrom(value).buildPartial();
         } else {
           endTime_ = value;
         }
@@ -2155,7 +2293,7 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public Builder clearEndTime() {
       if (endTimeBuilder_ == null) {
@@ -2173,10 +2311,10 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public com.google.protobuf.StringValue.Builder getEndTimeBuilder() {
-      
+
       onChanged();
       return getEndTimeFieldBuilder().getBuilder();
     }
@@ -2185,14 +2323,14 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getEndTimeOrBuilder() {
       if (endTimeBuilder_ != null) {
         return endTimeBuilder_.getMessageOrBuilder();
       } else {
         return endTime_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : endTime_;
+                com.google.protobuf.StringValue.getDefaultInstance() : endTime_;
       }
     }
     /**
@@ -2200,14 +2338,14 @@ private static final long serialVersionUID = 0L;
      * 以秒为单位的时间戳，大于StartTime
      * </pre>
      *
-     * <code>.google.protobuf.StringValue EndTime = 8;</code>
+     * <code>.google.protobuf.StringValue EndTime = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getEndTimeFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getEndTimeFieldBuilder() {
       if (endTimeBuilder_ == null) {
         endTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getEndTime(),
                 getParentForChildren(),
                 isClean());
@@ -2218,13 +2356,13 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.StringValue cycles_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> cyclesBuilder_;
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> cyclesBuilder_;
     /**
      * <pre>
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      * @return Whether the cycles field is set.
      */
     public boolean hasCycles() {
@@ -2235,7 +2373,7 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      * @return The cycles.
      */
     public com.google.protobuf.StringValue getCycles() {
@@ -2250,7 +2388,7 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public Builder setCycles(com.google.protobuf.StringValue value) {
       if (cyclesBuilder_ == null) {
@@ -2270,10 +2408,10 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public Builder setCycles(
-        com.google.protobuf.StringValue.Builder builderForValue) {
+            com.google.protobuf.StringValue.Builder builderForValue) {
       if (cyclesBuilder_ == null) {
         cycles_ = builderForValue.build();
         onChanged();
@@ -2288,13 +2426,13 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public Builder mergeCycles(com.google.protobuf.StringValue value) {
       if (cyclesBuilder_ == null) {
         if (cycles_ != null) {
           cycles_ =
-            com.google.protobuf.StringValue.newBuilder(cycles_).mergeFrom(value).buildPartial();
+                  com.google.protobuf.StringValue.newBuilder(cycles_).mergeFrom(value).buildPartial();
         } else {
           cycles_ = value;
         }
@@ -2310,7 +2448,7 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public Builder clearCycles() {
       if (cyclesBuilder_ == null) {
@@ -2328,10 +2466,10 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public com.google.protobuf.StringValue.Builder getCyclesBuilder() {
-      
+
       onChanged();
       return getCyclesFieldBuilder().getBuilder();
     }
@@ -2340,14 +2478,14 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     public com.google.protobuf.StringValueOrBuilder getCyclesOrBuilder() {
       if (cyclesBuilder_ != null) {
         return cyclesBuilder_.getMessageOrBuilder();
       } else {
         return cycles_ == null ?
-            com.google.protobuf.StringValue.getDefaultInstance() : cycles_;
+                com.google.protobuf.StringValue.getDefaultInstance() : cycles_;
       }
     }
     /**
@@ -2355,14 +2493,14 @@ private static final long serialVersionUID = 0L;
      * 0代表无限循环
      * </pre>
      *
-     * <code>.google.protobuf.StringValue Cycles = 9;</code>
+     * <code>.google.protobuf.StringValue Cycles = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
-        getCyclesFieldBuilder() {
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
+    getCyclesFieldBuilder() {
       if (cyclesBuilder_ == null) {
         cyclesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getCycles(),
                 getParentForChildren(),
                 isClean());
@@ -2372,13 +2510,13 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -2397,12 +2535,12 @@ private static final long serialVersionUID = 0L;
   }
 
   private static final com.google.protobuf.Parser<VodUpdatePlaylistRequest>
-      PARSER = new com.google.protobuf.AbstractParser<VodUpdatePlaylistRequest>() {
+          PARSER = new com.google.protobuf.AbstractParser<VodUpdatePlaylistRequest>() {
     @java.lang.Override
     public VodUpdatePlaylistRequest parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodUpdatePlaylistRequest(input, extensionRegistry);
     }
   };

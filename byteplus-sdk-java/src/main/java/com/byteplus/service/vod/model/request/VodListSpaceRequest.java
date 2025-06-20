@@ -7,21 +7,22 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodListSpaceRequest}
  */
 public final class VodListSpaceRequest extends
-    com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListSpaceRequest)
-    VodListSpaceRequestOrBuilder {
-private static final long serialVersionUID = 0L;
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListSpaceRequest)
+        VodListSpaceRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
   // Use VodListSpaceRequest.newBuilder() to construct.
   private VodListSpaceRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private VodListSpaceRequest() {
+    projectName_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-      UnusedPrivateParameter unused) {
+          UnusedPrivateParameter unused) {
     return new VodListSpaceRequest();
   }
 
@@ -31,15 +32,15 @@ private static final long serialVersionUID = 0L;
     return this.unknownFields;
   }
   private VodListSpaceRequest(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
+            com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -58,9 +59,15 @@ private static final long serialVersionUID = 0L;
             limit_ = input.readDouble();
             break;
           }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            projectName_ = s;
+            break;
+          }
           default: {
             if (!parseUnknownField(
-                input, unknownFields, extensionRegistry, tag)) {
+                    input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -71,30 +78,30 @@ private static final long serialVersionUID = 0L;
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e).setUnfinishedMessage(this);
+              e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-      getDescriptor() {
+  getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListSpaceRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internalGetFieldAccessorTable() {
+  internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListSpaceRequest_fieldAccessorTable
-        .ensureFieldAccessorsInitialized(
-            com.byteplus.service.vod.model.request.VodListSpaceRequest.class, com.byteplus.service.vod.model.request.VodListSpaceRequest.Builder.class);
+            .ensureFieldAccessorsInitialized(
+                    com.byteplus.service.vod.model.request.VodListSpaceRequest.class, com.byteplus.service.vod.model.request.VodListSpaceRequest.Builder.class);
   }
 
   public static final int OFFSET_FIELD_NUMBER = 1;
   private double offset_;
   /**
    * <pre>
-   * 查询游标 
+   * 查询游标
    * </pre>
    *
    * <code>double Offset = 1;</code>
@@ -109,7 +116,7 @@ private static final long serialVersionUID = 0L;
   private double limit_;
   /**
    * <pre>
-   * 查询数量 
+   * 查询数量
    * </pre>
    *
    * <code>double Limit = 2;</code>
@@ -118,6 +125,52 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public double getLimit() {
     return limit_;
+  }
+
+  public static final int PROJECTNAME_FIELD_NUMBER = 3;
+  private volatile java.lang.Object projectName_;
+  /**
+   * <pre>
+   * 项目名称
+   * </pre>
+   *
+   * <code>string ProjectName = 3;</code>
+   * @return The projectName.
+   */
+  @java.lang.Override
+  public java.lang.String getProjectName() {
+    java.lang.Object ref = projectName_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      projectName_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * 项目名称
+   * </pre>
+   *
+   * <code>string ProjectName = 3;</code>
+   * @return The bytes for projectName.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+  getProjectNameBytes() {
+    java.lang.Object ref = projectName_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+      projectName_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -133,12 +186,15 @@ private static final long serialVersionUID = 0L;
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-                      throws java.io.IOException {
+          throws java.io.IOException {
     if (java.lang.Double.doubleToRawLongBits(offset_) != 0) {
       output.writeDouble(1, offset_);
     }
     if (java.lang.Double.doubleToRawLongBits(limit_) != 0) {
       output.writeDouble(2, limit_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(projectName_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, projectName_);
     }
     unknownFields.writeTo(output);
   }
@@ -151,11 +207,14 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (java.lang.Double.doubleToRawLongBits(offset_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(1, offset_);
+              .computeDoubleSize(1, offset_);
     }
     if (java.lang.Double.doubleToRawLongBits(limit_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(2, limit_);
+              .computeDoubleSize(2, limit_);
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(projectName_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, projectName_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -165,7 +224,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-     return true;
+      return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodListSpaceRequest)) {
       return super.equals(obj);
@@ -173,11 +232,13 @@ private static final long serialVersionUID = 0L;
     com.byteplus.service.vod.model.request.VodListSpaceRequest other = (com.byteplus.service.vod.model.request.VodListSpaceRequest) obj;
 
     if (java.lang.Double.doubleToLongBits(getOffset())
-        != java.lang.Double.doubleToLongBits(
+            != java.lang.Double.doubleToLongBits(
             other.getOffset())) return false;
     if (java.lang.Double.doubleToLongBits(getLimit())
-        != java.lang.Double.doubleToLongBits(
+            != java.lang.Double.doubleToLongBits(
             other.getLimit())) return false;
+    if (!getProjectName()
+            .equals(other.getProjectName())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -191,83 +252,85 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + OFFSET_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getOffset()));
+            java.lang.Double.doubleToLongBits(getOffset()));
     hash = (37 * hash) + LIMIT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getLimit()));
+            java.lang.Double.doubleToLongBits(getLimit()));
+    hash = (37 * hash) + PROJECTNAME_FIELD_NUMBER;
+    hash = (53 * hash) + getProjectName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      java.nio.ByteBuffer data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      java.nio.ByteBuffer data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      com.google.protobuf.ByteString data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      com.google.protobuf.ByteString data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(byte[] data)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      byte[] data,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws com.google.protobuf.InvalidProtocolBufferException {
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseDelimitedFrom(java.io.InputStream input)
-      throws java.io.IOException {
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input);
+            .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseDelimitedFrom(
-      java.io.InputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      com.google.protobuf.CodedInputStream input)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input);
+            .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListSpaceRequest parseFrom(
-      com.google.protobuf.CodedInputStream input,
-      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-      throws java.io.IOException {
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-        .parseWithIOException(PARSER, input, extensionRegistry);
+            .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -281,12 +344,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-        ? new Builder() : new Builder().mergeFrom(this);
+            ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -294,20 +357,20 @@ private static final long serialVersionUID = 0L;
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodListSpaceRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListSpaceRequest)
-      com.byteplus.service.vod.model.request.VodListSpaceRequestOrBuilder {
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListSpaceRequest)
+          com.byteplus.service.vod.model.request.VodListSpaceRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
+    getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListSpaceRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
+    internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListSpaceRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.byteplus.service.vod.model.request.VodListSpaceRequest.class, com.byteplus.service.vod.model.request.VodListSpaceRequest.Builder.class);
+              .ensureFieldAccessorsInitialized(
+                      com.byteplus.service.vod.model.request.VodListSpaceRequest.class, com.byteplus.service.vod.model.request.VodListSpaceRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodListSpaceRequest.newBuilder()
@@ -316,7 +379,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -332,12 +395,14 @@ private static final long serialVersionUID = 0L;
 
       limit_ = 0D;
 
+      projectName_ = "";
+
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-        getDescriptorForType() {
+    getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListSpaceRequest_descriptor;
     }
 
@@ -360,6 +425,7 @@ private static final long serialVersionUID = 0L;
       com.byteplus.service.vod.model.request.VodListSpaceRequest result = new com.byteplus.service.vod.model.request.VodListSpaceRequest(this);
       result.offset_ = offset_;
       result.limit_ = limit_;
+      result.projectName_ = projectName_;
       onBuilt();
       return result;
     }
@@ -370,30 +436,30 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder setField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-        com.google.protobuf.Descriptors.FieldDescriptor field) {
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-        com.google.protobuf.Descriptors.FieldDescriptor field,
-        java.lang.Object value) {
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -414,6 +480,10 @@ private static final long serialVersionUID = 0L;
       if (other.getLimit() != 0D) {
         setLimit(other.getLimit());
       }
+      if (!other.getProjectName().isEmpty()) {
+        projectName_ = other.projectName_;
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -426,9 +496,9 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodListSpaceRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -446,7 +516,7 @@ private static final long serialVersionUID = 0L;
     private double offset_ ;
     /**
      * <pre>
-     * 查询游标 
+     * 查询游标
      * </pre>
      *
      * <code>double Offset = 1;</code>
@@ -458,7 +528,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * 查询游标 
+     * 查询游标
      * </pre>
      *
      * <code>double Offset = 1;</code>
@@ -466,21 +536,21 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setOffset(double value) {
-      
+
       offset_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询游标 
+     * 查询游标
      * </pre>
      *
      * <code>double Offset = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearOffset() {
-      
+
       offset_ = 0D;
       onChanged();
       return this;
@@ -489,7 +559,7 @@ private static final long serialVersionUID = 0L;
     private double limit_ ;
     /**
      * <pre>
-     * 查询数量 
+     * 查询数量
      * </pre>
      *
      * <code>double Limit = 2;</code>
@@ -501,7 +571,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * 查询数量 
+     * 查询数量
      * </pre>
      *
      * <code>double Limit = 2;</code>
@@ -509,34 +579,130 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLimit(double value) {
-      
+
       limit_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询数量 
+     * 查询数量
      * </pre>
      *
      * <code>double Limit = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearLimit() {
-      
+
       limit_ = 0D;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object projectName_ = "";
+    /**
+     * <pre>
+     * 项目名称
+     * </pre>
+     *
+     * <code>string ProjectName = 3;</code>
+     * @return The projectName.
+     */
+    public java.lang.String getProjectName() {
+      java.lang.Object ref = projectName_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        projectName_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 项目名称
+     * </pre>
+     *
+     * <code>string ProjectName = 3;</code>
+     * @return The bytes for projectName.
+     */
+    public com.google.protobuf.ByteString
+    getProjectNameBytes() {
+      java.lang.Object ref = projectName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b =
+                com.google.protobuf.ByteString.copyFromUtf8(
+                        (java.lang.String) ref);
+        projectName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 项目名称
+     * </pre>
+     *
+     * <code>string ProjectName = 3;</code>
+     * @param value The projectName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setProjectName(
+            java.lang.String value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+
+      projectName_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 项目名称
+     * </pre>
+     *
+     * <code>string ProjectName = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearProjectName() {
+
+      projectName_ = getDefaultInstance().getProjectName();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 项目名称
+     * </pre>
+     *
+     * <code>string ProjectName = 3;</code>
+     * @param value The bytes for projectName to set.
+     * @return This builder for chaining.
+     */
+    public Builder setProjectNameBytes(
+            com.google.protobuf.ByteString value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      checkByteStringIsUtf8(value);
+
+      projectName_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-        final com.google.protobuf.UnknownFieldSet unknownFields) {
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -555,12 +721,12 @@ private static final long serialVersionUID = 0L;
   }
 
   private static final com.google.protobuf.Parser<VodListSpaceRequest>
-      PARSER = new com.google.protobuf.AbstractParser<VodListSpaceRequest>() {
+          PARSER = new com.google.protobuf.AbstractParser<VodListSpaceRequest>() {
     @java.lang.Override
     public VodListSpaceRequest parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodListSpaceRequest(input, extensionRegistry);
     }
   };

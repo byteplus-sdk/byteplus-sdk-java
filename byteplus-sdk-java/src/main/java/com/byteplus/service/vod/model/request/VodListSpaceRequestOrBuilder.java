@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodListSpaceRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListSpaceRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListSpaceRequest)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -26,4 +26,24 @@ public interface VodListSpaceRequestOrBuilder extends
    * @return The limit.
    */
   double getLimit();
+
+  /**
+   * <pre>
+   * 项目名称
+   * </pre>
+   *
+   * <code>string ProjectName = 3;</code>
+   * @return The projectName.
+   */
+  java.lang.String getProjectName();
+  /**
+   * <pre>
+   * 项目名称
+   * </pre>
+   *
+   * <code>string ProjectName = 3;</code>
+   * @return The bytes for projectName.
+   */
+  com.google.protobuf.ByteString
+  getProjectNameBytes();
 }

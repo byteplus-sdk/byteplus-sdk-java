@@ -8,13 +8,14 @@ import com.byteplus.service.vod.IVodService;
 import com.byteplus.service.vod.impl.VodServiceImpl;
 public class VodUpdatePlaylistDemo {
 
-    public static void main(String[] args) throws Exception {
-        IVodService vodService = VodServiceImpl.getInstance();
-        vodService.setAccessKey("your ak");
-        vodService.setSecretKey("your sk");
+	public static void main(String[] args) throws Exception {
+		IVodService vodService = VodServiceImpl.getInstance();
+		vodService.setAccessKey("your ak");
+		vodService.setSecretKey("your sk");
 
-        try {
-            com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.newBuilder();
+		try {
+			com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodUpdatePlaylistRequest.newBuilder();
+			reqBuilder.setSpaceName("your SpaceName");
 			reqBuilder.setId("your Id");
 			com.google.protobuf.StringValue.Builder nameBuilder = com.google.protobuf.StringValue.newBuilder();
 			reqBuilder.setName(nameBuilder);
@@ -32,15 +33,15 @@ public class VodUpdatePlaylistDemo {
 			reqBuilder.setEndTime(endTimeBuilder);
 			com.google.protobuf.StringValue.Builder cyclesBuilder = com.google.protobuf.StringValue.newBuilder();
 			reqBuilder.setCycles(cyclesBuilder);
-			
-            com.byteplus.service.vod.model.response.VodUpdatePlaylistResponse resp = vodService.updatePlaylist(reqBuilder.build());
-            if (resp.getResponseMetadata().hasError()) {
-                System.out.println(resp.getResponseMetadata().getError());
-                System.exit(-1);
-            }
-            System.out.println(resp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
+			com.byteplus.service.vod.model.response.VodUpdatePlaylistResponse resp = vodService.updatePlaylist(reqBuilder.build());
+			if (resp.getResponseMetadata().hasError()) {
+				System.out.println(resp.getResponseMetadata().getError());
+				System.exit(-1);
+			}
+			System.out.println(resp);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

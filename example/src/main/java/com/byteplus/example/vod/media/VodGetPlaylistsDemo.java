@@ -15,10 +15,12 @@ public class VodGetPlaylistsDemo {
 
         try {
             com.byteplus.service.vod.model.request.VodGetPlaylistsRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodGetPlaylistsRequest.newBuilder();
-			reqBuilder.setIds("your Ids");
-			reqBuilder.setLimit(0);
-			reqBuilder.setOffset(0);
-			
+            reqBuilder.setSpaceName("your SpaceName");
+            reqBuilder.setIds("your Ids");
+            reqBuilder.setName("your Name");
+            reqBuilder.setLimit(0);
+            reqBuilder.setOffset(0);
+
             com.byteplus.service.vod.model.response.VodGetPlaylistsResponse resp = vodService.getPlaylists(reqBuilder.build());
             if (resp.getResponseMetadata().hasError()) {
                 System.out.println(resp.getResponseMetadata().getError());

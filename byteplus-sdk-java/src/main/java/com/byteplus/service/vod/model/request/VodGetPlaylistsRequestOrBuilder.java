@@ -4,15 +4,27 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodGetPlaylistsRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetPlaylistsRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetPlaylistsRequest)
+        com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>string SpaceName = 1;</code>
+   * @return The spaceName.
+   */
+  java.lang.String getSpaceName();
+  /**
+   * <code>string SpaceName = 1;</code>
+   * @return The bytes for spaceName.
+   */
+  com.google.protobuf.ByteString
+  getSpaceNameBytes();
 
   /**
    * <pre>
    * 以,分隔
    * </pre>
    *
-   * <code>string Ids = 1;</code>
+   * <code>string Ids = 2;</code>
    * @return The ids.
    */
   java.lang.String getIds();
@@ -21,20 +33,32 @@ public interface VodGetPlaylistsRequestOrBuilder extends
    * 以,分隔
    * </pre>
    *
-   * <code>string Ids = 1;</code>
+   * <code>string Ids = 2;</code>
    * @return The bytes for ids.
    */
   com.google.protobuf.ByteString
-      getIdsBytes();
+  getIdsBytes();
 
   /**
-   * <code>uint32 Limit = 2;</code>
+   * <code>string Name = 3;</code>
+   * @return The name.
+   */
+  java.lang.String getName();
+  /**
+   * <code>string Name = 3;</code>
+   * @return The bytes for name.
+   */
+  com.google.protobuf.ByteString
+  getNameBytes();
+
+  /**
+   * <code>uint32 Limit = 4;</code>
    * @return The limit.
    */
   int getLimit();
 
   /**
-   * <code>uint32 Offset = 3;</code>
+   * <code>uint32 Offset = 5;</code>
    * @return The offset.
    */
   int getOffset();

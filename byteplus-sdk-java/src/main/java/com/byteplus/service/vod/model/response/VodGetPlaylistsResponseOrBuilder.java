@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.response;
 
 public interface VodGetPlaylistsResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodGetPlaylistsResponse)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodGetPlaylistsResponse)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>

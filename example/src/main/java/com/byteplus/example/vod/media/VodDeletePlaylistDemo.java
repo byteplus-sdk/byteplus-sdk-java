@@ -15,8 +15,9 @@ public class VodDeletePlaylistDemo {
 
         try {
             com.byteplus.service.vod.model.request.VodDeletePlaylistRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodDeletePlaylistRequest.newBuilder();
-			reqBuilder.setId("your Id");
-			
+            reqBuilder.setSpaceName("your SpaceName");
+            reqBuilder.setId("your Id");
+
             com.byteplus.service.vod.model.response.VodDeletePlaylistResponse resp = vodService.deletePlaylist(reqBuilder.build());
             if (resp.getResponseMetadata().hasError()) {
                 System.out.println(resp.getResponseMetadata().getError());

@@ -15,15 +15,16 @@ public class VodCreatePlaylistDemo {
 
         try {
             com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.newBuilder();
-			reqBuilder.setName("your Name");
-			reqBuilder.setFormat("your Format");
-			reqBuilder.setCodec("your Codec");
-			reqBuilder.setDefinition("your Definition");
-			reqBuilder.setVids("your Vids");
-			reqBuilder.setStartTime("your StartTime");
-			reqBuilder.setEndTime("your EndTime");
-			reqBuilder.setCycles("your Cycles");
-			
+            reqBuilder.setSpaceName("your SpaceName");
+            reqBuilder.setName("your Name");
+            reqBuilder.setFormat("your Format");
+            reqBuilder.setCodec("your Codec");
+            reqBuilder.setDefinition("your Definition");
+            reqBuilder.setVids("your Vids");
+            reqBuilder.setStartTime("your StartTime");
+            reqBuilder.setEndTime("your EndTime");
+            reqBuilder.setCycles("your Cycles");
+
             com.byteplus.service.vod.model.response.VodCreatePlaylistResponse resp = vodService.createPlaylist(reqBuilder.build());
             if (resp.getResponseMetadata().hasError()) {
                 System.out.println(resp.getResponseMetadata().getError());

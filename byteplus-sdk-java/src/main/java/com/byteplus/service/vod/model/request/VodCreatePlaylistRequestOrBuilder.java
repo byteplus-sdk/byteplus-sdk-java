@@ -4,166 +4,178 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodCreatePlaylistRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
+        com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <pre>
-   * 播放列表名
-   * </pre>
-   *
-   * <code>string Name = 1;</code>
-   * @return The name.
-   */
-  java.lang.String getName();
-  /**
-   * <pre>
-   * 播放列表名
-   * </pre>
-   *
-   * <code>string Name = 1;</code>
-   * @return The bytes for name.
-   */
-  com.google.protobuf.ByteString
-      getNameBytes();
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @return The spaceName.
+     */
+    java.lang.String getSpaceName();
+    /**
+     * <code>string SpaceName = 1;</code>
+     * @return The bytes for spaceName.
+     */
+    com.google.protobuf.ByteString
+    getSpaceNameBytes();
 
-  /**
-   * <pre>
-   * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
-   * </pre>
-   *
-   * <code>string Format = 2;</code>
-   * @return The format.
-   */
-  java.lang.String getFormat();
-  /**
-   * <pre>
-   * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
-   * </pre>
-   *
-   * <code>string Format = 2;</code>
-   * @return The bytes for format.
-   */
-  com.google.protobuf.ByteString
-      getFormatBytes();
+    /**
+     * <pre>
+     * 播放列表名
+     * </pre>
+     *
+     * <code>string Name = 2;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <pre>
+     * 播放列表名
+     * </pre>
+     *
+     * <code>string Name = 2;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+    getNameBytes();
 
-  /**
-   * <pre>
-   * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
-   * </pre>
-   *
-   * <code>string Codec = 3;</code>
-   * @return The codec.
-   */
-  java.lang.String getCodec();
-  /**
-   * <pre>
-   * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
-   * </pre>
-   *
-   * <code>string Codec = 3;</code>
-   * @return The bytes for codec.
-   */
-  com.google.protobuf.ByteString
-      getCodecBytes();
+    /**
+     * <pre>
+     * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
+     * </pre>
+     *
+     * <code>string Format = 3;</code>
+     * @return The format.
+     */
+    java.lang.String getFormat();
+    /**
+     * <pre>
+     * 封装格式，支持 mp4、dash、hls、mp3、m4a、ogg, 默认mp4
+     * </pre>
+     *
+     * <code>string Format = 3;</code>
+     * @return The bytes for format.
+     */
+    com.google.protobuf.ByteString
+    getFormatBytes();
 
-  /**
-   * <pre>
-   * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
-   * </pre>
-   *
-   * <code>string Definition = 4;</code>
-   * @return The definition.
-   */
-  java.lang.String getDefinition();
-  /**
-   * <pre>
-   * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
-   * </pre>
-   *
-   * <code>string Definition = 4;</code>
-   * @return The bytes for definition.
-   */
-  com.google.protobuf.ByteString
-      getDefinitionBytes();
+    /**
+     * <pre>
+     * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
+     * </pre>
+     *
+     * <code>string Codec = 4;</code>
+     * @return The codec.
+     */
+    java.lang.String getCodec();
+    /**
+     * <pre>
+     * 编码格式，支持 mp3、aac、opus、H264、H265、H266, 视频默认H264
+     * </pre>
+     *
+     * <code>string Codec = 4;</code>
+     * @return The bytes for codec.
+     */
+    com.google.protobuf.ByteString
+    getCodecBytes();
 
-  /**
-   * <pre>
-   * 以,分隔，最多100个
-   * </pre>
-   *
-   * <code>string Vids = 5;</code>
-   * @return The vids.
-   */
-  java.lang.String getVids();
-  /**
-   * <pre>
-   * 以,分隔，最多100个
-   * </pre>
-   *
-   * <code>string Vids = 5;</code>
-   * @return The bytes for vids.
-   */
-  com.google.protobuf.ByteString
-      getVidsBytes();
+    /**
+     * <pre>
+     * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
+     * </pre>
+     *
+     * <code>string Definition = 5;</code>
+     * @return The definition.
+     */
+    java.lang.String getDefinition();
+    /**
+     * <pre>
+     * 视频流清晰度，支持：240p,360p,480p,540p,720p,1080p,2k,4k,od,oe.
+     * </pre>
+     *
+     * <code>string Definition = 5;</code>
+     * @return The bytes for definition.
+     */
+    com.google.protobuf.ByteString
+    getDefinitionBytes();
 
-  /**
-   * <pre>
-   * 以秒为单位的时间戳
-   * </pre>
-   *
-   * <code>string StartTime = 6;</code>
-   * @return The startTime.
-   */
-  java.lang.String getStartTime();
-  /**
-   * <pre>
-   * 以秒为单位的时间戳
-   * </pre>
-   *
-   * <code>string StartTime = 6;</code>
-   * @return The bytes for startTime.
-   */
-  com.google.protobuf.ByteString
-      getStartTimeBytes();
+    /**
+     * <pre>
+     * 以,分隔，最多100个
+     * </pre>
+     *
+     * <code>string Vids = 6;</code>
+     * @return The vids.
+     */
+    java.lang.String getVids();
+    /**
+     * <pre>
+     * 以,分隔，最多100个
+     * </pre>
+     *
+     * <code>string Vids = 6;</code>
+     * @return The bytes for vids.
+     */
+    com.google.protobuf.ByteString
+    getVidsBytes();
 
-  /**
-   * <pre>
-   * 以秒为单位的时间戳，大于StartTime
-   * </pre>
-   *
-   * <code>string EndTime = 7;</code>
-   * @return The endTime.
-   */
-  java.lang.String getEndTime();
-  /**
-   * <pre>
-   * 以秒为单位的时间戳，大于StartTime
-   * </pre>
-   *
-   * <code>string EndTime = 7;</code>
-   * @return The bytes for endTime.
-   */
-  com.google.protobuf.ByteString
-      getEndTimeBytes();
+    /**
+     * <pre>
+     * 以秒为单位的时间戳
+     * </pre>
+     *
+     * <code>string StartTime = 7;</code>
+     * @return The startTime.
+     */
+    java.lang.String getStartTime();
+    /**
+     * <pre>
+     * 以秒为单位的时间戳
+     * </pre>
+     *
+     * <code>string StartTime = 7;</code>
+     * @return The bytes for startTime.
+     */
+    com.google.protobuf.ByteString
+    getStartTimeBytes();
 
-  /**
-   * <pre>
-   * 0代表无限循环，默认为0
-   * </pre>
-   *
-   * <code>string Cycles = 8;</code>
-   * @return The cycles.
-   */
-  java.lang.String getCycles();
-  /**
-   * <pre>
-   * 0代表无限循环，默认为0
-   * </pre>
-   *
-   * <code>string Cycles = 8;</code>
-   * @return The bytes for cycles.
-   */
-  com.google.protobuf.ByteString
-      getCyclesBytes();
+    /**
+     * <pre>
+     * 以秒为单位的时间戳，大于StartTime
+     * </pre>
+     *
+     * <code>string EndTime = 8;</code>
+     * @return The endTime.
+     */
+    java.lang.String getEndTime();
+    /**
+     * <pre>
+     * 以秒为单位的时间戳，大于StartTime
+     * </pre>
+     *
+     * <code>string EndTime = 8;</code>
+     * @return The bytes for endTime.
+     */
+    com.google.protobuf.ByteString
+    getEndTimeBytes();
+
+    /**
+     * <pre>
+     * 0代表无限循环，默认为0
+     * </pre>
+     *
+     * <code>string Cycles = 9;</code>
+     * @return The cycles.
+     */
+    java.lang.String getCycles();
+    /**
+     * <pre>
+     * 0代表无限循环，默认为0
+     * </pre>
+     *
+     * <code>string Cycles = 9;</code>
+     * @return The bytes for cycles.
+     */
+    com.google.protobuf.ByteString
+    getCyclesBytes();
 }

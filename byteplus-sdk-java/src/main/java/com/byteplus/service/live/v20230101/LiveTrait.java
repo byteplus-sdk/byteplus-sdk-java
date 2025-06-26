@@ -311,9 +311,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 07 月 25 日**下线文档**，建议您使用新版[UpdateSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208857)接口。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -345,9 +347,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>查询域名维度下所有的 App 名称，以及 App 关联的截图模板。   </p>
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 07 月 25 日**下线文档**，建议您使用新版[ListVhostSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208858)接口。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -366,9 +370,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2024 年 04 月 25 日**停止对其进行维护**，并于 2024 年 7 月 25 日**下线文档**，建议您使用新版[CreateSnapshotPresetV2](https://www.volcengine.com/docs/6469/1208856)接口。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -383,7 +389,7 @@ public class LiveTrait extends BaseServiceImpl {
      * <p>deleteTimeShiftPresetV2</p>
      * <p>删除时移配置</p>
      *
-     * <p>删除时移配置</p>
+     * <p>本接口用于删除指定Vhost和应用下的直播时移配置。通过提供`Vhost`、`App`和`Preset`参数，可以精确删除特定的时移配置。该操作会立即生效，但不会影响已生成的时移内容。适用于时移功能下线或配置调整等场景。</p>
      *
      * @param body body payload
      * @return response data
@@ -815,18 +821,18 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>restartPullToPushTask</p>
+     * <p>continuePullToPushTask</p>
      * <p>启用拉流转推任务</p>
      *
-     * <p>调用 `RestartPullToPushTask` 接口，启用任务状态为已停用的拉流转推任务。</p>
+     * <p>调用 `ContinuePullToPushTask` 接口，启用任务状态为已停用的拉流转推任务。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public RestartPullToPushTaskRes restartPullToPushTask(RestartPullToPushTaskBody body) throws Exception {
-        RawResponse rawResponse = json("RestartPullToPushTask", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, RestartPullToPushTaskRes.class);
+    public ContinuePullToPushTaskRes continuePullToPushTask(ContinuePullToPushTaskBody body) throws Exception {
+        RawResponse rawResponse = json("ContinuePullToPushTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ContinuePullToPushTaskRes.class);
     }
 
     /**
@@ -887,6 +893,21 @@ public class LiveTrait extends BaseServiceImpl {
     public ListPullToPushTaskV2Res listPullToPushTaskV2(ListPullToPushTaskV2Body body) throws Exception {
         RawResponse rawResponse = json("ListPullToPushTaskV2", null, JSON.toJSONString(body));
         return parseRawResponse(rawResponse, ListPullToPushTaskV2Res.class);
+    }
+
+    /**
+     * <p>relaunchPullToPushTask</p>
+     * <p>重启拉流转推任务</p>
+     *
+     * <p>调用 `RelaunchPullToPushTask` 接口，使拉流转推任务从头开始进行转推。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public RelaunchPullToPushTaskRes relaunchPullToPushTask(RelaunchPullToPushTaskBody body) throws Exception {
+        RawResponse rawResponse = json("RelaunchPullToPushTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, RelaunchPullToPushTaskRes.class);
     }
 
     /**
@@ -1174,6 +1195,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>describeLiveCallbackData</p>
+     * <p>查询回调记录</p>
+     *
+     * <p>该接口用于查询直播推流相关的回调记录，包括回调事件类型、状态、请求与响应信息等。可用于定位直播中回调请求异常、验证回调是否成功发送等场景。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveCallbackDataRes describeLiveCallbackData(DescribeLiveCallbackDataBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveCallbackData", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveCallbackDataRes.class);
+    }
+
+    /**
      * <p>describeLiveStreamSessionData</p>
      * <p>查询域名或单个直播流的拉流数据</p>
      *
@@ -1219,6 +1255,21 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
+     * <p>describeLiveBatchStreamTranscodeData</p>
+     * <p>查询多路流的转码数据</p>
+     *
+     * <p>调用 `DescribeLiveBatchStreamTranscodeData` 接口，查询指定时间范围内域名下所有转码流的转码时长、分辨率档位、编码方式等转码数据。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeLiveBatchStreamTranscodeDataRes describeLiveBatchStreamTranscodeData(DescribeLiveBatchStreamTranscodeDataBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeLiveBatchStreamTranscodeData", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeLiveBatchStreamTranscodeDataRes.class);
+    }
+
+    /**
      * <p>describeLivePushStreamInfoData</p>
      * <p>查询推流流信息</p>
      *
@@ -1254,9 +1305,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveSourceBandwidthData` 接口，查询指定时间范围内拉流域名或回源流产生的回源带宽监控数据。</p>
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用 [DescribeLiveSourceTrafficData](https://www.volcengine.com/docs/6469/1126923) 接口，查询直播流或域名的回源流量和带宽监控数据。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -1288,9 +1341,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveMetricBandwidthData` 接口，查询指定时间范围内直播域名或直播流的带宽监控数据。</p>
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用新版 [DescribeLiveEdgeStatData](https://www.volcengine.com/docs/6469/1399004) 接口，查询直播流的上下行流量、上下行峰值带宽和请求数。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -1307,9 +1362,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      * <p>调用 `DescribeLiveMetricTrafficData` 接口，查询指定时间范围内直播域名或直播流的流量监控数据。</p>
      *
-     *
+     * <p>:::tip</p>
      *
      * <p>该接口属于历史版本 API，我们计划于 2025 年 02 月 18 日停止对其进行维护，并于 2025 年 05 月 18 日下线文档，建议您使用新版 [DescribeLiveEdgeStatData](https://www.volcengine.com/docs/6469/1399004) 接口，查询直播流的上下行流量、上下行峰值带宽和请求数。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -1492,9 +1549,11 @@ public class LiveTrait extends BaseServiceImpl {
      *
      *
      *
-     *
+     * <p>:::warning</p>
      *
      * <p>该接口适用于**视频直播提供时移能力**的场景，如时移文件存储于视频点播 VoD 或对象存储 ToS，请联系我们，获取用量查询方法。</p>
+     *
+     * <p>:::</p>
      *
      * @param body body payload
      * @return response data
@@ -2329,93 +2388,138 @@ public class LiveTrait extends BaseServiceImpl {
     }
 
     /**
-     * <p>createLivePadPreset</p>
-     * <p>创建直播垫片配置</p>
+     * <p>createCarouselTask</p>
+     * <p>创建轮播任务</p>
      *
-     * <p>调用 `CreateLivePadPreset` 接口创建一个直播垫片配置，当直播流断开（包括主动断开直播流的情况）时，直播画面能够自动切换至已配置的素材或者直播的最后一帧画面。而当直播恢复后，会将垫片替换掉，恢复正常直播画面。</p>
+     * <p>调用 `CreateCarouselTask` 接口创建一个轮播任务，在直播过程中，视频直播服务端将根据任务配置按设定顺序循环播放指定视频内容。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public CreateLivePadPresetRes createLivePadPreset(CreateLivePadPresetBody body) throws Exception {
-        RawResponse rawResponse = json("CreateLivePadPreset", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, CreateLivePadPresetRes.class);
+    public CreateCarouselTaskRes createCarouselTask(CreateCarouselTaskBody body) throws Exception {
+        RawResponse rawResponse = json("CreateCarouselTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, CreateCarouselTaskRes.class);
     }
 
     /**
-     * <p>deleteLivePadPreset</p>
-     * <p>删除直播垫片配置</p>
+     * <p>deleteCarouselTask</p>
+     * <p>删除轮播任务</p>
      *
-     *
+     * <p>调用 `DeleteCarouselTask` 接口删除指定的轮播任务，任务删除后，系统将停止播放该任务的所有轮播内容并释放相关资源。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public DeleteLivePadPresetRes deleteLivePadPreset(DeleteLivePadPresetBody body) throws Exception {
-        RawResponse rawResponse = json("DeleteLivePadPreset", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DeleteLivePadPresetRes.class);
+    public DeleteCarouselTaskRes deleteCarouselTask(DeleteCarouselTaskBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteCarouselTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteCarouselTaskRes.class);
     }
 
     /**
-     * <p>stopLivePadStream</p>
-     * <p>断开正在播放垫片的直播流</p>
+     * <p>updateCarouselTask</p>
+     * <p>更新轮播任务</p>
      *
-     *
+     * <p>调用 `UpdateCarouselTask` 接口修改指定的轮播任务配置，调整播放内容、播放规则或时间范围，更新后系统将按新配置执行轮播任务。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public StopLivePadStreamRes stopLivePadStream(StopLivePadStreamBody body) throws Exception {
-        RawResponse rawResponse = json("StopLivePadStream", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, StopLivePadStreamRes.class);
+    public UpdateCarouselTaskRes updateCarouselTask(UpdateCarouselTaskBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateCarouselTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateCarouselTaskRes.class);
     }
 
     /**
-     * <p>updateLivePadPreset</p>
-     * <p>更新直播垫片配置</p>
+     * <p>getCarouselDetail</p>
+     * <p>查询轮播任务</p>
      *
-     *
+     * <p>调用 `GetCarouselDetail` 接口查询指定轮播任务的详细信息，包括播放状态、视频列表及当前播放进度，便于管理和监控任务执行情况。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public UpdateLivePadPresetRes updateLivePadPreset(UpdateLivePadPresetBody body) throws Exception {
-        RawResponse rawResponse = json("UpdateLivePadPreset", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, UpdateLivePadPresetRes.class);
+    public GetCarouselDetailRes getCarouselDetail(GetCarouselDetailBody body) throws Exception {
+        RawResponse rawResponse = json("GetCarouselDetail", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, GetCarouselDetailRes.class);
     }
 
     /**
-     * <p>describeLivePadStreamList</p>
-     * <p>查询正在播放垫片的直播流</p>
+     * <p>listCarouselTask</p>
+     * <p>遍历轮播任务</p>
      *
-     *
+     * <p>调用 `ListCarouselTask` 接口获取当前所有轮播任务的列表，包括任务 ID、状态及创建时间，可用于任务管理及批量查询。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public DescribeLivePadStreamListRes describeLivePadStreamList(DescribeLivePadStreamListBody body) throws Exception {
-        RawResponse rawResponse = json("DescribeLivePadStreamList", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DescribeLivePadStreamListRes.class);
+    public ListCarouselTaskRes listCarouselTask(ListCarouselTaskBody body) throws Exception {
+        RawResponse rawResponse = json("ListCarouselTask", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListCarouselTaskRes.class);
     }
 
     /**
-     * <p>describeLivePadPresetDetail</p>
-     * <p>查询直播垫片配置列表</p>
+     * <p>deleteRemoteAuth</p>
+     * <p>删除远程鉴权配置</p>
      *
-     *
+     * <p>调用 `DeleteRemoteAuth` 接口，删除已添加的远程鉴权配置。</p>
      *
      * @param body body payload
      * @return response data
      * @throws Exception error during request
      */
-    public DescribeLivePadPresetDetailRes describeLivePadPresetDetail(DescribeLivePadPresetDetailBody body) throws Exception {
-        RawResponse rawResponse = json("DescribeLivePadPresetDetail", null, JSON.toJSONString(body));
-        return parseRawResponse(rawResponse, DescribeLivePadPresetDetailRes.class);
+    public DeleteRemoteAuthRes deleteRemoteAuth(DeleteRemoteAuthBody body) throws Exception {
+        RawResponse rawResponse = json("DeleteRemoteAuth", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DeleteRemoteAuthRes.class);
+    }
+
+    /**
+     * <p>describeRemoteAuth</p>
+     * <p>查询远程鉴权配置</p>
+     *
+     * <p>调用 `DescribeRemoteAuth` 接口，查询拉流域名的远程鉴权配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public DescribeRemoteAuthRes describeRemoteAuth(DescribeRemoteAuthBody body) throws Exception {
+        RawResponse rawResponse = json("DescribeRemoteAuth", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, DescribeRemoteAuthRes.class);
+    }
+
+    /**
+     * <p>listVhostRemoteAuth</p>
+     * <p>查询远程鉴权配置列表</p>
+     *
+     * <p>调用 `ListVhostRemoteAuth` 接口，查询 Vhost 下所有拉流域名的远程鉴权配置。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public ListVhostRemoteAuthRes listVhostRemoteAuth(ListVhostRemoteAuthBody body) throws Exception {
+        RawResponse rawResponse = json("ListVhostRemoteAuth", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, ListVhostRemoteAuthRes.class);
+    }
+
+    /**
+     * <p>updateRemoteAuth</p>
+     * <p>添加或更新远程鉴权配置</p>
+     *
+     * <p>调用 `UpdateRemoteAuth` 接口，为拉流域名创建远程鉴权配置，创建成功后用户拉流请求将被发送至指定的鉴权服务器，由鉴权服务器对用户拉流请求进行校验。</p>
+     *
+     * @param body body payload
+     * @return response data
+     * @throws Exception error during request
+     */
+    public UpdateRemoteAuthRes updateRemoteAuth(UpdateRemoteAuthBody body) throws Exception {
+        RawResponse rawResponse = json("UpdateRemoteAuth", null, JSON.toJSONString(body));
+        return parseRawResponse(rawResponse, UpdateRemoteAuthRes.class);
     }
 
 }

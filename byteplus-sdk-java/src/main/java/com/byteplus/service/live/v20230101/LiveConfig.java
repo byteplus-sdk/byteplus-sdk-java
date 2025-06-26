@@ -732,14 +732,14 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("RestartPullToPushTask", new ApiInfo(
+            put("ContinuePullToPushTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "RestartPullToPushTask"));
+                                add(new BasicNameValuePair("Action", "ContinuePullToPushTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -796,6 +796,20 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "ListPullToPushTaskV2"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("RelaunchPullToPushTask", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "RelaunchPullToPushTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -1068,6 +1082,20 @@ public class LiveConfig {
                     }
                 }     
             ));
+            put("DescribeLiveCallbackData", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeLiveCallbackData"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
             put("DescribeLiveStreamSessionData", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
@@ -1104,6 +1132,20 @@ public class LiveConfig {
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
                                 add(new BasicNameValuePair("Action", "DescribeLiveBatchPushStreamMetrics"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DescribeLiveBatchStreamTranscodeData", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeLiveBatchStreamTranscodeData"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
@@ -2132,84 +2174,126 @@ public class LiveConfig {
                     }
                 }     
             ));
-            put("CreateLivePadPreset", new ApiInfo(
+            put("CreateCarouselTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "CreateLivePadPreset"));
+                                add(new BasicNameValuePair("Action", "CreateCarouselTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("DeleteLivePadPreset", new ApiInfo(
+            put("DeleteCarouselTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "DeleteLivePadPreset"));
+                                add(new BasicNameValuePair("Action", "DeleteCarouselTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("StopLivePadStream", new ApiInfo(
+            put("UpdateCarouselTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "StopLivePadStream"));
+                                add(new BasicNameValuePair("Action", "UpdateCarouselTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("UpdateLivePadPreset", new ApiInfo(
+            put("GetCarouselDetail", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "UpdateLivePadPreset"));
+                                add(new BasicNameValuePair("Action", "GetCarouselDetail"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("DescribeLivePadStreamList", new ApiInfo(
+            put("ListCarouselTask", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "DescribeLivePadStreamList"));
+                                add(new BasicNameValuePair("Action", "ListCarouselTask"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });
                     }
                 }     
             ));
-            put("DescribeLivePadPresetDetail", new ApiInfo(
+            put("DeleteRemoteAuth", new ApiInfo(
                 new HashMap<String, Object>() {
                     {
                         put(Const.Method, "POST");
                         put(Const.Path, "/");
                         put(Const.Query, new ArrayList<NameValuePair>() {
                             {
-                                add(new BasicNameValuePair("Action", "DescribeLivePadPresetDetail"));
+                                add(new BasicNameValuePair("Action", "DeleteRemoteAuth"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("DescribeRemoteAuth", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "DescribeRemoteAuth"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("ListVhostRemoteAuth", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "ListVhostRemoteAuth"));
+                                add(new BasicNameValuePair("Version", "2023-01-01"));
+                            }
+                        });
+                    }
+                }     
+            ));
+            put("UpdateRemoteAuth", new ApiInfo(
+                new HashMap<String, Object>() {
+                    {
+                        put(Const.Method, "POST");
+                        put(Const.Path, "/");
+                        put(Const.Query, new ArrayList<NameValuePair>() {
+                            {
+                                add(new BasicNameValuePair("Action", "UpdateRemoteAuth"));
                                 add(new BasicNameValuePair("Version", "2023-01-01"));
                             }
                         });

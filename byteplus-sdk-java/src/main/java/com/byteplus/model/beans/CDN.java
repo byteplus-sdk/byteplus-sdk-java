@@ -195,6 +195,9 @@ public class CDN {
         @JSONField(name = "OriginRange")
         Boolean OriginRange;
 
+        @JSONField(name = "OriginResponseHeader")
+        List<OriginResponseHeader> OriginResponseHeader;
+
         @JSONField(name = "OriginRetry")
         OriginRetry OriginRetry;
 
@@ -236,6 +239,9 @@ public class CDN {
 
         @JSONField(name = "RewriteHLS")
         RewriteHLS RewriteHLS;
+
+        @JSONField(name = "RuleEngine")
+        RuleEngine RuleEngine;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -759,6 +765,9 @@ public class CDN {
         @JSONField(name = "OriginRange")
         Boolean OriginRange;
 
+        @JSONField(name = "OriginResponseHeader")
+        List<OriginResponseHeader> OriginResponseHeader;
+
         @JSONField(name = "OriginRetry")
         OriginRetry OriginRetry;
 
@@ -794,6 +803,9 @@ public class CDN {
 
         @JSONField(name = "RewriteHLS")
         RewriteHLS RewriteHLS;
+
+        @JSONField(name = "RuleEngine")
+        RuleEngine RuleEngine;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -1398,6 +1410,42 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class CreateCipherTemplateResult {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateRuleEngineTemplateRequest {
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Rule")
+        String Rule;
+
+        @JSONField(name = "Title")
+        String Title;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateRuleEngineTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        CreateRuleEngineTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateRuleEngineTemplateResult {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
@@ -3856,6 +3904,69 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DescribeRuleEngineTemplateRequest {
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeRuleEngineTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeRuleEngineTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeRuleEngineTemplateResult {
+
+        @JSONField(name = "BoundDomains")
+        List<BoundDomain> BoundDomains;
+
+        @JSONField(name = "CreateTime")
+        Long CreateTime;
+
+        @JSONField(name = "Exception")
+        Boolean Exception;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "ProdVersion")
+        String ProdVersion;
+
+        @JSONField(name = "Project")
+        String Project;
+
+        @JSONField(name = "Rule")
+        String Rule;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "Title")
+        String Title;
+
+        @JSONField(name = "Type")
+        String Type;
+
+        @JSONField(name = "UpdateTime")
+        Long UpdateTime;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DescribeServiceTemplateRequest {
 
         @JSONField(name = "TemplateId")
@@ -4406,6 +4517,9 @@ public class CDN {
         @JSONField(name = "OriginRange")
         Boolean OriginRange;
 
+        @JSONField(name = "OriginResponseHeader")
+        List<OriginResponseHeader> OriginResponseHeader;
+
         @JSONField(name = "OriginRetry")
         OriginRetry OriginRetry;
 
@@ -4439,11 +4553,17 @@ public class CDN {
         @JSONField(name = "RequestHeader")
         List<RequestHeaderRule> RequestHeader;
 
+        @JSONField(name = "ResourceTags")
+        List<ResourceTag> ResourceTags;
+
         @JSONField(name = "ResponseHeader")
         List<ResponseHeaderRule> ResponseHeader;
 
         @JSONField(name = "RewriteHLS")
         RewriteHLS RewriteHLS;
+
+        @JSONField(name = "RuleEngine")
+        RuleEngine RuleEngine;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -4592,6 +4712,9 @@ public class CDN {
 
         @JSONField(name = "ResourceTags")
         List<ResourceTag> ResourceTags;
+
+        @JSONField(name = "RuleEngine")
+        Boolean RuleEngine;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -5210,6 +5333,9 @@ public class CDN {
         @JSONField(name = "ResourceTags")
         List<String> ResourceTags;
 
+        @JSONField(name = "RuleEngine")
+        Boolean RuleEngine;
+
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
 
@@ -5772,6 +5898,42 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class OriginResponseHeader {
+
+        @JSONField(name = "OriginResponseHeaderAction")
+        OriginResponseHeaderAction OriginResponseHeaderAction;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class OriginResponseHeaderAction {
+
+        @JSONField(name = "OriginResponseHeaderInstances")
+        List<OriginResponseHeaderInstance> OriginResponseHeaderInstances;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class OriginResponseHeaderInstance {
+
+        @JSONField(name = "Action")
+        String Action;
+
+        @JSONField(name = "Key")
+        String Key;
+
+        @JSONField(name = "Object")
+        String Object;
+
+        @JSONField(name = "Value")
+        String Value;
+
+        @JSONField(name = "ValueType")
+        String ValueType;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class OriginRetry {
 
         @JSONField(name = "StatusCode")
@@ -6147,6 +6309,42 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class ReleaseTemplateRequest {
+
+        @JSONField(name = "Env")
+        String Env;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ReleaseTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        ReleaseTemplateResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ReleaseTemplateResult {
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class RemoteAuth {
 
         @JSONField(name = "RemoteAuthRules")
@@ -6360,6 +6558,17 @@ public class CDN {
 
         @JSONField(name = "TransferEncoding")
         Boolean TransferEncoding;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class RuleEngine {
+
+        @JSONField(name = "Rules")
+        List<RERule> Rules;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
     }
 
     @Data
@@ -7252,6 +7461,9 @@ public class CDN {
         @JSONField(name = "OriginRange")
         Boolean OriginRange;
 
+        @JSONField(name = "OriginResponseHeader")
+        List<OriginResponseHeader> OriginResponseHeader;
+
         @JSONField(name = "OriginRetry")
         OriginRetry OriginRetry;
 
@@ -7287,6 +7499,9 @@ public class CDN {
 
         @JSONField(name = "RewriteHLS")
         RewriteHLS RewriteHLS;
+
+        @JSONField(name = "RuleEngine")
+        RuleEngine RuleEngine;
 
         @JSONField(name = "ServiceRegion")
         String ServiceRegion;
@@ -7353,6 +7568,34 @@ public class CDN {
     @Data
     @Accessors(chain = true)
     public static class UpdateCipherTemplateResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateRuleEngineTemplateRequest {
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "Rule")
+        String Rule;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+
+        @JSONField(name = "TemplateVersion")
+        String TemplateVersion;
+
+        @JSONField(name = "Title")
+        String Title;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class UpdateRuleEngineTemplateResponse {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;

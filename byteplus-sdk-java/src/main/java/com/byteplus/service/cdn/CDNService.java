@@ -158,4 +158,12 @@ package com.byteplus.service.cdn;
 
         CDN.UntagResourcesResponse untagResources(CDN.UntagResourcesRequest request) throws Exception;
 
+        CDN.ReleaseTemplateResponse releaseTemplate(CDN.ReleaseTemplateRequest request) throws Exception;
+
+        CDN.CreateRuleEngineTemplateResponse createRuleEngineTemplate(CDN.CreateRuleEngineTemplateRequest request) throws Exception;
+
+        CDN.UpdateRuleEngineTemplateResponse updateRuleEngineTemplate(CDN.UpdateRuleEngineTemplateRequest request) throws Exception;
+
+        CDN.DescribeRuleEngineTemplateResponse describeRuleEngineTemplate(CDN.DescribeRuleEngineTemplateRequest request) throws Exception;
+
 }

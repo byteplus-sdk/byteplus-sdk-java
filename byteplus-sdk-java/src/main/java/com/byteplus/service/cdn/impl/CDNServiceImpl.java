@@ -712,4 +712,40 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
         }
         return JSON.parseObject(response.getData(), CDN.UntagResourcesResponse.class);
     }
+
+    @Override
+    public CDN.ReleaseTemplateResponse releaseTemplate(CDN.ReleaseTemplateRequest request) throws Exception {
+        RawResponse response = json("ReleaseTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ReleaseTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.CreateRuleEngineTemplateResponse createRuleEngineTemplate(CDN.CreateRuleEngineTemplateRequest request) throws Exception {
+        RawResponse response = json("CreateRuleEngineTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.CreateRuleEngineTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.UpdateRuleEngineTemplateResponse updateRuleEngineTemplate(CDN.UpdateRuleEngineTemplateRequest request) throws Exception {
+        RawResponse response = json("UpdateRuleEngineTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.UpdateRuleEngineTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeRuleEngineTemplateResponse describeRuleEngineTemplate(CDN.DescribeRuleEngineTemplateRequest request) throws Exception {
+        RawResponse response = json("DescribeRuleEngineTemplate", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeRuleEngineTemplateResponse.class);
+    }
 }

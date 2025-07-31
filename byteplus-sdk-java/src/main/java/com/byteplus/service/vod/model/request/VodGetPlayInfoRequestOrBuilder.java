@@ -392,4 +392,44 @@ public interface VodGetPlayInfoRequestOrBuilder extends
      */
     com.google.protobuf.ByteString
     getDashModeBytes();
+
+    /**
+     * <pre>
+     *客户端生成 私有Drm加密 用于加密密钥明文,unionInfo,DrmExpireTImestamp
+     * </pre>
+     *
+     * <code>string DrmKEK = 20;</code>
+     * @return The drmKEK.
+     */
+    java.lang.String getDrmKEK();
+    /**
+     * <pre>
+     *客户端生成 私有Drm加密 用于加密密钥明文,unionInfo,DrmExpireTImestamp
+     * </pre>
+     *
+     * <code>string DrmKEK = 20;</code>
+     * @return The bytes for drmKEK.
+     */
+    com.google.protobuf.ByteString
+    getDrmKEKBytes();
+
+    /**
+     * <pre>
+     *用于标识请求来自于web播放器 "1"表示web播放器
+     * </pre>
+     *
+     * <code>string JSPlayer = 21;</code>
+     * @return The jSPlayer.
+     */
+    java.lang.String getJSPlayer();
+    /**
+     * <pre>
+     *用于标识请求来自于web播放器 "1"表示web播放器
+     * </pre>
+     *
+     * <code>string JSPlayer = 21;</code>
+     * @return The bytes for jSPlayer.
+     */
+    com.google.protobuf.ByteString
+    getJSPlayerBytes();
 }

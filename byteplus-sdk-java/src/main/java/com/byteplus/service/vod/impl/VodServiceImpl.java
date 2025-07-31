@@ -600,6 +600,25 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
 
 
     /**
+     * createHlsDecryptionKey.
+     *
+     * @param input com.byteplus.service.vod.model.request.VodCreateHlsDecryptionKeyRequest
+     * @return com.byteplus.service.vod.model.response.VodCreateHlsDecryptionKeyResponse
+     * @throws Exception the exception
+     */
+    @Override
+    public com.byteplus.service.vod.model.response.VodCreateHlsDecryptionKeyResponse createHlsDecryptionKey(com.byteplus.service.vod.model.request.VodCreateHlsDecryptionKeyRequest input) throws Exception {
+        com.byteplus.model.response.RawResponse response = query(com.byteplus.service.vod.Const.CreateHlsDecryptionKey, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
+        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        com.byteplus.service.vod.model.response.VodCreateHlsDecryptionKeyResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodCreateHlsDecryptionKeyResponse.newBuilder();
+        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
+        return responseBuilder.build();
+    }
+
+
+    /**
      * getPlayInfoWithLiveTimeShiftScene.
      *
      * @param input com.byteplus.service.vod.model.request.VodGetPlayInfoWithLiveTimeShiftSceneRequest

@@ -12,7 +12,8 @@ public class VodGetPlayInfoDemo {
         IVodService vodService = VodServiceImpl.getInstance();
         vodService.setAccessKey("your ak");
         vodService.setSecretKey("your sk");
-		try {
+
+        try {
             com.byteplus.service.vod.model.request.VodGetPlayInfoRequest.Builder reqBuilder = com.byteplus.service.vod.model.request.VodGetPlayInfoRequest.newBuilder();
 			reqBuilder.setVid("your Vid");
 			reqBuilder.setFormat("your Format");
@@ -31,6 +32,10 @@ public class VodGetPlayInfoDemo {
 			reqBuilder.setDrmExpireTimestamp("your DrmExpireTimestamp");
 			reqBuilder.setQuality("your Quality");
 			reqBuilder.setPlayConfig("your PlayConfig");
+			reqBuilder.setForceExpire("your ForceExpire");
+			reqBuilder.setDashMode("your DashMode");
+			reqBuilder.setDrmKEK("your DrmKEK");
+			reqBuilder.setJSPlayer("your JSPlayer");
 			
             com.byteplus.service.vod.model.response.VodGetPlayInfoResponse resp = vodService.getPlayInfo(reqBuilder.build());
             if (resp.getResponseMetadata().hasError()) {

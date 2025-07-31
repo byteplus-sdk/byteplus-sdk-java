@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodListCdnUsageDataRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnUsageDataRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnUsageDataRequest)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -18,18 +18,18 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
   java.lang.String getDomains();
   /**
    * <pre>
-   * 域名，多个用逗号隔开 
+   * 域名，多个用逗号隔开
    * </pre>
    *
    * <code>string Domains = 1;</code>
    * @return The bytes for domains.
    */
   com.google.protobuf.ByteString
-      getDomainsBytes();
+  getDomainsBytes();
 
   /**
    * <pre>
-   * 聚合度 
+   * 聚合度
    * </pre>
    *
    * <code>string Interval = 2;</code>
@@ -38,18 +38,18 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
   java.lang.String getInterval();
   /**
    * <pre>
-   * 聚合度 
+   * 聚合度
    * </pre>
    *
    * <code>string Interval = 2;</code>
    * @return The bytes for interval.
    */
   com.google.protobuf.ByteString
-      getIntervalBytes();
+  getIntervalBytes();
 
   /**
    * <pre>
-   * 查询范围起始时间 
+   * 查询范围起始时间
    * </pre>
    *
    * <code>int64 StartTimestamp = 3;</code>
@@ -59,7 +59,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
 
   /**
    * <pre>
-   * 查询范围截止时间 
+   * 查询范围截止时间
    * </pre>
    *
    * <code>int64 EndTimestamp = 4;</code>
@@ -69,7 +69,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
 
   /**
    * <pre>
-   * 统计数据类别 
+   * 统计数据类别
    * </pre>
    *
    * <code>string DataType = 5;</code>
@@ -78,18 +78,18 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
   java.lang.String getDataType();
   /**
    * <pre>
-   * 统计数据类别 
+   * 统计数据类别
    * </pre>
    *
    * <code>string DataType = 5;</code>
    * @return The bytes for dataType.
    */
   com.google.protobuf.ByteString
-      getDataTypeBytes();
+  getDataTypeBytes();
 
   /**
    * <pre>
-   * 指标类别 
+   * 指标类别
    * </pre>
    *
    * <code>string Metric = 6;</code>
@@ -98,14 +98,14 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
   java.lang.String getMetric();
   /**
    * <pre>
-   * 指标类别 
+   * 指标类别
    * </pre>
    *
    * <code>string Metric = 6;</code>
    * @return The bytes for metric.
    */
   com.google.protobuf.ByteString
-      getMetricBytes();
+  getMetricBytes();
 
   /**
    * <code>bool NeedDetail = 7;</code>
@@ -123,7 +123,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for area.
    */
   com.google.protobuf.ByteString
-      getAreaBytes();
+  getAreaBytes();
 
   /**
    * <code>string Region = 9;</code>
@@ -135,7 +135,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for region.
    */
   com.google.protobuf.ByteString
-      getRegionBytes();
+  getRegionBytes();
 
   /**
    * <code>string Isp = 10;</code>
@@ -147,7 +147,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for isp.
    */
   com.google.protobuf.ByteString
-      getIspBytes();
+  getIspBytes();
 
   /**
    * <code>string Protocol = 11;</code>
@@ -159,7 +159,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for protocol.
    */
   com.google.protobuf.ByteString
-      getProtocolBytes();
+  getProtocolBytes();
 
   /**
    * <code>string IpVersion = 12;</code>
@@ -171,7 +171,7 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for ipVersion.
    */
   com.google.protobuf.ByteString
-      getIpVersionBytes();
+  getIpVersionBytes();
 
   /**
    * <code>string BillingRegion = 13;</code>
@@ -183,5 +183,33 @@ public interface VodListCdnUsageDataRequestOrBuilder extends
    * @return The bytes for billingRegion.
    */
   com.google.protobuf.ByteString
-      getBillingRegionBytes();
+  getBillingRegionBytes();
+
+  /**
+   * <pre>
+   *时区。取值 "Etc/GMT", "Etc/GMT-1", "Etc/GMT-2", "Etc/GMT-3", "Etc/GMT-4",
+   *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
+   *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
+   *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+   * </pre>
+   *
+   * <code>string TimeZone = 14;</code>
+   * @return The timeZone.
+   */
+  java.lang.String getTimeZone();
+  /**
+   * <pre>
+   *时区。取值 "Etc/GMT", "Etc/GMT-1", "Etc/GMT-2", "Etc/GMT-3", "Etc/GMT-4",
+   *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
+   *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
+   *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
+   * </pre>
+   *
+   * <code>string TimeZone = 14;</code>
+   * @return The bytes for timeZone.
+   */
+  com.google.protobuf.ByteString
+  getTimeZoneBytes();
 }

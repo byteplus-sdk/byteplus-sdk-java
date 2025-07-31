@@ -4,42 +4,42 @@
 package com.byteplus.service.vod.model.response;
 
 /**
- * Protobuf type {@code Byteplus.Vod.Models.Response.VodGetPlayInfoResponse}
+ * Protobuf type {@code Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse}
  */
-public final class VodGetPlayInfoResponse extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Response.VodGetPlayInfoResponse)
-        VodGetPlayInfoResponseOrBuilder {
-  private static final long serialVersionUID = 0L;
-  // Use VodGetPlayInfoResponse.newBuilder() to construct.
-  private VodGetPlayInfoResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+public final class VodCreateHlsDecryptionKeyResponse extends
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse)
+    VodCreateHlsDecryptionKeyResponseOrBuilder {
+private static final long serialVersionUID = 0L;
+  // Use VodCreateHlsDecryptionKeyResponse.newBuilder() to construct.
+  private VodCreateHlsDecryptionKeyResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private VodGetPlayInfoResponse() {
+  private VodCreateHlsDecryptionKeyResponse() {
   }
 
-  @java.lang.Override
+  @Override
   @SuppressWarnings({"unused"})
-  protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
-    return new VodGetPlayInfoResponse();
+  protected Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new VodCreateHlsDecryptionKeyResponse();
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
   }
-  private VodGetPlayInfoResponse(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  private VodCreateHlsDecryptionKeyResponse(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -62,11 +62,11 @@ public final class VodGetPlayInfoResponse extends
             break;
           }
           case 18: {
-            com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder subBuilder = null;
+            com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder subBuilder = null;
             if (result_ != null) {
               subBuilder = result_.toBuilder();
             }
-            result_ = input.readMessage(com.byteplus.service.vod.model.business.VodPlayInfoModel.parser(), extensionRegistry);
+            result_ = input.readMessage(com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(result_);
               result_ = subBuilder.buildPartial();
@@ -76,7 +76,7 @@ public final class VodGetPlayInfoResponse extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -87,23 +87,23 @@ public final class VodGetPlayInfoResponse extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
-    return com.byteplus.service.vod.model.response.VodResponse.internal_static_Byteplus_Vod_Models_Response_VodGetPlayInfoResponse_descriptor;
+      getDescriptor() {
+    return VodResponse.internal_static_Byteplus_Vod_Models_Response_VodCreateHlsDecryptionKeyResponse_descriptor;
   }
 
-  @java.lang.Override
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
-    return com.byteplus.service.vod.model.response.VodResponse.internal_static_Byteplus_Vod_Models_Response_VodGetPlayInfoResponse_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.class, com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.Builder.class);
+  @Override
+  protected FieldAccessorTable
+      internalGetFieldAccessorTable() {
+    return VodResponse.internal_static_Byteplus_Vod_Models_Response_VodCreateHlsDecryptionKeyResponse_fieldAccessorTable
+        .ensureFieldAccessorsInitialized(
+            VodCreateHlsDecryptionKeyResponse.class, Builder.class);
   }
 
   public static final int RESPONSEMETADATA_FIELD_NUMBER = 1;
@@ -116,7 +116,7 @@ public final class VodGetPlayInfoResponse extends
    * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
    * @return Whether the responseMetadata field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasResponseMetadata() {
     return responseMetadata_ != null;
   }
@@ -128,7 +128,7 @@ public final class VodGetPlayInfoResponse extends
    * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
    * @return The responseMetadata.
    */
-  @java.lang.Override
+  @Override
   public com.byteplus.service.base.model.base.ResponseMetadata getResponseMetadata() {
     return responseMetadata_ == null ? com.byteplus.service.base.model.base.ResponseMetadata.getDefaultInstance() : responseMetadata_;
   }
@@ -139,22 +139,22 @@ public final class VodGetPlayInfoResponse extends
    *
    * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
    */
-  @java.lang.Override
+  @Override
   public com.byteplus.service.base.model.base.ResponseMetadataOrBuilder getResponseMetadataOrBuilder() {
     return getResponseMetadata();
   }
 
   public static final int RESULT_FIELD_NUMBER = 2;
-  private com.byteplus.service.vod.model.business.VodPlayInfoModel result_;
+  private com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult result_;
   /**
    * <pre>
    * 响应结果
    * </pre>
    *
-   * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+   * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
    * @return Whether the result field is set.
    */
-  @java.lang.Override
+  @Override
   public boolean hasResult() {
     return result_ != null;
   }
@@ -163,27 +163,27 @@ public final class VodGetPlayInfoResponse extends
    * 响应结果
    * </pre>
    *
-   * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+   * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
    * @return The result.
    */
-  @java.lang.Override
-  public com.byteplus.service.vod.model.business.VodPlayInfoModel getResult() {
-    return result_ == null ? com.byteplus.service.vod.model.business.VodPlayInfoModel.getDefaultInstance() : result_;
+  @Override
+  public com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult getResult() {
+    return result_ == null ? com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.getDefaultInstance() : result_;
   }
   /**
    * <pre>
    * 响应结果
    * </pre>
    *
-   * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+   * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
    */
-  @java.lang.Override
-  public com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder getResultOrBuilder() {
+  @Override
+  public com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResultOrBuilder getResultOrBuilder() {
     return getResult();
   }
 
   private byte memoizedIsInitialized = -1;
-  @java.lang.Override
+  @Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -193,9 +193,9 @@ public final class VodGetPlayInfoResponse extends
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (responseMetadata_ != null) {
       output.writeMessage(1, getResponseMetadata());
     }
@@ -205,7 +205,7 @@ public final class VodGetPlayInfoResponse extends
     unknownFields.writeTo(output);
   }
 
-  @java.lang.Override
+  @Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -213,42 +213,42 @@ public final class VodGetPlayInfoResponse extends
     size = 0;
     if (responseMetadata_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, getResponseMetadata());
+        .computeMessageSize(1, getResponseMetadata());
     }
     if (result_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(2, getResult());
+        .computeMessageSize(2, getResult());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
   }
 
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
-    if (!(obj instanceof com.byteplus.service.vod.model.response.VodGetPlayInfoResponse)) {
+    if (!(obj instanceof VodCreateHlsDecryptionKeyResponse)) {
       return super.equals(obj);
     }
-    com.byteplus.service.vod.model.response.VodGetPlayInfoResponse other = (com.byteplus.service.vod.model.response.VodGetPlayInfoResponse) obj;
+    VodCreateHlsDecryptionKeyResponse other = (VodCreateHlsDecryptionKeyResponse) obj;
 
     if (hasResponseMetadata() != other.hasResponseMetadata()) return false;
     if (hasResponseMetadata()) {
       if (!getResponseMetadata()
-              .equals(other.getResponseMetadata())) return false;
+          .equals(other.getResponseMetadata())) return false;
     }
     if (hasResult() != other.hasResult()) return false;
     if (hasResult()) {
       if (!getResult()
-              .equals(other.getResult())) return false;
+          .equals(other.getResult())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -268,123 +268,123 @@ public final class VodGetPlayInfoResponse extends
     return hash;
   }
 
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(byte[] data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(java.io.InputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseDelimitedFrom(java.io.InputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseDelimitedFrom(
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+  public static VodCreateHlsDecryptionKeyResponse parseFrom(
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @java.lang.Override
+  @Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.byteplus.service.vod.model.response.VodGetPlayInfoResponse prototype) {
+  public static Builder newBuilder(VodCreateHlsDecryptionKeyResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @java.lang.Override
+  @Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
   /**
-   * Protobuf type {@code Byteplus.Vod.Models.Response.VodGetPlayInfoResponse}
+   * Protobuf type {@code Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Response.VodGetPlayInfoResponse)
-          com.byteplus.service.vod.model.response.VodGetPlayInfoResponseOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse)
+      VodCreateHlsDecryptionKeyResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
-      return com.byteplus.service.vod.model.response.VodResponse.internal_static_Byteplus_Vod_Models_Response_VodGetPlayInfoResponse_descriptor;
+        getDescriptor() {
+      return VodResponse.internal_static_Byteplus_Vod_Models_Response_VodCreateHlsDecryptionKeyResponse_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
-      return com.byteplus.service.vod.model.response.VodResponse.internal_static_Byteplus_Vod_Models_Response_VodGetPlayInfoResponse_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.class, com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.Builder.class);
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return VodResponse.internal_static_Byteplus_Vod_Models_Response_VodCreateHlsDecryptionKeyResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              VodCreateHlsDecryptionKeyResponse.class, Builder.class);
     }
 
-    // Construct using com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.newBuilder()
+    // Construct using com.byteplus.service.vod.model.response.VodCreateHlsDecryptionKeyResponse.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -393,7 +393,7 @@ public final class VodGetPlayInfoResponse extends
               .alwaysUseFieldBuilders) {
       }
     }
-    @java.lang.Override
+    @Override
     public Builder clear() {
       super.clear();
       if (responseMetadataBuilder_ == null) {
@@ -411,29 +411,29 @@ public final class VodGetPlayInfoResponse extends
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
-      return com.byteplus.service.vod.model.response.VodResponse.internal_static_Byteplus_Vod_Models_Response_VodGetPlayInfoResponse_descriptor;
+        getDescriptorForType() {
+      return VodResponse.internal_static_Byteplus_Vod_Models_Response_VodCreateHlsDecryptionKeyResponse_descriptor;
     }
 
-    @java.lang.Override
-    public com.byteplus.service.vod.model.response.VodGetPlayInfoResponse getDefaultInstanceForType() {
-      return com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.getDefaultInstance();
+    @Override
+    public VodCreateHlsDecryptionKeyResponse getDefaultInstanceForType() {
+      return VodCreateHlsDecryptionKeyResponse.getDefaultInstance();
     }
 
-    @java.lang.Override
-    public com.byteplus.service.vod.model.response.VodGetPlayInfoResponse build() {
-      com.byteplus.service.vod.model.response.VodGetPlayInfoResponse result = buildPartial();
+    @Override
+    public VodCreateHlsDecryptionKeyResponse build() {
+      VodCreateHlsDecryptionKeyResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @java.lang.Override
-    public com.byteplus.service.vod.model.response.VodGetPlayInfoResponse buildPartial() {
-      com.byteplus.service.vod.model.response.VodGetPlayInfoResponse result = new com.byteplus.service.vod.model.response.VodGetPlayInfoResponse(this);
+    @Override
+    public VodCreateHlsDecryptionKeyResponse buildPartial() {
+      VodCreateHlsDecryptionKeyResponse result = new VodCreateHlsDecryptionKeyResponse(this);
       if (responseMetadataBuilder_ == null) {
         result.responseMetadata_ = responseMetadata_;
       } else {
@@ -448,50 +448,50 @@ public final class VodGetPlayInfoResponse extends
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public Builder clone() {
       return super.clone();
     }
-    @java.lang.Override
+    @Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
       return super.setField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @java.lang.Override
+    @Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @java.lang.Override
+    @Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @java.lang.Override
+    @Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
       return super.addRepeatedField(field, value);
     }
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.byteplus.service.vod.model.response.VodGetPlayInfoResponse) {
-        return mergeFrom((com.byteplus.service.vod.model.response.VodGetPlayInfoResponse)other);
+      if (other instanceof VodCreateHlsDecryptionKeyResponse) {
+        return mergeFrom((VodCreateHlsDecryptionKeyResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.byteplus.service.vod.model.response.VodGetPlayInfoResponse other) {
-      if (other == com.byteplus.service.vod.model.response.VodGetPlayInfoResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(VodCreateHlsDecryptionKeyResponse other) {
+      if (other == VodCreateHlsDecryptionKeyResponse.getDefaultInstance()) return this;
       if (other.hasResponseMetadata()) {
         mergeResponseMetadata(other.getResponseMetadata());
       }
@@ -503,21 +503,21 @@ public final class VodGetPlayInfoResponse extends
       return this;
     }
 
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
-      com.byteplus.service.vod.model.response.VodGetPlayInfoResponse parsedMessage = null;
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      VodCreateHlsDecryptionKeyResponse parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.byteplus.service.vod.model.response.VodGetPlayInfoResponse) e.getUnfinishedMessage();
+        parsedMessage = (VodCreateHlsDecryptionKeyResponse) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -529,7 +529,7 @@ public final class VodGetPlayInfoResponse extends
 
     private com.byteplus.service.base.model.base.ResponseMetadata responseMetadata_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder> responseMetadataBuilder_;
+        com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder> responseMetadataBuilder_;
     /**
      * <pre>
      * 响应通用信息
@@ -584,7 +584,7 @@ public final class VodGetPlayInfoResponse extends
      * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
      */
     public Builder setResponseMetadata(
-            com.byteplus.service.base.model.base.ResponseMetadata.Builder builderForValue) {
+        com.byteplus.service.base.model.base.ResponseMetadata.Builder builderForValue) {
       if (responseMetadataBuilder_ == null) {
         responseMetadata_ = builderForValue.build();
         onChanged();
@@ -605,7 +605,7 @@ public final class VodGetPlayInfoResponse extends
       if (responseMetadataBuilder_ == null) {
         if (responseMetadata_ != null) {
           responseMetadata_ =
-                  com.byteplus.service.base.model.base.ResponseMetadata.newBuilder(responseMetadata_).mergeFrom(value).buildPartial();
+            com.byteplus.service.base.model.base.ResponseMetadata.newBuilder(responseMetadata_).mergeFrom(value).buildPartial();
         } else {
           responseMetadata_ = value;
         }
@@ -642,7 +642,7 @@ public final class VodGetPlayInfoResponse extends
      * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
      */
     public com.byteplus.service.base.model.base.ResponseMetadata.Builder getResponseMetadataBuilder() {
-
+      
       onChanged();
       return getResponseMetadataFieldBuilder().getBuilder();
     }
@@ -658,7 +658,7 @@ public final class VodGetPlayInfoResponse extends
         return responseMetadataBuilder_.getMessageOrBuilder();
       } else {
         return responseMetadata_ == null ?
-                com.byteplus.service.base.model.base.ResponseMetadata.getDefaultInstance() : responseMetadata_;
+            com.byteplus.service.base.model.base.ResponseMetadata.getDefaultInstance() : responseMetadata_;
       }
     }
     /**
@@ -669,11 +669,11 @@ public final class VodGetPlayInfoResponse extends
      * <code>.Byteplus.Base.Models.Base.ResponseMetadata ResponseMetadata = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder>
-    getResponseMetadataFieldBuilder() {
+        com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder> 
+        getResponseMetadataFieldBuilder() {
       if (responseMetadataBuilder_ == null) {
         responseMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder>(
+            com.byteplus.service.base.model.base.ResponseMetadata, com.byteplus.service.base.model.base.ResponseMetadata.Builder, com.byteplus.service.base.model.base.ResponseMetadataOrBuilder>(
                 getResponseMetadata(),
                 getParentForChildren(),
                 isClean());
@@ -682,15 +682,15 @@ public final class VodGetPlayInfoResponse extends
       return responseMetadataBuilder_;
     }
 
-    private com.byteplus.service.vod.model.business.VodPlayInfoModel result_;
+    private com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult result_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodPlayInfoModel, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder, com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder> resultBuilder_;
+        com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResultOrBuilder> resultBuilder_;
     /**
      * <pre>
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      * @return Whether the result field is set.
      */
     public boolean hasResult() {
@@ -701,12 +701,12 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      * @return The result.
      */
-    public com.byteplus.service.vod.model.business.VodPlayInfoModel getResult() {
+    public com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult getResult() {
       if (resultBuilder_ == null) {
-        return result_ == null ? com.byteplus.service.vod.model.business.VodPlayInfoModel.getDefaultInstance() : result_;
+        return result_ == null ? com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.getDefaultInstance() : result_;
       } else {
         return resultBuilder_.getMessage();
       }
@@ -716,9 +716,9 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
-    public Builder setResult(com.byteplus.service.vod.model.business.VodPlayInfoModel value) {
+    public Builder setResult(com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult value) {
       if (resultBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -736,10 +736,10 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
     public Builder setResult(
-            com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder builderForValue) {
       if (resultBuilder_ == null) {
         result_ = builderForValue.build();
         onChanged();
@@ -754,13 +754,13 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
-    public Builder mergeResult(com.byteplus.service.vod.model.business.VodPlayInfoModel value) {
+    public Builder mergeResult(com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult value) {
       if (resultBuilder_ == null) {
         if (result_ != null) {
           result_ =
-                  com.byteplus.service.vod.model.business.VodPlayInfoModel.newBuilder(result_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.newBuilder(result_).mergeFrom(value).buildPartial();
         } else {
           result_ = value;
         }
@@ -776,7 +776,7 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
     public Builder clearResult() {
       if (resultBuilder_ == null) {
@@ -794,10 +794,10 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
-    public com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder getResultBuilder() {
-
+    public com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder getResultBuilder() {
+      
       onChanged();
       return getResultFieldBuilder().getBuilder();
     }
@@ -806,14 +806,14 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
-    public com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder getResultOrBuilder() {
+    public com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResultOrBuilder getResultOrBuilder() {
       if (resultBuilder_ != null) {
         return resultBuilder_.getMessageOrBuilder();
       } else {
         return result_ == null ?
-                com.byteplus.service.vod.model.business.VodPlayInfoModel.getDefaultInstance() : result_;
+            com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.getDefaultInstance() : result_;
       }
     }
     /**
@@ -821,14 +821,14 @@ public final class VodGetPlayInfoResponse extends
      * 响应结果
      * </pre>
      *
-     * <code>.Byteplus.Vod.Models.Business.VodPlayInfoModel Result = 2;</code>
+     * <code>.Byteplus.Vod.Models.Business.VodCreateHlsDecryptionKeyResult Result = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodPlayInfoModel, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder, com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder>
-    getResultFieldBuilder() {
+        com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResultOrBuilder> 
+        getResultFieldBuilder() {
       if (resultBuilder_ == null) {
         resultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.VodPlayInfoModel, com.byteplus.service.vod.model.business.VodPlayInfoModel.Builder, com.byteplus.service.vod.model.business.VodPlayInfoModelOrBuilder>(
+            com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResult.Builder, com.byteplus.service.vod.model.business.VodCreateHlsDecryptionKeyResultOrBuilder>(
                 getResult(),
                 getParentForChildren(),
                 isClean());
@@ -836,54 +836,54 @@ public final class VodGetPlayInfoResponse extends
       }
       return resultBuilder_;
     }
-    @java.lang.Override
+    @Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @java.lang.Override
+    @Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
 
-    // @@protoc_insertion_point(builder_scope:Byteplus.Vod.Models.Response.VodGetPlayInfoResponse)
+    // @@protoc_insertion_point(builder_scope:Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:Byteplus.Vod.Models.Response.VodGetPlayInfoResponse)
-  private static final com.byteplus.service.vod.model.response.VodGetPlayInfoResponse DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:Byteplus.Vod.Models.Response.VodCreateHlsDecryptionKeyResponse)
+  private static final VodCreateHlsDecryptionKeyResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.byteplus.service.vod.model.response.VodGetPlayInfoResponse();
+    DEFAULT_INSTANCE = new VodCreateHlsDecryptionKeyResponse();
   }
 
-  public static com.byteplus.service.vod.model.response.VodGetPlayInfoResponse getDefaultInstance() {
+  public static VodCreateHlsDecryptionKeyResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<VodGetPlayInfoResponse>
-          PARSER = new com.google.protobuf.AbstractParser<VodGetPlayInfoResponse>() {
-    @java.lang.Override
-    public VodGetPlayInfoResponse parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
-      return new VodGetPlayInfoResponse(input, extensionRegistry);
+  private static final com.google.protobuf.Parser<VodCreateHlsDecryptionKeyResponse>
+      PARSER = new com.google.protobuf.AbstractParser<VodCreateHlsDecryptionKeyResponse>() {
+    @Override
+    public VodCreateHlsDecryptionKeyResponse parsePartialFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return new VodCreateHlsDecryptionKeyResponse(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<VodGetPlayInfoResponse> parser() {
+  public static com.google.protobuf.Parser<VodCreateHlsDecryptionKeyResponse> parser() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.google.protobuf.Parser<VodGetPlayInfoResponse> getParserForType() {
+  @Override
+  public com.google.protobuf.Parser<VodCreateHlsDecryptionKeyResponse> getParserForType() {
     return PARSER;
   }
 
-  @java.lang.Override
-  public com.byteplus.service.vod.model.response.VodGetPlayInfoResponse getDefaultInstanceForType() {
+  @Override
+  public VodCreateHlsDecryptionKeyResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodListCdnPvDataRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -18,18 +18,18 @@ public interface VodListCdnPvDataRequestOrBuilder extends
   java.lang.String getDomains();
   /**
    * <pre>
-   * 域名，多个用逗号隔开 
+   * 域名，多个用逗号隔开
    * </pre>
    *
    * <code>string Domains = 1;</code>
    * @return The bytes for domains.
    */
   com.google.protobuf.ByteString
-      getDomainsBytes();
+  getDomainsBytes();
 
   /**
    * <pre>
-   * 聚合度,可选：auto,5min,hour,day 
+   * 聚合度,可选：auto,5min,hour,day
    * </pre>
    *
    * <code>string Interval = 2;</code>
@@ -38,18 +38,18 @@ public interface VodListCdnPvDataRequestOrBuilder extends
   java.lang.String getInterval();
   /**
    * <pre>
-   * 聚合度,可选：auto,5min,hour,day 
+   * 聚合度,可选：auto,5min,hour,day
    * </pre>
    *
    * <code>string Interval = 2;</code>
    * @return The bytes for interval.
    */
   com.google.protobuf.ByteString
-      getIntervalBytes();
+  getIntervalBytes();
 
   /**
    * <pre>
-   * 查询范围起始时间 
+   * 查询范围起始时间
    * </pre>
    *
    * <code>int64 StartTimestamp = 3;</code>
@@ -59,7 +59,7 @@ public interface VodListCdnPvDataRequestOrBuilder extends
 
   /**
    * <pre>
-   * 查询范围截止时间 
+   * 查询范围截止时间
    * </pre>
    *
    * <code>int64 EndTimestamp = 4;</code>
@@ -69,7 +69,7 @@ public interface VodListCdnPvDataRequestOrBuilder extends
 
   /**
    * <pre>
-   * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
+   * 统计数据类别, 可选edge-边缘数据,origin-回源数据
    * </pre>
    *
    * <code>string DataType = 5;</code>
@@ -78,18 +78,46 @@ public interface VodListCdnPvDataRequestOrBuilder extends
   java.lang.String getDataType();
   /**
    * <pre>
-   * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
+   * 统计数据类别, 可选edge-边缘数据,origin-回源数据
    * </pre>
    *
    * <code>string DataType = 5;</code>
    * @return The bytes for dataType.
    */
   com.google.protobuf.ByteString
-      getDataTypeBytes();
+  getDataTypeBytes();
 
   /**
    * <code>bool NeedDetail = 6;</code>
    * @return The needDetail.
    */
   boolean getNeedDetail();
+
+  /**
+   * <pre>
+   *时区。取值 "Etc/GMT", "Etc/GMT-1", "Etc/GMT-2", "Etc/GMT-3", "Etc/GMT-4",
+   *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
+   *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
+   *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+   * </pre>
+   *
+   * <code>string TimeZone = 7;</code>
+   * @return The timeZone.
+   */
+  java.lang.String getTimeZone();
+  /**
+   * <pre>
+   *时区。取值 "Etc/GMT", "Etc/GMT-1", "Etc/GMT-2", "Etc/GMT-3", "Etc/GMT-4",
+   *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
+   *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
+   *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
+   * </pre>
+   *
+   * <code>string TimeZone = 7;</code>
+   * @return The bytes for timeZone.
+   */
+  com.google.protobuf.ByteString
+  getTimeZoneBytes();
 }

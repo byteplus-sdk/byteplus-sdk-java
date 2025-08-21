@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodPlayInfoOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlayInfo)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlayInfo)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -25,7 +25,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for fileId.
    */
   com.google.protobuf.ByteString
-      getFileIdBytes();
+  getFileIdBytes();
 
   /**
    * <pre>
@@ -45,7 +45,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for md5.
    */
   com.google.protobuf.ByteString
-      getMd5Bytes();
+  getMd5Bytes();
 
   /**
    * <pre>
@@ -65,7 +65,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for fileType.
    */
   com.google.protobuf.ByteString
-      getFileTypeBytes();
+  getFileTypeBytes();
 
   /**
    * <pre>
@@ -85,7 +85,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for format.
    */
   com.google.protobuf.ByteString
-      getFormatBytes();
+  getFormatBytes();
 
   /**
    * <pre>
@@ -105,7 +105,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for codec.
    */
   com.google.protobuf.ByteString
-      getCodecBytes();
+  getCodecBytes();
 
   /**
    * <pre>
@@ -125,7 +125,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for definition.
    */
   com.google.protobuf.ByteString
-      getDefinitionBytes();
+  getDefinitionBytes();
 
   /**
    * <pre>
@@ -145,7 +145,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for mainPlayUrl.
    */
   com.google.protobuf.ByteString
-      getMainPlayUrlBytes();
+  getMainPlayUrlBytes();
 
   /**
    * <pre>
@@ -165,7 +165,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for backupPlayUrl.
    */
   com.google.protobuf.ByteString
-      getBackupPlayUrlBytes();
+  getBackupPlayUrlBytes();
 
   /**
    * <pre>
@@ -225,7 +225,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for checkInfo.
    */
   com.google.protobuf.ByteString
-      getCheckInfoBytes();
+  getCheckInfoBytes();
 
   /**
    * <pre>
@@ -245,7 +245,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for indexRange.
    */
   com.google.protobuf.ByteString
-      getIndexRangeBytes();
+  getIndexRangeBytes();
 
   /**
    * <pre>
@@ -265,7 +265,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for initRange.
    */
   com.google.protobuf.ByteString
-      getInitRangeBytes();
+  getInitRangeBytes();
 
   /**
    * <pre>
@@ -285,7 +285,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for playAuth.
    */
   com.google.protobuf.ByteString
-      getPlayAuthBytes();
+  getPlayAuthBytes();
 
   /**
    * <pre>
@@ -305,7 +305,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for playAuthId.
    */
   com.google.protobuf.ByteString
-      getPlayAuthIdBytes();
+  getPlayAuthIdBytes();
 
   /**
    * <pre>
@@ -325,7 +325,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for logoType.
    */
   com.google.protobuf.ByteString
-      getLogoTypeBytes();
+  getLogoTypeBytes();
 
   /**
    * <pre>
@@ -345,7 +345,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for quality.
    */
   com.google.protobuf.ByteString
-      getQualityBytes();
+  getQualityBytes();
 
   /**
    * <pre>
@@ -365,7 +365,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for barrageMaskOffset.
    */
   com.google.protobuf.ByteString
-      getBarrageMaskOffsetBytes();
+  getBarrageMaskOffsetBytes();
 
   /**
    * <pre>
@@ -395,7 +395,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for keyFrameAlignment.
    */
   com.google.protobuf.ByteString
-      getKeyFrameAlignmentBytes();
+  getKeyFrameAlignmentBytes();
 
   /**
    * <pre>
@@ -442,7 +442,7 @@ public interface VodPlayInfoOrBuilder extends
    * @return The bytes for drmType.
    */
   com.google.protobuf.ByteString
-      getDrmTypeBytes();
+  getDrmTypeBytes();
 
   /**
    * <pre>
@@ -470,4 +470,44 @@ public interface VodPlayInfoOrBuilder extends
    * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
    */
   com.byteplus.service.vod.model.business.DrmPsshOrBuilder getEncryptionPsshOrBuilder();
+
+  /**
+   * <pre>
+   * MainPlayUrl的过期时间
+   * </pre>
+   *
+   * <code>string MainUrlExpire = 26;</code>
+   * @return The mainUrlExpire.
+   */
+  java.lang.String getMainUrlExpire();
+  /**
+   * <pre>
+   * MainPlayUrl的过期时间
+   * </pre>
+   *
+   * <code>string MainUrlExpire = 26;</code>
+   * @return The bytes for mainUrlExpire.
+   */
+  com.google.protobuf.ByteString
+  getMainUrlExpireBytes();
+
+  /**
+   * <pre>
+   * BackupPlayUrl的过期时间
+   * </pre>
+   *
+   * <code>string BackupUrlExpire = 27;</code>
+   * @return The backupUrlExpire.
+   */
+  java.lang.String getBackupUrlExpire();
+  /**
+   * <pre>
+   * BackupPlayUrl的过期时间
+   * </pre>
+   *
+   * <code>string BackupUrlExpire = 27;</code>
+   * @return The bytes for backupUrlExpire.
+   */
+  com.google.protobuf.ByteString
+  getBackupUrlExpireBytes();
 }

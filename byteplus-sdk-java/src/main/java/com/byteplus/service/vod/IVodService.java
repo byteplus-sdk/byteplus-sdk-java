@@ -211,6 +211,15 @@ public interface IVodService extends com.byteplus.service.IBaseService {
 	com.byteplus.service.vod.model.response.VodCommitUploadInfoResponse commitUploadInfo(com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest input) throws Exception;
 
 	/**
+	 * listFileMetaInfosByFileNames.
+	 *
+	 * @param input com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest
+	 * @return com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse
+	 * @throws Exception the exception
+	 */
+	com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse listFileMetaInfosByFileNames(com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest input) throws Exception;
+
+	/**
 	 * updateMediaInfo.
 	 *
 	 * @param input com.byteplus.service.vod.model.request.VodUpdateMediaInfoRequest
@@ -272,6 +281,24 @@ public interface IVodService extends com.byteplus.service.IBaseService {
 	 * @throws Exception the exception
 	 */
 	com.byteplus.service.vod.model.response.VodDeleteTranscodesResponse deleteTranscodes(com.byteplus.service.vod.model.request.VodDeleteTranscodesRequest input) throws Exception;
+
+	/**
+	 * getFileInfos.
+	 *
+	 * @param input com.byteplus.service.vod.model.request.VodGetFileInfosRequest
+	 * @return com.byteplus.service.vod.model.response.VodGetFileInfosResponse
+	 * @throws Exception the exception
+	 */
+	com.byteplus.service.vod.model.response.VodGetFileInfosResponse getFileInfos(com.byteplus.service.vod.model.request.VodGetFileInfosRequest input) throws Exception;
+
+	/**
+	 * deleteMediaTosFile.
+	 *
+	 * @param input com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest
+	 * @return com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse
+	 * @throws Exception the exception
+	 */
+	com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse deleteMediaTosFile(com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest input) throws Exception;
 
 	/**
 	 * getMediaList.

@@ -43,7 +43,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
 
     // private构造方法保证外部无法实例化:
     protected VodServiceImpl(String region) {
-        super(getRegionServiceInfo(region), getRegionApiInfoList(region));
+        super(getRegionServiceInfo(region), com.byteplus.service.vod.VodServiceConfig.apiInfoList);
     }
 
     private static ServiceInfo getRegionServiceInfo(String region){
@@ -66,13 +66,6 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
                     }
                 }
         );
-    }
-
-    private static Map<String, ApiInfo> getRegionApiInfoList(String region){
-        if (region.equals(com.byteplus.helper.Const.REGION_AP_SOUTHEAST_1)) {
-            return com.byteplus.service.vod.VodServiceConfig.apiInfoListApSoutheast1;
-        }
-        return com.byteplus.service.vod.VodServiceConfig.apiInfoList;
     }
 
     public static com.byteplus.service.vod.IVodService getInstance(String region) throws Exception {
@@ -714,6 +707,25 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
 
 
     /**
+     * listFileMetaInfosByFileNames.
+     *
+     * @param input com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest
+     * @return com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse
+     * @throws Exception the exception
+     */
+    @Override
+    public com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse listFileMetaInfosByFileNames(com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest input) throws Exception {
+        com.byteplus.model.response.RawResponse response = post(com.byteplus.service.vod.Const.ListFileMetaInfosByFileNames, new ArrayList<>(), com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
+        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodListFileMetaInfosByFileNamesResponse.newBuilder();
+        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
+        return responseBuilder.build();
+    }
+
+
+    /**
      * updateMediaInfo.
      *
      * @param input com.byteplus.service.vod.model.request.VodUpdateMediaInfoRequest
@@ -841,6 +853,44 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
             throw response.getException();
         }
         com.byteplus.service.vod.model.response.VodDeleteTranscodesResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodDeleteTranscodesResponse.newBuilder();
+        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
+        return responseBuilder.build();
+    }
+
+
+    /**
+     * getFileInfos.
+     *
+     * @param input com.byteplus.service.vod.model.request.VodGetFileInfosRequest
+     * @return com.byteplus.service.vod.model.response.VodGetFileInfosResponse
+     * @throws Exception the exception
+     */
+    @Override
+    public com.byteplus.service.vod.model.response.VodGetFileInfosResponse getFileInfos(com.byteplus.service.vod.model.request.VodGetFileInfosRequest input) throws Exception {
+        com.byteplus.model.response.RawResponse response = query(com.byteplus.service.vod.Const.GetFileInfos, com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
+        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        com.byteplus.service.vod.model.response.VodGetFileInfosResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodGetFileInfosResponse.newBuilder();
+        JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
+        return responseBuilder.build();
+    }
+
+
+    /**
+     * deleteMediaTosFile.
+     *
+     * @param input com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest
+     * @return com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse
+     * @throws Exception the exception
+     */
+    @Override
+    public com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse deleteMediaTosFile(com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest input) throws Exception {
+        com.byteplus.model.response.RawResponse response = post(com.byteplus.service.vod.Const.DeleteMediaTosFile, new ArrayList<>(), com.byteplus.helper.Utils.mapToPairList(com.byteplus.helper.Utils.protoBufferToMap(input, true)));
+        if (response.getCode() != com.byteplus.error.SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse.Builder responseBuilder = com.byteplus.service.vod.model.response.VodDeleteMediaTosFileResponse.newBuilder();
         JsonFormat.parser().ignoringUnknownFields().merge(new InputStreamReader(new ByteArrayInputStream(response.getData())), responseBuilder);
         return responseBuilder.build();
     }

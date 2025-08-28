@@ -76,7 +76,9 @@ public class Const {
     public static final String DeleteVideoClassification = "DeleteVideoClassification";
     public static final String ListVideoClassifications = "ListVideoClassifications";
     public static final String ListSnapshots = "ListSnapshots";
+    public static final String GetFileInfos = "GetFileInfos";
     public static final String DeleteMediaTosFile = "DeleteMediaTosFile";
+    public static final String ListFileMetaInfosByFileNames = "ListFileMetaInfosByFileNames";
     //vod-transcode
     public static final String StartWorkflow = "StartWorkflow";
     public static final String RetrieveTranscodeResult = "RetrieveTranscodeResult";
@@ -126,7 +128,6 @@ public class Const {
 
     public static final String SubmitBlockTasks = "SubmitBlockTasks";
     public static final String GetContentBlockTasks = "GetContentBlockTasks";
-    public static final String ListFileMetaInfosByFileNames = "ListFileMetaInfosByFileNames";
 
     public static final String CreateDomain = "CreateDomain";
 

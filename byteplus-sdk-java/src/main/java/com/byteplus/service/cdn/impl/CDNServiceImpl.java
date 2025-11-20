@@ -318,6 +318,15 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
     }
 
     @Override
+    public CDN.ListResourceTagsResponse listResourceTags() throws Exception {
+        RawResponse response = json("ListResourceTags", null, JSON.toJSONString(new Object()));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.ListResourceTagsResponse.class);
+    }
+
+    @Override
     public CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception {
         RawResponse response = json("AddCdnCertificate", null, JSON.toJSONString(request));
         if (response.getCode() != SdkError.SUCCESS.getNumber()) {
@@ -495,6 +504,42 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
             throw response.getException();
         }
         return JSON.parseObject(response.getData(), CDN.CreateServiceTemplateResponse.class);
+    }
+
+    @Override
+    public CDN.CreateTemplateVersionResponse createTemplateVersion(CDN.CreateTemplateVersionRequest request) throws Exception {
+        RawResponse response = json("CreateTemplateVersion", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.CreateTemplateVersionResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeTemplateReleaseVersionsResponse describeTemplateReleaseVersions(CDN.DescribeTemplateReleaseVersionsRequest request) throws Exception {
+        RawResponse response = json("DescribeTemplateReleaseVersions", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeTemplateReleaseVersionsResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeDomainSharedResponse describeDomainShared(CDN.DescribeDomainSharedRequest request) throws Exception {
+        RawResponse response = json("DescribeDomainShared", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeDomainSharedResponse.class);
+    }
+
+    @Override
+    public CDN.DescribeCdnIPResponse describeCdnIP(CDN.DescribeCdnIPRequest request) throws Exception {
+        RawResponse response = json("DescribeCdnIP", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.DescribeCdnIPResponse.class);
     }
 
     @Override
@@ -693,6 +738,15 @@ public class CDNServiceImpl extends BaseServiceImpl implements CDNService {
             throw response.getException();
         }
         return JSON.parseObject(response.getData(), CDN.UpdateSharedConfigResponse.class);
+    }
+
+    @Override
+    public CDN.AddSharedConfigResponse addSharedConfig(CDN.AddSharedConfigRequest request) throws Exception {
+        RawResponse response = json("AddSharedConfig", null, JSON.toJSONString(request));
+        if (response.getCode() != SdkError.SUCCESS.getNumber()) {
+            throw response.getException();
+        }
+        return JSON.parseObject(response.getData(), CDN.AddSharedConfigResponse.class);
     }
 
     @Override

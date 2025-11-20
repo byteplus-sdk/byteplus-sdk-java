@@ -70,6 +70,8 @@ package com.byteplus.service.cdn;
 
         CDN.DescribeCdnUpperIpResponse describeCdnUpperIp(CDN.DescribeCdnUpperIpRequest request) throws Exception;
 
+        CDN.ListResourceTagsResponse listResourceTags() throws Exception;
+
         CDN.AddCdnCertificateResponse addCdnCertificate(CDN.AddCdnCertificateRequest request) throws Exception;
 
         CDN.ListCertInfoResponse listCertInfo(CDN.ListCertInfoRequest request) throws Exception;
@@ -109,6 +111,14 @@ package com.byteplus.service.cdn;
         CDN.UpdateTemplateDomainResponse updateTemplateDomain(CDN.UpdateTemplateDomainRequest request) throws Exception;
 
         CDN.CreateServiceTemplateResponse createServiceTemplate(CDN.CreateServiceTemplateRequest request) throws Exception;
+
+        CDN.CreateTemplateVersionResponse createTemplateVersion(CDN.CreateTemplateVersionRequest request) throws Exception;
+
+        CDN.DescribeTemplateReleaseVersionsResponse describeTemplateReleaseVersions(CDN.DescribeTemplateReleaseVersionsRequest request) throws Exception;
+
+        CDN.DescribeDomainSharedResponse describeDomainShared(CDN.DescribeDomainSharedRequest request) throws Exception;
+
+        CDN.DescribeCdnIPResponse describeCdnIP(CDN.DescribeCdnIPRequest request) throws Exception;
 
         CDN.DescribeDistrictDataResponse describeDistrictData(CDN.DescribeDistrictDataRequest request) throws Exception;
 
@@ -153,6 +163,8 @@ package com.byteplus.service.cdn;
         CDN.DeleteSharedConfigResponse deleteSharedConfig(CDN.DeleteSharedConfigRequest request) throws Exception;
 
         CDN.UpdateSharedConfigResponse updateSharedConfig(CDN.UpdateSharedConfigRequest request) throws Exception;
+
+        CDN.AddSharedConfigResponse addSharedConfig(CDN.AddSharedConfigRequest request) throws Exception;
 
         CDN.TagResourcesResponse tagResources(CDN.TagResourcesRequest request) throws Exception;
 

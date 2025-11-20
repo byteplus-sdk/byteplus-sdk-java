@@ -335,6 +335,46 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class AddSharedConfigRequest {
+
+        @JSONField(name = "AllowIpAccessRule")
+        GlobalIPAccessRule AllowIpAccessRule;
+
+        @JSONField(name = "AllowRefererAccessRule")
+        GlobalRefererAccessRule AllowRefererAccessRule;
+
+        @JSONField(name = "CommonMatchList")
+        CommonMatchList CommonMatchList;
+
+        @JSONField(name = "ConfigName")
+        String ConfigName;
+
+        @JSONField(name = "ConfigType")
+        String ConfigType;
+
+        @JSONField(name = "DenyIpAccessRule")
+        GlobalIPAccessRule DenyIpAccessRule;
+
+        @JSONField(name = "DenyRefererAccessRule")
+        GlobalRefererAccessRule DenyRefererAccessRule;
+
+        @JSONField(name = "ExpireMinutes")
+        Long ExpireMinutes;
+
+        @JSONField(name = "Project")
+        String Project;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AddSharedConfigResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class AddTemplateDomainRequest {
 
         @JSONField(name = "CertId")
@@ -1028,6 +1068,9 @@ public class CDN {
         @JSONField(name = "Exception")
         Boolean Exception;
 
+        @JSONField(name = "ProdVersion")
+        String ProdVersion;
+
         @JSONField(name = "TemplateId")
         String TemplateId;
 
@@ -1608,6 +1651,39 @@ public class CDN {
 
         @JSONField(name = "TemplateId")
         String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateTemplateVersionRequest {
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "ReferredVersion")
+        String ReferredVersion;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateTemplateVersionResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        CreateTemplateVersionResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class CreateTemplateVersionResult {
+
+        @JSONField(name = "Version")
+        String Version;
     }
 
     @Data
@@ -2274,6 +2350,33 @@ public class CDN {
 
         @JSONField(name = "Resources")
         List<NrtDataResource> Resources;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCdnIPRequest {
+
+        @JSONField(name = "IPs")
+        List<String> IPs;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCdnIPResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeCdnIPResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeCdnIPResult {
+
+        @JSONField(name = "IPs")
+        List<IPInfo> IPs;
     }
 
     @Data
@@ -2960,6 +3063,36 @@ public class CDN {
 
         @JSONField(name = "MetricDataList")
         List<MetricSummaryData> MetricDataList;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeDomainSharedRequest {
+
+        @JSONField(name = "ConfigName")
+        String ConfigName;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeDomainSharedResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeDomainSharedResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeDomainSharedResult {
+
+        @JSONField(name = "ConfigName")
+        String ConfigName;
+
+        @JSONField(name = "Domain")
+        List<String> Domain;
     }
 
     @Data
@@ -4303,6 +4436,42 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class DescribeTemplateReleaseVersionsRequest {
+
+        @JSONField(name = "Filters")
+        List<Filter> Filters;
+
+        @JSONField(name = "SortRule")
+        SortRule SortRule;
+
+        @JSONField(name = "TemplateId")
+        String TemplateId;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplateReleaseVersionsResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        DescribeTemplateReleaseVersionsResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class DescribeTemplateReleaseVersionsResult {
+
+        @JSONField(name = "Total")
+        Long Total;
+
+        @JSONField(name = "Versions")
+        List<TemplateReleaseVersion> Versions;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class DescribeTemplatesRequest {
 
         @JSONField(name = "Filters")
@@ -5494,6 +5663,28 @@ public class CDN {
 
         @JSONField(name = "Total")
         Long Total;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ListResourceTagsResponse {
+
+        @JSONField(name = "ResponseMetadata")
+        ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        ListResourceTagsResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ListResourceTagsResult {
+
+        @JSONField(name = "ResourceTags")
+        List<ResourceTag> ResourceTags;
+
+        @JSONField(name = "SystemTags")
+        List<ResourceTag> SystemTags;
     }
 
     @Data
@@ -7069,6 +7260,32 @@ public class CDN {
 
         @JSONField(name = "CertId")
         String CertId;
+
+        @JSONField(name = "Source")
+        String Source;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class TemplateReleaseVersion {
+
+        @JSONField(name = "CreateTime")
+        Long CreateTime;
+
+        @JSONField(name = "Env")
+        String Env;
+
+        @JSONField(name = "Message")
+        String Message;
+
+        @JSONField(name = "ReleaseTime")
+        Long ReleaseTime;
+
+        @JSONField(name = "Status")
+        String Status;
+
+        @JSONField(name = "Version")
+        String Version;
     }
 
     @Data

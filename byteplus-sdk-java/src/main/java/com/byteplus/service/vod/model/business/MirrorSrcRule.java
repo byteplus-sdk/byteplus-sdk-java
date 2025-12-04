@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.MirrorSrcRule}
  */
 public final class MirrorSrcRule extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.MirrorSrcRule)
-        MirrorSrcRuleOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.MirrorSrcRule)
+    MirrorSrcRuleOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use MirrorSrcRule.newBuilder() to construct.
   private MirrorSrcRule(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -22,7 +22,7 @@ public final class MirrorSrcRule extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new MirrorSrcRule();
   }
 
@@ -32,15 +32,15 @@ public final class MirrorSrcRule extends
     return this.unknownFields;
   }
   private MirrorSrcRule(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -124,7 +124,7 @@ public final class MirrorSrcRule extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -135,23 +135,23 @@ public final class MirrorSrcRule extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcRule_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcRule_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.MirrorSrcRule.class, com.byteplus.service.vod.model.business.MirrorSrcRule.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.MirrorSrcRule.class, com.byteplus.service.vod.model.business.MirrorSrcRule.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
@@ -323,7 +323,7 @@ public final class MirrorSrcRule extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (id_ != null) {
       output.writeMessage(1, getId());
     }
@@ -359,35 +359,35 @@ public final class MirrorSrcRule extends
     size = 0;
     if (id_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, getId());
+        .computeMessageSize(1, getId());
     }
     if (enabled_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(2, getEnabled());
+        .computeMessageSize(2, getEnabled());
     }
     if (originType_ != com.byteplus.service.vod.model.business.VodMirrorSrcOriginType.NotSet.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-              .computeEnumSize(3, originType_);
+        .computeEnumSize(3, originType_);
     }
     if (condition_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(4, getCondition());
+        .computeMessageSize(4, getCondition());
     }
     if (publicSource_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(5, getPublicSource());
+        .computeMessageSize(5, getPublicSource());
     }
     if (createdAt_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(6, createdAt_);
+        .computeInt64Size(6, createdAt_);
     }
     if (updatedAt_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(7, updatedAt_);
+        .computeInt64Size(7, updatedAt_);
     }
     if (deletedAt_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(8, deletedAt_);
+        .computeInt64Size(8, deletedAt_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -397,7 +397,7 @@ public final class MirrorSrcRule extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.MirrorSrcRule)) {
       return super.equals(obj);
@@ -407,30 +407,30 @@ public final class MirrorSrcRule extends
     if (hasId() != other.hasId()) return false;
     if (hasId()) {
       if (!getId()
-              .equals(other.getId())) return false;
+          .equals(other.getId())) return false;
     }
     if (hasEnabled() != other.hasEnabled()) return false;
     if (hasEnabled()) {
       if (!getEnabled()
-              .equals(other.getEnabled())) return false;
+          .equals(other.getEnabled())) return false;
     }
     if (originType_ != other.originType_) return false;
     if (hasCondition() != other.hasCondition()) return false;
     if (hasCondition()) {
       if (!getCondition()
-              .equals(other.getCondition())) return false;
+          .equals(other.getCondition())) return false;
     }
     if (hasPublicSource() != other.hasPublicSource()) return false;
     if (hasPublicSource()) {
       if (!getPublicSource()
-              .equals(other.getPublicSource())) return false;
+          .equals(other.getPublicSource())) return false;
     }
     if (getCreatedAt()
-            != other.getCreatedAt()) return false;
+        != other.getCreatedAt()) return false;
     if (getUpdatedAt()
-            != other.getUpdatedAt()) return false;
+        != other.getUpdatedAt()) return false;
     if (getDeletedAt()
-            != other.getDeletedAt()) return false;
+        != other.getDeletedAt()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -462,86 +462,86 @@ public final class MirrorSrcRule extends
     }
     hash = (37 * hash) + CREATEDAT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getCreatedAt());
+        getCreatedAt());
     hash = (37 * hash) + UPDATEDAT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getUpdatedAt());
+        getUpdatedAt());
     hash = (37 * hash) + DELETEDAT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getDeletedAt());
+        getDeletedAt());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcRule parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -555,12 +555,12 @@ public final class MirrorSrcRule extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -568,20 +568,20 @@ public final class MirrorSrcRule extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.MirrorSrcRule}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.MirrorSrcRule)
-          com.byteplus.service.vod.model.business.MirrorSrcRuleOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.MirrorSrcRule)
+      com.byteplus.service.vod.model.business.MirrorSrcRuleOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcRule_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcRule_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.MirrorSrcRule.class, com.byteplus.service.vod.model.business.MirrorSrcRule.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.MirrorSrcRule.class, com.byteplus.service.vod.model.business.MirrorSrcRule.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.MirrorSrcRule.newBuilder()
@@ -590,7 +590,7 @@ public final class MirrorSrcRule extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -639,7 +639,7 @@ public final class MirrorSrcRule extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcRule_descriptor;
     }
 
@@ -694,30 +694,30 @@ public final class MirrorSrcRule extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -768,9 +768,9 @@ public final class MirrorSrcRule extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.MirrorSrcRule parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -787,7 +787,7 @@ public final class MirrorSrcRule extends
 
     private com.google.protobuf.StringValue id_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> idBuilder_;
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> idBuilder_;
     /**
      * <code>.google.protobuf.StringValue Id = 1;</code>
      * @return Whether the id field is set.
@@ -826,7 +826,7 @@ public final class MirrorSrcRule extends
      * <code>.google.protobuf.StringValue Id = 1;</code>
      */
     public Builder setId(
-            com.google.protobuf.StringValue.Builder builderForValue) {
+        com.google.protobuf.StringValue.Builder builderForValue) {
       if (idBuilder_ == null) {
         id_ = builderForValue.build();
         onChanged();
@@ -843,7 +843,7 @@ public final class MirrorSrcRule extends
       if (idBuilder_ == null) {
         if (id_ != null) {
           id_ =
-                  com.google.protobuf.StringValue.newBuilder(id_).mergeFrom(value).buildPartial();
+            com.google.protobuf.StringValue.newBuilder(id_).mergeFrom(value).buildPartial();
         } else {
           id_ = value;
         }
@@ -872,7 +872,7 @@ public final class MirrorSrcRule extends
      * <code>.google.protobuf.StringValue Id = 1;</code>
      */
     public com.google.protobuf.StringValue.Builder getIdBuilder() {
-
+      
       onChanged();
       return getIdFieldBuilder().getBuilder();
     }
@@ -884,18 +884,18 @@ public final class MirrorSrcRule extends
         return idBuilder_.getMessageOrBuilder();
       } else {
         return id_ == null ?
-                com.google.protobuf.StringValue.getDefaultInstance() : id_;
+            com.google.protobuf.StringValue.getDefaultInstance() : id_;
       }
     }
     /**
      * <code>.google.protobuf.StringValue Id = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
-    getIdFieldBuilder() {
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
+        getIdFieldBuilder() {
       if (idBuilder_ == null) {
         idBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getId(),
                 getParentForChildren(),
                 isClean());
@@ -906,7 +906,7 @@ public final class MirrorSrcRule extends
 
     private com.google.protobuf.BoolValue enabled_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder> enabledBuilder_;
+        com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder> enabledBuilder_;
     /**
      * <code>.google.protobuf.BoolValue Enabled = 2;</code>
      * @return Whether the enabled field is set.
@@ -945,7 +945,7 @@ public final class MirrorSrcRule extends
      * <code>.google.protobuf.BoolValue Enabled = 2;</code>
      */
     public Builder setEnabled(
-            com.google.protobuf.BoolValue.Builder builderForValue) {
+        com.google.protobuf.BoolValue.Builder builderForValue) {
       if (enabledBuilder_ == null) {
         enabled_ = builderForValue.build();
         onChanged();
@@ -962,7 +962,7 @@ public final class MirrorSrcRule extends
       if (enabledBuilder_ == null) {
         if (enabled_ != null) {
           enabled_ =
-                  com.google.protobuf.BoolValue.newBuilder(enabled_).mergeFrom(value).buildPartial();
+            com.google.protobuf.BoolValue.newBuilder(enabled_).mergeFrom(value).buildPartial();
         } else {
           enabled_ = value;
         }
@@ -991,7 +991,7 @@ public final class MirrorSrcRule extends
      * <code>.google.protobuf.BoolValue Enabled = 2;</code>
      */
     public com.google.protobuf.BoolValue.Builder getEnabledBuilder() {
-
+      
       onChanged();
       return getEnabledFieldBuilder().getBuilder();
     }
@@ -1003,18 +1003,18 @@ public final class MirrorSrcRule extends
         return enabledBuilder_.getMessageOrBuilder();
       } else {
         return enabled_ == null ?
-                com.google.protobuf.BoolValue.getDefaultInstance() : enabled_;
+            com.google.protobuf.BoolValue.getDefaultInstance() : enabled_;
       }
     }
     /**
      * <code>.google.protobuf.BoolValue Enabled = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder>
-    getEnabledFieldBuilder() {
+        com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder> 
+        getEnabledFieldBuilder() {
       if (enabledBuilder_ == null) {
         enabledBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder>(
+            com.google.protobuf.BoolValue, com.google.protobuf.BoolValue.Builder, com.google.protobuf.BoolValueOrBuilder>(
                 getEnabled(),
                 getParentForChildren(),
                 isClean());
@@ -1037,7 +1037,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder setOriginTypeValue(int value) {
-
+      
       originType_ = value;
       onChanged();
       return this;
@@ -1061,7 +1061,7 @@ public final class MirrorSrcRule extends
       if (value == null) {
         throw new NullPointerException();
       }
-
+      
       originType_ = value.getNumber();
       onChanged();
       return this;
@@ -1071,7 +1071,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder clearOriginType() {
-
+      
       originType_ = 0;
       onChanged();
       return this;
@@ -1079,7 +1079,7 @@ public final class MirrorSrcRule extends
 
     private com.byteplus.service.vod.model.business.MirrorSrcCondition condition_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder> conditionBuilder_;
+        com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder> conditionBuilder_;
     /**
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcCondition Condition = 4;</code>
      * @return Whether the condition field is set.
@@ -1118,7 +1118,7 @@ public final class MirrorSrcRule extends
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcCondition Condition = 4;</code>
      */
     public Builder setCondition(
-            com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder builderForValue) {
       if (conditionBuilder_ == null) {
         condition_ = builderForValue.build();
         onChanged();
@@ -1135,7 +1135,7 @@ public final class MirrorSrcRule extends
       if (conditionBuilder_ == null) {
         if (condition_ != null) {
           condition_ =
-                  com.byteplus.service.vod.model.business.MirrorSrcCondition.newBuilder(condition_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.MirrorSrcCondition.newBuilder(condition_).mergeFrom(value).buildPartial();
         } else {
           condition_ = value;
         }
@@ -1164,7 +1164,7 @@ public final class MirrorSrcRule extends
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcCondition Condition = 4;</code>
      */
     public com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder getConditionBuilder() {
-
+      
       onChanged();
       return getConditionFieldBuilder().getBuilder();
     }
@@ -1176,18 +1176,18 @@ public final class MirrorSrcRule extends
         return conditionBuilder_.getMessageOrBuilder();
       } else {
         return condition_ == null ?
-                com.byteplus.service.vod.model.business.MirrorSrcCondition.getDefaultInstance() : condition_;
+            com.byteplus.service.vod.model.business.MirrorSrcCondition.getDefaultInstance() : condition_;
       }
     }
     /**
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcCondition Condition = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder>
-    getConditionFieldBuilder() {
+        com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder> 
+        getConditionFieldBuilder() {
       if (conditionBuilder_ == null) {
         conditionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder>(
+            com.byteplus.service.vod.model.business.MirrorSrcCondition, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder, com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder>(
                 getCondition(),
                 getParentForChildren(),
                 isClean());
@@ -1198,7 +1198,7 @@ public final class MirrorSrcRule extends
 
     private com.byteplus.service.vod.model.business.PublicSourceConf publicSource_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder> publicSourceBuilder_;
+        com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder> publicSourceBuilder_;
     /**
      * <code>.Byteplus.Vod.Models.Business.PublicSourceConf PublicSource = 5;</code>
      * @return Whether the publicSource field is set.
@@ -1237,7 +1237,7 @@ public final class MirrorSrcRule extends
      * <code>.Byteplus.Vod.Models.Business.PublicSourceConf PublicSource = 5;</code>
      */
     public Builder setPublicSource(
-            com.byteplus.service.vod.model.business.PublicSourceConf.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.PublicSourceConf.Builder builderForValue) {
       if (publicSourceBuilder_ == null) {
         publicSource_ = builderForValue.build();
         onChanged();
@@ -1254,7 +1254,7 @@ public final class MirrorSrcRule extends
       if (publicSourceBuilder_ == null) {
         if (publicSource_ != null) {
           publicSource_ =
-                  com.byteplus.service.vod.model.business.PublicSourceConf.newBuilder(publicSource_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.PublicSourceConf.newBuilder(publicSource_).mergeFrom(value).buildPartial();
         } else {
           publicSource_ = value;
         }
@@ -1283,7 +1283,7 @@ public final class MirrorSrcRule extends
      * <code>.Byteplus.Vod.Models.Business.PublicSourceConf PublicSource = 5;</code>
      */
     public com.byteplus.service.vod.model.business.PublicSourceConf.Builder getPublicSourceBuilder() {
-
+      
       onChanged();
       return getPublicSourceFieldBuilder().getBuilder();
     }
@@ -1295,18 +1295,18 @@ public final class MirrorSrcRule extends
         return publicSourceBuilder_.getMessageOrBuilder();
       } else {
         return publicSource_ == null ?
-                com.byteplus.service.vod.model.business.PublicSourceConf.getDefaultInstance() : publicSource_;
+            com.byteplus.service.vod.model.business.PublicSourceConf.getDefaultInstance() : publicSource_;
       }
     }
     /**
      * <code>.Byteplus.Vod.Models.Business.PublicSourceConf PublicSource = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder>
-    getPublicSourceFieldBuilder() {
+        com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder> 
+        getPublicSourceFieldBuilder() {
       if (publicSourceBuilder_ == null) {
         publicSourceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder>(
+            com.byteplus.service.vod.model.business.PublicSourceConf, com.byteplus.service.vod.model.business.PublicSourceConf.Builder, com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder>(
                 getPublicSource(),
                 getParentForChildren(),
                 isClean());
@@ -1330,7 +1330,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder setCreatedAt(long value) {
-
+      
       createdAt_ = value;
       onChanged();
       return this;
@@ -1340,7 +1340,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder clearCreatedAt() {
-
+      
       createdAt_ = 0L;
       onChanged();
       return this;
@@ -1361,7 +1361,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder setUpdatedAt(long value) {
-
+      
       updatedAt_ = value;
       onChanged();
       return this;
@@ -1371,7 +1371,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder clearUpdatedAt() {
-
+      
       updatedAt_ = 0L;
       onChanged();
       return this;
@@ -1392,7 +1392,7 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder setDeletedAt(long value) {
-
+      
       deletedAt_ = value;
       onChanged();
       return this;
@@ -1402,20 +1402,20 @@ public final class MirrorSrcRule extends
      * @return This builder for chaining.
      */
     public Builder clearDeletedAt() {
-
+      
       deletedAt_ = 0L;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1434,12 +1434,12 @@ public final class MirrorSrcRule extends
   }
 
   private static final com.google.protobuf.Parser<MirrorSrcRule>
-          PARSER = new com.google.protobuf.AbstractParser<MirrorSrcRule>() {
+      PARSER = new com.google.protobuf.AbstractParser<MirrorSrcRule>() {
     @java.lang.Override
     public MirrorSrcRule parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new MirrorSrcRule(input, extensionRegistry);
     }
   };

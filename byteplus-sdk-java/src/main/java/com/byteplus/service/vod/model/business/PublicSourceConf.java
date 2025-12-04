@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.PublicSourceConf}
  */
 public final class PublicSourceConf extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.PublicSourceConf)
-        PublicSourceConfOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.PublicSourceConf)
+    PublicSourceConfOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use PublicSourceConf.newBuilder() to construct.
   private PublicSourceConf(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -21,7 +21,7 @@ public final class PublicSourceConf extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new PublicSourceConf();
   }
 
@@ -31,15 +31,15 @@ public final class PublicSourceConf extends
     return this.unknownFields;
   }
   private PublicSourceConf(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -63,7 +63,7 @@ public final class PublicSourceConf extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -74,23 +74,23 @@ public final class PublicSourceConf extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_PublicSourceConf_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_PublicSourceConf_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.PublicSourceConf.class, com.byteplus.service.vod.model.business.PublicSourceConf.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.PublicSourceConf.class, com.byteplus.service.vod.model.business.PublicSourceConf.Builder.class);
   }
 
   public static final int S3_FIELD_NUMBER = 1;
@@ -132,7 +132,7 @@ public final class PublicSourceConf extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (s3_ != null) {
       output.writeMessage(1, getS3());
     }
@@ -147,7 +147,7 @@ public final class PublicSourceConf extends
     size = 0;
     if (s3_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, getS3());
+        .computeMessageSize(1, getS3());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -157,7 +157,7 @@ public final class PublicSourceConf extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.PublicSourceConf)) {
       return super.equals(obj);
@@ -167,7 +167,7 @@ public final class PublicSourceConf extends
     if (hasS3() != other.hasS3()) return false;
     if (hasS3()) {
       if (!getS3()
-              .equals(other.getS3())) return false;
+          .equals(other.getS3())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -190,73 +190,73 @@ public final class PublicSourceConf extends
   }
 
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.PublicSourceConf parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -270,12 +270,12 @@ public final class PublicSourceConf extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -283,20 +283,20 @@ public final class PublicSourceConf extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.PublicSourceConf}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.PublicSourceConf)
-          com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.PublicSourceConf)
+      com.byteplus.service.vod.model.business.PublicSourceConfOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_PublicSourceConf_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_PublicSourceConf_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.PublicSourceConf.class, com.byteplus.service.vod.model.business.PublicSourceConf.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.PublicSourceConf.class, com.byteplus.service.vod.model.business.PublicSourceConf.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.PublicSourceConf.newBuilder()
@@ -305,7 +305,7 @@ public final class PublicSourceConf extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -328,7 +328,7 @@ public final class PublicSourceConf extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_PublicSourceConf_descriptor;
     }
 
@@ -364,30 +364,30 @@ public final class PublicSourceConf extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -417,9 +417,9 @@ public final class PublicSourceConf extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.PublicSourceConf parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -436,7 +436,7 @@ public final class PublicSourceConf extends
 
     private com.byteplus.service.vod.model.business.MirrorSrcS3Conf s3_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder> s3Builder_;
+        com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder> s3Builder_;
     /**
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcS3Conf S3 = 1;</code>
      * @return Whether the s3 field is set.
@@ -475,7 +475,7 @@ public final class PublicSourceConf extends
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcS3Conf S3 = 1;</code>
      */
     public Builder setS3(
-            com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder builderForValue) {
       if (s3Builder_ == null) {
         s3_ = builderForValue.build();
         onChanged();
@@ -492,7 +492,7 @@ public final class PublicSourceConf extends
       if (s3Builder_ == null) {
         if (s3_ != null) {
           s3_ =
-                  com.byteplus.service.vod.model.business.MirrorSrcS3Conf.newBuilder(s3_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.MirrorSrcS3Conf.newBuilder(s3_).mergeFrom(value).buildPartial();
         } else {
           s3_ = value;
         }
@@ -521,7 +521,7 @@ public final class PublicSourceConf extends
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcS3Conf S3 = 1;</code>
      */
     public com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder getS3Builder() {
-
+      
       onChanged();
       return getS3FieldBuilder().getBuilder();
     }
@@ -533,18 +533,18 @@ public final class PublicSourceConf extends
         return s3Builder_.getMessageOrBuilder();
       } else {
         return s3_ == null ?
-                com.byteplus.service.vod.model.business.MirrorSrcS3Conf.getDefaultInstance() : s3_;
+            com.byteplus.service.vod.model.business.MirrorSrcS3Conf.getDefaultInstance() : s3_;
       }
     }
     /**
      * <code>.Byteplus.Vod.Models.Business.MirrorSrcS3Conf S3 = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder>
-    getS3FieldBuilder() {
+        com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder> 
+        getS3FieldBuilder() {
       if (s3Builder_ == null) {
         s3Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder>(
+            com.byteplus.service.vod.model.business.MirrorSrcS3Conf, com.byteplus.service.vod.model.business.MirrorSrcS3Conf.Builder, com.byteplus.service.vod.model.business.MirrorSrcS3ConfOrBuilder>(
                 getS3(),
                 getParentForChildren(),
                 isClean());
@@ -554,13 +554,13 @@ public final class PublicSourceConf extends
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -579,12 +579,12 @@ public final class PublicSourceConf extends
   }
 
   private static final com.google.protobuf.Parser<PublicSourceConf>
-          PARSER = new com.google.protobuf.AbstractParser<PublicSourceConf>() {
+      PARSER = new com.google.protobuf.AbstractParser<PublicSourceConf>() {
     @java.lang.Override
     public PublicSourceConf parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new PublicSourceConf(input, extensionRegistry);
     }
   };

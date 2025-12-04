@@ -11,7 +11,7 @@ public interface VodCreateHlsDecryptionKeyResultOrBuilder extends
    * <code>string SecretKey = 1;</code>
    * @return The secretKey.
    */
-  String getSecretKey();
+  java.lang.String getSecretKey();
   /**
    * <code>string SecretKey = 1;</code>
    * @return The bytes for secretKey.
@@ -23,7 +23,7 @@ public interface VodCreateHlsDecryptionKeyResultOrBuilder extends
    * <code>string Ak = 2;</code>
    * @return The ak.
    */
-  String getAk();
+  java.lang.String getAk();
   /**
    * <code>string Ak = 2;</code>
    * @return The bytes for ak.
@@ -49,7 +49,7 @@ public interface VodCreateHlsDecryptionKeyResultOrBuilder extends
    * <code>string KeyFormat = 4;</code>
    * @return The keyFormat.
    */
-  String getKeyFormat();
+  java.lang.String getKeyFormat();
   /**
    * <pre>
    *真实的密钥格式 二进制密钥则是binary 缺省就是string

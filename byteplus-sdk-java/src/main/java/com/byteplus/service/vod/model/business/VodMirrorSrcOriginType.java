@@ -7,7 +7,7 @@ package com.byteplus.service.vod.model.business;
  * Protobuf enum {@code Byteplus.Vod.Models.Business.VodMirrorSrcOriginType}
  */
 public enum VodMirrorSrcOriginType
-        implements com.google.protobuf.ProtocolMessageEnum {
+    implements com.google.protobuf.ProtocolMessageEnum {
   /**
    * <code>NotSet = 0;</code>
    */
@@ -32,7 +32,7 @@ public enum VodMirrorSrcOriginType
   public final int getNumber() {
     if (this == UNRECOGNIZED) {
       throw new java.lang.IllegalArgumentException(
-              "Can't get the number of an unknown enum value.");
+          "Can't get the number of an unknown enum value.");
     }
     return value;
   }
@@ -60,41 +60,41 @@ public enum VodMirrorSrcOriginType
   }
 
   public static com.google.protobuf.Internal.EnumLiteMap<VodMirrorSrcOriginType>
-  internalGetValueMap() {
+      internalGetValueMap() {
     return internalValueMap;
   }
   private static final com.google.protobuf.Internal.EnumLiteMap<
-          VodMirrorSrcOriginType> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<VodMirrorSrcOriginType>() {
-            public VodMirrorSrcOriginType findValueByNumber(int number) {
-              return VodMirrorSrcOriginType.forNumber(number);
-            }
-          };
+      VodMirrorSrcOriginType> internalValueMap =
+        new com.google.protobuf.Internal.EnumLiteMap<VodMirrorSrcOriginType>() {
+          public VodMirrorSrcOriginType findValueByNumber(int number) {
+            return VodMirrorSrcOriginType.forNumber(number);
+          }
+        };
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
-  getValueDescriptor() {
+      getValueDescriptor() {
     if (this == UNRECOGNIZED) {
       throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
+          "Can't get the descriptor of an unrecognized enum value.");
     }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
-  getDescriptorForType() {
+      getDescriptorForType() {
     return getDescriptor();
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.getDescriptor().getEnumTypes().get(1);
   }
 
   private static final VodMirrorSrcOriginType[] VALUES = values();
 
   public static VodMirrorSrcOriginType valueOf(
-          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
     if (desc.getType() != getDescriptor()) {
       throw new java.lang.IllegalArgumentException(
-              "EnumValueDescriptor is not for this type.");
+        "EnumValueDescriptor is not for this type.");
     }
     if (desc.getIndex() == -1) {
       return UNRECOGNIZED;

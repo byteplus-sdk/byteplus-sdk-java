@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodGetFileInfosRequestOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>string SpaceName = 1;</code>
@@ -17,7 +17,7 @@ public interface VodGetFileInfosRequestOrBuilder extends
    * @return The bytes for spaceName.
    */
   com.google.protobuf.ByteString
-  getSpaceNameBytes();
+      getSpaceNameBytes();
 
   /**
    * <code>string EncodedFileNames = 2;</code>
@@ -29,7 +29,7 @@ public interface VodGetFileInfosRequestOrBuilder extends
    * @return The bytes for encodedFileNames.
    */
   com.google.protobuf.ByteString
-  getEncodedFileNamesBytes();
+      getEncodedFileNamesBytes();
 
   /**
    * <pre>
@@ -49,7 +49,7 @@ public interface VodGetFileInfosRequestOrBuilder extends
    * @return The bytes for bucketName.
    */
   com.google.protobuf.ByteString
-  getBucketNameBytes();
+      getBucketNameBytes();
 
   /**
    * <pre>
@@ -79,7 +79,7 @@ public interface VodGetFileInfosRequestOrBuilder extends
    * @return The bytes for downloadUrlNetworkType.
    */
   com.google.protobuf.ByteString
-  getDownloadUrlNetworkTypeBytes();
+      getDownloadUrlNetworkTypeBytes();
 
   /**
    * <pre>

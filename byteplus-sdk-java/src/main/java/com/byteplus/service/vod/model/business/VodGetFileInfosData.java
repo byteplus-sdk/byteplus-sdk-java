@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodGetFileInfosData}
  */
 public final class VodGetFileInfosData extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodGetFileInfosData)
-        VodGetFileInfosDataOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodGetFileInfosData)
+    VodGetFileInfosDataOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodGetFileInfosData.newBuilder() to construct.
   private VodGetFileInfosData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -24,7 +24,7 @@ public final class VodGetFileInfosData extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodGetFileInfosData();
   }
 
@@ -34,16 +34,16 @@ public final class VodGetFileInfosData extends
     return this.unknownFields;
   }
   private VodGetFileInfosData(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -58,7 +58,7 @@ public final class VodGetFileInfosData extends
               mutable_bitField0_ |= 0x00000001;
             }
             fileInfos_.add(
-                    input.readMessage(com.byteplus.service.vod.model.business.VodFileInfo.parser(), extensionRegistry));
+                input.readMessage(com.byteplus.service.vod.model.business.VodFileInfo.parser(), extensionRegistry));
             break;
           }
           case 18: {
@@ -81,7 +81,7 @@ public final class VodGetFileInfosData extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -92,7 +92,7 @@ public final class VodGetFileInfosData extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         fileInfos_ = java.util.Collections.unmodifiableList(fileInfos_);
@@ -108,16 +108,16 @@ public final class VodGetFileInfosData extends
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.VodGetFileInfosData.class, com.byteplus.service.vod.model.business.VodGetFileInfosData.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.VodGetFileInfosData.class, com.byteplus.service.vod.model.business.VodGetFileInfosData.Builder.class);
   }
 
   public static final int FILEINFOS_FIELD_NUMBER = 1;
@@ -141,8 +141,8 @@ public final class VodGetFileInfosData extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>
-  getFileInfosOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> 
+      getFileInfosOrBuilderList() {
     return fileInfos_;
   }
   /**
@@ -176,7 +176,7 @@ public final class VodGetFileInfosData extends
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodFileInfoOrBuilder getFileInfosOrBuilder(
-          int index) {
+      int index) {
     return fileInfos_.get(index);
   }
 
@@ -191,7 +191,7 @@ public final class VodGetFileInfosData extends
    * @return A list containing the notExistFileNames.
    */
   public com.google.protobuf.ProtocolStringList
-  getNotExistFileNamesList() {
+      getNotExistFileNamesList() {
     return notExistFileNames_;
   }
   /**
@@ -227,7 +227,7 @@ public final class VodGetFileInfosData extends
    * @return The bytes of the notExistFileNames at the given index.
    */
   public com.google.protobuf.ByteString
-  getNotExistFileNamesBytes(int index) {
+      getNotExistFileNamesBytes(int index) {
     return notExistFileNames_.getByteString(index);
   }
 
@@ -242,7 +242,7 @@ public final class VodGetFileInfosData extends
    * @return A list containing the notExistEncodedFileNames.
    */
   public com.google.protobuf.ProtocolStringList
-  getNotExistEncodedFileNamesList() {
+      getNotExistEncodedFileNamesList() {
     return notExistEncodedFileNames_;
   }
   /**
@@ -278,7 +278,7 @@ public final class VodGetFileInfosData extends
    * @return The bytes of the notExistEncodedFileNames at the given index.
    */
   public com.google.protobuf.ByteString
-  getNotExistEncodedFileNamesBytes(int index) {
+      getNotExistEncodedFileNamesBytes(int index) {
     return notExistEncodedFileNames_.getByteString(index);
   }
 
@@ -295,7 +295,7 @@ public final class VodGetFileInfosData extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     for (int i = 0; i < fileInfos_.size(); i++) {
       output.writeMessage(1, fileInfos_.get(i));
     }
@@ -316,7 +316,7 @@ public final class VodGetFileInfosData extends
     size = 0;
     for (int i = 0; i < fileInfos_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, fileInfos_.get(i));
+        .computeMessageSize(1, fileInfos_.get(i));
     }
     {
       int dataSize = 0;
@@ -342,7 +342,7 @@ public final class VodGetFileInfosData extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodGetFileInfosData)) {
       return super.equals(obj);
@@ -350,11 +350,11 @@ public final class VodGetFileInfosData extends
     com.byteplus.service.vod.model.business.VodGetFileInfosData other = (com.byteplus.service.vod.model.business.VodGetFileInfosData) obj;
 
     if (!getFileInfosList()
-            .equals(other.getFileInfosList())) return false;
+        .equals(other.getFileInfosList())) return false;
     if (!getNotExistFileNamesList()
-            .equals(other.getNotExistFileNamesList())) return false;
+        .equals(other.getNotExistFileNamesList())) return false;
     if (!getNotExistEncodedFileNamesList()
-            .equals(other.getNotExistEncodedFileNamesList())) return false;
+        .equals(other.getNotExistEncodedFileNamesList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -384,73 +384,73 @@ public final class VodGetFileInfosData extends
   }
 
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetFileInfosData parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -464,12 +464,12 @@ public final class VodGetFileInfosData extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -477,20 +477,20 @@ public final class VodGetFileInfosData extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodGetFileInfosData}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodGetFileInfosData)
-          com.byteplus.service.vod.model.business.VodGetFileInfosDataOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodGetFileInfosData)
+      com.byteplus.service.vod.model.business.VodGetFileInfosDataOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.VodGetFileInfosData.class, com.byteplus.service.vod.model.business.VodGetFileInfosData.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.VodGetFileInfosData.class, com.byteplus.service.vod.model.business.VodGetFileInfosData.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodGetFileInfosData.newBuilder()
@@ -499,7 +499,7 @@ public final class VodGetFileInfosData extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -527,7 +527,7 @@ public final class VodGetFileInfosData extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_descriptor;
     }
 
@@ -578,30 +578,30 @@ public final class VodGetFileInfosData extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -634,9 +634,9 @@ public final class VodGetFileInfosData extends
             fileInfosBuilder_ = null;
             fileInfos_ = other.fileInfos_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            fileInfosBuilder_ =
-                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                            getFileInfosFieldBuilder() : null;
+            fileInfosBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getFileInfosFieldBuilder() : null;
           } else {
             fileInfosBuilder_.addAllMessages(other.fileInfos_);
           }
@@ -674,9 +674,9 @@ public final class VodGetFileInfosData extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodGetFileInfosData parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -693,16 +693,16 @@ public final class VodGetFileInfosData extends
     private int bitField0_;
 
     private java.util.List<com.byteplus.service.vod.model.business.VodFileInfo> fileInfos_ =
-            java.util.Collections.emptyList();
+      java.util.Collections.emptyList();
     private void ensureFileInfosIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
         fileInfos_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodFileInfo>(fileInfos_);
         bitField0_ |= 0x00000001;
-      }
+       }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> fileInfosBuilder_;
+        com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> fileInfosBuilder_;
 
     /**
      * <pre>
@@ -754,7 +754,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder setFileInfos(
-            int index, com.byteplus.service.vod.model.business.VodFileInfo value) {
+        int index, com.byteplus.service.vod.model.business.VodFileInfo value) {
       if (fileInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -775,7 +775,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder setFileInfos(
-            int index, com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
       if (fileInfosBuilder_ == null) {
         ensureFileInfosIsMutable();
         fileInfos_.set(index, builderForValue.build());
@@ -813,7 +813,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder addFileInfos(
-            int index, com.byteplus.service.vod.model.business.VodFileInfo value) {
+        int index, com.byteplus.service.vod.model.business.VodFileInfo value) {
       if (fileInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -834,7 +834,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder addFileInfos(
-            com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
       if (fileInfosBuilder_ == null) {
         ensureFileInfosIsMutable();
         fileInfos_.add(builderForValue.build());
@@ -852,7 +852,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder addFileInfos(
-            int index, com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodFileInfo.Builder builderForValue) {
       if (fileInfosBuilder_ == null) {
         ensureFileInfosIsMutable();
         fileInfos_.add(index, builderForValue.build());
@@ -870,11 +870,11 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public Builder addAllFileInfos(
-            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodFileInfo> values) {
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodFileInfo> values) {
       if (fileInfosBuilder_ == null) {
         ensureFileInfosIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, fileInfos_);
+            values, fileInfos_);
         onChanged();
       } else {
         fileInfosBuilder_.addAllMessages(values);
@@ -923,7 +923,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodFileInfo.Builder getFileInfosBuilder(
-            int index) {
+        int index) {
       return getFileInfosFieldBuilder().getBuilder(index);
     }
     /**
@@ -934,7 +934,7 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodFileInfoOrBuilder getFileInfosOrBuilder(
-            int index) {
+        int index) {
       if (fileInfosBuilder_ == null) {
         return fileInfos_.get(index);  } else {
         return fileInfosBuilder_.getMessageOrBuilder(index);
@@ -947,8 +947,8 @@ public final class VodGetFileInfosData extends
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>
-    getFileInfosOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> 
+         getFileInfosOrBuilderList() {
       if (fileInfosBuilder_ != null) {
         return fileInfosBuilder_.getMessageOrBuilderList();
       } else {
@@ -964,7 +964,7 @@ public final class VodGetFileInfosData extends
      */
     public com.byteplus.service.vod.model.business.VodFileInfo.Builder addFileInfosBuilder() {
       return getFileInfosFieldBuilder().addBuilder(
-              com.byteplus.service.vod.model.business.VodFileInfo.getDefaultInstance());
+          com.byteplus.service.vod.model.business.VodFileInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -974,9 +974,9 @@ public final class VodGetFileInfosData extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodFileInfo.Builder addFileInfosBuilder(
-            int index) {
+        int index) {
       return getFileInfosFieldBuilder().addBuilder(
-              index, com.byteplus.service.vod.model.business.VodFileInfo.getDefaultInstance());
+          index, com.byteplus.service.vod.model.business.VodFileInfo.getDefaultInstance());
     }
     /**
      * <pre>
@@ -985,16 +985,16 @@ public final class VodGetFileInfosData extends
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodFileInfo.Builder>
-    getFileInfosBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodFileInfo.Builder> 
+         getFileInfosBuilderList() {
       return getFileInfosFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>
-    getFileInfosFieldBuilder() {
+        com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> 
+        getFileInfosFieldBuilder() {
       if (fileInfosBuilder_ == null) {
         fileInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>(
+            com.byteplus.service.vod.model.business.VodFileInfo, com.byteplus.service.vod.model.business.VodFileInfo.Builder, com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>(
                 fileInfos_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1009,7 +1009,7 @@ public final class VodGetFileInfosData extends
       if (!((bitField0_ & 0x00000002) != 0)) {
         notExistFileNames_ = new com.google.protobuf.LazyStringArrayList(notExistFileNames_);
         bitField0_ |= 0x00000002;
-      }
+       }
     }
     /**
      * <pre>
@@ -1020,7 +1020,7 @@ public final class VodGetFileInfosData extends
      * @return A list containing the notExistFileNames.
      */
     public com.google.protobuf.ProtocolStringList
-    getNotExistFileNamesList() {
+        getNotExistFileNamesList() {
       return notExistFileNames_.getUnmodifiableView();
     }
     /**
@@ -1056,7 +1056,7 @@ public final class VodGetFileInfosData extends
      * @return The bytes of the notExistFileNames at the given index.
      */
     public com.google.protobuf.ByteString
-    getNotExistFileNamesBytes(int index) {
+        getNotExistFileNamesBytes(int index) {
       return notExistFileNames_.getByteString(index);
     }
     /**
@@ -1070,11 +1070,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder setNotExistFileNames(
-            int index, java.lang.String value) {
+        int index, java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureNotExistFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureNotExistFileNamesIsMutable();
       notExistFileNames_.set(index, value);
       onChanged();
       return this;
@@ -1089,11 +1089,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addNotExistFileNames(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureNotExistFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureNotExistFileNamesIsMutable();
       notExistFileNames_.add(value);
       onChanged();
       return this;
@@ -1108,10 +1108,10 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addAllNotExistFileNames(
-            java.lang.Iterable<java.lang.String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureNotExistFileNamesIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, notExistFileNames_);
+          values, notExistFileNames_);
       onChanged();
       return this;
     }
@@ -1139,11 +1139,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addNotExistFileNamesBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
       ensureNotExistFileNamesIsMutable();
       notExistFileNames_.add(value);
       onChanged();
@@ -1155,7 +1155,7 @@ public final class VodGetFileInfosData extends
       if (!((bitField0_ & 0x00000004) != 0)) {
         notExistEncodedFileNames_ = new com.google.protobuf.LazyStringArrayList(notExistEncodedFileNames_);
         bitField0_ |= 0x00000004;
-      }
+       }
     }
     /**
      * <pre>
@@ -1166,7 +1166,7 @@ public final class VodGetFileInfosData extends
      * @return A list containing the notExistEncodedFileNames.
      */
     public com.google.protobuf.ProtocolStringList
-    getNotExistEncodedFileNamesList() {
+        getNotExistEncodedFileNamesList() {
       return notExistEncodedFileNames_.getUnmodifiableView();
     }
     /**
@@ -1202,7 +1202,7 @@ public final class VodGetFileInfosData extends
      * @return The bytes of the notExistEncodedFileNames at the given index.
      */
     public com.google.protobuf.ByteString
-    getNotExistEncodedFileNamesBytes(int index) {
+        getNotExistEncodedFileNamesBytes(int index) {
       return notExistEncodedFileNames_.getByteString(index);
     }
     /**
@@ -1216,11 +1216,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder setNotExistEncodedFileNames(
-            int index, java.lang.String value) {
+        int index, java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureNotExistEncodedFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureNotExistEncodedFileNamesIsMutable();
       notExistEncodedFileNames_.set(index, value);
       onChanged();
       return this;
@@ -1235,11 +1235,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addNotExistEncodedFileNames(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureNotExistEncodedFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureNotExistEncodedFileNamesIsMutable();
       notExistEncodedFileNames_.add(value);
       onChanged();
       return this;
@@ -1254,10 +1254,10 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addAllNotExistEncodedFileNames(
-            java.lang.Iterable<java.lang.String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureNotExistEncodedFileNamesIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, notExistEncodedFileNames_);
+          values, notExistEncodedFileNames_);
       onChanged();
       return this;
     }
@@ -1285,11 +1285,11 @@ public final class VodGetFileInfosData extends
      * @return This builder for chaining.
      */
     public Builder addNotExistEncodedFileNamesBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
       ensureNotExistEncodedFileNamesIsMutable();
       notExistEncodedFileNames_.add(value);
       onChanged();
@@ -1297,13 +1297,13 @@ public final class VodGetFileInfosData extends
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1322,12 +1322,12 @@ public final class VodGetFileInfosData extends
   }
 
   private static final com.google.protobuf.Parser<VodGetFileInfosData>
-          PARSER = new com.google.protobuf.AbstractParser<VodGetFileInfosData>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodGetFileInfosData>() {
     @java.lang.Override
     public VodGetFileInfosData parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodGetFileInfosData(input, extensionRegistry);
     }
   };

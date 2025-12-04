@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodFileInfoOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodFileInfo)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodFileInfo)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -25,7 +25,7 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for fileName.
    */
   com.google.protobuf.ByteString
-  getFileNameBytes();
+      getFileNameBytes();
 
   /**
    * <pre>
@@ -45,7 +45,7 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for lastModifiedTime.
    */
   com.google.protobuf.ByteString
-  getLastModifiedTimeBytes();
+      getLastModifiedTimeBytes();
 
   /**
    * <pre>
@@ -75,7 +75,7 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for storageClass.
    */
   com.google.protobuf.ByteString
-  getStorageClassBytes();
+      getStorageClassBytes();
 
   /**
    * <pre>
@@ -95,7 +95,7 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for hashCrc64.
    */
   com.google.protobuf.ByteString
-  getHashCrc64Bytes();
+      getHashCrc64Bytes();
 
   /**
    * <pre>
@@ -115,7 +115,7 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for encodedFileName.
    */
   com.google.protobuf.ByteString
-  getEncodedFileNameBytes();
+      getEncodedFileNameBytes();
 
   /**
    * <pre>
@@ -135,5 +135,5 @@ public interface VodFileInfoOrBuilder extends
    * @return The bytes for downloadUrl.
    */
   com.google.protobuf.ByteString
-  getDownloadUrlBytes();
+      getDownloadUrlBytes();
 }

@@ -29,7 +29,7 @@ public interface VodCreateSpaceRequestOrBuilder extends
 
   /**
    * <pre>
-   *    string ProjectName = 2 ;
+   * 项目名 
    * </pre>
    *
    * <code>string ProjectName = 2;</code>
@@ -38,7 +38,7 @@ public interface VodCreateSpaceRequestOrBuilder extends
   java.lang.String getProjectName();
   /**
    * <pre>
-   *    string ProjectName = 2 ;
+   * 项目名 
    * </pre>
    *
    * <code>string ProjectName = 2;</code>

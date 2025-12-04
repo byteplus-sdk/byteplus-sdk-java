@@ -13,10 +13,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodCreatePlaylistRequest}
  */
 public final class VodCreatePlaylistRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
-        VodCreatePlaylistRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
+    VodCreatePlaylistRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodCreatePlaylistRequest.newBuilder() to construct.
   private VodCreatePlaylistRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -36,7 +36,7 @@ public final class VodCreatePlaylistRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodCreatePlaylistRequest();
   }
 
@@ -46,15 +46,15 @@ public final class VodCreatePlaylistRequest extends
     return this.unknownFields;
   }
   private VodCreatePlaylistRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -119,7 +119,7 @@ public final class VodCreatePlaylistRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -130,23 +130,23 @@ public final class VodCreatePlaylistRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.Builder.class);
   }
 
   public static final int SPACENAME_FIELD_NUMBER = 1;
@@ -161,8 +161,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       spaceName_ = s;
       return s;
@@ -174,12 +174,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getSpaceNameBytes() {
+      getSpaceNameBytes() {
     java.lang.Object ref = spaceName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       spaceName_ = b;
       return b;
     } else {
@@ -203,8 +203,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       name_ = s;
       return s;
@@ -220,12 +220,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getNameBytes() {
+      getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       name_ = b;
       return b;
     } else {
@@ -249,8 +249,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       format_ = s;
       return s;
@@ -266,12 +266,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFormatBytes() {
+      getFormatBytes() {
     java.lang.Object ref = format_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       format_ = b;
       return b;
     } else {
@@ -295,8 +295,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       codec_ = s;
       return s;
@@ -312,12 +312,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getCodecBytes() {
+      getCodecBytes() {
     java.lang.Object ref = codec_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       codec_ = b;
       return b;
     } else {
@@ -341,8 +341,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       definition_ = s;
       return s;
@@ -358,12 +358,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDefinitionBytes() {
+      getDefinitionBytes() {
     java.lang.Object ref = definition_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       definition_ = b;
       return b;
     } else {
@@ -387,8 +387,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       vids_ = s;
       return s;
@@ -404,12 +404,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getVidsBytes() {
+      getVidsBytes() {
     java.lang.Object ref = vids_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       vids_ = b;
       return b;
     } else {
@@ -433,8 +433,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       startTime_ = s;
       return s;
@@ -450,12 +450,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getStartTimeBytes() {
+      getStartTimeBytes() {
     java.lang.Object ref = startTime_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       startTime_ = b;
       return b;
     } else {
@@ -479,8 +479,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       endTime_ = s;
       return s;
@@ -496,12 +496,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getEndTimeBytes() {
+      getEndTimeBytes() {
     java.lang.Object ref = endTime_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       endTime_ = b;
       return b;
     } else {
@@ -525,8 +525,8 @@ public final class VodCreatePlaylistRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       cycles_ = s;
       return s;
@@ -542,12 +542,12 @@ public final class VodCreatePlaylistRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getCyclesBytes() {
+      getCyclesBytes() {
     java.lang.Object ref = cycles_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       cycles_ = b;
       return b;
     } else {
@@ -568,7 +568,7 @@ public final class VodCreatePlaylistRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, spaceName_);
     }
@@ -640,7 +640,7 @@ public final class VodCreatePlaylistRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodCreatePlaylistRequest)) {
       return super.equals(obj);
@@ -648,23 +648,23 @@ public final class VodCreatePlaylistRequest extends
     com.byteplus.service.vod.model.request.VodCreatePlaylistRequest other = (com.byteplus.service.vod.model.request.VodCreatePlaylistRequest) obj;
 
     if (!getSpaceName()
-            .equals(other.getSpaceName())) return false;
+        .equals(other.getSpaceName())) return false;
     if (!getName()
-            .equals(other.getName())) return false;
+        .equals(other.getName())) return false;
     if (!getFormat()
-            .equals(other.getFormat())) return false;
+        .equals(other.getFormat())) return false;
     if (!getCodec()
-            .equals(other.getCodec())) return false;
+        .equals(other.getCodec())) return false;
     if (!getDefinition()
-            .equals(other.getDefinition())) return false;
+        .equals(other.getDefinition())) return false;
     if (!getVids()
-            .equals(other.getVids())) return false;
+        .equals(other.getVids())) return false;
     if (!getStartTime()
-            .equals(other.getStartTime())) return false;
+        .equals(other.getStartTime())) return false;
     if (!getEndTime()
-            .equals(other.getEndTime())) return false;
+        .equals(other.getEndTime())) return false;
     if (!getCycles()
-            .equals(other.getCycles())) return false;
+        .equals(other.getCycles())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -700,73 +700,73 @@ public final class VodCreatePlaylistRequest extends
   }
 
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -780,12 +780,12 @@ public final class VodCreatePlaylistRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -799,20 +799,20 @@ public final class VodCreatePlaylistRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodCreatePlaylistRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
-          com.byteplus.service.vod.model.request.VodCreatePlaylistRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodCreatePlaylistRequest)
+      com.byteplus.service.vod.model.request.VodCreatePlaylistRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.class, com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodCreatePlaylistRequest.newBuilder()
@@ -821,7 +821,7 @@ public final class VodCreatePlaylistRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -856,7 +856,7 @@ public final class VodCreatePlaylistRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodCreatePlaylistRequest_descriptor;
     }
 
@@ -896,30 +896,30 @@ public final class VodCreatePlaylistRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -982,9 +982,9 @@ public final class VodCreatePlaylistRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodCreatePlaylistRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -1008,7 +1008,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = spaceName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         spaceName_ = s;
         return s;
@@ -1021,12 +1021,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for spaceName.
      */
     public com.google.protobuf.ByteString
-    getSpaceNameBytes() {
+        getSpaceNameBytes() {
       java.lang.Object ref = spaceName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         spaceName_ = b;
         return b;
       } else {
@@ -1039,11 +1039,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       spaceName_ = value;
       onChanged();
       return this;
@@ -1053,7 +1053,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearSpaceName() {
-
+      
       spaceName_ = getDefaultInstance().getSpaceName();
       onChanged();
       return this;
@@ -1064,12 +1064,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       spaceName_ = value;
       onChanged();
       return this;
@@ -1088,7 +1088,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = name_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
@@ -1105,12 +1105,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
-    getNameBytes() {
+        getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -1127,11 +1127,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       name_ = value;
       onChanged();
       return this;
@@ -1145,7 +1145,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearName() {
-
+      
       name_ = getDefaultInstance().getName();
       onChanged();
       return this;
@@ -1160,12 +1160,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       name_ = value;
       onChanged();
       return this;
@@ -1184,7 +1184,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = format_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         format_ = s;
         return s;
@@ -1201,12 +1201,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for format.
      */
     public com.google.protobuf.ByteString
-    getFormatBytes() {
+        getFormatBytes() {
       java.lang.Object ref = format_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         format_ = b;
         return b;
       } else {
@@ -1223,11 +1223,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setFormat(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       format_ = value;
       onChanged();
       return this;
@@ -1241,7 +1241,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearFormat() {
-
+      
       format_ = getDefaultInstance().getFormat();
       onChanged();
       return this;
@@ -1256,12 +1256,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setFormatBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       format_ = value;
       onChanged();
       return this;
@@ -1280,7 +1280,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = codec_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         codec_ = s;
         return s;
@@ -1297,12 +1297,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for codec.
      */
     public com.google.protobuf.ByteString
-    getCodecBytes() {
+        getCodecBytes() {
       java.lang.Object ref = codec_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         codec_ = b;
         return b;
       } else {
@@ -1319,11 +1319,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setCodec(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       codec_ = value;
       onChanged();
       return this;
@@ -1337,7 +1337,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearCodec() {
-
+      
       codec_ = getDefaultInstance().getCodec();
       onChanged();
       return this;
@@ -1352,12 +1352,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setCodecBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       codec_ = value;
       onChanged();
       return this;
@@ -1376,7 +1376,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = definition_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         definition_ = s;
         return s;
@@ -1393,12 +1393,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for definition.
      */
     public com.google.protobuf.ByteString
-    getDefinitionBytes() {
+        getDefinitionBytes() {
       java.lang.Object ref = definition_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         definition_ = b;
         return b;
       } else {
@@ -1415,11 +1415,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setDefinition(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       definition_ = value;
       onChanged();
       return this;
@@ -1433,7 +1433,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearDefinition() {
-
+      
       definition_ = getDefaultInstance().getDefinition();
       onChanged();
       return this;
@@ -1448,12 +1448,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setDefinitionBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       definition_ = value;
       onChanged();
       return this;
@@ -1472,7 +1472,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = vids_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         vids_ = s;
         return s;
@@ -1489,12 +1489,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for vids.
      */
     public com.google.protobuf.ByteString
-    getVidsBytes() {
+        getVidsBytes() {
       java.lang.Object ref = vids_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         vids_ = b;
         return b;
       } else {
@@ -1511,11 +1511,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setVids(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       vids_ = value;
       onChanged();
       return this;
@@ -1529,7 +1529,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearVids() {
-
+      
       vids_ = getDefaultInstance().getVids();
       onChanged();
       return this;
@@ -1544,12 +1544,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setVidsBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       vids_ = value;
       onChanged();
       return this;
@@ -1568,7 +1568,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = startTime_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         startTime_ = s;
         return s;
@@ -1585,12 +1585,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for startTime.
      */
     public com.google.protobuf.ByteString
-    getStartTimeBytes() {
+        getStartTimeBytes() {
       java.lang.Object ref = startTime_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         startTime_ = b;
         return b;
       } else {
@@ -1607,11 +1607,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setStartTime(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       startTime_ = value;
       onChanged();
       return this;
@@ -1625,7 +1625,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearStartTime() {
-
+      
       startTime_ = getDefaultInstance().getStartTime();
       onChanged();
       return this;
@@ -1640,12 +1640,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setStartTimeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       startTime_ = value;
       onChanged();
       return this;
@@ -1664,7 +1664,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = endTime_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         endTime_ = s;
         return s;
@@ -1681,12 +1681,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for endTime.
      */
     public com.google.protobuf.ByteString
-    getEndTimeBytes() {
+        getEndTimeBytes() {
       java.lang.Object ref = endTime_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         endTime_ = b;
         return b;
       } else {
@@ -1703,11 +1703,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setEndTime(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       endTime_ = value;
       onChanged();
       return this;
@@ -1721,7 +1721,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearEndTime() {
-
+      
       endTime_ = getDefaultInstance().getEndTime();
       onChanged();
       return this;
@@ -1736,12 +1736,12 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setEndTimeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       endTime_ = value;
       onChanged();
       return this;
@@ -1760,7 +1760,7 @@ public final class VodCreatePlaylistRequest extends
       java.lang.Object ref = cycles_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         cycles_ = s;
         return s;
@@ -1777,12 +1777,12 @@ public final class VodCreatePlaylistRequest extends
      * @return The bytes for cycles.
      */
     public com.google.protobuf.ByteString
-    getCyclesBytes() {
+        getCyclesBytes() {
       java.lang.Object ref = cycles_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         cycles_ = b;
         return b;
       } else {
@@ -1799,11 +1799,11 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setCycles(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       cycles_ = value;
       onChanged();
       return this;
@@ -1817,7 +1817,7 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder clearCycles() {
-
+      
       cycles_ = getDefaultInstance().getCycles();
       onChanged();
       return this;
@@ -1832,25 +1832,25 @@ public final class VodCreatePlaylistRequest extends
      * @return This builder for chaining.
      */
     public Builder setCyclesBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       cycles_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1869,12 +1869,12 @@ public final class VodCreatePlaylistRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodCreatePlaylistRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodCreatePlaylistRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodCreatePlaylistRequest>() {
     @java.lang.Override
     public VodCreatePlaylistRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodCreatePlaylistRequest(input, extensionRegistry);
     }
   };

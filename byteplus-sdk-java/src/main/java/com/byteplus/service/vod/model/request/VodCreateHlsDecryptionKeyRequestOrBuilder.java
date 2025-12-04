@@ -11,7 +11,7 @@ public interface VodCreateHlsDecryptionKeyRequestOrBuilder extends
    * <code>string SpaceName = 1;</code>
    * @return The spaceName.
    */
-  String getSpaceName();
+  java.lang.String getSpaceName();
   /**
    * <code>string SpaceName = 1;</code>
    * @return The bytes for spaceName.

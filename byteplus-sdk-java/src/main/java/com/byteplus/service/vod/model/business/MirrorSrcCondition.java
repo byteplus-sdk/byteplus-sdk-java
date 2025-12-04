@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.MirrorSrcCondition}
  */
 public final class MirrorSrcCondition extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.MirrorSrcCondition)
-        MirrorSrcConditionOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.MirrorSrcCondition)
+    MirrorSrcConditionOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use MirrorSrcCondition.newBuilder() to construct.
   private MirrorSrcCondition(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -23,7 +23,7 @@ public final class MirrorSrcCondition extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new MirrorSrcCondition();
   }
 
@@ -33,16 +33,16 @@ public final class MirrorSrcCondition extends
     return this.unknownFields;
   }
   private MirrorSrcCondition(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -109,7 +109,7 @@ public final class MirrorSrcCondition extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -120,7 +120,7 @@ public final class MirrorSrcCondition extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         httpCode_.makeImmutable(); // C
@@ -133,16 +133,16 @@ public final class MirrorSrcCondition extends
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcCondition_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcCondition_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.MirrorSrcCondition.class, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.MirrorSrcCondition.class, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder.class);
   }
 
   public static final int HTTPCODE_FIELD_NUMBER = 1;
@@ -153,7 +153,7 @@ public final class MirrorSrcCondition extends
    */
   @java.lang.Override
   public java.util.List<java.lang.Long>
-  getHttpCodeList() {
+      getHttpCodeList() {
     return httpCode_;
   }
   /**
@@ -232,7 +232,7 @@ public final class MirrorSrcCondition extends
    * @return A list containing the allowHost.
    */
   public com.google.protobuf.ProtocolStringList
-  getAllowHostList() {
+      getAllowHostList() {
     return allowHost_;
   }
   /**
@@ -256,7 +256,7 @@ public final class MirrorSrcCondition extends
    * @return The bytes of the allowHost at the given index.
    */
   public com.google.protobuf.ByteString
-  getAllowHostBytes(int index) {
+      getAllowHostBytes(int index) {
     return allowHost_.getByteString(index);
   }
 
@@ -273,7 +273,7 @@ public final class MirrorSrcCondition extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     getSerializedSize();
     if (getHttpCodeList().size() > 0) {
       output.writeUInt32NoTag(10);
@@ -304,23 +304,23 @@ public final class MirrorSrcCondition extends
       int dataSize = 0;
       for (int i = 0; i < httpCode_.size(); i++) {
         dataSize += com.google.protobuf.CodedOutputStream
-                .computeInt64SizeNoTag(httpCode_.getLong(i));
+          .computeInt64SizeNoTag(httpCode_.getLong(i));
       }
       size += dataSize;
       if (!getHttpCodeList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
-                .computeInt32SizeNoTag(dataSize);
+            .computeInt32SizeNoTag(dataSize);
       }
       httpCodeMemoizedSerializedSize = dataSize;
     }
     if (keyPrefix_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(2, getKeyPrefix());
+        .computeMessageSize(2, getKeyPrefix());
     }
     if (keySuffix_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(3, getKeySuffix());
+        .computeMessageSize(3, getKeySuffix());
     }
     {
       int dataSize = 0;
@@ -338,7 +338,7 @@ public final class MirrorSrcCondition extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.MirrorSrcCondition)) {
       return super.equals(obj);
@@ -346,19 +346,19 @@ public final class MirrorSrcCondition extends
     com.byteplus.service.vod.model.business.MirrorSrcCondition other = (com.byteplus.service.vod.model.business.MirrorSrcCondition) obj;
 
     if (!getHttpCodeList()
-            .equals(other.getHttpCodeList())) return false;
+        .equals(other.getHttpCodeList())) return false;
     if (hasKeyPrefix() != other.hasKeyPrefix()) return false;
     if (hasKeyPrefix()) {
       if (!getKeyPrefix()
-              .equals(other.getKeyPrefix())) return false;
+          .equals(other.getKeyPrefix())) return false;
     }
     if (hasKeySuffix() != other.hasKeySuffix()) return false;
     if (hasKeySuffix()) {
       if (!getKeySuffix()
-              .equals(other.getKeySuffix())) return false;
+          .equals(other.getKeySuffix())) return false;
     }
     if (!getAllowHostList()
-            .equals(other.getAllowHostList())) return false;
+        .equals(other.getAllowHostList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -392,73 +392,73 @@ public final class MirrorSrcCondition extends
   }
 
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.MirrorSrcCondition parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -472,12 +472,12 @@ public final class MirrorSrcCondition extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -485,20 +485,20 @@ public final class MirrorSrcCondition extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.MirrorSrcCondition}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.MirrorSrcCondition)
-          com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.MirrorSrcCondition)
+      com.byteplus.service.vod.model.business.MirrorSrcConditionOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcCondition_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcCondition_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.MirrorSrcCondition.class, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.MirrorSrcCondition.class, com.byteplus.service.vod.model.business.MirrorSrcCondition.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.MirrorSrcCondition.newBuilder()
@@ -507,7 +507,7 @@ public final class MirrorSrcCondition extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -540,7 +540,7 @@ public final class MirrorSrcCondition extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_MirrorSrcCondition_descriptor;
     }
 
@@ -592,30 +592,30 @@ public final class MirrorSrcCondition extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -668,9 +668,9 @@ public final class MirrorSrcCondition extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.MirrorSrcCondition parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -691,16 +691,16 @@ public final class MirrorSrcCondition extends
       if (!((bitField0_ & 0x00000001) != 0)) {
         httpCode_ = mutableCopy(httpCode_);
         bitField0_ |= 0x00000001;
-      }
+       }
     }
     /**
      * <code>repeated int64 HttpCode = 1;</code>
      * @return A list containing the httpCode.
      */
     public java.util.List<java.lang.Long>
-    getHttpCodeList() {
+        getHttpCodeList() {
       return ((bitField0_ & 0x00000001) != 0) ?
-              java.util.Collections.unmodifiableList(httpCode_) : httpCode_;
+               java.util.Collections.unmodifiableList(httpCode_) : httpCode_;
     }
     /**
      * <code>repeated int64 HttpCode = 1;</code>
@@ -724,7 +724,7 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder setHttpCode(
-            int index, long value) {
+        int index, long value) {
       ensureHttpCodeIsMutable();
       httpCode_.setLong(index, value);
       onChanged();
@@ -747,10 +747,10 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder addAllHttpCode(
-            java.lang.Iterable<? extends java.lang.Long> values) {
+        java.lang.Iterable<? extends java.lang.Long> values) {
       ensureHttpCodeIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, httpCode_);
+          values, httpCode_);
       onChanged();
       return this;
     }
@@ -767,7 +767,7 @@ public final class MirrorSrcCondition extends
 
     private com.google.protobuf.StringValue keyPrefix_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> keyPrefixBuilder_;
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> keyPrefixBuilder_;
     /**
      * <code>.google.protobuf.StringValue KeyPrefix = 2;</code>
      * @return Whether the keyPrefix field is set.
@@ -806,7 +806,7 @@ public final class MirrorSrcCondition extends
      * <code>.google.protobuf.StringValue KeyPrefix = 2;</code>
      */
     public Builder setKeyPrefix(
-            com.google.protobuf.StringValue.Builder builderForValue) {
+        com.google.protobuf.StringValue.Builder builderForValue) {
       if (keyPrefixBuilder_ == null) {
         keyPrefix_ = builderForValue.build();
         onChanged();
@@ -823,7 +823,7 @@ public final class MirrorSrcCondition extends
       if (keyPrefixBuilder_ == null) {
         if (keyPrefix_ != null) {
           keyPrefix_ =
-                  com.google.protobuf.StringValue.newBuilder(keyPrefix_).mergeFrom(value).buildPartial();
+            com.google.protobuf.StringValue.newBuilder(keyPrefix_).mergeFrom(value).buildPartial();
         } else {
           keyPrefix_ = value;
         }
@@ -852,7 +852,7 @@ public final class MirrorSrcCondition extends
      * <code>.google.protobuf.StringValue KeyPrefix = 2;</code>
      */
     public com.google.protobuf.StringValue.Builder getKeyPrefixBuilder() {
-
+      
       onChanged();
       return getKeyPrefixFieldBuilder().getBuilder();
     }
@@ -864,18 +864,18 @@ public final class MirrorSrcCondition extends
         return keyPrefixBuilder_.getMessageOrBuilder();
       } else {
         return keyPrefix_ == null ?
-                com.google.protobuf.StringValue.getDefaultInstance() : keyPrefix_;
+            com.google.protobuf.StringValue.getDefaultInstance() : keyPrefix_;
       }
     }
     /**
      * <code>.google.protobuf.StringValue KeyPrefix = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
-    getKeyPrefixFieldBuilder() {
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
+        getKeyPrefixFieldBuilder() {
       if (keyPrefixBuilder_ == null) {
         keyPrefixBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getKeyPrefix(),
                 getParentForChildren(),
                 isClean());
@@ -886,7 +886,7 @@ public final class MirrorSrcCondition extends
 
     private com.google.protobuf.StringValue keySuffix_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> keySuffixBuilder_;
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> keySuffixBuilder_;
     /**
      * <code>.google.protobuf.StringValue KeySuffix = 3;</code>
      * @return Whether the keySuffix field is set.
@@ -925,7 +925,7 @@ public final class MirrorSrcCondition extends
      * <code>.google.protobuf.StringValue KeySuffix = 3;</code>
      */
     public Builder setKeySuffix(
-            com.google.protobuf.StringValue.Builder builderForValue) {
+        com.google.protobuf.StringValue.Builder builderForValue) {
       if (keySuffixBuilder_ == null) {
         keySuffix_ = builderForValue.build();
         onChanged();
@@ -942,7 +942,7 @@ public final class MirrorSrcCondition extends
       if (keySuffixBuilder_ == null) {
         if (keySuffix_ != null) {
           keySuffix_ =
-                  com.google.protobuf.StringValue.newBuilder(keySuffix_).mergeFrom(value).buildPartial();
+            com.google.protobuf.StringValue.newBuilder(keySuffix_).mergeFrom(value).buildPartial();
         } else {
           keySuffix_ = value;
         }
@@ -971,7 +971,7 @@ public final class MirrorSrcCondition extends
      * <code>.google.protobuf.StringValue KeySuffix = 3;</code>
      */
     public com.google.protobuf.StringValue.Builder getKeySuffixBuilder() {
-
+      
       onChanged();
       return getKeySuffixFieldBuilder().getBuilder();
     }
@@ -983,18 +983,18 @@ public final class MirrorSrcCondition extends
         return keySuffixBuilder_.getMessageOrBuilder();
       } else {
         return keySuffix_ == null ?
-                com.google.protobuf.StringValue.getDefaultInstance() : keySuffix_;
+            com.google.protobuf.StringValue.getDefaultInstance() : keySuffix_;
       }
     }
     /**
      * <code>.google.protobuf.StringValue KeySuffix = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>
-    getKeySuffixFieldBuilder() {
+        com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder> 
+        getKeySuffixFieldBuilder() {
       if (keySuffixBuilder_ == null) {
         keySuffixBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
+            com.google.protobuf.StringValue, com.google.protobuf.StringValue.Builder, com.google.protobuf.StringValueOrBuilder>(
                 getKeySuffix(),
                 getParentForChildren(),
                 isClean());
@@ -1008,14 +1008,14 @@ public final class MirrorSrcCondition extends
       if (!((bitField0_ & 0x00000002) != 0)) {
         allowHost_ = new com.google.protobuf.LazyStringArrayList(allowHost_);
         bitField0_ |= 0x00000002;
-      }
+       }
     }
     /**
      * <code>repeated string AllowHost = 4;</code>
      * @return A list containing the allowHost.
      */
     public com.google.protobuf.ProtocolStringList
-    getAllowHostList() {
+        getAllowHostList() {
       return allowHost_.getUnmodifiableView();
     }
     /**
@@ -1039,7 +1039,7 @@ public final class MirrorSrcCondition extends
      * @return The bytes of the allowHost at the given index.
      */
     public com.google.protobuf.ByteString
-    getAllowHostBytes(int index) {
+        getAllowHostBytes(int index) {
       return allowHost_.getByteString(index);
     }
     /**
@@ -1049,11 +1049,11 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder setAllowHost(
-            int index, java.lang.String value) {
+        int index, java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureAllowHostIsMutable();
+    throw new NullPointerException();
+  }
+  ensureAllowHostIsMutable();
       allowHost_.set(index, value);
       onChanged();
       return this;
@@ -1064,11 +1064,11 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder addAllowHost(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureAllowHostIsMutable();
+    throw new NullPointerException();
+  }
+  ensureAllowHostIsMutable();
       allowHost_.add(value);
       onChanged();
       return this;
@@ -1079,10 +1079,10 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder addAllAllowHost(
-            java.lang.Iterable<java.lang.String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureAllowHostIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, allowHost_);
+          values, allowHost_);
       onChanged();
       return this;
     }
@@ -1102,11 +1102,11 @@ public final class MirrorSrcCondition extends
      * @return This builder for chaining.
      */
     public Builder addAllowHostBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
       ensureAllowHostIsMutable();
       allowHost_.add(value);
       onChanged();
@@ -1114,13 +1114,13 @@ public final class MirrorSrcCondition extends
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1139,12 +1139,12 @@ public final class MirrorSrcCondition extends
   }
 
   private static final com.google.protobuf.Parser<MirrorSrcCondition>
-          PARSER = new com.google.protobuf.AbstractParser<MirrorSrcCondition>() {
+      PARSER = new com.google.protobuf.AbstractParser<MirrorSrcCondition>() {
     @java.lang.Override
     public MirrorSrcCondition parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new MirrorSrcCondition(input, extensionRegistry);
     }
   };

@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodPlaylistVideoInfoOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistVideoInfo)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistVideoInfo)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>string Vid = 1;</code>
@@ -17,7 +17,7 @@ public interface VodPlaylistVideoInfoOrBuilder extends
    * @return The bytes for vid.
    */
   com.google.protobuf.ByteString
-  getVidBytes();
+      getVidBytes();
 
   /**
    * <code>string Title = 2;</code>
@@ -29,7 +29,7 @@ public interface VodPlaylistVideoInfoOrBuilder extends
    * @return The bytes for title.
    */
   com.google.protobuf.ByteString
-  getTitleBytes();
+      getTitleBytes();
 
   /**
    * <code>double Duration = 3;</code>
@@ -47,7 +47,7 @@ public interface VodPlaylistVideoInfoOrBuilder extends
    * @return The bytes for posterUrl.
    */
   com.google.protobuf.ByteString
-  getPosterUrlBytes();
+      getPosterUrlBytes();
 
   /**
    * <pre>
@@ -67,5 +67,5 @@ public interface VodPlaylistVideoInfoOrBuilder extends
    * @return The bytes for videoStatus.
    */
   com.google.protobuf.ByteString
-  getVideoStatusBytes();
+      getVideoStatusBytes();
 }

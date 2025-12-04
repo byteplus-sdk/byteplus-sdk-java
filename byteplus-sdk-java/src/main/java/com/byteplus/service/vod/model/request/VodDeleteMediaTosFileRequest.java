@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest}
  */
 public final class VodDeleteMediaTosFileRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest)
-        VodDeleteMediaTosFileRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest)
+    VodDeleteMediaTosFileRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodDeleteMediaTosFileRequest.newBuilder() to construct.
   private VodDeleteMediaTosFileRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -23,7 +23,7 @@ public final class VodDeleteMediaTosFileRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodDeleteMediaTosFileRequest();
   }
 
@@ -33,16 +33,16 @@ public final class VodDeleteMediaTosFileRequest extends
     return this.unknownFields;
   }
   private VodDeleteMediaTosFileRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -68,7 +68,7 @@ public final class VodDeleteMediaTosFileRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -79,7 +79,7 @@ public final class VodDeleteMediaTosFileRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         fileNames_ = fileNames_.getUnmodifiableView();
@@ -89,16 +89,16 @@ public final class VodDeleteMediaTosFileRequest extends
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodDeleteMediaTosFileRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodDeleteMediaTosFileRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.class, com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.class, com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.Builder.class);
   }
 
   public static final int FILENAMES_FIELD_NUMBER = 1;
@@ -112,7 +112,7 @@ public final class VodDeleteMediaTosFileRequest extends
    * @return A list containing the fileNames.
    */
   public com.google.protobuf.ProtocolStringList
-  getFileNamesList() {
+      getFileNamesList() {
     return fileNames_;
   }
   /**
@@ -148,7 +148,7 @@ public final class VodDeleteMediaTosFileRequest extends
    * @return The bytes of the fileNames at the given index.
    */
   public com.google.protobuf.ByteString
-  getFileNamesBytes(int index) {
+      getFileNamesBytes(int index) {
     return fileNames_.getByteString(index);
   }
 
@@ -168,8 +168,8 @@ public final class VodDeleteMediaTosFileRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       spaceName_ = s;
       return s;
@@ -185,12 +185,12 @@ public final class VodDeleteMediaTosFileRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getSpaceNameBytes() {
+      getSpaceNameBytes() {
     java.lang.Object ref = spaceName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       spaceName_ = b;
       return b;
     } else {
@@ -211,7 +211,7 @@ public final class VodDeleteMediaTosFileRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     for (int i = 0; i < fileNames_.size(); i++) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fileNames_.getRaw(i));
     }
@@ -246,7 +246,7 @@ public final class VodDeleteMediaTosFileRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest)) {
       return super.equals(obj);
@@ -254,9 +254,9 @@ public final class VodDeleteMediaTosFileRequest extends
     com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest other = (com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest) obj;
 
     if (!getFileNamesList()
-            .equals(other.getFileNamesList())) return false;
+        .equals(other.getFileNamesList())) return false;
     if (!getSpaceName()
-            .equals(other.getSpaceName())) return false;
+        .equals(other.getSpaceName())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -280,73 +280,73 @@ public final class VodDeleteMediaTosFileRequest extends
   }
 
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -360,12 +360,12 @@ public final class VodDeleteMediaTosFileRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -373,20 +373,20 @@ public final class VodDeleteMediaTosFileRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest)
-          com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodDeleteMediaTosFileRequest)
+      com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodDeleteMediaTosFileRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodDeleteMediaTosFileRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.class, com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.class, com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest.newBuilder()
@@ -395,7 +395,7 @@ public final class VodDeleteMediaTosFileRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -416,7 +416,7 @@ public final class VodDeleteMediaTosFileRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodDeleteMediaTosFileRequest_descriptor;
     }
 
@@ -454,30 +454,30 @@ public final class VodDeleteMediaTosFileRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -518,9 +518,9 @@ public final class VodDeleteMediaTosFileRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodDeleteMediaTosFileRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -541,7 +541,7 @@ public final class VodDeleteMediaTosFileRequest extends
       if (!((bitField0_ & 0x00000001) != 0)) {
         fileNames_ = new com.google.protobuf.LazyStringArrayList(fileNames_);
         bitField0_ |= 0x00000001;
-      }
+       }
     }
     /**
      * <pre>
@@ -552,7 +552,7 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return A list containing the fileNames.
      */
     public com.google.protobuf.ProtocolStringList
-    getFileNamesList() {
+        getFileNamesList() {
       return fileNames_.getUnmodifiableView();
     }
     /**
@@ -588,7 +588,7 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return The bytes of the fileNames at the given index.
      */
     public com.google.protobuf.ByteString
-    getFileNamesBytes(int index) {
+        getFileNamesBytes(int index) {
       return fileNames_.getByteString(index);
     }
     /**
@@ -602,11 +602,11 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder setFileNames(
-            int index, java.lang.String value) {
+        int index, java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureFileNamesIsMutable();
       fileNames_.set(index, value);
       onChanged();
       return this;
@@ -621,11 +621,11 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder addFileNames(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      ensureFileNamesIsMutable();
+    throw new NullPointerException();
+  }
+  ensureFileNamesIsMutable();
       fileNames_.add(value);
       onChanged();
       return this;
@@ -640,10 +640,10 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder addAllFileNames(
-            java.lang.Iterable<java.lang.String> values) {
+        java.lang.Iterable<java.lang.String> values) {
       ensureFileNamesIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, fileNames_);
+          values, fileNames_);
       onChanged();
       return this;
     }
@@ -671,11 +671,11 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder addFileNamesBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
       ensureFileNamesIsMutable();
       fileNames_.add(value);
       onChanged();
@@ -695,7 +695,7 @@ public final class VodDeleteMediaTosFileRequest extends
       java.lang.Object ref = spaceName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         spaceName_ = s;
         return s;
@@ -712,12 +712,12 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return The bytes for spaceName.
      */
     public com.google.protobuf.ByteString
-    getSpaceNameBytes() {
+        getSpaceNameBytes() {
       java.lang.Object ref = spaceName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         spaceName_ = b;
         return b;
       } else {
@@ -734,11 +734,11 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       spaceName_ = value;
       onChanged();
       return this;
@@ -752,7 +752,7 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder clearSpaceName() {
-
+      
       spaceName_ = getDefaultInstance().getSpaceName();
       onChanged();
       return this;
@@ -767,25 +767,25 @@ public final class VodDeleteMediaTosFileRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       spaceName_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -804,12 +804,12 @@ public final class VodDeleteMediaTosFileRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodDeleteMediaTosFileRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodDeleteMediaTosFileRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodDeleteMediaTosFileRequest>() {
     @java.lang.Override
     public VodDeleteMediaTosFileRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodDeleteMediaTosFileRequest(input, extensionRegistry);
     }
   };

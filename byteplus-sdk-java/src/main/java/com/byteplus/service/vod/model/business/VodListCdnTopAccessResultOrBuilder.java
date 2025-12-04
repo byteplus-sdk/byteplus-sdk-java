@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodListCdnTopAccessResultOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -14,8 +14,8 @@ public interface VodListCdnTopAccessResultOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodCdnTopAccessElement>
-  getItemInfosList();
+  java.util.List<com.byteplus.service.vod.model.business.VodCdnTopAccessElement> 
+      getItemInfosList();
   /**
    * <pre>
    * 热点数据查询得到的数据明细以及全部域名的汇总值
@@ -39,8 +39,8 @@ public interface VodListCdnTopAccessResultOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>
-  getItemInfosOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> 
+      getItemInfosOrBuilderList();
   /**
    * <pre>
    * 热点数据查询得到的数据明细以及全部域名的汇总值
@@ -49,5 +49,5 @@ public interface VodListCdnTopAccessResultOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
    */
   com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder getItemInfosOrBuilder(
-          int index);
+      int index);
 }

@@ -76,4 +76,24 @@ public interface VodGetAppInfoResultOrBuilder extends
    */
   com.google.protobuf.ByteString
       getAppCnNameBytes();
+
+  /**
+   * <pre>
+   * 项目名
+   * </pre>
+   *
+   * <code>string Project = 5;</code>
+   * @return The project.
+   */
+  java.lang.String getProject();
+  /**
+   * <pre>
+   * 项目名
+   * </pre>
+   *
+   * <code>string Project = 5;</code>
+   * @return The bytes for project.
+   */
+  com.google.protobuf.ByteString
+      getProjectBytes();
 }

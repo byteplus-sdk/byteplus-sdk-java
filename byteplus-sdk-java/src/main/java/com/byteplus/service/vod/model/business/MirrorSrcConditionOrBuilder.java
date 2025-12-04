@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface MirrorSrcConditionOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcCondition)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcCondition)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>repeated int64 HttpCode = 1;</code>
@@ -59,7 +59,7 @@ public interface MirrorSrcConditionOrBuilder extends
    * @return A list containing the allowHost.
    */
   java.util.List<java.lang.String>
-  getAllowHostList();
+      getAllowHostList();
   /**
    * <code>repeated string AllowHost = 4;</code>
    * @return The count of allowHost.
@@ -77,5 +77,5 @@ public interface MirrorSrcConditionOrBuilder extends
    * @return The bytes of the allowHost at the given index.
    */
   com.google.protobuf.ByteString
-  getAllowHostBytes(int index);
+      getAllowHostBytes(int index);
 }

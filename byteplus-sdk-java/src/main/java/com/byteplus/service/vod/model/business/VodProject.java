@@ -6,62 +6,62 @@ package com.byteplus.service.vod.model.business;
 public final class VodProject {
   private VodProject() {}
   public static void registerAllExtensions(
-          com.google.protobuf.ExtensionRegistryLite registry) {
+      com.google.protobuf.ExtensionRegistryLite registry) {
   }
 
   public static void registerAllExtensions(
-          com.google.protobuf.ExtensionRegistry registry) {
+      com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-            (com.google.protobuf.ExtensionRegistryLite) registry);
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_descriptor;
-  static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_fieldAccessorTable;
+    internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-          internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_descriptor;
-  static final
-  com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_fieldAccessorTable;
+    internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
-  getDescriptor() {
+      getDescriptor() {
     return descriptor;
   }
   private static  com.google.protobuf.Descriptors.FileDescriptor
-          descriptor;
+      descriptor;
   static {
     java.lang.String[] descriptorData = {
-            "\n\'byteplus/vod/business/vod_project.prot" +
-                    "o\022\034Byteplus.Vod.Models.Business\"Z\n\025VodLi" +
-                    "stProjectsResult\022A\n\013ProjectList\030\001 \003(\0132,." +
-                    "Byteplus.Vod.Models.Business.VodProjectI" +
-                    "nfo\":\n\016VodProjectInfo\022\023\n\013ProjectName\030\001 \001" +
-                    "(\t\022\023\n\013DisplayName\030\002 \001(\tB\332\001\n\'com.byteplus" +
-                    ".service.vod.model.businessB\nVodProjectP" +
-                    "\001ZGgithub.com/byteplus-sdk/byteplus-sdk-" +
-                    "golang/service/vod/models/business\240\001\001\330\001\001" +
-                    "\302\002\000\312\002$Byteplus\\Service\\Vod\\Models\\Busine" +
-                    "ss\342\002\'Byteplus\\Service\\Vod\\Models\\GPBMeta" +
-                    "datab\006proto3"
+      "\n\'byteplus/vod/business/vod_project.prot" +
+      "o\022\034Byteplus.Vod.Models.Business\"Z\n\025VodLi" +
+      "stProjectsResult\022A\n\013ProjectList\030\001 \003(\0132,." +
+      "Byteplus.Vod.Models.Business.VodProjectI" +
+      "nfo\":\n\016VodProjectInfo\022\023\n\013ProjectName\030\001 \001" +
+      "(\t\022\023\n\013DisplayName\030\002 \001(\tB\332\001\n\'com.byteplus" +
+      ".service.vod.model.businessB\nVodProjectP" +
+      "\001ZGgithub.com/byteplus-sdk/byteplus-sdk-" +
+      "golang/service/vod/models/business\240\001\001\330\001\001" +
+      "\302\002\000\312\002$Byteplus\\Service\\Vod\\Models\\Busine" +
+      "ss\342\002\'Byteplus\\Service\\Vod\\Models\\GPBMeta" +
+      "datab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
-            .internalBuildGeneratedFileFrom(descriptorData,
-                    new com.google.protobuf.Descriptors.FileDescriptor[] {
-                    });
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
     internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_descriptor =
-            getDescriptor().getMessageTypes().get(0);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_descriptor,
-            new java.lang.String[] { "ProjectList", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodListProjectsResult_descriptor,
+        new java.lang.String[] { "ProjectList", });
     internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_descriptor =
-            getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_fieldAccessorTable = new
-            com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_descriptor,
-            new java.lang.String[] { "ProjectName", "DisplayName", });
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodProjectInfo_descriptor,
+        new java.lang.String[] { "ProjectName", "DisplayName", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

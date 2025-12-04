@@ -32,7 +32,7 @@ public final class VodQualityPlatform {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n0byteplus/vod/business/vod_quality_plat" +
       "form.proto\022\034Byteplus.Vod.Models.Business" +
       "\032\034google/protobuf/struct.proto\"\240\001\n\031GetVo" +
@@ -60,13 +60,13 @@ public final class VodQualityPlatform {
     internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_descriptor,
-        new String[] { "TotalPoint", "Columns", "Data", });
+        new java.lang.String[] { "TotalPoint", "Columns", "Data", });
     internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_descriptor,
-        new String[] { "Name", "Alias", "Type", "ValueAlias", });
+        new java.lang.String[] { "Name", "Alias", "Type", "ValueAlias", });
     com.google.protobuf.StructProto.getDescriptor();
   }
 

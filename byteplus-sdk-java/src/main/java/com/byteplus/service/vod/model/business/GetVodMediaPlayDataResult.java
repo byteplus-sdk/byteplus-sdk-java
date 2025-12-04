@@ -20,14 +20,14 @@ private static final long serialVersionUID = 0L;
     data_ = java.util.Collections.emptyList();
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetVodMediaPlayDataResult();
   }
 
-  @Override
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -38,7 +38,7 @@ private static final long serialVersionUID = 0L;
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
-      throw new NullPointerException();
+      throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -58,11 +58,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              columns_ = new java.util.ArrayList<GetVodMediaPlayDataColumn>();
+              columns_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn>();
               mutable_bitField0_ |= 0x00000001;
             }
             columns_.add(
-                input.readMessage(GetVodMediaPlayDataColumn.parser(), extensionRegistry));
+                input.readMessage(com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.parser(), extensionRegistry));
             break;
           }
           case 26: {
@@ -104,12 +104,12 @@ private static final long serialVersionUID = 0L;
     return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GetVodMediaPlayDataResult.class, Builder.class);
+            com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.class, com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.Builder.class);
   }
 
   public static final int TOTALPOINT_FIELD_NUMBER = 1;
@@ -118,47 +118,47 @@ private static final long serialVersionUID = 0L;
    * <code>float TotalPoint = 1;</code>
    * @return The totalPoint.
    */
-  @Override
+  @java.lang.Override
   public float getTotalPoint() {
     return totalPoint_;
   }
 
   public static final int COLUMNS_FIELD_NUMBER = 2;
-  private java.util.List<GetVodMediaPlayDataColumn> columns_;
+  private java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> columns_;
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  @Override
-  public java.util.List<GetVodMediaPlayDataColumn> getColumnsList() {
+  @java.lang.Override
+  public java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> getColumnsList() {
     return columns_;
   }
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  @Override
-  public java.util.List<? extends GetVodMediaPlayDataColumnOrBuilder>
+  @java.lang.Override
+  public java.util.List<? extends com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder> 
       getColumnsOrBuilderList() {
     return columns_;
   }
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  @Override
+  @java.lang.Override
   public int getColumnsCount() {
     return columns_.size();
   }
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  @Override
-  public GetVodMediaPlayDataColumn getColumns(int index) {
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getColumns(int index) {
     return columns_.get(index);
   }
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  @Override
-  public GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
       int index) {
     return columns_.get(index);
   }
@@ -168,14 +168,14 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .google.protobuf.Struct Data = 3;</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<com.google.protobuf.Struct> getDataList() {
     return data_;
   }
   /**
    * <code>repeated .google.protobuf.Struct Data = 3;</code>
    */
-  @Override
+  @java.lang.Override
   public java.util.List<? extends com.google.protobuf.StructOrBuilder> 
       getDataOrBuilderList() {
     return data_;
@@ -183,28 +183,28 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .google.protobuf.Struct Data = 3;</code>
    */
-  @Override
+  @java.lang.Override
   public int getDataCount() {
     return data_.size();
   }
   /**
    * <code>repeated .google.protobuf.Struct Data = 3;</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Struct getData(int index) {
     return data_.get(index);
   }
   /**
    * <code>repeated .google.protobuf.Struct Data = 3;</code>
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.StructOrBuilder getDataOrBuilder(
       int index) {
     return data_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -214,10 +214,10 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (Float.floatToRawIntBits(totalPoint_) != 0) {
+    if (java.lang.Float.floatToRawIntBits(totalPoint_) != 0) {
       output.writeFloat(1, totalPoint_);
     }
     for (int i = 0; i < columns_.size(); i++) {
@@ -229,13 +229,13 @@ private static final long serialVersionUID = 0L;
     unknownFields.writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (Float.floatToRawIntBits(totalPoint_) != 0) {
+    if (java.lang.Float.floatToRawIntBits(totalPoint_) != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(1, totalPoint_);
     }
@@ -252,18 +252,18 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GetVodMediaPlayDataResult)) {
+    if (!(obj instanceof com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult)) {
       return super.equals(obj);
     }
-    GetVodMediaPlayDataResult other = (GetVodMediaPlayDataResult) obj;
+    com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult other = (com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult) obj;
 
-    if (Float.floatToIntBits(getTotalPoint())
-        != Float.floatToIntBits(
+    if (java.lang.Float.floatToIntBits(getTotalPoint())
+        != java.lang.Float.floatToIntBits(
             other.getTotalPoint())) return false;
     if (!getColumnsList()
         .equals(other.getColumnsList())) return false;
@@ -273,7 +273,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -281,7 +281,7 @@ private static final long serialVersionUID = 0L;
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TOTALPOINT_FIELD_NUMBER;
-    hash = (53 * hash) + Float.floatToIntBits(
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getTotalPoint());
     if (getColumnsCount() > 0) {
       hash = (37 * hash) + COLUMNS_FIELD_NUMBER;
@@ -296,69 +296,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataResult parseFrom(byte[] data)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataResult parseFrom(java.io.InputStream input)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetVodMediaPlayDataResult parseDelimitedFrom(java.io.InputStream input)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataResult parseDelimitedFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataResult parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -366,23 +366,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GetVodMediaPlayDataResult prototype) {
+  public static Builder newBuilder(com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -392,18 +392,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.GetVodMediaPlayDataResult)
-      GetVodMediaPlayDataResultOrBuilder {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GetVodMediaPlayDataResult.class, Builder.class);
+              com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.class, com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.newBuilder()
@@ -412,7 +412,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -423,7 +423,7 @@ private static final long serialVersionUID = 0L;
         getDataFieldBuilder();
       }
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       totalPoint_ = 0F;
@@ -443,29 +443,29 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataResult_descriptor;
     }
 
-    @Override
-    public GetVodMediaPlayDataResult getDefaultInstanceForType() {
-      return GetVodMediaPlayDataResult.getDefaultInstance();
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult getDefaultInstanceForType() {
+      return com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.getDefaultInstance();
     }
 
-    @Override
-    public GetVodMediaPlayDataResult build() {
-      GetVodMediaPlayDataResult result = buildPartial();
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult build() {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GetVodMediaPlayDataResult buildPartial() {
-      GetVodMediaPlayDataResult result = new GetVodMediaPlayDataResult(this);
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult buildPartial() {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult result = new com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult(this);
       int from_bitField0_ = bitField0_;
       result.totalPoint_ = totalPoint_;
       if (columnsBuilder_ == null) {
@@ -490,50 +490,50 @@ private static final long serialVersionUID = 0L;
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GetVodMediaPlayDataResult) {
-        return mergeFrom((GetVodMediaPlayDataResult)other);
+      if (other instanceof com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult) {
+        return mergeFrom((com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GetVodMediaPlayDataResult other) {
-      if (other == GetVodMediaPlayDataResult.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult other) {
+      if (other == com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult.getDefaultInstance()) return this;
       if (other.getTotalPoint() != 0F) {
         setTotalPoint(other.getTotalPoint());
       }
@@ -594,21 +594,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      GetVodMediaPlayDataResult parsedMessage = null;
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (GetVodMediaPlayDataResult) e.getUnfinishedMessage();
+        parsedMessage = (com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -624,7 +624,7 @@ private static final long serialVersionUID = 0L;
      * <code>float TotalPoint = 1;</code>
      * @return The totalPoint.
      */
-    @Override
+    @java.lang.Override
     public float getTotalPoint() {
       return totalPoint_;
     }
@@ -650,22 +650,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<GetVodMediaPlayDataColumn> columns_ =
+    private java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> columns_ =
       java.util.Collections.emptyList();
     private void ensureColumnsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        columns_ = new java.util.ArrayList<GetVodMediaPlayDataColumn>(columns_);
+        columns_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn>(columns_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GetVodMediaPlayDataColumn, GetVodMediaPlayDataColumn.Builder, GetVodMediaPlayDataColumnOrBuilder> columnsBuilder_;
+        com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder> columnsBuilder_;
 
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public java.util.List<GetVodMediaPlayDataColumn> getColumnsList() {
+    public java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> getColumnsList() {
       if (columnsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(columns_);
       } else {
@@ -685,7 +685,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public GetVodMediaPlayDataColumn getColumns(int index) {
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getColumns(int index) {
       if (columnsBuilder_ == null) {
         return columns_.get(index);
       } else {
@@ -696,7 +696,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder setColumns(
-        int index, GetVodMediaPlayDataColumn value) {
+        int index, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn value) {
       if (columnsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -713,7 +713,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder setColumns(
-        int index, GetVodMediaPlayDataColumn.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder builderForValue) {
       if (columnsBuilder_ == null) {
         ensureColumnsIsMutable();
         columns_.set(index, builderForValue.build());
@@ -726,7 +726,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public Builder addColumns(GetVodMediaPlayDataColumn value) {
+    public Builder addColumns(com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn value) {
       if (columnsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -743,7 +743,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder addColumns(
-        int index, GetVodMediaPlayDataColumn value) {
+        int index, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn value) {
       if (columnsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -760,7 +760,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder addColumns(
-        GetVodMediaPlayDataColumn.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder builderForValue) {
       if (columnsBuilder_ == null) {
         ensureColumnsIsMutable();
         columns_.add(builderForValue.build());
@@ -774,7 +774,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder addColumns(
-        int index, GetVodMediaPlayDataColumn.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder builderForValue) {
       if (columnsBuilder_ == null) {
         ensureColumnsIsMutable();
         columns_.add(index, builderForValue.build());
@@ -788,7 +788,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
     public Builder addAllColumns(
-        Iterable<? extends GetVodMediaPlayDataColumn> values) {
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> values) {
       if (columnsBuilder_ == null) {
         ensureColumnsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -828,14 +828,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public GetVodMediaPlayDataColumn.Builder getColumnsBuilder(
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder getColumnsBuilder(
         int index) {
       return getColumnsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
         int index) {
       if (columnsBuilder_ == null) {
         return columns_.get(index);  } else {
@@ -845,7 +845,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public java.util.List<? extends GetVodMediaPlayDataColumnOrBuilder>
+    public java.util.List<? extends com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder> 
          getColumnsOrBuilderList() {
       if (columnsBuilder_ != null) {
         return columnsBuilder_.getMessageOrBuilderList();
@@ -856,31 +856,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public GetVodMediaPlayDataColumn.Builder addColumnsBuilder() {
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder addColumnsBuilder() {
       return getColumnsFieldBuilder().addBuilder(
-          GetVodMediaPlayDataColumn.getDefaultInstance());
+          com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public GetVodMediaPlayDataColumn.Builder addColumnsBuilder(
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder addColumnsBuilder(
         int index) {
       return getColumnsFieldBuilder().addBuilder(
-          index, GetVodMediaPlayDataColumn.getDefaultInstance());
+          index, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
      */
-    public java.util.List<GetVodMediaPlayDataColumn.Builder>
+    public java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder> 
          getColumnsBuilderList() {
       return getColumnsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        GetVodMediaPlayDataColumn, GetVodMediaPlayDataColumn.Builder, GetVodMediaPlayDataColumnOrBuilder>
+        com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder> 
         getColumnsFieldBuilder() {
       if (columnsBuilder_ == null) {
         columnsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            GetVodMediaPlayDataColumn, GetVodMediaPlayDataColumn.Builder, GetVodMediaPlayDataColumnOrBuilder>(
+            com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder>(
                 columns_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1028,7 +1028,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .google.protobuf.Struct Data = 3;</code>
      */
     public Builder addAllData(
-        Iterable<? extends com.google.protobuf.Struct> values) {
+        java.lang.Iterable<? extends com.google.protobuf.Struct> values) {
       if (dataBuilder_ == null) {
         ensureDataIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1129,13 +1129,13 @@ private static final long serialVersionUID = 0L;
       }
       return dataBuilder_;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1146,18 +1146,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:Byteplus.Vod.Models.Business.GetVodMediaPlayDataResult)
-  private static final GetVodMediaPlayDataResult DEFAULT_INSTANCE;
+  private static final com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GetVodMediaPlayDataResult();
+    DEFAULT_INSTANCE = new com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult();
   }
 
-  public static GetVodMediaPlayDataResult getDefaultInstance() {
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetVodMediaPlayDataResult>
       PARSER = new com.google.protobuf.AbstractParser<GetVodMediaPlayDataResult>() {
-    @Override
+    @java.lang.Override
     public GetVodMediaPlayDataResult parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1170,13 +1170,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GetVodMediaPlayDataResult> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GetVodMediaPlayDataResult getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.GetVodMediaPlayDataResult getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

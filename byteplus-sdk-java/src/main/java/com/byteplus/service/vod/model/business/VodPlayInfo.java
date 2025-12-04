@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodPlayInfo}
  */
 public final class VodPlayInfo extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodPlayInfo)
-        VodPlayInfoOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodPlayInfo)
+    VodPlayInfoOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodPlayInfo.newBuilder() to construct.
   private VodPlayInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -41,7 +41,7 @@ public final class VodPlayInfo extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodPlayInfo();
   }
 
@@ -51,15 +51,15 @@ public final class VodPlayInfo extends
     return this.unknownFields;
   }
   private VodPlayInfo(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -239,9 +239,14 @@ public final class VodPlayInfo extends
             backupUrlExpire_ = s;
             break;
           }
+          case 224: {
+
+            channels_ = input.readInt32();
+            break;
+          }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -252,23 +257,23 @@ public final class VodPlayInfo extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfo_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfo_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.VodPlayInfo.class, com.byteplus.service.vod.model.business.VodPlayInfo.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.VodPlayInfo.class, com.byteplus.service.vod.model.business.VodPlayInfo.Builder.class);
   }
 
   public static final int FILEID_FIELD_NUMBER = 1;
@@ -287,8 +292,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       fileId_ = s;
       return s;
@@ -304,12 +309,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFileIdBytes() {
+      getFileIdBytes() {
     java.lang.Object ref = fileId_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       fileId_ = b;
       return b;
     } else {
@@ -333,8 +338,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       md5_ = s;
       return s;
@@ -350,12 +355,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getMd5Bytes() {
+      getMd5Bytes() {
     java.lang.Object ref = md5_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       md5_ = b;
       return b;
     } else {
@@ -379,8 +384,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       fileType_ = s;
       return s;
@@ -396,12 +401,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFileTypeBytes() {
+      getFileTypeBytes() {
     java.lang.Object ref = fileType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       fileType_ = b;
       return b;
     } else {
@@ -425,8 +430,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       format_ = s;
       return s;
@@ -442,12 +447,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFormatBytes() {
+      getFormatBytes() {
     java.lang.Object ref = format_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       format_ = b;
       return b;
     } else {
@@ -471,8 +476,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       codec_ = s;
       return s;
@@ -488,12 +493,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getCodecBytes() {
+      getCodecBytes() {
     java.lang.Object ref = codec_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       codec_ = b;
       return b;
     } else {
@@ -517,8 +522,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       definition_ = s;
       return s;
@@ -534,12 +539,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDefinitionBytes() {
+      getDefinitionBytes() {
     java.lang.Object ref = definition_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       definition_ = b;
       return b;
     } else {
@@ -563,8 +568,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       mainPlayUrl_ = s;
       return s;
@@ -580,12 +585,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getMainPlayUrlBytes() {
+      getMainPlayUrlBytes() {
     java.lang.Object ref = mainPlayUrl_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       mainPlayUrl_ = b;
       return b;
     } else {
@@ -609,8 +614,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       backupPlayUrl_ = s;
       return s;
@@ -626,12 +631,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getBackupPlayUrlBytes() {
+      getBackupPlayUrlBytes() {
     java.lang.Object ref = backupPlayUrl_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       backupPlayUrl_ = b;
       return b;
     } else {
@@ -715,8 +720,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       checkInfo_ = s;
       return s;
@@ -732,12 +737,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getCheckInfoBytes() {
+      getCheckInfoBytes() {
     java.lang.Object ref = checkInfo_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       checkInfo_ = b;
       return b;
     } else {
@@ -761,8 +766,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       indexRange_ = s;
       return s;
@@ -778,12 +783,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getIndexRangeBytes() {
+      getIndexRangeBytes() {
     java.lang.Object ref = indexRange_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       indexRange_ = b;
       return b;
     } else {
@@ -807,8 +812,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       initRange_ = s;
       return s;
@@ -824,12 +829,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getInitRangeBytes() {
+      getInitRangeBytes() {
     java.lang.Object ref = initRange_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       initRange_ = b;
       return b;
     } else {
@@ -853,8 +858,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       playAuth_ = s;
       return s;
@@ -870,12 +875,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getPlayAuthBytes() {
+      getPlayAuthBytes() {
     java.lang.Object ref = playAuth_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       playAuth_ = b;
       return b;
     } else {
@@ -899,8 +904,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       playAuthId_ = s;
       return s;
@@ -916,12 +921,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getPlayAuthIdBytes() {
+      getPlayAuthIdBytes() {
     java.lang.Object ref = playAuthId_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       playAuthId_ = b;
       return b;
     } else {
@@ -945,8 +950,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       logoType_ = s;
       return s;
@@ -962,12 +967,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getLogoTypeBytes() {
+      getLogoTypeBytes() {
     java.lang.Object ref = logoType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       logoType_ = b;
       return b;
     } else {
@@ -991,8 +996,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       quality_ = s;
       return s;
@@ -1008,12 +1013,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getQualityBytes() {
+      getQualityBytes() {
     java.lang.Object ref = quality_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       quality_ = b;
       return b;
     } else {
@@ -1025,7 +1030,7 @@ public final class VodPlayInfo extends
   private volatile java.lang.Object barrageMaskOffset_;
   /**
    * <pre>
-   * 弹幕蒙版偏移量
+   *弹幕蒙版偏移量
    * </pre>
    *
    * <code>string BarrageMaskOffset = 20;</code>
@@ -1037,8 +1042,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       barrageMaskOffset_ = s;
       return s;
@@ -1046,7 +1051,7 @@ public final class VodPlayInfo extends
   }
   /**
    * <pre>
-   * 弹幕蒙版偏移量
+   *弹幕蒙版偏移量
    * </pre>
    *
    * <code>string BarrageMaskOffset = 20;</code>
@@ -1054,12 +1059,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getBarrageMaskOffsetBytes() {
+      getBarrageMaskOffsetBytes() {
     java.lang.Object ref = barrageMaskOffset_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       barrageMaskOffset_ = b;
       return b;
     } else {
@@ -1098,8 +1103,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       keyFrameAlignment_ = s;
       return s;
@@ -1115,12 +1120,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getKeyFrameAlignmentBytes() {
+      getKeyFrameAlignmentBytes() {
     java.lang.Object ref = keyFrameAlignment_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       keyFrameAlignment_ = b;
       return b;
     } else {
@@ -1182,8 +1187,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       drmType_ = s;
       return s;
@@ -1199,12 +1204,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDrmTypeBytes() {
+      getDrmTypeBytes() {
     java.lang.Object ref = drmType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       drmType_ = b;
       return b;
     } else {
@@ -1266,8 +1271,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       mainUrlExpire_ = s;
       return s;
@@ -1283,12 +1288,12 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getMainUrlExpireBytes() {
+      getMainUrlExpireBytes() {
     java.lang.Object ref = mainUrlExpire_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       mainUrlExpire_ = b;
       return b;
     } else {
@@ -1312,8 +1317,8 @@ public final class VodPlayInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       backupUrlExpire_ = s;
       return s;
@@ -1329,17 +1334,28 @@ public final class VodPlayInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getBackupUrlExpireBytes() {
+      getBackupUrlExpireBytes() {
     java.lang.Object ref = backupUrlExpire_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       backupUrlExpire_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
+  }
+
+  public static final int CHANNELS_FIELD_NUMBER = 28;
+  private int channels_;
+  /**
+   * <code>int32 Channels = 28;</code>
+   * @return The channels.
+   */
+  @java.lang.Override
+  public int getChannels() {
+    return channels_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1355,7 +1371,7 @@ public final class VodPlayInfo extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileId_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fileId_);
     }
@@ -1437,6 +1453,9 @@ public final class VodPlayInfo extends
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(backupUrlExpire_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 27, backupUrlExpire_);
     }
+    if (channels_ != 0) {
+      output.writeInt32(28, channels_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -1472,19 +1491,19 @@ public final class VodPlayInfo extends
     }
     if (bitrate_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(9, bitrate_);
+        .computeInt32Size(9, bitrate_);
     }
     if (width_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(10, width_);
+        .computeInt32Size(10, width_);
     }
     if (height_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(11, height_);
+        .computeInt32Size(11, height_);
     }
     if (java.lang.Double.doubleToRawLongBits(size_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeDoubleSize(12, size_);
+        .computeDoubleSize(12, size_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(checkInfo_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, checkInfo_);
@@ -1512,27 +1531,31 @@ public final class VodPlayInfo extends
     }
     if (java.lang.Float.floatToRawIntBits(duration_) != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeFloatSize(21, duration_);
+        .computeFloatSize(21, duration_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(keyFrameAlignment_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(22, keyFrameAlignment_);
     }
     if (volume_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(23, getVolume());
+        .computeMessageSize(23, getVolume());
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(drmType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(24, drmType_);
     }
     if (encryptionPssh_ != null) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(25, getEncryptionPssh());
+        .computeMessageSize(25, getEncryptionPssh());
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mainUrlExpire_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(26, mainUrlExpire_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(backupUrlExpire_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(27, backupUrlExpire_);
+    }
+    if (channels_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(28, channels_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1542,7 +1565,7 @@ public final class VodPlayInfo extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodPlayInfo)) {
       return super.equals(obj);
@@ -1550,67 +1573,69 @@ public final class VodPlayInfo extends
     com.byteplus.service.vod.model.business.VodPlayInfo other = (com.byteplus.service.vod.model.business.VodPlayInfo) obj;
 
     if (!getFileId()
-            .equals(other.getFileId())) return false;
+        .equals(other.getFileId())) return false;
     if (!getMd5()
-            .equals(other.getMd5())) return false;
+        .equals(other.getMd5())) return false;
     if (!getFileType()
-            .equals(other.getFileType())) return false;
+        .equals(other.getFileType())) return false;
     if (!getFormat()
-            .equals(other.getFormat())) return false;
+        .equals(other.getFormat())) return false;
     if (!getCodec()
-            .equals(other.getCodec())) return false;
+        .equals(other.getCodec())) return false;
     if (!getDefinition()
-            .equals(other.getDefinition())) return false;
+        .equals(other.getDefinition())) return false;
     if (!getMainPlayUrl()
-            .equals(other.getMainPlayUrl())) return false;
+        .equals(other.getMainPlayUrl())) return false;
     if (!getBackupPlayUrl()
-            .equals(other.getBackupPlayUrl())) return false;
+        .equals(other.getBackupPlayUrl())) return false;
     if (getBitrate()
-            != other.getBitrate()) return false;
+        != other.getBitrate()) return false;
     if (getWidth()
-            != other.getWidth()) return false;
+        != other.getWidth()) return false;
     if (getHeight()
-            != other.getHeight()) return false;
+        != other.getHeight()) return false;
     if (java.lang.Double.doubleToLongBits(getSize())
-            != java.lang.Double.doubleToLongBits(
+        != java.lang.Double.doubleToLongBits(
             other.getSize())) return false;
     if (!getCheckInfo()
-            .equals(other.getCheckInfo())) return false;
+        .equals(other.getCheckInfo())) return false;
     if (!getIndexRange()
-            .equals(other.getIndexRange())) return false;
+        .equals(other.getIndexRange())) return false;
     if (!getInitRange()
-            .equals(other.getInitRange())) return false;
+        .equals(other.getInitRange())) return false;
     if (!getPlayAuth()
-            .equals(other.getPlayAuth())) return false;
+        .equals(other.getPlayAuth())) return false;
     if (!getPlayAuthId()
-            .equals(other.getPlayAuthId())) return false;
+        .equals(other.getPlayAuthId())) return false;
     if (!getLogoType()
-            .equals(other.getLogoType())) return false;
+        .equals(other.getLogoType())) return false;
     if (!getQuality()
-            .equals(other.getQuality())) return false;
+        .equals(other.getQuality())) return false;
     if (!getBarrageMaskOffset()
-            .equals(other.getBarrageMaskOffset())) return false;
+        .equals(other.getBarrageMaskOffset())) return false;
     if (java.lang.Float.floatToIntBits(getDuration())
-            != java.lang.Float.floatToIntBits(
+        != java.lang.Float.floatToIntBits(
             other.getDuration())) return false;
     if (!getKeyFrameAlignment()
-            .equals(other.getKeyFrameAlignment())) return false;
+        .equals(other.getKeyFrameAlignment())) return false;
     if (hasVolume() != other.hasVolume()) return false;
     if (hasVolume()) {
       if (!getVolume()
-              .equals(other.getVolume())) return false;
+          .equals(other.getVolume())) return false;
     }
     if (!getDrmType()
-            .equals(other.getDrmType())) return false;
+        .equals(other.getDrmType())) return false;
     if (hasEncryptionPssh() != other.hasEncryptionPssh()) return false;
     if (hasEncryptionPssh()) {
       if (!getEncryptionPssh()
-              .equals(other.getEncryptionPssh())) return false;
+          .equals(other.getEncryptionPssh())) return false;
     }
     if (!getMainUrlExpire()
-            .equals(other.getMainUrlExpire())) return false;
+        .equals(other.getMainUrlExpire())) return false;
     if (!getBackupUrlExpire()
-            .equals(other.getBackupUrlExpire())) return false;
+        .equals(other.getBackupUrlExpire())) return false;
+    if (getChannels()
+        != other.getChannels()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1646,7 +1671,7 @@ public final class VodPlayInfo extends
     hash = (53 * hash) + getHeight();
     hash = (37 * hash) + SIZE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            java.lang.Double.doubleToLongBits(getSize()));
+        java.lang.Double.doubleToLongBits(getSize()));
     hash = (37 * hash) + CHECKINFO_FIELD_NUMBER;
     hash = (53 * hash) + getCheckInfo().hashCode();
     hash = (37 * hash) + INDEXRANGE_FIELD_NUMBER;
@@ -1665,7 +1690,7 @@ public final class VodPlayInfo extends
     hash = (53 * hash) + getBarrageMaskOffset().hashCode();
     hash = (37 * hash) + DURATION_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-            getDuration());
+        getDuration());
     hash = (37 * hash) + KEYFRAMEALIGNMENT_FIELD_NUMBER;
     hash = (53 * hash) + getKeyFrameAlignment().hashCode();
     if (hasVolume()) {
@@ -1682,79 +1707,81 @@ public final class VodPlayInfo extends
     hash = (53 * hash) + getMainUrlExpire().hashCode();
     hash = (37 * hash) + BACKUPURLEXPIRE_FIELD_NUMBER;
     hash = (53 * hash) + getBackupUrlExpire().hashCode();
+    hash = (37 * hash) + CHANNELS_FIELD_NUMBER;
+    hash = (53 * hash) + getChannels();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodPlayInfo parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -1768,12 +1795,12 @@ public final class VodPlayInfo extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -1781,20 +1808,20 @@ public final class VodPlayInfo extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodPlayInfo}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodPlayInfo)
-          com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodPlayInfo)
+      com.byteplus.service.vod.model.business.VodPlayInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfo_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.VodPlayInfo.class, com.byteplus.service.vod.model.business.VodPlayInfo.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.VodPlayInfo.class, com.byteplus.service.vod.model.business.VodPlayInfo.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodPlayInfo.newBuilder()
@@ -1803,7 +1830,7 @@ public final class VodPlayInfo extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -1877,12 +1904,14 @@ public final class VodPlayInfo extends
 
       backupUrlExpire_ = "";
 
+      channels_ = 0;
+
       return this;
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCommon.internal_static_Byteplus_Vod_Models_Business_VodPlayInfo_descriptor;
     }
 
@@ -1938,6 +1967,7 @@ public final class VodPlayInfo extends
       }
       result.mainUrlExpire_ = mainUrlExpire_;
       result.backupUrlExpire_ = backupUrlExpire_;
+      result.channels_ = channels_;
       onBuilt();
       return result;
     }
@@ -1948,30 +1978,30 @@ public final class VodPlayInfo extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -2087,6 +2117,9 @@ public final class VodPlayInfo extends
         backupUrlExpire_ = other.backupUrlExpire_;
         onChanged();
       }
+      if (other.getChannels() != 0) {
+        setChannels(other.getChannels());
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -2099,9 +2132,9 @@ public final class VodPlayInfo extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodPlayInfo parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -2129,7 +2162,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = fileId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fileId_ = s;
         return s;
@@ -2146,12 +2179,12 @@ public final class VodPlayInfo extends
      * @return The bytes for fileId.
      */
     public com.google.protobuf.ByteString
-    getFileIdBytes() {
+        getFileIdBytes() {
       java.lang.Object ref = fileId_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         fileId_ = b;
         return b;
       } else {
@@ -2168,11 +2201,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileId(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       fileId_ = value;
       onChanged();
       return this;
@@ -2186,7 +2219,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearFileId() {
-
+      
       fileId_ = getDefaultInstance().getFileId();
       onChanged();
       return this;
@@ -2201,12 +2234,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileIdBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fileId_ = value;
       onChanged();
       return this;
@@ -2225,7 +2258,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = md5_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         md5_ = s;
         return s;
@@ -2242,12 +2275,12 @@ public final class VodPlayInfo extends
      * @return The bytes for md5.
      */
     public com.google.protobuf.ByteString
-    getMd5Bytes() {
+        getMd5Bytes() {
       java.lang.Object ref = md5_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         md5_ = b;
         return b;
       } else {
@@ -2264,11 +2297,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMd5(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       md5_ = value;
       onChanged();
       return this;
@@ -2282,7 +2315,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearMd5() {
-
+      
       md5_ = getDefaultInstance().getMd5();
       onChanged();
       return this;
@@ -2297,12 +2330,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMd5Bytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       md5_ = value;
       onChanged();
       return this;
@@ -2321,7 +2354,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = fileType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fileType_ = s;
         return s;
@@ -2338,12 +2371,12 @@ public final class VodPlayInfo extends
      * @return The bytes for fileType.
      */
     public com.google.protobuf.ByteString
-    getFileTypeBytes() {
+        getFileTypeBytes() {
       java.lang.Object ref = fileType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         fileType_ = b;
         return b;
       } else {
@@ -2360,11 +2393,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       fileType_ = value;
       onChanged();
       return this;
@@ -2378,7 +2411,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearFileType() {
-
+      
       fileType_ = getDefaultInstance().getFileType();
       onChanged();
       return this;
@@ -2393,12 +2426,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fileType_ = value;
       onChanged();
       return this;
@@ -2417,7 +2450,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = format_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         format_ = s;
         return s;
@@ -2434,12 +2467,12 @@ public final class VodPlayInfo extends
      * @return The bytes for format.
      */
     public com.google.protobuf.ByteString
-    getFormatBytes() {
+        getFormatBytes() {
       java.lang.Object ref = format_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         format_ = b;
         return b;
       } else {
@@ -2456,11 +2489,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFormat(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       format_ = value;
       onChanged();
       return this;
@@ -2474,7 +2507,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearFormat() {
-
+      
       format_ = getDefaultInstance().getFormat();
       onChanged();
       return this;
@@ -2489,12 +2522,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setFormatBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       format_ = value;
       onChanged();
       return this;
@@ -2513,7 +2546,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = codec_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         codec_ = s;
         return s;
@@ -2530,12 +2563,12 @@ public final class VodPlayInfo extends
      * @return The bytes for codec.
      */
     public com.google.protobuf.ByteString
-    getCodecBytes() {
+        getCodecBytes() {
       java.lang.Object ref = codec_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         codec_ = b;
         return b;
       } else {
@@ -2552,11 +2585,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setCodec(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       codec_ = value;
       onChanged();
       return this;
@@ -2570,7 +2603,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearCodec() {
-
+      
       codec_ = getDefaultInstance().getCodec();
       onChanged();
       return this;
@@ -2585,12 +2618,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setCodecBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       codec_ = value;
       onChanged();
       return this;
@@ -2609,7 +2642,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = definition_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         definition_ = s;
         return s;
@@ -2626,12 +2659,12 @@ public final class VodPlayInfo extends
      * @return The bytes for definition.
      */
     public com.google.protobuf.ByteString
-    getDefinitionBytes() {
+        getDefinitionBytes() {
       java.lang.Object ref = definition_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         definition_ = b;
         return b;
       } else {
@@ -2648,11 +2681,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setDefinition(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       definition_ = value;
       onChanged();
       return this;
@@ -2666,7 +2699,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearDefinition() {
-
+      
       definition_ = getDefaultInstance().getDefinition();
       onChanged();
       return this;
@@ -2681,12 +2714,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setDefinitionBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       definition_ = value;
       onChanged();
       return this;
@@ -2705,7 +2738,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = mainPlayUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         mainPlayUrl_ = s;
         return s;
@@ -2722,12 +2755,12 @@ public final class VodPlayInfo extends
      * @return The bytes for mainPlayUrl.
      */
     public com.google.protobuf.ByteString
-    getMainPlayUrlBytes() {
+        getMainPlayUrlBytes() {
       java.lang.Object ref = mainPlayUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         mainPlayUrl_ = b;
         return b;
       } else {
@@ -2744,11 +2777,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMainPlayUrl(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       mainPlayUrl_ = value;
       onChanged();
       return this;
@@ -2762,7 +2795,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearMainPlayUrl() {
-
+      
       mainPlayUrl_ = getDefaultInstance().getMainPlayUrl();
       onChanged();
       return this;
@@ -2777,12 +2810,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMainPlayUrlBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       mainPlayUrl_ = value;
       onChanged();
       return this;
@@ -2801,7 +2834,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = backupPlayUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         backupPlayUrl_ = s;
         return s;
@@ -2818,12 +2851,12 @@ public final class VodPlayInfo extends
      * @return The bytes for backupPlayUrl.
      */
     public com.google.protobuf.ByteString
-    getBackupPlayUrlBytes() {
+        getBackupPlayUrlBytes() {
       java.lang.Object ref = backupPlayUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         backupPlayUrl_ = b;
         return b;
       } else {
@@ -2840,11 +2873,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBackupPlayUrl(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       backupPlayUrl_ = value;
       onChanged();
       return this;
@@ -2858,7 +2891,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearBackupPlayUrl() {
-
+      
       backupPlayUrl_ = getDefaultInstance().getBackupPlayUrl();
       onChanged();
       return this;
@@ -2873,12 +2906,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBackupPlayUrlBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       backupPlayUrl_ = value;
       onChanged();
       return this;
@@ -2907,7 +2940,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBitrate(int value) {
-
+      
       bitrate_ = value;
       onChanged();
       return this;
@@ -2921,7 +2954,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearBitrate() {
-
+      
       bitrate_ = 0;
       onChanged();
       return this;
@@ -2950,7 +2983,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setWidth(int value) {
-
+      
       width_ = value;
       onChanged();
       return this;
@@ -2964,7 +2997,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearWidth() {
-
+      
       width_ = 0;
       onChanged();
       return this;
@@ -2993,7 +3026,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setHeight(int value) {
-
+      
       height_ = value;
       onChanged();
       return this;
@@ -3007,7 +3040,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearHeight() {
-
+      
       height_ = 0;
       onChanged();
       return this;
@@ -3036,7 +3069,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setSize(double value) {
-
+      
       size_ = value;
       onChanged();
       return this;
@@ -3050,7 +3083,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearSize() {
-
+      
       size_ = 0D;
       onChanged();
       return this;
@@ -3069,7 +3102,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = checkInfo_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         checkInfo_ = s;
         return s;
@@ -3086,12 +3119,12 @@ public final class VodPlayInfo extends
      * @return The bytes for checkInfo.
      */
     public com.google.protobuf.ByteString
-    getCheckInfoBytes() {
+        getCheckInfoBytes() {
       java.lang.Object ref = checkInfo_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         checkInfo_ = b;
         return b;
       } else {
@@ -3108,11 +3141,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setCheckInfo(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       checkInfo_ = value;
       onChanged();
       return this;
@@ -3126,7 +3159,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearCheckInfo() {
-
+      
       checkInfo_ = getDefaultInstance().getCheckInfo();
       onChanged();
       return this;
@@ -3141,12 +3174,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setCheckInfoBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       checkInfo_ = value;
       onChanged();
       return this;
@@ -3165,7 +3198,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = indexRange_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         indexRange_ = s;
         return s;
@@ -3182,12 +3215,12 @@ public final class VodPlayInfo extends
      * @return The bytes for indexRange.
      */
     public com.google.protobuf.ByteString
-    getIndexRangeBytes() {
+        getIndexRangeBytes() {
       java.lang.Object ref = indexRange_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         indexRange_ = b;
         return b;
       } else {
@@ -3204,11 +3237,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setIndexRange(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       indexRange_ = value;
       onChanged();
       return this;
@@ -3222,7 +3255,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearIndexRange() {
-
+      
       indexRange_ = getDefaultInstance().getIndexRange();
       onChanged();
       return this;
@@ -3237,12 +3270,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setIndexRangeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       indexRange_ = value;
       onChanged();
       return this;
@@ -3261,7 +3294,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = initRange_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         initRange_ = s;
         return s;
@@ -3278,12 +3311,12 @@ public final class VodPlayInfo extends
      * @return The bytes for initRange.
      */
     public com.google.protobuf.ByteString
-    getInitRangeBytes() {
+        getInitRangeBytes() {
       java.lang.Object ref = initRange_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         initRange_ = b;
         return b;
       } else {
@@ -3300,11 +3333,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setInitRange(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       initRange_ = value;
       onChanged();
       return this;
@@ -3318,7 +3351,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearInitRange() {
-
+      
       initRange_ = getDefaultInstance().getInitRange();
       onChanged();
       return this;
@@ -3333,12 +3366,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setInitRangeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       initRange_ = value;
       onChanged();
       return this;
@@ -3357,7 +3390,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = playAuth_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         playAuth_ = s;
         return s;
@@ -3374,12 +3407,12 @@ public final class VodPlayInfo extends
      * @return The bytes for playAuth.
      */
     public com.google.protobuf.ByteString
-    getPlayAuthBytes() {
+        getPlayAuthBytes() {
       java.lang.Object ref = playAuth_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         playAuth_ = b;
         return b;
       } else {
@@ -3396,11 +3429,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setPlayAuth(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       playAuth_ = value;
       onChanged();
       return this;
@@ -3414,7 +3447,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearPlayAuth() {
-
+      
       playAuth_ = getDefaultInstance().getPlayAuth();
       onChanged();
       return this;
@@ -3429,12 +3462,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setPlayAuthBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       playAuth_ = value;
       onChanged();
       return this;
@@ -3453,7 +3486,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = playAuthId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         playAuthId_ = s;
         return s;
@@ -3470,12 +3503,12 @@ public final class VodPlayInfo extends
      * @return The bytes for playAuthId.
      */
     public com.google.protobuf.ByteString
-    getPlayAuthIdBytes() {
+        getPlayAuthIdBytes() {
       java.lang.Object ref = playAuthId_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         playAuthId_ = b;
         return b;
       } else {
@@ -3492,11 +3525,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setPlayAuthId(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       playAuthId_ = value;
       onChanged();
       return this;
@@ -3510,7 +3543,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearPlayAuthId() {
-
+      
       playAuthId_ = getDefaultInstance().getPlayAuthId();
       onChanged();
       return this;
@@ -3525,12 +3558,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setPlayAuthIdBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       playAuthId_ = value;
       onChanged();
       return this;
@@ -3549,7 +3582,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = logoType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         logoType_ = s;
         return s;
@@ -3566,12 +3599,12 @@ public final class VodPlayInfo extends
      * @return The bytes for logoType.
      */
     public com.google.protobuf.ByteString
-    getLogoTypeBytes() {
+        getLogoTypeBytes() {
       java.lang.Object ref = logoType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         logoType_ = b;
         return b;
       } else {
@@ -3588,11 +3621,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setLogoType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       logoType_ = value;
       onChanged();
       return this;
@@ -3606,7 +3639,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearLogoType() {
-
+      
       logoType_ = getDefaultInstance().getLogoType();
       onChanged();
       return this;
@@ -3621,12 +3654,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setLogoTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       logoType_ = value;
       onChanged();
       return this;
@@ -3645,7 +3678,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = quality_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         quality_ = s;
         return s;
@@ -3662,12 +3695,12 @@ public final class VodPlayInfo extends
      * @return The bytes for quality.
      */
     public com.google.protobuf.ByteString
-    getQualityBytes() {
+        getQualityBytes() {
       java.lang.Object ref = quality_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         quality_ = b;
         return b;
       } else {
@@ -3684,11 +3717,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setQuality(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       quality_ = value;
       onChanged();
       return this;
@@ -3702,7 +3735,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearQuality() {
-
+      
       quality_ = getDefaultInstance().getQuality();
       onChanged();
       return this;
@@ -3717,12 +3750,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setQualityBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       quality_ = value;
       onChanged();
       return this;
@@ -3731,7 +3764,7 @@ public final class VodPlayInfo extends
     private java.lang.Object barrageMaskOffset_ = "";
     /**
      * <pre>
-     * 弹幕蒙版偏移量
+     *弹幕蒙版偏移量
      * </pre>
      *
      * <code>string BarrageMaskOffset = 20;</code>
@@ -3741,7 +3774,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = barrageMaskOffset_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         barrageMaskOffset_ = s;
         return s;
@@ -3751,19 +3784,19 @@ public final class VodPlayInfo extends
     }
     /**
      * <pre>
-     * 弹幕蒙版偏移量
+     *弹幕蒙版偏移量
      * </pre>
      *
      * <code>string BarrageMaskOffset = 20;</code>
      * @return The bytes for barrageMaskOffset.
      */
     public com.google.protobuf.ByteString
-    getBarrageMaskOffsetBytes() {
+        getBarrageMaskOffsetBytes() {
       java.lang.Object ref = barrageMaskOffset_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         barrageMaskOffset_ = b;
         return b;
       } else {
@@ -3772,7 +3805,7 @@ public final class VodPlayInfo extends
     }
     /**
      * <pre>
-     * 弹幕蒙版偏移量
+     *弹幕蒙版偏移量
      * </pre>
      *
      * <code>string BarrageMaskOffset = 20;</code>
@@ -3780,32 +3813,32 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBarrageMaskOffset(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       barrageMaskOffset_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 弹幕蒙版偏移量
+     *弹幕蒙版偏移量
      * </pre>
      *
      * <code>string BarrageMaskOffset = 20;</code>
      * @return This builder for chaining.
      */
     public Builder clearBarrageMaskOffset() {
-
+      
       barrageMaskOffset_ = getDefaultInstance().getBarrageMaskOffset();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 弹幕蒙版偏移量
+     *弹幕蒙版偏移量
      * </pre>
      *
      * <code>string BarrageMaskOffset = 20;</code>
@@ -3813,12 +3846,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBarrageMaskOffsetBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       barrageMaskOffset_ = value;
       onChanged();
       return this;
@@ -3847,7 +3880,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setDuration(float value) {
-
+      
       duration_ = value;
       onChanged();
       return this;
@@ -3861,7 +3894,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearDuration() {
-
+      
       duration_ = 0F;
       onChanged();
       return this;
@@ -3880,7 +3913,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = keyFrameAlignment_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         keyFrameAlignment_ = s;
         return s;
@@ -3897,12 +3930,12 @@ public final class VodPlayInfo extends
      * @return The bytes for keyFrameAlignment.
      */
     public com.google.protobuf.ByteString
-    getKeyFrameAlignmentBytes() {
+        getKeyFrameAlignmentBytes() {
       java.lang.Object ref = keyFrameAlignment_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         keyFrameAlignment_ = b;
         return b;
       } else {
@@ -3919,11 +3952,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setKeyFrameAlignment(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       keyFrameAlignment_ = value;
       onChanged();
       return this;
@@ -3937,7 +3970,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearKeyFrameAlignment() {
-
+      
       keyFrameAlignment_ = getDefaultInstance().getKeyFrameAlignment();
       onChanged();
       return this;
@@ -3952,12 +3985,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setKeyFrameAlignmentBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       keyFrameAlignment_ = value;
       onChanged();
       return this;
@@ -3965,7 +3998,7 @@ public final class VodPlayInfo extends
 
     private com.byteplus.service.vod.model.business.VodVolumeInfo volume_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder> volumeBuilder_;
+        com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder> volumeBuilder_;
     /**
      * <pre>
      *响度信息
@@ -4020,7 +4053,7 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.VodVolumeInfo Volume = 23;</code>
      */
     public Builder setVolume(
-            com.byteplus.service.vod.model.business.VodVolumeInfo.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.VodVolumeInfo.Builder builderForValue) {
       if (volumeBuilder_ == null) {
         volume_ = builderForValue.build();
         onChanged();
@@ -4041,7 +4074,7 @@ public final class VodPlayInfo extends
       if (volumeBuilder_ == null) {
         if (volume_ != null) {
           volume_ =
-                  com.byteplus.service.vod.model.business.VodVolumeInfo.newBuilder(volume_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.VodVolumeInfo.newBuilder(volume_).mergeFrom(value).buildPartial();
         } else {
           volume_ = value;
         }
@@ -4078,7 +4111,7 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.VodVolumeInfo Volume = 23;</code>
      */
     public com.byteplus.service.vod.model.business.VodVolumeInfo.Builder getVolumeBuilder() {
-
+      
       onChanged();
       return getVolumeFieldBuilder().getBuilder();
     }
@@ -4094,7 +4127,7 @@ public final class VodPlayInfo extends
         return volumeBuilder_.getMessageOrBuilder();
       } else {
         return volume_ == null ?
-                com.byteplus.service.vod.model.business.VodVolumeInfo.getDefaultInstance() : volume_;
+            com.byteplus.service.vod.model.business.VodVolumeInfo.getDefaultInstance() : volume_;
       }
     }
     /**
@@ -4105,11 +4138,11 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.VodVolumeInfo Volume = 23;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder>
-    getVolumeFieldBuilder() {
+        com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder> 
+        getVolumeFieldBuilder() {
       if (volumeBuilder_ == null) {
         volumeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder>(
+            com.byteplus.service.vod.model.business.VodVolumeInfo, com.byteplus.service.vod.model.business.VodVolumeInfo.Builder, com.byteplus.service.vod.model.business.VodVolumeInfoOrBuilder>(
                 getVolume(),
                 getParentForChildren(),
                 isClean());
@@ -4131,7 +4164,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = drmType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         drmType_ = s;
         return s;
@@ -4148,12 +4181,12 @@ public final class VodPlayInfo extends
      * @return The bytes for drmType.
      */
     public com.google.protobuf.ByteString
-    getDrmTypeBytes() {
+        getDrmTypeBytes() {
       java.lang.Object ref = drmType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         drmType_ = b;
         return b;
       } else {
@@ -4170,11 +4203,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setDrmType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       drmType_ = value;
       onChanged();
       return this;
@@ -4188,7 +4221,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearDrmType() {
-
+      
       drmType_ = getDefaultInstance().getDrmType();
       onChanged();
       return this;
@@ -4203,12 +4236,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setDrmTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       drmType_ = value;
       onChanged();
       return this;
@@ -4216,7 +4249,7 @@ public final class VodPlayInfo extends
 
     private com.byteplus.service.vod.model.business.DrmPssh encryptionPssh_;
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder> encryptionPsshBuilder_;
+        com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder> encryptionPsshBuilder_;
     /**
      * <pre>
      * 商业drm pssh
@@ -4271,7 +4304,7 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
      */
     public Builder setEncryptionPssh(
-            com.byteplus.service.vod.model.business.DrmPssh.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.DrmPssh.Builder builderForValue) {
       if (encryptionPsshBuilder_ == null) {
         encryptionPssh_ = builderForValue.build();
         onChanged();
@@ -4292,7 +4325,7 @@ public final class VodPlayInfo extends
       if (encryptionPsshBuilder_ == null) {
         if (encryptionPssh_ != null) {
           encryptionPssh_ =
-                  com.byteplus.service.vod.model.business.DrmPssh.newBuilder(encryptionPssh_).mergeFrom(value).buildPartial();
+            com.byteplus.service.vod.model.business.DrmPssh.newBuilder(encryptionPssh_).mergeFrom(value).buildPartial();
         } else {
           encryptionPssh_ = value;
         }
@@ -4329,7 +4362,7 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
      */
     public com.byteplus.service.vod.model.business.DrmPssh.Builder getEncryptionPsshBuilder() {
-
+      
       onChanged();
       return getEncryptionPsshFieldBuilder().getBuilder();
     }
@@ -4345,7 +4378,7 @@ public final class VodPlayInfo extends
         return encryptionPsshBuilder_.getMessageOrBuilder();
       } else {
         return encryptionPssh_ == null ?
-                com.byteplus.service.vod.model.business.DrmPssh.getDefaultInstance() : encryptionPssh_;
+            com.byteplus.service.vod.model.business.DrmPssh.getDefaultInstance() : encryptionPssh_;
       }
     }
     /**
@@ -4356,11 +4389,11 @@ public final class VodPlayInfo extends
      * <code>.Byteplus.Vod.Models.Business.DrmPssh EncryptionPssh = 25;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-            com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder>
-    getEncryptionPsshFieldBuilder() {
+        com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder> 
+        getEncryptionPsshFieldBuilder() {
       if (encryptionPsshBuilder_ == null) {
         encryptionPsshBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder>(
+            com.byteplus.service.vod.model.business.DrmPssh, com.byteplus.service.vod.model.business.DrmPssh.Builder, com.byteplus.service.vod.model.business.DrmPsshOrBuilder>(
                 getEncryptionPssh(),
                 getParentForChildren(),
                 isClean());
@@ -4382,7 +4415,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = mainUrlExpire_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         mainUrlExpire_ = s;
         return s;
@@ -4399,12 +4432,12 @@ public final class VodPlayInfo extends
      * @return The bytes for mainUrlExpire.
      */
     public com.google.protobuf.ByteString
-    getMainUrlExpireBytes() {
+        getMainUrlExpireBytes() {
       java.lang.Object ref = mainUrlExpire_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         mainUrlExpire_ = b;
         return b;
       } else {
@@ -4421,11 +4454,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMainUrlExpire(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       mainUrlExpire_ = value;
       onChanged();
       return this;
@@ -4439,7 +4472,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearMainUrlExpire() {
-
+      
       mainUrlExpire_ = getDefaultInstance().getMainUrlExpire();
       onChanged();
       return this;
@@ -4454,12 +4487,12 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setMainUrlExpireBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       mainUrlExpire_ = value;
       onChanged();
       return this;
@@ -4478,7 +4511,7 @@ public final class VodPlayInfo extends
       java.lang.Object ref = backupUrlExpire_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         backupUrlExpire_ = s;
         return s;
@@ -4495,12 +4528,12 @@ public final class VodPlayInfo extends
      * @return The bytes for backupUrlExpire.
      */
     public com.google.protobuf.ByteString
-    getBackupUrlExpireBytes() {
+        getBackupUrlExpireBytes() {
       java.lang.Object ref = backupUrlExpire_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         backupUrlExpire_ = b;
         return b;
       } else {
@@ -4517,11 +4550,11 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBackupUrlExpire(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       backupUrlExpire_ = value;
       onChanged();
       return this;
@@ -4535,7 +4568,7 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder clearBackupUrlExpire() {
-
+      
       backupUrlExpire_ = getDefaultInstance().getBackupUrlExpire();
       onChanged();
       return this;
@@ -4550,25 +4583,56 @@ public final class VodPlayInfo extends
      * @return This builder for chaining.
      */
     public Builder setBackupUrlExpireBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       backupUrlExpire_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int channels_ ;
+    /**
+     * <code>int32 Channels = 28;</code>
+     * @return The channels.
+     */
+    @java.lang.Override
+    public int getChannels() {
+      return channels_;
+    }
+    /**
+     * <code>int32 Channels = 28;</code>
+     * @param value The channels to set.
+     * @return This builder for chaining.
+     */
+    public Builder setChannels(int value) {
+      
+      channels_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 Channels = 28;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearChannels() {
+      
+      channels_ = 0;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -4587,12 +4651,12 @@ public final class VodPlayInfo extends
   }
 
   private static final com.google.protobuf.Parser<VodPlayInfo>
-          PARSER = new com.google.protobuf.AbstractParser<VodPlayInfo>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodPlayInfo>() {
     @java.lang.Override
     public VodPlayInfo parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodPlayInfo(input, extensionRegistry);
     }
   };

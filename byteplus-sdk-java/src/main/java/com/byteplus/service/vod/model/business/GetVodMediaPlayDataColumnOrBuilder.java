@@ -15,7 +15,7 @@ public interface GetVodMediaPlayDataColumnOrBuilder extends
    * <code>string Name = 1;</code>
    * @return The name.
    */
-  String getName();
+  java.lang.String getName();
   /**
    * <pre>
    * 字段名
@@ -35,7 +35,7 @@ public interface GetVodMediaPlayDataColumnOrBuilder extends
    * <code>string Alias = 2;</code>
    * @return The alias.
    */
-  String getAlias();
+  java.lang.String getAlias();
   /**
    * <pre>
    * 别名
@@ -55,7 +55,7 @@ public interface GetVodMediaPlayDataColumnOrBuilder extends
    * <code>string Type = 3;</code>
    * @return The type.
    */
-  String getType();
+  java.lang.String getType();
   /**
    * <pre>
    * 类型
@@ -75,7 +75,7 @@ public interface GetVodMediaPlayDataColumnOrBuilder extends
    * <code>string ValueAlias = 4;</code>
    * @return The valueAlias.
    */
-  String getValueAlias();
+  java.lang.String getValueAlias();
   /**
    * <pre>
    * 维度值别名

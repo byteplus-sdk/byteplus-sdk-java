@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodGetPlaylistsResult}
  */
 public final class VodGetPlaylistsResult extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
-        VodGetPlaylistsResultOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
+    VodGetPlaylistsResultOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodGetPlaylistsResult.newBuilder() to construct.
   private VodGetPlaylistsResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -23,7 +23,7 @@ public final class VodGetPlaylistsResult extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodGetPlaylistsResult();
   }
 
@@ -33,16 +33,16 @@ public final class VodGetPlaylistsResult extends
     return this.unknownFields;
   }
   private VodGetPlaylistsResult(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -57,7 +57,7 @@ public final class VodGetPlaylistsResult extends
               mutable_bitField0_ |= 0x00000001;
             }
             playlists_.add(
-                    input.readMessage(com.byteplus.service.vod.model.business.VodPlaylistInfo.parser(), extensionRegistry));
+                input.readMessage(com.byteplus.service.vod.model.business.VodPlaylistInfo.parser(), extensionRegistry));
             break;
           }
           case 18: {
@@ -66,7 +66,7 @@ public final class VodGetPlaylistsResult extends
               mutable_bitField0_ |= 0x00000002;
             }
             invalidPlaylists_.add(
-                    input.readMessage(com.byteplus.service.vod.model.business.InvalidPlaylist.parser(), extensionRegistry));
+                input.readMessage(com.byteplus.service.vod.model.business.InvalidPlaylist.parser(), extensionRegistry));
             break;
           }
           case 24: {
@@ -76,7 +76,7 @@ public final class VodGetPlaylistsResult extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -87,7 +87,7 @@ public final class VodGetPlaylistsResult extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         playlists_ = java.util.Collections.unmodifiableList(playlists_);
@@ -100,16 +100,16 @@ public final class VodGetPlaylistsResult extends
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.VodGetPlaylistsResult.class, com.byteplus.service.vod.model.business.VodGetPlaylistsResult.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.VodGetPlaylistsResult.class, com.byteplus.service.vod.model.business.VodGetPlaylistsResult.Builder.class);
   }
 
   public static final int PLAYLISTS_FIELD_NUMBER = 1;
@@ -125,8 +125,8 @@ public final class VodGetPlaylistsResult extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>
-  getPlaylistsOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> 
+      getPlaylistsOrBuilderList() {
     return playlists_;
   }
   /**
@@ -148,7 +148,7 @@ public final class VodGetPlaylistsResult extends
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder getPlaylistsOrBuilder(
-          int index) {
+      int index) {
     return playlists_.get(index);
   }
 
@@ -165,8 +165,8 @@ public final class VodGetPlaylistsResult extends
    * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>
-  getInvalidPlaylistsOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> 
+      getInvalidPlaylistsOrBuilderList() {
     return invalidPlaylists_;
   }
   /**
@@ -188,7 +188,7 @@ public final class VodGetPlaylistsResult extends
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder getInvalidPlaylistsOrBuilder(
-          int index) {
+      int index) {
     return invalidPlaylists_.get(index);
   }
 
@@ -216,7 +216,7 @@ public final class VodGetPlaylistsResult extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     for (int i = 0; i < playlists_.size(); i++) {
       output.writeMessage(1, playlists_.get(i));
     }
@@ -237,15 +237,15 @@ public final class VodGetPlaylistsResult extends
     size = 0;
     for (int i = 0; i < playlists_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, playlists_.get(i));
+        .computeMessageSize(1, playlists_.get(i));
     }
     for (int i = 0; i < invalidPlaylists_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(2, invalidPlaylists_.get(i));
+        .computeMessageSize(2, invalidPlaylists_.get(i));
     }
     if (total_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(3, total_);
+        .computeInt32Size(3, total_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -255,7 +255,7 @@ public final class VodGetPlaylistsResult extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodGetPlaylistsResult)) {
       return super.equals(obj);
@@ -263,11 +263,11 @@ public final class VodGetPlaylistsResult extends
     com.byteplus.service.vod.model.business.VodGetPlaylistsResult other = (com.byteplus.service.vod.model.business.VodGetPlaylistsResult) obj;
 
     if (!getPlaylistsList()
-            .equals(other.getPlaylistsList())) return false;
+        .equals(other.getPlaylistsList())) return false;
     if (!getInvalidPlaylistsList()
-            .equals(other.getInvalidPlaylistsList())) return false;
+        .equals(other.getInvalidPlaylistsList())) return false;
     if (getTotal()
-            != other.getTotal()) return false;
+        != other.getTotal()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -295,73 +295,73 @@ public final class VodGetPlaylistsResult extends
   }
 
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodGetPlaylistsResult parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -375,12 +375,12 @@ public final class VodGetPlaylistsResult extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -388,20 +388,20 @@ public final class VodGetPlaylistsResult extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodGetPlaylistsResult}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
-          com.byteplus.service.vod.model.business.VodGetPlaylistsResultOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodGetPlaylistsResult)
+      com.byteplus.service.vod.model.business.VodGetPlaylistsResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.VodGetPlaylistsResult.class, com.byteplus.service.vod.model.business.VodGetPlaylistsResult.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.VodGetPlaylistsResult.class, com.byteplus.service.vod.model.business.VodGetPlaylistsResult.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodGetPlaylistsResult.newBuilder()
@@ -410,7 +410,7 @@ public final class VodGetPlaylistsResult extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -443,7 +443,7 @@ public final class VodGetPlaylistsResult extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_descriptor;
     }
 
@@ -494,30 +494,30 @@ public final class VodGetPlaylistsResult extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -550,9 +550,9 @@ public final class VodGetPlaylistsResult extends
             playlistsBuilder_ = null;
             playlists_ = other.playlists_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            playlistsBuilder_ =
-                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                            getPlaylistsFieldBuilder() : null;
+            playlistsBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getPlaylistsFieldBuilder() : null;
           } else {
             playlistsBuilder_.addAllMessages(other.playlists_);
           }
@@ -576,9 +576,9 @@ public final class VodGetPlaylistsResult extends
             invalidPlaylistsBuilder_ = null;
             invalidPlaylists_ = other.invalidPlaylists_;
             bitField0_ = (bitField0_ & ~0x00000002);
-            invalidPlaylistsBuilder_ =
-                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                            getInvalidPlaylistsFieldBuilder() : null;
+            invalidPlaylistsBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getInvalidPlaylistsFieldBuilder() : null;
           } else {
             invalidPlaylistsBuilder_.addAllMessages(other.invalidPlaylists_);
           }
@@ -599,9 +599,9 @@ public final class VodGetPlaylistsResult extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodGetPlaylistsResult parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -618,16 +618,16 @@ public final class VodGetPlaylistsResult extends
     private int bitField0_;
 
     private java.util.List<com.byteplus.service.vod.model.business.VodPlaylistInfo> playlists_ =
-            java.util.Collections.emptyList();
+      java.util.Collections.emptyList();
     private void ensurePlaylistsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
         playlists_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodPlaylistInfo>(playlists_);
         bitField0_ |= 0x00000001;
-      }
+       }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> playlistsBuilder_;
+        com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> playlistsBuilder_;
 
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
@@ -663,7 +663,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder setPlaylists(
-            int index, com.byteplus.service.vod.model.business.VodPlaylistInfo value) {
+        int index, com.byteplus.service.vod.model.business.VodPlaylistInfo value) {
       if (playlistsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -680,7 +680,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder setPlaylists(
-            int index, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
       if (playlistsBuilder_ == null) {
         ensurePlaylistsIsMutable();
         playlists_.set(index, builderForValue.build());
@@ -710,7 +710,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder addPlaylists(
-            int index, com.byteplus.service.vod.model.business.VodPlaylistInfo value) {
+        int index, com.byteplus.service.vod.model.business.VodPlaylistInfo value) {
       if (playlistsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -727,7 +727,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder addPlaylists(
-            com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
       if (playlistsBuilder_ == null) {
         ensurePlaylistsIsMutable();
         playlists_.add(builderForValue.build());
@@ -741,7 +741,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder addPlaylists(
-            int index, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder builderForValue) {
       if (playlistsBuilder_ == null) {
         ensurePlaylistsIsMutable();
         playlists_.add(index, builderForValue.build());
@@ -755,11 +755,11 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public Builder addAllPlaylists(
-            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodPlaylistInfo> values) {
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodPlaylistInfo> values) {
       if (playlistsBuilder_ == null) {
         ensurePlaylistsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, playlists_);
+            values, playlists_);
         onChanged();
       } else {
         playlistsBuilder_.addAllMessages(values);
@@ -796,14 +796,14 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder getPlaylistsBuilder(
-            int index) {
+        int index) {
       return getPlaylistsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder getPlaylistsOrBuilder(
-            int index) {
+        int index) {
       if (playlistsBuilder_ == null) {
         return playlists_.get(index);  } else {
         return playlistsBuilder_.getMessageOrBuilder(index);
@@ -812,8 +812,8 @@ public final class VodGetPlaylistsResult extends
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>
-    getPlaylistsOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> 
+         getPlaylistsOrBuilderList() {
       if (playlistsBuilder_ != null) {
         return playlistsBuilder_.getMessageOrBuilderList();
       } else {
@@ -825,29 +825,29 @@ public final class VodGetPlaylistsResult extends
      */
     public com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder addPlaylistsBuilder() {
       return getPlaylistsFieldBuilder().addBuilder(
-              com.byteplus.service.vod.model.business.VodPlaylistInfo.getDefaultInstance());
+          com.byteplus.service.vod.model.business.VodPlaylistInfo.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder addPlaylistsBuilder(
-            int index) {
+        int index) {
       return getPlaylistsFieldBuilder().addBuilder(
-              index, com.byteplus.service.vod.model.business.VodPlaylistInfo.getDefaultInstance());
+          index, com.byteplus.service.vod.model.business.VodPlaylistInfo.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistInfo Playlists = 1;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder>
-    getPlaylistsBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder> 
+         getPlaylistsBuilderList() {
       return getPlaylistsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>
-    getPlaylistsFieldBuilder() {
+        com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder> 
+        getPlaylistsFieldBuilder() {
       if (playlistsBuilder_ == null) {
         playlistsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>(
+            com.byteplus.service.vod.model.business.VodPlaylistInfo, com.byteplus.service.vod.model.business.VodPlaylistInfo.Builder, com.byteplus.service.vod.model.business.VodPlaylistInfoOrBuilder>(
                 playlists_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -858,16 +858,16 @@ public final class VodGetPlaylistsResult extends
     }
 
     private java.util.List<com.byteplus.service.vod.model.business.InvalidPlaylist> invalidPlaylists_ =
-            java.util.Collections.emptyList();
+      java.util.Collections.emptyList();
     private void ensureInvalidPlaylistsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
         invalidPlaylists_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.InvalidPlaylist>(invalidPlaylists_);
         bitField0_ |= 0x00000002;
-      }
+       }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> invalidPlaylistsBuilder_;
+        com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> invalidPlaylistsBuilder_;
 
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
@@ -903,7 +903,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder setInvalidPlaylists(
-            int index, com.byteplus.service.vod.model.business.InvalidPlaylist value) {
+        int index, com.byteplus.service.vod.model.business.InvalidPlaylist value) {
       if (invalidPlaylistsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -920,7 +920,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder setInvalidPlaylists(
-            int index, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
       if (invalidPlaylistsBuilder_ == null) {
         ensureInvalidPlaylistsIsMutable();
         invalidPlaylists_.set(index, builderForValue.build());
@@ -950,7 +950,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder addInvalidPlaylists(
-            int index, com.byteplus.service.vod.model.business.InvalidPlaylist value) {
+        int index, com.byteplus.service.vod.model.business.InvalidPlaylist value) {
       if (invalidPlaylistsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -967,7 +967,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder addInvalidPlaylists(
-            com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
       if (invalidPlaylistsBuilder_ == null) {
         ensureInvalidPlaylistsIsMutable();
         invalidPlaylists_.add(builderForValue.build());
@@ -981,7 +981,7 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder addInvalidPlaylists(
-            int index, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder builderForValue) {
       if (invalidPlaylistsBuilder_ == null) {
         ensureInvalidPlaylistsIsMutable();
         invalidPlaylists_.add(index, builderForValue.build());
@@ -995,11 +995,11 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public Builder addAllInvalidPlaylists(
-            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.InvalidPlaylist> values) {
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.InvalidPlaylist> values) {
       if (invalidPlaylistsBuilder_ == null) {
         ensureInvalidPlaylistsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, invalidPlaylists_);
+            values, invalidPlaylists_);
         onChanged();
       } else {
         invalidPlaylistsBuilder_.addAllMessages(values);
@@ -1036,14 +1036,14 @@ public final class VodGetPlaylistsResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public com.byteplus.service.vod.model.business.InvalidPlaylist.Builder getInvalidPlaylistsBuilder(
-            int index) {
+        int index) {
       return getInvalidPlaylistsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder getInvalidPlaylistsOrBuilder(
-            int index) {
+        int index) {
       if (invalidPlaylistsBuilder_ == null) {
         return invalidPlaylists_.get(index);  } else {
         return invalidPlaylistsBuilder_.getMessageOrBuilder(index);
@@ -1052,8 +1052,8 @@ public final class VodGetPlaylistsResult extends
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>
-    getInvalidPlaylistsOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> 
+         getInvalidPlaylistsOrBuilderList() {
       if (invalidPlaylistsBuilder_ != null) {
         return invalidPlaylistsBuilder_.getMessageOrBuilderList();
       } else {
@@ -1065,29 +1065,29 @@ public final class VodGetPlaylistsResult extends
      */
     public com.byteplus.service.vod.model.business.InvalidPlaylist.Builder addInvalidPlaylistsBuilder() {
       return getInvalidPlaylistsFieldBuilder().addBuilder(
-              com.byteplus.service.vod.model.business.InvalidPlaylist.getDefaultInstance());
+          com.byteplus.service.vod.model.business.InvalidPlaylist.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
     public com.byteplus.service.vod.model.business.InvalidPlaylist.Builder addInvalidPlaylistsBuilder(
-            int index) {
+        int index) {
       return getInvalidPlaylistsFieldBuilder().addBuilder(
-              index, com.byteplus.service.vod.model.business.InvalidPlaylist.getDefaultInstance());
+          index, com.byteplus.service.vod.model.business.InvalidPlaylist.getDefaultInstance());
     }
     /**
      * <code>repeated .Byteplus.Vod.Models.Business.InvalidPlaylist InvalidPlaylists = 2;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.InvalidPlaylist.Builder>
-    getInvalidPlaylistsBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.InvalidPlaylist.Builder> 
+         getInvalidPlaylistsBuilderList() {
       return getInvalidPlaylistsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>
-    getInvalidPlaylistsFieldBuilder() {
+        com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder> 
+        getInvalidPlaylistsFieldBuilder() {
       if (invalidPlaylistsBuilder_ == null) {
         invalidPlaylistsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>(
+            com.byteplus.service.vod.model.business.InvalidPlaylist, com.byteplus.service.vod.model.business.InvalidPlaylist.Builder, com.byteplus.service.vod.model.business.InvalidPlaylistOrBuilder>(
                 invalidPlaylists_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1112,7 +1112,7 @@ public final class VodGetPlaylistsResult extends
      * @return This builder for chaining.
      */
     public Builder setTotal(int value) {
-
+      
       total_ = value;
       onChanged();
       return this;
@@ -1122,20 +1122,20 @@ public final class VodGetPlaylistsResult extends
      * @return This builder for chaining.
      */
     public Builder clearTotal() {
-
+      
       total_ = 0;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1154,12 +1154,12 @@ public final class VodGetPlaylistsResult extends
   }
 
   private static final com.google.protobuf.Parser<VodGetPlaylistsResult>
-          PARSER = new com.google.protobuf.AbstractParser<VodGetPlaylistsResult>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodGetPlaylistsResult>() {
     @java.lang.Override
     public VodGetPlaylistsResult parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodGetPlaylistsResult(input, extensionRegistry);
     }
   };

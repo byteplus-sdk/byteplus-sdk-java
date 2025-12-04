@@ -96,4 +96,28 @@ public interface VodVideoStreamMetaOrBuilder extends
    * @return The fps.
    */
   float getFps();
+
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo> 
+      getSubStreamInfoList();
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  com.byteplus.service.vod.model.business.SubStreamInfo getSubStreamInfo(int index);
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  int getSubStreamInfoCount();
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  java.util.List<? extends com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder> 
+      getSubStreamInfoOrBuilderList();
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder getSubStreamInfoOrBuilder(
+      int index);
 }

@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodGetPlaylistsRequestOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetPlaylistsRequest)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodGetPlaylistsRequest)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>string SpaceName = 1;</code>
@@ -17,7 +17,7 @@ public interface VodGetPlaylistsRequestOrBuilder extends
    * @return The bytes for spaceName.
    */
   com.google.protobuf.ByteString
-  getSpaceNameBytes();
+      getSpaceNameBytes();
 
   /**
    * <pre>
@@ -37,7 +37,7 @@ public interface VodGetPlaylistsRequestOrBuilder extends
    * @return The bytes for ids.
    */
   com.google.protobuf.ByteString
-  getIdsBytes();
+      getIdsBytes();
 
   /**
    * <code>string Name = 3;</code>
@@ -49,7 +49,7 @@ public interface VodGetPlaylistsRequestOrBuilder extends
    * @return The bytes for name.
    */
   com.google.protobuf.ByteString
-  getNameBytes();
+      getNameBytes();
 
   /**
    * <code>uint32 Limit = 4;</code>

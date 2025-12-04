@@ -18,6 +18,7 @@ private static final long serialVersionUID = 0L;
   private VodVideoStreamMeta() {
     codec_ = "";
     definition_ = "";
+    subStreamInfo_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -40,6 +41,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -87,6 +89,15 @@ private static final long serialVersionUID = 0L;
             fps_ = input.readFloat();
             break;
           }
+          case 66: {
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              subStreamInfo_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.SubStreamInfo>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            subStreamInfo_.add(
+                input.readMessage(com.byteplus.service.vod.model.business.SubStreamInfo.parser(), extensionRegistry));
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -102,6 +113,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        subStreamInfo_ = java.util.Collections.unmodifiableList(subStreamInfo_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -286,6 +300,46 @@ private static final long serialVersionUID = 0L;
     return fps_;
   }
 
+  public static final int SUBSTREAMINFO_FIELD_NUMBER = 8;
+  private java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo> subStreamInfo_;
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  @java.lang.Override
+  public java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo> getSubStreamInfoList() {
+    return subStreamInfo_;
+  }
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder> 
+      getSubStreamInfoOrBuilderList() {
+    return subStreamInfo_;
+  }
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  @java.lang.Override
+  public int getSubStreamInfoCount() {
+    return subStreamInfo_.size();
+  }
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.SubStreamInfo getSubStreamInfo(int index) {
+    return subStreamInfo_.get(index);
+  }
+  /**
+   * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder getSubStreamInfoOrBuilder(
+      int index) {
+    return subStreamInfo_.get(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -320,6 +374,9 @@ private static final long serialVersionUID = 0L;
     }
     if (java.lang.Float.floatToRawIntBits(fps_) != 0) {
       output.writeFloat(7, fps_);
+    }
+    for (int i = 0; i < subStreamInfo_.size(); i++) {
+      output.writeMessage(8, subStreamInfo_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -356,6 +413,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(7, fps_);
     }
+    for (int i = 0; i < subStreamInfo_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(8, subStreamInfo_.get(i));
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -387,6 +448,8 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Float.floatToIntBits(getFps())
         != java.lang.Float.floatToIntBits(
             other.getFps())) return false;
+    if (!getSubStreamInfoList()
+        .equals(other.getSubStreamInfoList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -414,6 +477,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + FPS_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getFps());
+    if (getSubStreamInfoCount() > 0) {
+      hash = (37 * hash) + SUBSTREAMINFO_FIELD_NUMBER;
+      hash = (53 * hash) + getSubStreamInfoList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -542,6 +609,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
+        getSubStreamInfoFieldBuilder();
       }
     }
     @java.lang.Override
@@ -561,6 +629,12 @@ private static final long serialVersionUID = 0L;
 
       fps_ = 0F;
 
+      if (subStreamInfoBuilder_ == null) {
+        subStreamInfo_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      } else {
+        subStreamInfoBuilder_.clear();
+      }
       return this;
     }
 
@@ -587,6 +661,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.byteplus.service.vod.model.business.VodVideoStreamMeta buildPartial() {
       com.byteplus.service.vod.model.business.VodVideoStreamMeta result = new com.byteplus.service.vod.model.business.VodVideoStreamMeta(this);
+      int from_bitField0_ = bitField0_;
       result.codec_ = codec_;
       result.height_ = height_;
       result.width_ = width_;
@@ -594,6 +669,15 @@ private static final long serialVersionUID = 0L;
       result.definition_ = definition_;
       result.bitrate_ = bitrate_;
       result.fps_ = fps_;
+      if (subStreamInfoBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          subStreamInfo_ = java.util.Collections.unmodifiableList(subStreamInfo_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.subStreamInfo_ = subStreamInfo_;
+      } else {
+        result.subStreamInfo_ = subStreamInfoBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -665,6 +749,32 @@ private static final long serialVersionUID = 0L;
       if (other.getFps() != 0F) {
         setFps(other.getFps());
       }
+      if (subStreamInfoBuilder_ == null) {
+        if (!other.subStreamInfo_.isEmpty()) {
+          if (subStreamInfo_.isEmpty()) {
+            subStreamInfo_ = other.subStreamInfo_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureSubStreamInfoIsMutable();
+            subStreamInfo_.addAll(other.subStreamInfo_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.subStreamInfo_.isEmpty()) {
+          if (subStreamInfoBuilder_.isEmpty()) {
+            subStreamInfoBuilder_.dispose();
+            subStreamInfoBuilder_ = null;
+            subStreamInfo_ = other.subStreamInfo_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+            subStreamInfoBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getSubStreamInfoFieldBuilder() : null;
+          } else {
+            subStreamInfoBuilder_.addAllMessages(other.subStreamInfo_);
+          }
+        }
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -693,6 +803,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private java.lang.Object codec_ = "";
     /**
@@ -1099,6 +1210,246 @@ private static final long serialVersionUID = 0L;
       fps_ = 0F;
       onChanged();
       return this;
+    }
+
+    private java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo> subStreamInfo_ =
+      java.util.Collections.emptyList();
+    private void ensureSubStreamInfoIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        subStreamInfo_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.SubStreamInfo>(subStreamInfo_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.byteplus.service.vod.model.business.SubStreamInfo, com.byteplus.service.vod.model.business.SubStreamInfo.Builder, com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder> subStreamInfoBuilder_;
+
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo> getSubStreamInfoList() {
+      if (subStreamInfoBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(subStreamInfo_);
+      } else {
+        return subStreamInfoBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public int getSubStreamInfoCount() {
+      if (subStreamInfoBuilder_ == null) {
+        return subStreamInfo_.size();
+      } else {
+        return subStreamInfoBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public com.byteplus.service.vod.model.business.SubStreamInfo getSubStreamInfo(int index) {
+      if (subStreamInfoBuilder_ == null) {
+        return subStreamInfo_.get(index);
+      } else {
+        return subStreamInfoBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder setSubStreamInfo(
+        int index, com.byteplus.service.vod.model.business.SubStreamInfo value) {
+      if (subStreamInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.set(index, value);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder setSubStreamInfo(
+        int index, com.byteplus.service.vod.model.business.SubStreamInfo.Builder builderForValue) {
+      if (subStreamInfoBuilder_ == null) {
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder addSubStreamInfo(com.byteplus.service.vod.model.business.SubStreamInfo value) {
+      if (subStreamInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.add(value);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder addSubStreamInfo(
+        int index, com.byteplus.service.vod.model.business.SubStreamInfo value) {
+      if (subStreamInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.add(index, value);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder addSubStreamInfo(
+        com.byteplus.service.vod.model.business.SubStreamInfo.Builder builderForValue) {
+      if (subStreamInfoBuilder_ == null) {
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.add(builderForValue.build());
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder addSubStreamInfo(
+        int index, com.byteplus.service.vod.model.business.SubStreamInfo.Builder builderForValue) {
+      if (subStreamInfoBuilder_ == null) {
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder addAllSubStreamInfo(
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.SubStreamInfo> values) {
+      if (subStreamInfoBuilder_ == null) {
+        ensureSubStreamInfoIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, subStreamInfo_);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder clearSubStreamInfo() {
+      if (subStreamInfoBuilder_ == null) {
+        subStreamInfo_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public Builder removeSubStreamInfo(int index) {
+      if (subStreamInfoBuilder_ == null) {
+        ensureSubStreamInfoIsMutable();
+        subStreamInfo_.remove(index);
+        onChanged();
+      } else {
+        subStreamInfoBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public com.byteplus.service.vod.model.business.SubStreamInfo.Builder getSubStreamInfoBuilder(
+        int index) {
+      return getSubStreamInfoFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder getSubStreamInfoOrBuilder(
+        int index) {
+      if (subStreamInfoBuilder_ == null) {
+        return subStreamInfo_.get(index);  } else {
+        return subStreamInfoBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public java.util.List<? extends com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder> 
+         getSubStreamInfoOrBuilderList() {
+      if (subStreamInfoBuilder_ != null) {
+        return subStreamInfoBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(subStreamInfo_);
+      }
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public com.byteplus.service.vod.model.business.SubStreamInfo.Builder addSubStreamInfoBuilder() {
+      return getSubStreamInfoFieldBuilder().addBuilder(
+          com.byteplus.service.vod.model.business.SubStreamInfo.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public com.byteplus.service.vod.model.business.SubStreamInfo.Builder addSubStreamInfoBuilder(
+        int index) {
+      return getSubStreamInfoFieldBuilder().addBuilder(
+          index, com.byteplus.service.vod.model.business.SubStreamInfo.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .Byteplus.Vod.Models.Business.SubStreamInfo SubStreamInfo = 8;</code>
+     */
+    public java.util.List<com.byteplus.service.vod.model.business.SubStreamInfo.Builder> 
+         getSubStreamInfoBuilderList() {
+      return getSubStreamInfoFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.byteplus.service.vod.model.business.SubStreamInfo, com.byteplus.service.vod.model.business.SubStreamInfo.Builder, com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder> 
+        getSubStreamInfoFieldBuilder() {
+      if (subStreamInfoBuilder_ == null) {
+        subStreamInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            com.byteplus.service.vod.model.business.SubStreamInfo, com.byteplus.service.vod.model.business.SubStreamInfo.Builder, com.byteplus.service.vod.model.business.SubStreamInfoOrBuilder>(
+                subStreamInfo_,
+                ((bitField0_ & 0x00000001) != 0),
+                getParentForChildren(),
+                isClean());
+        subStreamInfo_ = null;
+      }
+      return subStreamInfoBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface PublicSourceConfOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.PublicSourceConf)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.PublicSourceConf)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>.Byteplus.Vod.Models.Business.MirrorSrcS3Conf S3 = 1;</code>

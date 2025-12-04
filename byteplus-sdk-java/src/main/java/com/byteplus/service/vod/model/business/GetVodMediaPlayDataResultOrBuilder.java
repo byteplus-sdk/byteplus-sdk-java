@@ -16,12 +16,12 @@ public interface GetVodMediaPlayDataResultOrBuilder extends
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  java.util.List<GetVodMediaPlayDataColumn>
+  java.util.List<com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn> 
       getColumnsList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  GetVodMediaPlayDataColumn getColumns(int index);
+  com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getColumns(int index);
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
@@ -29,12 +29,12 @@ public interface GetVodMediaPlayDataResultOrBuilder extends
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  java.util.List<? extends GetVodMediaPlayDataColumnOrBuilder>
+  java.util.List<? extends com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder> 
       getColumnsOrBuilderList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn Columns = 2;</code>
    */
-  GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
+  com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder getColumnsOrBuilder(
       int index);
 
   /**

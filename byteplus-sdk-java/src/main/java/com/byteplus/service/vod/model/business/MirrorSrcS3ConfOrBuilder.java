@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface MirrorSrcS3ConfOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcS3Conf)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcS3Conf)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>.google.protobuf.StringValue Endpoint = 1;</code>

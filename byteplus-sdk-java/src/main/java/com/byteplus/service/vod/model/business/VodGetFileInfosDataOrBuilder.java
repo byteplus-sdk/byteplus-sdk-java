@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodGetFileInfosDataOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodGetFileInfosData)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodGetFileInfosData)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -14,8 +14,8 @@ public interface VodGetFileInfosDataOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodFileInfo>
-  getFileInfosList();
+  java.util.List<com.byteplus.service.vod.model.business.VodFileInfo> 
+      getFileInfosList();
   /**
    * <pre>
    *文件信息
@@ -39,8 +39,8 @@ public interface VodGetFileInfosDataOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder>
-  getFileInfosOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodFileInfoOrBuilder> 
+      getFileInfosOrBuilderList();
   /**
    * <pre>
    *文件信息
@@ -49,7 +49,7 @@ public interface VodGetFileInfosDataOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileInfo FileInfos = 1;</code>
    */
   com.byteplus.service.vod.model.business.VodFileInfoOrBuilder getFileInfosOrBuilder(
-          int index);
+      int index);
 
   /**
    * <pre>
@@ -60,7 +60,7 @@ public interface VodGetFileInfosDataOrBuilder extends
    * @return A list containing the notExistFileNames.
    */
   java.util.List<java.lang.String>
-  getNotExistFileNamesList();
+      getNotExistFileNamesList();
   /**
    * <pre>
    *不存在的文件
@@ -90,7 +90,7 @@ public interface VodGetFileInfosDataOrBuilder extends
    * @return The bytes of the notExistFileNames at the given index.
    */
   com.google.protobuf.ByteString
-  getNotExistFileNamesBytes(int index);
+      getNotExistFileNamesBytes(int index);
 
   /**
    * <pre>
@@ -101,7 +101,7 @@ public interface VodGetFileInfosDataOrBuilder extends
    * @return A list containing the notExistEncodedFileNames.
    */
   java.util.List<java.lang.String>
-  getNotExistEncodedFileNamesList();
+      getNotExistEncodedFileNamesList();
   /**
    * <pre>
    *不存在的文件(URL编码格式)
@@ -131,5 +131,5 @@ public interface VodGetFileInfosDataOrBuilder extends
    * @return The bytes of the notExistEncodedFileNames at the given index.
    */
   com.google.protobuf.ByteString
-  getNotExistEncodedFileNamesBytes(int index);
+      getNotExistEncodedFileNamesBytes(int index);
 }

@@ -4,26 +4,26 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodCreatePlaylistResultOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodCreatePlaylistResult)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodCreatePlaylistResult)
+    com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <pre>
-     * 播放列表Id
-     * </pre>
-     *
-     * <code>string Id = 1;</code>
-     * @return The id.
-     */
-    java.lang.String getId();
-    /**
-     * <pre>
-     * 播放列表Id
-     * </pre>
-     *
-     * <code>string Id = 1;</code>
-     * @return The bytes for id.
-     */
-    com.google.protobuf.ByteString
-    getIdBytes();
+  /**
+   * <pre>
+   * 播放列表Id
+   * </pre>
+   *
+   * <code>string Id = 1;</code>
+   * @return The id.
+   */
+  java.lang.String getId();
+  /**
+   * <pre>
+   * 播放列表Id
+   * </pre>
+   *
+   * <code>string Id = 1;</code>
+   * @return The bytes for id.
+   */
+  com.google.protobuf.ByteString
+      getIdBytes();
 }

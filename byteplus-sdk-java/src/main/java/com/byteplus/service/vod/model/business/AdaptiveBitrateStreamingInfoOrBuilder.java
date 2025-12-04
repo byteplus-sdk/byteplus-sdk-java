@@ -18,7 +18,7 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    * <code>string MainPlayUrl = 1;</code>
    * @return The mainPlayUrl.
    */
-  String getMainPlayUrl();
+  java.lang.String getMainPlayUrl();
   /**
    * <pre>
    *主文件主播放地址
@@ -44,7 +44,7 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    * <code>string BackupPlayUrl = 2;</code>
    * @return The backupPlayUrl.
    */
-  String getBackupPlayUrl();
+  java.lang.String getBackupPlayUrl();
   /**
    * <pre>
    *主文件备播放地址
@@ -70,7 +70,7 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    * <code>string AbrFormat = 3;</code>
    * @return The abrFormat.
    */
-  String getAbrFormat();
+  java.lang.String getAbrFormat();
   /**
    * <pre>
    *标识本次下发的ABR码流Format
@@ -89,7 +89,7 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    * <code>string PlayAuth = 4;</code>
    * @return The playAuth.
    */
-  String getPlayAuth();
+  java.lang.String getPlayAuth();
   /**
    * <code>string PlayAuth = 4;</code>
    * @return The bytes for playAuth.
@@ -101,7 +101,7 @@ public interface AdaptiveBitrateStreamingInfoOrBuilder extends
    * <code>string PlayAuthId = 5;</code>
    * @return The playAuthId.
    */
-  String getPlayAuthId();
+  java.lang.String getPlayAuthId();
   /**
    * <code>string PlayAuthId = 5;</code>
    * @return The bytes for playAuthId.

@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodGetFileInfosRequest}
  */
 public final class VodGetFileInfosRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
-        VodGetFileInfosRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
+    VodGetFileInfosRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodGetFileInfosRequest.newBuilder() to construct.
   private VodGetFileInfosRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -25,7 +25,7 @@ public final class VodGetFileInfosRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodGetFileInfosRequest();
   }
 
@@ -35,15 +35,15 @@ public final class VodGetFileInfosRequest extends
     return this.unknownFields;
   }
   private VodGetFileInfosRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -88,7 +88,7 @@ public final class VodGetFileInfosRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -99,23 +99,23 @@ public final class VodGetFileInfosRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodGetFileInfosRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodGetFileInfosRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodGetFileInfosRequest.class, com.byteplus.service.vod.model.request.VodGetFileInfosRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodGetFileInfosRequest.class, com.byteplus.service.vod.model.request.VodGetFileInfosRequest.Builder.class);
   }
 
   public static final int SPACENAME_FIELD_NUMBER = 1;
@@ -130,8 +130,8 @@ public final class VodGetFileInfosRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       spaceName_ = s;
       return s;
@@ -143,12 +143,12 @@ public final class VodGetFileInfosRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getSpaceNameBytes() {
+      getSpaceNameBytes() {
     java.lang.Object ref = spaceName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       spaceName_ = b;
       return b;
     } else {
@@ -168,8 +168,8 @@ public final class VodGetFileInfosRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       encodedFileNames_ = s;
       return s;
@@ -181,12 +181,12 @@ public final class VodGetFileInfosRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getEncodedFileNamesBytes() {
+      getEncodedFileNamesBytes() {
     java.lang.Object ref = encodedFileNames_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       encodedFileNames_ = b;
       return b;
     } else {
@@ -210,8 +210,8 @@ public final class VodGetFileInfosRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       bucketName_ = s;
       return s;
@@ -227,12 +227,12 @@ public final class VodGetFileInfosRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getBucketNameBytes() {
+      getBucketNameBytes() {
     java.lang.Object ref = bucketName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       bucketName_ = b;
       return b;
     } else {
@@ -271,8 +271,8 @@ public final class VodGetFileInfosRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       downloadUrlNetworkType_ = s;
       return s;
@@ -288,12 +288,12 @@ public final class VodGetFileInfosRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDownloadUrlNetworkTypeBytes() {
+      getDownloadUrlNetworkTypeBytes() {
     java.lang.Object ref = downloadUrlNetworkType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       downloadUrlNetworkType_ = b;
       return b;
     } else {
@@ -329,7 +329,7 @@ public final class VodGetFileInfosRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, spaceName_);
     }
@@ -368,14 +368,14 @@ public final class VodGetFileInfosRequest extends
     }
     if (needDownloadUrl_ != false) {
       size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(4, needDownloadUrl_);
+        .computeBoolSize(4, needDownloadUrl_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(downloadUrlNetworkType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, downloadUrlNetworkType_);
     }
     if (downloadUrlExpire_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(6, downloadUrlExpire_);
+        .computeInt64Size(6, downloadUrlExpire_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -385,7 +385,7 @@ public final class VodGetFileInfosRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodGetFileInfosRequest)) {
       return super.equals(obj);
@@ -393,17 +393,17 @@ public final class VodGetFileInfosRequest extends
     com.byteplus.service.vod.model.request.VodGetFileInfosRequest other = (com.byteplus.service.vod.model.request.VodGetFileInfosRequest) obj;
 
     if (!getSpaceName()
-            .equals(other.getSpaceName())) return false;
+        .equals(other.getSpaceName())) return false;
     if (!getEncodedFileNames()
-            .equals(other.getEncodedFileNames())) return false;
+        .equals(other.getEncodedFileNames())) return false;
     if (!getBucketName()
-            .equals(other.getBucketName())) return false;
+        .equals(other.getBucketName())) return false;
     if (getNeedDownloadUrl()
-            != other.getNeedDownloadUrl()) return false;
+        != other.getNeedDownloadUrl()) return false;
     if (!getDownloadUrlNetworkType()
-            .equals(other.getDownloadUrlNetworkType())) return false;
+        .equals(other.getDownloadUrlNetworkType())) return false;
     if (getDownloadUrlExpire()
-            != other.getDownloadUrlExpire()) return false;
+        != other.getDownloadUrlExpire()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -423,85 +423,85 @@ public final class VodGetFileInfosRequest extends
     hash = (53 * hash) + getBucketName().hashCode();
     hash = (37 * hash) + NEEDDOWNLOADURL_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-            getNeedDownloadUrl());
+        getNeedDownloadUrl());
     hash = (37 * hash) + DOWNLOADURLNETWORKTYPE_FIELD_NUMBER;
     hash = (53 * hash) + getDownloadUrlNetworkType().hashCode();
     hash = (37 * hash) + DOWNLOADURLEXPIRE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getDownloadUrlExpire());
+        getDownloadUrlExpire());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodGetFileInfosRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -515,12 +515,12 @@ public final class VodGetFileInfosRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -528,20 +528,20 @@ public final class VodGetFileInfosRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodGetFileInfosRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
-          com.byteplus.service.vod.model.request.VodGetFileInfosRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodGetFileInfosRequest)
+      com.byteplus.service.vod.model.request.VodGetFileInfosRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodGetFileInfosRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodGetFileInfosRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodGetFileInfosRequest.class, com.byteplus.service.vod.model.request.VodGetFileInfosRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodGetFileInfosRequest.class, com.byteplus.service.vod.model.request.VodGetFileInfosRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodGetFileInfosRequest.newBuilder()
@@ -550,7 +550,7 @@ public final class VodGetFileInfosRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -579,7 +579,7 @@ public final class VodGetFileInfosRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodGetFileInfosRequest_descriptor;
     }
 
@@ -616,30 +616,30 @@ public final class VodGetFileInfosRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -688,9 +688,9 @@ public final class VodGetFileInfosRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodGetFileInfosRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -714,7 +714,7 @@ public final class VodGetFileInfosRequest extends
       java.lang.Object ref = spaceName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         spaceName_ = s;
         return s;
@@ -727,12 +727,12 @@ public final class VodGetFileInfosRequest extends
      * @return The bytes for spaceName.
      */
     public com.google.protobuf.ByteString
-    getSpaceNameBytes() {
+        getSpaceNameBytes() {
       java.lang.Object ref = spaceName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         spaceName_ = b;
         return b;
       } else {
@@ -745,11 +745,11 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       spaceName_ = value;
       onChanged();
       return this;
@@ -759,7 +759,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearSpaceName() {
-
+      
       spaceName_ = getDefaultInstance().getSpaceName();
       onChanged();
       return this;
@@ -770,12 +770,12 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       spaceName_ = value;
       onChanged();
       return this;
@@ -790,7 +790,7 @@ public final class VodGetFileInfosRequest extends
       java.lang.Object ref = encodedFileNames_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         encodedFileNames_ = s;
         return s;
@@ -803,12 +803,12 @@ public final class VodGetFileInfosRequest extends
      * @return The bytes for encodedFileNames.
      */
     public com.google.protobuf.ByteString
-    getEncodedFileNamesBytes() {
+        getEncodedFileNamesBytes() {
       java.lang.Object ref = encodedFileNames_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         encodedFileNames_ = b;
         return b;
       } else {
@@ -821,11 +821,11 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setEncodedFileNames(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       encodedFileNames_ = value;
       onChanged();
       return this;
@@ -835,7 +835,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearEncodedFileNames() {
-
+      
       encodedFileNames_ = getDefaultInstance().getEncodedFileNames();
       onChanged();
       return this;
@@ -846,12 +846,12 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setEncodedFileNamesBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       encodedFileNames_ = value;
       onChanged();
       return this;
@@ -870,7 +870,7 @@ public final class VodGetFileInfosRequest extends
       java.lang.Object ref = bucketName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         bucketName_ = s;
         return s;
@@ -887,12 +887,12 @@ public final class VodGetFileInfosRequest extends
      * @return The bytes for bucketName.
      */
     public com.google.protobuf.ByteString
-    getBucketNameBytes() {
+        getBucketNameBytes() {
       java.lang.Object ref = bucketName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         bucketName_ = b;
         return b;
       } else {
@@ -909,11 +909,11 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setBucketName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       bucketName_ = value;
       onChanged();
       return this;
@@ -927,7 +927,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearBucketName() {
-
+      
       bucketName_ = getDefaultInstance().getBucketName();
       onChanged();
       return this;
@@ -942,12 +942,12 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setBucketNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       bucketName_ = value;
       onChanged();
       return this;
@@ -976,7 +976,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setNeedDownloadUrl(boolean value) {
-
+      
       needDownloadUrl_ = value;
       onChanged();
       return this;
@@ -990,7 +990,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearNeedDownloadUrl() {
-
+      
       needDownloadUrl_ = false;
       onChanged();
       return this;
@@ -1009,7 +1009,7 @@ public final class VodGetFileInfosRequest extends
       java.lang.Object ref = downloadUrlNetworkType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         downloadUrlNetworkType_ = s;
         return s;
@@ -1026,12 +1026,12 @@ public final class VodGetFileInfosRequest extends
      * @return The bytes for downloadUrlNetworkType.
      */
     public com.google.protobuf.ByteString
-    getDownloadUrlNetworkTypeBytes() {
+        getDownloadUrlNetworkTypeBytes() {
       java.lang.Object ref = downloadUrlNetworkType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         downloadUrlNetworkType_ = b;
         return b;
       } else {
@@ -1048,11 +1048,11 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setDownloadUrlNetworkType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       downloadUrlNetworkType_ = value;
       onChanged();
       return this;
@@ -1066,7 +1066,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearDownloadUrlNetworkType() {
-
+      
       downloadUrlNetworkType_ = getDefaultInstance().getDownloadUrlNetworkType();
       onChanged();
       return this;
@@ -1081,12 +1081,12 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setDownloadUrlNetworkTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       downloadUrlNetworkType_ = value;
       onChanged();
       return this;
@@ -1115,7 +1115,7 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder setDownloadUrlExpire(long value) {
-
+      
       downloadUrlExpire_ = value;
       onChanged();
       return this;
@@ -1129,20 +1129,20 @@ public final class VodGetFileInfosRequest extends
      * @return This builder for chaining.
      */
     public Builder clearDownloadUrlExpire() {
-
+      
       downloadUrlExpire_ = 0L;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1161,12 +1161,12 @@ public final class VodGetFileInfosRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodGetFileInfosRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodGetFileInfosRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodGetFileInfosRequest>() {
     @java.lang.Override
     public VodGetFileInfosRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodGetFileInfosRequest(input, extensionRegistry);
     }
   };

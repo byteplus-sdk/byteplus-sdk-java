@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.response;
 
 public interface VodGetFileInfosResponseOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodGetFileInfosResponse)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodGetFileInfosResponse)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>

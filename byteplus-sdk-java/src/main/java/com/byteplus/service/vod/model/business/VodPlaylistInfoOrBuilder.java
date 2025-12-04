@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodPlaylistInfoOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistInfo)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodPlaylistInfo)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>string Id = 1;</code>
@@ -17,7 +17,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for id.
    */
   com.google.protobuf.ByteString
-  getIdBytes();
+      getIdBytes();
 
   /**
    * <code>string Name = 2;</code>
@@ -29,7 +29,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for name.
    */
   com.google.protobuf.ByteString
-  getNameBytes();
+      getNameBytes();
 
   /**
    * <code>string Format = 3;</code>
@@ -41,7 +41,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for format.
    */
   com.google.protobuf.ByteString
-  getFormatBytes();
+      getFormatBytes();
 
   /**
    * <code>string Codec = 4;</code>
@@ -53,7 +53,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for codec.
    */
   com.google.protobuf.ByteString
-  getCodecBytes();
+      getCodecBytes();
 
   /**
    * <code>string Definition = 5;</code>
@@ -65,7 +65,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for definition.
    */
   com.google.protobuf.ByteString
-  getDefinitionBytes();
+      getDefinitionBytes();
 
   /**
    * <code>string StartTime = 6;</code>
@@ -77,7 +77,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for startTime.
    */
   com.google.protobuf.ByteString
-  getStartTimeBytes();
+      getStartTimeBytes();
 
   /**
    * <code>string EndTime = 7;</code>
@@ -89,7 +89,7 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for endTime.
    */
   com.google.protobuf.ByteString
-  getEndTimeBytes();
+      getEndTimeBytes();
 
   /**
    * <code>string Cycles = 8;</code>
@@ -101,13 +101,13 @@ public interface VodPlaylistInfoOrBuilder extends
    * @return The bytes for cycles.
    */
   com.google.protobuf.ByteString
-  getCyclesBytes();
+      getCyclesBytes();
 
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistVideoInfo VideoInfos = 9;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodPlaylistVideoInfo>
-  getVideoInfosList();
+  java.util.List<com.byteplus.service.vod.model.business.VodPlaylistVideoInfo> 
+      getVideoInfosList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistVideoInfo VideoInfos = 9;</code>
    */
@@ -119,13 +119,13 @@ public interface VodPlaylistInfoOrBuilder extends
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistVideoInfo VideoInfos = 9;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistVideoInfoOrBuilder>
-  getVideoInfosOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodPlaylistVideoInfoOrBuilder> 
+      getVideoInfosOrBuilderList();
   /**
    * <code>repeated .Byteplus.Vod.Models.Business.VodPlaylistVideoInfo VideoInfos = 9;</code>
    */
   com.byteplus.service.vod.model.business.VodPlaylistVideoInfoOrBuilder getVideoInfosOrBuilder(
-          int index);
+      int index);
 
   /**
    * <code>int64 CreatedAt = 10;</code>

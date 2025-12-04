@@ -4,18 +4,18 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodSetMirrorSrcRuleResultOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodSetMirrorSrcRuleResult)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodSetMirrorSrcRuleResult)
+    com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>string Id = 1;</code>
-     * @return The id.
-     */
-    java.lang.String getId();
-    /**
-     * <code>string Id = 1;</code>
-     * @return The bytes for id.
-     */
-    com.google.protobuf.ByteString
-    getIdBytes();
+  /**
+   * <code>string Id = 1;</code>
+   * @return The id.
+   */
+  java.lang.String getId();
+  /**
+   * <code>string Id = 1;</code>
+   * @return The bytes for id.
+   */
+  com.google.protobuf.ByteString
+      getIdBytes();
 }

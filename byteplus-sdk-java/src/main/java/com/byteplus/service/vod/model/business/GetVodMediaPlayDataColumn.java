@@ -22,14 +22,14 @@ private static final long serialVersionUID = 0L;
     valueAlias_ = "";
   }
 
-  @Override
+  @java.lang.Override
   @SuppressWarnings({"unused"})
-  protected Object newInstance(
+  protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
     return new GetVodMediaPlayDataColumn();
   }
 
-  @Override
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -40,7 +40,7 @@ private static final long serialVersionUID = 0L;
       throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
-      throw new NullPointerException();
+      throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -53,25 +53,25 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             name_ = s;
             break;
           }
           case 18: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             alias_ = s;
             break;
           }
           case 26: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             type_ = s;
             break;
           }
           case 34: {
-            String s = input.readStringRequireUtf8();
+            java.lang.String s = input.readStringRequireUtf8();
 
             valueAlias_ = s;
             break;
@@ -100,16 +100,16 @@ private static final long serialVersionUID = 0L;
     return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_descriptor;
   }
 
-  @Override
-  protected FieldAccessorTable
+  @java.lang.Override
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            GetVodMediaPlayDataColumn.class, Builder.class);
+            com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.class, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
-  private volatile Object name_;
+  private volatile java.lang.Object name_;
   /**
    * <pre>
    * 字段名
@@ -118,15 +118,15 @@ private static final long serialVersionUID = 0L;
    * <code>string Name = 1;</code>
    * @return The name.
    */
-  @Override
-  public String getName() {
-    Object ref = name_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -139,14 +139,14 @@ private static final long serialVersionUID = 0L;
    * <code>string Name = 1;</code>
    * @return The bytes for name.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
-    Object ref = name_;
-    if (ref instanceof String) {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       name_ = b;
       return b;
     } else {
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ALIAS_FIELD_NUMBER = 2;
-  private volatile Object alias_;
+  private volatile java.lang.Object alias_;
   /**
    * <pre>
    * 别名
@@ -164,15 +164,15 @@ private static final long serialVersionUID = 0L;
    * <code>string Alias = 2;</code>
    * @return The alias.
    */
-  @Override
-  public String getAlias() {
-    Object ref = alias_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getAlias() {
+    java.lang.Object ref = alias_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       alias_ = s;
       return s;
     }
@@ -185,14 +185,14 @@ private static final long serialVersionUID = 0L;
    * <code>string Alias = 2;</code>
    * @return The bytes for alias.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getAliasBytes() {
-    Object ref = alias_;
-    if (ref instanceof String) {
+    java.lang.Object ref = alias_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       alias_ = b;
       return b;
     } else {
@@ -201,7 +201,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TYPE_FIELD_NUMBER = 3;
-  private volatile Object type_;
+  private volatile java.lang.Object type_;
   /**
    * <pre>
    * 类型
@@ -210,15 +210,15 @@ private static final long serialVersionUID = 0L;
    * <code>string Type = 3;</code>
    * @return The type.
    */
-  @Override
-  public String getType() {
-    Object ref = type_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getType() {
+    java.lang.Object ref = type_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       type_ = s;
       return s;
     }
@@ -231,14 +231,14 @@ private static final long serialVersionUID = 0L;
    * <code>string Type = 3;</code>
    * @return The bytes for type.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getTypeBytes() {
-    Object ref = type_;
-    if (ref instanceof String) {
+    java.lang.Object ref = type_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       type_ = b;
       return b;
     } else {
@@ -247,7 +247,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int VALUEALIAS_FIELD_NUMBER = 4;
-  private volatile Object valueAlias_;
+  private volatile java.lang.Object valueAlias_;
   /**
    * <pre>
    * 维度值别名
@@ -256,15 +256,15 @@ private static final long serialVersionUID = 0L;
    * <code>string ValueAlias = 4;</code>
    * @return The valueAlias.
    */
-  @Override
-  public String getValueAlias() {
-    Object ref = valueAlias_;
-    if (ref instanceof String) {
-      return (String) ref;
+  @java.lang.Override
+  public java.lang.String getValueAlias() {
+    java.lang.Object ref = valueAlias_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      String s = bs.toStringUtf8();
+      java.lang.String s = bs.toStringUtf8();
       valueAlias_ = s;
       return s;
     }
@@ -277,14 +277,14 @@ private static final long serialVersionUID = 0L;
    * <code>string ValueAlias = 4;</code>
    * @return The bytes for valueAlias.
    */
-  @Override
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getValueAliasBytes() {
-    Object ref = valueAlias_;
-    if (ref instanceof String) {
+    java.lang.Object ref = valueAlias_;
+    if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (String) ref);
+              (java.lang.String) ref);
       valueAlias_ = b;
       return b;
     } else {
@@ -293,7 +293,7 @@ private static final long serialVersionUID = 0L;
   }
 
   private byte memoizedIsInitialized = -1;
-  @Override
+  @java.lang.Override
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
@@ -303,7 +303,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
@@ -321,7 +321,7 @@ private static final long serialVersionUID = 0L;
     unknownFields.writeTo(output);
   }
 
-  @Override
+  @java.lang.Override
   public int getSerializedSize() {
     int size = memoizedSize;
     if (size != -1) return size;
@@ -344,15 +344,15 @@ private static final long serialVersionUID = 0L;
     return size;
   }
 
-  @Override
-  public boolean equals(final Object obj) {
+  @java.lang.Override
+  public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof GetVodMediaPlayDataColumn)) {
+    if (!(obj instanceof com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn)) {
       return super.equals(obj);
     }
-    GetVodMediaPlayDataColumn other = (GetVodMediaPlayDataColumn) obj;
+    com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn other = (com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn) obj;
 
     if (!getName()
         .equals(other.getName())) return false;
@@ -366,7 +366,7 @@ private static final long serialVersionUID = 0L;
     return true;
   }
 
-  @Override
+  @java.lang.Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -386,69 +386,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(byte[] data)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(java.io.InputStream input)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetVodMediaPlayDataColumn parseDelimitedFrom(java.io.InputStream input)
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataColumn parseDelimitedFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static GetVodMediaPlayDataColumn parseFrom(
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -456,23 +456,23 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  @Override
+  @java.lang.Override
   public Builder newBuilderForType() { return newBuilder(); }
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(GetVodMediaPlayDataColumn prototype) {
+  public static Builder newBuilder(com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
-  @Override
+  @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @Override
+  @java.lang.Override
   protected Builder newBuilderForType(
-      BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -482,18 +482,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn)
-      GetVodMediaPlayDataColumnOrBuilder {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumnOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              GetVodMediaPlayDataColumn.class, Builder.class);
+              com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.class, com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.newBuilder()
@@ -502,7 +502,7 @@ private static final long serialVersionUID = 0L;
     }
 
     private Builder(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -511,7 +511,7 @@ private static final long serialVersionUID = 0L;
               .alwaysUseFieldBuilders) {
       }
     }
-    @Override
+    @java.lang.Override
     public Builder clear() {
       super.clear();
       name_ = "";
@@ -525,29 +525,29 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodQualityPlatform.internal_static_Byteplus_Vod_Models_Business_GetVodMediaPlayDataColumn_descriptor;
     }
 
-    @Override
-    public GetVodMediaPlayDataColumn getDefaultInstanceForType() {
-      return GetVodMediaPlayDataColumn.getDefaultInstance();
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getDefaultInstanceForType() {
+      return com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.getDefaultInstance();
     }
 
-    @Override
-    public GetVodMediaPlayDataColumn build() {
-      GetVodMediaPlayDataColumn result = buildPartial();
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn build() {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    @Override
-    public GetVodMediaPlayDataColumn buildPartial() {
-      GetVodMediaPlayDataColumn result = new GetVodMediaPlayDataColumn(this);
+    @java.lang.Override
+    public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn buildPartial() {
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn result = new com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn(this);
       result.name_ = name_;
       result.alias_ = alias_;
       result.type_ = type_;
@@ -556,50 +556,50 @@ private static final long serialVersionUID = 0L;
       return result;
     }
 
-    @Override
+    @java.lang.Override
     public Builder clone() {
       return super.clone();
     }
-    @Override
+    @java.lang.Override
     public Builder setField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.setField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder clearField(
         com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
-    @Override
+    @java.lang.Override
     public Builder clearOneof(
         com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
-    @Override
+    @java.lang.Override
     public Builder setRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        int index, Object value) {
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
-    @Override
+    @java.lang.Override
     public Builder addRepeatedField(
         com.google.protobuf.Descriptors.FieldDescriptor field,
-        Object value) {
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof GetVodMediaPlayDataColumn) {
-        return mergeFrom((GetVodMediaPlayDataColumn)other);
+      if (other instanceof com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn) {
+        return mergeFrom((com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(GetVodMediaPlayDataColumn other) {
-      if (other == GetVodMediaPlayDataColumn.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn other) {
+      if (other == com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
@@ -621,21 +621,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public Builder mergeFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      GetVodMediaPlayDataColumn parsedMessage = null;
+      com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (GetVodMediaPlayDataColumn) e.getUnfinishedMessage();
+        parsedMessage = (com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -645,7 +645,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object name_ = "";
+    private java.lang.Object name_ = "";
     /**
      * <pre>
      * 字段名
@@ -654,16 +654,16 @@ private static final long serialVersionUID = 0L;
      * <code>string Name = 1;</code>
      * @return The name.
      */
-    public String getName() {
-      Object ref = name_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -676,11 +676,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -697,7 +697,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setName(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -741,7 +741,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object alias_ = "";
+    private java.lang.Object alias_ = "";
     /**
      * <pre>
      * 别名
@@ -750,16 +750,16 @@ private static final long serialVersionUID = 0L;
      * <code>string Alias = 2;</code>
      * @return The alias.
      */
-    public String getAlias() {
-      Object ref = alias_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getAlias() {
+      java.lang.Object ref = alias_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         alias_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -772,11 +772,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAliasBytes() {
-      Object ref = alias_;
+      java.lang.Object ref = alias_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         alias_ = b;
         return b;
       } else {
@@ -793,7 +793,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAlias(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object type_ = "";
+    private java.lang.Object type_ = "";
     /**
      * <pre>
      * 类型
@@ -846,16 +846,16 @@ private static final long serialVersionUID = 0L;
      * <code>string Type = 3;</code>
      * @return The type.
      */
-    public String getType() {
-      Object ref = type_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getType() {
+      java.lang.Object ref = type_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         type_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -868,11 +868,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
-      Object ref = type_;
+      java.lang.Object ref = type_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         type_ = b;
         return b;
       } else {
@@ -889,7 +889,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setType(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -933,7 +933,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private Object valueAlias_ = "";
+    private java.lang.Object valueAlias_ = "";
     /**
      * <pre>
      * 维度值别名
@@ -942,16 +942,16 @@ private static final long serialVersionUID = 0L;
      * <code>string ValueAlias = 4;</code>
      * @return The valueAlias.
      */
-    public String getValueAlias() {
-      Object ref = valueAlias_;
-      if (!(ref instanceof String)) {
+    public java.lang.String getValueAlias() {
+      java.lang.Object ref = valueAlias_;
+      if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         valueAlias_ = s;
         return s;
       } else {
-        return (String) ref;
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -964,11 +964,11 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getValueAliasBytes() {
-      Object ref = valueAlias_;
+      java.lang.Object ref = valueAlias_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         valueAlias_ = b;
         return b;
       } else {
@@ -985,7 +985,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setValueAlias(
-        String value) {
+        java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -1028,13 +1028,13 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
-    @Override
+    @java.lang.Override
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
-    @Override
+    @java.lang.Override
     public final Builder mergeUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
@@ -1045,18 +1045,18 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:Byteplus.Vod.Models.Business.GetVodMediaPlayDataColumn)
-  private static final GetVodMediaPlayDataColumn DEFAULT_INSTANCE;
+  private static final com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new GetVodMediaPlayDataColumn();
+    DEFAULT_INSTANCE = new com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn();
   }
 
-  public static GetVodMediaPlayDataColumn getDefaultInstance() {
+  public static com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
   private static final com.google.protobuf.Parser<GetVodMediaPlayDataColumn>
       PARSER = new com.google.protobuf.AbstractParser<GetVodMediaPlayDataColumn>() {
-    @Override
+    @java.lang.Override
     public GetVodMediaPlayDataColumn parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1069,13 +1069,13 @@ private static final long serialVersionUID = 0L;
     return PARSER;
   }
 
-  @Override
+  @java.lang.Override
   public com.google.protobuf.Parser<GetVodMediaPlayDataColumn> getParserForType() {
     return PARSER;
   }
 
-  @Override
-  public GetVodMediaPlayDataColumn getDefaultInstanceForType() {
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.GetVodMediaPlayDataColumn getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

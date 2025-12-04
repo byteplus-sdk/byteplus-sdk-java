@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.response;
 
 public interface VodDeleteMediaTosFileResponseOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodDeleteMediaTosFileResponse)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Response.VodDeleteMediaTosFileResponse)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>

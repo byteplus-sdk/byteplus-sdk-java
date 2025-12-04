@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodListFileMetaInfosByFileNamesResultOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodListFileMetaInfosByFileNamesResult)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodListFileMetaInfosByFileNamesResult)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -14,8 +14,8 @@ public interface VodListFileMetaInfosByFileNamesResultOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileMetaInfo VodFileMetaInfos = 1;</code>
    */
-  java.util.List<com.byteplus.service.vod.model.business.VodFileMetaInfo>
-  getVodFileMetaInfosList();
+  java.util.List<com.byteplus.service.vod.model.business.VodFileMetaInfo> 
+      getVodFileMetaInfosList();
   /**
    * <pre>
    *码流基础信息
@@ -39,8 +39,8 @@ public interface VodListFileMetaInfosByFileNamesResultOrBuilder extends
    *
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileMetaInfo VodFileMetaInfos = 1;</code>
    */
-  java.util.List<? extends com.byteplus.service.vod.model.business.VodFileMetaInfoOrBuilder>
-  getVodFileMetaInfosOrBuilderList();
+  java.util.List<? extends com.byteplus.service.vod.model.business.VodFileMetaInfoOrBuilder> 
+      getVodFileMetaInfosOrBuilderList();
   /**
    * <pre>
    *码流基础信息
@@ -49,5 +49,5 @@ public interface VodListFileMetaInfosByFileNamesResultOrBuilder extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodFileMetaInfo VodFileMetaInfos = 1;</code>
    */
   com.byteplus.service.vod.model.business.VodFileMetaInfoOrBuilder getVodFileMetaInfosOrBuilder(
-          int index);
+      int index);
 }

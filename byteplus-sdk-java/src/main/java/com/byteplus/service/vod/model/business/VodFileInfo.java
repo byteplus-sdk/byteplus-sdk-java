@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodFileInfo}
  */
 public final class VodFileInfo extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodFileInfo)
-        VodFileInfoOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodFileInfo)
+    VodFileInfoOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodFileInfo.newBuilder() to construct.
   private VodFileInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -27,7 +27,7 @@ public final class VodFileInfo extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodFileInfo();
   }
 
@@ -37,15 +37,15 @@ public final class VodFileInfo extends
     return this.unknownFields;
   }
   private VodFileInfo(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -97,7 +97,7 @@ public final class VodFileInfo extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -108,23 +108,23 @@ public final class VodFileInfo extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodFileInfo_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodFileInfo_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.VodFileInfo.class, com.byteplus.service.vod.model.business.VodFileInfo.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.VodFileInfo.class, com.byteplus.service.vod.model.business.VodFileInfo.Builder.class);
   }
 
   public static final int FILENAME_FIELD_NUMBER = 1;
@@ -143,8 +143,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       fileName_ = s;
       return s;
@@ -160,12 +160,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFileNameBytes() {
+      getFileNameBytes() {
     java.lang.Object ref = fileName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       fileName_ = b;
       return b;
     } else {
@@ -189,8 +189,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       lastModifiedTime_ = s;
       return s;
@@ -206,12 +206,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getLastModifiedTimeBytes() {
+      getLastModifiedTimeBytes() {
     java.lang.Object ref = lastModifiedTime_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       lastModifiedTime_ = b;
       return b;
     } else {
@@ -250,8 +250,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       storageClass_ = s;
       return s;
@@ -267,12 +267,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getStorageClassBytes() {
+      getStorageClassBytes() {
     java.lang.Object ref = storageClass_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       storageClass_ = b;
       return b;
     } else {
@@ -296,8 +296,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       hashCrc64_ = s;
       return s;
@@ -313,12 +313,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getHashCrc64Bytes() {
+      getHashCrc64Bytes() {
     java.lang.Object ref = hashCrc64_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       hashCrc64_ = b;
       return b;
     } else {
@@ -342,8 +342,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       encodedFileName_ = s;
       return s;
@@ -359,12 +359,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getEncodedFileNameBytes() {
+      getEncodedFileNameBytes() {
     java.lang.Object ref = encodedFileName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       encodedFileName_ = b;
       return b;
     } else {
@@ -388,8 +388,8 @@ public final class VodFileInfo extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       downloadUrl_ = s;
       return s;
@@ -405,12 +405,12 @@ public final class VodFileInfo extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDownloadUrlBytes() {
+      getDownloadUrlBytes() {
     java.lang.Object ref = downloadUrl_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       downloadUrl_ = b;
       return b;
     } else {
@@ -431,7 +431,7 @@ public final class VodFileInfo extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fileName_);
     }
@@ -470,7 +470,7 @@ public final class VodFileInfo extends
     }
     if (size_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(3, size_);
+        .computeInt64Size(3, size_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(storageClass_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, storageClass_);
@@ -492,7 +492,7 @@ public final class VodFileInfo extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodFileInfo)) {
       return super.equals(obj);
@@ -500,19 +500,19 @@ public final class VodFileInfo extends
     com.byteplus.service.vod.model.business.VodFileInfo other = (com.byteplus.service.vod.model.business.VodFileInfo) obj;
 
     if (!getFileName()
-            .equals(other.getFileName())) return false;
+        .equals(other.getFileName())) return false;
     if (!getLastModifiedTime()
-            .equals(other.getLastModifiedTime())) return false;
+        .equals(other.getLastModifiedTime())) return false;
     if (getSize()
-            != other.getSize()) return false;
+        != other.getSize()) return false;
     if (!getStorageClass()
-            .equals(other.getStorageClass())) return false;
+        .equals(other.getStorageClass())) return false;
     if (!getHashCrc64()
-            .equals(other.getHashCrc64())) return false;
+        .equals(other.getHashCrc64())) return false;
     if (!getEncodedFileName()
-            .equals(other.getEncodedFileName())) return false;
+        .equals(other.getEncodedFileName())) return false;
     if (!getDownloadUrl()
-            .equals(other.getDownloadUrl())) return false;
+        .equals(other.getDownloadUrl())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -530,7 +530,7 @@ public final class VodFileInfo extends
     hash = (53 * hash) + getLastModifiedTime().hashCode();
     hash = (37 * hash) + SIZE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getSize());
+        getSize());
     hash = (37 * hash) + STORAGECLASS_FIELD_NUMBER;
     hash = (53 * hash) + getStorageClass().hashCode();
     hash = (37 * hash) + HASHCRC64_FIELD_NUMBER;
@@ -545,73 +545,73 @@ public final class VodFileInfo extends
   }
 
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodFileInfo parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -625,12 +625,12 @@ public final class VodFileInfo extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -638,20 +638,20 @@ public final class VodFileInfo extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodFileInfo}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodFileInfo)
-          com.byteplus.service.vod.model.business.VodFileInfoOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodFileInfo)
+      com.byteplus.service.vod.model.business.VodFileInfoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodFileInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodFileInfo_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.VodFileInfo.class, com.byteplus.service.vod.model.business.VodFileInfo.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.VodFileInfo.class, com.byteplus.service.vod.model.business.VodFileInfo.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodFileInfo.newBuilder()
@@ -660,7 +660,7 @@ public final class VodFileInfo extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -691,7 +691,7 @@ public final class VodFileInfo extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodMedia.internal_static_Byteplus_Vod_Models_Business_VodFileInfo_descriptor;
     }
 
@@ -729,30 +729,30 @@ public final class VodFileInfo extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -806,9 +806,9 @@ public final class VodFileInfo extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodFileInfo parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -836,7 +836,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = fileName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fileName_ = s;
         return s;
@@ -853,12 +853,12 @@ public final class VodFileInfo extends
      * @return The bytes for fileName.
      */
     public com.google.protobuf.ByteString
-    getFileNameBytes() {
+        getFileNameBytes() {
       java.lang.Object ref = fileName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         fileName_ = b;
         return b;
       } else {
@@ -875,11 +875,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       fileName_ = value;
       onChanged();
       return this;
@@ -893,7 +893,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearFileName() {
-
+      
       fileName_ = getDefaultInstance().getFileName();
       onChanged();
       return this;
@@ -908,12 +908,12 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setFileNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fileName_ = value;
       onChanged();
       return this;
@@ -932,7 +932,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = lastModifiedTime_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         lastModifiedTime_ = s;
         return s;
@@ -949,12 +949,12 @@ public final class VodFileInfo extends
      * @return The bytes for lastModifiedTime.
      */
     public com.google.protobuf.ByteString
-    getLastModifiedTimeBytes() {
+        getLastModifiedTimeBytes() {
       java.lang.Object ref = lastModifiedTime_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         lastModifiedTime_ = b;
         return b;
       } else {
@@ -971,11 +971,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setLastModifiedTime(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       lastModifiedTime_ = value;
       onChanged();
       return this;
@@ -989,7 +989,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearLastModifiedTime() {
-
+      
       lastModifiedTime_ = getDefaultInstance().getLastModifiedTime();
       onChanged();
       return this;
@@ -1004,12 +1004,12 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setLastModifiedTimeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       lastModifiedTime_ = value;
       onChanged();
       return this;
@@ -1038,7 +1038,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setSize(long value) {
-
+      
       size_ = value;
       onChanged();
       return this;
@@ -1052,7 +1052,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearSize() {
-
+      
       size_ = 0L;
       onChanged();
       return this;
@@ -1071,7 +1071,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = storageClass_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         storageClass_ = s;
         return s;
@@ -1088,12 +1088,12 @@ public final class VodFileInfo extends
      * @return The bytes for storageClass.
      */
     public com.google.protobuf.ByteString
-    getStorageClassBytes() {
+        getStorageClassBytes() {
       java.lang.Object ref = storageClass_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         storageClass_ = b;
         return b;
       } else {
@@ -1110,11 +1110,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setStorageClass(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       storageClass_ = value;
       onChanged();
       return this;
@@ -1128,7 +1128,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearStorageClass() {
-
+      
       storageClass_ = getDefaultInstance().getStorageClass();
       onChanged();
       return this;
@@ -1143,12 +1143,12 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setStorageClassBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       storageClass_ = value;
       onChanged();
       return this;
@@ -1167,7 +1167,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = hashCrc64_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         hashCrc64_ = s;
         return s;
@@ -1184,12 +1184,12 @@ public final class VodFileInfo extends
      * @return The bytes for hashCrc64.
      */
     public com.google.protobuf.ByteString
-    getHashCrc64Bytes() {
+        getHashCrc64Bytes() {
       java.lang.Object ref = hashCrc64_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         hashCrc64_ = b;
         return b;
       } else {
@@ -1206,11 +1206,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setHashCrc64(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       hashCrc64_ = value;
       onChanged();
       return this;
@@ -1224,7 +1224,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearHashCrc64() {
-
+      
       hashCrc64_ = getDefaultInstance().getHashCrc64();
       onChanged();
       return this;
@@ -1239,12 +1239,12 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setHashCrc64Bytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       hashCrc64_ = value;
       onChanged();
       return this;
@@ -1263,7 +1263,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = encodedFileName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         encodedFileName_ = s;
         return s;
@@ -1280,12 +1280,12 @@ public final class VodFileInfo extends
      * @return The bytes for encodedFileName.
      */
     public com.google.protobuf.ByteString
-    getEncodedFileNameBytes() {
+        getEncodedFileNameBytes() {
       java.lang.Object ref = encodedFileName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         encodedFileName_ = b;
         return b;
       } else {
@@ -1302,11 +1302,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setEncodedFileName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       encodedFileName_ = value;
       onChanged();
       return this;
@@ -1320,7 +1320,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearEncodedFileName() {
-
+      
       encodedFileName_ = getDefaultInstance().getEncodedFileName();
       onChanged();
       return this;
@@ -1335,12 +1335,12 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setEncodedFileNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       encodedFileName_ = value;
       onChanged();
       return this;
@@ -1359,7 +1359,7 @@ public final class VodFileInfo extends
       java.lang.Object ref = downloadUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         downloadUrl_ = s;
         return s;
@@ -1376,12 +1376,12 @@ public final class VodFileInfo extends
      * @return The bytes for downloadUrl.
      */
     public com.google.protobuf.ByteString
-    getDownloadUrlBytes() {
+        getDownloadUrlBytes() {
       java.lang.Object ref = downloadUrl_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         downloadUrl_ = b;
         return b;
       } else {
@@ -1398,11 +1398,11 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setDownloadUrl(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       downloadUrl_ = value;
       onChanged();
       return this;
@@ -1416,7 +1416,7 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder clearDownloadUrl() {
-
+      
       downloadUrl_ = getDefaultInstance().getDownloadUrl();
       onChanged();
       return this;
@@ -1431,25 +1431,25 @@ public final class VodFileInfo extends
      * @return This builder for chaining.
      */
     public Builder setDownloadUrlBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       downloadUrl_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1468,12 +1468,12 @@ public final class VodFileInfo extends
   }
 
   private static final com.google.protobuf.Parser<VodFileInfo>
-          PARSER = new com.google.protobuf.AbstractParser<VodFileInfo>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodFileInfo>() {
     @java.lang.Override
     public VodFileInfo parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodFileInfo(input, extensionRegistry);
     }
   };

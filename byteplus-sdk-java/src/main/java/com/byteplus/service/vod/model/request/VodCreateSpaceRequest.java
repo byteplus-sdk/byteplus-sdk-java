@@ -171,7 +171,7 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object projectName_;
   /**
    * <pre>
-   *    string ProjectName = 2 ;
+   * 项目名 
    * </pre>
    *
    * <code>string ProjectName = 2;</code>
@@ -192,7 +192,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *    string ProjectName = 2 ;
+   * 项目名 
    * </pre>
    *
    * <code>string ProjectName = 2;</code>
@@ -826,7 +826,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object projectName_ = "";
     /**
      * <pre>
-     *    string ProjectName = 2 ;
+     * 项目名 
      * </pre>
      *
      * <code>string ProjectName = 2;</code>
@@ -846,7 +846,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *    string ProjectName = 2 ;
+     * 项目名 
      * </pre>
      *
      * <code>string ProjectName = 2;</code>
@@ -867,7 +867,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *    string ProjectName = 2 ;
+     * 项目名 
      * </pre>
      *
      * <code>string ProjectName = 2;</code>
@@ -886,7 +886,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *    string ProjectName = 2 ;
+     * 项目名 
      * </pre>
      *
      * <code>string ProjectName = 2;</code>
@@ -900,7 +900,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *    string ProjectName = 2 ;
+     * 项目名 
      * </pre>
      *
      * <code>string ProjectName = 2;</code>

@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodListCdnPvDataRequest}
  */
 public final class VodListCdnPvDataRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
-        VodListCdnPvDataRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
+    VodListCdnPvDataRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodListCdnPvDataRequest.newBuilder() to construct.
   private VodListCdnPvDataRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -25,7 +25,7 @@ public final class VodListCdnPvDataRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodListCdnPvDataRequest();
   }
 
@@ -35,15 +35,15 @@ public final class VodListCdnPvDataRequest extends
     return this.unknownFields;
   }
   private VodListCdnPvDataRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -93,7 +93,7 @@ public final class VodListCdnPvDataRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -104,30 +104,30 @@ public final class VodListCdnPvDataRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnPvDataRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnPvDataRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.class, com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.class, com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.Builder.class);
   }
 
   public static final int DOMAINS_FIELD_NUMBER = 1;
   private volatile java.lang.Object domains_;
   /**
    * <pre>
-   * 域名，多个用逗号隔开
+   * 域名，多个用逗号隔开 
    * </pre>
    *
    * <code>string Domains = 1;</code>
@@ -139,8 +139,8 @@ public final class VodListCdnPvDataRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       domains_ = s;
       return s;
@@ -148,7 +148,7 @@ public final class VodListCdnPvDataRequest extends
   }
   /**
    * <pre>
-   * 域名，多个用逗号隔开
+   * 域名，多个用逗号隔开 
    * </pre>
    *
    * <code>string Domains = 1;</code>
@@ -156,12 +156,12 @@ public final class VodListCdnPvDataRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDomainsBytes() {
+      getDomainsBytes() {
     java.lang.Object ref = domains_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       domains_ = b;
       return b;
     } else {
@@ -173,7 +173,7 @@ public final class VodListCdnPvDataRequest extends
   private volatile java.lang.Object interval_;
   /**
    * <pre>
-   * 聚合度,可选：auto,5min,hour,day
+   * 聚合度,可选：auto,5min,hour,day 
    * </pre>
    *
    * <code>string Interval = 2;</code>
@@ -185,8 +185,8 @@ public final class VodListCdnPvDataRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       interval_ = s;
       return s;
@@ -194,7 +194,7 @@ public final class VodListCdnPvDataRequest extends
   }
   /**
    * <pre>
-   * 聚合度,可选：auto,5min,hour,day
+   * 聚合度,可选：auto,5min,hour,day 
    * </pre>
    *
    * <code>string Interval = 2;</code>
@@ -202,12 +202,12 @@ public final class VodListCdnPvDataRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getIntervalBytes() {
+      getIntervalBytes() {
     java.lang.Object ref = interval_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       interval_ = b;
       return b;
     } else {
@@ -219,7 +219,7 @@ public final class VodListCdnPvDataRequest extends
   private long startTimestamp_;
   /**
    * <pre>
-   * 查询范围起始时间
+   * 查询范围起始时间 
    * </pre>
    *
    * <code>int64 StartTimestamp = 3;</code>
@@ -234,7 +234,7 @@ public final class VodListCdnPvDataRequest extends
   private long endTimestamp_;
   /**
    * <pre>
-   * 查询范围截止时间
+   * 查询范围截止时间 
    * </pre>
    *
    * <code>int64 EndTimestamp = 4;</code>
@@ -249,7 +249,7 @@ public final class VodListCdnPvDataRequest extends
   private volatile java.lang.Object dataType_;
   /**
    * <pre>
-   * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+   * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
    * </pre>
    *
    * <code>string DataType = 5;</code>
@@ -261,8 +261,8 @@ public final class VodListCdnPvDataRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       dataType_ = s;
       return s;
@@ -270,7 +270,7 @@ public final class VodListCdnPvDataRequest extends
   }
   /**
    * <pre>
-   * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+   * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
    * </pre>
    *
    * <code>string DataType = 5;</code>
@@ -278,12 +278,12 @@ public final class VodListCdnPvDataRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDataTypeBytes() {
+      getDataTypeBytes() {
     java.lang.Object ref = dataType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       dataType_ = b;
       return b;
     } else {
@@ -310,7 +310,7 @@ public final class VodListCdnPvDataRequest extends
    *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
    *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
    *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
    * </pre>
    *
    * <code>string TimeZone = 7;</code>
@@ -322,8 +322,8 @@ public final class VodListCdnPvDataRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       timeZone_ = s;
       return s;
@@ -335,7 +335,7 @@ public final class VodListCdnPvDataRequest extends
    *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
    *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
    *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+   *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
    * </pre>
    *
    * <code>string TimeZone = 7;</code>
@@ -343,12 +343,12 @@ public final class VodListCdnPvDataRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getTimeZoneBytes() {
+      getTimeZoneBytes() {
     java.lang.Object ref = timeZone_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       timeZone_ = b;
       return b;
     } else {
@@ -369,7 +369,7 @@ public final class VodListCdnPvDataRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(domains_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, domains_);
     }
@@ -408,18 +408,18 @@ public final class VodListCdnPvDataRequest extends
     }
     if (startTimestamp_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(3, startTimestamp_);
+        .computeInt64Size(3, startTimestamp_);
     }
     if (endTimestamp_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt64Size(4, endTimestamp_);
+        .computeInt64Size(4, endTimestamp_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dataType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, dataType_);
     }
     if (needDetail_ != false) {
       size += com.google.protobuf.CodedOutputStream
-              .computeBoolSize(6, needDetail_);
+        .computeBoolSize(6, needDetail_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(timeZone_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, timeZone_);
@@ -432,7 +432,7 @@ public final class VodListCdnPvDataRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodListCdnPvDataRequest)) {
       return super.equals(obj);
@@ -440,19 +440,19 @@ public final class VodListCdnPvDataRequest extends
     com.byteplus.service.vod.model.request.VodListCdnPvDataRequest other = (com.byteplus.service.vod.model.request.VodListCdnPvDataRequest) obj;
 
     if (!getDomains()
-            .equals(other.getDomains())) return false;
+        .equals(other.getDomains())) return false;
     if (!getInterval()
-            .equals(other.getInterval())) return false;
+        .equals(other.getInterval())) return false;
     if (getStartTimestamp()
-            != other.getStartTimestamp()) return false;
+        != other.getStartTimestamp()) return false;
     if (getEndTimestamp()
-            != other.getEndTimestamp()) return false;
+        != other.getEndTimestamp()) return false;
     if (!getDataType()
-            .equals(other.getDataType())) return false;
+        .equals(other.getDataType())) return false;
     if (getNeedDetail()
-            != other.getNeedDetail()) return false;
+        != other.getNeedDetail()) return false;
     if (!getTimeZone()
-            .equals(other.getTimeZone())) return false;
+        .equals(other.getTimeZone())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -470,15 +470,15 @@ public final class VodListCdnPvDataRequest extends
     hash = (53 * hash) + getInterval().hashCode();
     hash = (37 * hash) + STARTTIMESTAMP_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getStartTimestamp());
+        getStartTimestamp());
     hash = (37 * hash) + ENDTIMESTAMP_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-            getEndTimestamp());
+        getEndTimestamp());
     hash = (37 * hash) + DATATYPE_FIELD_NUMBER;
     hash = (53 * hash) + getDataType().hashCode();
     hash = (37 * hash) + NEEDDETAIL_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-            getNeedDetail());
+        getNeedDetail());
     hash = (37 * hash) + TIMEZONE_FIELD_NUMBER;
     hash = (53 * hash) + getTimeZone().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -487,73 +487,73 @@ public final class VodListCdnPvDataRequest extends
   }
 
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -567,12 +567,12 @@ public final class VodListCdnPvDataRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -580,20 +580,20 @@ public final class VodListCdnPvDataRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodListCdnPvDataRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
-          com.byteplus.service.vod.model.request.VodListCdnPvDataRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListCdnPvDataRequest)
+      com.byteplus.service.vod.model.request.VodListCdnPvDataRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnPvDataRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnPvDataRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.class, com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.class, com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodListCdnPvDataRequest.newBuilder()
@@ -602,7 +602,7 @@ public final class VodListCdnPvDataRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -633,7 +633,7 @@ public final class VodListCdnPvDataRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnPvDataRequest_descriptor;
     }
 
@@ -671,30 +671,30 @@ public final class VodListCdnPvDataRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -746,9 +746,9 @@ public final class VodListCdnPvDataRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodListCdnPvDataRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -766,7 +766,7 @@ public final class VodListCdnPvDataRequest extends
     private java.lang.Object domains_ = "";
     /**
      * <pre>
-     * 域名，多个用逗号隔开
+     * 域名，多个用逗号隔开 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -776,7 +776,7 @@ public final class VodListCdnPvDataRequest extends
       java.lang.Object ref = domains_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         domains_ = s;
         return s;
@@ -786,19 +786,19 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 域名，多个用逗号隔开
+     * 域名，多个用逗号隔开 
      * </pre>
      *
      * <code>string Domains = 1;</code>
      * @return The bytes for domains.
      */
     public com.google.protobuf.ByteString
-    getDomainsBytes() {
+        getDomainsBytes() {
       java.lang.Object ref = domains_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         domains_ = b;
         return b;
       } else {
@@ -807,7 +807,7 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 域名，多个用逗号隔开
+     * 域名，多个用逗号隔开 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -815,32 +815,32 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setDomains(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       domains_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 域名，多个用逗号隔开
+     * 域名，多个用逗号隔开 
      * </pre>
      *
      * <code>string Domains = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearDomains() {
-
+      
       domains_ = getDefaultInstance().getDomains();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 域名，多个用逗号隔开
+     * 域名，多个用逗号隔开 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -848,12 +848,12 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setDomainsBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       domains_ = value;
       onChanged();
       return this;
@@ -862,7 +862,7 @@ public final class VodListCdnPvDataRequest extends
     private java.lang.Object interval_ = "";
     /**
      * <pre>
-     * 聚合度,可选：auto,5min,hour,day
+     * 聚合度,可选：auto,5min,hour,day 
      * </pre>
      *
      * <code>string Interval = 2;</code>
@@ -872,7 +872,7 @@ public final class VodListCdnPvDataRequest extends
       java.lang.Object ref = interval_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         interval_ = s;
         return s;
@@ -882,19 +882,19 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 聚合度,可选：auto,5min,hour,day
+     * 聚合度,可选：auto,5min,hour,day 
      * </pre>
      *
      * <code>string Interval = 2;</code>
      * @return The bytes for interval.
      */
     public com.google.protobuf.ByteString
-    getIntervalBytes() {
+        getIntervalBytes() {
       java.lang.Object ref = interval_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         interval_ = b;
         return b;
       } else {
@@ -903,7 +903,7 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 聚合度,可选：auto,5min,hour,day
+     * 聚合度,可选：auto,5min,hour,day 
      * </pre>
      *
      * <code>string Interval = 2;</code>
@@ -911,32 +911,32 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setInterval(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       interval_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 聚合度,可选：auto,5min,hour,day
+     * 聚合度,可选：auto,5min,hour,day 
      * </pre>
      *
      * <code>string Interval = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearInterval() {
-
+      
       interval_ = getDefaultInstance().getInterval();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 聚合度,可选：auto,5min,hour,day
+     * 聚合度,可选：auto,5min,hour,day 
      * </pre>
      *
      * <code>string Interval = 2;</code>
@@ -944,12 +944,12 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setIntervalBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       interval_ = value;
       onChanged();
       return this;
@@ -958,7 +958,7 @@ public final class VodListCdnPvDataRequest extends
     private long startTimestamp_ ;
     /**
      * <pre>
-     * 查询范围起始时间
+     * 查询范围起始时间 
      * </pre>
      *
      * <code>int64 StartTimestamp = 3;</code>
@@ -970,7 +970,7 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 查询范围起始时间
+     * 查询范围起始时间 
      * </pre>
      *
      * <code>int64 StartTimestamp = 3;</code>
@@ -978,21 +978,21 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setStartTimestamp(long value) {
-
+      
       startTimestamp_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询范围起始时间
+     * 查询范围起始时间 
      * </pre>
      *
      * <code>int64 StartTimestamp = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearStartTimestamp() {
-
+      
       startTimestamp_ = 0L;
       onChanged();
       return this;
@@ -1001,7 +1001,7 @@ public final class VodListCdnPvDataRequest extends
     private long endTimestamp_ ;
     /**
      * <pre>
-     * 查询范围截止时间
+     * 查询范围截止时间 
      * </pre>
      *
      * <code>int64 EndTimestamp = 4;</code>
@@ -1013,7 +1013,7 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 查询范围截止时间
+     * 查询范围截止时间 
      * </pre>
      *
      * <code>int64 EndTimestamp = 4;</code>
@@ -1021,21 +1021,21 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setEndTimestamp(long value) {
-
+      
       endTimestamp_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询范围截止时间
+     * 查询范围截止时间 
      * </pre>
      *
      * <code>int64 EndTimestamp = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearEndTimestamp() {
-
+      
       endTimestamp_ = 0L;
       onChanged();
       return this;
@@ -1044,7 +1044,7 @@ public final class VodListCdnPvDataRequest extends
     private java.lang.Object dataType_ = "";
     /**
      * <pre>
-     * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+     * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
      * </pre>
      *
      * <code>string DataType = 5;</code>
@@ -1054,7 +1054,7 @@ public final class VodListCdnPvDataRequest extends
       java.lang.Object ref = dataType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         dataType_ = s;
         return s;
@@ -1064,19 +1064,19 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+     * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
      * </pre>
      *
      * <code>string DataType = 5;</code>
      * @return The bytes for dataType.
      */
     public com.google.protobuf.ByteString
-    getDataTypeBytes() {
+        getDataTypeBytes() {
       java.lang.Object ref = dataType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         dataType_ = b;
         return b;
       } else {
@@ -1085,7 +1085,7 @@ public final class VodListCdnPvDataRequest extends
     }
     /**
      * <pre>
-     * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+     * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
      * </pre>
      *
      * <code>string DataType = 5;</code>
@@ -1093,32 +1093,32 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setDataType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       dataType_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+     * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
      * </pre>
      *
      * <code>string DataType = 5;</code>
      * @return This builder for chaining.
      */
     public Builder clearDataType() {
-
+      
       dataType_ = getDefaultInstance().getDataType();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 统计数据类别, 可选edge-边缘数据,origin-回源数据
+     * 统计数据类别, 可选edge-边缘数据,origin-回源数据 
      * </pre>
      *
      * <code>string DataType = 5;</code>
@@ -1126,12 +1126,12 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setDataTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       dataType_ = value;
       onChanged();
       return this;
@@ -1152,7 +1152,7 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setNeedDetail(boolean value) {
-
+      
       needDetail_ = value;
       onChanged();
       return this;
@@ -1162,7 +1162,7 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder clearNeedDetail() {
-
+      
       needDetail_ = false;
       onChanged();
       return this;
@@ -1175,7 +1175,7 @@ public final class VodListCdnPvDataRequest extends
      *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
      *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
      *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
      * </pre>
      *
      * <code>string TimeZone = 7;</code>
@@ -1185,7 +1185,7 @@ public final class VodListCdnPvDataRequest extends
       java.lang.Object ref = timeZone_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         timeZone_ = s;
         return s;
@@ -1199,19 +1199,19 @@ public final class VodListCdnPvDataRequest extends
      *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
      *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
      *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
      * </pre>
      *
      * <code>string TimeZone = 7;</code>
      * @return The bytes for timeZone.
      */
     public com.google.protobuf.ByteString
-    getTimeZoneBytes() {
+        getTimeZoneBytes() {
       java.lang.Object ref = timeZone_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         timeZone_ = b;
         return b;
       } else {
@@ -1224,7 +1224,7 @@ public final class VodListCdnPvDataRequest extends
      *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
      *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
      *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
      * </pre>
      *
      * <code>string TimeZone = 7;</code>
@@ -1232,11 +1232,11 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setTimeZone(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       timeZone_ = value;
       onChanged();
       return this;
@@ -1247,14 +1247,14 @@ public final class VodListCdnPvDataRequest extends
      *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
      *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
      *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
      * </pre>
      *
      * <code>string TimeZone = 7;</code>
      * @return This builder for chaining.
      */
     public Builder clearTimeZone() {
-
+      
       timeZone_ = getDefaultInstance().getTimeZone();
       onChanged();
       return this;
@@ -1265,7 +1265,7 @@ public final class VodListCdnPvDataRequest extends
      *"Etc/GMT-5", "Etc/GMT-6", "Etc/GMT-7", "Etc/GMT-8", "Etc/GMT-9",
      *"Etc/GMT-10", "Etc/GMT-11", "Etc/GMT-12", "Etc/GMT+1", "Etc/GMT+2",
      *"Etc/GMT+3", "Etc/GMT+4", "Etc/GMT+5", "Etc/GMT+6", "Etc/GMT+7",
-     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12"
+     *"Etc/GMT+8", "Etc/GMT+9", "Etc/GMT+10", "Etc/GMT+11", "Etc/GMT+12" 
      * </pre>
      *
      * <code>string TimeZone = 7;</code>
@@ -1273,25 +1273,25 @@ public final class VodListCdnPvDataRequest extends
      * @return This builder for chaining.
      */
     public Builder setTimeZoneBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       timeZone_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1310,12 +1310,12 @@ public final class VodListCdnPvDataRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodListCdnPvDataRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodListCdnPvDataRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodListCdnPvDataRequest>() {
     @java.lang.Override
     public VodListCdnPvDataRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodListCdnPvDataRequest(input, extensionRegistry);
     }
   };

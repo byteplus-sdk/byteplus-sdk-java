@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface MirrorSrcRuleOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcRule)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.MirrorSrcRule)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <code>.google.protobuf.StringValue Id = 1;</code>

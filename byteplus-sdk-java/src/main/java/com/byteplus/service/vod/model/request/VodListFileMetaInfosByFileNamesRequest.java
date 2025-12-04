@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest}
  */
 public final class VodListFileMetaInfosByFileNamesRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest)
-        VodListFileMetaInfosByFileNamesRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest)
+    VodListFileMetaInfosByFileNamesRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodListFileMetaInfosByFileNamesRequest.newBuilder() to construct.
   private VodListFileMetaInfosByFileNamesRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -24,7 +24,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodListFileMetaInfosByFileNamesRequest();
   }
 
@@ -34,15 +34,15 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     return this.unknownFields;
   }
   private VodListFileMetaInfosByFileNamesRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -71,7 +71,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -82,30 +82,30 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListFileMetaInfosByFileNamesRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListFileMetaInfosByFileNamesRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.class, com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.class, com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.Builder.class);
   }
 
   public static final int SPACENAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object spaceName_;
   /**
    * <pre>
-   * 必传 filename所属空间名
+   * 必传 filename所属空间名 
    * </pre>
    *
    * <code>string SpaceName = 1;</code>
@@ -117,8 +117,8 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       spaceName_ = s;
       return s;
@@ -126,7 +126,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   }
   /**
    * <pre>
-   * 必传 filename所属空间名
+   * 必传 filename所属空间名 
    * </pre>
    *
    * <code>string SpaceName = 1;</code>
@@ -134,12 +134,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getSpaceNameBytes() {
+      getSpaceNameBytes() {
     java.lang.Object ref = spaceName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       spaceName_ = b;
       return b;
     } else {
@@ -164,8 +164,8 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       fileNameEncodeds_ = s;
       return s;
@@ -182,12 +182,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getFileNameEncodedsBytes() {
+      getFileNameEncodedsBytes() {
     java.lang.Object ref = fileNameEncodeds_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       fileNameEncodeds_ = b;
       return b;
     } else {
@@ -211,8 +211,8 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       bucketName_ = s;
       return s;
@@ -228,12 +228,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getBucketNameBytes() {
+      getBucketNameBytes() {
     java.lang.Object ref = bucketName_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       bucketName_ = b;
       return b;
     } else {
@@ -254,7 +254,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(spaceName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, spaceName_);
     }
@@ -290,7 +290,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest)) {
       return super.equals(obj);
@@ -298,11 +298,11 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest other = (com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest) obj;
 
     if (!getSpaceName()
-            .equals(other.getSpaceName())) return false;
+        .equals(other.getSpaceName())) return false;
     if (!getFileNameEncodeds()
-            .equals(other.getFileNameEncodeds())) return false;
+        .equals(other.getFileNameEncodeds())) return false;
     if (!getBucketName()
-            .equals(other.getBucketName())) return false;
+        .equals(other.getBucketName())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -326,73 +326,73 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   }
 
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -406,12 +406,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -419,20 +419,20 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest)
-          com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListFileMetaInfosByFileNamesRequest)
+      com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListFileMetaInfosByFileNamesRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListFileMetaInfosByFileNamesRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.class, com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.class, com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest.newBuilder()
@@ -441,7 +441,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -464,7 +464,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListFileMetaInfosByFileNamesRequest_descriptor;
     }
 
@@ -498,30 +498,30 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -560,9 +560,9 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -580,7 +580,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     private java.lang.Object spaceName_ = "";
     /**
      * <pre>
-     * 必传 filename所属空间名
+     * 必传 filename所属空间名 
      * </pre>
      *
      * <code>string SpaceName = 1;</code>
@@ -590,7 +590,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
       java.lang.Object ref = spaceName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         spaceName_ = s;
         return s;
@@ -600,19 +600,19 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     }
     /**
      * <pre>
-     * 必传 filename所属空间名
+     * 必传 filename所属空间名 
      * </pre>
      *
      * <code>string SpaceName = 1;</code>
      * @return The bytes for spaceName.
      */
     public com.google.protobuf.ByteString
-    getSpaceNameBytes() {
+        getSpaceNameBytes() {
       java.lang.Object ref = spaceName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         spaceName_ = b;
         return b;
       } else {
@@ -621,7 +621,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
     }
     /**
      * <pre>
-     * 必传 filename所属空间名
+     * 必传 filename所属空间名 
      * </pre>
      *
      * <code>string SpaceName = 1;</code>
@@ -629,32 +629,32 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       spaceName_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 必传 filename所属空间名
+     * 必传 filename所属空间名 
      * </pre>
      *
      * <code>string SpaceName = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearSpaceName() {
-
+      
       spaceName_ = getDefaultInstance().getSpaceName();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 必传 filename所属空间名
+     * 必传 filename所属空间名 
      * </pre>
      *
      * <code>string SpaceName = 1;</code>
@@ -662,12 +662,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setSpaceNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       spaceName_ = value;
       onChanged();
       return this;
@@ -687,7 +687,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
       java.lang.Object ref = fileNameEncodeds_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fileNameEncodeds_ = s;
         return s;
@@ -705,12 +705,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return The bytes for fileNameEncodeds.
      */
     public com.google.protobuf.ByteString
-    getFileNameEncodedsBytes() {
+        getFileNameEncodedsBytes() {
       java.lang.Object ref = fileNameEncodeds_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         fileNameEncodeds_ = b;
         return b;
       } else {
@@ -728,11 +728,11 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setFileNameEncodeds(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       fileNameEncodeds_ = value;
       onChanged();
       return this;
@@ -747,7 +747,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder clearFileNameEncodeds() {
-
+      
       fileNameEncodeds_ = getDefaultInstance().getFileNameEncodeds();
       onChanged();
       return this;
@@ -763,12 +763,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setFileNameEncodedsBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       fileNameEncodeds_ = value;
       onChanged();
       return this;
@@ -787,7 +787,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
       java.lang.Object ref = bucketName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         bucketName_ = s;
         return s;
@@ -804,12 +804,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return The bytes for bucketName.
      */
     public com.google.protobuf.ByteString
-    getBucketNameBytes() {
+        getBucketNameBytes() {
       java.lang.Object ref = bucketName_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         bucketName_ = b;
         return b;
       } else {
@@ -826,11 +826,11 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setBucketName(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       bucketName_ = value;
       onChanged();
       return this;
@@ -844,7 +844,7 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder clearBucketName() {
-
+      
       bucketName_ = getDefaultInstance().getBucketName();
       onChanged();
       return this;
@@ -859,25 +859,25 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
      * @return This builder for chaining.
      */
     public Builder setBucketNameBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       bucketName_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -896,12 +896,12 @@ public final class VodListFileMetaInfosByFileNamesRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodListFileMetaInfosByFileNamesRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodListFileMetaInfosByFileNamesRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodListFileMetaInfosByFileNamesRequest>() {
     @java.lang.Override
     public VodListFileMetaInfosByFileNamesRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodListFileMetaInfosByFileNamesRequest(input, extensionRegistry);
     }
   };

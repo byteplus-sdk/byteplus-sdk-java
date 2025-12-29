@@ -77,6 +77,24 @@ public final class CreateRecordPresetV2BodyRecordPresetConfigHlsParamVODParam  {
     @com.alibaba.fastjson.annotation.JSONField(name = "ExactObject")
     private String exactObject;
 
+    /**
+     * <p>The VOD region. Valid values:</p>
+     *
+     * <p>- `ap-singapore-1`: Asia Pacific (Singapore).</p>
+     *
+     * <p>- `ap-southeast-1`: Asia Pacific (Johor).</p>
+     *
+     *
+     *
+     * <p>:::tip</p>
+     *
+     * <p>If `Enable` in `VODParam is set to`true`, this parameter is required.</p>
+     *
+     * <p>:::</p>
+     */
+    @com.alibaba.fastjson.annotation.JSONField(name = "VodRegion")
+    private String vodRegion;
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

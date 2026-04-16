@@ -744,21 +744,21 @@ public class VodServiceConfig {
                         }
                     }
             ));
-//            put(Const.ListCdnTopAccess, new ApiInfo(
-//                    new HashMap<String, Object>() {
-//                        {
-//                            put(com.byteplus.helper.Const.Method, "GET");
-//                            put(com.byteplus.helper.Const.Path, "/");
-//                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
-//                                {
-//                                    add(new BasicNameValuePair("Action", Const.ListCdnTopAccess));
-//                                    add(new BasicNameValuePair("Version", "2023-07-01"));
-//
-//                                }
-//                            });
-//                        }
-//                    }
-//            ));
+            put(Const.ListCdnTopAccess, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "GET");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.ListCdnTopAccess));
+                                    add(new BasicNameValuePair("Version", "2023-07-01"));
+
+                                }
+                            });
+                        }
+                    }
+            ));
             put(Const.DescribeVodDomainBandwidthData, new ApiInfo(
                     new HashMap<String, Object>() {
                         {

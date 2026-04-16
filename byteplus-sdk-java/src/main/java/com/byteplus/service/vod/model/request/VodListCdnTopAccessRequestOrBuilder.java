@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.request;
 
 public interface VodListCdnTopAccessRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
-    com.google.protobuf.MessageOrBuilder {
+        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
+        com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -18,18 +18,18 @@ public interface VodListCdnTopAccessRequestOrBuilder extends
   java.lang.String getDomains();
   /**
    * <pre>
-   * 域名（当前仅支持一个域名) 
+   * 域名（当前仅支持一个域名)
    * </pre>
    *
    * <code>string Domains = 1;</code>
    * @return The bytes for domains.
    */
   com.google.protobuf.ByteString
-      getDomainsBytes();
+  getDomainsBytes();
 
   /**
    * <pre>
-   * 查询起始时间戳，单位：Unix秒级时间戳 
+   * 查询起始时间戳，单位：Unix秒级时间戳
    * </pre>
    *
    * <code>int32 StartTimestamp = 2;</code>
@@ -39,7 +39,7 @@ public interface VodListCdnTopAccessRequestOrBuilder extends
 
   /**
    * <pre>
-   * 查询结束时间戳，单位：Unix秒级时间戳 
+   * 查询结束时间戳，单位：Unix秒级时间戳
    * </pre>
    *
    * <code>int32 EndTimestamp = 3;</code>
@@ -49,7 +49,7 @@ public interface VodListCdnTopAccessRequestOrBuilder extends
 
   /**
    * <pre>
-   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
+   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
    * </pre>
    *
    * <code>string SortType = 4;</code>
@@ -58,19 +58,19 @@ public interface VodListCdnTopAccessRequestOrBuilder extends
   java.lang.String getSortType();
   /**
    * <pre>
-   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
+   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
    * </pre>
    *
    * <code>string SortType = 4;</code>
    * @return The bytes for sortType.
    */
   com.google.protobuf.ByteString
-      getSortTypeBytes();
+  getSortTypeBytes();
 
   /**
    * <pre>
    * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-   * Referer 
+   * Referer
    * </pre>
    *
    * <code>string Item = 5;</code>
@@ -87,5 +87,5 @@ public interface VodListCdnTopAccessRequestOrBuilder extends
    * @return The bytes for item.
    */
   com.google.protobuf.ByteString
-      getItemBytes();
+  getItemBytes();
 }

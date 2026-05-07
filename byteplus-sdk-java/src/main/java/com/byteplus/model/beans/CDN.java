@@ -213,8 +213,14 @@ public class CDN {
         @JSONField(name = "Project")
         String Project;
 
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
         @JSONField(name = "Quic")
         Quic Quic;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
@@ -277,6 +283,17 @@ public class CDN {
 
         @JSONField(name = "ResponseMetadata")
         ResponseMetadata ResponseMetadata;
+
+        @JSONField(name = "Result")
+        AddCdnDomainResult Result;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class AddCdnDomainResult {
+
+        @JSONField(name = "ResourceIds")
+        List<String> ResourceIds;
     }
 
     @Data
@@ -820,8 +837,14 @@ public class CDN {
         @JSONField(name = "PageOptimization")
         PageOptimization PageOptimization;
 
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
         @JSONField(name = "Quic")
         Quic Quic;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
@@ -1373,6 +1396,9 @@ public class CDN {
         @JSONField(name = "Area")
         String Area;
 
+        @JSONField(name = "CacheShared")
+        Boolean CacheShared;
+
         @JSONField(name = "CreateTime")
         Long CreateTime;
 
@@ -1396,6 +1422,9 @@ public class CDN {
 
         @JSONField(name = "Remark")
         String Remark;
+
+        @JSONField(name = "RequestHeaderInstances")
+        List<PreloadHeader> RequestHeaderInstances;
 
         @JSONField(name = "Status")
         String Status;
@@ -1593,6 +1622,12 @@ public class CDN {
 
         @JSONField(name = "Project")
         String Project;
+
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
@@ -4235,6 +4270,12 @@ public class CDN {
         @JSONField(name = "Project")
         String Project;
 
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
+
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
 
@@ -4704,8 +4745,14 @@ public class CDN {
         @JSONField(name = "Project")
         String Project;
 
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
         @JSONField(name = "Quic")
         Quic Quic;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
@@ -6089,6 +6136,20 @@ public class CDN {
 
     @Data
     @Accessors(chain = true)
+    public static class OriginRangeV2 {
+
+        @JSONField(name = "RangeSize")
+        Long RangeSize;
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
+
+        @JSONField(name = "Unit")
+        String Unit;
+    }
+
+    @Data
+    @Accessors(chain = true)
     public static class OriginResponseHeader {
 
         @JSONField(name = "OriginResponseHeaderAction")
@@ -6257,6 +6318,14 @@ public class CDN {
 
         @JSONField(name = "TosAuthInformation")
         TosAuthInformation TosAuthInformation;
+    }
+
+    @Data
+    @Accessors(chain = true)
+    public static class ProxyProtocol {
+
+        @JSONField(name = "Switch")
+        Boolean Switch;
     }
 
     @Data
@@ -7153,11 +7222,17 @@ public class CDN {
     @Accessors(chain = true)
     public static class SubmitRefreshTaskRequest {
 
+        @JSONField(name = "CacheShared")
+        Boolean CacheShared;
+
         @JSONField(name = "Delete")
         Boolean Delete;
 
         @JSONField(name = "Prefix")
         Boolean Prefix;
+
+        @JSONField(name = "RequestHeaderInstances")
+        List<PreloadHeader> RequestHeaderInstances;
 
         @JSONField(name = "Type")
         String Type;
@@ -7693,8 +7768,14 @@ public class CDN {
         @JSONField(name = "PageOptimization")
         PageOptimization PageOptimization;
 
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
         @JSONField(name = "Quic")
         Quic Quic;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;
@@ -7917,6 +7998,12 @@ public class CDN {
 
         @JSONField(name = "PageOptimization")
         PageOptimization PageOptimization;
+
+        @JSONField(name = "ProxyProtocol")
+        ProxyProtocol ProxyProtocol;
+
+        @JSONField(name = "Range")
+        OriginRangeV2 Range;
 
         @JSONField(name = "RedirectionRewrite")
         RedirectionRewrite RedirectionRewrite;

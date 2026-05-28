@@ -159,6 +159,16 @@ public final class VodUpload {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Business_ApplyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestData_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestData_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestResult_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestResult_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -274,14 +284,18 @@ public final class VodUpload {
       "ess\030\001 \001(\0132+.Byteplus.Vod.Models.Business" +
       ".UploadAddress\022J\n\021FlushUploadResult\030\002 \001(" +
       "\0132/.Byteplus.Vod.Models.Business.FlushUp" +
-      "loadResult\022\020\n\010SDKParam\030\003 \001(\t*:\n\020StorageC" +
-      "lassType\022\013\n\007Default\020\000\022\014\n\010Standard\020\001\022\013\n\007A" +
-      "rchive\020\002B\331\001\n\'com.byteplus.service.vod.mo" +
-      "del.businessB\tVodUploadP\001ZGgithub.com/by" +
-      "teplus-sdk/byteplus-sdk-golang/service/v" +
-      "od/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\S" +
-      "ervice\\Vod\\Models\\Business\342\002\'Byteplus\\Se" +
-      "rvice\\Vod\\Models\\GPBMetadatab\006proto3"
+      "loadResult\022\020\n\010SDKParam\030\003 \001(\t\"3\n\032VodParse" +
+      "UploadManifestData\022\025\n\rMediaSegments\030\001 \003(" +
+      "\t\"f\n\034VodParseUploadManifestResult\022F\n\004Dat" +
+      "a\030\001 \001(\01328.Byteplus.Vod.Models.Business.V" +
+      "odParseUploadManifestData*:\n\020StorageClas" +
+      "sType\022\013\n\007Default\020\000\022\014\n\010Standard\020\001\022\013\n\007Arch" +
+      "ive\020\002B\331\001\n\'com.byteplus.service.vod.model" +
+      ".businessB\tVodUploadP\001ZGgithub.com/bytep" +
+      "lus-sdk/byteplus-sdk-golang/service/vod/" +
+      "models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\Serv" +
+      "ice\\Vod\\Models\\Business\342\002\'Byteplus\\Servi" +
+      "ce\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -462,6 +476,18 @@ public final class VodUpload {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_ApplyResponse_descriptor,
         new java.lang.String[] { "UploadAddress", "FlushUploadResult", "SDKParam", });
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestData_descriptor =
+      getDescriptor().getMessageTypes().get(29);
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestData_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestData_descriptor,
+        new java.lang.String[] { "MediaSegments", });
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestResult_descriptor =
+      getDescriptor().getMessageTypes().get(30);
+    internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodParseUploadManifestResult_descriptor,
+        new java.lang.String[] { "Data", });
     com.byteplus.service.vod.model.business.VodCommon.getDescriptor();
   }
 

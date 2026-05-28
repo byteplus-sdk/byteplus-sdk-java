@@ -35,6 +35,11 @@ public final class VodMedia {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Business_VodMediaInfo_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_VodMediaSmartInfo_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_VodMediaSmartInfo_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Byteplus_Vod_Models_Business_VodGetMediaInfosData_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -289,175 +294,179 @@ public final class VodMedia {
       "\n\016Classification\030\t \001(\0132/.Byteplus.Vod.Mo" +
       "dels.Business.VodClassification\022\027\n\017TosSt" +
       "orageClass\030\n \001(\t\022\027\n\017VodUploadSource\030\013 \001(" +
-      "\t\"\333\001\n\014VodMediaInfo\022B\n\tBasicInfo\030\001 \001(\0132/." +
+      "\t\"\237\002\n\014VodMediaInfo\022B\n\tBasicInfo\030\001 \001(\0132/." +
       "Byteplus.Vod.Models.Business.VodMediaBas" +
       "icInfo\022?\n\nSourceInfo\030\002 \001(\0132+.Byteplus.Vo" +
       "d.Models.Business.VodSourceInfo\022F\n\016Trans" +
       "codeInfos\030\003 \003(\0132..Byteplus.Vod.Models.Bu" +
-      "siness.VodTranscodeInfo\"o\n\024VodGetMediaIn" +
-      "fosData\022A\n\rMediaInfoList\030\001 \003(\0132*.Byteplu" +
-      "s.Vod.Models.Business.VodMediaInfo\022\024\n\014No" +
-      "tExistVids\030\002 \003(\t\"2\n\020VodStoreUriGroup\022\013\n\003" +
-      "Vid\030\001 \001(\t\022\021\n\tStoreUris\030\002 \003(\t\"s\n\023VodGetRe" +
-      "cPosterData\022F\n\016StoreUriGroups\030\001 \003(\0132..By" +
-      "teplus.Vod.Models.Business.VodStoreUriGr" +
-      "oup\022\024\n\014NotExistVids\030\002 \003(\t\"*\n\022VodDeleteMe" +
-      "diaData\022\024\n\014NotExistVids\030\001 \003(\t\"2\n\027VodDele" +
-      "teTranscodesData\022\027\n\017NotExistFileIds\030\001 \003(" +
-      "\t\"4\n\031VodDeleteMediaTosFileData\022\027\n\017Failed" +
-      "FileNames\030\001 \003(\t\"\241\001\n\023VodGetMediaListData\022" +
-      "\021\n\tSpaceName\030\001 \001(\t\022A\n\rMediaInfoList\030\002 \003(" +
-      "\0132*.Byteplus.Vod.Models.Business.VodMedi" +
-      "aInfo\022\022\n\nTotalCount\030\003 \001(\005\022\016\n\006Offset\030\004 \001(" +
-      "\005\022\020\n\010PageSize\030\005 \001(\005\"6\n\033VodUpdateSubtitle" +
-      "StatusData\022\027\n\017NotExistFileIds\030\001 \003(\t\"n\n\023V" +
-      "odFileSubtitleInfo\022\016\n\006FileId\030\001 \001(\t\022G\n\020Su" +
-      "btitleInfoList\030\002 \003(\0132-.Byteplus.Vod.Mode" +
-      "ls.Business.VodSubtitleInfo\"\311\001\n\032VodGetSu" +
-      "btitleInfoListData\022\013\n\003Vid\030\001 \001(\t\022O\n\024FileS" +
-      "ubtitleInfoList\030\002 \003(\01321.Byteplus.Vod.Mod" +
-      "els.Business.VodFileSubtitleInfo\022\027\n\017NotE" +
-      "xistFileIds\030\003 \003(\t\022\022\n\nTotalCount\030\004 \001(\005\022\016\n" +
-      "\006Offset\030\005 \001(\005\022\020\n\010PageSize\030\006 \001(\005\"q\n\024VodFr" +
-      "ameDataForAudit\022\020\n\010StoreUri\030\001 \001(\t\022\023\n\013Fra" +
-      "meNumber\030\002 \001(\005\022\023\n\013CutTimeMill\030\003 \001(\001\022\r\n\005W" +
-      "idth\030\004 \001(\005\022\016\n\006Height\030\005 \001(\005\"`\n\032VodGetFram" +
-      "esForAuditResult\022B\n\006Frames\030\001 \003(\01322.Bytep" +
-      "lus.Vod.Models.Business.VodFrameDataForA" +
-      "udit\"\237\001\n\032VodBetterFrameDataForAudit\022\020\n\010S" +
+      "siness.VodTranscodeInfo\022B\n\tSmartInfo\030\004 \001" +
+      "(\0132/.Byteplus.Vod.Models.Business.VodMed" +
+      "iaSmartInfo\"F\n\021VodMediaSmartInfo\022\021\n\tSpac" +
+      "eName\030\001 \001(\t\022\013\n\003Vid\030\002 \001(\t\022\021\n\tSmartTags\030\003 " +
+      "\003(\t\"o\n\024VodGetMediaInfosData\022A\n\rMediaInfo" +
+      "List\030\001 \003(\0132*.Byteplus.Vod.Models.Busines" +
+      "s.VodMediaInfo\022\024\n\014NotExistVids\030\002 \003(\t\"2\n\020" +
+      "VodStoreUriGroup\022\013\n\003Vid\030\001 \001(\t\022\021\n\tStoreUr" +
+      "is\030\002 \003(\t\"s\n\023VodGetRecPosterData\022F\n\016Store" +
+      "UriGroups\030\001 \003(\0132..Byteplus.Vod.Models.Bu" +
+      "siness.VodStoreUriGroup\022\024\n\014NotExistVids\030" +
+      "\002 \003(\t\"*\n\022VodDeleteMediaData\022\024\n\014NotExistV" +
+      "ids\030\001 \003(\t\"2\n\027VodDeleteTranscodesData\022\027\n\017" +
+      "NotExistFileIds\030\001 \003(\t\"4\n\031VodDeleteMediaT" +
+      "osFileData\022\027\n\017FailedFileNames\030\001 \003(\t\"\241\001\n\023" +
+      "VodGetMediaListData\022\021\n\tSpaceName\030\001 \001(\t\022A" +
+      "\n\rMediaInfoList\030\002 \003(\0132*.Byteplus.Vod.Mod" +
+      "els.Business.VodMediaInfo\022\022\n\nTotalCount\030" +
+      "\003 \001(\005\022\016\n\006Offset\030\004 \001(\005\022\020\n\010PageSize\030\005 \001(\005\"" +
+      "6\n\033VodUpdateSubtitleStatusData\022\027\n\017NotExi" +
+      "stFileIds\030\001 \003(\t\"n\n\023VodFileSubtitleInfo\022\016" +
+      "\n\006FileId\030\001 \001(\t\022G\n\020SubtitleInfoList\030\002 \003(\013" +
+      "2-.Byteplus.Vod.Models.Business.VodSubti" +
+      "tleInfo\"\311\001\n\032VodGetSubtitleInfoListData\022\013" +
+      "\n\003Vid\030\001 \001(\t\022O\n\024FileSubtitleInfoList\030\002 \003(" +
+      "\01321.Byteplus.Vod.Models.Business.VodFile" +
+      "SubtitleInfo\022\027\n\017NotExistFileIds\030\003 \003(\t\022\022\n" +
+      "\nTotalCount\030\004 \001(\005\022\016\n\006Offset\030\005 \001(\005\022\020\n\010Pag" +
+      "eSize\030\006 \001(\005\"q\n\024VodFrameDataForAudit\022\020\n\010S" +
       "toreUri\030\001 \001(\t\022\023\n\013FrameNumber\030\002 \001(\005\022\023\n\013Cu" +
       "tTimeMill\030\003 \001(\001\022\r\n\005Width\030\004 \001(\005\022\016\n\006Height" +
-      "\030\005 \001(\005\022\021\n\tCoverRate\030\006 \001(\001\022\023\n\013LBPHashCode" +
-      "\030\007 \003(\001\"l\n VodGetBetterFramesForAuditResu" +
-      "lt\022H\n\006Frames\030\001 \003(\01328.Byteplus.Vod.Models" +
-      ".Business.VodBetterFrameDataForAudit\"J\n\024" +
-      "VodAudioInfoForAudit\022\020\n\010StoreUri\030\001 \001(\t\022\020" +
-      "\n\010Duration\030\002 \001(\001\022\016\n\006Format\030\003 \001(\t\"f\n\035VodG" +
-      "etAudioInfoForAuditResult\022E\n\tAudioInfo\030\001" +
-      " \001(\01322.Byteplus.Vod.Models.Business.VodA" +
-      "udioInfoForAudit\"n\n\033VodASRUtteranceWordF" +
-      "orAudit\022\014\n\004Text\030\001 \001(\t\022\025\n\rStartTimeMill\030\002" +
-      " \001(\001\022\023\n\013EndTimeMill\030\003 \001(\001\022\025\n\rBlankDurati" +
-      "on\030\004 \001(\001\"\303\001\n\027VodASRUtteranceForAudit\022\014\n\004" +
-      "Text\030\001 \001(\t\022\025\n\rStartTimeMill\030\002 \001(\001\022\023\n\013End" +
-      "TimeMill\030\003 \001(\001\022H\n\005Words\030\004 \003(\01329.Byteplus" +
-      ".Vod.Models.Business.VodASRUtteranceWord" +
-      "ForAudit\022\020\n\010Language\030\005 \001(\t\022\022\n\nSpeechRate" +
-      "\030\006 \001(\001\">\n\034VodASRLanguageDetailForAudit\022\014" +
-      "\n\004Prob\030\001 \001(\001\022\020\n\010Language\030\002 \001(\t\"\370\001\n\022VodAS" +
-      "RInfoForAudit\022\014\n\004Text\030\001 \001(\t\022I\n\nUtterance" +
-      "s\030\003 \003(\01325.Byteplus.Vod.Models.Business.V" +
-      "odASRUtteranceForAudit\022\020\n\010Language\030\004 \001(\t" +
-      "\022S\n\017LanguageDetails\030\005 \003(\0132:.Byteplus.Vod" +
-      ".Models.Business.VodASRLanguageDetailFor" +
-      "Audit\022\022\n\nSpeechRate\030\006 \001(\001\022\016\n\006Volume\030\007 \001(" +
-      "\001\"p\n.VodGetAutomaticSpeechRecognitionFor" +
-      "AuditResult\022>\n\004Info\030\001 \001(\01320.Byteplus.Vod" +
-      ".Models.Business.VodASRInfoForAudit\"S\n\027V" +
-      "odAEDTimeRangeForAudit\022\025\n\rStartTimeMill\030" +
-      "\001 \001(\001\022\023\n\013EndTimeMill\030\002 \001(\001\022\014\n\004Prob\030\003 \001(\001" +
-      "\"\204\001\n\027VodAEDEventItemForAudit\022\r\n\005Event\030\001 " +
-      "\001(\t\022\017\n\007UttProb\030\002 \001(\001\022I\n\nTimeRanges\030\003 \003(\013" +
-      "25.Byteplus.Vod.Models.Business.VodAEDTi" +
-      "meRangeForAudit\"_\n\022VodAEDInfoForAudit\022I\n" +
-      "\nEventItems\030\001 \003(\01325.Byteplus.Vod.Models." +
-      "Business.VodAEDEventItemForAudit\"i\n\'VodG" +
-      "etAudioEventDetectionForAuditResult\022>\n\004I" +
-      "nfo\030\001 \001(\01320.Byteplus.Vod.Models.Business" +
-      ".VodAEDInfoForAudit\"<\n VodCreateVideoCla" +
-      "ssificationData\022\030\n\020ClassificationId\030\001 \001(" +
-      "\003\"\267\002\n\021VodClassification\022\021\n\tSpaceName\030\001 \001" +
-      "(\t\022\030\n\020ClassificationId\030\002 \001(\003\022\r\n\005Level\030\003 " +
-      "\001(\005\022\026\n\016Classification\030\004 \001(\t\022\036\n\026ParentCla" +
-      "ssificationId\030\005 \001(\003\022J\n\021SubClassification" +
-      "\030\006 \001(\0132/.Byteplus.Vod.Models.Business.Vo" +
-      "dClassification\022O\n\026SubClassificationTree" +
-      "s\030\007 \003(\0132/.Byteplus.Vod.Models.Business.V" +
-      "odClassification\022\021\n\tCreatedAt\030\010 \001(\t\"k\n\033V" +
-      "odVideoClassificationsData\022L\n\023Classifica" +
-      "tionTrees\030\001 \003(\0132/.Byteplus.Vod.Models.Bu" +
-      "siness.VodClassification\"[\n\013VodSnapshot\022" +
-      "\016\n\006Format\030\001 \001(\t\022\016\n\006Height\030\002 \001(\005\022\r\n\005Width" +
-      "\030\003 \001(\005\022\020\n\010StoreUri\030\004 \001(\t\022\013\n\003Url\030\005 \001(\t\"\263\001" +
-      "\n\021VodSpriteSnapshot\022\016\n\006Format\030\001 \001(\t\022\017\n\007I" +
-      "mgXLen\030\002 \001(\005\022\017\n\007ImgYLen\030\003 \001(\005\022\021\n\tCellWid" +
-      "th\030\004 \001(\005\022\022\n\nCellHeight\030\005 \001(\005\022\020\n\010Interval" +
-      "\030\006 \001(\002\022\022\n\nCaptureNum\030\007 \001(\005\022\021\n\tStoreUris\030" +
-      "\010 \003(\t\022\014\n\004Urls\030\t \003(\t\"\200\002\n\027VodSamplePosterS" +
-      "napshot\022\021\n\tStoreUris\030\001 \003(\t\022\016\n\006ImgNum\030\002 \001" +
-      "(\005\022\021\n\tCellWidth\030\003 \001(\005\022\022\n\nCellHeight\030\004 \001(" +
-      "\005\022\020\n\010Interval\030\005 \001(\002\022\016\n\006Format\030\006 \001(\t\022\020\n\010D" +
-      "uration\030\007 \001(\002\022\014\n\004Urls\030\010 \003(\t\022\030\n\020LargeSnap" +
-      "shotUri\030\t \001(\t\022 \n\030LargeSnapshotDownloadUr" +
-      "l\030\n \001(\t\022\035\n\025LargeSnapshotFillType\030\013 \001(\t\"\356" +
-      "\003\n\017VodSnapshotData\022\021\n\tSpaceName\030\001 \001(\t\022\013\n" +
-      "\003Vid\030\002 \001(\t\022B\n\017PosterSnapshots\030\003 \003(\0132).By" +
-      "teplus.Vod.Models.Business.VodSnapshot\022C" +
-      "\n\020DynpostSnapshots\030\004 \003(\0132).Byteplus.Vod." +
-      "Models.Business.VodSnapshot\022J\n\027AnimatedP" +
-      "osterSnapshots\030\005 \003(\0132).Byteplus.Vod.Mode" +
-      "ls.Business.VodSnapshot\022E\n\022AiDynpostSnap" +
-      "shots\030\006 \003(\0132).Byteplus.Vod.Models.Busine" +
-      "ss.VodSnapshot\022H\n\017SpriteSnapshots\030\007 \003(\0132" +
-      "/.Byteplus.Vod.Models.Business.VodSprite" +
-      "Snapshot\022U\n\026VSamplePosterSnapshots\030\010 \003(\013" +
-      "25.Byteplus.Vod.Models.Business.VodSampl" +
-      "ePosterSnapshot\"\254\001\n\022VodGetFileListData\022\023" +
-      "\n\013IsTruncated\030\001 \001(\010\022\026\n\016CommonPrefixes\030\002 " +
-      "\003(\t\022\017\n\007FileSum\030\003 \001(\003\022\023\n\013NextStarter\030\004 \001(" +
-      "\t\022C\n\016FileBasicInfos\030\005 \003(\0132+.Byteplus.Vod" +
-      ".Models.Business.FileBasicInfo\"Z\n\rFileBa" +
-      "sicInfo\022\020\n\010FileName\030\001 \001(\t\022\014\n\004Size\030\002 \001(\003\022" +
-      "\024\n\014StorageClass\030\003 \001(\t\022\023\n\013UpdatedTime\030\004 \001" +
-      "(\t\"\220\001\n\023VodGetFileInfosData\022<\n\tFileInfos\030" +
-      "\001 \003(\0132).Byteplus.Vod.Models.Business.Vod" +
-      "FileInfo\022\031\n\021NotExistFileNames\030\002 \003(\t\022 \n\030N" +
-      "otExistEncodedFileNames\030\003 \003(\t\"\236\001\n\013VodFil" +
-      "eInfo\022\020\n\010FileName\030\001 \001(\t\022\030\n\020LastModifiedT" +
-      "ime\030\002 \001(\t\022\014\n\004Size\030\003 \001(\003\022\024\n\014StorageClass\030" +
-      "\004 \001(\t\022\021\n\tHashCrc64\030\005 \001(\t\022\027\n\017EncodedFileN" +
-      "ame\030\006 \001(\t\022\023\n\013DownloadUrl\030\007 \001(\t\"6\n\036VodUpd" +
-      "ateMediaStorageClassData\022\024\n\014NotExistVids" +
-      "\030\001 \003(\t\"b\n\035VodSubmitBlockMediaTaskResult\022" +
-      "\024\n\014NotExistVids\030\001 \003(\t\022\023\n\013BlockedVids\030\002 \003" +
-      "(\t\022\026\n\016UnblockingVids\030\003 \003(\t\"d\n\037VodSubmitU" +
-      "nblockMediaTaskResult\022\024\n\014NotExistVids\030\001 " +
-      "\003(\t\022\025\n\rUnblockedVids\030\002 \003(\t\022\024\n\014BlockingVi" +
-      "ds\030\003 \003(\t\"\202\001\n\036VodQueryMediaBlockStatusRes" +
-      "ult\022\024\n\014NotExistVids\030\001 \003(\t\022J\n\022MediaBlockS" +
-      "tatuses\030\002 \003(\0132..Byteplus.Vod.Models.Busi" +
-      "ness.MediaBlockStatus\"/\n\020MediaBlockStatu" +
-      "s\022\013\n\003Vid\030\001 \001(\t\022\016\n\006Status\030\002 \001(\t\"l\n\024VodPla" +
-      "ylistVideoInfo\022\013\n\003Vid\030\001 \001(\t\022\r\n\005Title\030\002 \001" +
-      "(\t\022\020\n\010Duration\030\003 \001(\001\022\021\n\tPosterUrl\030\004 \001(\t\022" +
-      "\023\n\013VideoStatus\030\005 \001(\t\"\200\002\n\017VodPlaylistInfo" +
-      "\022\n\n\002Id\030\001 \001(\t\022\014\n\004Name\030\002 \001(\t\022\016\n\006Format\030\003 \001" +
-      "(\t\022\r\n\005Codec\030\004 \001(\t\022\022\n\nDefinition\030\005 \001(\t\022\021\n" +
-      "\tStartTime\030\006 \001(\t\022\017\n\007EndTime\030\007 \001(\t\022\016\n\006Cyc" +
-      "les\030\010 \001(\t\022F\n\nVideoInfos\030\t \003(\01322.Byteplus" +
-      ".Vod.Models.Business.VodPlaylistVideoInf" +
-      "o\022\021\n\tCreatedAt\030\n \001(\003\022\021\n\tUpdatedAt\030\013 \001(\003\"" +
-      "%\n\027VodCreatePlaylistResult\022\n\n\002Id\030\001 \001(\t\"3" +
-      "\n\017InvalidPlaylist\022\n\n\002Id\030\001 \001(\t\022\024\n\014ErrorMe" +
-      "ssage\030\002 \001(\t\"\261\001\n\025VodGetPlaylistsResult\022@\n" +
-      "\tPlaylists\030\001 \003(\0132-.Byteplus.Vod.Models.B" +
-      "usiness.VodPlaylistInfo\022G\n\020InvalidPlayli" +
-      "sts\030\002 \003(\0132-.Byteplus.Vod.Models.Business" +
-      ".InvalidPlaylist\022\r\n\005Total\030\003 \001(\005*\320\002\n VodF" +
-      "rameExtractingOptionForAudit\022-\n)Undefine" +
-      "dVodFrameExtractingOptionForAudit\020\000\022\'\n#F" +
-      "psVodFrameExtractingOptionForAudit\020\001\0222\n." +
-      "NumberOfFramesVodFrameExtractingOptionFo" +
-      "rAudit\020\002\022,\n(CutTimesVodFrameExtractingOp" +
-      "tionForAudit\020\003\022:\n6FpsLimitNumberOfFrames" +
-      "VodFrameExtractingOptionForAudit\020\004\0226\n2On" +
-      "lyFirstLastFrameVodFrameExtractingOption" +
-      "ForAudit\020\005B\330\001\n\'com.byteplus.service.vod." +
-      "model.businessB\010VodMediaP\001ZGgithub.com/b" +
-      "yteplus-sdk/byteplus-sdk-golang/service/" +
-      "vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\" +
-      "Service\\Vod\\Models\\Business\342\002\'Byteplus\\S" +
-      "ervice\\Vod\\Models\\GPBMetadatab\006proto3"
+      "\030\005 \001(\005\"`\n\032VodGetFramesForAuditResult\022B\n\006" +
+      "Frames\030\001 \003(\01322.Byteplus.Vod.Models.Busin" +
+      "ess.VodFrameDataForAudit\"\237\001\n\032VodBetterFr" +
+      "ameDataForAudit\022\020\n\010StoreUri\030\001 \001(\t\022\023\n\013Fra" +
+      "meNumber\030\002 \001(\005\022\023\n\013CutTimeMill\030\003 \001(\001\022\r\n\005W" +
+      "idth\030\004 \001(\005\022\016\n\006Height\030\005 \001(\005\022\021\n\tCoverRate\030" +
+      "\006 \001(\001\022\023\n\013LBPHashCode\030\007 \003(\001\"l\n VodGetBett" +
+      "erFramesForAuditResult\022H\n\006Frames\030\001 \003(\01328" +
+      ".Byteplus.Vod.Models.Business.VodBetterF" +
+      "rameDataForAudit\"J\n\024VodAudioInfoForAudit" +
+      "\022\020\n\010StoreUri\030\001 \001(\t\022\020\n\010Duration\030\002 \001(\001\022\016\n\006" +
+      "Format\030\003 \001(\t\"f\n\035VodGetAudioInfoForAuditR" +
+      "esult\022E\n\tAudioInfo\030\001 \001(\01322.Byteplus.Vod." +
+      "Models.Business.VodAudioInfoForAudit\"n\n\033" +
+      "VodASRUtteranceWordForAudit\022\014\n\004Text\030\001 \001(" +
+      "\t\022\025\n\rStartTimeMill\030\002 \001(\001\022\023\n\013EndTimeMill\030" +
+      "\003 \001(\001\022\025\n\rBlankDuration\030\004 \001(\001\"\303\001\n\027VodASRU" +
+      "tteranceForAudit\022\014\n\004Text\030\001 \001(\t\022\025\n\rStartT" +
+      "imeMill\030\002 \001(\001\022\023\n\013EndTimeMill\030\003 \001(\001\022H\n\005Wo" +
+      "rds\030\004 \003(\01329.Byteplus.Vod.Models.Business" +
+      ".VodASRUtteranceWordForAudit\022\020\n\010Language" +
+      "\030\005 \001(\t\022\022\n\nSpeechRate\030\006 \001(\001\">\n\034VodASRLang" +
+      "uageDetailForAudit\022\014\n\004Prob\030\001 \001(\001\022\020\n\010Lang" +
+      "uage\030\002 \001(\t\"\370\001\n\022VodASRInfoForAudit\022\014\n\004Tex" +
+      "t\030\001 \001(\t\022I\n\nUtterances\030\003 \003(\01325.Byteplus.V" +
+      "od.Models.Business.VodASRUtteranceForAud" +
+      "it\022\020\n\010Language\030\004 \001(\t\022S\n\017LanguageDetails\030" +
+      "\005 \003(\0132:.Byteplus.Vod.Models.Business.Vod" +
+      "ASRLanguageDetailForAudit\022\022\n\nSpeechRate\030" +
+      "\006 \001(\001\022\016\n\006Volume\030\007 \001(\001\"p\n.VodGetAutomatic" +
+      "SpeechRecognitionForAuditResult\022>\n\004Info\030" +
+      "\001 \001(\01320.Byteplus.Vod.Models.Business.Vod" +
+      "ASRInfoForAudit\"S\n\027VodAEDTimeRangeForAud" +
+      "it\022\025\n\rStartTimeMill\030\001 \001(\001\022\023\n\013EndTimeMill" +
+      "\030\002 \001(\001\022\014\n\004Prob\030\003 \001(\001\"\204\001\n\027VodAEDEventItem" +
+      "ForAudit\022\r\n\005Event\030\001 \001(\t\022\017\n\007UttProb\030\002 \001(\001" +
+      "\022I\n\nTimeRanges\030\003 \003(\01325.Byteplus.Vod.Mode" +
+      "ls.Business.VodAEDTimeRangeForAudit\"_\n\022V" +
+      "odAEDInfoForAudit\022I\n\nEventItems\030\001 \003(\01325." +
+      "Byteplus.Vod.Models.Business.VodAEDEvent" +
+      "ItemForAudit\"i\n\'VodGetAudioEventDetectio" +
+      "nForAuditResult\022>\n\004Info\030\001 \001(\01320.Byteplus" +
+      ".Vod.Models.Business.VodAEDInfoForAudit\"" +
+      "<\n VodCreateVideoClassificationData\022\030\n\020C" +
+      "lassificationId\030\001 \001(\003\"\267\002\n\021VodClassificat" +
+      "ion\022\021\n\tSpaceName\030\001 \001(\t\022\030\n\020Classification" +
+      "Id\030\002 \001(\003\022\r\n\005Level\030\003 \001(\005\022\026\n\016Classificatio" +
+      "n\030\004 \001(\t\022\036\n\026ParentClassificationId\030\005 \001(\003\022" +
+      "J\n\021SubClassification\030\006 \001(\0132/.Byteplus.Vo" +
+      "d.Models.Business.VodClassification\022O\n\026S" +
+      "ubClassificationTrees\030\007 \003(\0132/.Byteplus.V" +
+      "od.Models.Business.VodClassification\022\021\n\t" +
+      "CreatedAt\030\010 \001(\t\"k\n\033VodVideoClassificatio" +
+      "nsData\022L\n\023ClassificationTrees\030\001 \003(\0132/.By" +
+      "teplus.Vod.Models.Business.VodClassifica" +
+      "tion\"[\n\013VodSnapshot\022\016\n\006Format\030\001 \001(\t\022\016\n\006H" +
+      "eight\030\002 \001(\005\022\r\n\005Width\030\003 \001(\005\022\020\n\010StoreUri\030\004" +
+      " \001(\t\022\013\n\003Url\030\005 \001(\t\"\263\001\n\021VodSpriteSnapshot\022" +
+      "\016\n\006Format\030\001 \001(\t\022\017\n\007ImgXLen\030\002 \001(\005\022\017\n\007ImgY" +
+      "Len\030\003 \001(\005\022\021\n\tCellWidth\030\004 \001(\005\022\022\n\nCellHeig" +
+      "ht\030\005 \001(\005\022\020\n\010Interval\030\006 \001(\002\022\022\n\nCaptureNum" +
+      "\030\007 \001(\005\022\021\n\tStoreUris\030\010 \003(\t\022\014\n\004Urls\030\t \003(\t\"" +
+      "\200\002\n\027VodSamplePosterSnapshot\022\021\n\tStoreUris" +
+      "\030\001 \003(\t\022\016\n\006ImgNum\030\002 \001(\005\022\021\n\tCellWidth\030\003 \001(" +
+      "\005\022\022\n\nCellHeight\030\004 \001(\005\022\020\n\010Interval\030\005 \001(\002\022" +
+      "\016\n\006Format\030\006 \001(\t\022\020\n\010Duration\030\007 \001(\002\022\014\n\004Url" +
+      "s\030\010 \003(\t\022\030\n\020LargeSnapshotUri\030\t \001(\t\022 \n\030Lar" +
+      "geSnapshotDownloadUrl\030\n \001(\t\022\035\n\025LargeSnap" +
+      "shotFillType\030\013 \001(\t\"\356\003\n\017VodSnapshotData\022\021" +
+      "\n\tSpaceName\030\001 \001(\t\022\013\n\003Vid\030\002 \001(\t\022B\n\017Poster" +
+      "Snapshots\030\003 \003(\0132).Byteplus.Vod.Models.Bu" +
+      "siness.VodSnapshot\022C\n\020DynpostSnapshots\030\004" +
+      " \003(\0132).Byteplus.Vod.Models.Business.VodS" +
+      "napshot\022J\n\027AnimatedPosterSnapshots\030\005 \003(\013" +
+      "2).Byteplus.Vod.Models.Business.VodSnaps" +
+      "hot\022E\n\022AiDynpostSnapshots\030\006 \003(\0132).Bytepl" +
+      "us.Vod.Models.Business.VodSnapshot\022H\n\017Sp" +
+      "riteSnapshots\030\007 \003(\0132/.Byteplus.Vod.Model" +
+      "s.Business.VodSpriteSnapshot\022U\n\026VSampleP" +
+      "osterSnapshots\030\010 \003(\01325.Byteplus.Vod.Mode" +
+      "ls.Business.VodSamplePosterSnapshot\"\254\001\n\022" +
+      "VodGetFileListData\022\023\n\013IsTruncated\030\001 \001(\010\022" +
+      "\026\n\016CommonPrefixes\030\002 \003(\t\022\017\n\007FileSum\030\003 \001(\003" +
+      "\022\023\n\013NextStarter\030\004 \001(\t\022C\n\016FileBasicInfos\030" +
+      "\005 \003(\0132+.Byteplus.Vod.Models.Business.Fil" +
+      "eBasicInfo\"Z\n\rFileBasicInfo\022\020\n\010FileName\030" +
+      "\001 \001(\t\022\014\n\004Size\030\002 \001(\003\022\024\n\014StorageClass\030\003 \001(" +
+      "\t\022\023\n\013UpdatedTime\030\004 \001(\t\"\220\001\n\023VodGetFileInf" +
+      "osData\022<\n\tFileInfos\030\001 \003(\0132).Byteplus.Vod" +
+      ".Models.Business.VodFileInfo\022\031\n\021NotExist" +
+      "FileNames\030\002 \003(\t\022 \n\030NotExistEncodedFileNa" +
+      "mes\030\003 \003(\t\"\236\001\n\013VodFileInfo\022\020\n\010FileName\030\001 " +
+      "\001(\t\022\030\n\020LastModifiedTime\030\002 \001(\t\022\014\n\004Size\030\003 " +
+      "\001(\003\022\024\n\014StorageClass\030\004 \001(\t\022\021\n\tHashCrc64\030\005" +
+      " \001(\t\022\027\n\017EncodedFileName\030\006 \001(\t\022\023\n\013Downloa" +
+      "dUrl\030\007 \001(\t\"6\n\036VodUpdateMediaStorageClass" +
+      "Data\022\024\n\014NotExistVids\030\001 \003(\t\"b\n\035VodSubmitB" +
+      "lockMediaTaskResult\022\024\n\014NotExistVids\030\001 \003(" +
+      "\t\022\023\n\013BlockedVids\030\002 \003(\t\022\026\n\016UnblockingVids" +
+      "\030\003 \003(\t\"d\n\037VodSubmitUnblockMediaTaskResul" +
+      "t\022\024\n\014NotExistVids\030\001 \003(\t\022\025\n\rUnblockedVids" +
+      "\030\002 \003(\t\022\024\n\014BlockingVids\030\003 \003(\t\"\202\001\n\036VodQuer" +
+      "yMediaBlockStatusResult\022\024\n\014NotExistVids\030" +
+      "\001 \003(\t\022J\n\022MediaBlockStatuses\030\002 \003(\0132..Byte" +
+      "plus.Vod.Models.Business.MediaBlockStatu" +
+      "s\"/\n\020MediaBlockStatus\022\013\n\003Vid\030\001 \001(\t\022\016\n\006St" +
+      "atus\030\002 \001(\t\"l\n\024VodPlaylistVideoInfo\022\013\n\003Vi" +
+      "d\030\001 \001(\t\022\r\n\005Title\030\002 \001(\t\022\020\n\010Duration\030\003 \001(\001" +
+      "\022\021\n\tPosterUrl\030\004 \001(\t\022\023\n\013VideoStatus\030\005 \001(\t" +
+      "\"\200\002\n\017VodPlaylistInfo\022\n\n\002Id\030\001 \001(\t\022\014\n\004Name" +
+      "\030\002 \001(\t\022\016\n\006Format\030\003 \001(\t\022\r\n\005Codec\030\004 \001(\t\022\022\n" +
+      "\nDefinition\030\005 \001(\t\022\021\n\tStartTime\030\006 \001(\t\022\017\n\007" +
+      "EndTime\030\007 \001(\t\022\016\n\006Cycles\030\010 \001(\t\022F\n\nVideoIn" +
+      "fos\030\t \003(\01322.Byteplus.Vod.Models.Business" +
+      ".VodPlaylistVideoInfo\022\021\n\tCreatedAt\030\n \001(\003" +
+      "\022\021\n\tUpdatedAt\030\013 \001(\003\"%\n\027VodCreatePlaylist" +
+      "Result\022\n\n\002Id\030\001 \001(\t\"3\n\017InvalidPlaylist\022\n\n" +
+      "\002Id\030\001 \001(\t\022\024\n\014ErrorMessage\030\002 \001(\t\"\261\001\n\025VodG" +
+      "etPlaylistsResult\022@\n\tPlaylists\030\001 \003(\0132-.B" +
+      "yteplus.Vod.Models.Business.VodPlaylistI" +
+      "nfo\022G\n\020InvalidPlaylists\030\002 \003(\0132-.Byteplus" +
+      ".Vod.Models.Business.InvalidPlaylist\022\r\n\005" +
+      "Total\030\003 \001(\005*\320\002\n VodFrameExtractingOption" +
+      "ForAudit\022-\n)UndefinedVodFrameExtractingO" +
+      "ptionForAudit\020\000\022\'\n#FpsVodFrameExtracting" +
+      "OptionForAudit\020\001\0222\n.NumberOfFramesVodFra" +
+      "meExtractingOptionForAudit\020\002\022,\n(CutTimes" +
+      "VodFrameExtractingOptionForAudit\020\003\022:\n6Fp" +
+      "sLimitNumberOfFramesVodFrameExtractingOp" +
+      "tionForAudit\020\004\0226\n2OnlyFirstLastFrameVodF" +
+      "rameExtractingOptionForAudit\020\005B\330\001\n\'com.b" +
+      "yteplus.service.vod.model.businessB\010VodM" +
+      "ediaP\001ZGgithub.com/byteplus-sdk/byteplus" +
+      "-sdk-golang/service/vod/models/business\240" +
+      "\001\001\330\001\001\302\002\000\312\002$Byteplus\\Service\\Vod\\Models\\B" +
+      "usiness\342\002\'Byteplus\\Service\\Vod\\Models\\GP" +
+      "BMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -487,279 +496,285 @@ public final class VodMedia {
     internal_static_Byteplus_Vod_Models_Business_VodMediaInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodMediaInfo_descriptor,
-        new java.lang.String[] { "BasicInfo", "SourceInfo", "TranscodeInfos", });
-    internal_static_Byteplus_Vod_Models_Business_VodGetMediaInfosData_descriptor =
+        new java.lang.String[] { "BasicInfo", "SourceInfo", "TranscodeInfos", "SmartInfo", });
+    internal_static_Byteplus_Vod_Models_Business_VodMediaSmartInfo_descriptor =
       getDescriptor().getMessageTypes().get(4);
+    internal_static_Byteplus_Vod_Models_Business_VodMediaSmartInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_VodMediaSmartInfo_descriptor,
+        new java.lang.String[] { "SpaceName", "Vid", "SmartTags", });
+    internal_static_Byteplus_Vod_Models_Business_VodGetMediaInfosData_descriptor =
+      getDescriptor().getMessageTypes().get(5);
     internal_static_Byteplus_Vod_Models_Business_VodGetMediaInfosData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetMediaInfosData_descriptor,
         new java.lang.String[] { "MediaInfoList", "NotExistVids", });
     internal_static_Byteplus_Vod_Models_Business_VodStoreUriGroup_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_Byteplus_Vod_Models_Business_VodStoreUriGroup_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodStoreUriGroup_descriptor,
         new java.lang.String[] { "Vid", "StoreUris", });
     internal_static_Byteplus_Vod_Models_Business_VodGetRecPosterData_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_Byteplus_Vod_Models_Business_VodGetRecPosterData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetRecPosterData_descriptor,
         new java.lang.String[] { "StoreUriGroups", "NotExistVids", });
     internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaData_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaData_descriptor,
         new java.lang.String[] { "NotExistVids", });
     internal_static_Byteplus_Vod_Models_Business_VodDeleteTranscodesData_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_Byteplus_Vod_Models_Business_VodDeleteTranscodesData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDeleteTranscodesData_descriptor,
         new java.lang.String[] { "NotExistFileIds", });
     internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaTosFileData_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaTosFileData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodDeleteMediaTosFileData_descriptor,
         new java.lang.String[] { "FailedFileNames", });
     internal_static_Byteplus_Vod_Models_Business_VodGetMediaListData_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_Byteplus_Vod_Models_Business_VodGetMediaListData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetMediaListData_descriptor,
         new java.lang.String[] { "SpaceName", "MediaInfoList", "TotalCount", "Offset", "PageSize", });
     internal_static_Byteplus_Vod_Models_Business_VodUpdateSubtitleStatusData_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_Byteplus_Vod_Models_Business_VodUpdateSubtitleStatusData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodUpdateSubtitleStatusData_descriptor,
         new java.lang.String[] { "NotExistFileIds", });
     internal_static_Byteplus_Vod_Models_Business_VodFileSubtitleInfo_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_Byteplus_Vod_Models_Business_VodFileSubtitleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodFileSubtitleInfo_descriptor,
         new java.lang.String[] { "FileId", "SubtitleInfoList", });
     internal_static_Byteplus_Vod_Models_Business_VodGetSubtitleInfoListData_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_Byteplus_Vod_Models_Business_VodGetSubtitleInfoListData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetSubtitleInfoListData_descriptor,
         new java.lang.String[] { "Vid", "FileSubtitleInfoList", "NotExistFileIds", "TotalCount", "Offset", "PageSize", });
     internal_static_Byteplus_Vod_Models_Business_VodFrameDataForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_Byteplus_Vod_Models_Business_VodFrameDataForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodFrameDataForAudit_descriptor,
         new java.lang.String[] { "StoreUri", "FrameNumber", "CutTimeMill", "Width", "Height", });
     internal_static_Byteplus_Vod_Models_Business_VodGetFramesForAuditResult_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_Byteplus_Vod_Models_Business_VodGetFramesForAuditResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetFramesForAuditResult_descriptor,
         new java.lang.String[] { "Frames", });
     internal_static_Byteplus_Vod_Models_Business_VodBetterFrameDataForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_Byteplus_Vod_Models_Business_VodBetterFrameDataForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodBetterFrameDataForAudit_descriptor,
         new java.lang.String[] { "StoreUri", "FrameNumber", "CutTimeMill", "Width", "Height", "CoverRate", "LBPHashCode", });
     internal_static_Byteplus_Vod_Models_Business_VodGetBetterFramesForAuditResult_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_Byteplus_Vod_Models_Business_VodGetBetterFramesForAuditResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetBetterFramesForAuditResult_descriptor,
         new java.lang.String[] { "Frames", });
     internal_static_Byteplus_Vod_Models_Business_VodAudioInfoForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_Byteplus_Vod_Models_Business_VodAudioInfoForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodAudioInfoForAudit_descriptor,
         new java.lang.String[] { "StoreUri", "Duration", "Format", });
     internal_static_Byteplus_Vod_Models_Business_VodGetAudioInfoForAuditResult_descriptor =
-      getDescriptor().getMessageTypes().get(19);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_Byteplus_Vod_Models_Business_VodGetAudioInfoForAuditResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetAudioInfoForAuditResult_descriptor,
         new java.lang.String[] { "AudioInfo", });
     internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceWordForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceWordForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceWordForAudit_descriptor,
         new java.lang.String[] { "Text", "StartTimeMill", "EndTimeMill", "BlankDuration", });
     internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(21);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodASRUtteranceForAudit_descriptor,
         new java.lang.String[] { "Text", "StartTimeMill", "EndTimeMill", "Words", "Language", "SpeechRate", });
     internal_static_Byteplus_Vod_Models_Business_VodASRLanguageDetailForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_Byteplus_Vod_Models_Business_VodASRLanguageDetailForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodASRLanguageDetailForAudit_descriptor,
         new java.lang.String[] { "Prob", "Language", });
     internal_static_Byteplus_Vod_Models_Business_VodASRInfoForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_Byteplus_Vod_Models_Business_VodASRInfoForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodASRInfoForAudit_descriptor,
         new java.lang.String[] { "Text", "Utterances", "Language", "LanguageDetails", "SpeechRate", "Volume", });
     internal_static_Byteplus_Vod_Models_Business_VodGetAutomaticSpeechRecognitionForAuditResult_descriptor =
-      getDescriptor().getMessageTypes().get(24);
+      getDescriptor().getMessageTypes().get(25);
     internal_static_Byteplus_Vod_Models_Business_VodGetAutomaticSpeechRecognitionForAuditResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetAutomaticSpeechRecognitionForAuditResult_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_Byteplus_Vod_Models_Business_VodAEDTimeRangeForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(25);
+      getDescriptor().getMessageTypes().get(26);
     internal_static_Byteplus_Vod_Models_Business_VodAEDTimeRangeForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodAEDTimeRangeForAudit_descriptor,
         new java.lang.String[] { "StartTimeMill", "EndTimeMill", "Prob", });
     internal_static_Byteplus_Vod_Models_Business_VodAEDEventItemForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(26);
+      getDescriptor().getMessageTypes().get(27);
     internal_static_Byteplus_Vod_Models_Business_VodAEDEventItemForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodAEDEventItemForAudit_descriptor,
         new java.lang.String[] { "Event", "UttProb", "TimeRanges", });
     internal_static_Byteplus_Vod_Models_Business_VodAEDInfoForAudit_descriptor =
-      getDescriptor().getMessageTypes().get(27);
+      getDescriptor().getMessageTypes().get(28);
     internal_static_Byteplus_Vod_Models_Business_VodAEDInfoForAudit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodAEDInfoForAudit_descriptor,
         new java.lang.String[] { "EventItems", });
     internal_static_Byteplus_Vod_Models_Business_VodGetAudioEventDetectionForAuditResult_descriptor =
-      getDescriptor().getMessageTypes().get(28);
+      getDescriptor().getMessageTypes().get(29);
     internal_static_Byteplus_Vod_Models_Business_VodGetAudioEventDetectionForAuditResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetAudioEventDetectionForAuditResult_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_Byteplus_Vod_Models_Business_VodCreateVideoClassificationData_descriptor =
-      getDescriptor().getMessageTypes().get(29);
+      getDescriptor().getMessageTypes().get(30);
     internal_static_Byteplus_Vod_Models_Business_VodCreateVideoClassificationData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodCreateVideoClassificationData_descriptor,
         new java.lang.String[] { "ClassificationId", });
     internal_static_Byteplus_Vod_Models_Business_VodClassification_descriptor =
-      getDescriptor().getMessageTypes().get(30);
+      getDescriptor().getMessageTypes().get(31);
     internal_static_Byteplus_Vod_Models_Business_VodClassification_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodClassification_descriptor,
         new java.lang.String[] { "SpaceName", "ClassificationId", "Level", "Classification", "ParentClassificationId", "SubClassification", "SubClassificationTrees", "CreatedAt", });
     internal_static_Byteplus_Vod_Models_Business_VodVideoClassificationsData_descriptor =
-      getDescriptor().getMessageTypes().get(31);
+      getDescriptor().getMessageTypes().get(32);
     internal_static_Byteplus_Vod_Models_Business_VodVideoClassificationsData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodVideoClassificationsData_descriptor,
         new java.lang.String[] { "ClassificationTrees", });
     internal_static_Byteplus_Vod_Models_Business_VodSnapshot_descriptor =
-      getDescriptor().getMessageTypes().get(32);
+      getDescriptor().getMessageTypes().get(33);
     internal_static_Byteplus_Vod_Models_Business_VodSnapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSnapshot_descriptor,
         new java.lang.String[] { "Format", "Height", "Width", "StoreUri", "Url", });
     internal_static_Byteplus_Vod_Models_Business_VodSpriteSnapshot_descriptor =
-      getDescriptor().getMessageTypes().get(33);
+      getDescriptor().getMessageTypes().get(34);
     internal_static_Byteplus_Vod_Models_Business_VodSpriteSnapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSpriteSnapshot_descriptor,
         new java.lang.String[] { "Format", "ImgXLen", "ImgYLen", "CellWidth", "CellHeight", "Interval", "CaptureNum", "StoreUris", "Urls", });
     internal_static_Byteplus_Vod_Models_Business_VodSamplePosterSnapshot_descriptor =
-      getDescriptor().getMessageTypes().get(34);
+      getDescriptor().getMessageTypes().get(35);
     internal_static_Byteplus_Vod_Models_Business_VodSamplePosterSnapshot_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSamplePosterSnapshot_descriptor,
         new java.lang.String[] { "StoreUris", "ImgNum", "CellWidth", "CellHeight", "Interval", "Format", "Duration", "Urls", "LargeSnapshotUri", "LargeSnapshotDownloadUrl", "LargeSnapshotFillType", });
     internal_static_Byteplus_Vod_Models_Business_VodSnapshotData_descriptor =
-      getDescriptor().getMessageTypes().get(35);
+      getDescriptor().getMessageTypes().get(36);
     internal_static_Byteplus_Vod_Models_Business_VodSnapshotData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSnapshotData_descriptor,
         new java.lang.String[] { "SpaceName", "Vid", "PosterSnapshots", "DynpostSnapshots", "AnimatedPosterSnapshots", "AiDynpostSnapshots", "SpriteSnapshots", "VSamplePosterSnapshots", });
     internal_static_Byteplus_Vod_Models_Business_VodGetFileListData_descriptor =
-      getDescriptor().getMessageTypes().get(36);
+      getDescriptor().getMessageTypes().get(37);
     internal_static_Byteplus_Vod_Models_Business_VodGetFileListData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetFileListData_descriptor,
         new java.lang.String[] { "IsTruncated", "CommonPrefixes", "FileSum", "NextStarter", "FileBasicInfos", });
     internal_static_Byteplus_Vod_Models_Business_FileBasicInfo_descriptor =
-      getDescriptor().getMessageTypes().get(37);
+      getDescriptor().getMessageTypes().get(38);
     internal_static_Byteplus_Vod_Models_Business_FileBasicInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_FileBasicInfo_descriptor,
         new java.lang.String[] { "FileName", "Size", "StorageClass", "UpdatedTime", });
     internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_descriptor =
-      getDescriptor().getMessageTypes().get(38);
+      getDescriptor().getMessageTypes().get(39);
     internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetFileInfosData_descriptor,
         new java.lang.String[] { "FileInfos", "NotExistFileNames", "NotExistEncodedFileNames", });
     internal_static_Byteplus_Vod_Models_Business_VodFileInfo_descriptor =
-      getDescriptor().getMessageTypes().get(39);
+      getDescriptor().getMessageTypes().get(40);
     internal_static_Byteplus_Vod_Models_Business_VodFileInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodFileInfo_descriptor,
         new java.lang.String[] { "FileName", "LastModifiedTime", "Size", "StorageClass", "HashCrc64", "EncodedFileName", "DownloadUrl", });
     internal_static_Byteplus_Vod_Models_Business_VodUpdateMediaStorageClassData_descriptor =
-      getDescriptor().getMessageTypes().get(40);
+      getDescriptor().getMessageTypes().get(41);
     internal_static_Byteplus_Vod_Models_Business_VodUpdateMediaStorageClassData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodUpdateMediaStorageClassData_descriptor,
         new java.lang.String[] { "NotExistVids", });
     internal_static_Byteplus_Vod_Models_Business_VodSubmitBlockMediaTaskResult_descriptor =
-      getDescriptor().getMessageTypes().get(41);
+      getDescriptor().getMessageTypes().get(42);
     internal_static_Byteplus_Vod_Models_Business_VodSubmitBlockMediaTaskResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSubmitBlockMediaTaskResult_descriptor,
         new java.lang.String[] { "NotExistVids", "BlockedVids", "UnblockingVids", });
     internal_static_Byteplus_Vod_Models_Business_VodSubmitUnblockMediaTaskResult_descriptor =
-      getDescriptor().getMessageTypes().get(42);
+      getDescriptor().getMessageTypes().get(43);
     internal_static_Byteplus_Vod_Models_Business_VodSubmitUnblockMediaTaskResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodSubmitUnblockMediaTaskResult_descriptor,
         new java.lang.String[] { "NotExistVids", "UnblockedVids", "BlockingVids", });
     internal_static_Byteplus_Vod_Models_Business_VodQueryMediaBlockStatusResult_descriptor =
-      getDescriptor().getMessageTypes().get(43);
+      getDescriptor().getMessageTypes().get(44);
     internal_static_Byteplus_Vod_Models_Business_VodQueryMediaBlockStatusResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodQueryMediaBlockStatusResult_descriptor,
         new java.lang.String[] { "NotExistVids", "MediaBlockStatuses", });
     internal_static_Byteplus_Vod_Models_Business_MediaBlockStatus_descriptor =
-      getDescriptor().getMessageTypes().get(44);
+      getDescriptor().getMessageTypes().get(45);
     internal_static_Byteplus_Vod_Models_Business_MediaBlockStatus_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_MediaBlockStatus_descriptor,
         new java.lang.String[] { "Vid", "Status", });
     internal_static_Byteplus_Vod_Models_Business_VodPlaylistVideoInfo_descriptor =
-      getDescriptor().getMessageTypes().get(45);
+      getDescriptor().getMessageTypes().get(46);
     internal_static_Byteplus_Vod_Models_Business_VodPlaylistVideoInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodPlaylistVideoInfo_descriptor,
         new java.lang.String[] { "Vid", "Title", "Duration", "PosterUrl", "VideoStatus", });
     internal_static_Byteplus_Vod_Models_Business_VodPlaylistInfo_descriptor =
-      getDescriptor().getMessageTypes().get(46);
+      getDescriptor().getMessageTypes().get(47);
     internal_static_Byteplus_Vod_Models_Business_VodPlaylistInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodPlaylistInfo_descriptor,
         new java.lang.String[] { "Id", "Name", "Format", "Codec", "Definition", "StartTime", "EndTime", "Cycles", "VideoInfos", "CreatedAt", "UpdatedAt", });
     internal_static_Byteplus_Vod_Models_Business_VodCreatePlaylistResult_descriptor =
-      getDescriptor().getMessageTypes().get(47);
+      getDescriptor().getMessageTypes().get(48);
     internal_static_Byteplus_Vod_Models_Business_VodCreatePlaylistResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodCreatePlaylistResult_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_Byteplus_Vod_Models_Business_InvalidPlaylist_descriptor =
-      getDescriptor().getMessageTypes().get(48);
+      getDescriptor().getMessageTypes().get(49);
     internal_static_Byteplus_Vod_Models_Business_InvalidPlaylist_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_InvalidPlaylist_descriptor,
         new java.lang.String[] { "Id", "ErrorMessage", });
     internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_descriptor =
-      getDescriptor().getMessageTypes().get(49);
+      getDescriptor().getMessageTypes().get(50);
     internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodGetPlaylistsResult_descriptor,

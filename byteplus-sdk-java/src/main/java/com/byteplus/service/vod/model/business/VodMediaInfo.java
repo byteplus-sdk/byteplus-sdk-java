@@ -85,6 +85,19 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(com.byteplus.service.vod.model.business.VodTranscodeInfo.parser(), extensionRegistry));
             break;
           }
+          case 34: {
+            com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder subBuilder = null;
+            if (smartInfo_ != null) {
+              subBuilder = smartInfo_.toBuilder();
+            }
+            smartInfo_ = input.readMessage(com.byteplus.service.vod.model.business.VodMediaSmartInfo.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(smartInfo_);
+              smartInfo_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -256,6 +269,44 @@ private static final long serialVersionUID = 0L;
     return transcodeInfos_.get(index);
   }
 
+  public static final int SMARTINFO_FIELD_NUMBER = 4;
+  private com.byteplus.service.vod.model.business.VodMediaSmartInfo smartInfo_;
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   * @return Whether the smartInfo field is set.
+   */
+  @java.lang.Override
+  public boolean hasSmartInfo() {
+    return smartInfo_ != null;
+  }
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   * @return The smartInfo.
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.VodMediaSmartInfo getSmartInfo() {
+    return smartInfo_ == null ? com.byteplus.service.vod.model.business.VodMediaSmartInfo.getDefaultInstance() : smartInfo_;
+  }
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder getSmartInfoOrBuilder() {
+    return getSmartInfo();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -279,6 +330,9 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < transcodeInfos_.size(); i++) {
       output.writeMessage(3, transcodeInfos_.get(i));
     }
+    if (smartInfo_ != null) {
+      output.writeMessage(4, getSmartInfo());
+    }
     unknownFields.writeTo(output);
   }
 
@@ -299,6 +353,10 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < transcodeInfos_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(3, transcodeInfos_.get(i));
+    }
+    if (smartInfo_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(4, getSmartInfo());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -327,6 +385,11 @@ private static final long serialVersionUID = 0L;
     }
     if (!getTranscodeInfosList()
         .equals(other.getTranscodeInfosList())) return false;
+    if (hasSmartInfo() != other.hasSmartInfo()) return false;
+    if (hasSmartInfo()) {
+      if (!getSmartInfo()
+          .equals(other.getSmartInfo())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -349,6 +412,10 @@ private static final long serialVersionUID = 0L;
     if (getTranscodeInfosCount() > 0) {
       hash = (37 * hash) + TRANSCODEINFOS_FIELD_NUMBER;
       hash = (53 * hash) + getTranscodeInfosList().hashCode();
+    }
+    if (hasSmartInfo()) {
+      hash = (37 * hash) + SMARTINFO_FIELD_NUMBER;
+      hash = (53 * hash) + getSmartInfo().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -502,6 +569,12 @@ private static final long serialVersionUID = 0L;
       } else {
         transcodeInfosBuilder_.clear();
       }
+      if (smartInfoBuilder_ == null) {
+        smartInfo_ = null;
+      } else {
+        smartInfo_ = null;
+        smartInfoBuilder_ = null;
+      }
       return this;
     }
 
@@ -547,6 +620,11 @@ private static final long serialVersionUID = 0L;
         result.transcodeInfos_ = transcodeInfos_;
       } else {
         result.transcodeInfos_ = transcodeInfosBuilder_.build();
+      }
+      if (smartInfoBuilder_ == null) {
+        result.smartInfo_ = smartInfo_;
+      } else {
+        result.smartInfo_ = smartInfoBuilder_.build();
       }
       onBuilt();
       return result;
@@ -627,6 +705,9 @@ private static final long serialVersionUID = 0L;
             transcodeInfosBuilder_.addAllMessages(other.transcodeInfos_);
           }
         }
+      }
+      if (other.hasSmartInfo()) {
+        mergeSmartInfo(other.getSmartInfo());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1278,6 +1359,161 @@ private static final long serialVersionUID = 0L;
         transcodeInfos_ = null;
       }
       return transcodeInfosBuilder_;
+    }
+
+    private com.byteplus.service.vod.model.business.VodMediaSmartInfo smartInfo_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.byteplus.service.vod.model.business.VodMediaSmartInfo, com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder, com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder> smartInfoBuilder_;
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     * @return Whether the smartInfo field is set.
+     */
+    public boolean hasSmartInfo() {
+      return smartInfoBuilder_ != null || smartInfo_ != null;
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     * @return The smartInfo.
+     */
+    public com.byteplus.service.vod.model.business.VodMediaSmartInfo getSmartInfo() {
+      if (smartInfoBuilder_ == null) {
+        return smartInfo_ == null ? com.byteplus.service.vod.model.business.VodMediaSmartInfo.getDefaultInstance() : smartInfo_;
+      } else {
+        return smartInfoBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public Builder setSmartInfo(com.byteplus.service.vod.model.business.VodMediaSmartInfo value) {
+      if (smartInfoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        smartInfo_ = value;
+        onChanged();
+      } else {
+        smartInfoBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public Builder setSmartInfo(
+        com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder builderForValue) {
+      if (smartInfoBuilder_ == null) {
+        smartInfo_ = builderForValue.build();
+        onChanged();
+      } else {
+        smartInfoBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public Builder mergeSmartInfo(com.byteplus.service.vod.model.business.VodMediaSmartInfo value) {
+      if (smartInfoBuilder_ == null) {
+        if (smartInfo_ != null) {
+          smartInfo_ =
+            com.byteplus.service.vod.model.business.VodMediaSmartInfo.newBuilder(smartInfo_).mergeFrom(value).buildPartial();
+        } else {
+          smartInfo_ = value;
+        }
+        onChanged();
+      } else {
+        smartInfoBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public Builder clearSmartInfo() {
+      if (smartInfoBuilder_ == null) {
+        smartInfo_ = null;
+        onChanged();
+      } else {
+        smartInfo_ = null;
+        smartInfoBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder getSmartInfoBuilder() {
+      
+      onChanged();
+      return getSmartInfoFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    public com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder getSmartInfoOrBuilder() {
+      if (smartInfoBuilder_ != null) {
+        return smartInfoBuilder_.getMessageOrBuilder();
+      } else {
+        return smartInfo_ == null ?
+            com.byteplus.service.vod.model.business.VodMediaSmartInfo.getDefaultInstance() : smartInfo_;
+      }
+    }
+    /**
+     * <pre>
+     *智能媒资信息
+     * </pre>
+     *
+     * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.byteplus.service.vod.model.business.VodMediaSmartInfo, com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder, com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder> 
+        getSmartInfoFieldBuilder() {
+      if (smartInfoBuilder_ == null) {
+        smartInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.byteplus.service.vod.model.business.VodMediaSmartInfo, com.byteplus.service.vod.model.business.VodMediaSmartInfo.Builder, com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder>(
+                getSmartInfo(),
+                getParentForChildren(),
+                isClean());
+        smartInfo_ = null;
+      }
+      return smartInfoBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

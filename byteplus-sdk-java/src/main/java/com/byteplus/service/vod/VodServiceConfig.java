@@ -190,6 +190,20 @@ public class VodServiceConfig {
                         }
                     }
             ));
+            put(Const.ParseUploadManifest, new ApiInfo(
+                    new HashMap<String, Object>() {
+                        {
+                            put(com.byteplus.helper.Const.Method, "POST");
+                            put(com.byteplus.helper.Const.Path, "/");
+                            put(com.byteplus.helper.Const.Query, new ArrayList<NameValuePair>() {
+                                {
+                                    add(new BasicNameValuePair("Action", Const.ParseUploadManifest));
+                                    add(new BasicNameValuePair("Version", "2023-01-01"));
+                                }
+                            });
+                        }
+                    }
+            ));
 
             // **********************************************************************
             // 媒资

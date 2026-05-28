@@ -28,6 +28,7 @@ private static final long serialVersionUID = 0L;
     classificationIds_ = "";
     tosStorageClasses_ = "";
     vodUploadSources_ = "";
+    smartTags_ = "";
   }
 
   @java.lang.Override
@@ -130,6 +131,12 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             vodUploadSources_ = s;
+            break;
+          }
+          case 106: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            smartTags_ = s;
             break;
           }
           default: {
@@ -716,6 +723,52 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int SMARTTAGS_FIELD_NUMBER = 13;
+  private volatile java.lang.Object smartTags_;
+  /**
+   * <pre>
+   *智能标签，多个用","隔开
+   * </pre>
+   *
+   * <code>string SmartTags = 13;</code>
+   * @return The smartTags.
+   */
+  @java.lang.Override
+  public java.lang.String getSmartTags() {
+    java.lang.Object ref = smartTags_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      smartTags_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   *智能标签，多个用","隔开
+   * </pre>
+   *
+   * <code>string SmartTags = 13;</code>
+   * @return The bytes for smartTags.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getSmartTagsBytes() {
+    java.lang.Object ref = smartTags_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      smartTags_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -766,6 +819,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(vodUploadSources_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 12, vodUploadSources_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(smartTags_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, smartTags_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -811,6 +867,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(vodUploadSources_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, vodUploadSources_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(smartTags_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, smartTags_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -850,6 +909,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getTosStorageClasses())) return false;
     if (!getVodUploadSources()
         .equals(other.getVodUploadSources())) return false;
+    if (!getSmartTags()
+        .equals(other.getSmartTags())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -885,6 +946,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getTosStorageClasses().hashCode();
     hash = (37 * hash) + VODUPLOADSOURCES_FIELD_NUMBER;
     hash = (53 * hash) + getVodUploadSources().hashCode();
+    hash = (37 * hash) + SMARTTAGS_FIELD_NUMBER;
+    hash = (53 * hash) + getSmartTags().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1042,6 +1105,8 @@ private static final long serialVersionUID = 0L;
 
       vodUploadSources_ = "";
 
+      smartTags_ = "";
+
       return this;
     }
 
@@ -1080,6 +1145,7 @@ private static final long serialVersionUID = 0L;
       result.classificationIds_ = classificationIds_;
       result.tosStorageClasses_ = tosStorageClasses_;
       result.vodUploadSources_ = vodUploadSources_;
+      result.smartTags_ = smartTags_;
       onBuilt();
       return result;
     }
@@ -1174,6 +1240,10 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getVodUploadSources().isEmpty()) {
         vodUploadSources_ = other.vodUploadSources_;
+        onChanged();
+      }
+      if (!other.getSmartTags().isEmpty()) {
+        smartTags_ = other.smartTags_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -2353,6 +2423,102 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       vodUploadSources_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object smartTags_ = "";
+    /**
+     * <pre>
+     *智能标签，多个用","隔开
+     * </pre>
+     *
+     * <code>string SmartTags = 13;</code>
+     * @return The smartTags.
+     */
+    public java.lang.String getSmartTags() {
+      java.lang.Object ref = smartTags_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        smartTags_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     *智能标签，多个用","隔开
+     * </pre>
+     *
+     * <code>string SmartTags = 13;</code>
+     * @return The bytes for smartTags.
+     */
+    public com.google.protobuf.ByteString
+        getSmartTagsBytes() {
+      java.lang.Object ref = smartTags_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        smartTags_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     *智能标签，多个用","隔开
+     * </pre>
+     *
+     * <code>string SmartTags = 13;</code>
+     * @param value The smartTags to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSmartTags(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      smartTags_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *智能标签，多个用","隔开
+     * </pre>
+     *
+     * <code>string SmartTags = 13;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSmartTags() {
+      
+      smartTags_ = getDefaultInstance().getSmartTags();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *智能标签，多个用","隔开
+     * </pre>
+     *
+     * <code>string SmartTags = 13;</code>
+     * @param value The bytes for smartTags to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSmartTagsBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      smartTags_ = value;
       onChanged();
       return this;
     }

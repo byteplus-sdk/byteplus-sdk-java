@@ -53,6 +53,7 @@ public class Const {
     public static final String QueryUploadTaskInfo = "QueryUploadTaskInfo";
     public static final String ApplyUploadInfo = "ApplyUploadInfo";
     public static final String CommitUploadInfo = "CommitUploadInfo";
+    public static final String ParseUploadManifest = "ParseUploadManifest";
     // vod-media
     public static final String UpdateMediaInfo = "UpdateMediaInfo";
     public static final String UpdateMediaPublishStatus = "UpdateMediaPublishStatus";

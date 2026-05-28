@@ -246,4 +246,24 @@ public interface VodGetMediaListRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getVodUploadSourcesBytes();
+
+  /**
+   * <pre>
+   *智能标签，多个用","隔开
+   * </pre>
+   *
+   * <code>string SmartTags = 13;</code>
+   * @return The smartTags.
+   */
+  java.lang.String getSmartTags();
+  /**
+   * <pre>
+   *智能标签，多个用","隔开
+   * </pre>
+   *
+   * <code>string SmartTags = 13;</code>
+   * @return The bytes for smartTags.
+   */
+  com.google.protobuf.ByteString
+      getSmartTagsBytes();
 }

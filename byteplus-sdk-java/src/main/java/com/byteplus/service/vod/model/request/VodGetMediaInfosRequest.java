@@ -55,6 +55,11 @@ private static final long serialVersionUID = 0L;
             vids_ = s;
             break;
           }
+          case 16: {
+
+            needSmartInfo_ = input.readBool();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -133,6 +138,21 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int NEEDSMARTINFO_FIELD_NUMBER = 2;
+  private boolean needSmartInfo_;
+  /**
+   * <pre>
+   *是否需要智能标签等信息
+   * </pre>
+   *
+   * <code>bool NeedSmartInfo = 2;</code>
+   * @return The needSmartInfo.
+   */
+  @java.lang.Override
+  public boolean getNeedSmartInfo() {
+    return needSmartInfo_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -150,6 +170,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(vids_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, vids_);
     }
+    if (needSmartInfo_ != false) {
+      output.writeBool(2, needSmartInfo_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -161,6 +184,10 @@ private static final long serialVersionUID = 0L;
     size = 0;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(vids_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, vids_);
+    }
+    if (needSmartInfo_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(2, needSmartInfo_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -179,6 +206,8 @@ private static final long serialVersionUID = 0L;
 
     if (!getVids()
         .equals(other.getVids())) return false;
+    if (getNeedSmartInfo()
+        != other.getNeedSmartInfo()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -192,6 +221,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + VIDS_FIELD_NUMBER;
     hash = (53 * hash) + getVids().hashCode();
+    hash = (37 * hash) + NEEDSMARTINFO_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getNeedSmartInfo());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -327,6 +359,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       vids_ = "";
 
+      needSmartInfo_ = false;
+
       return this;
     }
 
@@ -354,6 +388,7 @@ private static final long serialVersionUID = 0L;
     public com.byteplus.service.vod.model.request.VodGetMediaInfosRequest buildPartial() {
       com.byteplus.service.vod.model.request.VodGetMediaInfosRequest result = new com.byteplus.service.vod.model.request.VodGetMediaInfosRequest(this);
       result.vids_ = vids_;
+      result.needSmartInfo_ = needSmartInfo_;
       onBuilt();
       return result;
     }
@@ -405,6 +440,9 @@ private static final long serialVersionUID = 0L;
       if (!other.getVids().isEmpty()) {
         vids_ = other.vids_;
         onChanged();
+      }
+      if (other.getNeedSmartInfo() != false) {
+        setNeedSmartInfo(other.getNeedSmartInfo());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -527,6 +565,49 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       vids_ = value;
+      onChanged();
+      return this;
+    }
+
+    private boolean needSmartInfo_ ;
+    /**
+     * <pre>
+     *是否需要智能标签等信息
+     * </pre>
+     *
+     * <code>bool NeedSmartInfo = 2;</code>
+     * @return The needSmartInfo.
+     */
+    @java.lang.Override
+    public boolean getNeedSmartInfo() {
+      return needSmartInfo_;
+    }
+    /**
+     * <pre>
+     *是否需要智能标签等信息
+     * </pre>
+     *
+     * <code>bool NeedSmartInfo = 2;</code>
+     * @param value The needSmartInfo to set.
+     * @return This builder for chaining.
+     */
+    public Builder setNeedSmartInfo(boolean value) {
+      
+      needSmartInfo_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     *是否需要智能标签等信息
+     * </pre>
+     *
+     * <code>bool NeedSmartInfo = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearNeedSmartInfo() {
+      
+      needSmartInfo_ = false;
       onChanged();
       return this;
     }

@@ -211,6 +211,15 @@ public interface IVodService extends com.byteplus.service.IBaseService {
 	com.byteplus.service.vod.model.response.VodCommitUploadInfoResponse commitUploadInfo(com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest input) throws Exception;
 
 	/**
+	 * parseUploadManifest.
+	 *
+	 * @param input com.byteplus.service.vod.model.request.VodParseUploadManifestRequest
+	 * @return com.byteplus.service.vod.model.response.VodParseUploadManifestResponse
+	 * @throws Exception the exception
+	 */
+	com.byteplus.service.vod.model.response.VodParseUploadManifestResponse parseUploadManifest(com.byteplus.service.vod.model.request.VodParseUploadManifestRequest input) throws Exception;
+
+	/**
 	 * listFileMetaInfosByFileNames.
 	 *
 	 * @param input com.byteplus.service.vod.model.request.VodListFileMetaInfosByFileNamesRequest

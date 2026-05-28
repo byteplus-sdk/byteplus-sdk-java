@@ -104,4 +104,31 @@ public interface VodMediaInfoOrBuilder extends
    */
   com.byteplus.service.vod.model.business.VodTranscodeInfoOrBuilder getTranscodeInfosOrBuilder(
       int index);
+
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   * @return Whether the smartInfo field is set.
+   */
+  boolean hasSmartInfo();
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   * @return The smartInfo.
+   */
+  com.byteplus.service.vod.model.business.VodMediaSmartInfo getSmartInfo();
+  /**
+   * <pre>
+   *智能媒资信息
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodMediaSmartInfo SmartInfo = 4;</code>
+   */
+  com.byteplus.service.vod.model.business.VodMediaSmartInfoOrBuilder getSmartInfoOrBuilder();
 }

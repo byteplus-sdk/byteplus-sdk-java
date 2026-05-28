@@ -26,4 +26,14 @@ public interface VodGetMediaInfosRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getVidsBytes();
+
+  /**
+   * <pre>
+   *是否需要智能标签等信息
+   * </pre>
+   *
+   * <code>bool NeedSmartInfo = 2;</code>
+   * @return The needSmartInfo.
+   */
+  boolean getNeedSmartInfo();
 }

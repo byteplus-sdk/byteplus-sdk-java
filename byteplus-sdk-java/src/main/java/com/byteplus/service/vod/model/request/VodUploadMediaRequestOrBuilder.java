@@ -156,4 +156,14 @@ public interface VodUploadMediaRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getVodUploadSourceBytes();
+
+  /**
+   * <pre>
+   * 支持解析hls Manifest 
+   * </pre>
+   *
+   * <code>bool SupportParseManifest = 16;</code>
+   * @return The supportParseManifest.
+   */
+  boolean getSupportParseManifest();
 }

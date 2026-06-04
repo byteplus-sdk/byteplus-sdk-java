@@ -69,27 +69,8 @@ public interface VodCreateDomainV2RequestOrBuilder extends
 
   /**
    * <pre>
-   *源站地址
-   * </pre>
-   *
-   * <code>string Origins = 7;</code>
-   * @return The origins.
-   */
-  java.lang.String getOrigins();
-  /**
-   * <pre>
-   *源站地址
-   * </pre>
-   *
-   * <code>string Origins = 7;</code>
-   * @return The bytes for origins.
-   */
-  com.google.protobuf.ByteString
-      getOriginsBytes();
-
-  /**
-   * <pre>
-   *地区
+   *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+   *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
    * </pre>
    *
    * <code>string Area = 8;</code>
@@ -98,7 +79,8 @@ public interface VodCreateDomainV2RequestOrBuilder extends
   java.lang.String getArea();
   /**
    * <pre>
-   *地区
+   *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+   *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
    * </pre>
    *
    * <code>string Area = 8;</code>
@@ -126,4 +108,68 @@ public interface VodCreateDomainV2RequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getBucketNameBytes();
+
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule> 
+      getOriginList();
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  com.byteplus.service.vod.model.business.CdnOriginRule getOrigin(int index);
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  int getOriginCount();
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  java.util.List<? extends com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder> 
+      getOriginOrBuilderList();
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder getOriginOrBuilder(
+      int index);
+
+  /**
+   * <pre>
+   * 回源Host
+   * </pre>
+   *
+   * <code>string Host = 16;</code>
+   * @return The host.
+   */
+  java.lang.String getHost();
+  /**
+   * <pre>
+   * 回源Host
+   * </pre>
+   *
+   * <code>string Host = 16;</code>
+   * @return The bytes for host.
+   */
+  com.google.protobuf.ByteString
+      getHostBytes();
 }

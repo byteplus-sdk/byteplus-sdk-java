@@ -20,7 +20,6 @@ public class VodCreateDomainDemo {
 			reqBuilder.setDomain("your Domain");
 			reqBuilder.setSourceStationType(0);
 			reqBuilder.setSourceStationAddressType(0);
-			reqBuilder.setOrigins("your Origins");
 			reqBuilder.setArea("your Area");
 			reqBuilder.setBucketName("your BucketName");
 			

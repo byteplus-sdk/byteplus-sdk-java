@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.business;
  * Protobuf type {@code Byteplus.Vod.Models.Business.VodListCdnTopAccessResult}
  */
 public final class VodListCdnTopAccessResult extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
-        VodListCdnTopAccessResultOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
+    VodListCdnTopAccessResultOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodListCdnTopAccessResult.newBuilder() to construct.
   private VodListCdnTopAccessResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -22,7 +22,7 @@ public final class VodListCdnTopAccessResult extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodListCdnTopAccessResult();
   }
 
@@ -32,16 +32,16 @@ public final class VodListCdnTopAccessResult extends
     return this.unknownFields;
   }
   private VodListCdnTopAccessResult(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -56,12 +56,12 @@ public final class VodListCdnTopAccessResult extends
               mutable_bitField0_ |= 0x00000001;
             }
             itemInfos_.add(
-                    input.readMessage(com.byteplus.service.vod.model.business.VodCdnTopAccessElement.parser(), extensionRegistry));
+                input.readMessage(com.byteplus.service.vod.model.business.VodCdnTopAccessElement.parser(), extensionRegistry));
             break;
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -72,7 +72,7 @@ public final class VodListCdnTopAccessResult extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         itemInfos_ = java.util.Collections.unmodifiableList(itemInfos_);
@@ -82,16 +82,16 @@ public final class VodListCdnTopAccessResult extends
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.business.VodCdn.internal_static_Byteplus_Vod_Models_Business_VodListCdnTopAccessResult_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.business.VodCdn.internal_static_Byteplus_Vod_Models_Business_VodListCdnTopAccessResult_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.class, com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.class, com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.Builder.class);
   }
 
   public static final int ITEMINFOS_FIELD_NUMBER = 1;
@@ -115,8 +115,8 @@ public final class VodListCdnTopAccessResult extends
    * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>
-  getItemInfosOrBuilderList() {
+  public java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> 
+      getItemInfosOrBuilderList() {
     return itemInfos_;
   }
   /**
@@ -150,7 +150,7 @@ public final class VodListCdnTopAccessResult extends
    */
   @java.lang.Override
   public com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder getItemInfosOrBuilder(
-          int index) {
+      int index) {
     return itemInfos_.get(index);
   }
 
@@ -167,7 +167,7 @@ public final class VodListCdnTopAccessResult extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     for (int i = 0; i < itemInfos_.size(); i++) {
       output.writeMessage(1, itemInfos_.get(i));
     }
@@ -182,7 +182,7 @@ public final class VodListCdnTopAccessResult extends
     size = 0;
     for (int i = 0; i < itemInfos_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-              .computeMessageSize(1, itemInfos_.get(i));
+        .computeMessageSize(1, itemInfos_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -192,7 +192,7 @@ public final class VodListCdnTopAccessResult extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.business.VodListCdnTopAccessResult)) {
       return super.equals(obj);
@@ -200,7 +200,7 @@ public final class VodListCdnTopAccessResult extends
     com.byteplus.service.vod.model.business.VodListCdnTopAccessResult other = (com.byteplus.service.vod.model.business.VodListCdnTopAccessResult) obj;
 
     if (!getItemInfosList()
-            .equals(other.getItemInfosList())) return false;
+        .equals(other.getItemInfosList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -222,73 +222,73 @@ public final class VodListCdnTopAccessResult extends
   }
 
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -302,12 +302,12 @@ public final class VodListCdnTopAccessResult extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -315,20 +315,20 @@ public final class VodListCdnTopAccessResult extends
    * Protobuf type {@code Byteplus.Vod.Models.Business.VodListCdnTopAccessResult}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
-          com.byteplus.service.vod.model.business.VodListCdnTopAccessResultOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Business.VodListCdnTopAccessResult)
+      com.byteplus.service.vod.model.business.VodListCdnTopAccessResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.business.VodCdn.internal_static_Byteplus_Vod_Models_Business_VodListCdnTopAccessResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.business.VodCdn.internal_static_Byteplus_Vod_Models_Business_VodListCdnTopAccessResult_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.class, com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.class, com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.business.VodListCdnTopAccessResult.newBuilder()
@@ -337,7 +337,7 @@ public final class VodListCdnTopAccessResult extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -361,7 +361,7 @@ public final class VodListCdnTopAccessResult extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.business.VodCdn.internal_static_Byteplus_Vod_Models_Business_VodListCdnTopAccessResult_descriptor;
     }
 
@@ -402,30 +402,30 @@ public final class VodListCdnTopAccessResult extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -458,9 +458,9 @@ public final class VodListCdnTopAccessResult extends
             itemInfosBuilder_ = null;
             itemInfos_ = other.itemInfos_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            itemInfosBuilder_ =
-                    com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                            getItemInfosFieldBuilder() : null;
+            itemInfosBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getItemInfosFieldBuilder() : null;
           } else {
             itemInfosBuilder_.addAllMessages(other.itemInfos_);
           }
@@ -478,9 +478,9 @@ public final class VodListCdnTopAccessResult extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.business.VodListCdnTopAccessResult parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -497,16 +497,16 @@ public final class VodListCdnTopAccessResult extends
     private int bitField0_;
 
     private java.util.List<com.byteplus.service.vod.model.business.VodCdnTopAccessElement> itemInfos_ =
-            java.util.Collections.emptyList();
+      java.util.Collections.emptyList();
     private void ensureItemInfosIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
         itemInfos_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.VodCdnTopAccessElement>(itemInfos_);
         bitField0_ |= 0x00000001;
-      }
+       }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> itemInfosBuilder_;
+        com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> itemInfosBuilder_;
 
     /**
      * <pre>
@@ -558,7 +558,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder setItemInfos(
-            int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement value) {
+        int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement value) {
       if (itemInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -579,7 +579,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder setItemInfos(
-            int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
       if (itemInfosBuilder_ == null) {
         ensureItemInfosIsMutable();
         itemInfos_.set(index, builderForValue.build());
@@ -617,7 +617,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder addItemInfos(
-            int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement value) {
+        int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement value) {
       if (itemInfosBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -638,7 +638,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder addItemInfos(
-            com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
+        com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
       if (itemInfosBuilder_ == null) {
         ensureItemInfosIsMutable();
         itemInfos_.add(builderForValue.build());
@@ -656,7 +656,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder addItemInfos(
-            int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
+        int index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder builderForValue) {
       if (itemInfosBuilder_ == null) {
         ensureItemInfosIsMutable();
         itemInfos_.add(index, builderForValue.build());
@@ -674,11 +674,11 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public Builder addAllItemInfos(
-            java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElement> values) {
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElement> values) {
       if (itemInfosBuilder_ == null) {
         ensureItemInfosIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-                values, itemInfos_);
+            values, itemInfos_);
         onChanged();
       } else {
         itemInfosBuilder_.addAllMessages(values);
@@ -727,7 +727,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder getItemInfosBuilder(
-            int index) {
+        int index) {
       return getItemInfosFieldBuilder().getBuilder(index);
     }
     /**
@@ -738,7 +738,7 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder getItemInfosOrBuilder(
-            int index) {
+        int index) {
       if (itemInfosBuilder_ == null) {
         return itemInfos_.get(index);  } else {
         return itemInfosBuilder_.getMessageOrBuilder(index);
@@ -751,8 +751,8 @@ public final class VodListCdnTopAccessResult extends
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
-    public java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>
-    getItemInfosOrBuilderList() {
+    public java.util.List<? extends com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> 
+         getItemInfosOrBuilderList() {
       if (itemInfosBuilder_ != null) {
         return itemInfosBuilder_.getMessageOrBuilderList();
       } else {
@@ -768,7 +768,7 @@ public final class VodListCdnTopAccessResult extends
      */
     public com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder addItemInfosBuilder() {
       return getItemInfosFieldBuilder().addBuilder(
-              com.byteplus.service.vod.model.business.VodCdnTopAccessElement.getDefaultInstance());
+          com.byteplus.service.vod.model.business.VodCdnTopAccessElement.getDefaultInstance());
     }
     /**
      * <pre>
@@ -778,9 +778,9 @@ public final class VodListCdnTopAccessResult extends
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
     public com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder addItemInfosBuilder(
-            int index) {
+        int index) {
       return getItemInfosFieldBuilder().addBuilder(
-              index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.getDefaultInstance());
+          index, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.getDefaultInstance());
     }
     /**
      * <pre>
@@ -789,16 +789,16 @@ public final class VodListCdnTopAccessResult extends
      *
      * <code>repeated .Byteplus.Vod.Models.Business.VodCdnTopAccessElement ItemInfos = 1;</code>
      */
-    public java.util.List<com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder>
-    getItemInfosBuilderList() {
+    public java.util.List<com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder> 
+         getItemInfosBuilderList() {
       return getItemInfosFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-            com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>
-    getItemInfosFieldBuilder() {
+        com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder> 
+        getItemInfosFieldBuilder() {
       if (itemInfosBuilder_ == null) {
         itemInfosBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-                com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>(
+            com.byteplus.service.vod.model.business.VodCdnTopAccessElement, com.byteplus.service.vod.model.business.VodCdnTopAccessElement.Builder, com.byteplus.service.vod.model.business.VodCdnTopAccessElementOrBuilder>(
                 itemInfos_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -809,13 +809,13 @@ public final class VodListCdnTopAccessResult extends
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -834,12 +834,12 @@ public final class VodListCdnTopAccessResult extends
   }
 
   private static final com.google.protobuf.Parser<VodListCdnTopAccessResult>
-          PARSER = new com.google.protobuf.AbstractParser<VodListCdnTopAccessResult>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodListCdnTopAccessResult>() {
     @java.lang.Override
     public VodListCdnTopAccessResult parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodListCdnTopAccessResult(input, extensionRegistry);
     }
   };

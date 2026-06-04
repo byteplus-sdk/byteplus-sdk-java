@@ -194,6 +194,21 @@ public final class VodCdn {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_CdnOriginRule_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_CdnOriginRule_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_OriginAction_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_OriginAction_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Byteplus_Vod_Models_Business_OriginLine_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Byteplus_Vod_Models_Business_OriginLine_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -323,21 +338,26 @@ public final class VodCdn {
       ".Models.Business.CdnStatusDataItem\"f\n Vo" +
       "dListCdnStatusDataDetailResult\022B\n\004Data\030\001" +
       " \003(\01324.Byteplus.Vod.Models.Business.Doma" +
-      "inStatusDataDetail*\222\001\n\032VodDomainSourceSt" +
-      "ationType\022\'\n#UndefinedVodDomainSourceSta" +
-      "tionType\020\000\022!\n\035VodVodDomainSourceStationT" +
-      "ype\020\001\022(\n$ThirdPartyVodDomainSourceStatio" +
-      "nType\020\002*\251\001\n!VodDomainSourceStationAddres" +
-      "sType\022.\n*UndefinedVodDomainSourceStation" +
-      "AddressType\020\000\022+\n\'DomainVodDomainSourceSt" +
-      "ationAddressType\020\001\022\'\n#IPVodDomainSourceS" +
-      "tationAddressType\020\002B\326\001\n\'com.byteplus.ser" +
-      "vice.vod.model.businessB\006VodCdnP\001ZGgithu" +
-      "b.com/byteplus-sdk/byteplus-sdk-golang/s" +
-      "ervice/vod/models/business\240\001\001\330\001\001\302\002\000\312\002$By" +
-      "teplus\\Service\\Vod\\Models\\Business\342\002\'Byt" +
-      "eplus\\Service\\Vod\\Models\\GPBMetadatab\006pr" +
-      "oto3"
+      "inStatusDataDetail\"Q\n\rCdnOriginRule\022@\n\014O" +
+      "riginAction\030\001 \001(\0132*.Byteplus.Vod.Models." +
+      "Business.OriginAction\"M\n\014OriginAction\022=\n" +
+      "\013OriginLines\030\001 \003(\0132(.Byteplus.Vod.Models" +
+      ".Business.OriginLine\"G\n\nOriginLine\022\017\n\007Ad" +
+      "dress\030\001 \001(\t\022\024\n\014InstanceType\030\004 \001(\t\022\022\n\nOri" +
+      "ginHost\030\005 \001(\t*\222\001\n\032VodDomainSourceStation" +
+      "Type\022\'\n#UndefinedVodDomainSourceStationT" +
+      "ype\020\000\022!\n\035VodVodDomainSourceStationType\020\001" +
+      "\022(\n$ThirdPartyVodDomainSourceStationType" +
+      "\020\002*\251\001\n!VodDomainSourceStationAddressType" +
+      "\022.\n*UndefinedVodDomainSourceStationAddre" +
+      "ssType\020\000\022+\n\'DomainVodDomainSourceStation" +
+      "AddressType\020\001\022\'\n#IPVodDomainSourceStatio" +
+      "nAddressType\020\002B\326\001\n\'com.byteplus.service." +
+      "vod.model.businessB\006VodCdnP\001ZGgithub.com" +
+      "/byteplus-sdk/byteplus-sdk-golang/servic" +
+      "e/vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplu" +
+      "s\\Service\\Vod\\Models\\Business\342\002\'Byteplus" +
+      "\\Service\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -560,6 +580,24 @@ public final class VodCdn {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodListCdnStatusDataDetailResult_descriptor,
         new java.lang.String[] { "Data", });
+    internal_static_Byteplus_Vod_Models_Business_CdnOriginRule_descriptor =
+      getDescriptor().getMessageTypes().get(35);
+    internal_static_Byteplus_Vod_Models_Business_CdnOriginRule_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_CdnOriginRule_descriptor,
+        new java.lang.String[] { "OriginAction", });
+    internal_static_Byteplus_Vod_Models_Business_OriginAction_descriptor =
+      getDescriptor().getMessageTypes().get(36);
+    internal_static_Byteplus_Vod_Models_Business_OriginAction_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_OriginAction_descriptor,
+        new java.lang.String[] { "OriginLines", });
+    internal_static_Byteplus_Vod_Models_Business_OriginLine_descriptor =
+      getDescriptor().getMessageTypes().get(37);
+    internal_static_Byteplus_Vod_Models_Business_OriginLine_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Byteplus_Vod_Models_Business_OriginLine_descriptor,
+        new java.lang.String[] { "Address", "InstanceType", "OriginHost", });
     com.byteplus.service.vod.model.business.VodCommon.getDescriptor();
   }
 

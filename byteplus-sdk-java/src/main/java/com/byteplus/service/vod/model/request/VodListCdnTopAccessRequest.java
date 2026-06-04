@@ -7,10 +7,10 @@ package com.byteplus.service.vod.model.request;
  * Protobuf type {@code Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest}
  */
 public final class VodListCdnTopAccessRequest extends
-        com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
-        VodListCdnTopAccessRequestOrBuilder {
-  private static final long serialVersionUID = 0L;
+    com.google.protobuf.GeneratedMessageV3 implements
+    // @@protoc_insertion_point(message_implements:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
+    VodListCdnTopAccessRequestOrBuilder {
+private static final long serialVersionUID = 0L;
   // Use VodListCdnTopAccessRequest.newBuilder() to construct.
   private VodListCdnTopAccessRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
@@ -24,7 +24,7 @@ public final class VodListCdnTopAccessRequest extends
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
-          UnusedPrivateParameter unused) {
+      UnusedPrivateParameter unused) {
     return new VodListCdnTopAccessRequest();
   }
 
@@ -34,15 +34,15 @@ public final class VodListCdnTopAccessRequest extends
     return this.unknownFields;
   }
   private VodListCdnTopAccessRequest(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     this();
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-            com.google.protobuf.UnknownFieldSet.newBuilder();
+        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -81,7 +81,7 @@ public final class VodListCdnTopAccessRequest extends
           }
           default: {
             if (!parseUnknownField(
-                    input, unknownFields, extensionRegistry, tag)) {
+                input, unknownFields, extensionRegistry, tag)) {
               done = true;
             }
             break;
@@ -92,30 +92,30 @@ public final class VodListCdnTopAccessRequest extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-              e).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
   public static final com.google.protobuf.Descriptors.Descriptor
-  getDescriptor() {
+      getDescriptor() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnTopAccessRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-  internalGetFieldAccessorTable() {
+      internalGetFieldAccessorTable() {
     return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnTopAccessRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                    com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.class, com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.Builder.class);
+        .ensureFieldAccessorsInitialized(
+            com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.class, com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.Builder.class);
   }
 
   public static final int DOMAINS_FIELD_NUMBER = 1;
   private volatile java.lang.Object domains_;
   /**
    * <pre>
-   * 域名（当前仅支持一个域名)
+   * 域名（当前仅支持一个域名) 
    * </pre>
    *
    * <code>string Domains = 1;</code>
@@ -127,8 +127,8 @@ public final class VodListCdnTopAccessRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       domains_ = s;
       return s;
@@ -136,7 +136,7 @@ public final class VodListCdnTopAccessRequest extends
   }
   /**
    * <pre>
-   * 域名（当前仅支持一个域名)
+   * 域名（当前仅支持一个域名) 
    * </pre>
    *
    * <code>string Domains = 1;</code>
@@ -144,12 +144,12 @@ public final class VodListCdnTopAccessRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getDomainsBytes() {
+      getDomainsBytes() {
     java.lang.Object ref = domains_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       domains_ = b;
       return b;
     } else {
@@ -161,7 +161,7 @@ public final class VodListCdnTopAccessRequest extends
   private int startTimestamp_;
   /**
    * <pre>
-   * 查询起始时间戳，单位：Unix秒级时间戳
+   * 查询起始时间戳，单位：Unix秒级时间戳 
    * </pre>
    *
    * <code>int32 StartTimestamp = 2;</code>
@@ -176,7 +176,7 @@ public final class VodListCdnTopAccessRequest extends
   private int endTimestamp_;
   /**
    * <pre>
-   * 查询结束时间戳，单位：Unix秒级时间戳
+   * 查询结束时间戳，单位：Unix秒级时间戳 
    * </pre>
    *
    * <code>int32 EndTimestamp = 3;</code>
@@ -191,7 +191,7 @@ public final class VodListCdnTopAccessRequest extends
   private volatile java.lang.Object sortType_;
   /**
    * <pre>
-   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
    * </pre>
    *
    * <code>string SortType = 4;</code>
@@ -203,8 +203,8 @@ public final class VodListCdnTopAccessRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       sortType_ = s;
       return s;
@@ -212,7 +212,7 @@ public final class VodListCdnTopAccessRequest extends
   }
   /**
    * <pre>
-   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+   * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
    * </pre>
    *
    * <code>string SortType = 4;</code>
@@ -220,12 +220,12 @@ public final class VodListCdnTopAccessRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getSortTypeBytes() {
+      getSortTypeBytes() {
     java.lang.Object ref = sortType_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       sortType_ = b;
       return b;
     } else {
@@ -238,7 +238,7 @@ public final class VodListCdnTopAccessRequest extends
   /**
    * <pre>
    * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-   * Referer
+   * Referer 
    * </pre>
    *
    * <code>string Item = 5;</code>
@@ -250,8 +250,8 @@ public final class VodListCdnTopAccessRequest extends
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
-      com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
       item_ = s;
       return s;
@@ -260,7 +260,7 @@ public final class VodListCdnTopAccessRequest extends
   /**
    * <pre>
    * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-   * Referer
+   * Referer 
    * </pre>
    *
    * <code>string Item = 5;</code>
@@ -268,12 +268,12 @@ public final class VodListCdnTopAccessRequest extends
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-  getItemBytes() {
+      getItemBytes() {
     java.lang.Object ref = item_;
     if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8(
-                      (java.lang.String) ref);
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
       item_ = b;
       return b;
     } else {
@@ -294,7 +294,7 @@ public final class VodListCdnTopAccessRequest extends
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
-          throws java.io.IOException {
+                      throws java.io.IOException {
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(domains_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, domains_);
     }
@@ -324,11 +324,11 @@ public final class VodListCdnTopAccessRequest extends
     }
     if (startTimestamp_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(2, startTimestamp_);
+        .computeInt32Size(2, startTimestamp_);
     }
     if (endTimestamp_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-              .computeInt32Size(3, endTimestamp_);
+        .computeInt32Size(3, endTimestamp_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sortType_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, sortType_);
@@ -344,7 +344,7 @@ public final class VodListCdnTopAccessRequest extends
   @java.lang.Override
   public boolean equals(final java.lang.Object obj) {
     if (obj == this) {
-      return true;
+     return true;
     }
     if (!(obj instanceof com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest)) {
       return super.equals(obj);
@@ -352,15 +352,15 @@ public final class VodListCdnTopAccessRequest extends
     com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest other = (com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest) obj;
 
     if (!getDomains()
-            .equals(other.getDomains())) return false;
+        .equals(other.getDomains())) return false;
     if (getStartTimestamp()
-            != other.getStartTimestamp()) return false;
+        != other.getStartTimestamp()) return false;
     if (getEndTimestamp()
-            != other.getEndTimestamp()) return false;
+        != other.getEndTimestamp()) return false;
     if (!getSortType()
-            .equals(other.getSortType())) return false;
+        .equals(other.getSortType())) return false;
     if (!getItem()
-            .equals(other.getItem())) return false;
+        .equals(other.getItem())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -388,73 +388,73 @@ public final class VodListCdnTopAccessRequest extends
   }
 
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          java.nio.ByteBuffer data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          java.nio.ByteBuffer data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          com.google.protobuf.ByteString data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          com.google.protobuf.ByteString data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      com.google.protobuf.ByteString data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(byte[] data)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          byte[] data,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+      byte[] data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseDelimitedFrom(java.io.InputStream input)
-          throws java.io.IOException {
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input);
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseDelimitedFrom(
-          java.io.InputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      java.io.InputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          com.google.protobuf.CodedInputStream input)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input);
+        .parseWithIOException(PARSER, input);
   }
   public static com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parseFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
+      com.google.protobuf.CodedInputStream input,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
-            .parseWithIOException(PARSER, input, extensionRegistry);
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
   @java.lang.Override
@@ -468,12 +468,12 @@ public final class VodListCdnTopAccessRequest extends
   @java.lang.Override
   public Builder toBuilder() {
     return this == DEFAULT_INSTANCE
-            ? new Builder() : new Builder().mergeFrom(this);
+        ? new Builder() : new Builder().mergeFrom(this);
   }
 
   @java.lang.Override
   protected Builder newBuilderForType(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -481,20 +481,20 @@ public final class VodListCdnTopAccessRequest extends
    * Protobuf type {@code Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest}
    */
   public static final class Builder extends
-          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
-          com.byteplus.service.vod.model.request.VodListCdnTopAccessRequestOrBuilder {
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+      // @@protoc_insertion_point(builder_implements:Byteplus.Vod.Models.Request.VodListCdnTopAccessRequest)
+      com.byteplus.service.vod.model.request.VodListCdnTopAccessRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
-    getDescriptor() {
+        getDescriptor() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnTopAccessRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-    internalGetFieldAccessorTable() {
+        internalGetFieldAccessorTable() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnTopAccessRequest_fieldAccessorTable
-              .ensureFieldAccessorsInitialized(
-                      com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.class, com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.Builder.class);
+          .ensureFieldAccessorsInitialized(
+              com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.class, com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.Builder.class);
     }
 
     // Construct using com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest.newBuilder()
@@ -503,7 +503,7 @@ public final class VodListCdnTopAccessRequest extends
     }
 
     private Builder(
-            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -530,7 +530,7 @@ public final class VodListCdnTopAccessRequest extends
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
-    getDescriptorForType() {
+        getDescriptorForType() {
       return com.byteplus.service.vod.model.request.VodRequest.internal_static_Byteplus_Vod_Models_Request_VodListCdnTopAccessRequest_descriptor;
     }
 
@@ -566,30 +566,30 @@ public final class VodListCdnTopAccessRequest extends
     }
     @java.lang.Override
     public Builder setField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.setField(field, value);
     }
     @java.lang.Override
     public Builder clearField(
-            com.google.protobuf.Descriptors.FieldDescriptor field) {
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
       return super.clearField(field);
     }
     @java.lang.Override
     public Builder clearOneof(
-            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
       return super.clearOneof(oneof);
     }
     @java.lang.Override
     public Builder setRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, java.lang.Object value) {
       return super.setRepeatedField(field, index, value);
     }
     @java.lang.Override
     public Builder addRepeatedField(
-            com.google.protobuf.Descriptors.FieldDescriptor field,
-            java.lang.Object value) {
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        java.lang.Object value) {
       return super.addRepeatedField(field, value);
     }
     @java.lang.Override
@@ -634,9 +634,9 @@ public final class VodListCdnTopAccessRequest extends
 
     @java.lang.Override
     public Builder mergeFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws java.io.IOException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
       com.byteplus.service.vod.model.request.VodListCdnTopAccessRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
@@ -654,7 +654,7 @@ public final class VodListCdnTopAccessRequest extends
     private java.lang.Object domains_ = "";
     /**
      * <pre>
-     * 域名（当前仅支持一个域名)
+     * 域名（当前仅支持一个域名) 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -664,7 +664,7 @@ public final class VodListCdnTopAccessRequest extends
       java.lang.Object ref = domains_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         domains_ = s;
         return s;
@@ -674,19 +674,19 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 域名（当前仅支持一个域名)
+     * 域名（当前仅支持一个域名) 
      * </pre>
      *
      * <code>string Domains = 1;</code>
      * @return The bytes for domains.
      */
     public com.google.protobuf.ByteString
-    getDomainsBytes() {
+        getDomainsBytes() {
       java.lang.Object ref = domains_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         domains_ = b;
         return b;
       } else {
@@ -695,7 +695,7 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 域名（当前仅支持一个域名)
+     * 域名（当前仅支持一个域名) 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -703,32 +703,32 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setDomains(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       domains_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 域名（当前仅支持一个域名)
+     * 域名（当前仅支持一个域名) 
      * </pre>
      *
      * <code>string Domains = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearDomains() {
-
+      
       domains_ = getDefaultInstance().getDomains();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 域名（当前仅支持一个域名)
+     * 域名（当前仅支持一个域名) 
      * </pre>
      *
      * <code>string Domains = 1;</code>
@@ -736,12 +736,12 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setDomainsBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       domains_ = value;
       onChanged();
       return this;
@@ -750,7 +750,7 @@ public final class VodListCdnTopAccessRequest extends
     private int startTimestamp_ ;
     /**
      * <pre>
-     * 查询起始时间戳，单位：Unix秒级时间戳
+     * 查询起始时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 StartTimestamp = 2;</code>
@@ -762,7 +762,7 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 查询起始时间戳，单位：Unix秒级时间戳
+     * 查询起始时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 StartTimestamp = 2;</code>
@@ -770,21 +770,21 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setStartTimestamp(int value) {
-
+      
       startTimestamp_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询起始时间戳，单位：Unix秒级时间戳
+     * 查询起始时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 StartTimestamp = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearStartTimestamp() {
-
+      
       startTimestamp_ = 0;
       onChanged();
       return this;
@@ -793,7 +793,7 @@ public final class VodListCdnTopAccessRequest extends
     private int endTimestamp_ ;
     /**
      * <pre>
-     * 查询结束时间戳，单位：Unix秒级时间戳
+     * 查询结束时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 EndTimestamp = 3;</code>
@@ -805,7 +805,7 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 查询结束时间戳，单位：Unix秒级时间戳
+     * 查询结束时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 EndTimestamp = 3;</code>
@@ -813,21 +813,21 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setEndTimestamp(int value) {
-
+      
       endTimestamp_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 查询结束时间戳，单位：Unix秒级时间戳
+     * 查询结束时间戳，单位：Unix秒级时间戳 
      * </pre>
      *
      * <code>int32 EndTimestamp = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearEndTimestamp() {
-
+      
       endTimestamp_ = 0;
       onChanged();
       return this;
@@ -836,7 +836,7 @@ public final class VodListCdnTopAccessRequest extends
     private java.lang.Object sortType_ = "";
     /**
      * <pre>
-     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
      * </pre>
      *
      * <code>string SortType = 4;</code>
@@ -846,7 +846,7 @@ public final class VodListCdnTopAccessRequest extends
       java.lang.Object ref = sortType_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sortType_ = s;
         return s;
@@ -856,19 +856,19 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
      * </pre>
      *
      * <code>string SortType = 4;</code>
      * @return The bytes for sortType.
      */
     public com.google.protobuf.ByteString
-    getSortTypeBytes() {
+        getSortTypeBytes() {
       java.lang.Object ref = sortType_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         sortType_ = b;
         return b;
       } else {
@@ -877,7 +877,7 @@ public final class VodListCdnTopAccessRequest extends
     }
     /**
      * <pre>
-     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
      * </pre>
      *
      * <code>string SortType = 4;</code>
@@ -885,32 +885,32 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setSortType(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       sortType_ = value;
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
      * </pre>
      *
      * <code>string SortType = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearSortType() {
-
+      
       sortType_ = getDefaultInstance().getSortType();
       onChanged();
       return this;
     }
     /**
      * <pre>
-     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量
+     * 排序方式，默认值为pv。取值：flux - 流量, pv -访问量 
      * </pre>
      *
      * <code>string SortType = 4;</code>
@@ -918,12 +918,12 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setSortTypeBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       sortType_ = value;
       onChanged();
       return this;
@@ -933,7 +933,7 @@ public final class VodListCdnTopAccessRequest extends
     /**
      * <pre>
      * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-     * Referer
+     * Referer 
      * </pre>
      *
      * <code>string Item = 5;</code>
@@ -943,7 +943,7 @@ public final class VodListCdnTopAccessRequest extends
       java.lang.Object ref = item_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
-                (com.google.protobuf.ByteString) ref;
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         item_ = s;
         return s;
@@ -954,19 +954,19 @@ public final class VodListCdnTopAccessRequest extends
     /**
      * <pre>
      * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-     * Referer
+     * Referer 
      * </pre>
      *
      * <code>string Item = 5;</code>
      * @return The bytes for item.
      */
     public com.google.protobuf.ByteString
-    getItemBytes() {
+        getItemBytes() {
       java.lang.Object ref = item_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
-                com.google.protobuf.ByteString.copyFromUtf8(
-                        (java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         item_ = b;
         return b;
       } else {
@@ -976,7 +976,7 @@ public final class VodListCdnTopAccessRequest extends
     /**
      * <pre>
      * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-     * Referer
+     * Referer 
      * </pre>
      *
      * <code>string Item = 5;</code>
@@ -984,11 +984,11 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setItem(
-            java.lang.String value) {
+        java.lang.String value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-
+    throw new NullPointerException();
+  }
+  
       item_ = value;
       onChanged();
       return this;
@@ -996,14 +996,14 @@ public final class VodListCdnTopAccessRequest extends
     /**
      * <pre>
      * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-     * Referer
+     * Referer 
      * </pre>
      *
      * <code>string Item = 5;</code>
      * @return This builder for chaining.
      */
     public Builder clearItem() {
-
+      
       item_ = getDefaultInstance().getItem();
       onChanged();
       return this;
@@ -1011,7 +1011,7 @@ public final class VodListCdnTopAccessRequest extends
     /**
      * <pre>
      * 指定一个统计字段，默认值为url。取值：url：表示请求 URL, referer：表示请求
-     * Referer
+     * Referer 
      * </pre>
      *
      * <code>string Item = 5;</code>
@@ -1019,25 +1019,25 @@ public final class VodListCdnTopAccessRequest extends
      * @return This builder for chaining.
      */
     public Builder setItemBytes(
-            com.google.protobuf.ByteString value) {
+        com.google.protobuf.ByteString value) {
       if (value == null) {
-        throw new NullPointerException();
-      }
-      checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
       item_ = value;
       onChanged();
       return this;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFields(unknownFields);
     }
 
     @java.lang.Override
     public final Builder mergeUnknownFields(
-            final com.google.protobuf.UnknownFieldSet unknownFields) {
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.mergeUnknownFields(unknownFields);
     }
 
@@ -1056,12 +1056,12 @@ public final class VodListCdnTopAccessRequest extends
   }
 
   private static final com.google.protobuf.Parser<VodListCdnTopAccessRequest>
-          PARSER = new com.google.protobuf.AbstractParser<VodListCdnTopAccessRequest>() {
+      PARSER = new com.google.protobuf.AbstractParser<VodListCdnTopAccessRequest>() {
     @java.lang.Override
     public VodListCdnTopAccessRequest parsePartialFrom(
-            com.google.protobuf.CodedInputStream input,
-            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-            throws com.google.protobuf.InvalidProtocolBufferException {
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return new VodListCdnTopAccessRequest(input, extensionRegistry);
     }
   };

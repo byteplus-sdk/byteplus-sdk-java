@@ -4,8 +4,8 @@
 package com.byteplus.service.vod.model.business;
 
 public interface VodCdnTopAccessElementOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodCdnTopAccessElement)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Business.VodCdnTopAccessElement)
+    com.google.protobuf.MessageOrBuilder {
 
   /**
    * <pre>
@@ -25,7 +25,7 @@ public interface VodCdnTopAccessElementOrBuilder extends
    * @return The bytes for itemKey.
    */
   com.google.protobuf.ByteString
-  getItemKeyBytes();
+      getItemKeyBytes();
 
   /**
    * <pre>

@@ -19,9 +19,10 @@ private static final long serialVersionUID = 0L;
     spaceName_ = "";
     domainType_ = "";
     domain_ = "";
-    origins_ = "";
     area_ = "";
     bucketName_ = "";
+    origin_ = java.util.Collections.emptyList();
+    host_ = "";
   }
 
   @java.lang.Override
@@ -44,6 +45,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -82,12 +84,6 @@ private static final long serialVersionUID = 0L;
             sourceStationAddressType_ = input.readInt32();
             break;
           }
-          case 58: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            origins_ = s;
-            break;
-          }
           case 66: {
             java.lang.String s = input.readStringRequireUtf8();
 
@@ -98,6 +94,21 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             bucketName_ = s;
+            break;
+          }
+          case 90: {
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              origin_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.CdnOriginRule>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            origin_.add(
+                input.readMessage(com.byteplus.service.vod.model.business.CdnOriginRule.parser(), extensionRegistry));
+            break;
+          }
+          case 130: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            host_ = s;
             break;
           }
           default: {
@@ -115,6 +126,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        origin_ = java.util.Collections.unmodifiableList(origin_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -280,57 +294,12 @@ private static final long serialVersionUID = 0L;
     return sourceStationAddressType_;
   }
 
-  public static final int ORIGINS_FIELD_NUMBER = 7;
-  private volatile java.lang.Object origins_;
-  /**
-   * <pre>
-   *源站地址
-   * </pre>
-   *
-   * <code>string Origins = 7;</code>
-   * @return The origins.
-   */
-  @java.lang.Override
-  public java.lang.String getOrigins() {
-    java.lang.Object ref = origins_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      origins_ = s;
-      return s;
-    }
-  }
-  /**
-   * <pre>
-   *源站地址
-   * </pre>
-   *
-   * <code>string Origins = 7;</code>
-   * @return The bytes for origins.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getOriginsBytes() {
-    java.lang.Object ref = origins_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      origins_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
   public static final int AREA_FIELD_NUMBER = 8;
   private volatile java.lang.Object area_;
   /**
    * <pre>
-   *地区
+   *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+   *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
    * </pre>
    *
    * <code>string Area = 8;</code>
@@ -351,7 +320,8 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   *地区
+   *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+   *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
    * </pre>
    *
    * <code>string Area = 8;</code>
@@ -418,6 +388,112 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int ORIGIN_FIELD_NUMBER = 11;
+  private java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule> origin_;
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  @java.lang.Override
+  public java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule> getOriginList() {
+    return origin_;
+  }
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  @java.lang.Override
+  public java.util.List<? extends com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder> 
+      getOriginOrBuilderList() {
+    return origin_;
+  }
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  @java.lang.Override
+  public int getOriginCount() {
+    return origin_.size();
+  }
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.CdnOriginRule getOrigin(int index) {
+    return origin_.get(index);
+  }
+  /**
+   * <pre>
+   * 源站列表
+   * </pre>
+   *
+   * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+   */
+  @java.lang.Override
+  public com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder getOriginOrBuilder(
+      int index) {
+    return origin_.get(index);
+  }
+
+  public static final int HOST_FIELD_NUMBER = 16;
+  private volatile java.lang.Object host_;
+  /**
+   * <pre>
+   * 回源Host
+   * </pre>
+   *
+   * <code>string Host = 16;</code>
+   * @return The host.
+   */
+  @java.lang.Override
+  public java.lang.String getHost() {
+    java.lang.Object ref = host_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      host_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * 回源Host
+   * </pre>
+   *
+   * <code>string Host = 16;</code>
+   * @return The bytes for host.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getHostBytes() {
+    java.lang.Object ref = host_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      host_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -447,14 +523,17 @@ private static final long serialVersionUID = 0L;
     if (sourceStationAddressType_ != 0) {
       output.writeInt32(6, sourceStationAddressType_);
     }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(origins_)) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, origins_);
-    }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(area_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, area_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(bucketName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 9, bucketName_);
+    }
+    for (int i = 0; i < origin_.size(); i++) {
+      output.writeMessage(11, origin_.get(i));
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 16, host_);
     }
     unknownFields.writeTo(output);
   }
@@ -482,14 +561,18 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(6, sourceStationAddressType_);
     }
-    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(origins_)) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, origins_);
-    }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(area_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, area_);
     }
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(bucketName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, bucketName_);
+    }
+    for (int i = 0; i < origin_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(11, origin_.get(i));
+    }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, host_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -516,12 +599,14 @@ private static final long serialVersionUID = 0L;
         != other.getSourceStationType()) return false;
     if (getSourceStationAddressType()
         != other.getSourceStationAddressType()) return false;
-    if (!getOrigins()
-        .equals(other.getOrigins())) return false;
     if (!getArea()
         .equals(other.getArea())) return false;
     if (!getBucketName()
         .equals(other.getBucketName())) return false;
+    if (!getOriginList()
+        .equals(other.getOriginList())) return false;
+    if (!getHost()
+        .equals(other.getHost())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -543,12 +628,16 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getSourceStationType();
     hash = (37 * hash) + SOURCESTATIONADDRESSTYPE_FIELD_NUMBER;
     hash = (53 * hash) + getSourceStationAddressType();
-    hash = (37 * hash) + ORIGINS_FIELD_NUMBER;
-    hash = (53 * hash) + getOrigins().hashCode();
     hash = (37 * hash) + AREA_FIELD_NUMBER;
     hash = (53 * hash) + getArea().hashCode();
     hash = (37 * hash) + BUCKETNAME_FIELD_NUMBER;
     hash = (53 * hash) + getBucketName().hashCode();
+    if (getOriginCount() > 0) {
+      hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
+      hash = (53 * hash) + getOriginList().hashCode();
+    }
+    hash = (37 * hash) + HOST_FIELD_NUMBER;
+    hash = (53 * hash) + getHost().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -677,6 +766,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
+        getOriginFieldBuilder();
       }
     }
     @java.lang.Override
@@ -692,11 +782,17 @@ private static final long serialVersionUID = 0L;
 
       sourceStationAddressType_ = 0;
 
-      origins_ = "";
-
       area_ = "";
 
       bucketName_ = "";
+
+      if (originBuilder_ == null) {
+        origin_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      } else {
+        originBuilder_.clear();
+      }
+      host_ = "";
 
       return this;
     }
@@ -724,14 +820,24 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.byteplus.service.vod.model.request.VodCreateDomainV2Request buildPartial() {
       com.byteplus.service.vod.model.request.VodCreateDomainV2Request result = new com.byteplus.service.vod.model.request.VodCreateDomainV2Request(this);
+      int from_bitField0_ = bitField0_;
       result.spaceName_ = spaceName_;
       result.domainType_ = domainType_;
       result.domain_ = domain_;
       result.sourceStationType_ = sourceStationType_;
       result.sourceStationAddressType_ = sourceStationAddressType_;
-      result.origins_ = origins_;
       result.area_ = area_;
       result.bucketName_ = bucketName_;
+      if (originBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          origin_ = java.util.Collections.unmodifiableList(origin_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.origin_ = origin_;
+      } else {
+        result.origin_ = originBuilder_.build();
+      }
+      result.host_ = host_;
       onBuilt();
       return result;
     }
@@ -798,16 +904,42 @@ private static final long serialVersionUID = 0L;
       if (other.getSourceStationAddressType() != 0) {
         setSourceStationAddressType(other.getSourceStationAddressType());
       }
-      if (!other.getOrigins().isEmpty()) {
-        origins_ = other.origins_;
-        onChanged();
-      }
       if (!other.getArea().isEmpty()) {
         area_ = other.area_;
         onChanged();
       }
       if (!other.getBucketName().isEmpty()) {
         bucketName_ = other.bucketName_;
+        onChanged();
+      }
+      if (originBuilder_ == null) {
+        if (!other.origin_.isEmpty()) {
+          if (origin_.isEmpty()) {
+            origin_ = other.origin_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureOriginIsMutable();
+            origin_.addAll(other.origin_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.origin_.isEmpty()) {
+          if (originBuilder_.isEmpty()) {
+            originBuilder_.dispose();
+            originBuilder_ = null;
+            origin_ = other.origin_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+            originBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getOriginFieldBuilder() : null;
+          } else {
+            originBuilder_.addAllMessages(other.origin_);
+          }
+        }
+      }
+      if (!other.getHost().isEmpty()) {
+        host_ = other.host_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -838,6 +970,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private java.lang.Object spaceName_ = "";
     /**
@@ -1161,106 +1294,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object origins_ = "";
-    /**
-     * <pre>
-     *源站地址
-     * </pre>
-     *
-     * <code>string Origins = 7;</code>
-     * @return The origins.
-     */
-    public java.lang.String getOrigins() {
-      java.lang.Object ref = origins_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        origins_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <pre>
-     *源站地址
-     * </pre>
-     *
-     * <code>string Origins = 7;</code>
-     * @return The bytes for origins.
-     */
-    public com.google.protobuf.ByteString
-        getOriginsBytes() {
-      java.lang.Object ref = origins_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        origins_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <pre>
-     *源站地址
-     * </pre>
-     *
-     * <code>string Origins = 7;</code>
-     * @param value The origins to set.
-     * @return This builder for chaining.
-     */
-    public Builder setOrigins(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      origins_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     *源站地址
-     * </pre>
-     *
-     * <code>string Origins = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearOrigins() {
-      
-      origins_ = getDefaultInstance().getOrigins();
-      onChanged();
-      return this;
-    }
-    /**
-     * <pre>
-     *源站地址
-     * </pre>
-     *
-     * <code>string Origins = 7;</code>
-     * @param value The bytes for origins to set.
-     * @return This builder for chaining.
-     */
-    public Builder setOriginsBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      origins_ = value;
-      onChanged();
-      return this;
-    }
-
     private java.lang.Object area_ = "";
     /**
      * <pre>
-     *地区
+     *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+     *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
      * </pre>
      *
      * <code>string Area = 8;</code>
@@ -1280,7 +1318,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *地区
+     *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+     *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
      * </pre>
      *
      * <code>string Area = 8;</code>
@@ -1301,7 +1340,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *地区
+     *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+     *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
      * </pre>
      *
      * <code>string Area = 8;</code>
@@ -1320,7 +1360,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *地区
+     *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+     *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
      * </pre>
      *
      * <code>string Area = 8;</code>
@@ -1334,7 +1375,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     *地区
+     *  string Origins = 7;                  //源站地址，这个参数在历史 SDK
+     *  不可用，所以废弃，后续可以使用编号 11 的 Origin 参数
      * </pre>
      *
      * <code>string Area = 8;</code>
@@ -1445,6 +1487,414 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       bucketName_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule> origin_ =
+      java.util.Collections.emptyList();
+    private void ensureOriginIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        origin_ = new java.util.ArrayList<com.byteplus.service.vod.model.business.CdnOriginRule>(origin_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.byteplus.service.vod.model.business.CdnOriginRule, com.byteplus.service.vod.model.business.CdnOriginRule.Builder, com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder> originBuilder_;
+
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule> getOriginList() {
+      if (originBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(origin_);
+      } else {
+        return originBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public int getOriginCount() {
+      if (originBuilder_ == null) {
+        return origin_.size();
+      } else {
+        return originBuilder_.getCount();
+      }
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public com.byteplus.service.vod.model.business.CdnOriginRule getOrigin(int index) {
+      if (originBuilder_ == null) {
+        return origin_.get(index);
+      } else {
+        return originBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder setOrigin(
+        int index, com.byteplus.service.vod.model.business.CdnOriginRule value) {
+      if (originBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureOriginIsMutable();
+        origin_.set(index, value);
+        onChanged();
+      } else {
+        originBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder setOrigin(
+        int index, com.byteplus.service.vod.model.business.CdnOriginRule.Builder builderForValue) {
+      if (originBuilder_ == null) {
+        ensureOriginIsMutable();
+        origin_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        originBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder addOrigin(com.byteplus.service.vod.model.business.CdnOriginRule value) {
+      if (originBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureOriginIsMutable();
+        origin_.add(value);
+        onChanged();
+      } else {
+        originBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder addOrigin(
+        int index, com.byteplus.service.vod.model.business.CdnOriginRule value) {
+      if (originBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureOriginIsMutable();
+        origin_.add(index, value);
+        onChanged();
+      } else {
+        originBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder addOrigin(
+        com.byteplus.service.vod.model.business.CdnOriginRule.Builder builderForValue) {
+      if (originBuilder_ == null) {
+        ensureOriginIsMutable();
+        origin_.add(builderForValue.build());
+        onChanged();
+      } else {
+        originBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder addOrigin(
+        int index, com.byteplus.service.vod.model.business.CdnOriginRule.Builder builderForValue) {
+      if (originBuilder_ == null) {
+        ensureOriginIsMutable();
+        origin_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        originBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder addAllOrigin(
+        java.lang.Iterable<? extends com.byteplus.service.vod.model.business.CdnOriginRule> values) {
+      if (originBuilder_ == null) {
+        ensureOriginIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, origin_);
+        onChanged();
+      } else {
+        originBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder clearOrigin() {
+      if (originBuilder_ == null) {
+        origin_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+      } else {
+        originBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public Builder removeOrigin(int index) {
+      if (originBuilder_ == null) {
+        ensureOriginIsMutable();
+        origin_.remove(index);
+        onChanged();
+      } else {
+        originBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public com.byteplus.service.vod.model.business.CdnOriginRule.Builder getOriginBuilder(
+        int index) {
+      return getOriginFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder getOriginOrBuilder(
+        int index) {
+      if (originBuilder_ == null) {
+        return origin_.get(index);  } else {
+        return originBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public java.util.List<? extends com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder> 
+         getOriginOrBuilderList() {
+      if (originBuilder_ != null) {
+        return originBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(origin_);
+      }
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public com.byteplus.service.vod.model.business.CdnOriginRule.Builder addOriginBuilder() {
+      return getOriginFieldBuilder().addBuilder(
+          com.byteplus.service.vod.model.business.CdnOriginRule.getDefaultInstance());
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public com.byteplus.service.vod.model.business.CdnOriginRule.Builder addOriginBuilder(
+        int index) {
+      return getOriginFieldBuilder().addBuilder(
+          index, com.byteplus.service.vod.model.business.CdnOriginRule.getDefaultInstance());
+    }
+    /**
+     * <pre>
+     * 源站列表
+     * </pre>
+     *
+     * <code>repeated .Byteplus.Vod.Models.Business.CdnOriginRule Origin = 11;</code>
+     */
+    public java.util.List<com.byteplus.service.vod.model.business.CdnOriginRule.Builder> 
+         getOriginBuilderList() {
+      return getOriginFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        com.byteplus.service.vod.model.business.CdnOriginRule, com.byteplus.service.vod.model.business.CdnOriginRule.Builder, com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder> 
+        getOriginFieldBuilder() {
+      if (originBuilder_ == null) {
+        originBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            com.byteplus.service.vod.model.business.CdnOriginRule, com.byteplus.service.vod.model.business.CdnOriginRule.Builder, com.byteplus.service.vod.model.business.CdnOriginRuleOrBuilder>(
+                origin_,
+                ((bitField0_ & 0x00000001) != 0),
+                getParentForChildren(),
+                isClean());
+        origin_ = null;
+      }
+      return originBuilder_;
+    }
+
+    private java.lang.Object host_ = "";
+    /**
+     * <pre>
+     * 回源Host
+     * </pre>
+     *
+     * <code>string Host = 16;</code>
+     * @return The host.
+     */
+    public java.lang.String getHost() {
+      java.lang.Object ref = host_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        host_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 回源Host
+     * </pre>
+     *
+     * <code>string Host = 16;</code>
+     * @return The bytes for host.
+     */
+    public com.google.protobuf.ByteString
+        getHostBytes() {
+      java.lang.Object ref = host_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        host_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 回源Host
+     * </pre>
+     *
+     * <code>string Host = 16;</code>
+     * @param value The host to set.
+     * @return This builder for chaining.
+     */
+    public Builder setHost(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      host_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 回源Host
+     * </pre>
+     *
+     * <code>string Host = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearHost() {
+      
+      host_ = getDefaultInstance().getHost();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 回源Host
+     * </pre>
+     *
+     * <code>string Host = 16;</code>
+     * @param value The bytes for host to set.
+     * @return This builder for chaining.
+     */
+    public Builder setHostBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      host_ = value;
       onChanged();
       return this;
     }

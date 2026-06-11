@@ -27,3 +27,6 @@ Above options will take precedence in sequence, Suggest use option 1 for better 
 
 #### More examples:
 src/main/java/com/example
+## Security and privacy
+This project takes security seriously.
+For vulnerability reporting and supported versions, see [SECURITY.md](SECURITY.md)

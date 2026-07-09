@@ -256,4 +256,34 @@ public interface VodUrlUploadURLSetOrBuilder extends
    * @return The enableLowPriority.
    */
   boolean getEnableLowPriority();
+
+  /**
+   * <pre>
+   * 文件类型 
+   * </pre>
+   *
+   * <code>string FileType = 15;</code>
+   * @return The fileType.
+   */
+  java.lang.String getFileType();
+  /**
+   * <pre>
+   * 文件类型 
+   * </pre>
+   *
+   * <code>string FileType = 15;</code>
+   * @return The bytes for fileType.
+   */
+  com.google.protobuf.ByteString
+      getFileTypeBytes();
+
+  /**
+   * <pre>
+   * 媒资类型 
+   * </pre>
+   *
+   * <code>int32 RecordType = 16;</code>
+   * @return The recordType.
+   */
+  int getRecordType();
 }

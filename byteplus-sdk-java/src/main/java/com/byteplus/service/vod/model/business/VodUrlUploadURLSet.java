@@ -27,6 +27,7 @@ private static final long serialVersionUID = 0L;
     fileName_ = "";
     fileExtension_ = "";
     urlEncryptionAlgorithm_ = "";
+    fileType_ = "";
   }
 
   @java.lang.Override
@@ -138,6 +139,17 @@ private static final long serialVersionUID = 0L;
           case 112: {
 
             enableLowPriority_ = input.readBool();
+            break;
+          }
+          case 122: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            fileType_ = s;
+            break;
+          }
+          case 128: {
+
+            recordType_ = input.readInt32();
             break;
           }
           default: {
@@ -723,6 +735,67 @@ private static final long serialVersionUID = 0L;
     return enableLowPriority_;
   }
 
+  public static final int FILETYPE_FIELD_NUMBER = 15;
+  private volatile java.lang.Object fileType_;
+  /**
+   * <pre>
+   * 文件类型 
+   * </pre>
+   *
+   * <code>string FileType = 15;</code>
+   * @return The fileType.
+   */
+  @java.lang.Override
+  public java.lang.String getFileType() {
+    java.lang.Object ref = fileType_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      fileType_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * 文件类型 
+   * </pre>
+   *
+   * <code>string FileType = 15;</code>
+   * @return The bytes for fileType.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getFileTypeBytes() {
+    java.lang.Object ref = fileType_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      fileType_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int RECORDTYPE_FIELD_NUMBER = 16;
+  private int recordType_;
+  /**
+   * <pre>
+   * 媒资类型 
+   * </pre>
+   *
+   * <code>int32 RecordType = 16;</code>
+   * @return The recordType.
+   */
+  @java.lang.Override
+  public int getRecordType() {
+    return recordType_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -779,6 +852,12 @@ private static final long serialVersionUID = 0L;
     if (enableLowPriority_ != false) {
       output.writeBool(14, enableLowPriority_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileType_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 15, fileType_);
+    }
+    if (recordType_ != 0) {
+      output.writeInt32(16, recordType_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -833,6 +912,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(14, enableLowPriority_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileType_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, fileType_);
+    }
+    if (recordType_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(16, recordType_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -876,6 +962,10 @@ private static final long serialVersionUID = 0L;
         .equals(other.getUrlEncryptionAlgorithm())) return false;
     if (getEnableLowPriority()
         != other.getEnableLowPriority()) return false;
+    if (!getFileType()
+        .equals(other.getFileType())) return false;
+    if (getRecordType()
+        != other.getRecordType()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -917,6 +1007,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ENABLELOWPRIORITY_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getEnableLowPriority());
+    hash = (37 * hash) + FILETYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getFileType().hashCode();
+    hash = (37 * hash) + RECORDTYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getRecordType();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1078,6 +1172,10 @@ private static final long serialVersionUID = 0L;
 
       enableLowPriority_ = false;
 
+      fileType_ = "";
+
+      recordType_ = 0;
+
       return this;
     }
 
@@ -1118,6 +1216,8 @@ private static final long serialVersionUID = 0L;
       result.fileExtension_ = fileExtension_;
       result.urlEncryptionAlgorithm_ = urlEncryptionAlgorithm_;
       result.enableLowPriority_ = enableLowPriority_;
+      result.fileType_ = fileType_;
+      result.recordType_ = recordType_;
       onBuilt();
       return result;
     }
@@ -1218,6 +1318,13 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getEnableLowPriority() != false) {
         setEnableLowPriority(other.getEnableLowPriority());
+      }
+      if (!other.getFileType().isEmpty()) {
+        fileType_ = other.fileType_;
+        onChanged();
+      }
+      if (other.getRecordType() != 0) {
+        setRecordType(other.getRecordType());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -2429,6 +2536,145 @@ private static final long serialVersionUID = 0L;
     public Builder clearEnableLowPriority() {
       
       enableLowPriority_ = false;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object fileType_ = "";
+    /**
+     * <pre>
+     * 文件类型 
+     * </pre>
+     *
+     * <code>string FileType = 15;</code>
+     * @return The fileType.
+     */
+    public java.lang.String getFileType() {
+      java.lang.Object ref = fileType_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        fileType_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 文件类型 
+     * </pre>
+     *
+     * <code>string FileType = 15;</code>
+     * @return The bytes for fileType.
+     */
+    public com.google.protobuf.ByteString
+        getFileTypeBytes() {
+      java.lang.Object ref = fileType_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        fileType_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 文件类型 
+     * </pre>
+     *
+     * <code>string FileType = 15;</code>
+     * @param value The fileType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFileType(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      fileType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 文件类型 
+     * </pre>
+     *
+     * <code>string FileType = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearFileType() {
+      
+      fileType_ = getDefaultInstance().getFileType();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 文件类型 
+     * </pre>
+     *
+     * <code>string FileType = 15;</code>
+     * @param value The bytes for fileType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setFileTypeBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      fileType_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int recordType_ ;
+    /**
+     * <pre>
+     * 媒资类型 
+     * </pre>
+     *
+     * <code>int32 RecordType = 16;</code>
+     * @return The recordType.
+     */
+    @java.lang.Override
+    public int getRecordType() {
+      return recordType_;
+    }
+    /**
+     * <pre>
+     * 媒资类型 
+     * </pre>
+     *
+     * <code>int32 RecordType = 16;</code>
+     * @param value The recordType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setRecordType(int value) {
+      
+      recordType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 媒资类型 
+     * </pre>
+     *
+     * <code>int32 RecordType = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearRecordType() {
+      
+      recordType_ = 0;
       onChanged();
       return this;
     }

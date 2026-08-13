@@ -14,7 +14,7 @@
         <skipTests>true</skipTests>
         <dep.maven-surefire-plugin.version>2.9</dep.maven-surefire-plugin.version>
         <httpcomponents.version>4.5.2</httpcomponents.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <lombok.version>1.16.22</lombok.version>
         <commons-lang3.version>3.10</commons-lang3.version>
         <protobuf.version>3.12.4</protobuf.version>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.byteplus</groupId>
             <artifactId>byteplus-sdk-java</artifactId>
-            <version>1.1.56</version>
+            <version>1.1.57</version>
         </dependency>
     </dependencies>
 

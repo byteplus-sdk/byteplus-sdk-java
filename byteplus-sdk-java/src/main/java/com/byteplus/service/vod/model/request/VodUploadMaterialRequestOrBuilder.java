@@ -146,4 +146,24 @@ public interface VodUploadMaterialRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getFileExtensionBytes();
+
+  /**
+   * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 8;</code>
+   * @return The uploadHostPrefer.
+   */
+  java.lang.String getUploadHostPrefer();
+  /**
+   * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 8;</code>
+   * @return The bytes for uploadHostPrefer.
+   */
+  com.google.protobuf.ByteString
+      getUploadHostPreferBytes();
 }

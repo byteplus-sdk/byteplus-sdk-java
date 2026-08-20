@@ -21,6 +21,7 @@ private static final long serialVersionUID = 0L;
     fileType_ = "";
     fileName_ = "";
     fileExtension_ = "";
+    uploadHostPrefer_ = "";
   }
 
   @java.lang.Override
@@ -91,6 +92,12 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             fileExtension_ = s;
+            break;
+          }
+          case 66: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            uploadHostPrefer_ = s;
             break;
           }
           default: {
@@ -385,6 +392,52 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int UPLOADHOSTPREFER_FIELD_NUMBER = 8;
+  private volatile java.lang.Object uploadHostPrefer_;
+  /**
+   * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 8;</code>
+   * @return The uploadHostPrefer.
+   */
+  @java.lang.Override
+  public java.lang.String getUploadHostPrefer() {
+    java.lang.Object ref = uploadHostPrefer_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      uploadHostPrefer_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 8;</code>
+   * @return The bytes for uploadHostPrefer.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getUploadHostPreferBytes() {
+    java.lang.Object ref = uploadHostPrefer_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      uploadHostPrefer_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -420,6 +473,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileExtension_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 7, fileExtension_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uploadHostPrefer_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, uploadHostPrefer_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -452,6 +508,9 @@ private static final long serialVersionUID = 0L;
     if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fileExtension_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, fileExtension_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(uploadHostPrefer_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, uploadHostPrefer_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -482,6 +541,8 @@ private static final long serialVersionUID = 0L;
         != other.getStorageClass()) return false;
     if (!getFileExtension()
         .equals(other.getFileExtension())) return false;
+    if (!getUploadHostPrefer()
+        .equals(other.getUploadHostPrefer())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -508,6 +569,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getStorageClass();
     hash = (37 * hash) + FILEEXTENSION_FIELD_NUMBER;
     hash = (53 * hash) + getFileExtension().hashCode();
+    hash = (37 * hash) + UPLOADHOSTPREFER_FIELD_NUMBER;
+    hash = (53 * hash) + getUploadHostPrefer().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -655,6 +718,8 @@ private static final long serialVersionUID = 0L;
 
       fileExtension_ = "";
 
+      uploadHostPrefer_ = "";
+
       return this;
     }
 
@@ -688,6 +753,7 @@ private static final long serialVersionUID = 0L;
       result.fileName_ = fileName_;
       result.storageClass_ = storageClass_;
       result.fileExtension_ = fileExtension_;
+      result.uploadHostPrefer_ = uploadHostPrefer_;
       onBuilt();
       return result;
     }
@@ -760,6 +826,10 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getFileExtension().isEmpty()) {
         fileExtension_ = other.fileExtension_;
+        onChanged();
+      }
+      if (!other.getUploadHostPrefer().isEmpty()) {
+        uploadHostPrefer_ = other.uploadHostPrefer_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -1353,6 +1423,102 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       fileExtension_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object uploadHostPrefer_ = "";
+    /**
+     * <pre>
+     * 上传域名偏好 
+     * </pre>
+     *
+     * <code>string UploadHostPrefer = 8;</code>
+     * @return The uploadHostPrefer.
+     */
+    public java.lang.String getUploadHostPrefer() {
+      java.lang.Object ref = uploadHostPrefer_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        uploadHostPrefer_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 上传域名偏好 
+     * </pre>
+     *
+     * <code>string UploadHostPrefer = 8;</code>
+     * @return The bytes for uploadHostPrefer.
+     */
+    public com.google.protobuf.ByteString
+        getUploadHostPreferBytes() {
+      java.lang.Object ref = uploadHostPrefer_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        uploadHostPrefer_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * 上传域名偏好 
+     * </pre>
+     *
+     * <code>string UploadHostPrefer = 8;</code>
+     * @param value The uploadHostPrefer to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUploadHostPrefer(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      uploadHostPrefer_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 上传域名偏好 
+     * </pre>
+     *
+     * <code>string UploadHostPrefer = 8;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearUploadHostPrefer() {
+      
+      uploadHostPrefer_ = getDefaultInstance().getUploadHostPrefer();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * 上传域名偏好 
+     * </pre>
+     *
+     * <code>string UploadHostPrefer = 8;</code>
+     * @param value The bytes for uploadHostPrefer to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUploadHostPreferBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      uploadHostPrefer_ = value;
       onChanged();
       return this;
     }

@@ -235,7 +235,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
             com.byteplus.helper.VodUploadProgressListenerHelper.sendVodUploadEvent(listener, com.byteplus.helper.VodUploadProgressEventType.FILE_SIZE_EVENT, totalM3U8Size);
             uploadM3U8Segments(vodUploadMediaRequest, parseResult.segments, fileSizeMap, listener);
         }
-        com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMediaRequest.getSpaceName(), vodUploadMediaRequest.getFilePath(), "media", vodUploadMediaRequest.getFileName(), vodUploadMediaRequest.getFileExtension(), vodUploadMediaRequest.getStorageClass(), listener);
+        com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMediaRequest.getSpaceName(), vodUploadMediaRequest.getFilePath(), "media", vodUploadMediaRequest.getFileName(), vodUploadMediaRequest.getFileExtension(), vodUploadMediaRequest.getStorageClass(), vodUploadMediaRequest.getUploadHostPrefer(), listener);
         com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest vodCommitUploadInfoRequest = com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest.newBuilder()
                 .setSpaceName(vodUploadMediaRequest.getSpaceName())
                 .setSessionKey(uploadCompleteInfo.getSessionKey())
@@ -424,7 +424,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
         }
     }
 
-    private com.byteplus.model.beans.UploadCompleteInfo uploadToB(String spaceName, String filePath, String fileType, String fileName, String fileExtension, int storageClass, com.byteplus.helper.VodUploadProgressListener listener) throws Exception {
+    private com.byteplus.model.beans.UploadCompleteInfo uploadToB(String spaceName, String filePath, String fileType, String fileName, String fileExtension, int storageClass, String uploadHostPrefer, com.byteplus.helper.VodUploadProgressListener listener) throws Exception {
             java.io.File file = new java.io.File(filePath);
             if (!(file.isFile() && file.exists())) {
                 throw new Exception(com.byteplus.error.SdkError.getErrorDesc(com.byteplus.error.SdkError.ENOFILE));
@@ -438,6 +438,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
                     .setFileType(fileType)
                     .setFileExtension(fileExtension)
                     .setStorageClass(storageClass)
+                    .setUploadHostPrefer(uploadHostPrefer)
                     .build();
 
             com.byteplus.service.vod.model.response.VodApplyUploadInfoResponse vodApplyUploadInfoResponse = applyUploadInfo(vodApplyUploadInfoRequest);
@@ -607,7 +608,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
 
     @Override
     public com.byteplus.service.vod.model.response.VodCommitUploadInfoResponse uploadMaterial(com.byteplus.service.vod.model.request.VodUploadMaterialRequest vodUploadMaterialRequest, com.byteplus.helper.VodUploadProgressListener listener) throws Exception {
-            com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMaterialRequest.getSpaceName(), vodUploadMaterialRequest.getFilePath(), vodUploadMaterialRequest.getFileType(), vodUploadMaterialRequest.getFileName(), vodUploadMaterialRequest.getFileExtension(), 0, listener);
+            com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMaterialRequest.getSpaceName(), vodUploadMaterialRequest.getFilePath(), vodUploadMaterialRequest.getFileType(), vodUploadMaterialRequest.getFileName(), vodUploadMaterialRequest.getFileExtension(), 0, vodUploadMaterialRequest.getUploadHostPrefer(), listener);
 
             com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest vodCommitUploadInfoRequest = com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest.newBuilder()
                     .setSpaceName(vodUploadMaterialRequest.getSpaceName())
@@ -624,7 +625,7 @@ public class VodServiceImpl extends com.byteplus.service.BaseServiceImpl impleme
     }
 
     private com.byteplus.service.vod.model.response.VodCommitUploadInfoResponse uploadObject(com.byteplus.service.vod.model.request.VodUploadMediaRequest vodUploadMediaRequest, com.byteplus.helper.VodUploadProgressListener listener) throws Exception {
-        com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMediaRequest.getSpaceName(), vodUploadMediaRequest.getFilePath(), "object", vodUploadMediaRequest.getFileName(), vodUploadMediaRequest.getFileExtension(), vodUploadMediaRequest.getStorageClass(), listener);
+        com.byteplus.model.beans.UploadCompleteInfo uploadCompleteInfo = uploadToB(vodUploadMediaRequest.getSpaceName(), vodUploadMediaRequest.getFilePath(), "object", vodUploadMediaRequest.getFileName(), vodUploadMediaRequest.getFileExtension(), vodUploadMediaRequest.getStorageClass(), vodUploadMediaRequest.getUploadHostPrefer(), listener);
         com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest vodCommitUploadInfoRequest = com.byteplus.service.vod.model.request.VodCommitUploadInfoRequest.newBuilder()
                 .setSpaceName(vodUploadMediaRequest.getSpaceName())
                 .setSessionKey(uploadCompleteInfo.getSessionKey())

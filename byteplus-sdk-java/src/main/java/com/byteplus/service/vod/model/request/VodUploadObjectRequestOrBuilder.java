@@ -3,8 +3,8 @@
 
 package com.byteplus.service.vod.model.request;
 
-public interface VodApplyUploadInfoRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodApplyUploadInfoRequest)
+public interface VodUploadObjectRequestOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:Byteplus.Vod.Models.Request.VodUploadObjectRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -29,53 +29,63 @@ public interface VodApplyUploadInfoRequestOrBuilder extends
 
   /**
    * <pre>
-   * 上传重试时可选择带上的 Session 信息，作为下发参数的辅助信息 
+   * 上传文件的路径 
    * </pre>
    *
-   * <code>string SessionKey = 2;</code>
-   * @return The sessionKey.
+   * <code>string FilePath = 2;</code>
+   * @return The filePath.
    */
-  java.lang.String getSessionKey();
+  java.lang.String getFilePath();
   /**
    * <pre>
-   * 上传重试时可选择带上的 Session 信息，作为下发参数的辅助信息 
+   * 上传文件的路径 
    * </pre>
    *
-   * <code>string SessionKey = 2;</code>
-   * @return The bytes for sessionKey.
+   * <code>string FilePath = 2;</code>
+   * @return The bytes for filePath.
    */
   com.google.protobuf.ByteString
-      getSessionKeyBytes();
+      getFilePathBytes();
 
   /**
    * <pre>
-   * 上传的文件大小，单位为字节，非必填参数 
+   * 业务希望上传透传的信息，会在上传成功时返回给用户 
    * </pre>
    *
-   * <code>double FileSize = 3;</code>
-   * @return The fileSize.
+   * <code>string CallbackArgs = 3;</code>
+   * @return The callbackArgs.
    */
-  double getFileSize();
+  java.lang.String getCallbackArgs();
+  /**
+   * <pre>
+   * 业务希望上传透传的信息，会在上传成功时返回给用户 
+   * </pre>
+   *
+   * <code>string CallbackArgs = 3;</code>
+   * @return The bytes for callbackArgs.
+   */
+  com.google.protobuf.ByteString
+      getCallbackArgsBytes();
 
   /**
    * <pre>
-   * 上传的类型，可不填，默认为 media 
+   * 上传的功能函数 
    * </pre>
    *
-   * <code>string FileType = 4;</code>
-   * @return The fileType.
+   * <code>string Functions = 4;</code>
+   * @return The functions.
    */
-  java.lang.String getFileType();
+  java.lang.String getFunctions();
   /**
    * <pre>
-   * 上传的类型，可不填，默认为 media 
+   * 上传的功能函数 
    * </pre>
    *
-   * <code>string FileType = 4;</code>
-   * @return The bytes for fileType.
+   * <code>string Functions = 4;</code>
+   * @return The bytes for functions.
    */
   com.google.protobuf.ByteString
-      getFileTypeBytes();
+      getFunctionsBytes();
 
   /**
    * <pre>
@@ -99,20 +109,10 @@ public interface VodApplyUploadInfoRequestOrBuilder extends
 
   /**
    * <pre>
-   * 上传的文件的存储类型，1-标准存储，2-归档存储，非必填参数，默认为标准存储 
-   * </pre>
-   *
-   * <code>int32 StorageClass = 6;</code>
-   * @return The storageClass.
-   */
-  int getStorageClass();
-
-  /**
-   * <pre>
    * 上传中文件的文件后缀 
    * </pre>
    *
-   * <code>string FileExtension = 7;</code>
+   * <code>string FileExtension = 6;</code>
    * @return The fileExtension.
    */
   java.lang.String getFileExtension();
@@ -121,7 +121,7 @@ public interface VodApplyUploadInfoRequestOrBuilder extends
    * 上传中文件的文件后缀 
    * </pre>
    *
-   * <code>string FileExtension = 7;</code>
+   * <code>string FileExtension = 6;</code>
    * @return The bytes for fileExtension.
    */
   com.google.protobuf.ByteString
@@ -132,7 +132,7 @@ public interface VodApplyUploadInfoRequestOrBuilder extends
    * 上传域名偏好 
    * </pre>
    *
-   * <code>string UploadHostPrefer = 8;</code>
+   * <code>string UploadHostPrefer = 7;</code>
    * @return The uploadHostPrefer.
    */
   java.lang.String getUploadHostPrefer();
@@ -141,7 +141,7 @@ public interface VodApplyUploadInfoRequestOrBuilder extends
    * 上传域名偏好 
    * </pre>
    *
-   * <code>string UploadHostPrefer = 8;</code>
+   * <code>string UploadHostPrefer = 7;</code>
    * @return The bytes for uploadHostPrefer.
    */
   com.google.protobuf.ByteString

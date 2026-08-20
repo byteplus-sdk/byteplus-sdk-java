@@ -120,4 +120,16 @@ public interface ApplyUploadInfoParamOrBuilder extends
    * @return The storageClass.
    */
   int getStorageClass();
+
+  /**
+   * <code>string UploadHostPrefer = 12;</code>
+   * @return The uploadHostPrefer.
+   */
+  java.lang.String getUploadHostPrefer();
+  /**
+   * <code>string UploadHostPrefer = 12;</code>
+   * @return The bytes for uploadHostPrefer.
+   */
+  com.google.protobuf.ByteString
+      getUploadHostPreferBytes();
 }

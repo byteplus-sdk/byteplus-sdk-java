@@ -159,6 +159,26 @@ public interface VodUploadMediaRequestOrBuilder extends
 
   /**
    * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 9;</code>
+   * @return The uploadHostPrefer.
+   */
+  java.lang.String getUploadHostPrefer();
+  /**
+   * <pre>
+   * 上传域名偏好 
+   * </pre>
+   *
+   * <code>string UploadHostPrefer = 9;</code>
+   * @return The bytes for uploadHostPrefer.
+   */
+  com.google.protobuf.ByteString
+      getUploadHostPreferBytes();
+
+  /**
+   * <pre>
    * 支持解析hls Manifest 
    * </pre>
    *

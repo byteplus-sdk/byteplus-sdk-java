@@ -36,12 +36,6 @@ public final class UpdateClusterRateLimitBody  {
     /**
      * <p>TODO</p>
      */
-    @com.alibaba.fastjson.annotation.JSONField(name = "App")
-    private String app;
-
-    /**
-     * <p>TODO</p>
-     */
     @com.alibaba.fastjson.annotation.JSONField(name = "Status")
     private Integer status;
 

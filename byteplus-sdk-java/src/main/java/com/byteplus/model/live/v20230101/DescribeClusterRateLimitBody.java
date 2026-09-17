@@ -21,12 +21,6 @@ public final class DescribeClusterRateLimitBody  {
     @com.alibaba.fastjson.annotation.JSONField(name = "Domain")
     private String domain;
 
-    /**
-     * <p>TODO</p>
-     */
-    @com.alibaba.fastjson.annotation.JSONField(name = "App")
-    private String app;
-
     @Override
     public String toString() {
         return JSON.toJSONString(this);

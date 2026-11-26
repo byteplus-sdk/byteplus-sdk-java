@@ -180,7 +180,7 @@ public final class VodUpload {
     java.lang.String[] descriptorData = {
       "\n&byteplus/vod/business/vod_upload.proto" +
       "\022\034Byteplus.Vod.Models.Business\032&byteplus" +
-      "/vod/business/vod_common.proto\"\334\002\n\022VodUr" +
+      "/vod/business/vod_common.proto\"\360\002\n\022VodUr" +
       "lUploadURLSet\022\021\n\tSourceUrl\030\001 \001(\t\022\024\n\014Call" +
       "backArgs\030\002 \001(\t\022\013\n\003Md5\030\003 \001(\t\022\022\n\nTemplateI" +
       "d\030\004 \001(\t\022\r\n\005Title\030\005 \001(\t\022\023\n\013Description\030\006 " +
@@ -189,115 +189,115 @@ public final class VodUpload {
       "\024\n\014StorageClass\030\013 \001(\005\022\025\n\rFileExtension\030\014" +
       " \001(\t\022\036\n\026UrlEncryptionAlgorithm\030\r \001(\t\022\031\n\021" +
       "EnableLowPriority\030\016 \001(\010\022\020\n\010FileType\030\017 \001(" +
-      "\t\022\022\n\nRecordType\030\020 \001(\005\"K\n\022VodUrlResponseD" +
-      "ata\0225\n\004Data\030\001 \003(\0132\'.Byteplus.Vod.Models." +
-      "Business.ValuePair\"-\n\tValuePair\022\r\n\005JobId" +
-      "\030\001 \001(\t\022\021\n\tSourceUrl\030\002 \001(\t\"P\n\014VodQueryDat" +
-      "a\022@\n\004Data\030\001 \001(\01322.Byteplus.Vod.Models.Bu" +
-      "siness.VodQueryUploadResult\"n\n\024VodQueryU" +
-      "ploadResult\022>\n\rMediaInfoList\030\001 \003(\0132\'.Byt" +
-      "eplus.Vod.Models.Business.VodURLSet\022\026\n\016N" +
-      "otExistJobIds\030\002 \003(\t\"\\\n\rVodCommitData\022K\n\004" +
-      "Data\030\001 \001(\0132=.Byteplus.Vod.Models.Busines" +
-      "s.VodCommitUploadInfoResponseData\"\245\001\n\037Vo" +
-      "dCommitUploadInfoResponseData\022\013\n\003Vid\030\001 \001" +
-      "(\t\022?\n\nSourceInfo\030\002 \001(\0132+.Byteplus.Vod.Mo" +
-      "dels.Business.VodSourceInfo\022\021\n\tPosterUri" +
-      "\030\003 \001(\t\022\024\n\014CallbackArgs\030\004 \001(\t\022\013\n\003Mid\030\005 \001(" +
-      "\t\"\331\001\n\tVodURLSet\022\021\n\tRequestId\030\001 \001(\t\022\r\n\005Jo" +
-      "bId\030\002 \001(\t\022\021\n\tSourceUrl\030\003 \001(\t\022\r\n\005State\030\004 " +
-      "\001(\t\022\013\n\003Vid\030\005 \001(\t\022\021\n\tSpaceName\030\006 \001(\t\022\021\n\tA" +
-      "ccountId\030\007 \001(\t\022?\n\nSourceInfo\030\010 \001(\0132+.Byt" +
-      "eplus.Vod.Models.Business.VodSourceInfo\022" +
-      "\024\n\014CallbackArgs\030\t \001(\t\"^\n\030VodApplyUploadI" +
-      "nfoResult\022B\n\004Data\030\001 \001(\01324.Byteplus.Vod.M" +
-      "odels.Business.VodApplyUploadInfoData\"_\n" +
-      "\026VodApplyUploadInfoData\022E\n\rUploadAddress" +
-      "\030\001 \001(\0132..Byteplus.Vod.Models.Business.Vo" +
-      "dUploadAddress\"\276\001\n\020VodUploadAddress\022>\n\nS" +
-      "toreInfos\030\001 \003(\0132*.Byteplus.Vod.Models.Bu" +
-      "siness.VodStoreInfo\022\023\n\013UploadHosts\030\002 \003(\t" +
-      "\022A\n\014UploadHeader\030\003 \003(\0132+.Byteplus.Vod.Mo" +
-      "dels.Business.VodHeaderPair\022\022\n\nSessionKe" +
-      "y\030\004 \001(\t\".\n\014VodStoreInfo\022\020\n\010StoreUri\030\001 \001(" +
-      "\t\022\014\n\004Auth\030\002 \001(\t\"+\n\rVodHeaderPair\022\013\n\003Key\030" +
-      "\001 \001(\t\022\r\n\005Value\030\002 \001(\t\"`\n\031VodCommitUploadI" +
-      "nfoResult\022C\n\004Data\030\001 \001(\01325.Byteplus.Vod.M" +
-      "odels.Business.VodCommitUploadInfoData\"\207" +
-      "\001\n\027VodCommitUploadInfoData\022\013\n\003Vid\030\001 \001(\t\022" +
-      "\021\n\tPosterUri\030\002 \001(\t\022?\n\nSourceInfo\030\003 \001(\0132+" +
-      ".Byteplus.Vod.Models.Business.VodSourceI" +
-      "nfo\022\013\n\003Mid\030\004 \001(\t\"\335\002\n\026VodUploadFunctionIn" +
-      "put\022\024\n\014SnapshotTime\030\001 \001(\001\022\r\n\005Title\030\002 \001(\t" +
-      "\022\014\n\004Tags\030\003 \001(\t\022\023\n\013Description\030\004 \001(\t\022\020\n\010C" +
-      "ategory\030\005 \001(\t\022\022\n\nRecordType\030\006 \001(\005\022\016\n\006For" +
-      "mat\030\007 \001(\t\022\030\n\020ClassificationId\030\010 \001(\005\022\022\n\nT" +
-      "emplateId\030\t \001(\t\022\013\n\003Vid\030\n \001(\t\022\013\n\003Fid\030\013 \001(" +
-      "\t\022\020\n\010Language\030\014 \001(\t\022\020\n\010StoreUri\030\r \001(\t\022\016\n" +
-      "\006Source\030\016 \001(\t\022\013\n\003Tag\030\017 \001(\t\022\023\n\013AutoPublis" +
-      "h\030\020 \001(\010\022\022\n\nActionType\030\021 \001(\t\022\023\n\013TemplateI" +
-      "ds\030c \003(\t\"f\n\021VodUploadFunction\022\014\n\004Name\030\001 " +
-      "\001(\t\022C\n\005Input\030\002 \001(\01324.Byteplus.Vod.Models" +
-      ".Business.VodUploadFunctionInput\"\306\001\n\025Com" +
-      "mitUploadInfoParam\022\021\n\tSpaceName\030\001 \001(\t\022\024\n" +
-      "\014CallbackArgs\030\002 \001(\t\022\022\n\nSessionKey\030\003 \001(\t\022" +
-      "B\n\tFunctions\030\004 \003(\0132/.Byteplus.Vod.Models" +
-      ".Business.VodUploadFunction\022\023\n\013GetMetaMo" +
-      "de\030\005 \001(\t\022\027\n\017VodUploadSource\030\006 \001(\t\"\225\001\n\025Co" +
-      "mmitRequestBodyJson\022\021\n\tSpaceName\030\001 \001(\t\022\022" +
-      "\n\nSessionKey\030\002 \001(\t\022\024\n\014CallbackArgs\030\003 \001(\t" +
-      "\022\021\n\tFunctions\030\004 \001(\t\022\023\n\013GetMetaMode\030\005 \001(\t" +
-      "\022\027\n\017VodUploadSource\030\006 \001(\t\"\206\002\n\024ApplyUploa" +
-      "dInfoParam\022\021\n\tSpaceName\030\001 \001(\t\022\020\n\010FileTyp" +
-      "e\030\002 \001(\t\022\022\n\nSessionKey\030\003 \001(\t\022\020\n\010FileSize\030" +
-      "\004 \001(\001\022\021\n\tMediaType\030\005 \001(\t\022\017\n\007TosKeys\030\006 \001(" +
-      "\t\022\025\n\rFileExtension\030\007 \001(\t\022\022\n\nFilePrefix\030\010" +
-      " \001(\t\022\027\n\017FlushUploadMode\030\t \001(\005\022\013\n\003Md5\030\n \001" +
-      "(\t\022\024\n\014StorageClass\030\013 \001(\005\022\030\n\020UploadHostPr" +
-      "efer\030\014 \001(\t\"\224\001\n\016CommitResponse\022\013\n\003Vid\030\001 \001" +
-      "(\t\022\013\n\003Mid\030\002 \001(\t\022?\n\nSourceInfo\030\003 \001(\0132+.By" +
-      "teplus.Vod.Models.Business.VodSourceInfo" +
-      "\022\021\n\tPosterUri\030\004 \001(\t\022\024\n\014CallbackArgs\030\005 \001(" +
-      "\t\">\n\023VodUploadOptionInfo\022\022\n\nTemplateId\030\001" +
-      " \001(\t\022\023\n\013TemplateIds\030c \003(\t\"\224\002\n\025VodUploadC" +
-      "allbackData\022\014\n\004Code\030\001 \001(\t\022\017\n\007Message\030\002 \001" +
-      "(\t\022\024\n\014CallbackArgs\030\003 \001(\t\022\013\n\003Vid\030\004 \001(\t\022\013\n" +
-      "\003Mid\030\005 \001(\t\022\021\n\tSpaceName\030\006 \001(\t\022?\n\nSourceI" +
-      "nfo\030\007 \001(\0132+.Byteplus.Vod.Models.Business" +
-      ".VodSourceInfo\022\021\n\tPosterUri\030\010 \001(\t\022E\n\nOpt" +
-      "ionInfo\030\t \001(\01321.Byteplus.Vod.Models.Busi" +
-      "ness.VodUploadOptionInfo\"\237\001\n\020CallbackRes" +
-      "ponse\022\021\n\tRequestId\030\001 \001(\t\022\017\n\007Version\030\002 \001(" +
-      "\t\022\021\n\tEventTime\030\003 \001(\t\022\021\n\tEventType\030\004 \001(\t\022" +
-      "A\n\004Data\030\005 \001(\01323.Byteplus.Vod.Models.Busi" +
-      "ness.VodUploadCallbackData\"+\n\tStoreInfo\022" +
-      "\020\n\010StoreUri\030\001 \001(\t\022\014\n\004Auth\030\002 \001(\t\"(\n\nHeade" +
-      "rPair\022\013\n\003Key\030\001 \001(\t\022\r\n\005Value\030\002 \001(\t\"\265\001\n\rUp" +
-      "loadAddress\022;\n\nStoreInfos\030\001 \003(\0132\'.Bytepl" +
-      "us.Vod.Models.Business.StoreInfo\022\023\n\013Uplo" +
-      "adHosts\030\002 \003(\t\022>\n\014UploadHeader\030\003 \003(\0132(.By" +
-      "teplus.Vod.Models.Business.HeaderPair\022\022\n" +
-      "\nSessionKey\030\004 \001(\t\"\254\001\n\021FlushUploadResult\022" +
-      "\023\n\013FlushUpload\030\001 \001(\010\022\013\n\003Vid\030\002 \001(\t\022\013\n\003Mid" +
-      "\030\003 \001(\t\022?\n\nSourceInfo\030\004 \001(\0132+.Byteplus.Vo" +
-      "d.Models.Business.VodSourceInfo\022\021\n\tPoste" +
-      "rUri\030\005 \001(\t\022\024\n\014CallbackArgs\030\006 \001(\t\"\261\001\n\rApp" +
-      "lyResponse\022B\n\rUploadAddress\030\001 \001(\0132+.Byte" +
-      "plus.Vod.Models.Business.UploadAddress\022J" +
-      "\n\021FlushUploadResult\030\002 \001(\0132/.Byteplus.Vod" +
-      ".Models.Business.FlushUploadResult\022\020\n\010SD" +
-      "KParam\030\003 \001(\t\"3\n\032VodParseUploadManifestDa" +
-      "ta\022\025\n\rMediaSegments\030\001 \003(\t\"f\n\034VodParseUpl" +
-      "oadManifestResult\022F\n\004Data\030\001 \001(\01328.Bytepl" +
-      "us.Vod.Models.Business.VodParseUploadMan" +
-      "ifestData*:\n\020StorageClassType\022\013\n\007Default" +
-      "\020\000\022\014\n\010Standard\020\001\022\013\n\007Archive\020\002B\331\001\n\'com.by" +
-      "teplus.service.vod.model.businessB\tVodUp" +
-      "loadP\001ZGgithub.com/byteplus-sdk/byteplus" +
-      "-sdk-golang/service/vod/models/business\240" +
-      "\001\001\330\001\001\302\002\000\312\002$Byteplus\\Service\\Vod\\Models\\B" +
-      "usiness\342\002\'Byteplus\\Service\\Vod\\Models\\GP" +
-      "BMetadatab\006proto3"
+      "\t\022\022\n\nRecordType\030\020 \001(\005\022\022\n\nAIGCSource\030\025 \001(" +
+      "\t\"K\n\022VodUrlResponseData\0225\n\004Data\030\001 \003(\0132\'." +
+      "Byteplus.Vod.Models.Business.ValuePair\"-" +
+      "\n\tValuePair\022\r\n\005JobId\030\001 \001(\t\022\021\n\tSourceUrl\030" +
+      "\002 \001(\t\"P\n\014VodQueryData\022@\n\004Data\030\001 \001(\01322.By" +
+      "teplus.Vod.Models.Business.VodQueryUploa" +
+      "dResult\"n\n\024VodQueryUploadResult\022>\n\rMedia" +
+      "InfoList\030\001 \003(\0132\'.Byteplus.Vod.Models.Bus" +
+      "iness.VodURLSet\022\026\n\016NotExistJobIds\030\002 \003(\t\"" +
+      "\\\n\rVodCommitData\022K\n\004Data\030\001 \001(\0132=.Byteplu" +
+      "s.Vod.Models.Business.VodCommitUploadInf" +
+      "oResponseData\"\245\001\n\037VodCommitUploadInfoRes" +
+      "ponseData\022\013\n\003Vid\030\001 \001(\t\022?\n\nSourceInfo\030\002 \001" +
+      "(\0132+.Byteplus.Vod.Models.Business.VodSou" +
+      "rceInfo\022\021\n\tPosterUri\030\003 \001(\t\022\024\n\014CallbackAr" +
+      "gs\030\004 \001(\t\022\013\n\003Mid\030\005 \001(\t\"\331\001\n\tVodURLSet\022\021\n\tR" +
+      "equestId\030\001 \001(\t\022\r\n\005JobId\030\002 \001(\t\022\021\n\tSourceU" +
+      "rl\030\003 \001(\t\022\r\n\005State\030\004 \001(\t\022\013\n\003Vid\030\005 \001(\t\022\021\n\t" +
+      "SpaceName\030\006 \001(\t\022\021\n\tAccountId\030\007 \001(\t\022?\n\nSo" +
+      "urceInfo\030\010 \001(\0132+.Byteplus.Vod.Models.Bus" +
+      "iness.VodSourceInfo\022\024\n\014CallbackArgs\030\t \001(" +
+      "\t\"^\n\030VodApplyUploadInfoResult\022B\n\004Data\030\001 " +
+      "\001(\01324.Byteplus.Vod.Models.Business.VodAp" +
+      "plyUploadInfoData\"_\n\026VodApplyUploadInfoD" +
+      "ata\022E\n\rUploadAddress\030\001 \001(\0132..Byteplus.Vo" +
+      "d.Models.Business.VodUploadAddress\"\276\001\n\020V" +
+      "odUploadAddress\022>\n\nStoreInfos\030\001 \003(\0132*.By" +
+      "teplus.Vod.Models.Business.VodStoreInfo\022" +
+      "\023\n\013UploadHosts\030\002 \003(\t\022A\n\014UploadHeader\030\003 \003" +
+      "(\0132+.Byteplus.Vod.Models.Business.VodHea" +
+      "derPair\022\022\n\nSessionKey\030\004 \001(\t\".\n\014VodStoreI" +
+      "nfo\022\020\n\010StoreUri\030\001 \001(\t\022\014\n\004Auth\030\002 \001(\t\"+\n\rV" +
+      "odHeaderPair\022\013\n\003Key\030\001 \001(\t\022\r\n\005Value\030\002 \001(\t" +
+      "\"`\n\031VodCommitUploadInfoResult\022C\n\004Data\030\001 " +
+      "\001(\01325.Byteplus.Vod.Models.Business.VodCo" +
+      "mmitUploadInfoData\"\207\001\n\027VodCommitUploadIn" +
+      "foData\022\013\n\003Vid\030\001 \001(\t\022\021\n\tPosterUri\030\002 \001(\t\022?" +
+      "\n\nSourceInfo\030\003 \001(\0132+.Byteplus.Vod.Models" +
+      ".Business.VodSourceInfo\022\013\n\003Mid\030\004 \001(\t\"\335\002\n" +
+      "\026VodUploadFunctionInput\022\024\n\014SnapshotTime\030" +
+      "\001 \001(\001\022\r\n\005Title\030\002 \001(\t\022\014\n\004Tags\030\003 \001(\t\022\023\n\013De" +
+      "scription\030\004 \001(\t\022\020\n\010Category\030\005 \001(\t\022\022\n\nRec" +
+      "ordType\030\006 \001(\005\022\016\n\006Format\030\007 \001(\t\022\030\n\020Classif" +
+      "icationId\030\010 \001(\005\022\022\n\nTemplateId\030\t \001(\t\022\013\n\003V" +
+      "id\030\n \001(\t\022\013\n\003Fid\030\013 \001(\t\022\020\n\010Language\030\014 \001(\t\022" +
+      "\020\n\010StoreUri\030\r \001(\t\022\016\n\006Source\030\016 \001(\t\022\013\n\003Tag" +
+      "\030\017 \001(\t\022\023\n\013AutoPublish\030\020 \001(\010\022\022\n\nActionTyp" +
+      "e\030\021 \001(\t\022\023\n\013TemplateIds\030c \003(\t\"f\n\021VodUploa" +
+      "dFunction\022\014\n\004Name\030\001 \001(\t\022C\n\005Input\030\002 \001(\01324" +
+      ".Byteplus.Vod.Models.Business.VodUploadF" +
+      "unctionInput\"\306\001\n\025CommitUploadInfoParam\022\021" +
+      "\n\tSpaceName\030\001 \001(\t\022\024\n\014CallbackArgs\030\002 \001(\t\022" +
+      "\022\n\nSessionKey\030\003 \001(\t\022B\n\tFunctions\030\004 \003(\0132/" +
+      ".Byteplus.Vod.Models.Business.VodUploadF" +
+      "unction\022\023\n\013GetMetaMode\030\005 \001(\t\022\027\n\017VodUploa" +
+      "dSource\030\006 \001(\t\"\225\001\n\025CommitRequestBodyJson\022" +
+      "\021\n\tSpaceName\030\001 \001(\t\022\022\n\nSessionKey\030\002 \001(\t\022\024" +
+      "\n\014CallbackArgs\030\003 \001(\t\022\021\n\tFunctions\030\004 \001(\t\022" +
+      "\023\n\013GetMetaMode\030\005 \001(\t\022\027\n\017VodUploadSource\030" +
+      "\006 \001(\t\"\206\002\n\024ApplyUploadInfoParam\022\021\n\tSpaceN" +
+      "ame\030\001 \001(\t\022\020\n\010FileType\030\002 \001(\t\022\022\n\nSessionKe" +
+      "y\030\003 \001(\t\022\020\n\010FileSize\030\004 \001(\001\022\021\n\tMediaType\030\005" +
+      " \001(\t\022\017\n\007TosKeys\030\006 \001(\t\022\025\n\rFileExtension\030\007" +
+      " \001(\t\022\022\n\nFilePrefix\030\010 \001(\t\022\027\n\017FlushUploadM" +
+      "ode\030\t \001(\005\022\013\n\003Md5\030\n \001(\t\022\024\n\014StorageClass\030\013" +
+      " \001(\005\022\030\n\020UploadHostPrefer\030\014 \001(\t\"\224\001\n\016Commi" +
+      "tResponse\022\013\n\003Vid\030\001 \001(\t\022\013\n\003Mid\030\002 \001(\t\022?\n\nS" +
+      "ourceInfo\030\003 \001(\0132+.Byteplus.Vod.Models.Bu" +
+      "siness.VodSourceInfo\022\021\n\tPosterUri\030\004 \001(\t\022" +
+      "\024\n\014CallbackArgs\030\005 \001(\t\">\n\023VodUploadOption" +
+      "Info\022\022\n\nTemplateId\030\001 \001(\t\022\023\n\013TemplateIds\030" +
+      "c \003(\t\"\224\002\n\025VodUploadCallbackData\022\014\n\004Code\030" +
+      "\001 \001(\t\022\017\n\007Message\030\002 \001(\t\022\024\n\014CallbackArgs\030\003" +
+      " \001(\t\022\013\n\003Vid\030\004 \001(\t\022\013\n\003Mid\030\005 \001(\t\022\021\n\tSpaceN" +
+      "ame\030\006 \001(\t\022?\n\nSourceInfo\030\007 \001(\0132+.Byteplus" +
+      ".Vod.Models.Business.VodSourceInfo\022\021\n\tPo" +
+      "sterUri\030\010 \001(\t\022E\n\nOptionInfo\030\t \001(\01321.Byte" +
+      "plus.Vod.Models.Business.VodUploadOption" +
+      "Info\"\237\001\n\020CallbackResponse\022\021\n\tRequestId\030\001" +
+      " \001(\t\022\017\n\007Version\030\002 \001(\t\022\021\n\tEventTime\030\003 \001(\t" +
+      "\022\021\n\tEventType\030\004 \001(\t\022A\n\004Data\030\005 \001(\01323.Byte" +
+      "plus.Vod.Models.Business.VodUploadCallba" +
+      "ckData\"+\n\tStoreInfo\022\020\n\010StoreUri\030\001 \001(\t\022\014\n" +
+      "\004Auth\030\002 \001(\t\"(\n\nHeaderPair\022\013\n\003Key\030\001 \001(\t\022\r" +
+      "\n\005Value\030\002 \001(\t\"\265\001\n\rUploadAddress\022;\n\nStore" +
+      "Infos\030\001 \003(\0132\'.Byteplus.Vod.Models.Busine" +
+      "ss.StoreInfo\022\023\n\013UploadHosts\030\002 \003(\t\022>\n\014Upl" +
+      "oadHeader\030\003 \003(\0132(.Byteplus.Vod.Models.Bu" +
+      "siness.HeaderPair\022\022\n\nSessionKey\030\004 \001(\t\"\254\001" +
+      "\n\021FlushUploadResult\022\023\n\013FlushUpload\030\001 \001(\010" +
+      "\022\013\n\003Vid\030\002 \001(\t\022\013\n\003Mid\030\003 \001(\t\022?\n\nSourceInfo" +
+      "\030\004 \001(\0132+.Byteplus.Vod.Models.Business.Vo" +
+      "dSourceInfo\022\021\n\tPosterUri\030\005 \001(\t\022\024\n\014Callba" +
+      "ckArgs\030\006 \001(\t\"\261\001\n\rApplyResponse\022B\n\rUpload" +
+      "Address\030\001 \001(\0132+.Byteplus.Vod.Models.Busi" +
+      "ness.UploadAddress\022J\n\021FlushUploadResult\030" +
+      "\002 \001(\0132/.Byteplus.Vod.Models.Business.Flu" +
+      "shUploadResult\022\020\n\010SDKParam\030\003 \001(\t\"3\n\032VodP" +
+      "arseUploadManifestData\022\025\n\rMediaSegments\030" +
+      "\001 \003(\t\"f\n\034VodParseUploadManifestResult\022F\n" +
+      "\004Data\030\001 \001(\01328.Byteplus.Vod.Models.Busine" +
+      "ss.VodParseUploadManifestData*:\n\020Storage" +
+      "ClassType\022\013\n\007Default\020\000\022\014\n\010Standard\020\001\022\013\n\007" +
+      "Archive\020\002B\331\001\n\'com.byteplus.service.vod.m" +
+      "odel.businessB\tVodUploadP\001ZGgithub.com/b" +
+      "yteplus-sdk/byteplus-sdk-golang/service/" +
+      "vod/models/business\240\001\001\330\001\001\302\002\000\312\002$Byteplus\\" +
+      "Service\\Vod\\Models\\Business\342\002\'Byteplus\\S" +
+      "ervice\\Vod\\Models\\GPBMetadatab\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -309,7 +309,7 @@ public final class VodUpload {
     internal_static_Byteplus_Vod_Models_Business_VodUrlUploadURLSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Byteplus_Vod_Models_Business_VodUrlUploadURLSet_descriptor,
-        new java.lang.String[] { "SourceUrl", "CallbackArgs", "Md5", "TemplateId", "Title", "Description", "Tags", "Category", "FileName", "ClassificationId", "StorageClass", "FileExtension", "UrlEncryptionAlgorithm", "EnableLowPriority", "FileType", "RecordType", });
+        new java.lang.String[] { "SourceUrl", "CallbackArgs", "Md5", "TemplateId", "Title", "Description", "Tags", "Category", "FileName", "ClassificationId", "StorageClass", "FileExtension", "UrlEncryptionAlgorithm", "EnableLowPriority", "FileType", "RecordType", "AIGCSource", });
     internal_static_Byteplus_Vod_Models_Business_VodUrlResponseData_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Byteplus_Vod_Models_Business_VodUrlResponseData_fieldAccessorTable = new

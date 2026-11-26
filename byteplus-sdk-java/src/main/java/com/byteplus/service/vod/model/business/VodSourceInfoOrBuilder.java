@@ -360,4 +360,51 @@ public interface VodSourceInfoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getFileNameBytes();
+
+  /**
+   * <pre>
+   * AIGC来源
+   * </pre>
+   *
+   * <code>string AIGCSource = 23;</code>
+   * @return The aIGCSource.
+   */
+  java.lang.String getAIGCSource();
+  /**
+   * <pre>
+   * AIGC来源
+   * </pre>
+   *
+   * <code>string AIGCSource = 23;</code>
+   * @return The bytes for aIGCSource.
+   */
+  com.google.protobuf.ByteString
+      getAIGCSourceBytes();
+
+  /**
+   * <pre>
+   * AIGCMeta
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodAIGCMeta AIGCMeta = 24;</code>
+   * @return Whether the aIGCMeta field is set.
+   */
+  boolean hasAIGCMeta();
+  /**
+   * <pre>
+   * AIGCMeta
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodAIGCMeta AIGCMeta = 24;</code>
+   * @return The aIGCMeta.
+   */
+  com.byteplus.service.vod.model.business.VodAIGCMeta getAIGCMeta();
+  /**
+   * <pre>
+   * AIGCMeta
+   * </pre>
+   *
+   * <code>.Byteplus.Vod.Models.Business.VodAIGCMeta AIGCMeta = 24;</code>
+   */
+  com.byteplus.service.vod.model.business.VodAIGCMetaOrBuilder getAIGCMetaOrBuilder();
 }

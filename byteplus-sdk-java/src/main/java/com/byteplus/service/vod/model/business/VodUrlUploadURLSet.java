@@ -28,6 +28,7 @@ private static final long serialVersionUID = 0L;
     fileExtension_ = "";
     urlEncryptionAlgorithm_ = "";
     fileType_ = "";
+    aIGCSource_ = "";
   }
 
   @java.lang.Override
@@ -150,6 +151,12 @@ private static final long serialVersionUID = 0L;
           case 128: {
 
             recordType_ = input.readInt32();
+            break;
+          }
+          case 170: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            aIGCSource_ = s;
             break;
           }
           default: {
@@ -796,6 +803,52 @@ private static final long serialVersionUID = 0L;
     return recordType_;
   }
 
+  public static final int AIGCSOURCE_FIELD_NUMBER = 21;
+  private volatile java.lang.Object aIGCSource_;
+  /**
+   * <pre>
+   * AIGC来源 
+   * </pre>
+   *
+   * <code>string AIGCSource = 21;</code>
+   * @return The aIGCSource.
+   */
+  @java.lang.Override
+  public java.lang.String getAIGCSource() {
+    java.lang.Object ref = aIGCSource_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      aIGCSource_ = s;
+      return s;
+    }
+  }
+  /**
+   * <pre>
+   * AIGC来源 
+   * </pre>
+   *
+   * <code>string AIGCSource = 21;</code>
+   * @return The bytes for aIGCSource.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getAIGCSourceBytes() {
+    java.lang.Object ref = aIGCSource_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      aIGCSource_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -858,6 +911,9 @@ private static final long serialVersionUID = 0L;
     if (recordType_ != 0) {
       output.writeInt32(16, recordType_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aIGCSource_)) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 21, aIGCSource_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -919,6 +975,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(16, recordType_);
     }
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aIGCSource_)) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(21, aIGCSource_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -966,6 +1025,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getFileType())) return false;
     if (getRecordType()
         != other.getRecordType()) return false;
+    if (!getAIGCSource()
+        .equals(other.getAIGCSource())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1011,6 +1072,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getFileType().hashCode();
     hash = (37 * hash) + RECORDTYPE_FIELD_NUMBER;
     hash = (53 * hash) + getRecordType();
+    hash = (37 * hash) + AIGCSOURCE_FIELD_NUMBER;
+    hash = (53 * hash) + getAIGCSource().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1176,6 +1239,8 @@ private static final long serialVersionUID = 0L;
 
       recordType_ = 0;
 
+      aIGCSource_ = "";
+
       return this;
     }
 
@@ -1218,6 +1283,7 @@ private static final long serialVersionUID = 0L;
       result.enableLowPriority_ = enableLowPriority_;
       result.fileType_ = fileType_;
       result.recordType_ = recordType_;
+      result.aIGCSource_ = aIGCSource_;
       onBuilt();
       return result;
     }
@@ -1325,6 +1391,10 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getRecordType() != 0) {
         setRecordType(other.getRecordType());
+      }
+      if (!other.getAIGCSource().isEmpty()) {
+        aIGCSource_ = other.aIGCSource_;
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -2675,6 +2745,102 @@ private static final long serialVersionUID = 0L;
     public Builder clearRecordType() {
       
       recordType_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object aIGCSource_ = "";
+    /**
+     * <pre>
+     * AIGC来源 
+     * </pre>
+     *
+     * <code>string AIGCSource = 21;</code>
+     * @return The aIGCSource.
+     */
+    public java.lang.String getAIGCSource() {
+      java.lang.Object ref = aIGCSource_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        aIGCSource_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <pre>
+     * AIGC来源 
+     * </pre>
+     *
+     * <code>string AIGCSource = 21;</code>
+     * @return The bytes for aIGCSource.
+     */
+    public com.google.protobuf.ByteString
+        getAIGCSourceBytes() {
+      java.lang.Object ref = aIGCSource_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        aIGCSource_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <pre>
+     * AIGC来源 
+     * </pre>
+     *
+     * <code>string AIGCSource = 21;</code>
+     * @param value The aIGCSource to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAIGCSource(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      aIGCSource_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * AIGC来源 
+     * </pre>
+     *
+     * <code>string AIGCSource = 21;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAIGCSource() {
+      
+      aIGCSource_ = getDefaultInstance().getAIGCSource();
+      onChanged();
+      return this;
+    }
+    /**
+     * <pre>
+     * AIGC来源 
+     * </pre>
+     *
+     * <code>string AIGCSource = 21;</code>
+     * @param value The bytes for aIGCSource to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAIGCSourceBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      aIGCSource_ = value;
       onChanged();
       return this;
     }
